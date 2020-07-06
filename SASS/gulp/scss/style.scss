@@ -1,0 +1,56 @@
+body{
+  background: linear-gradient(45deg, #4682b4, #7b68ee);
+}
+a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  float: left;
+}
+p{
+  font-size: 15px;
+  background: #000;
+  color: white;
+}
+p {
+  width: 1000px;
+}
+div {
+  display: block;
+}
+#main {
+  width: 100px;
+  p, div {
+    color: black;
+    a {
+      color: red;
+      &:hover {
+      color: green;
+      }
+    }
+  }
+}
+
+#main2 {
+  font: {
+    family: fantasy;
+    size: 28px;
+    weight: bold;
+  }
+}
+
+
+$width:1000px;
+#main{
+  $bg-color: green !global;
+  width: $width;
+  background-color: $bg-color;
+}
+#side{
+  background-color: $bg-color;
+}
+#nav{
+  li {
+    display: inline-block;
+  }
+}

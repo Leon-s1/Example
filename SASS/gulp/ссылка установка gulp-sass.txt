@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=jjqvl0M0tGw
+
+
+Компиляция Sass и Scss файлов через сборщик Gulp - это универсальный способ как компилировать файлы препроцессора Sass.
+В этом видео я покажу вам как настроить компиляцию препроцессора Sass через сборщик Gulp. 
+Для этого нам понадобиться NPM - менеджер пакетов, входящий в состав node.js. 
+Мы установим несколько модулей для компиляции Sass в CSS. Так же я расскажу зачем нужен gulp-sourcemaps и gulp-watch.
+
+✔Команды для NPM установка модулей для Gulp
+npm i gulp
+npm init
+npm i gulp-sass gulp-sourcemaps gulp-watch --SD
+
+✔Советую посмотреть:
+Препроцессор Sass Установка: https://youtu.be/FXCjlGmEEFU
+Препроцессор Sass Синтаксис: https://youtu.be/4Pyb3lggFZ8
+Основы препроцессора Sass: https://youtu.be/UcSsIeKuNhQ

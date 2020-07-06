@@ -1,0 +1,62 @@
+body{
+  background: linear-gradient(45deg, #4682b4, #7b68ee);
+}
+a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+}
+
+p {
+    font-size: 15px;
+    background: #000;
+    color: white;
+}
+
+body {
+    background: #f3f3f3;
+}
+
+p {
+    width: 1000px;
+}
+
+div {
+    display: block;
+}
+
+#main {
+    width: 100px;
+}
+
+#main p, #main div {
+    color: black;
+}
+
+#main p a, #main div a {
+    color: red;
+}
+
+#main p a:hover, #main div a:hover {
+    color: green;
+}
+
+#main2 {
+    font-family: fantasy;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#main {
+    width: 1000px;
+    background-color: green;
+}
+
+#side {
+    background-color: green;
+}
+
+#nav li {
+    display: inline-block;
+}

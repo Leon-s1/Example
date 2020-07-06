@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+ul.topnave{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul.topnave li{
+  float: left;
+}
+ul.topnave li a{
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+ul.topnave li a:hover{
+  background-color: #555;
+}
+ul.topnave li.icon{
+  display: none;
+}
+@media screen and (max-width: 680px) {
+ul.topnave li:not(:first-child) {display: none;}
+ul.topnave li.icon {
+  float: right;
+  display: inline-block;
+}
+}
+@media screen and (max-width: 680px) {
+  ul.topnave.responsive {
+    position: relative;
+  }
+  ul.topnave.responsive li.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul.topnave.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnave.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
