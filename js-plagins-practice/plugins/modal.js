@@ -11,7 +11,7 @@ function _createModal(options) {
                     <span class="modal-title">${options.title || 'Окно'}</span>
                     ${options.closable ? `<span class="modal-close" data-close='true'>&times;</span>` : ''}
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" data-content>
                     ${options.content || ''}
                 </div>
                 <div class="modal-footer">
@@ -33,12 +33,15 @@ $.modal = function(options) {
 //
 // }
   const ANIMATION_SPEED = 200
-  const $modal = _createModal(options)
+  const $modal = _createModal(options) //$modal сама форма модального окна
   let closing = false
   let destroyed = false
-
+//в переменной modal сгруппированы методы для модального окна open, close
     const modal = {
       open() {
+        if (destroyed) {
+          return console.log('Modal is destroyed!');
+        }
         !closing && $modal.classList.add('open')
       },
       close() {
@@ -52,16 +55,21 @@ $.modal = function(options) {
       },
     }
 
-  $modal.addEventListener('click', event => {
-  console.log('Clicked', event.target.dataset.close)
-  if (event.target.dataset.close) {
-      modal.close()
+  const listener = event => {
+    if (event.target.dataset.close) {
+        modal.close()
     }
-  })
+  }
+  $modal.addEventListener('click', listener)
+
   return Object.assign(modal, {
     destroy() {
       $modal.parentNode.removeChild($modal)
+      $modal.removeEventListener('click',listener)
       destroyed = true
+    },
+    setContent(html) {
+      $modal.querySelector('[data-content]').innerHTML = html
     }
   })
 }
