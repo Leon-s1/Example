@@ -1,5 +1,29 @@
-//Практическое применение замыкания
+Element.prototype.appendAfter = function(element) {
+  element.parentNode.insertBefore(this, element.nextSibling)
+}
 
+  function noop() {}
+//приватная функция создания класса modal-footer
+function _createModalFooter(buttons = []) {
+  if (buttons.length === 0) {
+    return document.createElement('div')
+  }
+
+  const wrap = document.createElement('div')
+  wrap.classList.add('modal-footer')
+
+  buttons.forEach(btn => {
+    const $btn = document.createElement('button')
+    $btn.textContent = btn.text
+    $btn.classList.add('btn')
+    $btn.classList.add(`btn-${btn.type || 'secondary'}`)
+    $btn.onclick = btn.handler || noop
+    wrap.appendChild($btn)
+  })
+
+  return wrap
+}
+//Практическое применение замыкания
 function _createModal(options) {
     const DEFAULT_WIDTH = '600px'
     const modal = document.createElement('div')
@@ -14,13 +38,11 @@ function _createModal(options) {
                 <div class="modal-body" data-content>
                     ${options.content || ''}
                 </div>
-                <div class="modal-footer">
-                    <button type="button" name="button">Ok</button>
-                    <button type="button" name="button">Cancel</button>
-                </div>
             </div>
         </div>
     `)
+    const footer = _createModalFooter(options.footerButtons)
+    footer.appendAfter(modal.querySelector('[data-content]'))
     document.body.appendChild(modal)
     return modal
 }
