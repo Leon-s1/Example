@@ -32,7 +32,8 @@ const p = new Promise(function(resolve, reject) {
   return new Promise ((resolve, reject) => { //вместо переменной можно вернуть промис
     setTimeout(() => {
       data.modified = true
-      resolve(data)
+      resolve(data) //успешный промис
+      // reject(data) //промис с ошибкой
       // console.log('Data received', backendData)
     }, 2000)
   })
@@ -40,8 +41,9 @@ const p = new Promise(function(resolve, reject) {
     //   console.log('Promise resolved', clientData)
     // })
   })
+
     .then(clientData => {
-    console.log('Promise resolved', clientData)
+    // console.log('Promise resolved', clientData)
     //можно передавать модификации над данными
       clientData.fromPromise = true
       return clientData
@@ -49,3 +51,4 @@ const p = new Promise(function(resolve, reject) {
     .then(data => {
       console.log('Modified', data)
   })
+    .catch(err => {console.error('Error: ', err)})
