@@ -9,6 +9,12 @@ const person = {
 const op = new Proxy(person,{
   get(target, prop) {
     console.log(`Getting prop ${prop}`)
+    if (!(prop in target)) {
+      return prop
+      .split('_')           //объединить поля prop
+      .map(p => target[p])  //пробежаться по массиву значений
+      .join(' ')            //объединить полученные значения в одну строку через пробел
+    }
     return target[prop]
   },
   set(target, prop, value) {
