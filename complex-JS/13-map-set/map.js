@@ -69,7 +69,7 @@ map
 // const mapObj = Object.fromEntries(map.entries())
 // console.log(mapObj);
 //***************************************************** */
-
+//массив объектов
  const users = [
    {name: 'Elena'},
    {name: 'Alex'},
@@ -87,4 +87,4 @@ map
     return visits.get(user)
   }
 
-  console.log(lastVisit(users[2]));
+  console.log(lastVisit(users[1]));
