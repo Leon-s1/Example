@@ -30,7 +30,8 @@ function sendRequest(method, url, body = null) {
     xhr.open(method, url)
 
     xhr.responseType = 'json' //второй вариант перевода в формат JSON через метод responseType 
-
+    xhr.setRequestHeader('Content-Type', 'application/json')
+    
     xhr.onload = () => {
       // console.log(JSON.parse(xhr.response));  //первый вариант перевода переводим строку JSON в объект
       if (xhr.status >= 400) {    //более универсальная обработка ошибок по статусам. коды свыше 400 это ошибки 
@@ -44,7 +45,7 @@ function sendRequest(method, url, body = null) {
       reject(xhr.response);
     }
 
-    xhr.send(JSON.stringify(body))
+    xhr.send(JSON.stringify(body)) //преобразования элементарных значений, объектов, или массивов в строку в формате JSON
   })
 }
 // // реализация методом GET  
