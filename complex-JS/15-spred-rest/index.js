@@ -48,4 +48,21 @@ function sum(a, b, ...rest) {
 
 const numbers = [1, 2, 3, 4, 5, 6]
 //Spred 
-console.log(sum(...numbers));
+// console.log(sum(...numbers));
+
+// const a = numbers[0]
+// const b = numbers[1]
+
+// const [a, b, ...other] = numbers  //деструктуризация
+// console.log(a, b, other); //остальные значения в переменной other
+
+const person = {
+  name: 'Max',
+  age: 20,
+  city: 'Moscow',
+  country: 'Russia'
+}
+
+const {name, age, ...adress} = person
+
+console.log(name, age, adress);
