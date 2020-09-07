@@ -1,0 +1,20 @@
+{
+  "name": "webpack-course-2020",
+  "version": "1.0.0",
+  "description": "webpack course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "jascript",
+    "webpack"
+  ],
+  "author": "Sergey <leon-s1@rambler.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
