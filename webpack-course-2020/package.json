@@ -4,7 +4,9 @@
   "description": "webpack course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production ",
+    "watch": "webpack --mode development --watch"
   },
   "keywords": [
     "js",
@@ -14,6 +16,11 @@
   "author": "Sergey <leon-s1@rambler.ru>",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.4.1",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }

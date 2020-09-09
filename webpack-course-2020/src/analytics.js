@@ -1,7 +1,7 @@
 function createAnalytics() {    //функция считает клики по документам
     let counter = 0
     let isDestroyed = false
-
+    
     const listener = () => counter++
 
     document.addEventListener('click', listener)
@@ -14,7 +14,7 @@ function createAnalytics() {    //функция считает клики по 
 
         getClicks() {   //метод показывает количество кликов на документе
             if (isDestroyed) {
-                return 'Analytics is destroyed'
+                return `Analytics is destroyed. Total clicks = ${counter}`
             }
             return counter
         }
