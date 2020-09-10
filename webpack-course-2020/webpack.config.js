@@ -19,15 +19,19 @@ module.exports = {
         }),
         new CleanWebpackPlugin()
     ],
-    module: {
-        rules: [
+    module: {       //использование лоадеров
+        rules: [    //правила
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.css$/,                         //шаблон, по кторому рабоает лоадер
+                use: ['style-loader', 'css-loader']     //лоадеры, должны быть установлены. идет справа на лево
             },
             {
-                test: /\.(png|jpg|svg|gif)$/,
-                use: ['file-loader']
+                test: /\.(png|jpg|svg|gif)$/,           //регулярное выражение для расширений картинок
+                use: ['file-loader']                    //лоадер, должен быть установлен
+            },
+            {
+                test: /\.(ttf|woff|woff2|eot)$/,           //регулярное выражение для расширений шрифтов
+                use: ['file-loader']                    //лоадер, должен быть установлен
             }
         ]
     }
