@@ -19,7 +19,7 @@ module.exports = {
             '@models': path.resolve(__dirname, 'src/models'),
             '@': path.resolve(__dirname, 'src')
         }
-    }
+    },
     plugins: [
         new HTMLWebpackPlugin({
             template: './index.html'
