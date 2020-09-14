@@ -1,6 +1,8 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -20,17 +22,36 @@ module.exports = {
             '@': path.resolve(__dirname, 'src')
         }
     },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    },
+    devServer: {
+        port: 4200
+    },
     plugins: [
         new HTMLWebpackPlugin({
             template: './index.html'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+            {
+                from: path.resolve(__dirname, 'src/favicon.ico'),
+                to: path.resolve(__dirname, 'dist'),
+            }
+            ],
+        }),
+        new MiniCssExtractPlugin({                  //плагин для работы с css файлами
+            filename: '[name].[contenthash].css'
+        })
     ],
     module: {       //использование лоадеров
         rules: [    //правила
             {
-                test: /\.css$/,                         //шаблон, по кторому рабоает лоадер
-                use: ['style-loader', 'css-loader']     //лоадеры, должны быть установлены. идет справа на лево
+                test: /\.css$/,                         //шаблон, по которому рабоает лоадер
+                use: [MiniCssExtractPlugin.loader, 'css-loader']     //лоадеры, должны быть установлены. идет справа на лево
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,           //регулярное выражение для расширений картинок

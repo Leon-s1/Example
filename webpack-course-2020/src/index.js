@@ -11,7 +11,7 @@ import './styles/styles.css'
 
 const post = new Post('Webpack Post Title', WebpackLogo)   //создаем объект поста
 
-$('pre').html(post.toString())
+$('pre').addClass('code').html(post.toString())      //вывод инфо в браузер при помощи библиотеки JQURY
 
 //console.log('Post to String', post.toString());
 
