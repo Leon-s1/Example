@@ -3,6 +3,12 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')     //установка с сайта NodeJS
+const TerserWebpackPlugin = require('terser-webpack-plugin')
+
+const isDev = process.env.NODE_ENV === 'development'
+console.log('IS DEV', isDev);
+const isProd = !isDev
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -28,11 +34,15 @@ module.exports = {
         }
     },
     devServer: {
-        port: 4200
+        port: 4200,
+        hot: isDev
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './index.html'
+            template: './index.html',
+            minify: {
+                collapseWhitespace: isProd
+            }                          //минификация файла index.html 
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
@@ -51,7 +61,16 @@ module.exports = {
         rules: [    //правила
             {
                 test: /\.css$/,                         //шаблон, по которому рабоает лоадер
-                use: [MiniCssExtractPlugin.loader, 'css-loader']     //лоадеры, должны быть установлены. идет справа на лево
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: isDev,             //hot modul replacement
+                            reloadAll: true
+                        },
+                    },    
+                    'css-loader'
+                ]                        //лоадеры, должны быть установлены. идет справа на лево
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,           //регулярное выражение для расширений картинок
