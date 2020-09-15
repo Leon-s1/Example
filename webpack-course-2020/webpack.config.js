@@ -10,29 +10,44 @@ const isDev = process.env.NODE_ENV === 'development'
 console.log('IS DEV', isDev);
 const isProd = !isDev
 
+const optimization = () => {
+    const config = {
+        splitChunks: {
+            chunks: 'all'
+        } 
+    }
+
+    if (isProd) {
+        config.minimizer = [
+            new OptimizeCssAssetWebpackPlugin(),
+            new TerserWebpackPlugin() 
+        ]
+    }
+    return config
+}
+
+const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
+
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry: {
+    entry: {                                                    //точки входа в программу
         main: './index.js',
         analytics: './analytics.js'
     },
-    output: {
-        filename: '[name].[contenthash].js',
+    output: {                                                   //выходные файлы
+        filename: filename('js'),
         path: path.resolve(__dirname, 'dist')
     },
-    resolve: {
+    resolve: {                                                  //указание путей
         extensions: ['.js', '.json', '.png'],
         alias: {
             '@models': path.resolve(__dirname, 'src/models'),
             '@': path.resolve(__dirname, 'src')
         }
     },
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
-    },
+    optimization: optimization(), 
+                                  //функция
     devServer: {
         port: 4200,
         hot: isDev
@@ -54,13 +69,13 @@ module.exports = {
             ],
         }),
         new MiniCssExtractPlugin({                  //плагин для работы с css файлами
-            filename: '[name].[contenthash].css'
+            filename: filename('css')
         })
     ],
     module: {       //использование лоадеров
         rules: [    //правила
             {
-                test: /\.css$/,                         //шаблон, по которому рабоает лоадер
+                test: /\.css$/,                         //шаблон, по которому рабоает css лоадер
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -70,6 +85,20 @@ module.exports = {
                         },
                     },    
                     'css-loader'
+                ]                        //лоадеры, должны быть установлены. идет справа на лево
+            },
+            {
+                test: /\.less$/,                         //шаблон, по которому рабоает less лоадер
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            hmr: isDev,             //hot modul replacement
+                            reloadAll: true
+                        },
+                    },    
+                    'css-loader',
+                    'less-loader'
                 ]                        //лоадеры, должны быть установлены. идет справа на лево
             },
             {

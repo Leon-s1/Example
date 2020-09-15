@@ -7,6 +7,8 @@ import Post from '@models/Post'       //абсолютный путь при п�
 // import WebpackLogo from './assets/webpack-logo.png'     //относительный путь
 import WebpackLogo from '@/assets/webpack-logo.png'     //абсолютный путь
 import './styles/styles.css'
+import './styles/less.less'
+
 
 
 const post = new Post('Webpack Post Title', WebpackLogo)   //создаем объект поста
