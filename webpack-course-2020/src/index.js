@@ -6,8 +6,10 @@ import Post from '@models/Post'       //абсолютный путь при п�
 // import csv from './assets/data.csv'
 // import WebpackLogo from './assets/webpack-logo.png'     //относительный путь
 import WebpackLogo from '@/assets/webpack-logo.png'     //абсолютный путь
+import './babel'
 import './styles/styles.css'
 import './styles/less.less'
+import './styles/scss.scss'
 
 
 

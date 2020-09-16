@@ -25,7 +25,26 @@ const optimization = () => {
     }
     return config
 }
+//шаблон лоадера с одинаковым кодом
+const cssLoaders = extra => {
+    const loaders = [
+        {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+                hmr: isDev,             //hot modul replacement
+                reloadAll: true
+            },
+        },    
+        'css-loader'
+    ]
 
+    if (extra) {
+        loaders.push(extra)
+    }
+
+    return loaders
+}
+//добавление расширения в зависимости от режима разработки. функция 
 const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
 
 module.exports = {
@@ -76,30 +95,15 @@ module.exports = {
         rules: [    //правила
             {
                 test: /\.css$/,                         //шаблон, по которому рабоает css лоадер
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: isDev,             //hot modul replacement
-                            reloadAll: true
-                        },
-                    },    
-                    'css-loader'
-                ]                        //лоадеры, должны быть установлены. идет справа на лево
+                use: cssLoaders()                       //лоадеры, должны быть установлены. идет справа на лево
             },
             {
                 test: /\.less$/,                         //шаблон, по которому рабоает less лоадер
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            hmr: isDev,             //hot modul replacement
-                            reloadAll: true
-                        },
-                    },    
-                    'css-loader',
-                    'less-loader'
-                ]                        //лоадеры, должны быть установлены. идет справа на лево
+                use: cssLoaders('less-loader')                    //лоадеры, должны быть установлены. идет справа на лево
+            },
+            {
+                test: /\.s[ac]ss$/,                         //паттерн, по которому рабоает sass scss лоадер
+                use: cssLoaders('sass-loader')                    //лоадеры, должны быть установлены. идет справа на лево
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,           //регулярное выражение для расширений картинок
