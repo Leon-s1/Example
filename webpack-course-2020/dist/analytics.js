@@ -148,23 +148,59 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./analytics.js","vendors~analytics~main"]);
+/******/ 	deferredModules.push(["./analytics.ts","vendors~analytics~main"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./analytics.js":
+/***/ "./analytics.ts":
 /*!**********************!*\
-  !*** ./analytics.js ***!
+  !*** ./analytics.ts ***!
   \**********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n         //подключаем библиотеку jquery\r\n\r\nfunction createAnalytics() {    //функция считает клики по документам\r\n    let counter = 0\r\n    let isDestroyed = false\r\n    \r\n    const listener = () => counter++\r\n\r\n    // document.addEventListener('click', listener)        \r\n    jquery__WEBPACK_IMPORTED_MODULE_0__(document).on('click', listener)        //запись с использованием библиотеки jquery\r\n\r\n    return {\r\n        destroy() {     //метод удаляет данную аналитику\r\n            // document.removeEventListener('click',listener)\r\n            jquery__WEBPACK_IMPORTED_MODULE_0__(document).off('click',listener)\r\n            isDestroyed = true\r\n        },\r\n\r\n        getClicks() {   //метод показывает количество кликов на документе\r\n            if (isDestroyed) {\r\n                return `Analytics is destroyed. Total clicks = ${counter}`\r\n            }\r\n            return counter\r\n        }\r\n    }\r\n}\r\n\r\nwindow.analytics = createAnalytics()\n\n//# sourceURL=webpack:///./analytics.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+ //подключаем библиотеку jquery
+
+function createAnalytics() {
+  //функция считает клики по документам
+  var counter = 0;
+  var isDestroyed = false;
+
+  var listener = function listener() {
+    return counter++;
+  }; // document.addEventListener('click', listener)        
+
+
+  jquery__WEBPACK_IMPORTED_MODULE_0__(document).on('click', listener); //запись с использованием библиотеки jquery
+
+  return {
+    destroy: function destroy() {
+      //метод удаляет данную аналитику
+      // document.removeEventListener('click',listener)
+      jquery__WEBPACK_IMPORTED_MODULE_0__(document).off('click', listener);
+      isDestroyed = true;
+    },
+    getClicks: function getClicks() {
+      //метод показывает количество кликов на документе
+      if (isDestroyed) {
+        return "Analytics is destroyed. Total clicks = ".concat(counter);
+      }
+
+      return counter;
+    }
+  };
+}
+
+window['analytics'] = createAnalytics();
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=analytics.js.map

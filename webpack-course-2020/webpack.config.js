@@ -5,6 +5,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugin')     //установка с сайта NodeJS
 const TerserWebpackPlugin = require('terser-webpack-plugin')
+const { loader } = require('mini-css-extract-plugin')
+const { loadavg } = require('os')
 
 const isDev = process.env.NODE_ENV === 'development'
 console.log('IS DEV', isDev);
@@ -44,6 +46,39 @@ const cssLoaders = extra => {
 
     return loaders
 }
+
+//Шаблон BabelOptions
+const babelOptions = preset => {
+    const opts = {
+        presets: [
+           '@babel/preset-env',
+        ],
+        plugins: [
+           '@babel/plugin-proposal-class-properties'
+        ]
+    }
+    if (preset) {
+        opts.presets.push(preset)
+    }
+
+    return opts
+}
+
+const jsLoaders = () => {
+    const loaders = [{
+        loader: 'babel-loader',
+        options: babelOptions()
+      }]
+
+      if (isDev) {
+          loaders.push('eslint-loader')
+      }
+
+    return loaders
+}
+
+
+
 //добавление расширения в зависимости от режима разработки. функция 
 const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
 
@@ -51,8 +86,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {                                                    //точки входа в программу
-        main: './index.js',
-        analytics: './analytics.js'
+        main: ['@babel/polyfill', './index.jsx'],
+        analytics: './analytics.ts'
     },
     output: {                                                   //выходные файлы
         filename: filename('js'),
@@ -71,6 +106,7 @@ module.exports = {
         port: 4200,
         hot: isDev
     },
+    devtool: isDev? 'source-map' : '', 
     plugins: [
         new HTMLWebpackPlugin({
             template: './index.html',
@@ -120,6 +156,27 @@ module.exports = {
             {
                 test: /\.csv$/,                         //регулярное выражение для расширений xml
                 use: ['csv-loader']                     //лоадер, должен быть установлен
+            },
+            {
+                test: /\.js$/,                        //правило для babel-loader
+                exclude: /node_modules/,              //исключить node modules 
+                use: jsLoaders()
+            },
+            {
+                test: /\.ts$/,                        //правило для babel-loader
+                exclude: /node_modules/,
+                use: {
+                  loader: 'babel-loader',
+                  options: babelOptions('@babel/preset-typescript')
+                }
+            },
+            {
+                test: /\.jsx$/,                        //правило для babel-loader
+                exclude: /node_modules/,
+                use: {
+                  loader: 'babel-loader',
+                  options: babelOptions('@babel/preset-react')
+                }
             }
         ]
     }
