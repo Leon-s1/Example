@@ -7,6 +7,7 @@ const OptimizeCssAssetWebpackPlugin = require('optimize-css-assets-webpack-plugi
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const { loader } = require('mini-css-extract-plugin')
 const { loadavg } = require('os')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const isDev = process.env.NODE_ENV === 'development'
 console.log('IS DEV', isDev);
@@ -77,7 +78,34 @@ const jsLoaders = () => {
     return loaders
 }
 
+const plugins = () => {
+    const base = [
+        new HTMLWebpackPlugin({
+            template: './index.html',
+            minify: {
+                collapseWhitespace: isProd
+            }                          //минификация файла index.html 
+        }),
+        new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+            {
+                from: path.resolve(__dirname, 'src/favicon.ico'),
+                to: path.resolve(__dirname, 'dist'),
+            }
+            ],
+        }),
+        new MiniCssExtractPlugin({                  //плагин для работы с css файлами
+            filename: filename('css')
+        })
+    ]
 
+    if (isProd) {
+        base.push(new BundleAnalyzerPlugin())
+    }
+
+    return base
+}
 
 //добавление расширения в зависимости от режима разработки. функция 
 const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
@@ -107,26 +135,7 @@ module.exports = {
         hot: isDev
     },
     devtool: isDev? 'source-map' : '', 
-    plugins: [
-        new HTMLWebpackPlugin({
-            template: './index.html',
-            minify: {
-                collapseWhitespace: isProd
-            }                          //минификация файла index.html 
-        }),
-        new CleanWebpackPlugin(),
-        new CopyWebpackPlugin({
-            patterns: [
-            {
-                from: path.resolve(__dirname, 'src/favicon.ico'),
-                to: path.resolve(__dirname, 'dist'),
-            }
-            ],
-        }),
-        new MiniCssExtractPlugin({                  //плагин для работы с css файлами
-            filename: filename('css')
-        })
-    ],
+    plugins: plugins(),
     module: {       //использование лоадеров
         rules: [    //правила
             {
