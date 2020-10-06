@@ -3,13 +3,26 @@ const path = require('path');
 // const yaml = require('yamljs');
 // const json5 = require('json5');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     app: './src/index.js',
-    print: './src/print.js'
+    // print: './src/print.js',
+    // - another: './src/another-module.js',  //удаляем для реализации динамического импорта
+
+    //исключим дублирование библиотеки lodash (не работает)
+    // shared: ['lodash'],
+    // app: { import: './src/index.js', dependOn: 'shared' },
+    // another: { import: './src/another-module.js', dependOn: 'shared' },
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
   },
   plugins: [
+    new CleanWebpackPlugin({cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       title: 'Output Management',
     }),
@@ -17,8 +30,18 @@ module.exports = {
   output: {
     // filename: 'main.js',
     filename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js',  //добавляем для динамического импорта
     path: path.resolve(__dirname, 'dist'),
+    // publicPath: '/',
   },
+  //адаляем для реализации динамического импорта
+  //предотвращение дублирования lodash
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all',
+  //   },
+  // },
+  //******************************************************************* */
   // module: {
   //   rules: [
   //     {
