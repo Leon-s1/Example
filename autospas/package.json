@@ -1,0 +1,21 @@
+{
+  "name": "autospas",
+  "version": "1.0.0",
+  "description": "autospas website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "autospas",
+    "js",
+    "webpack"
+  ],
+  "author": "Sergey Chuprov chuprov.sa@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
