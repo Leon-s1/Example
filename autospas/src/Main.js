@@ -1,9 +1,15 @@
 const log = 'Main.JS загружен - из файла Main.js'
 
-const element = document.createElement('div')
+// const element = document.createElement('div')
 
-element.innerHTML = log
+// element.innerHTML = log
 
-document.body.appendChild(element);
+// document.body.appendChild(element);
 
 console.log('Log в консоль из файла Main.js ', log);
+
+// console.log('Внесли изменения');
+// console.log('Внесли изменения 2');
+
+
+
