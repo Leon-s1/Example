@@ -10,19 +10,27 @@ a {
 }
 .menu {
     background-color: cyan;
+    display: flex;
 }
 
-.menu ul li {
+.menu li {
     text-decoration: none;
-    display: inline-block;
+    margin-right: 40px;
     background-color: darksalmon;
     /* width: 500px; */
 }
 
-ul li {
+ul {
+    list-style-type: none;
+}
+
+.menu li a {
+    text-transform: uppercase;
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 15px;
+    color: floralwhite;
 }
 
 .container {
@@ -31,6 +39,10 @@ ul li {
     padding: 0 15px;
     display: inline-flex;
 
+}
+.header__content {
+    padding-top: 15px;
+    background-color: firebrick;
 }
 
 /* body{
