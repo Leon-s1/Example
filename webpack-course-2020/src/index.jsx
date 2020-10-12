@@ -16,7 +16,7 @@ import './styles/scss.scss'
 
 
 const post = new Post('Webpack Post Title', WebpackLogo)   //создаем объект поста
-$('pre').addClass('code').html(post.toString())      //вывод инфо в браузер при помощи библиотеки JQURY
+$('pre').addClass('code').html(post.toString())      //вывод инфо в браузер при помощи библиотеки JQUERY
 
 
 const App = () => (
@@ -37,7 +37,7 @@ const App = () => (
     </div>
 )
 
-render(<App/>, document.getElementById('app'))
+ render(<App/>, document.getElementById('app'))
 
 
 //console.log('Post to String', post.toString());
