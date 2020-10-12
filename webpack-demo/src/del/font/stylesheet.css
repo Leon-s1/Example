@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Notorious Texture';
+    src: url('Notorious-Texture.eot');
+    src: local('Notorious Texture'), local('Notorious-Texture'),
+        url('Notorious-Texture.eot?#iefix') format('embedded-opentype'),
+        url('Notorious-Texture.woff2') format('woff2'),
+        url('Notorious-Texture.woff') format('woff'),
+        url('Notorious-Texture.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Notorious Extras & Catchwords Notorious Exs';
+    src: url('NotoriousExtrasCatchwords-NotoriousExtras.eot');
+    src: local('Notorious Extras & Catchwords Notorious Extras'), local('NotoriousExtras&Catchwords-NotoriousExtras'),
+        url('NotoriousExtrasCatchwords-NotoriousExtras.eot?#iefix') format('embedded-opentype'),
+        url('NotoriousExtrasCatchwords-NotoriousExtras.woff2') format('woff2'),
+        url('NotoriousExtrasCatchwords-NotoriousExtras.woff') format('woff'),
+        url('NotoriousExtrasCatchwords-NotoriousExtras.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Notorious Extras & Catchwords Notorious Catchwords';
+    src: url('NotoriousExtrasCatchwords-NotoriousCatchwords.eot');
+    src: local('Notorious Extras & Catchwords Notorious Catchwords'), local('NotoriousExtras&Catchwords-NotoriousCatchwords'),
+        url('NotoriousExtrasCatchwords-NotoriousCatchwords.eot?#iefix') format('embedded-opentype'),
+        url('NotoriousExtrasCatchwords-NotoriousCatchwords.woff2') format('woff2'),
+        url('NotoriousExtrasCatchwords-NotoriousCatchwords.woff') format('woff'),
+        url('NotoriousExtrasCatchwords-NotoriousCatchwords.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Notorious';
+    src: url('Notorious-Black.eot');
+    src: local('Notorious Black'), local('Notorious-Black'),
+        url('Notorious-Black.eot?#iefix') format('embedded-opentype'),
+        url('Notorious-Black.woff2') format('woff2'),
+        url('Notorious-Black.woff') format('woff'),
+        url('Notorious-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
