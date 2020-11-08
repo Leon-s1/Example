@@ -1,7 +1,10 @@
-@import "~normalize.css";
+@import '~normalize.css';
 
-*{
-    /* box-sizing: border-box; */
+header {
+  background-image: url(../assets/slide01.jpg);
+}
+* {
+  /* box-sizing: border-box; */
 }
 
 /* a {
@@ -9,10 +12,11 @@
     display: inline-block;
 } */
 
-
 .container {
-    /* display: flex;
-    justify-content: space-between;
+  padding: 30px 0px;
+  /* display: flex; */
+  /* position: relative; */
+  /* justify-content: space-between;
     max-width: 900px;
     display: flex;} */
 }
@@ -24,100 +28,106 @@
 } */
 
 .logo {
-    /* background-image: url('../assets/logo.jpg'); */
-    background-size: auto;
-    /* background-repeat : no-repeat;  */
-    background-position: left top;
-    height: 80px;
-    width: 400px;
-    margin-right: 250px; 
-    margin-left: 100px;
-    /* border : 10px solid blue; */
-    /* border-image-width: 10px; */
+  /* background-image: url('../assets/logo.jpg'); */
+  background-size: auto;
+  /* background-repeat : no-repeat;  */
+  background-position: left top;
+  height: 80px;
+  width: 400px;
+  /* margin-right: 250px; 
+    margin-left: 100px; */
+  /* border : 10px solid blue; */
+  /* border-image-width: 10px; */
 }
 
 /* body{
 
 } */
 
-.header__top{
-    background-color: #3d8eb9;
-    margin: auto;
-    display: flex;
-    /* padding: 10px 15px 0px; */
-    text-align: right;
-    min-height: 50px;
-    
-    
-       
+.header__top {
+  /* background-color: #3d8eb9; */
+
+  margin: auto;
+  display: inline;
+  /* padding: 10px 15px 0px; */
+  text-align: right;
+  min-height: 50px;
 }
 
-.header__top a{
-    padding: 0px 20px;
-    text-align: center;
-    font-size: 20px;
-    /* vertical-align: bottom; */
-    /* justify-content: flex-end; */
-    
-       
+.header__top a {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  /* vertical-align: bottom; */
+  /* justify-content: flex-end; */
 }
 
 .header__content {
-    
-    /* padding-top: 15px; */
-    background-color: firebrick;
-    /* margin: 0 auto; */
-    /* display: inline; */
-    text-align: center;
+  /* padding-top: 15px; */
+  background-color: firebrick;
+  /* margin: 0 auto; */
+  /* display: inline; */
+  text-align: center;
 }
 
 .header__content ul li {
-    text-align: center;
-    
+  text-align: center;
+}
+
+.header__item {
+  list-style: none;
+  text-align: center;
+}
+
+.header__item li {
+  display: inline;
+  margin-right: 40px;
+  background-color: darksalmon;
 }
 
 .menu {
-    /* background-color: cyan; */
-    list-style: none;
-    /* display: flex; */
-    /* margin: 35px 30px; */
-    /* width: 900px; */
-    text-align: center;
+  /* background-color: cyan; */
+  list-style: none;
+  /* display: flex; */
+  /* margin: 35px 30px; */
+  /* width: 900px; */
+  text-align: center;
 }
 
 .menu li {
-    /* text-decoration: none; */
-    display: inline;
-    /* float: left; */
-    margin-right: 40px;
-    background-color: darksalmon;
-    
+  /* text-decoration: none; */
+  display: inline;
+  /* float: left; */
+  margin-right: 40px;
+  background-color: darksalmon;
 }
 
-.menu li a {
-    /* text-transform: uppercase; */
-    /* list-style: none; */
-    /* display: block; */
-    border-radius: 5px;
-    margin: 0;
-    padding: 3px 5px;
-    background: rgb(48, 47, 47);
-    font-size: 25px;
-    color: rgb(238, 230, 230);
-    position: relative;
-    text-decoration: none;
+.menu li a,
+.header__top a {
+  /* text-transform: uppercase; */
+  /* list-style: none; */
+  /* display: block; */
+  border-radius: 5px;
+  margin: 0;
+  padding: 3px 5px;
+  background: rgb(48, 47, 47);
+  font-size: 25px;
+  color: rgb(238, 230, 230);
+  position: relative;
+  text-decoration: none;
 }
 
 .menu li a:hover {
-    background: #999;
-    color: #fff;
+  background: #999;
+  color: #fff;
 }
 
 nav {
-    /* display: inline-flex; */
-    margin: auto;
-    /* text-align: center; */
-} 
+  /* display: inline-flex; */
+  margin: auto;
+  /* text-align: center; */
+}
 /* 
 h1 {
     text-align: center;
@@ -131,9 +141,8 @@ h2 {
 } */
 
 .header__logo {
-    /* background-color: darkgreen; */
-    /* justify-content: flex-start; */
-
+  /* background-color: darkgreen; */
+  /* justify-content: flex-start; */
 }
 /* .logo {
     font-weight: 700;
@@ -141,4 +150,7 @@ h2 {
     
 } */
 
-
+#slider__block {
+  margin-top: -90px;
+  position: relative;
+}
