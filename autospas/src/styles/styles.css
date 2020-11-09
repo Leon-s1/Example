@@ -1,10 +1,27 @@
 @import '~normalize.css';
 
 header {
-  background-image: url(../assets/slide01.jpg);
 }
 * {
   /* box-sizing: border-box; */
+}
+body {
+  background-image: url(../assets/slide01.jpg);
+  background-repeat: no-repeat;
+}
+.row {
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+  padding: 0 35px 30px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+section.row,
+header.row,
+footer.row {
+  margin: 0;
 }
 
 /* a {
