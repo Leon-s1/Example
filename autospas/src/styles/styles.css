@@ -11,6 +11,7 @@
 
 
 .container {
+    padding: 25px 10px;
     /* display: flex;
     justify-content: space-between;
     max-width: 900px;
@@ -19,6 +20,7 @@
 /* .container a {
     text-align: center;
     margin: 10px 20px;
+    
     
 
 } */
@@ -47,6 +49,7 @@
     /* padding: 10px 15px 0px; */
     text-align: right;
     min-height: 50px;
+    
     
     
        
