@@ -1,10 +1,13 @@
 @import '~normalize.css';
 
 header {
-  background-image: url(../assets/slide01.jpg);
+  /* background-image: url(../assets/slide01.jpg); */
 }
-* {
-  /* box-sizing: border-box; */
+
+body {
+  background-image: url(../assets/slide01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* a {
@@ -12,30 +15,24 @@ header {
     display: inline-block;
 } */
 
-.container {
-<<<<<<< HEAD
-    padding: 25px 10px;
-    /* display: flex;
-    justify-content: space-between;
-=======
+/* .container {
+  padding: 25px 10px; */
+/* display: flex;
+  justify-content: space-between;
   padding: 30px 0px;
   /* display: flex; */
-  /* position: relative; */
-  /* justify-content: space-between;
->>>>>>> 2a7a54233b0b3d3c4f4c4dfa3f1f3427a7e031e3
+/* position: relative; */
+/* justify-content: space-between;
     max-width: 900px;
-    display: flex;} */
-}
+    display: flex;*/
+/* } */
+
 /* .container a {
     text-align: center;
     margin: 10px 20px;
-    
-    
-
 } */
 
 .logo {
-  /* background-image: url('../assets/logo.jpg'); */
   background-size: auto;
   /* background-repeat : no-repeat;  */
   background-position: left top;
@@ -47,32 +44,13 @@ header {
   /* border-image-width: 10px; */
 }
 
-/* body{
-
-} */
-
-<<<<<<< HEAD
-.header__top{
-    background-color: #3d8eb9;
-    margin: auto;
-    display: flex;
-    /* padding: 10px 15px 0px; */
-    text-align: right;
-    min-height: 50px;
-    
-    
-    
-       
-=======
 .header__top {
-  /* background-color: #3d8eb9; */
-
+  background-color: #3d8eb9;
   margin: auto;
-  display: inline;
+  display: flex;
   /* padding: 10px 15px 0px; */
   text-align: right;
   min-height: 50px;
->>>>>>> 2a7a54233b0b3d3c4f4c4dfa3f1f3427a7e031e3
 }
 
 .header__top a {
@@ -121,7 +99,7 @@ header {
   display: inline;
   /* float: left; */
   margin-right: 40px;
-  background-color: darksalmon;
+  /* background-color: darksalmon; */
 }
 
 .menu li a,
@@ -132,9 +110,9 @@ header {
   border-radius: 5px;
   margin: 0;
   padding: 3px 5px;
-  background: rgb(48, 47, 47);
+  /* background: rgb(48, 47, 47); */
   font-size: 25px;
-  color: rgb(238, 230, 230);
+  color: black;
   position: relative;
   text-decoration: none;
 }
@@ -162,8 +140,8 @@ h2 {
 } */
 
 .header__logo {
-  /* background-color: darkgreen; */
-  /* justify-content: flex-start; */
+  background-color: darkgreen;
+  justify-content: flex-start;
 }
 /* .logo {
     font-weight: 700;
