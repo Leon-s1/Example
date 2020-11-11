@@ -37,7 +37,7 @@ footer.row {
 .container {
   display: flex;
   justify-content: flex-start;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   position: relative;
   /* max-width: 1200px; */
 }
@@ -74,12 +74,22 @@ footer.row {
   /* position: relative; */
 }
 
+.container__icon-time {
+  color: #c42625;
+  font-family: 'MontserratBold', Arial, sans-serif;
+  font-weight: bold;
+}
+
 .logo {
   background-size: auto;
   /* background-repeat : no-repeat;  */
   background-position: left top;
   /* height: 80px; */
   width: 400px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 5px;
+  text-decoration: none;
   /* margin-right: 250px; 
     margin-left: 100px; */
   /* border : 10px solid blue; */
