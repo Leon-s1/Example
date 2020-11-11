@@ -4,19 +4,16 @@ header {
 }
 
 body {
-  background-image: url(../assets/slide01.jpg);
+  /* background-image: url(../assets/slide01.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
 }
-body {
-  background-image: url(../assets/slide01.jpg);
-  background-repeat: no-repeat;
-}
+
 .row {
   cursor: pointer;
   border: 1px solid #d8d8d8;
   text-align: center;
-  padding: 0 35px 30px;
+  /* padding: 0 10px 10px; */
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -27,33 +24,61 @@ footer.row {
   margin: 0;
 }
 
+.logo_line {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* a {
     text-decoration: none;
     display: inline-block;
 } */
 
-/* .container {
-  padding: 25px 10px; */
-/* display: flex;
-  justify-content: space-between;
-  padding: 30px 0px;
-  /* display: flex; */
-/* position: relative; */
-/* justify-content: space-between;
-    max-width: 900px;
-    display: flex;*/
-/* } */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  position: relative;
+  /* max-width: 1200px; */
+}
 
-/* .container a {
-    text-align: center;
-    margin: 10px 20px;
-} */
+.container a {
+  text-align: center;
+  margin: 10px 20px;
+  color: black;
+  font-size: 20px;
+  /* background-color: darksalmon; */
+  border-radius: 5px;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.container__icon img {
+  /* background-size: 25px 25px; */
+  background-origin: content-box;
+  width: 25px;
+  height: 25px;
+  padding-top: 10px;
+}
+
+.container__icon {
+  /* background-image: url(../assets/tel.png); */
+
+  background-repeat: no-repeat;
+  display: flex;
+  /* padding-top: 20px; */
+}
+
+.container__icon a {
+  margin-left: 10px;
+  /* position: relative; */
+}
 
 .logo {
   background-size: auto;
   /* background-repeat : no-repeat;  */
   background-position: left top;
-  height: 80px;
+  /* height: 80px; */
   width: 400px;
   /* margin-right: 250px; 
     margin-left: 100px; */
@@ -134,7 +159,8 @@ footer.row {
   text-decoration: none;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.container a:hover {
   background: #999;
   color: #fff;
 }
@@ -166,7 +192,8 @@ h2 {
     
 } */
 
-#slider__block {
-  margin-top: -90px;
-  position: relative;
+#slider__block img {
+  /* position: relative; */
+  /* background-image: url(../assets/slide01.jpg); */
+  width: 1000px;
 }
