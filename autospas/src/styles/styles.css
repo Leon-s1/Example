@@ -7,6 +7,7 @@ body {
   /* background-image: url(../assets/slide01.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: seashell;
 }
 
 .row {
@@ -27,6 +28,7 @@ footer.row {
 .logo_line {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
 /* a {
@@ -34,6 +36,25 @@ footer.row {
     display: inline-block;
 } */
 
+.logo {
+  background-size: auto;
+  /* background-repeat : no-repeat;  */
+  background-position: left top;
+  /* height: 80px; */
+  width: 400px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 5px;
+  text-decoration: none;
+  /* margin-right: 250px; 
+    margin-left: 100px; */
+  /* border : 10px solid blue; */
+  /* border-image-width: 10px; */
+}
+
+.logo__text {
+  font-size: medium;
+}
 .container {
   display: flex;
   justify-content: flex-start;
@@ -80,22 +101,6 @@ footer.row {
   font-weight: bold;
 }
 
-.logo {
-  background-size: auto;
-  /* background-repeat : no-repeat;  */
-  background-position: left top;
-  /* height: 80px; */
-  width: 400px;
-  text-align: center;
-  font-size: 30px;
-  padding-top: 5px;
-  text-decoration: none;
-  /* margin-right: 250px; 
-    margin-left: 100px; */
-  /* border : 10px solid blue; */
-  /* border-image-width: 10px; */
-}
-
 .header__top {
   background-color: #3d8eb9;
   margin: auto;
@@ -137,6 +142,8 @@ footer.row {
   background-color: darksalmon;
 }
 
+/* Стилизация блока menu */
+
 .menu {
   /* background-color: cyan; */
   list-style: none;
@@ -144,6 +151,8 @@ footer.row {
   /* margin: 35px 30px; */
   /* width: 900px; */
   text-align: center;
+
+  padding: 10px 0px;
 }
 
 .menu li {
@@ -201,9 +210,28 @@ h2 {
     font-size: 350%;
     
 } */
+.content__block {
+  border-top: 1px solid #d8d8d8;
+  /* display: inline; */
+}
 
-#slider__block img {
-  /* position: relative; */
+.content__block img {
   /* background-image: url(../assets/slide01.jpg); */
-  width: 1000px;
+  /* width: 500px; */
+  padding-top: 100px;
+  /* position: relative; */
+  /* display: flex; */
+  /* background-position: left center; */
+  background-color: seashell;
+  padding-left: 100px;
+  float: left;
+}
+
+.content__block-text {
+  position: relative;
+  left: 80px;
+}
+
+.content__block-text p {
+  font-size: 20px;
 }
