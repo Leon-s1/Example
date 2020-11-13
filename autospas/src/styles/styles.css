@@ -7,7 +7,7 @@ body {
   /* background-image: url(../assets/slide01.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: seashell;
+  /* background-color: seashell; */
 }
 
 .row {
@@ -23,12 +23,14 @@ section.row,
 header.row,
 footer.row {
   margin: 0;
+  background-image: url(../assets/img/bg_all.png);
 }
 
 .logo_line {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  background-image: url(../assets/img/bg_all.png);
 }
 
 /* a {
@@ -46,6 +48,7 @@ footer.row {
   font-size: 30px;
   padding-top: 5px;
   text-decoration: none;
+  color: rgb(189, 28, 28);
   /* margin-right: 250px; 
     margin-left: 100px; */
   /* border : 10px solid blue; */
@@ -54,6 +57,7 @@ footer.row {
 
 .logo__text {
   font-size: medium;
+  color: rgb(243, 151, 12);
 }
 .container {
   display: flex;
@@ -66,7 +70,7 @@ footer.row {
 .container a {
   text-align: center;
   margin: 10px 20px;
-  color: black;
+  color: white;
   font-size: 20px;
   /* background-color: darksalmon; */
   border-radius: 5px;
@@ -76,10 +80,13 @@ footer.row {
 
 .container__icon img {
   /* background-size: 25px 25px; */
+  background-color: #fff;
   background-origin: content-box;
   width: 25px;
   height: 25px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  margin-top: 10px;
+  border-radius: 50%;
 }
 
 .container__icon {
@@ -151,7 +158,9 @@ footer.row {
   /* margin: 35px 30px; */
   /* width: 900px; */
   text-align: center;
-
+  /* background-color: #999; */
+  background-image: url(../assets/img/bg_all.png);
+  background-repeat: repeat;
   padding: 10px 0px;
 }
 
@@ -173,15 +182,15 @@ footer.row {
   padding: 3px 5px;
   /* background: rgb(48, 47, 47); */
   font-size: 25px;
-  color: black;
+  color: white;
   position: relative;
   text-decoration: none;
 }
 
 .menu li a:hover,
 .container a:hover {
-  background: #999;
-  color: #fff;
+  background: rgb(255, 250, 250);
+  color: rgb(189, 28, 28);
 }
 
 nav {
@@ -212,6 +221,7 @@ h2 {
 } */
 .content__block {
   border-top: 1px solid #d8d8d8;
+
   /* display: inline; */
 }
 
@@ -223,7 +233,7 @@ h2 {
   /* display: flex; */
   /* background-position: left center; */
   background-color: seashell;
-  padding-left: 100px;
+  padding-left: 300px;
   float: left;
 }
 
@@ -234,4 +244,16 @@ h2 {
 
 .content__block-text p {
   font-size: 20px;
+}
+
+/* Стилизация блока footer */
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: seashell;
+  padding: 70px 0 30px 0;
+  margin-top: 150px;
+  text-align: center;
+  border-top: 1px solid #000;
 }
