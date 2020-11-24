@@ -28,6 +28,7 @@ footer.row {
 
 .logo_line {
   display: flex;
+  width: 100%;
   /* justify-content: space-between; */
   padding-top: 10px;
   background-image: url(../assets/img/bg_all.png);
@@ -174,7 +175,7 @@ footer.row {
   list-style: none;
   /* display: flex; */
   /* margin: 35px 30px; */
-  /* width: 900px; */
+  width: 100%;
   text-align: center;
   /* background-color: #999; */
   background-image: url(../assets/img/bg_all.png);
@@ -258,7 +259,7 @@ h2 {
 
 .content__block-text {
   position: relative;
-  left: 80px;
+  /* left: 80px; */
 }
 
 .content__block-text p {
@@ -268,6 +269,16 @@ h2 {
 .line1 {
   text-align: center;
 }
+
+.carousel-inner {
+  width: 800px;
+  /* position: relative; */
+  margin: auto;
+}
+
+/* .carousel-inner img {
+  width: 100%;
+} */
 
 /* Стилизация блока footer */
 footer {
