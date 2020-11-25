@@ -9,4 +9,4 @@ console.log('Index.JS загружен - из файла index.js')
 
 Math.E
 
-console.log('')
+// console.log('html', HTML)
