@@ -175,7 +175,7 @@ footer.row {
 
 /* Стилизация блока menu */
 
-.menu {
+.topnav {
   /* background-color: cyan; */
   list-style: none;
   /* display: flex; */
@@ -189,15 +189,18 @@ footer.row {
   font-family: OpenSansSemiBold;
 }
 
-.menu li {
+.topnav li {
   /* text-decoration: none; */
   display: inline;
   /* float: left; */
   margin-right: 40px;
   /* background-color: darksalmon; */
+  /* margin: auto;
+  width: 800px;
+  height: 100px; */
 }
 
-.menu li a,
+.topnav li a,
 .header__top a {
   /* text-transform: uppercase; */
   /* list-style: none; */
@@ -212,18 +215,22 @@ footer.row {
   text-decoration: none;
 }
 
-.menu li a:hover {
+.topnav li a:hover {
   /* .container a:hover  */
   /* background: rgb(255, 250, 250); */
   /* color: rgb(189, 28, 28); */
   border-bottom: 3px solid red;
 }
 
-nav {
-  /* display: inline-flex; */
-  margin: auto;
-  /* text-align: center; */
+.topnav .icon {
+  display: block;
 }
+
+/* nav {
+  display: inline-flex;
+  margin: auto;
+  text-align: center;
+} */
 /* 
 h1 {
     text-align: center;
@@ -279,8 +286,7 @@ h2 {
 #carouselExampleCaptions,
 .carousel,
 .slide,
-.carousel-inner,
-. {
+.carousel-inner {
   background: transparent;
 }
 
@@ -309,4 +315,37 @@ footer {
   margin-top: 150px;
   text-align: center;
   border-top: 1px solid #000;
+}
+
+/* Адаптивная верстка под экраны менее 768px */
+@media screen and (max-width: 768px) {
+  /* Адаптивность для главной страницы */
+  .topnav li:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    margin-top: -90px;
+    display: block;
+    color: rgb(247, 12, 24);
+  }
+
+  li {
+    width: 100%;
+  }
+
+  /* Стилизация мобильной версии меню */
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 100;
+    top: 100;
+  }
+  .topnav.responsive a {
+    float: left;
+    display: block;
+    text-align: left;
+  }
 }
