@@ -11,16 +11,6 @@ Math.E
 
 // console.log('html', HTML)
 
-// menu.onclick =  function myFunction() {
-//   var x = document.getElementById('myTopnav');
-
-//   if (x.className === "topnav"){
-//       x.className += " responsive";
-//   } else{
-//       x.className = "topnav"
-//   }
-// }
-
 menu.onclick = function myFunction() {
   var x = document.getElementById('myTopnav')
 
@@ -30,3 +20,13 @@ menu.onclick = function myFunction() {
     x.className = 'topnav'
   }
 }
+
+// menu.onclick = () => {
+//   var x = document.getElementById('myTopnav')
+
+//   if (x.className === 'topnav') {
+//     x.className += ' responsive'
+//   } else {
+//     x.className = 'topnav'
+//   }
+// }
