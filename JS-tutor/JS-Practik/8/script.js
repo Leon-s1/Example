@@ -60,7 +60,7 @@ function showSlides(n) {
     // *************************************************************
     slides[slideIndex - 1].style.display = 'block'
     console.log('slides[slideIndex-1] ', slideIndex - 1)
-    setTimeout(showSlides, 10000)
+    setTimeout(showSlides, 3000)
     dots[slideIndex - 1].className += ' active'
   }
 }
