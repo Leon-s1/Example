@@ -48,6 +48,10 @@ module.exports = {
         test: /\.html$/,
         use: ['html-loader'],
       },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/, //регулярное выражение для расширений шрифтов
+        use: ['file-loader'], //лоадер, должен быть установлен
+      },
     ],
   },
 }
