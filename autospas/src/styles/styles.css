@@ -7,7 +7,7 @@ body {
   /* background-image: url(../assets/slide01.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: seashell;
+  background-color: lightslategrey;
 }
 
 .row {
@@ -151,13 +151,14 @@ footer.row {
   /* margin: 35px 30px; */
   /* width: 900px; */
   text-align: center;
-
+  background-color: lightslategrey;
   padding: 10px 0px;
 }
 
 .menu li {
   /* text-decoration: none; */
   display: inline;
+
   /* float: left; */
   margin-right: 40px;
   /* background-color: darksalmon; */
