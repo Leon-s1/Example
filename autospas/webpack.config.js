@@ -1,4 +1,5 @@
 const path = require('path')
+// const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -46,6 +47,10 @@ module.exports = {
       {
         test: /\.html$/,
         use: ['html-loader'],
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/, //регулярное выражение для расширений шрифтов
+        use: ['file-loader'], //лоадер, должен быть установлен
       },
     ],
   },
