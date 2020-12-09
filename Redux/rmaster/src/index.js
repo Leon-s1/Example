@@ -1,6 +1,7 @@
-import { createStore } from './createStore'
-import './styles.css'
+// import { createStore } from './createStore' импортируем createStore из библиотеки redux
+import { createStore } from 'redux' //импортируем createStore из библиотеки redux
 import { rootReducer } from './redux/rootReduser'
+import './styles.css'
 
 const counter = document.getElementById('counter')
 const addBtn = document.getElementById('add')
@@ -21,8 +22,8 @@ subBtn.addEventListener('click', () => {
 })
 
 store.subscribe(() => {
-  //передаем счетчик страницу с увеличенным или уменьшенным значением за счет подписки на событие кнопки
-  // console.log(store.getState())
+  //передаем счетчик страницу с увеличенным или уменьшенным значением за счет подписки на событие кнопки в консоль
+  console.log(store.getState())
   const state = store.getState()
 
   counter.textContent = state
