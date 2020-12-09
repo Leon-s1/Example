@@ -1,5 +1,5 @@
 // import { createStore } from './createStore' импортируем createStore из библиотеки redux
-import { createStore } from 'redux' //импортируем createStore из библиотеки redux
+import { createStore } from 'redux' //импортируем createStore из библиотеки redux после установки
 import { rootReducer } from './redux/rootReduser'
 import './styles.css'
 

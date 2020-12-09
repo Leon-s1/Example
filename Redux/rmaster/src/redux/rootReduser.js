@@ -1,3 +1,4 @@
+//в файле rootReduser прописана логика приложения. В компоненте index.js логики нет
 export function rootReducer(state, action) {
   if (action.type === 'INCREMENT') {
     return state + 1
