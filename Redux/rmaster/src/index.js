@@ -1,6 +1,8 @@
 // import { createStore } from './createStore' импортируем createStore из библиотеки redux
 import { createStore } from 'redux' //импортируем createStore из библиотеки redux после установки
+import { decrement, increment } from './redux/actions'
 import { rootReducer } from './redux/rootReduser'
+// import { DECREMENT, INCREMENT } from './redux/types' избавляемся от констант, импортируем функции
 import './styles.css'
 
 const counter = document.getElementById('counter')
@@ -14,11 +16,14 @@ const store = createStore(rootReducer, 0) //получаем объект store 
 // window.store = store
 
 addBtn.addEventListener('click', () => {
-  store.dispatch({ type: 'INCREMENT' })
+  // store.dispatch({ type: 'INCREMENT' }) упрощаем написание кода путем импорта констант из файла types.js
+  // store.dispatch({ type: INCREMENT }) делаем код выразительнее, вместо констант добавляем функции. импорт из action.js
+  store.dispatch(increment())
 })
 
 subBtn.addEventListener('click', () => {
-  store.dispatch({ type: 'DECREMENT' })
+  // store.dispatch({ type: 'DECREMENT' })
+  store.dispatch(decrement())
 })
 
 store.subscribe(() => {
