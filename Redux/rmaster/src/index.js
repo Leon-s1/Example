@@ -1,6 +1,8 @@
 // import { createStore } from './createStore' импортируем createStore из библиотеки redux
-import { createStore } from 'redux' //импортируем createStore из библиотеки redux после установки
-import { decrement, increment } from './redux/actions'
+import { applyMiddleware, createStore } from 'redux' //импортируем createStore из библиотеки redux после установки
+import thunk from 'redux-thunk' //импотируем redux-thunk после установки
+import logger from 'redux-logger' //импортируем логгер из библиотеки redux-logger
+import { asyncIncrement, decrement, increment } from './redux/actions'
 import { rootReducer } from './redux/rootReduser'
 // import { DECREMENT, INCREMENT } from './redux/types' избавляемся от констант, импортируем функции
 import './styles.css'
@@ -10,8 +12,20 @@ const addBtn = document.getElementById('add')
 const subBtn = document.getElementById('sub')
 const asyncBtn = document.getElementById('async')
 const themeBtn = document.getElementById('theme')
+//самописный логгер. мы будет использовать уже написанный логгер для redux с сайта npm
+// function logger(state) {
+//   return function (next) {
+//     return function (action) {
+//       console.log('Prev State', state.getState)
+//       console.log('Action', action)
+//       const newState = next(action)
+//       console.log('New State', newState)
+//       return newState
+//     }
+//   }
+// }
 
-const store = createStore(rootReducer, 0) //получаем объект store который умеет взаимодействовать с данными и говорить компоненту, что в нем что то изменилось.//
+const store = createStore(rootReducer, 0, applyMiddleware(thunk, logger)) //получаем объект store который умеет взаимодействовать с данными и говорить компоненту, что в нем что то изменилось.//
 
 // window.store = store
 
@@ -36,7 +50,12 @@ store.subscribe(() => {
 
 store.dispatch({ type: 'INIT_APPLICATION' }) //отрисовываем ноль на странице за счет диспатча значения которого нет
 
-asyncBtn.addEventListener('click', () => {})
+asyncBtn.addEventListener('click', () => {
+  store.dispatch(asyncIncrement())
+  // setTimeout(() => {   так делать нельзя
+  //   store.dispatch(increment())
+  // }, 2000)
+})
 
 themeBtn.addEventListener('click', () => {
   // document.body.classList.toggle('dark')
