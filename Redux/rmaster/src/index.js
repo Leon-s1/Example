@@ -24,8 +24,8 @@ const themeBtn = document.getElementById('theme')
 //     }
 //   }
 // }
-
-const store = createStore(rootReducer, 0, applyMiddleware(thunk, logger)) //получаем объект store который умеет взаимодействовать с данными и говорить компоненту, что в нем что то изменилось.//
+// удаляем начальное состояние 0 из параметров createStore
+const store = createStore(rootReducer, applyMiddleware(thunk, logger)) //получаем объект store который умеет взаимодействовать с данными и говорить компоненту, что в нем что то изменилось.//
 
 // window.store = store
 
@@ -42,9 +42,9 @@ subBtn.addEventListener('click', () => {
 
 store.subscribe(() => {
   //передаем счетчик страницу с увеличенным или уменьшенным значением за счет подписки на событие кнопки в консоль
-  console.log(store.getState())
+  // console.log(store.getState())
   const state = store.getState()
-
+  console.log(State)
   counter.textContent = state
 })
 

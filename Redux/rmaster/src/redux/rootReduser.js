@@ -1,7 +1,8 @@
 //в файле rootReduser прописана логика приложения. В компоненте index.js логики нет
-import { INCREMENT, DECREMENT, ASYNC_INCREMENT } from './types'
+import { combineReducers } from 'redux'
+import { INCREMENT, DECREMENT } from './types'
 
-export function counterReducer(state, action) {
+export function counterReducer(state = 0, action) {
   if (action.type === INCREMENT) {
     return state + 1
   } else if (action.type === DECREMENT) {
@@ -13,6 +14,16 @@ export function counterReducer(state, action) {
   return state
 }
 
-export function themeReducer(state, action) {
-  return state
+const initialThemeState = {
+  value: 'Light',
 }
+
+export function themeReducer(state = initialThemeState, action) {
+  return state //функция themeReducer по умолчанию возвращает state (состояние)
+}
+
+export const rootReduser = combineReducers({
+  //теперь наш state является объектом у которого есть ключи counter theme
+  counter: counterReducer,
+  theme: themeReducer,
+})
