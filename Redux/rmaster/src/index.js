@@ -2,8 +2,13 @@
 import { applyMiddleware, createStore } from 'redux' //импортируем createStore из библиотеки redux после установки
 import thunk from 'redux-thunk' //импотируем redux-thunk после установки
 import logger from 'redux-logger' //импортируем логгер из библиотеки redux-logger
-import { asyncIncrement, decrement, increment } from './redux/actions'
-import { rootReducer } from './redux/rootReduser'
+import {
+  asyncIncrement,
+  changeTheme,
+  decrement,
+  increment,
+} from './redux/actions'
+import { rootReducer } from './redux/rootReducer'
 // import { DECREMENT, INCREMENT } from './redux/types' избавляемся от констант, импортируем функции
 import './styles.css'
 
@@ -44,8 +49,9 @@ store.subscribe(() => {
   //передаем счетчик страницу с увеличенным или уменьшенным значением за счет подписки на событие кнопки в консоль
   // console.log(store.getState())
   const state = store.getState()
-  console.log(State)
-  counter.textContent = state
+  // console.log('state = ', state)
+  counter.textContent = state.counter
+  document.body.className = state.theme.value
 })
 
 store.dispatch({ type: 'INIT_APPLICATION' }) //отрисовываем ноль на странице за счет диспатча значения которого нет
@@ -58,5 +64,6 @@ asyncBtn.addEventListener('click', () => {
 })
 
 themeBtn.addEventListener('click', () => {
+  store.dispatch(changeTheme())
   // document.body.classList.toggle('dark')
 })
