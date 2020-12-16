@@ -45,17 +45,6 @@ subBtn.addEventListener('click', () => {
   store.dispatch(decrement())
 })
 
-store.subscribe(() => {
-  //передаем счетчик страницу с увеличенным или уменьшенным значением за счет подписки на событие кнопки в консоль
-  // console.log(store.getState())
-  const state = store.getState()
-  // console.log('state = ', state)
-  counter.textContent = state.counter
-  document.body.className = state.theme.value
-})
-
-store.dispatch({ type: 'INIT_APPLICATION' }) //отрисовываем ноль на странице за счет диспатча значения которого нет
-
 asyncBtn.addEventListener('click', () => {
   store.dispatch(asyncIncrement())
   // setTimeout(() => {   так делать нельзя
@@ -64,6 +53,21 @@ asyncBtn.addEventListener('click', () => {
 })
 
 themeBtn.addEventListener('click', () => {
-  store.dispatch(changeTheme())
-  // document.body.classList.toggle('dark')
+  const newTheme = document.body.classList.contains('light') ? 'dark' : 'light'
+  store.dispatch(changeTheme(newTheme))
+  // document.body.classList.toggle('dark')//первоначальный вариант переключения темы
 })
+
+store.subscribe(() => {
+  //передаем счетчик страницу с увеличенным или уменьшенным значением за счет подписки на событие кнопки в консоль
+  // console.log(store.getState())
+  const state = store.getState()
+  // console.log('state = ', state)
+  counter.textContent = state.counter
+  document.body.className = state.theme.value
+  ;[addBtn, subBtn, themeBtn, asyncBtn].forEach((btn) => {
+    btn.disabled = state.theme.disabled
+  })
+})
+
+store.dispatch({ type: 'INIT_APPLICATION' }) //отрисовываем ноль на странице за счет диспатча значения которого нет
