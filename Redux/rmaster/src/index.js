@@ -1,6 +1,7 @@
 // import { createStore } from './createStore' импортируем createStore из библиотеки redux
-import { applyMiddleware, createStore } from 'redux' //импортируем createStore из библиотеки redux после установки
+import { applyMiddleware, createStore, compose } from 'redux' //импортируем createStore из библиотеки redux после установки
 import thunk from 'redux-thunk' //импотируем redux-thunk после установки
+import { composeWithDevTools } from 'redux-devtools-extension'
 import logger from 'redux-logger' //импортируем логгер из библиотеки redux-logger
 import {
   asyncIncrement,
@@ -30,7 +31,20 @@ const themeBtn = document.getElementById('theme')
 //   }
 // }
 // удаляем начальное состояние 0 из параметров createStore
-const store = createStore(rootReducer, applyMiddleware(thunk, logger)) //получаем объект store который умеет взаимодействовать с данными и говорить компоненту, что в нем что то изменилось.//
+//1 вый вариант подключения devtools extension
+// const store = createStore(
+//   rootReducer,
+//   compose(
+//     applyMiddleware(thunk, logger),
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//   )
+// ) //получаем объект store который умеет взаимодействовать с данными и говорить компоненту, что в нем что то изменилось.//
+//2ой вариант подключения devtools extension
+
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk, logger))
+)
 
 // window.store = store
 
