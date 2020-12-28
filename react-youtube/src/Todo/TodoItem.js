@@ -16,11 +16,15 @@ const styles = {
   },
 }
 
-function TodoItem({ todo, index }) {
+function TodoItem({ todo, index, onChange }) {
   return (
     <li style={styles.li}>
       <span>
-        <input type="checkbox" style={styles.input} />
+        <input
+          type="checkbox"
+          style={styles.input}
+          onChange={() => onChange(todo.id)}
+        />
         <strong>{index + 1} </strong>
         &nbsp;
         {todo.title}
@@ -29,10 +33,11 @@ function TodoItem({ todo, index }) {
     </li>
   )
 }
-
+//для валидации описываем свойства в библиотеке prop-types
 TodoItem.propTypes = {
   todo: PropTypes.object.isRequired,
   index: PropTypes.number,
+  onChange: PropTypes.func.isRequired,
 }
 
 export default TodoItem
