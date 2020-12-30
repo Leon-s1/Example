@@ -4,7 +4,7 @@ import TodoList from './Todo/TodoList'
 function App() {
   const [todos, setTodos] = React.useState([
     { id: 1, completed: false, title: 'Купить хлеб' },
-    { id: 2, completed: false, title: 'Купить масло' },
+    { id: 2, completed: true, title: 'Купить масло' },
     { id: 3, completed: false, title: 'Купить молоко' },
   ]) //передаем в функцию useState начальное состояние, т.е. весь массив todos
   // let todos = [   первоначальный вариант массив в переменной todos
