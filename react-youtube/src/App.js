@@ -1,7 +1,9 @@
 import React from 'react'
 import TodoList from './Todo/TodoList'
+import Context from './context'
 
 function App() {
+  //setTodo функция изменения стейта массива todos
   const [todos, setTodos] = React.useState([
     { id: 1, completed: false, title: 'Купить хлеб' },
     { id: 2, completed: true, title: 'Купить масло' },
@@ -25,12 +27,22 @@ function App() {
     )
   }
 
-  return (
-    <div className="wrapper">
-      <h1>React tutorial</h1>
+  function removeTodo(id) {
+    setTodos(todos.filter((todo) => todo.id !== id))
+  }
 
-      <TodoList todos={todos} onToggle={toggleTodo} />
-    </div>
+  return (
+    <Context.Provider value={{ removeTodo }}>
+      <div className="wrapper">
+        <h1>React tutorial</h1>
+
+        {todos.length ? (
+          <TodoList todos={todos} onToggle={toggleTodo} />
+        ) : (
+          <p>No todos!</p>
+        )}
+      </div>
+    </Context.Provider>
   )
 }
 

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import PropTypes from 'prop-types' //импортируем библиотеку prop-types в компонент
+import Context from '../context'
 
 const styles = {
   li: {
@@ -18,7 +19,9 @@ const styles = {
 
 function TodoItem({ todo, index, onChange }) {
   // console.log('todo', todo) проверка вывода itema в консоль
+  const { removeTodo } = useContext(Context) //подключим функцию useContext и подключим сам Context
   const classes = []
+
   if (todo.completed) {
     classes.push('done')
   }
@@ -36,7 +39,10 @@ function TodoItem({ todo, index, onChange }) {
         &nbsp;
         {todo.title}
       </span>
-      <button className="rm">&times;</button>
+      {/* <button className="rm" onClick={() => removeTodo(todo.id)}>   1 способ*/}
+      <button className="rm" onClick={removeTodo.bind(null, todo.id)}>
+        &times;
+      </button>
     </li>
   )
 }
