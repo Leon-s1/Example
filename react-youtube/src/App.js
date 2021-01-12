@@ -4,12 +4,18 @@ import Context from './context'
 import AddTodo from './Todo/AddTodo'
 
 function App() {
-  //setTodo функция изменения стейта массива todos
-  const [todos, setTodos] = React.useState([
-    { id: 1, completed: false, title: 'Купить хлеб' },
-    { id: 2, completed: true, title: 'Купить масло' },
-    { id: 3, completed: false, title: 'Купить молоко' },
-  ]) //передаем в функцию useState начальное состояние, т.е. весь массив todos
+  //setTodos функция изменения стейта массива todos
+  //учитывая что мы получаем todo с сервера, то в качестве дефолтного значения указываем пустой массив
+  const [todos, setTodos] = React.useState([])
+
+  //второй вариант задания первоначального состояния в переменную todos
+  //передаем в функцию useState начальное состояние, т.е. весь массив todos
+  // const [todos, setTodos] = React.useState([
+  //   { id: 1, completed: false, title: 'Купить хлеб' },
+  //   { id: 2, completed: true, title: 'Купить масло' },
+  //   { id: 3, completed: false, title: 'Купить молоко' },
+  // ])
+
   // let todos = [   первоначальный вариант массив в переменной todos
   //   { id: 1, completed: false, title: 'Купить хлеб' },
   //   { id: 2, completed: false, title: 'Купить масло' },
@@ -21,7 +27,9 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
       .then((response) => response.json())
       .then((todos) => {
-        setTodos(todos)
+        setTimeout(() => {
+          setTodos(todos)
+        }, 2000)
       })
   }, [])
 
