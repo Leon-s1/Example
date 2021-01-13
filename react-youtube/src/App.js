@@ -2,11 +2,13 @@ import React, { useEffect } from 'react'
 import TodoList from './Todo/TodoList'
 import Context from './context'
 import AddTodo from './Todo/AddTodo'
+import Loader from './Loader'
 
 function App() {
   //setTodos функция изменения стейта массива todos
   //учитывая что мы получаем todo с сервера, то в качестве дефолтного значения указываем пустой массив
   const [todos, setTodos] = React.useState([])
+  const [loading, setLoading] = React.useState(true)
 
   //второй вариант задания первоначального состояния в переменную todos
   //передаем в функцию useState начальное состояние, т.е. весь массив todos
@@ -29,6 +31,7 @@ function App() {
       .then((todos) => {
         setTimeout(() => {
           setTodos(todos)
+          setLoading(false)
         }, 2000)
       })
   }, [])
@@ -66,9 +69,11 @@ function App() {
       <div className="wrapper">
         <h1>React tutorial</h1>
         <AddTodo onCreate={addTodo} />
+
+        {loading && <Loader />}
         {todos.length ? (
           <TodoList todos={todos} onToggle={toggleTodo} />
-        ) : (
+        ) : loading ? null : (
           <p>No todos!</p>
         )}
       </div>
