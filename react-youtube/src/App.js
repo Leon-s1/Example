@@ -1,8 +1,17 @@
 import React, { useEffect } from 'react'
 import TodoList from './Todo/TodoList'
 import Context from './context'
-import AddTodo from './Todo/AddTodo'
+// import AddTodo from './Todo/AddTodo' LazyLoad удаляем импорт AddTodo и создаем переменную AddTodo
 import Loader from './Loader'
+
+const AddTodo = React.lazy(
+  () =>
+    new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(import('./Todo/AddTodo'))
+      }, 3000)
+    })
+) //создаем переменную AddTodo для медленной загрузки
 
 function App() {
   //setTodos функция изменения стейта массива todos
@@ -68,7 +77,10 @@ function App() {
     <Context.Provider value={{ removeTodo }}>
       <div className="wrapper">
         <h1>React tutorial</h1>
-        <AddTodo onCreate={addTodo} />
+        {/* <React.Suspense fallback={<p>Loading...</p>}> */}
+        <React.Suspense fallback={<Loader />}>
+          <AddTodo onCreate={addTodo} />
+        </React.Suspense>
 
         {loading && <Loader />}
         {todos.length ? (
