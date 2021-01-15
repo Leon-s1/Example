@@ -73,7 +73,7 @@ function App() {
       ])
     )
   }
-
+  /*Context.Provider для передачи опред. функций сквозь другие компоненты*/
   return (
     <Context.Provider value={{ removeTodo }}>
       <div className="wrapper">
