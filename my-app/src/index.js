@@ -14,17 +14,27 @@ class Square extends React.Component {
   render() {
     return (
       <button className="square" onClick={() => this.setState({ value: 'X' })}>
-        {/* {this.props.value}   было*/}
-        {this.state.value}
+        {/* {this.props.value}   было, показывает событие Click в браузере*/}
+        {this.state.value} {/*устанавливает крестик в квадрат*/}
       </button>
     )
   }
 }
 
 class Board extends React.Component {
-  //компонент доска
+  //передача состояния из Square в компонент Board и будем хранить его здесь
+  constructor(props) {
+    super(props)
+    this.state = {
+      squares: Array(9).fill(null),
+    }
+  }
+
+  //рисуем компонент доска
   renderSquare(i) {
-    return <Square value={i} />
+    //раньше была передача значения value в массив в виде числа, теперь зададим состояние ячейки в виде передачи состояния
+    // return <Square value={i} />
+    return <Square value={this.state.squares[i]} />
   }
 
   render() {
