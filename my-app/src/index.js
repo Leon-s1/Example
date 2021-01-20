@@ -35,9 +35,9 @@ class Board extends React.Component {
 
   //метод который срабатывает при нажатии на квадрат
   handleClick(i) {
-    const squares = this.state.squares.slice()
-    squares[i] = 'X'
-    this.setState({ squares: squares })
+    const squares = this.state.squares.slice() //создаем копию массива для хранения нового состояния в компоненте Board
+    squares[i] = 'X' //при клике по компоненту Square рисуем X
+    this.setState({ squares: squares }) //запиываем новое состояние в копию массива squares
   }
 
   //рисуем компонент доска
