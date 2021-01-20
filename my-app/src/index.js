@@ -2,20 +2,23 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
+//компонент квадрат
 class Square extends React.Component {
-  //компонент квадрат
-  constructor(props) {
-    super(props)
-    this.state = {
-      value: null,
-    }
-  }
+  //конструктор удален, т.к. компонент больше не отслеживает состояние
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     value: null,
+  //   }
+  // }
 
   render() {
     return (
-      <button className="square" onClick={() => this.setState({ value: 'X' })}>
+      <button className="square" onClick={() => this.props.onClick()}>
         {/* {this.props.value}   было, показывает событие Click в браузере*/}
-        {this.state.value} {/*устанавливает крестик в квадрат*/}
+        {/*this.state.value} { Было 2, устанавливает крестик в квадрат*/}
+        {/* 3 вариант передача состояния из компонента Board */}
+        {this.props.value}
       </button>
     )
   }
@@ -30,11 +33,23 @@ class Board extends React.Component {
     }
   }
 
+  //метод который срабатывает при нажатии на квадрат
+  handleClick(i) {
+    const squares = this.state.squares.slice()
+    squares[i] = 'X'
+    this.setState({ squares: squares })
+  }
+
   //рисуем компонент доска
   renderSquare(i) {
     //раньше была передача значения value в массив в виде числа, теперь зададим состояние ячейки в виде передачи состояния
     // return <Square value={i} />
-    return <Square value={this.state.squares[i]} />
+    return (
+      <Square
+        value={this.state.squares[i]}
+        onClick={() => this.handleClick(i)}
+      />
+    )
   }
 
   render() {
