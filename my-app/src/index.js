@@ -51,11 +51,17 @@ class Board extends React.Component {
   //метод который срабатывает при нажатии на квадрат
   handleClick(i) {
     const squares = this.state.squares.slice() //создаем копию массива для хранения нового состояния в компоненте Board
+    console.log('Функция calculateWinner(squares) = ', calculateWinner(squares))
+    console.log('Массив squares[i] = ', squares[i])
     if (calculateWinner(squares) || squares[i]) {
-      //если кто то выиграл игру или квадрат заполнен фун-ия handleClick возвращается раньше
+      //если кто то выиграл игру или квадраты заполнены фун-ия handleClick возвращается раньше
+
       return
     }
+
     squares[i] = this.state.xIsNext ? 'X' : 'O' //если состояние true при клике по компоненту Square рисуем X, иначе O
+    console.log('Массив squares [i] = ', squares[i])
+    console.log('Массив squares = ', squares)
     this.setState({
       squares: squares,
       xIsNext: !this.state.xIsNext, //после очередного хода true меняем на false
@@ -68,14 +74,19 @@ class Board extends React.Component {
     // return <Square value={i} />
     return (
       <Square
-        value={this.state.squares[i]}
-        onClick={() => this.handleClick(i)}
+        //было
+        // value={this.state.squares[i]}
+        // onClick={() => this.handleClick(i)}
+        //стало
+        value={this.props.squares[i]}
+        onClick={() => this.props.onClick(i)}
       />
     )
   }
 
   render() {
     const winner = calculateWinner(this.state.squares)
+    console.log('winner', winner)
     let status
     if (winner) {
       status = 'Winner ' + winner
@@ -107,6 +118,18 @@ class Board extends React.Component {
 }
 
 class Game extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      history: [
+        {
+          squares: Array(9).fill(null),
+        },
+      ],
+      xIsNext: true,
+    }
+  }
+
   render() {
     return (
       <div className="game">
