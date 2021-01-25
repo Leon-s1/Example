@@ -39,34 +39,14 @@ function Square(props) {
 }
 
 class Board extends React.Component {
-  //передача состояния из Square в компонент Board и будем хранить его здесь
-  constructor(props) {
-    super(props)
-    this.state = {
-      squares: Array(9).fill(null),
-      xIsNext: true,
-    }
-  }
-
-  //метод который срабатывает при нажатии на квадрат
-  handleClick(i) {
-    const squares = this.state.squares.slice() //создаем копию массива для хранения нового состояния в компоненте Board
-    console.log('Функция calculateWinner(squares) = ', calculateWinner(squares))
-    console.log('Массив squares[i] = ', squares[i])
-    if (calculateWinner(squares) || squares[i]) {
-      //если кто то выиграл игру или квадраты заполнены фун-ия handleClick возвращается раньше
-
-      return
-    }
-
-    squares[i] = this.state.xIsNext ? 'X' : 'O' //если состояние true при клике по компоненту Square рисуем X, иначе O
-    console.log('Массив squares [i] = ', squares[i])
-    console.log('Массив squares = ', squares)
-    this.setState({
-      squares: squares,
-      xIsNext: !this.state.xIsNext, //после очередного хода true меняем на false
-    }) //запиcываем новое состояние в копию массива squares
-  }
+  //передача состояния из Square в компонент Board и будем хранить его здесь, а позже переносим в Game. Поднятие состояния
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     squares: Array(9).fill(null),
+  //     xIsNext: true,
+  //   }
+  // }
 
   //рисуем компонент доска
   renderSquare(i) {
@@ -85,18 +65,19 @@ class Board extends React.Component {
   }
 
   render() {
-    const winner = calculateWinner(this.state.squares)
-    console.log('winner', winner)
-    let status
-    if (winner) {
-      status = 'Winner ' + winner
-    } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
-    }
+    //Весь этот код переносим в компонент Game. За состоянием следим из компонента Game
+    // const winner = calculateWinner(this.state.squares)
+    // console.log('winner', winner)
+    // let status
+    // if (winner) {
+    //   status = 'Winner ' + winner
+    // } else {
+    //   status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
+    // }
 
     return (
       <div>
-        <div className="status">{status}</div>
+        {/* <div className="status">{status}</div> */}
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -118,6 +99,7 @@ class Board extends React.Component {
 }
 
 class Game extends React.Component {
+  //передача состояния из Board в компонент Game и будем хранить его здесь
   constructor(props) {
     super(props)
     this.state = {
@@ -130,15 +112,64 @@ class Game extends React.Component {
     }
   }
 
+  //метод который срабатывает при нажатии на квадрат
+  handleClick(i) {
+    const history = this.state.history
+    const current = history[history.length - 1]
+    const squares = current.squares.slice() //создаем копию массива для хранения нового состояния в компоненте Game
+    console.log('Функция calculateWinner(squares) = ', calculateWinner(squares))
+    console.log('Массив squares[i] = ', squares[i])
+    if (calculateWinner(squares) || squares[i]) {
+      //если кто то выиграл игру или квадраты заполнены фун-ия handleClick возвращается раньше
+
+      return
+    }
+
+    squares[i] = this.state.xIsNext ? 'X' : 'O' //если состояние true при клике по компоненту Square рисуем X, иначе O
+    console.log('Массив squares [i] = ', squares[i])
+    console.log('Массив squares = ', squares)
+    this.setState({
+      history: history.concat([
+        {
+          squares: squares,
+        },
+      ]),
+      xIsNext: !this.state.xIsNext, //после очередного хода true меняем на false
+    }) //запиcываем новое состояние в копию массива squares
+  }
+
   render() {
+    const history = this.state.history
+    const current = history[history.length - 1]
+    const winner = calculateWinner(current.squares)
+
+    const moves = history.map((step, move) => {
+      const desc = move ? 'Go to move #' + move : 'Go to game start'
+      return (
+        <li>
+          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+        </li>
+      )
+    })
+
+    let status
+    if (winner) {
+      status = 'Winner: ' + winner
+    } else {
+      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
+    }
+
     return (
       <div className="game">
         <div className="game-board">
-          <Board />
+          <Board
+            squares={current.squares}
+            onClick={(i) => this.handleClick(i)}
+          />
         </div>
         <div className="game-info">
-          <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
+          <div>{status}</div>
+          <ol>{moves}</ol>
         </div>
       </div>
     )
