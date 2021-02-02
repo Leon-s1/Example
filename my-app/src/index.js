@@ -108,13 +108,14 @@ class Game extends React.Component {
           squares: Array(9).fill(null),
         },
       ],
+      stepNumber: 0,
       xIsNext: true,
     }
   }
 
   //метод который срабатывает при нажатии на квадрат
   handleClick(i) {
-    const history = this.state.history
+    const history = this.state.history.slice(0, this.state.stepNumber + 1)
     const current = history[history.length - 1]
     const squares = current.squares.slice() //создаем копию массива для хранения нового состояния в компоненте Game
     console.log('Функция calculateWinner(squares) = ', calculateWinner(squares))
@@ -134,19 +135,28 @@ class Game extends React.Component {
           squares: squares,
         },
       ]),
+      stepNumber: history.length,
       xIsNext: !this.state.xIsNext, //после очередного хода true меняем на false
     }) //запиcываем новое состояние в копию массива squares
   }
 
+  jumpTo(step) {
+    this.setState({
+      stepNumber: step,
+      xIsNext: step % 2 === 0,
+    })
+  }
+
   render() {
     const history = this.state.history
-    const current = history[history.length - 1]
+    // const current = history[history.length - 1]  старый вариант
+    const current = history[this.state.stepNumber]
     const winner = calculateWinner(current.squares)
 
     const moves = history.map((step, move) => {
       const desc = move ? 'Go to move #' + move : 'Go to game start'
       return (
-        <li>
+        <li key={move}>
           <button onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
       )
