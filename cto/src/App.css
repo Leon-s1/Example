@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: yellow;
 }
 
 .App-logo {
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+.h2 {
+  text-align: center;
+}
+
+/* .wrap {
+  background-color: darkgray;
+} */
+.thumbnail {
+  border-radius: 15px;
 }
