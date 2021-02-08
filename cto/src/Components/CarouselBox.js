@@ -11,11 +11,13 @@ export default class CarouselBox extends Component {
   render() {
     return (
       <Container>
-        <h2>Качественный ремонт автомобилей!</h2>
+        <h2 style={{ textAlign: 'center' }}>
+          Качественный автосервис на Топкинской 9.
+        </h2>
         <Carousel className="wrap mt-4">
           <Carousel.Item>
             <img
-              className="d-block w-100 m-auto thumbnail"
+              className="d-block w-100 m-auto img-thumbnail "
               src={diagnostika}
               alt="diagnostika"
             />
@@ -26,7 +28,7 @@ export default class CarouselBox extends Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100 m-auto thumbnail"
+              className="d-block w-100 m-auto img-thumbnail "
               src={shinomontag}
               alt="dvig"
             />
@@ -37,7 +39,7 @@ export default class CarouselBox extends Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-100 m-auto thumbnail"
+              className="d-block w-100 m-auto img-thumbnail "
               src={maslo}
               alt="dvig"
             />
