@@ -9,8 +9,6 @@ import {
   TabContent,
   TabPane,
 } from 'react-bootstrap'
-import Diagnostika from './Services/Diagnostika'
-import Diag from './Services/Diag.txt'
 
 const tabs = [
   { key: 'first', service: 'Компьютерная диагностика' },
@@ -41,11 +39,13 @@ export default function Services() {
             ))}
           </Col>
           <Col sm={9}>
-            <TabContent className="mt-md-4 my-md-4">
+            <TabContent>
               <TabPane eventKey="first">
-                <Diagnostika />
+                <div>Services</div>
               </TabPane>
-              <TabPane eventKey="second">{/* <Diag /> */}</TabPane>
+              <TabPane eventKey="second">
+                <div>Services</div>
+              </TabPane>
             </TabContent>
           </Col>
         </Row>
