@@ -1,6 +1,6 @@
 import React from 'react'
 // import { View, Text } from 'react-native'
-import Diag from './Services/Diag.txt'
+// import Diag from './Services/Diag.txt'
 
 export default function Diagnostika() {
   return (

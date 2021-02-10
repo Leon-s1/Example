@@ -10,7 +10,7 @@ import {
   TabPane,
 } from 'react-bootstrap'
 import Diagnostika from './Services/Diagnostika'
-import Diag from './Services/Diag.txt'
+// import Diag from './Services/Diag.txt'
 
 const tabs = [
   { key: 'first', service: 'Компьютерная диагностика' },
@@ -32,7 +32,7 @@ export default function Services() {
       <TabContainer id="left-tabs-container" defaultActiveKey="first">
         <Row>
           <Col sm={3}>
-            {tabs.map((tab, service) => (
+            {tabs.map((tab) => (
               <Nav variant="pills" className="flex-column mt-2">
                 <NavItem>
                   <Nav.Link eventKey={tab.key}>{tab.service}</Nav.Link>
@@ -41,7 +41,7 @@ export default function Services() {
             ))}
           </Col>
           <Col sm={9}>
-            <TabContent className="mt-md-4 my-md-4">
+            <TabContent className="mt-3">
               <TabPane eventKey="first">
                 <Diagnostika />
               </TabPane>
