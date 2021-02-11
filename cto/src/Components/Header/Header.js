@@ -14,16 +14,22 @@ import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse'
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle'
 import logo from './img/audi.png'
 import Home from '../../Pages/Home'
-import Services from '../../Pages/Services'
-import Prices from '../../Pages/Prices'
+import Services from '../../Pages/Service/Services'
 import Works from '../../Pages/Works'
-import Contacts from '../../Pages/Contacts'
+import Contacts from '../../Pages/Contact/Contacts'
+import Discount from '../../Pages/Discount/Discounts'
 
 export default class Header extends Component {
   render() {
     return (
       <>
-        <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+        <Navbar
+          // fixed="top"
+          collapseOnSelect
+          expand="md"
+          bg="dark"
+          variant="dark"
+        >
           <Container>
             <a href="/">
               <h3 style={{ color: 'white', marginRight: '1rem' }}>
@@ -45,7 +51,7 @@ export default class Header extends Component {
               <Nav className="mr-auto">
                 <NavLink href="/">Домой</NavLink>
                 <NavLink href="/services">Услуги</NavLink>
-                <NavLink href="/prices">Цены</NavLink>
+                <NavLink href="/discount">Акции</NavLink>
                 <NavLink href="/works">Наши работы</NavLink>
                 <NavLink href="/contacts">Контакты</NavLink>
               </Nav>
@@ -64,7 +70,7 @@ export default class Header extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/services" component={Services} />
-            <Route exact path="/prices" component={Prices} />
+            <Route exact path="/discount" component={Discount} />
             <Route exact path="/works" component={Works} />
             <Route exact path="/contacts" component={Contacts} />
           </Switch>
