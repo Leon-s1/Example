@@ -1,10 +1,11 @@
 import React from 'react'
 
 export function Navbar() {
+  // export const Navbar: React.FunctionComponent = () => (
   return (
     <nav>
-      <div className="nav-wrapper">
-        <a href="#" className="brand-logo">
+      <div className="nav-wrapper purple darken-2 px1">
+        <a href="/" className="brand-logo">
           React + Typescript
         </a>
         <ul className="right hide-on-med-and-down">
@@ -19,3 +20,4 @@ export function Navbar() {
     </nav>
   )
 }
+// )
