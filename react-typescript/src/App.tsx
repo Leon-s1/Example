@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       <div className="container">
-        <TodoForm />
+        <TodoForm onAdd={addHandler} />
       </div>
     </>
   )
