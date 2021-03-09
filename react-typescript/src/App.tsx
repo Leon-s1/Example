@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Navbar } from './components/Navbar'
 import { TodoForm } from './components/TodoForm'
 import { TodoList } from './components/TodoList'
 import { ITodo } from './interfaces'
 
+declare var confirm: (questions: string) => boolean //объявление метода confirm по 2-му способу
+
 function App() {
   const [todos, setTodos] = useState<ITodo[]>([])
+
+  useEffect(() => {}, [])
 
   const addHandler = (title: string) => {
     const newTodo: ITodo = {
@@ -35,7 +39,11 @@ function App() {
   }
 
   const removeHandler = (id: number) => {
-    setTodos((prev) => prev.filter((todo) => todo.id !== id))
+    // const shoudRemove = window.confirm('Вы действительно хотите удалить?') 1 способ использования метода confirm
+    const shoudRemove = confirm('Вы действительно хотите удалить?') //2 способ использования метода confirm
+    if (shoudRemove) {
+      setTodos((prev) => prev.filter((todo) => todo.id !== id))
+    }
   }
 
   return (
