@@ -10,21 +10,25 @@ export default class Works extends Component {
   render() {
     return (
       <>
-        <Container>
+        <Container className="container flex-column   ">
           <h2 className="text-center m-4">Наши работы</h2>
 
-          <Row className="text-center m-4">
-            <Col xs={6} md={4}>
-              <Image src={bmw} roundedCircle />
+          <Row className="img m-4 foto-itm">
+            <Col xs={10} sm={6} md={4}>
+              <Image className="pt-4 " src={bmw} roundedCircle />
             </Col>
-            <Col xs={6} md={4}>
-              <Image src={audi} roundedCircle />
+            <Col xs={10} sm={6} md={4}>
+              <Image className="pt-4 " src={audi} roundedCircle />
             </Col>
-            <Col xs={6} md={4}>
-              <Image src={mercedes} roundedCircle />
+            <Col xs={10} sm={6} md={4}>
+              <Image className="pt-4 " src={mercedes} roundedCircle />
             </Col>
-            <Col xs={6} md={4}>
-              <Image src={landcruiser} roundedCircle />
+            <Col xs={10} sm={6} md={4}>
+              <Image
+                className="pt-4 text-center"
+                src={landcruiser}
+                roundedCircle
+              />
             </Col>
           </Row>
         </Container>
