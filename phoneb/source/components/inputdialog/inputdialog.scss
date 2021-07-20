@@ -1,0 +1,14 @@
+.dialog__wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.dialog__widthFull {
+  width: 90% !important;
+}
+
+.dialog__widthHalf {
+  width: 50% !important;
+}
