@@ -1,0 +1,24 @@
+const express = require('express')
+const mongoose = require('mongoose')
+const exphbs = require('express-handlebars')
+
+const PORT = process.env.PORT || 3000
+
+const app = express()
+const hbs = exphbs.create({
+  defaultLayout: 'main',
+  extname: 'hbs',
+})
+
+async function start() {
+  try {
+    await mongoose.connect('')
+    app.listen(PORT, () => {
+      console.log('Sever has been started...')
+    })
+  } catch (e) {
+    console.log(e)
+  }
+}
+
+start()
