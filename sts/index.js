@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const exphbs = require('express-handlebars')
 const todoRoutes = require('./routes/todos')
+const path = require('path')
 
 const PORT = process.env.PORT || 3000
 
@@ -11,9 +12,18 @@ const hbs = exphbs.create({
   extname: 'hbs',
 })
 
+// app.get('/', express.static(path.join(__dirname, '.././logo')))
+
 app.engine('hbs', hbs.engine)
 app.set('view engine', 'hbs')
 app.set('views', 'views')
+// app.set('logo', 'logo')
+
+// app.use('/logo', express.static('logo'))
+// app.use(express.static(__dirname + 'logo/'))
+
+// app.use(express.static(path.join(__dirname, 'logo')))
+app.use('/logo', express.static(path.join(__dirname, 'logo')))
 
 app.use(todoRoutes)
 
