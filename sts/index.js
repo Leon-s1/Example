@@ -24,6 +24,7 @@ app.set('view engine', 'hbs')
 app.set('views', 'views')
 
 app.use('/logo', express.static(path.join(__dirname, 'logo')))
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(
   express.urlencoded(

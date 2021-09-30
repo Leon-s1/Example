@@ -11,6 +11,7 @@ const router = Router()
 
 router.get('/', async (req, res) => {
   const todos = await Todo.find({})
+
   res.render('index', {
     title: 'Список сотрудников',
     isIndex: true,
