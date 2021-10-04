@@ -8,7 +8,7 @@ body {
   font-family: 'Muli', sans-serif;
   overflow: hidden;
   margin: 0;
-  background: rgb(25, 253, 253);
+  background: #111;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ body {
   border-radius: 20px;
   margin: 10px;
   cursor: pointer;
-  color: rgb(59, 240, 14);
+  color: #fff;
   flex: 1;
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@ body {
   position: absolute;
   font-style: 24px;
   bottom: 20px;
-  left: 750px;
+  left: 20px;
   margin: 0;
   opacity: 0;
 }
