@@ -5,6 +5,16 @@ const timeEl = document.querySelector('#time')
 const board = document.querySelector('#board')
 let time = 0
 let score = 0
+const colors = [
+  '#9aff24',
+  '#ffea24',
+  '#ff2400',
+  '#18b3c3',
+  '#24ff8f',
+  '#7140e3',
+  '#00ffff',
+  '#24ffe9',
+]
 
 startBtn.addEventListener('click', (event) => {
   event.preventDefault()
@@ -50,14 +60,13 @@ function setTime(value) {
 }
 
 function finishGame() {
-  // timeEl.parentNode.remove() 1ый вариант
-
   timeEl.parentNode.classList.add('hide')
   board.innerHTML = `<h1>Cчет: <span class='primary'> ${score}</span></h1>`
 }
 
 function createRandomCircle() {
   const circle = document.createElement('div')
+  setColor(circle)
   const size = getRandomNumber(10, 60)
   const { width, height } = board.getBoundingClientRect()
   const x = getRandomNumber(0, width - size)
@@ -74,4 +83,14 @@ function createRandomCircle() {
 
 function getRandomNumber(min, max) {
   return Math.round(Math.random() * (max - min) + min)
+}
+function getRandomColor() {
+  const index = Math.floor(Math.random() * colors.length)
+  return colors[index]
+}
+
+function setColor(element) {
+  const color = getRandomColor()
+  element.style.backgroundColor = color
+  element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
 }
