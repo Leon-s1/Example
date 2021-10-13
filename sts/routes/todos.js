@@ -2,16 +2,8 @@ const { Router } = require('express')
 const Todo = require('../models/Todo')
 const router = Router()
 
-// router.use(express.static(__dirname + '/logo/'))
-
-// router.get('logo/STS_logo.jpg', (req, res) => {
-//   res.set('Content-Type', 'image/png')
-//   res.send(body)
-// })
-
 router.get('/', async (req, res) => {
-  const todos = await Todo.find({})
-
+  const todos = await Todo.find({}).lean()
   res.render('index', {
     title: 'Список сотрудников',
     isIndex: true,
@@ -29,7 +21,7 @@ router.get('/create', (req, res) => {
 router.post('/create', async (req, res) => {
   const todo = new Todo({
     title: req.body.title,
-  })
+     })
   await todo.save()
   res.redirect('/')
 })

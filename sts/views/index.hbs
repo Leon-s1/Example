@@ -1,4 +1,4 @@
-<h2>Todos page</h2>
+<h2>Список сотрудников</h2>
 
 {{#if todos.length}}
   <ul>
@@ -6,10 +6,10 @@
       <li class='todo'>
         <label>
           {{#if completed}}
-            <input type='checkbox' checked />
+            <input type='checkbox' checked/>
             <span class='completed'>{{title}}</span>
           {{else}}
-            <input type='checkbox' />
+            <input type='checkbox'/>
             <span>{{title}}</span>
           {{/if}}
 
@@ -21,3 +21,4 @@
 {{else}}
   <p>No todos!</p>
 {{/if}}
+

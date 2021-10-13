@@ -3,17 +3,15 @@ const mongoose = require('mongoose')
 const exphbs = require('express-handlebars')
 const todoRoutes = require('./routes/todos')
 const path = require('path')
-const _handlebars = require('handlebars')
+const Handlebars = require('handlebars')
 
-const {
-  allowInsecurePrototypeAccess,
-} = require('@handlebars/allow-prototype-access')
 
 const PORT = process.env.PORT || 3000
 
 const app = express()
 const hbs = exphbs.create({
   defaultLayout: 'main',
+  // handlebars: allowInsecurePrototypeAccess(Handlebars),
   extname: 'hbs',
 })
 
@@ -28,14 +26,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(
   express.urlencoded(
-    { extended: true }
-    // {
-    //   allowedProtoMethods: {
-    //     trim: true,
-    //   },
-    // }
-  )
+    { extended: true })
 )
+// app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(todoRoutes)
 
