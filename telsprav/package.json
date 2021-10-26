@@ -1,5 +1,5 @@
 {
-  "name": "tel_spr",
+  "name": "telsprav",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -54,6 +54,7 @@
     "react-google-material-icons": "^1.0.4",
     "react-input-mask": "^2.0.4",
     "react-redux": "^5.1.0",
+    "react-scripts": "^4.0.3",
     "react-text-mask": "^5.4.3",
     "react-tooltip": "^3.9.0",
     "redux": "^4.0.1",
@@ -127,5 +128,9 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "wwwebpack.config.js",
+  "author": "",
+  "license": "ISC"
 }

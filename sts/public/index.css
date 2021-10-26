@@ -4,14 +4,22 @@
 .todo span.completed {
   text-decoration: line-through;
 }
+.todo span {
+  padding-right: 938px;
+}
+
 .todo label {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   cursor: pointer;
   background: #f3f3f3;
   padding: 1rem;
+}
+
+.btn {
+  margin-right: 1rem;
 }
 
 .todo i {

@@ -19,9 +19,8 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 )
 
-const app = (
-  <Provider store={store}>
-    <App />
+const app = (<Provider store={store}>
+    <App/>
   </Provider>
 )
 
