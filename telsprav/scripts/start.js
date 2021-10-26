@@ -12,7 +12,7 @@ process.on('unhandledRejection', (err) => {
 })
 
 // Ensure environment variables are read.
-const env = require('./../node_modules/react-scripts/config/env')
+require('./../node_modules/react-scripts/config/env')
 
 const fs = require('fs')
 const chalk = require('chalk')
@@ -29,7 +29,7 @@ const {
 const openBrowser = require('react-dev-utils/openBrowser')
 const paths = require('../node_modules/react-scripts/config/paths')
 const config = require('../wwwebpack.config')
-// const createDevServerConfig = require('../node_modules/react-scripts/config/webpackDevServer.config')
+const createDevServerConfig = require('../node_modules/react-scripts/config/webpackDevServer.config')
 
 const useYarn = fs.existsSync(paths.yarnLockFile)
 const isInteractive = process.stdout.isTTY
