@@ -29,7 +29,7 @@ const {
 const openBrowser = require('react-dev-utils/openBrowser')
 const paths = require('../node_modules/react-scripts/config/paths')
 const config = require('../wwwebpack.config')
-// const createDevServerConfig = require('../node_modules/react-scripts/config/webpackDevServer.config')
+const createDevServerConfig = require('../node_modules/react-scripts/config/webpackDevServer.config')
 
 const useYarn = fs.existsSync(paths.yarnLockFile)
 const isInteractive = process.stdout.isTTY
@@ -78,7 +78,7 @@ checkBrowsers(paths.appPath, isInteractive)
     const appName = require(paths.appPackageJson).name
     const urls = prepareUrls(protocol, HOST, port)
     // Create a webpack compiler that is configured with custom messages.
-    const compiler = createCompiler({ webpack, config, appName, urls, useYarn })
+    const compiler = createCompiler(webpack, config, appName, urls, useYarn)
     // Load proxy config
     const proxySetting = require(paths.appPackageJson).proxy
     const proxyConfig = prepareProxy(proxySetting, paths.appPublic)

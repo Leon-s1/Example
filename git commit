@@ -1,0 +1,1416 @@
+[33mcommit 721dae8b7f3d9372bb2a92a2251eb39f252d7b72[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: inst <chuprov.sa@gmail.com>
+Date:   Tue Oct 26 20:16:13 2021 +0700
+
+    установка необходимых скриптов для проекта
+
+[33mcommit 4c06cc0e6b45b564ca6124a8b21cdd534c04d548[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 25 09:12:14 2021 +0700
+
+    Не добавлялось поле title в список сотрудников. Добавил функцию lean() в роутер.
+
+[33mcommit 3a035fbdcbf73edfe034eb9ad05f0d797d525620[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Oct 13 23:53:35 2021 +0700
+
+    Не добавлялось поле title в список сотрудников
+
+[33mcommit 56f2e41f4839bdaae55ebe6fe6b56100590c62c2[m
+Author: inst <inst@IT.sts.local>
+Date:   Thu Oct 7 17:08:31 2021 +0700
+
+    5 lessons DZ
+
+[33mcommit 4d75d3c2c6db98793cbea4b1f371bf87a4141bbd[m
+Author: inst <inst@IT.sts.local>
+Date:   Thu Oct 7 16:48:40 2021 +0700
+
+    5 lessons
+
+[33mcommit 23c04ca2689bd99c994ecf4aaecf661e5621953f[m
+Author: inst <inst@IT.sts.local>
+Date:   Tue Oct 5 17:34:04 2021 +0700
+
+    3 lessons
+
+[33mcommit bdc4afe23640a1177a6e760a76fced485ecc7b9e[m
+Author: inst <inst@IT.sts.local>
+Date:   Tue Oct 5 09:46:51 2021 +0700
+
+    3 lessons
+
+[33mcommit b7c53498b5086ed9f2636ccfdf995d90e8190be8[m
+Merge: 6bea0e0b f378c36c
+Author: inst <inst@IT.sts.local>
+Date:   Tue Oct 5 08:26:45 2021 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit 6bea0e0bd29b818c0a99c1fa8aff63b31eb216e7[m
+Author: inst <inst@IT.sts.local>
+Date:   Tue Oct 5 08:13:00 2021 +0700
+
+    3 lessons
+
+[33mcommit f378c36c89aea14edddaafb58bf3eeaeac11f515[m
+Merge: 5b6e0ec3 6b88b938
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 4 22:46:22 2021 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit 5b6e0ec38a320ae0e8fd0f0a75ab2296871a6f2f[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 4 22:46:02 2021 +0700
+
+    lessons 3
+
+[33mcommit 6b88b938265bd2b79c994eb9731876dd8e5809d3[m
+Merge: 18be6cdd f88705ba
+Author: inst <inst@IT.sts.local>
+Date:   Mon Oct 4 08:43:58 2021 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit 18be6cdd1e7b15943ebc376707ab365d3a9df7f4[m
+Author: inst <inst@IT.sts.local>
+Date:   Mon Oct 4 08:43:00 2021 +0700
+
+    add marafon
+
+[33mcommit f88705bafa2586002fc64f1f90e0eae36aa5ecec[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Oct 3 22:39:33 2021 +0700
+
+    lessons 2
+
+[33mcommit 4f2f6476f3d33adba2da4e8dd968a321a944e915[m
+Author: inst <inst@IT.sts.local>
+Date:   Thu Sep 30 17:06:32 2021 +0700
+
+    add marafon
+
+[33mcommit ae59dd5327d884173b2544bf74c20a27c7b81179[m
+Author: inst <inst@IT.sts.local>
+Date:   Thu Sep 30 15:39:35 2021 +0700
+
+    change
+
+[33mcommit 698e75039e0f0c9d09328fa54639f137da269e47[m
+Author: inst <inst@IT.sts.local>
+Date:   Fri Sep 24 13:24:03 2021 +0700
+
+    add todo
+
+[33mcommit f9923d505944f793f2f0d43c8dd576f3bde568e3[m
+Author: inst <inst@IT.sts.local>
+Date:   Wed Sep 15 11:50:50 2021 +0700
+
+    add logo
+
+[33mcommit d5138c78a0237c68275d233ff991a2948ca1993e[m
+Author: inst <inst@IT.sts.local>
+Date:   Wed Sep 8 17:12:03 2021 +0700
+
+    add head.hbs, navbar.hbs, todos.hbs, create.hbs
+
+[33mcommit 100e634618837b8114c11c2bf5a93617bfd6af08[m
+Author: inst <inst@IT.sts.local>
+Date:   Mon Sep 6 17:34:41 2021 +0700
+
+    add index.hbs
+
+[33mcommit 5ec097dcca0df2e727f92c52b071d9150759847d[m
+Author: inst <inst@IT.sts.local>
+Date:   Mon Sep 6 15:15:29 2021 +0700
+
+    add index.js
+
+[33mcommit 8e41b059989014382059f6d8fb2b39d4ef13df53[m
+Author: inst <inst@IT.sts.local>
+Date:   Tue Jul 27 08:32:03 2021 +0700
+
+    any change
+
+[33mcommit e9c48db92be1f8c3e3a0c41158d5813018b306a1[m
+Author: inst <inst@IT.sts.local>
+Date:   Tue Jul 20 08:56:31 2021 +0700
+
+    change name
+
+[33mcommit 3013469c22edc106d3afefceb430a9d94aec0f8a[m
+Merge: b52d8d08 b14a7f96
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Mar 29 14:37:24 2021 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit b52d8d089a09fef0fe61e3fabebbc13c0fed209e[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Mar 29 14:36:31 2021 +0700
+
+    change
+
+[33mcommit b14a7f9674cf28274a1e9215d2d6984fb408757b[m
+Author: Leon-s1 <67903951+Leon-s1@users.noreply.github.com>
+Date:   Thu Mar 18 12:35:56 2021 +0700
+
+    Delete React 50 вопросов на собеседование.pdf
+
+[33mcommit 4b915825e1e96b179d91aceea1385fd1f2ac8dd5[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Mar 16 18:07:04 2021 +0700
+
+    change page works.js
+
+[33mcommit a5495644c796ed9b9aa698b41543184d5c48b320[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Mar 15 21:00:06 2021 +0700
+
+    change projects
+
+[33mcommit b37075237ccef7854846beda813db1968859caf0[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Mar 15 20:55:52 2021 +0700
+
+    change pages works.js add img
+
+[33mcommit f7dae97a29d948685c5a66bad3bbb74f78fd87a1[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Mar 15 18:11:42 2021 +0700
+
+    change
+
+[33mcommit d1dcfb719d8986841ea26c5d1277304436973648[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Mar 15 18:11:05 2021 +0700
+
+    cto change page works.js
+
+[33mcommit d07e1063f0e7d8e4dc8b7b1d794c014808e05bfb[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Mar 12 16:33:40 2021 +0700
+
+    react-typescript change TodosPage AboutPage.tsx
+
+[33mcommit 7ecf191dd0a7613f3dae36a2bc44e587f0adbea2[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Mar 11 23:11:00 2021 +0700
+
+    change app
+
+[33mcommit 0cd47ba799500df3f23c83979549a391209cbcc4[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Mar 11 18:03:32 2021 +0700
+
+    react-typescript add TodosPage AboutPage.tsx
+
+[33mcommit 28b5f8669758a9805b1a80c1c406c49efc65a5bd[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Mar 9 18:08:44 2021 +0700
+
+    react-typescript add removeHandler TodoList.tsx
+
+[33mcommit c2ef2f89bb0e852a14434de7d791561dc2dc0397[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Mar 5 16:54:49 2021 +0700
+
+    react-typescript change App.tsx
+
+[33mcommit 2bbfb3ffbb8651c3cc6333c5dd2fe885ed75b85d[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Mar 4 18:03:06 2021 +0700
+
+    react-typescript change App.tsx
+
+[33mcommit 99921ea4bcf8ad0506b95fd79291f6716d901e95[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Mar 2 18:03:30 2021 +0700
+
+    change example
+
+[33mcommit fd38ca09ea5811a92c2f29520e7d9a718aa8f1e3[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Mar 2 18:02:37 2021 +0700
+
+    react-typescript change App.tsx
+
+[33mcommit bc5bd2b189877434f4ad42117c010e632c978633[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Feb 26 16:59:38 2021 +0700
+
+    react-typescript change TodoList
+
+[33mcommit 0b02b3eed4df5eb7af910ef53c357e2467ee9c8d[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Feb 25 17:58:33 2021 +0700
+
+    react-typescript add TodoList
+
+[33mcommit 7d113d20a5df729a9bb0e3440c0ecd1da2ea7f43[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Feb 24 18:07:24 2021 +0700
+
+    react-typescript add TodoForm
+
+[33mcommit 0d5678782f3bb942a02ad8a76a48ce1f04552a02[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Sat Feb 20 16:29:07 2021 +0700
+
+    react-typescript add Navbar
+
+[33mcommit 5f1c94e9e41b0513cb9c11bd94efc8a41d68280b[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Feb 19 17:09:22 2021 +0700
+
+    add react-typescript
+
+[33mcommit 2c969cd38f53b523e36348adb2f6d9f1c74a7cff[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Feb 11 18:02:57 2021 +0700
+
+    add page Dvig.js
+
+[33mcommit 2ab2e3025eebbb816e1e57ae3669e6e9d11e4c77[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Feb 10 18:14:12 2021 +0700
+
+    add page Diagnostika.js
+
+[33mcommit 261be6c66895cb8ef48cea3ef82ee57cef6c2540[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Feb 9 18:31:03 2021 +0700
+
+    add page Diagnostika.js
+
+[33mcommit e3c43a28e5edcfeb6d5d4ca8c537f6e8e2acd3b4[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Feb 8 18:03:54 2021 +0700
+
+    add page Services.js
+
+[33mcommit 801a163c3a97270e6a29240a58ee9f6acc30e307[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Feb 5 17:06:00 2021 +0700
+
+    add slider
+
+[33mcommit 7fe6de59a39353764e2a9fc09bccc1ffbd802d01[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Feb 4 18:15:48 2021 +0700
+
+    add files
+
+[33mcommit 92b6bf759d791cc2e7299c48861d882b93e68e54[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Feb 4 18:14:18 2021 +0700
+
+    add files cto
+
+[33mcommit 54583579660bbbdba081db34afb2c610f4ba175a[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Feb 3 18:04:36 2021 +0700
+
+    add files
+
+[33mcommit 69696837c4fdf1bb419da9085a3fa83bffec8273[m
+Merge: 15090a35 929eecc4
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Feb 3 09:28:26 2021 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit 15090a3549211218ff3479fafbc1027f067ed9b3[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Feb 3 09:27:00 2021 +0700
+
+    change
+
+[33mcommit 401ad2f74b00742be58f7ef513f2e65f574ad373[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Feb 3 09:25:42 2021 +0700
+
+    change calculator
+
+[33mcommit 929eecc4707390cc6b6bcf6a014894909433a027[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Feb 2 23:26:34 2021 +0700
+
+    change home my-app
+
+[33mcommit 68fab6683009ad50e8e28b7af48e9bf376fb6ab6[m
+Merge: 83b63e97 ec2aa0e6
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Feb 2 21:30:30 2021 +0700
+
+    change home my-app
+
+[33mcommit 83b63e973436063c0bfc8ecf9946e54b1df93c54[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Feb 2 21:28:28 2021 +0700
+
+    change home my-app
+
+[33mcommit ec2aa0e6bc82cc075b2ba5c68ab8fa34204a52c5[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jan 26 18:04:35 2021 +0700
+
+    change my-app
+
+[33mcommit 805635617140ae19b4b27b2f0d8a454685ea26ea[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jan 25 18:04:32 2021 +0700
+
+    change my-app
+
+[33mcommit f3e654f1e8490d784614796b01ae5c73a80c6ff3[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jan 22 16:56:12 2021 +0700
+
+    change my-app
+
+[33mcommit 67fb7db830ab6031b47e643ea00f9bab7fe8e355[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jan 21 18:07:59 2021 +0700
+
+    change my-app
+
+[33mcommit 850e57c99bcc61dc4e76088035ce7b690dd24781[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jan 20 21:15:39 2021 +0700
+
+    change home my-app
+
+[33mcommit 3ecb526da3e0f8956a9d2c30cee37766dabbe993[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jan 20 18:03:20 2021 +0700
+
+    change my-app
+
+[33mcommit 92cf361e96961a12eb19f06bf5838cfa0edc7af7[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jan 20 18:01:23 2021 +0700
+
+    change my-app
+
+[33mcommit 02c456826c415ee9356ca09be986ab417bb9ff8a[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jan 19 18:02:39 2021 +0700
+
+    change my-app
+
+[33mcommit 4f301b6d72b6a3949061edd8cc74da20e3b6f129[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jan 18 21:40:08 2021 +0700
+
+    change home my-app
+
+[33mcommit 2df29089f3982c34eda35a4da891d22beb2365d8[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jan 18 18:16:35 2021 +0700
+
+    change my-app
+
+[33mcommit 151b4114d466b32b47d6391739a070a814a97732[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jan 15 17:03:16 2021 +0700
+
+    add my-app
+
+[33mcommit 5abcd6ab39b1f8ece7ad6c196270f8a63e94701a[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jan 15 12:38:07 2021 +0700
+
+    add pdf
+
+[33mcommit 13caabf8e3f00d3aafac0218339c90810604a85a[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jan 15 12:36:26 2021 +0700
+
+    change work react-youtube
+
+[33mcommit 3d35eb0209b79fd78ba54f1b0614a108b3ca49eb[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jan 14 22:29:34 2021 +0700
+
+    change home react-youtube
+
+[33mcommit 3edb812f6e432f7e1e056b7b0cac095d4011498a[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jan 14 17:52:24 2021 +0700
+
+    change work react-youtube
+
+[33mcommit 7c04a125b06deef7d03b61a91d97c1774756a656[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jan 13 17:56:20 2021 +0700
+
+    change work react-youtube
+
+[33mcommit 6e69cc30380facc54b269fb24ce9a360ec346a5a[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jan 12 22:38:26 2021 +0700
+
+    change home react-youtube
+
+[33mcommit 99ac70f9aa71fa60400e5806358b5f6f6439dd65[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jan 12 17:55:37 2021 +0700
+
+    change react-youtube
+
+[33mcommit 97b1e146c5343b285891fd5506217cbe3ed05bbb[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jan 11 18:04:22 2021 +0700
+
+    change react-youtube
+
+[33mcommit e27945921aaad24d077533fc3de860157ac7ec21[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 31 15:47:21 2020 +0700
+
+    add react-youtube
+
+[33mcommit cfb78068d2904e8ddbca42887f04c0841ceb5706[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 30 18:06:02 2020 +0700
+
+    add react-youtube
+
+[33mcommit 14305eea4999757cf63dd342c90c793e207d5b3f[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Dec 29 18:08:01 2020 +0700
+
+    add react-youtube
+
+[33mcommit 1720a6783487c35069e4c68ca74151dc96477d36[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Dec 29 00:03:12 2020 +0700
+
+    add react-youtube
+
+[33mcommit dbdeffc3cab45212c2bec96158c4aee9e76e5e94[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Dec 28 17:42:24 2020 +0700
+
+    add react-youtube
+
+[33mcommit d910c2af186c2a45fe723a46cd6a441d94a82c64[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Dec 27 23:10:08 2020 +0700
+
+    add react-youtube
+
+[33mcommit 01628e798a2e7068a7c07ddd3494e7df21054d55[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Dec 25 16:53:11 2020 +0700
+
+    add react
+
+[33mcommit ff1bde23fb77a7b12e3724c6c3d85ebe0425b109[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 24 23:06:54 2020 +0700
+
+    add redux
+
+[33mcommit 41b5f95006c01b30cf410f06d0da8c7e8a7a2994[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 24 17:55:45 2020 +0700
+
+    add react
+
+[33mcommit 8b24aabe6b35c389e87395d22e67e8349d33462a[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 23 18:11:06 2020 +0700
+
+    add react
+
+[33mcommit 0db90c94f7415df7a06c9a94099fca9545f1a2d7[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Dec 22 18:04:55 2020 +0700
+
+    add react
+
+[33mcommit 8195738010d8785c50e41422061ce37119c1c2eb[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Dec 21 17:54:18 2020 +0700
+
+    add react
+
+[33mcommit 2f0320ad356c04c3f3f9e7c1a5c16afb1764d533[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Dec 18 16:37:34 2020 +0700
+
+    add react
+
+[33mcommit 4e07a0a499ad38c2f56c7fbb43349c86ab50d891[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Dec 18 16:36:39 2020 +0700
+
+    add react
+
+[33mcommit 5f6a4fba90e2c48b370741a45f8c269df5f71f66[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 17 14:32:07 2020 +0700
+
+    change redux
+
+[33mcommit 7ecbefc7a9e1643690ab466ce31502627334ee59[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 17 14:31:25 2020 +0700
+
+    change redux
+
+[33mcommit 3eed4c0b11f6e5b67e7c01eaa0f71f9990185e01[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 16 18:03:26 2020 +0700
+
+    change redux
+
+[33mcommit c963aee614f33c9c6decebbd22fc08f22cefd9b5[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Dec 15 17:58:37 2020 +0700
+
+    change redux
+
+[33mcommit 16315eaa0a286e98c3c4318936c6c75f70c32d6e[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Dec 14 18:07:17 2020 +0700
+
+    change redux
+
+[33mcommit edd65c70df0b91cb942e99ac4a420424b5d7476f[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Dec 11 17:13:26 2020 +0700
+
+    change redux
+
+[33mcommit af6525aa503337cf6f788977de5b384c763915aa[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Dec 11 17:11:11 2020 +0700
+
+    change redux
+
+[33mcommit c316f9faabfcddbc08652c0526b3d40cf10f76ef[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 10 18:06:47 2020 +0700
+
+    add redux
+
+[33mcommit 3f84f0f67a25a99aab0d7a8e425437d61fbef516[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 10 00:32:31 2020 +0700
+
+    add redux
+
+[33mcommit 06766f58e699ba0fb044ae3b7accdc4c4e78c4c9[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 9 17:59:30 2020 +0700
+
+    add redux
+
+[33mcommit 852b83247939dd957fb2e784254a99bd6f4b6e16[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 9 17:58:49 2020 +0700
+
+    add redux
+
+[33mcommit d9b2a19a520a4764148ffd56b31de4ccf1aa0bc7[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Dec 7 18:01:26 2020 +0700
+
+    add redux
+
+[33mcommit 2e34acbcd64d633dc303368c7f4d2c3ff8b78f87[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Dec 7 17:59:34 2020 +0700
+
+    add redux
+
+[33mcommit 288bc2b2993e8fb1def62f2f76476f26c74a88fd[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Dec 4 16:50:03 2020 +0700
+
+    change rmaster
+
+[33mcommit 9f77e3d4259d426fda46c34b9e87c4aa5cac5f97[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Dec 3 23:33:24 2020 +0700
+
+    add redux
+
+[33mcommit cf0af720db6dc290805f7a48639756af28417d70[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 2 23:52:46 2020 +0700
+
+    add pdf
+
+[33mcommit bc2a5d40aa2004564e751a70c8742cc03f36a2f6[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 2 22:46:43 2020 +0700
+
+    change folder autospas
+
+[33mcommit abe55178c64ef3cdee10c87a7858f2f65351e7fc[m
+Merge: 1322e12e 29a5a165
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 2 21:58:52 2020 +0700
+
+    change folder autospas
+
+[33mcommit 1322e12ee6c881368f23dbc3b755126b4e7a8193[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 2 21:49:48 2020 +0700
+
+    change folder autospas
+
+[33mcommit 29a5a16572bab8c869eb3cb2235f043cdbdc8012[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Dec 2 18:03:39 2020 +0700
+
+    change autospas
+
+[33mcommit 705633bf9c8341ce6afa8c85a78a6a04c26f4052[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Dec 1 17:44:30 2020 +0700
+
+    change autospas
+
+[33mcommit ef0f7fa7e9ccede2bd70966a8b3bfc750f5dd64d[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 30 17:58:19 2020 +0700
+
+    change slider
+
+[33mcommit 1f08af8b8fae262d92725d2c4dc013bb2a4a75b6[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 30 17:48:25 2020 +0700
+
+    change autospas
+
+[33mcommit 6f574423a5216538644fb9cdb7ad115ab7e4036d[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 30 17:46:52 2020 +0700
+
+    change slider
+
+[33mcommit c36f088c23cf073974832069a4bbe01d221cdcf4[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 30 17:39:31 2020 +0700
+
+    change slider and autospas
+
+[33mcommit f876de7bdb761ccdd8f99593e5e5cb034167b476[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Nov 27 16:50:02 2020 +0700
+
+    change folder autospas adaptiv
+
+[33mcommit 0092d0797ee5976ed2836b1d56dfa19dbc4aece7[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Nov 26 18:12:19 2020 +0700
+
+    change folder autospas adaptiv
+
+[33mcommit daac701c6a2fa6b1fd77b3cba13ea8801ea81011[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Nov 25 18:07:43 2020 +0700
+
+    change folder autospas slaider
+
+[33mcommit edaa017217d56e49f2a3076e18ebc1020ddec0a8[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Nov 24 17:51:02 2020 +0700
+
+    change folder autospas
+
+[33mcommit e20862a9d1491d18e51f7d034f954c56973f95e5[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Nov 19 18:02:02 2020 +0700
+
+    change folder autospas
+
+[33mcommit 8329fe07fec025d101434f28812c06b562f0e96d[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Nov 17 18:02:42 2020 +0700
+
+    change folder autospas
+
+[33mcommit fc033a329f7951948a9918cb839d62f1862187ae[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Nov 13 17:46:36 2020 +0700
+
+    change folder autospas
+
+[33mcommit 1212dfae86dec669e121e21e919ce79bce14052e[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Nov 12 18:09:44 2020 +0700
+
+    change folder autospas
+
+[33mcommit a08704fb331133610d644d6b405d6fbe3c02aac9[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Nov 11 23:16:03 2020 +0700
+
+    change folder autospas
+
+[33mcommit b31dc1f1bfb9a96cf9655cec1effbc0c427e6dd4[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Nov 11 18:01:50 2020 +0700
+
+    change blok container
+
+[33mcommit 781a47c0fb02091d31957cb4f02aa4713588b6b9[m
+Merge: 70d6ea79 734b5f2a
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Nov 10 18:21:05 2020 +0700
+
+    change autospas
+
+[33mcommit 734b5f2adaa705684a1fdff141d2306783252a6f[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 9 23:13:53 2020 +0700
+
+    change folder autospas
+
+[33mcommit 70d6ea7934b9c54d0be513fecc64585ad8ff6a6a[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 9 18:07:17 2020 +0700
+
+    change autospas
+
+[33mcommit 6c191d68680b5932a5c6e4ac01151efc32259cf9[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 9 18:01:18 2020 +0700
+
+    change autospas
+
+[33mcommit daa7d123bb1bba851628dc151f1f93f52bdf565a[m
+Merge: 627210c1 2a7a5423
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 9 13:02:40 2020 +0700
+
+    change autospas
+
+[33mcommit 627210c16bcbea50e9126ae5c35644e33495fdea[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Nov 9 13:00:00 2020 +0700
+
+    change autospas
+
+[33mcommit 2a7a54233b0b3d3c4f4c4dfa3f1f3427a7e031e3[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Nov 8 20:02:58 2020 +0700
+
+    change js-plagins-practice
+
+[33mcommit ecd07d186f66580689b14f83dca60aefb70e0fa4[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Nov 8 20:00:03 2020 +0700
+
+    change folder autospas
+
+[33mcommit 6d311dbcf46e75e0b4ebc3ad3ea3cfe066419e83[m
+Merge: c79b2fd5 94ca01a0
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 26 15:53:31 2020 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit 94ca01a0b0956325c9e3d62c3eeab96700def016[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Oct 25 16:59:16 2020 +0700
+
+    change folder autospas
+
+[33mcommit d6e7a381d62a1342d2ccf8a4afb35277c64ab23a[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 19 22:44:23 2020 +0700
+
+    change folder autospas
+
+[33mcommit c79b2fd5e6a0255a854f5eea05ae0c7839332c64[m
+Merge: b8355963 c1bd68f7
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Oct 15 14:07:13 2020 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit c1bd68f758fabe0f2405eef37e6c72d3a22f67b1[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 12 23:07:39 2020 +0700
+
+    change folder autospas
+
+[33mcommit b8355963a674a2e6289df9b9a2ff3ef256a4b48b[m
+Merge: b51f2bb7 3f8f2a81
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 12 11:13:27 2020 +0700
+
+    Merge branch 'master' of https://github.com/Leon-s1/Example
+
+[33mcommit b51f2bb79550b391c47e8c4a86654cb50a588485[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Oct 12 11:05:46 2020 +0700
+
+    webpack-course 2020
+
+[33mcommit 3f8f2a81d74fc57982cbbc91c0e11c7d53a270c8[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Oct 11 22:50:21 2020 +0700
+
+    change folder autospas
+
+[33mcommit 05822633b5980585df2a09f448cba81f85e07e87[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Oct 7 09:00:54 2020 +0700
+
+    change folder autospas
+
+[33mcommit 1b1ad733f90043aa6a76799e6eb288acf7b38432[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Oct 6 11:12:55 2020 +0700
+
+    add folder autospas
+
+[33mcommit 032e5b93133620a9ad3aa53f2666613e6aedecdf[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Oct 6 11:11:03 2020 +0700
+
+    add folder autospas"
+
+[33mcommit ca80c6eccf1b26fdb5d8d9c392771d331f1f345f[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Oct 1 23:31:40 2020 +0700
+
+    change webpack-demo home
+
+[33mcommit 6565945aa08df801e532e30a533491f34aa37a40[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Oct 1 15:21:31 2020 +0700
+
+    change webpack-demo home
+
+[33mcommit 512e7b87f2c12885aa177a69c3c9816e4597bf7c[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Sep 30 18:13:15 2020 +0700
+
+    webpack-demo work
+
+[33mcommit 05c6c2e097d5915d42041cd4434c5da9338c3374[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Sep 23 23:20:18 2020 +0700
+
+    change webpack-course-2020 home
+
+[33mcommit 0d03cfb882455d158af54e81c657ec7c2f7b6097[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Sep 22 10:35:25 2020 +0700
+
+    change webpack-course-2020 home
+
+[33mcommit 197ae66eed07554e1d2b28485d40c2be32e07998[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Sep 16 17:58:20 2020 +0700
+
+    webpack-course change work
+
+[33mcommit d30aa5f4883d4ddf31d1748ea61c1e55c9313595[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Sep 16 17:57:19 2020 +0700
+
+    webpack-course change work
+
+[33mcommit 3e3d7ef12a73f44df10bff7c0f450ddc9337c343[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Sep 15 18:05:50 2020 +0700
+
+    webpack-course change work
+
+[33mcommit 2911b751c487bdcf39fb93c6a52dea1264e0784e[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Sep 14 23:48:42 2020 +0700
+
+    change webpack-course-2020 home
+
+[33mcommit c76be7a3c6462c8768796afc5c89047a1c745d94[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Sep 14 18:01:20 2020 +0700
+
+    webpack-course
+
+[33mcommit 5edd84dfad0d02bfae36ba3c488dc9c83ececcf9[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Sep 11 19:25:32 2020 +0700
+
+    change webpack-course-2020
+
+[33mcommit 688b2d5ee0bc98efee1f35c3bfd8ffca294d62f0[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Sep 10 20:12:43 2020 +0700
+
+    change webpack-course-2020
+
+[33mcommit dfbb809456d30f70cf2385f06453bf709b21aa37[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Sep 10 11:51:55 2020 +0700
+
+    change webpack-course-2020 style.css
+
+[33mcommit cbde29fdc162d43bb2c3df79ceca2920d5eb31c8[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Sep 10 11:51:00 2020 +0700
+
+    change webpack-course-2020 style.css
+
+[33mcommit 8bb5519223094ccc48c6f1658fe23262b49735bd[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Sep 9 08:40:44 2020 +0700
+
+    change webpack-course-2020
+
+[33mcommit 382f782a13d329ed81c71cbc42388c8b31426b5b[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Sep 7 22:20:01 2020 +0700
+
+    change webpack-course-2020
+
+[33mcommit 50c1b46ef89de18c4178bf53f980aad580d29ec7[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Sep 4 17:06:40 2020 +0700
+
+    webpack-course
+
+[33mcommit 56e7ee795f7625de244e11df6a3aaee0acb91401[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Sep 3 18:19:15 2020 +0700
+
+    node.js
+
+[33mcommit 819767bfc1eea73bb4ca832e4cccefcaff7f1ac7[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Sep 2 17:58:26 2020 +0700
+
+    node.js
+
+[33mcommit a019311d5d21264cf85b4af0edbf14783eb78966[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Sep 1 10:12:47 2020 +0700
+
+    delete all js
+
+[33mcommit 8ca4ff859dc72c30a0e8908773ea2f659c53247b[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Aug 31 18:04:17 2020 +0700
+
+    js-concepts
+
+[33mcommit 03bb728919d58f1e6baaa858a7d7a32053677321[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Aug 28 14:05:30 2020 +0700
+
+    change js-concepts
+
+[33mcommit d7482d59df2f416bcf9fe443c397b17b56f20fb5[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Aug 28 00:07:07 2020 +0700
+
+    change js-concepts
+
+[33mcommit 4841254b60bb6f84cd51d0631b3ae61e25f14b8c[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Aug 21 17:03:23 2020 +0700
+
+    js-concepts
+
+[33mcommit a91e973d556ba53bac891510357d3d00266ef6bb[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Aug 20 18:06:51 2020 +0700
+
+    js-concepts
+
+[33mcommit 8ac27051d6b735ee4a11354b641b356f9226d02b[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Aug 19 18:10:27 2020 +0700
+
+    change 17-localstorage
+
+[33mcommit fd28b14d56fc711d79c635aad1202aabf9b257ea[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Aug 19 14:53:28 2020 +0700
+
+    change 16-destruct
+
+[33mcommit f26600cd5a1761ad507e2b247900803b0c0f9dba[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Aug 19 12:10:10 2020 +0700
+
+    change 15-spred-rest
+
+[33mcommit aaf26acc3bb061c6e547dc1ff2df6b5bc6719a78[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Aug 18 17:59:28 2020 +0700
+
+    change 15-spred-rest
+
+[33mcommit aea7630d0e358c130995896c027d663cb0ac17d6[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Aug 18 11:18:45 2020 +0700
+
+    change 14-request-server
+
+[33mcommit 066ea3fb416fcb668a68bad8839c8d6001fb4c11[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Aug 17 18:00:52 2020 +0700
+
+    change 14-request-server
+
+[33mcommit fcbba22ed2b6e94e571e2af647e4bfaf5c30d232[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Aug 16 22:49:23 2020 +0700
+
+    change 14 request server
+
+[33mcommit 019d61d22ae5d4ec90acd7bc0aa771cef79fa092[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Aug 10 12:22:30 2020 +0700
+
+    change 13-map-set
+
+[33mcommit be27dbdf62ccdbdf315a0d07b1948e85d124b5fd[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Aug 7 17:08:06 2020 +0700
+
+    change 13-map-set map.js
+
+[33mcommit c8afe416496cb6e3155cf72734b0d01935e95374[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Aug 6 17:55:22 2020 +0700
+
+    change 13-map-set map.js
+
+[33mcommit bd6600b78e282192b1b87b5d73b9bd9fef8abd8e[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Aug 5 18:02:55 2020 +0700
+
+    add 13-map-set folder index.js
+
+[33mcommit 5a6c6889e0686b3a926e3ddabae3eb2111098e49[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Aug 5 17:59:59 2020 +0700
+
+    change 12-massiv folder index.js
+
+[33mcommit 8a6ea77df5019fe06589889f1e870d5571dd17b4[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Aug 4 15:36:22 2020 +0700
+
+    change 12-massiv folder index.js
+
+[33mcommit 4079f036351ce97df901b27b152a378ecca67c00[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Aug 3 17:53:21 2020 +0700
+
+    add 12-massiv folder index.js
+
+[33mcommit 5535d4c19dbbb68b76600cb920685f35d74f2867[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Aug 3 17:49:56 2020 +0700
+
+    change 11-generator folder index.js
+
+[33mcommit 768a68bd890cfd91d6b4607bb446f1bbeb2821ed[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Aug 3 15:17:23 2020 +0700
+
+    add 11-generator folder index.js
+
+[33mcommit f86cab074168c6f250b9a5e6086d489f1d05895b[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Aug 3 15:13:23 2020 +0700
+
+    change 10-proxy  folder index.js
+
+[33mcommit 60e8ee91cb3ab3160b5d62fbbec83fe7465c0df0[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Sun Aug 2 21:58:06 2020 +0700
+
+    change index.js in 10-proxy
+
+[33mcommit d810bb3d929f6ccc4ae44556ebe9770cf3cfc1a6[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jul 31 12:47:19 2020 +0700
+
+    change index.js in 9-proxy
+
+[33mcommit 79685e0875261033859bbee270a2935209e96b8b[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jul 31 12:32:11 2020 +0700
+
+    change index.js in 9-proxy
+
+[33mcommit d34a0d14ecc48496f0915d37bb24f15cba25f6ba[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jul 30 23:56:02 2020 +0700
+
+    change index.js in 9-proxy
+
+[33mcommit 2ca558a443da5b4ae07856738c48efa0ff271659[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 29 12:54:45 2020 +0700
+
+    change index.js in 8-async-await
+
+[33mcommit acdd2b9ad5b9bdc4e626d943beae5a4e37d345b8[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 28 23:32:00 2020 +0700
+
+    add index.js in 8-async-await
+
+[33mcommit 3398b37068099434dd8be82c27dbeba9a532ee06[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 28 23:28:01 2020 +0700
+
+    change index.js in 7-es6-class
+
+[33mcommit fa5c3f43c978b7268afa9227c23a23fb35bae222[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 28 22:24:26 2020 +0700
+
+    change index.js in 7-es6-class
+
+[33mcommit 690680bed4e5f2e9b9aa17c1c9feca65827afc6f[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 28 12:30:52 2020 +0700
+
+    add index.js in 6-objectcreate
+
+[33mcommit 14aa061cc73aa122c01f842485bcf89e48fb0094[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 28 09:47:25 2020 +0700
+
+    add folder 6 object
+
+[33mcommit 8d71592c9eb9477843cca741ccd746a086218b14[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jul 27 13:04:31 2020 +0700
+
+    add index.js promis 5
+
+[33mcommit 26c060061f5af3c8f5c778f51b5247a3dcf64ed3[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jul 16 22:35:46 2020 +0700
+
+    changed 5-promise index.js
+
+[33mcommit 44131d586922047a00b56364b276d6ea0be3b234[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jul 16 20:25:53 2020 +0700
+
+    changed all-js
+
+[33mcommit 17a9977edd9dfeab603865d7c5770c727152d3e5[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jul 16 17:49:45 2020 +0700
+
+    add 5-promise  folder index.js
+
+[33mcommit 58eb9626130510b4e917f5f8486cf285d505c9b0[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 18:40:11 2020 +0700
+
+    change 4-async folder index.js
+
+[33mcommit 84196f9761163ee526649c13cd120f0fd03f30f1[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 16:32:08 2020 +0700
+
+    change 4-async folder index.js
+
+[33mcommit 48da7d8b5219764de7d4429745f37cf35ef2fef9[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 12:58:41 2020 +0700
+
+    add 4-async folder
+
+[33mcommit 877145bf915647eca7894ff517408b9980c38499[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 12:03:28 2020 +0700
+
+    change index.js 3 zamikanie
+
+[33mcommit 0824b1d8c1e65f566354223de17fc955e50a61d3[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 09:53:23 2020 +0700
+
+    change folders
+
+[33mcommit 2a49985afaf9bf24c058c76da0255a76808d73c0[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 09:49:57 2020 +0700
+
+    change folders
+
+[33mcommit 39e0a6b082b26f1430fe39ec68219d87da4ad08b[m
+Merge: e027101d 775b6bcc
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 09:37:50 2020 +0700
+
+    change complex JS folder 3
+
+[33mcommit e027101d00ea417194c77f12fd40878b3d1f5a0f[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 15 09:30:09 2020 +0700
+
+    change complex JS folder 3
+
+[33mcommit 775b6bcc7066b8cbc3b356b97e600e9126019176[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 14 20:48:05 2020 +0700
+
+    changed index.js zamikaniya
+
+[33mcommit a48865d7aac55ec7e446fcfff58af9280c41bac0[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 14 17:12:37 2020 +0700
+
+    add complex JS folder 2
+
+[33mcommit b87d7ca7b38118e8c07d95e71f70a9bf4ef2574c[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 14 14:18:23 2020 +0700
+
+    add complex JS folder 2
+
+[33mcommit 423f3b00d3e36a3695fd6be80786ae9b48d65be3[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Tue Jul 14 10:12:21 2020 +0700
+
+    add complex JS
+
+[33mcommit a640ed1d07c84299fab8370efd6383fd6fdddb06[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jul 13 23:15:46 2020 +0700
+
+    changed confirm.js
+
+[33mcommit 0b771e8009a087f2eff66b891438266a8f9105db[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jul 13 18:00:28 2020 +0700
+
+    change file index.js
+
+[33mcommit 3cf15c80018b7485391c5e2dce494b724ba53d27[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jul 10 16:15:36 2020 +0700
+
+    change file modal.js
+
+[33mcommit cdc14384c5ad725afce054d912cca3b6bcd3fd79[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jul 10 13:23:56 2020 +0700
+
+    change file modal.js
+
+[33mcommit 3ab782b5432be379da1fbb147081ddc5b5597c6c[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Fri Jul 10 11:03:56 2020 +0700
+
+    change file modal.js void setContent
+
+[33mcommit 290377e0f8dafe8dd37561f3b238b29d18db1b5c[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jul 9 17:56:30 2020 +0700
+
+    change modal.css and index.js
+
+[33mcommit 187311a803c98a38d8237e9e9d52aca567891d27[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jul 9 12:41:01 2020 +0700
+
+    change modal.css
+
+[33mcommit c3f3162bd9ae0a8d9e480031d6ce7b5cba1f2631[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Thu Jul 9 10:39:49 2020 +0700
+
+    change modal.css
+
+[33mcommit b8bede37a7a17b1c9469a64f0a16c1e404786f18[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 23:31:39 2020 +0700
+
+    change file modal.js index.html index.js
+
+[33mcommit 7e7e48fbf100d9d636668278604236c0c120b133[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 21:30:32 2020 +0700
+
+    changed modal.css
+
+[33mcommit 6a43e32aef193500902a16afd250db0647841bce[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 20:48:41 2020 +0700
+
+    change modal.css file
+
+[33mcommit b762c500bc918b501d9980165c949812c6906d59[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 20:47:06 2020 +0700
+
+    change modal.css file
+
+[33mcommit 701afd46e40ad3f038e42b78791a6b6c7cc5f4e6[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 18:00:42 2020 +0700
+
+    change index.html
+
+[33mcommit a55a6507824c71b72899e7efa5f61cac828a3b9b[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 17:58:46 2020 +0700
+
+    change index.html
+
+[33mcommit 1f394c5a4fc2509eed78aa956f2d7ced2e1372d9[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 17:21:58 2020 +0700
+
+    change index.html
+
+[33mcommit 55aba51dd3cecc9609845f972ee827992513469e[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 17:02:43 2020 +0700
+
+    change folder plagins
+
+[33mcommit 730ff4e98f1f660599f6be0466c5ece205f497e6[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 16:39:50 2020 +0700
+
+    add modal.js
+
+[33mcommit 84303f9b8cef53592479b8c30978c858f7a7c8ba[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 16:31:22 2020 +0700
+
+    add index.js
+
+[33mcommit 28d8e37eb48cd386ae82ce5ee07fe884a7d8e7be[m
+Author: leon-s1 <chuprov.sa@gmail.com>
+Date:   Wed Jul 8 16:19:48 2020 +0700
+
+    add index.html and base.js
+
+[33mcommit db25c767ee6129180000ea506a7cd45f55bc655e[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jul 6 22:45:31 2020 +0700
+
+    adding some comments
+
+[33mcommit 925ca307543d86b8e150a4273d6c498b86453487[m
+Author: Leon-s1 <chuprov.sa@gmail.com>
+Date:   Mon Jul 6 22:36:36 2020 +0700
+
+    test commit
