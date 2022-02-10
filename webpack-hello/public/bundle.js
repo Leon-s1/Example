@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet numTimesClicked = 0\r\n\r\nfunction win() {\r\n    alert('You win!')\r\n    reset()\r\n}\r\n\r\nfunction reset() {\r\n    numTimesClicked = 0\r\n}\r\n\r\nfunction click() {\r\n    numTimesClicked++\r\n    console.log('You have been clicked!')\r\n    if (numTimesClicked === 10)\r\n        win()\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (click);\n\n//# sourceURL=webpack://webpack-hello/./src/game.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet numTimesClicked = 0\r\n\r\nfunction win() {\r\n    alert('You win!')\r\n    reset()\r\n}\r\n\r\nfunction reset() {\r\n    numTimesClicked = 0\r\n}\r\n\r\nfunction click() {\r\n    numTimesClicked++\r\n    console.log('You have been clicked!')\r\n    if (numTimesClicked === 10) win()\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (click);\n\n//# sourceURL=webpack://webpack-hello/./src/game.js?");
 
 /***/ }),
 

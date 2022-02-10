@@ -12,8 +12,7 @@ function reset() {
 function click() {
     numTimesClicked++
     console.log('You have been clicked!')
-    if (numTimesClicked === 10)
-        win()
+    if (numTimesClicked === 10) win()
 }
 
 export default click;
