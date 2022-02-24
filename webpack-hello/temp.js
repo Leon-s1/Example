@@ -376,3 +376,82 @@ to {
 transform: rotateY(1turn);
 }
 }
+
+//лоадер дым
+<div className="smoke">
+<ul>
+<li>С</li>
+<li>И</li>
+<li>Б</li>
+<li>Т</li>
+<li>Р</li>
+<li>А</li>
+<li>Н</li>
+<li>С</li>
+<li>С</li>
+<li>Е</li>
+<li>Р</li>
+<li>В</li>
+<li>И</li>
+<li>С</li>
+</ul>
+</div>
+
+body {
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, sans-serif;
+background: url(http://images.vfl.ru/ii/1513151627/86f4810d/19788129.jpg
+) no-repeat center top / cover;
+height: 100vh;
+}
+.smoke {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.smoke ul {
+margin: 0;
+padding: 0;
+display: flex;
+}
+.smoke ul li {
+list-style: none;
+color: #fff;
+font-size: 6em;
+font-weight: bold;
+letter-spacing: 10px;
+}
+.smoke ul:hover li {
+animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+0% {
+transform: rotate(0deg) translateY(0px);
+opacity 1;
+filter: blur(1px);
+}
+100% {
+transform: rotate(45deg) translateY(-200px);
+opacity: 0;
+filter: blur(20px);
+}
+}
+
+.smoke ul li:nth-child(1) {
+animation-delay: 0s;
+}
+.smoke ul li:nth-child(2) {
+animation-delay: .4s;
+}
+.smoke ul li:nth-child(3) {
+animation-delay: .8s;
+}
+.smoke ul li:nth-child(4) {
+animation-delay: 1.2s;
+}
+.smoke ul li:nth-child(5) {
+animation-delay: 1.6s;
+}
