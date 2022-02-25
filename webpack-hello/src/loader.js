@@ -1,7 +1,10 @@
-// import $ from "jquery"
-// const $ = require('jquery')
-global.jQuery = $;
-global.$ = $;
+// in a module
+// $('#item'); // <= works
+// jQuery('#item'); // <= also works
+// $ is automatically set to the exports of module "jquery"
+
+
+
 
 
 function Ticker( elem ) {
@@ -80,3 +83,4 @@ $words.each( function() {
         ticker = new Ticker( $this ).reset();
     $this.data( 'ticker', ticker  );
 });
+

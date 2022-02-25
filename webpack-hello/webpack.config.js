@@ -1,4 +1,7 @@
 const path = require('path');
+const Webpack = require('webpack')
+const WebpackDevServer = require('webpack-dev-server');
+
 
 module.exports = {
     mode: 'development',
@@ -7,13 +10,15 @@ module.exports = {
         path: path.resolve(__dirname, 'public'),
         filename: 'bundle.js'
     },
+    // devServer: {
+    //     contentBase: './dist'
+    // },
 
-    plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
-        }),
-    ]
-    // type: "module"
-};
+        plugins: [
+            new Webpack.ProvidePlugin({
+                $: 'jquery',
+                jQuery: 'jquery'
+            }),
+        ]
+    }
 
