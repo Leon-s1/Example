@@ -16,7 +16,8 @@ body {
 }
 
 body {
-    background: radial-gradient(#222922, #000500);
+    /*background: radial-gradient(#222922, #000500);*/
+    background: #f0f0f0;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     overflow: hidden;

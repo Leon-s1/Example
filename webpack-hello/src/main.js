@@ -1,9 +1,13 @@
+// const Webpack = require('webpack')
+// const WebpackDevServer = require('webpack-dev-server')
+
+
 import React from "react";
 // import $ from 'jquery';
 import click from "./game"
 // in a module
-$('#item'); // <= works
-jQuery('#item'); // <= also works
+// $('#item'); // <= works
+// jQuery('#item'); // <= also works
 // $ is automatically set to the exports of module "jquery"
 // global.jQuery = $;
 // global.$ = $;
