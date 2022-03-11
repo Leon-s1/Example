@@ -244,6 +244,10 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -281,9 +285,9 @@ function _start() {
 start().then(console.log);
 var unused = 42;
 
-var Util = function Util() {
+var Util = /*#__PURE__*/_createClass(function Util() {
   _classCallCheck(this, Util);
-};
+});
 
 _defineProperty(Util, "id", Date.now());
 
@@ -339,7 +343,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var post = new _models_Post__WEBPACK_IMPORTED_MODULE_1__["default"]('Webpack Post Title', _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_2__["default"]); //создаем объект поста
 
-jquery__WEBPACK_IMPORTED_MODULE_0__('pre').addClass('code').html(post.toString()); //вывод инфо в браузер при помощи библиотеки JQURY
+jquery__WEBPACK_IMPORTED_MODULE_0__('pre').addClass('code').html(post.toString()); //вывод инфо в браузер при помощи библиотеки JQUERY
 
 var App = function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
@@ -374,7 +378,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 var Post = /*#__PURE__*/function () {
   function Post(title, img) {
@@ -426,11 +430,9 @@ var Post = /*#__PURE__*/function () {
   !*** ./styles/scss.scss ***!
   \**************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-// extracted by mini-css-extract-plugin
-    if(false) { var cssReload; }
-  
+throw new Error("Module build failed (from ../node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ../node_modules/sass-loader/dist/cjs.js):\nError: Missing binding D:\\Example\\webpack-course-2020\\node_modules\\node-sass\\vendor\\win32-x64-83\\binding.node\nNode Sass could not find a binding for your current environment: Windows 64-bit with Node.js 14.x\n\nFound bindings for the following environments:\n  - Windows 64-bit with Node.js 12.x\n\nThis usually happens because your environment has changed since running `npm install`.\nRun `npm rebuild node-sass` to download the binding for your current environment.\n    at module.exports (D:\\Example\\webpack-course-2020\\node_modules\\node-sass\\lib\\binding.js:15:13)\n    at Object.<anonymous> (D:\\Example\\webpack-course-2020\\node_modules\\node-sass\\lib\\index.js:14:35)\n    at Module._compile (D:\\Example\\webpack-course-2020\\node_modules\\v8-compile-cache\\v8-compile-cache.js:194:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)\n    at Module.load (internal/modules/cjs/loader.js:937:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:778:12)\n    at Module.require (internal/modules/cjs/loader.js:961:19)\n    at require (D:\\Example\\webpack-course-2020\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at getDefaultSassImplementation (D:\\Example\\webpack-course-2020\\node_modules\\sass-loader\\dist\\utils.js:43:10)\n    at getSassImplementation (D:\\Example\\webpack-course-2020\\node_modules\\sass-loader\\dist\\utils.js:57:30)\n    at Object.loader (D:\\Example\\webpack-course-2020\\node_modules\\sass-loader\\dist\\index.js:34:59)\n    at D:\\Example\\webpack-course-2020\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at runSyncOrAsync (D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:143:3)\n    at iterateNormalLoaders (D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:232:2)\n    at Array.<anonymous> (D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:205:4)\n    at Storage.finished (D:\\Example\\webpack-course-2020\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:55:16)\n    at D:\\Example\\webpack-course-2020\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:91:9\n    at D:\\Example\\webpack-course-2020\\node_modules\\graceful-fs\\graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)");
 
 /***/ }),
 
