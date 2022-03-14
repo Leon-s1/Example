@@ -258,7 +258,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function start() {
   return _start.apply(this, arguments);
-}
+} // eslint-disable-next-line no-console
+
 
 function _start() {
   _start = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -287,13 +288,16 @@ var unused = 42;
 
 var Util = /*#__PURE__*/_createClass(function Util() {
   _classCallCheck(this, Util);
-});
+}); // eslint-disable-next-line no-console
+
 
 _defineProperty(Util, "id", Date.now());
 
-console.log('Util id', Util.id);
+console.log('Util id', Util.id); // eslint-disable-next-line no-console
+
 console.log(unused);
 __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.t.bind(null, /*! lodash */ "../node_modules/lodash/lodash.js", 7)).then(function (_) {
+  // eslint-disable-next-line no-console
   console.log('Lodash ', _.random(0, 42, true));
 });
 
@@ -430,9 +434,11 @@ var Post = /*#__PURE__*/function () {
   !*** ./styles/scss.scss ***!
   \**************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ../node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ../node_modules/sass-loader/dist/cjs.js):\nError: Missing binding D:\\Example\\webpack-course-2020\\node_modules\\node-sass\\vendor\\win32-x64-83\\binding.node\nNode Sass could not find a binding for your current environment: Windows 64-bit with Node.js 14.x\n\nFound bindings for the following environments:\n  - Windows 64-bit with Node.js 12.x\n\nThis usually happens because your environment has changed since running `npm install`.\nRun `npm rebuild node-sass` to download the binding for your current environment.\n    at module.exports (D:\\Example\\webpack-course-2020\\node_modules\\node-sass\\lib\\binding.js:15:13)\n    at Object.<anonymous> (D:\\Example\\webpack-course-2020\\node_modules\\node-sass\\lib\\index.js:14:35)\n    at Module._compile (D:\\Example\\webpack-course-2020\\node_modules\\v8-compile-cache\\v8-compile-cache.js:194:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1101:10)\n    at Module.load (internal/modules/cjs/loader.js:937:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:778:12)\n    at Module.require (internal/modules/cjs/loader.js:961:19)\n    at require (D:\\Example\\webpack-course-2020\\node_modules\\v8-compile-cache\\v8-compile-cache.js:161:20)\n    at getDefaultSassImplementation (D:\\Example\\webpack-course-2020\\node_modules\\sass-loader\\dist\\utils.js:43:10)\n    at getSassImplementation (D:\\Example\\webpack-course-2020\\node_modules\\sass-loader\\dist\\utils.js:57:30)\n    at Object.loader (D:\\Example\\webpack-course-2020\\node_modules\\sass-loader\\dist\\index.js:34:59)\n    at D:\\Example\\webpack-course-2020\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at runSyncOrAsync (D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:143:3)\n    at iterateNormalLoaders (D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:232:2)\n    at Array.<anonymous> (D:\\Example\\webpack-course-2020\\node_modules\\loader-runner\\lib\\LoaderRunner.js:205:4)\n    at Storage.finished (D:\\Example\\webpack-course-2020\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:55:16)\n    at D:\\Example\\webpack-course-2020\\node_modules\\enhanced-resolve\\lib\\CachedInputFileSystem.js:91:9\n    at D:\\Example\\webpack-course-2020\\node_modules\\graceful-fs\\graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:73:3)");
+// extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ }),
 
