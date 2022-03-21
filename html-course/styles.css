@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: #f1f1f1;
+  color: #0f141e;
+}
+
+.info-text {
+  font-style: italic;
+  font-weight: bold;
+  color: #86898f;
+}
+.card {
+  border: 3px solid red;
+  border-radius: 10px;
+}
+
+.bg-yellow {
+  background: #fff9dc;
+}
+.bg-red {
+  background: #ffe5e5;
+}
+.bg-green {
+  background: #e5ffe7;
+}
