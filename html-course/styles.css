@@ -52,3 +52,49 @@ body {
 .bg-green {
   background: #e5ffe7;
 }
+a {
+  color: #86898f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: green;
+}
+
+.btn {
+  background: rgb(247, 111, 111);
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+  color: chartreuse;
+}
+.btn:active {
+  color: green;
+}
+.list {
+  padding: 0 20px;
+}
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+.table {
+  width: 100%;
+}
+.table td {
+  padding-bottom: 10px;
+}
+.table td:nth-child(2),
+table td:nth-child(3) {
+  color: #86898f;
+}

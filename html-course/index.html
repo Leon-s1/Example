@@ -33,13 +33,13 @@
     <hr />
     <h2>Домашнее задание</h2>
     <img  src="avatarka.jpg"  alt="Сергей Чупров" class="avatar"/>
-    <div class="info">
+    <div class="info" >
     <h4>Список социальных сетей</h4>
     <p><a href="https://www.tiktok.com/ru-RU" target="_blank">Tic Toc</a></p>
     <p><a href="https://www.ok.ru" target="_blank">Одноклассники</a></p>
 <div class="card bg-green">
     <h2>Список моих хобби</h2>
-    <ol>
+    <ol class="list">
       <li>Бег</li>
       <li>Путешевствия</li>
       <li>Плавание</li>
@@ -50,12 +50,17 @@
 </div>
     <hr />
   <div class="card bg-red">
-    <table>
-      <thead>
+    <table class=" table">
+      <!-- <thead>
         <th>Название работы</th>
         <th>Должность</th>
         <th>Год работы</th>
-      </thead>
+      </thead> -->
+      <tr>
+        <td>ВТБ (ПАО)</td>
+        <td>Главный специалист ОИТ</td>
+        <td>12 лет</td>
+      </tr>
       <tr>
         <td>Сибтранссервис</td>
         <td>Системный администратор</td>
@@ -79,7 +84,7 @@
         <br />
         <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение"> </textarea>
       </div>
-      <input type="submit" value="Отправить"></input>
+      <input type="submit" value="Отправить" class="btn"></input>
     </form>
   </div>
   </body>
