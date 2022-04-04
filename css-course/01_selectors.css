@@ -1,0 +1,37 @@
+/* Селектор * обращается ко всем элементам */
+* {
+}
+
+/* Tag name */
+body {
+  color: #0f141e;
+  background: #e2dfdf;
+}
+/* class */
+.card {
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 14px;
+}
+
+.html {
+  background: #de4c26;
+  color: white;
+}
+.css {
+  background: #2160aa;
+  color: white;
+}
+/* id */
+#header {
+  background: #ddd;
+  padding: 10px;
+}
+
+/* #header,
+.card {
+  margin-bottom: 10px;
+} */

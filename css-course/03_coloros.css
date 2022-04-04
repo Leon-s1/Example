@@ -1,0 +1,26 @@
+.color-1 {
+  color: red;
+}
+/* используется шифр RGB RedGreenBlue */
+/* диапазон от 00 - FF */
+.color-2 {
+  /* color: #4b0082; */
+  color: #000000;
+}
+/* Сокращенная запись из трех цифр */
+.color-3 {
+  color: #ddd;
+}
+/* диапазон 0 - 255 */
+.color-4 {
+  color: rgb(0, 0, 0);
+}
+
+/* диапазон 0 - 255 */
+.color-5 {
+  color: rgba(0, 255, 0, 0.5);
+}
+
+.color-6 {
+  color: #de4c26;
+}
