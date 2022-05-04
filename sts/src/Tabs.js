@@ -6,6 +6,8 @@
 // import Box from '@mui/material/Box';
 import './Tabs.css'
 import Len_Kuz from "./data/Len_Kuz";
+import Rej from "./data/Rej"
+import Gay from"./data/Gay"
 // import { createTheme } from '@mui/material/styles';
 // import red from '@mui/material/colors/red';
 // import {styled} from "@mui/material/styles";
@@ -167,13 +169,13 @@ export default function LabTabs() {
                     </TabList>
                 </Box>
                 <TabPanel value="1"><Len_Kuz /></TabPanel>
-                <TabPanel value="2">Item Two</TabPanel>
-                <TabPanel value="3">Item Three</TabPanel>
+                <TabPanel value="2"><Len_Kuz /></TabPanel>
+                <TabPanel value="3"><Rej /></TabPanel>
                 <TabPanel value="4">Item Three</TabPanel>
                 <TabPanel value="5">Item Three</TabPanel>
                 <TabPanel value="6">Item Three</TabPanel>
-                <TabPanel value="7">Item Three</TabPanel>
-                <TabPanel value="8">Item Three</TabPanel>
+                <TabPanel value="7"><Gay /></TabPanel>
+                <TabPanel value="8"><Rej /></TabPanel>
             </TabContext>
         </Box>
     );

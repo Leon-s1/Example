@@ -6,6 +6,7 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+
 import Paper from '@mui/material/Paper';
 // import '.././Tabs.css'
 
@@ -35,6 +36,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     // hide last border
     '&:last-child td, &:last-child th': {
         border: 0,
+        // padding: "10px",
     },
 }));
 
@@ -43,40 +45,57 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const rows = [
-    createData('Ампилогов Михаил Александрович',"Механик участка №4", '----', "8-909-707-5637", "" ),
+    createData('Ампилогов Михаил Александрович',"Механик участка №4", '----', "8-909-707-5637", "ampilogov.1979@mail.ru", "----" ),
+    createData('Бельский Геннадий Николаевич', "Водитель", "----", "8-961-723-5825", "----", "----"),
+    createData('Богданов Александр Петрович', "Главный технолог", '109', "8-903-940-7371", "bogdanov.sts@mail.ru", "----"),
+    createData('Борисова Лариса Анатольевна ', "Бухгалтер", '120', "8-908-956-5390", "borisova_la@sibtranss.ru ", ".cid.eb433306c7273172"),
+    createData('Буртаев Павел Викторович', "Механик участка №3 ", '----', "8-951-178-95-56\n" +
+        "8-905-917-72-29\n", "----", "----"),
+    createData('Васильева Ирина Григорьевна', "Менеджер по таможенному оформлению", '117', "8-951-589-0707", "vasileva_ig@sibtranss.ru\n" +
+        "ira.v-sts@yandex.ru\n" , "irina.v79"),
+    createData('Винокуров Анатолий Валерьевич', "Менеджер по таможенному оформлению", '117', "8-950-571-5668", "vinokurov_av@sibtranss.ru\n" +
+        "vinokur82@yandex.ru\n", "anatol504"),
+
+    createData('Гарбуз Тамара Петровна', "Главный бухгалтер", "107", "8-951-170-8753", "garbuz_tp@sibtranss.ru\n" +
+        "sts.garbuz@mail.ru\n", "garbuz.sts"),
+    createData('Дубровская Галина Семеновна', "Бухгалтер расчетчик", "120", "8-923-531-7464", "dubrovskay_gs@sibtranss.ru\n" +
+        "sts.dubrovskay@mail.ru\n", "sts.dubrovskay"),
+    createData('Иванова Валентина Васильевна', "Начальник ОТК", "114", "8-923-482-5438", "ivanova_vv@sibtranss.ru\n" +
+        "Ivanova.sts@inbox.ru\n", "ivanova.sts"),
+    createData('Иванова Наталья Алексеевна ', "Инженер по охране труда", "124", "8-913-285-5448", "ivanova_na@sibtranss.ru\n" +
+        "kni0212@mail.ru\n", ".cid.e736c9d983a8de56"),
+    createData('Каргина Наталья Иосифовна', "Менеджер по рекламе", "119", "8-904-578-4270", "kargina_ni@sibtranss.ru\n" +
+        "kargina.sts@mail.ru\n", "kargina.sts"),
+    createData('Киселев Геннадий Владимирович', "Ведущий менеджер по ГШО", "119", "8-906-938-5900", "kiselev_gv@sibtranss.ru\n" +
+        "kiceleb.sts@mail.ru\n", "kiceleb"),
     createData('Пилюгин Михаил Владимирович', "Генеральный директор", "110", "8-923-636-7055", "pilyugin_mv@sibtranss.ru", "pilugin_m"),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
 ];
 
 export default function CustomizedTables() {
     return (
         <TableContainer >
-            <Table sx={{ minWidth: 980 }} aria-label="customized table ">
+            <Table sx={{ minWidth: 1000 }} aria-label="customized table ">
                 <TableHead>
-                    <TableRow>
-                        <StyledTableCell align="center">ФИО</StyledTableCell>
-                        <StyledTableCell align="center">Должность</StyledTableCell>
-                        <StyledTableCell align="center">Вн. телефон</StyledTableCell>
-                        <StyledTableCell align="center">Моб. телефон</StyledTableCell>
-                        <StyledTableCell align="center">E-mail</StyledTableCell>
-                        <StyledTableCell align="center">Skype</StyledTableCell>
+                    <TableRow >
+                        <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 140}} align="center">Моб. телефон</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell sx={{px: 1, width: 270}} component="th" scope="row">
                                 {row.fio}
                             </StyledTableCell>
-                            <StyledTableCell align="center">{row.position}</StyledTableCell>
-                            <StyledTableCell align="center">{row.int_phone}</StyledTableCell>
-                            <StyledTableCell align="center">{row.mobile}</StyledTableCell>
-                            <StyledTableCell align="center">{row.email}</StyledTableCell>
-                            <StyledTableCell align="center">{row.skype}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 10}} align="center">{row.int_phone}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 140}} align="center">{row.mobile}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 180}} align="center">{row.email}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.skype}</StyledTableCell>
                         </StyledTableRow>
                     ))}
                 </TableBody>
