@@ -6,8 +6,14 @@
 // import Box from '@mui/material/Box';
 import './Tabs.css'
 import Len_Kuz from "./data/Len_Kuz";
+import Novokuznetsk from "./data/Novokuznetsk";
 import Rej from "./data/Rej"
-import Gay from"./data/Gay"
+import Gay from "./data/Gay"
+import Vorkuta from "./data/Vorkuta"
+import Shahti from "./data/Shahti"
+import Moscow from "./data/Moscow"
+import Shadrinsk from "./data/Shadrinsk";
+
 // import { createTheme } from '@mui/material/styles';
 // import red from '@mui/material/colors/red';
 // import {styled} from "@mui/material/styles";
@@ -166,16 +172,18 @@ export default function LabTabs() {
                         <Tab label="Воркута" value="6" />
                         <Tab label="Гай" value="7" />
                         <Tab label="Реж" value="8" />
+                        <Tab label="Шадринск" value="9" />
                     </TabList>
                 </Box>
-                <TabPanel value="1"><Len_Kuz /></TabPanel>
-                <TabPanel value="2"><Len_Kuz /></TabPanel>
-                <TabPanel value="3"><Rej /></TabPanel>
-                <TabPanel value="4">Item Three</TabPanel>
-                <TabPanel value="5">Item Three</TabPanel>
-                <TabPanel value="6">Item Three</TabPanel>
-                <TabPanel value="7"><Gay /></TabPanel>
-                <TabPanel value="8"><Rej /></TabPanel>
+                <TabPanel sx={{px: 1}} value="1"><Len_Kuz /></TabPanel>
+                <TabPanel sx={{px: 1}} value="2"><Novokuznetsk /></TabPanel>
+                <TabPanel sx={{px: 1}} value="3"><Rej /></TabPanel>
+                <TabPanel sx={{px: 1}} value="4"><Moscow/></TabPanel>
+                <TabPanel sx={{px: 1}} value="5"><Shahti/></TabPanel>
+                <TabPanel sx={{px: 1}} value="6"><Vorkuta/></TabPanel>
+                <TabPanel sx={{px: 1}} value="7"><Gay /></TabPanel>
+                <TabPanel sx={{px: 1}} value="8"><Rej /></TabPanel>
+                <TabPanel sx={{px: 1}} value="9"><Shadrinsk /></TabPanel>
             </TabContext>
         </Box>
     );

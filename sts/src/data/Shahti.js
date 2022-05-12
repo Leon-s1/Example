@@ -7,14 +7,16 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
+import Paper from '@mui/material/Paper';
+// import '.././Tabs.css'
 
 
-// const   tablecontainer = styled(Table) ({
-//     backgroundColor: 'green',
-//     // boxShadow: 'none',
-//     padding: '15px',
-//     // color: '#FFFFFF'
-// });
+const   tablecontainer = styled(Table) ({
+    backgroundColor: 'green',
+    // boxShadow: 'none',
+    padding: '15px',
+    // color: '#FFFFFF'
+});
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -31,8 +33,10 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.action.hover,
     },
+    // hide last border
     '&:last-child td, &:last-child th': {
         border: 0,
+        // padding: "10px",
     },
 }));
 
@@ -41,9 +45,9 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const rows = [
-    createData('Иванов Дмитрий Александрович',"Механик участка № 4", '----', "8-987-193-8163", "ivanov.sibservis@yandex.ru ", "----" ),
-
-];
+    createData('Мостовенко Валерий Игоревич ',"Директор филиала", '----', "8-988-554-2033", "sibtranss.rostov@gmail.com", "----" ),
+    createData('Лемешов Анатолий Викторович',"Механик", '----', "8-928-773-2619", "ampilogov.1979@mail.ru", "----" ),
+    ];
 
 export default function CustomizedTables() {
     return (
