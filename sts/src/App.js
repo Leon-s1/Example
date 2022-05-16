@@ -11,18 +11,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
           <img src={logo_sts} className="App-logo" alt="logo" />
           <p>
               Телефонный справочник.
           </p>
           <img src={logo_ferrit} className="App-logo" alt="logo" />
-
       </header>
-
-            <p>Место для Поиска</p>
-
-
         <Tabs/>
     </div>
   );

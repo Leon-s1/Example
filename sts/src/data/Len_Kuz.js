@@ -1,13 +1,19 @@
-import * as React from 'react';
+// import * as React from 'react';
+import React, { useState } from "react";
 import { styled } from '@mui/material/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import Paper from "@material-ui/core/Paper";
+import SearchBar from "material-ui-search-bar";
 
-import Paper from '@mui/material/Paper';
+// import Paper from '@mui/material/Paper';
+// import {useState} from "react";
+// import poisk from "../poisk";
 // import '.././Tabs.css'
 
 
@@ -18,11 +24,40 @@ import Paper from '@mui/material/Paper';
 //         // color: '#FFFFFF'
 //     });
 
+const useStyles = makeStyles({
+    table: {
+        minWidth: 650
+    }
+});
+
+const Len_Kuz = () => {
+    const classes = useStyles();
+
+    const [rows, setRows] = useState(originalRows);
+    const [searched, setSearched] = useState("");
+
+    const requestSearch = (searchedVal) => {
+        const filteredRows = originalRows.filter((row) => {
+            return row.fio.toLowerCase().includes(searchedVal.toLowerCase());
+        });
+        setRows(filteredRows);
+    };
+
+    const cancelSearch = () => {
+        setSearched("");
+        requestSearch(searched);
+    };
+
+
+
+
+
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
         backgroundColor: theme.palette.common.white,
         color: theme.palette.common.black,
         fontSize: 18,
+        borderRadius: 5,
     },
     [`&.${tableCellClasses.body}`]: {
         fontSize: 16,
@@ -44,7 +79,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
     return { fio, position, int_phone, mobile, email, skype};
 }
 
-const rows = [
+const originalRows = [
     createData('Ампилогов Михаил Александрович',"Механик участка № 4", '----', "8-909-707-5637", "ampilogov.1979@mail.ru", "----" ),
     createData('Бельский Геннадий Николаевич', "Водитель", "----", "8-961-723-5825", "----", "----"),
     createData('Богданов Александр Петрович', "Главный технолог", '109', "8-903-940-7371", "bogdanov.sts@mail.ru", "----"),
@@ -117,36 +152,49 @@ const rows = [
     createData('Ядыкина Ольга Викторовна', "Референт-секретарь", "101", "8-913-331-2507", "yadykina_ov@sibtranss.ru", "yadikina2"),
 ];
 
-export default function CustomizedTables() {
+// export default function CustomizedTables() {
     return (
-        <TableContainer >
-            <Table sx={{minWidth: 1000 }} aria-label="customized table ">
-                <TableHead>
-                    <TableRow >
-                        <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 130}} align="center">Моб. телефон</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
-                            <StyledTableCell sx={{px: 1, width: 270}} component="th" scope="row">
-                                {row.fio}
-                            </StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 10}} align="center">{row.int_phone}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 130}} align="center">{row.mobile}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 180}} align="center">{row.email}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.skype}</StyledTableCell>
-                        </StyledTableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+        <>
+            <Paper>
+                <SearchBar
+                    value={searched}
+                    onChange={(searchVal) => requestSearch(searchVal)}
+                    onCancelSearch={() => cancelSearch()}
+                />
+
+
+                    <TableContainer >
+                        <Table sx={{minWidth: 1000 }} aria-label="customized table ">
+                            <TableHead>
+                                <TableRow >
+                                    <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
+                                    <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
+                                    <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
+                                    <StyledTableCell sx={{px: 1, width: 130}} align="center">Моб. телефон</StyledTableCell>
+                                    <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
+                                    <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {rows.map((row) => (
+                                    <StyledTableRow key={row.name}>
+                                        <StyledTableCell sx={{px: 1, width: 270}} component="th" scope="row">
+                                            {row.fio}
+                                        </StyledTableCell>
+                                        <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
+                                        <StyledTableCell sx={{px: 1, width: 10}} align="center">{row.int_phone}</StyledTableCell>
+                                        <StyledTableCell sx={{px: 1, width: 130}} align="center">{row.mobile}</StyledTableCell>
+                                        <StyledTableCell sx={{px: 1, width: 180}} align="center">{row.email}</StyledTableCell>
+                                        <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.skype}</StyledTableCell>
+                                    </StyledTableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+            </Paper>
+         </>
     );
 }
+
+export default Len_Kuz;
 

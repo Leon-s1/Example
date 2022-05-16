@@ -1,9 +1,11 @@
-// import * as React from "react";
-// import PropTypes from 'prop-types';
-// import Tabs from '@mui/material/Tabs';
-// import Tab from '@mui/material/Tab';
-// import Typography from '@mui/material/Typography';
-// import Box from '@mui/material/Box';
+import * as React from 'react';
+import { alpha, styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Tab from '@mui/material/Tab';
+import TabContext from '@mui/lab/TabContext';
+import TabList from '@mui/lab/TabList';
+import TabPanel from '@mui/lab/TabPanel'
+import TextField from '@mui/material/TextField'
 import './Tabs.css'
 import Len_Kuz from "./data/Len_Kuz";
 import Novokuznetsk from "./data/Novokuznetsk";
@@ -13,18 +15,14 @@ import Vorkuta from "./data/Vorkuta"
 import Shahti from "./data/Shahti"
 import Moscow from "./data/Moscow"
 import Shadrinsk from "./data/Shadrinsk";
+import Poisk from "./poisk"
 
 // import { createTheme } from '@mui/material/styles';
 // import red from '@mui/material/colors/red';
 // import {styled} from "@mui/material/styles";
 
 
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
+;
 
 
 // const theme = createTheme({
@@ -49,108 +47,46 @@ import TabPanel from '@mui/lab/TabPanel';
 //     },
 // });
 
-// const StyledTab = styled(Tab)(({ theme }) => ({
-//     // '&:nth-of-type(odd)': {
-//             borderRightColor: 'white',
-//
-//     }));
+const CssTextField = styled(TextField)({
+    '& label.Mui-focused': {
+        color: 'red',
+    },
+    // '& .MuiInput-underline:after': {
+    //     borderBottomColor: 'green',
+    // },
+    '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+            borderColor: 'red',
+        },
+        // '&:hover fieldset': {
+        //     borderColor: 'yellow',
+        // },
+        '&.Mui-focused fieldset': {
+            borderColor: 'red',
+        },
+    },
+});
 
-// function TabPanel(props) {
-//     const { children, value, index, ...other } = props;
-//
-//     return (
-//         <div
-//             role="tabpanel"
-//             hidden={value !== index}
-//             id={`vertical-tabpanel-${index}`}
-//             aria-labelledby={`vertical-tab-${index}`}
-//             // borderColor: (theme: Theme) => theme.palette.primary.main
-//             // borderColor={'white'}
-//             {...other}
-//         >
-//             {value === index && (
-//                 <Box sx={{ px: 3, bgcolor: '#f6eaea' }}>
-//                     <Typography >{children}</Typography>
-//                 </Box>
-//             )}
-//         </div>
-//     );
-// }
-//
-// TabPanel.propTypes = {
-//     children: PropTypes.node,
-//     index: PropTypes.number.isRequired,
-//     value: PropTypes.number.isRequired,
-// };
-//
-// function a11yProps(index) {
-//     return {
-//         id: `vertical-tab-${index}`,
-//         'aria-controls': `vertical-tabpanel-${index}`,
-//         // 'borderRightColor':{'red'},
-//         // 'span': borderColor: 'yellow',
-//         }
-//     };
-//
-//
-// export default function VerticalTabs() {
-//     const [value, setValue] = React.useState(0);
-//
-//     const handleChange = (event, newValue) => {
-//         setValue(newValue);
-//     };
-//
-//     return (
-//         <Box
-//              sx={{ flexGrow: 1, bgcolor: '#F6EAEA', display: 'flex', height: 335 }}
-//         >
-//             <Tabs
-//                 orientation="vertical"
-//                 variant="scrollable"
-//                 // indicatorColor="secondary"
-//
-//                 textColor="primary"
-//
-//                 borderBottom="secondary"
-//                 value={value}
-//                 onChange={handleChange}
-//                 aria-label="Vertical tabs example"
-//                 sx={{ borderRight: 1, borderColor: 'dimgrey'}}
-//             >
-//                 <Tab label="Ленинск-Кузнецкий" {...a11yProps(0)} />
-//                 <Tab label="Новокузнецк" {...a11yProps(1)} />
-//                 <Tab label="Норильск" {...a11yProps(2)} />
-//                 <Tab label="Воркута" {...a11yProps(3)} />
-//                 <Tab label="Москва" {...a11yProps(4)} />
-//                 <Tab label="Гай" {...a11yProps(5)} />
-//                 <Tab label="Шахты" {...a11yProps(6)} />
-//             </Tabs>
-//             <TabPanel value={value} index={0} >
-//                <Len_Kuz />
-//             </TabPanel>
-//             <TabPanel value={value} index={1}>
-//                 Item Two
-//             </TabPanel>
-//             <TabPanel value={value} index={2}>
-//                 Item Three
-//             </TabPanel>
-//             <TabPanel value={value} index={3}>
-//                 Item Four
-//             </TabPanel>
-//             <TabPanel value={value} index={4}>
-//                 Item Five
-//             </TabPanel>
-//             <TabPanel value={value} index={5}>
-//                 Item Six
-//             </TabPanel>
-//             <TabPanel value={value} index={6}>
-//                 Item Seven
-//             </TabPanel>
-//         </Box>
-//     );
-// }
+const CssTab = styled(Tab)({
 
-
+    '& button.MuiTab-textColorPrimary': {
+        color: 'red',
+    },
+    // '& .MuiInput-underline:after': {
+    //     borderBottomColor: 'green',
+    // },
+    // '& .MuiButtonBase-root': {
+    //     '& fieldset': {
+    //         borderColor: 'red',
+    //     },
+        // '&:hover fieldset': {
+        //     borderColor: 'yellow',
+        // },
+    //     '&.Mui-focused fieldset': {
+    //         borderColor: 'red',
+    //     },
+    // },
+});
 
 export default function LabTabs() {
     const [value, setValue] = React.useState('1');
@@ -160,11 +96,30 @@ export default function LabTabs() {
     };
 
     return (
-        <Box sx={{ width: '100%', typography: 'body1' }}>
+        <Box sx={{ width: '100%', typography: 'body1', borderRadius: 5 }}>
+
+            {/*component="form"*/}
+        {/*    sx={{*/}
+        {/*    '& .MuiTextField-root': { m: 1, width: '25ch' },*/}
+        {/*}}*/}
+        {/*    noValidate*/}
+        {/*    autoComplete="off"*/}
+
+            <CssTextField
+                sx={{minWidth: 1224, pb:  '10px' }}
+                // value={name}
+                id="filled-search"
+                label="Введите фамилию сотрудника..."
+                // type="search"
+                // variant="filled"
+                // color="warning"
+                // aria-label="customized table"
+            />
+
             <TabContext value={value}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <TabList onChange={handleChange} aria-label="lab API tabs example">
-                        <Tab label="Ленинск-Кузнецкий" value="1" />
+                        <CssTab label="Ленинск-Кузнецкий" value="1" />
                         <Tab label="Новокузнецк" value="2" />
                         <Tab label="Норильск" value="3" />
                         <Tab label="Москва" value="4" />

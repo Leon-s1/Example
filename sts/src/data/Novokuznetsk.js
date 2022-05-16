@@ -70,7 +70,7 @@ export default function CustomizedTables() {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell sx={{px: 1, width: 270}} component="th" scope="row">
+                            <StyledTableCell sx={{px: 1, width: 270}} component="th" scope="row" id="row-fio">
                                 {row.fio}
                             </StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
