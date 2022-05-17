@@ -22,7 +22,11 @@ import SearchBar from "material-ui-search-bar";
 
 // import Table from "@material-ui/core/Table";
 
-
+const useStyles = makeStyles({
+    table: {
+        minWidth: 1000
+    }
+});
 
 // import Paper from '@mui/material/Paper';
 // import {useState} from "react";
@@ -63,19 +67,15 @@ const Len_Kuz = () => {
 // }));
 
 // function createData(fio, position, int_phone, mobile, email, skype) {
-//     return { fio, position, int_phone, mobile, email, skype};
+//      return { fio, position, int_phone, mobile, email, skype};
 
-    const useStyles = makeStyles({
-        table: {
-            minWidth: 1000
-        }
-    });
 
 
 
 
 const originalRows = [
-    {fio:'Ампилогов Михаил Александрович',position:"Механик участка № 4", int_phone:'----', mobile:"8-909-707-5637", email:"ampilogov.1979@mail.ru", skype:"----" }
+    {fio:'Ампилогов Михаил Александрович',position:"Механик участка № 4", int_phone:'----', mobile:"8-909-707-5637", email:"ampilogov.1979@mail.ru", skype:"----" },
+    {fio:'Петров Михаил Александрович',position:"Механик участка № 4", int_phone:'----', mobile:"8-909-707-5637", email:"ampilogov.1979@mail.ru", skype:"----" }
     // createData('Бельский Геннадий Николаевич', "Водитель", "----", "8-961-723-5825", "----", "----"),
     // createData('Богданов Александр Петрович', "Главный технолог", '109', "8-903-940-7371", "bogdanov.sts@mail.ru", "----"),
     // createData('Борисова Лариса Анатольевна ', "Бухгалтер", '120', "8-908-956-5390", "borisova_la@sibtranss.ru ", ".cid.eb433306c7273172"),
