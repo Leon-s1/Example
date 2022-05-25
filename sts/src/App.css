@@ -62,3 +62,9 @@ body{
     transform: rotate(360deg);
   }
 }
+.MuiButtonBase-root {
+  padding: 12px 16px;
+}
+/*.css-ksnazs-MuiButtonBase-root-MuiTab-root {*/
+/*  padding: 12px 16px;*/
+/*}*/

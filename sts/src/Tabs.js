@@ -15,8 +15,9 @@ import Vorkuta from "./data/Vorkuta"
 import Shahti from "./data/Shahti"
 import Moscow from "./data/Moscow"
 import Shadrinsk from "./data/Shadrinsk";
-import Poisk from "./poisk"
-
+// import Poisk from "./poisk"
+// import SearchBar from "material-ui-search-bar";
+import {useState} from "react";
 // import { createTheme } from '@mui/material/styles';
 // import red from '@mui/material/colors/red';
 // import {styled} from "@mui/material/styles";
@@ -72,6 +73,9 @@ const CssTab = styled(Tab)({
     '& button.MuiTab-textColorPrimary': {
         color: 'red',
     },
+    '.MuiButtonBase-root': {
+        padding: '12 16',
+    }
     // '& .MuiInput-underline:after': {
     //     borderBottomColor: 'green',
     // },
@@ -87,6 +91,8 @@ const CssTab = styled(Tab)({
     //     },
     // },
 });
+
+
 
 export default function LabTabs() {
     const [value, setValue] = React.useState('1');
@@ -105,22 +111,28 @@ export default function LabTabs() {
         {/*    noValidate*/}
         {/*    autoComplete="off"*/}
 
-            <CssTextField
-                sx={{minWidth: 1224, pb:  '10px' }}
-                // value={name}
-                id="filled-search"
-                label="Введите фамилию сотрудника..."
-                // type="search"
-                // variant="filled"
-                // color="warning"
-                // aria-label="customized table"
-            />
+            {/*<CssTextField*/}
+            {/*    sx={{minWidth: 1224, pb:  '10px' }}*/}
+            {/*    // value={name}*/}
+            {/*    id="filled-search"*/}
+            {/*    label="Введите фамилию сотрудника..."*/}
+            {/*    // type="search"*/}
+            {/*    // variant="filled"*/}
+            {/*    // color="warning"*/}
+            {/*    // aria-label="customized table"*/}
+            {/*/>*/}
+            {/*<SearchBar*/}
+            {/*    value={searched}*/}
+            {/*    onChange={(searchVal) => requestSearch(searchVal)}*/}
+            {/*    onCancelSearch={() => cancelSearch()}*/}
+            {/*/>*/}
+
 
             <TabContext value={value}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <TabList onChange={handleChange} aria-label="lab API tabs example">
-                        <CssTab label="Ленинск-Кузнецкий" value="1" />
-                        <Tab label="Новокузнецк" value="2" />
+                    <TabList onChange={handleChange} aria-label="customized table">
+                        <CssTab sx={{px: 2}} label="Ленинск-Кузнецкий" value="1" />
+                        <CssTab sx={{px: 2}} label="Новокузнецк" value="2" />
                         <Tab label="Норильск" value="3" />
                         <Tab label="Москва" value="4" />
                         <Tab label="Шахты" value="5" />

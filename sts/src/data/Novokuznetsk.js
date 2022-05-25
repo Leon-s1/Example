@@ -8,6 +8,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 import Paper from '@mui/material/Paper';
+import SearchBar from "material-ui-search-bar";
+import Box from "@mui/material/Box";
+import {useState} from "react";
 // import '.././Tabs.css'
 
 
@@ -44,7 +47,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
     return { fio, position, int_phone, mobile, email, skype};
 }
 
-const rows = [
+const originalRows = [
     createData('Мельников Андрей Александрович', "Заместитель директора технического", "----", "8-905-915-2022", "melnikov_aa@sibtranss.ru\n" +
         "sibtransservis@yandex.ru\n", "melnikov120686"),
     createData('Павлова Виктория Владимировна', "Менеджер по ГШО", "----", "8-905-068-8369", "pavlova_vv@sibtranss.ru\n" +
@@ -54,7 +57,33 @@ const rows = [
 ];
 
 export default function CustomizedTables() {
+    const [rows, setRows] = useState(originalRows);
+    const [searched, setSearched] = useState("");
+
+    const requestSearch = (searchedVal) => {
+        const filteredRows = originalRows.filter((row) => {
+            return row.fio.toLowerCase().includes(searchedVal.toLowerCase());
+        });
+        setRows(filteredRows);
+    };
+
+    const cancelSearch = () => {
+        setSearched("");
+        requestSearch(searched);
+    };
+
+
     return (
+        <>
+        <SearchBar
+            // sx={{Width: 700}}
+            id="filled-search"
+            // label="Введите фамилию сотрудника..."
+            value={searched}
+            onChange={(searchVal) => requestSearch(searchVal)}
+            onCancelSearch={() => cancelSearch()}
+        />
+    <br/>
         <TableContainer >
             <Table sx={{minWidth: 1000 }} aria-label="customized table ">
                 <TableHead>
@@ -83,6 +112,7 @@ export default function CustomizedTables() {
                 </TableBody>
             </Table>
         </TableContainer>
+            </>
     );
 }
 
