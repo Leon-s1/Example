@@ -1,52 +1,82 @@
 import * as React from 'react';
-import { alpha, styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel'
-import TextField from '@mui/material/TextField'
-import './Tabs.css'
-import Len_Kuz from "./data/Len_Kuz";
+import { styled } from '@mui/system';
+import TabsUnstyled from '@mui/base/TabsUnstyled';
+import TabsListUnstyled from '@mui/base/TabsListUnstyled';
+import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
+import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
+import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
+import LenKuz from "./data/Len_Kuz";
 import Novokuznetsk from "./data/Novokuznetsk";
-import Rej from "./data/Rej"
-import Gay from "./data/Gay"
-import Vorkuta from "./data/Vorkuta"
-import Shahti from "./data/Shahti"
-import Moscow from "./data/Moscow"
-import Shadrinsk from "./data/Shadrinsk";
-// import Poisk from "./poisk"
-// import SearchBar from "material-ui-search-bar";
-import {useState} from "react";
-// import { createTheme } from '@mui/material/styles';
-// import red from '@mui/material/colors/red';
-// import {styled} from "@mui/material/styles";
+import Rekvizit from "./data/Rekvizit";
+import TextField from "@mui/material/TextField";
 
+const blue = {
+    // 50: '#F0F7FF D1F6EAEA',
+    50: '#F6EAEA',
+    100: '#C2E0FF',
+    200: '#232424',
+    300: '#66B2FF',
+    400: '#fd0202',
+    500: '#ffffff',
+    600: '#0072E5',
+    700: '#0059B2',
+    800: '#004C99',
+    900: '#003A75',
+};
 
-;
+const Tab = styled(TabUnstyled)`
+  font-family: IBM Plex Sans, sans-serif;
+  color: black;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: transparent;
+  width: 100%;
+  padding: 12px 16px;
+  margin: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 
+  &:hover {
+    background-color: ${blue[400]};
+  }
 
-// const theme = createTheme({
-//     palette: {
-//         secondary: red,
-//     },
-// });
+  &:focus {
+    color: #fff;
+    border-radius: 3px;
+    outline: 2px solid ${blue[200]};
+    outline-offset: 2px;
+  }
 
-// const theme = createTheme({
-//     components: {
-//         // Name of the component
-//         MuiTabs: {
-//             styleOverrides: {
-//                 // Name of the slot
-//                 root: {
-//                     // Some CSS
-//                     borderRightColor: 'red',
-//                     fontSize: '1rem',
-//                 },
-//             },
-//         },
-//     },
-// });
+  &.${tabUnstyledClasses.selected} {
+    background-color: ${blue[50]};
+    color: ${blue[400]};
+  }
+
+  &.${buttonUnstyledClasses.disabled} {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+`;
+
+const TabPanel = styled(TabPanelUnstyled)`
+  width: 100%;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 0.875rem;
+`;
+
+const TabsList = styled(TabsListUnstyled)`
+  min-width: 320px;
+  background-color: ${blue[50]};
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+`;
 
 const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
@@ -68,90 +98,46 @@ const CssTextField = styled(TextField)({
     },
 });
 
-const CssTab = styled(Tab)({
-
-    '& button.MuiTab-textColorPrimary': {
-        color: 'red',
-    },
-    '.MuiButtonBase-root': {
-        padding: '12 16',
-    }
-    // '& .MuiInput-underline:after': {
-    //     borderBottomColor: 'green',
-    // },
-    // '& .MuiButtonBase-root': {
-    //     '& fieldset': {
-    //         borderColor: 'red',
-    //     },
-        // '&:hover fieldset': {
-        //     borderColor: 'yellow',
-        // },
-    //     '&.Mui-focused fieldset': {
-    //         borderColor: 'red',
-    //     },
-    // },
-});
 
 
-
-export default function LabTabs() {
-    const [value, setValue] = React.useState('1');
-
-    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-        setValue(newValue);
-    };
-
+export default function UnstyledTabsCustomized() {
     return (
-        <Box sx={{ width: '100%', typography: 'body1', borderRadius: 5 }}>
+        <>
+        {/*<CssTextField*/}
+        {/*    sx={{minWidth: 1224, pb:  '10px' }}*/}
+        {/*    // value={name}*/}
+        {/*    id="filled-search"*/}
+        {/*    label="Введите фамилию сотрудника..."*/}
+        {/*    type="search"*/}
+        {/*    variant="filled"*/}
+        {/*    color="warning"*/}
+        {/*    aria-label="customized table"*/}
+        {/*/>*/}
 
-            {/*component="form"*/}
-        {/*    sx={{*/}
-        {/*    '& .MuiTextField-root': { m: 1, width: '25ch' },*/}
-        {/*}}*/}
-        {/*    noValidate*/}
-        {/*    autoComplete="off"*/}
-
-            {/*<CssTextField*/}
-            {/*    sx={{minWidth: 1224, pb:  '10px' }}*/}
-            {/*    // value={name}*/}
-            {/*    id="filled-search"*/}
-            {/*    label="Введите фамилию сотрудника..."*/}
-            {/*    // type="search"*/}
-            {/*    // variant="filled"*/}
-            {/*    // color="warning"*/}
-            {/*    // aria-label="customized table"*/}
-            {/*/>*/}
-            {/*<SearchBar*/}
-            {/*    value={searched}*/}
-            {/*    onChange={(searchVal) => requestSearch(searchVal)}*/}
-            {/*    onCancelSearch={() => cancelSearch()}*/}
-            {/*/>*/}
-
-
-            <TabContext value={value}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <TabList onChange={handleChange} aria-label="customized table">
-                        <CssTab sx={{px: 2}} label="Ленинск-Кузнецкий" value="1" />
-                        <CssTab sx={{px: 2}} label="Новокузнецк" value="2" />
-                        <Tab label="Норильск" value="3" />
-                        <Tab label="Москва" value="4" />
-                        <Tab label="Шахты" value="5" />
-                        <Tab label="Воркута" value="6" />
-                        <Tab label="Гай" value="7" />
-                        <Tab label="Реж" value="8" />
-                        <Tab label="Шадринск" value="9" />
-                    </TabList>
-                </Box>
-                <TabPanel sx={{px: 1}} value="1"><Len_Kuz /></TabPanel>
-                <TabPanel sx={{px: 1}} value="2"><Novokuznetsk /></TabPanel>
-                <TabPanel sx={{px: 1}} value="3"><Rej /></TabPanel>
-                <TabPanel sx={{px: 1}} value="4"><Moscow/></TabPanel>
-                <TabPanel sx={{px: 1}} value="5"><Shahti/></TabPanel>
-                <TabPanel sx={{px: 1}} value="6"><Vorkuta/></TabPanel>
-                <TabPanel sx={{px: 1}} value="7"><Gay /></TabPanel>
-                <TabPanel sx={{px: 1}} value="8"><Rej /></TabPanel>
-                <TabPanel sx={{px: 1}} value="9"><Shadrinsk /></TabPanel>
-            </TabContext>
-        </Box>
+        <TabsUnstyled defaultValue={0}>
+            <TabsList>
+                <Tab>Ленинск-Кузнецкий</Tab>
+                <Tab>Новокузнецк</Tab>
+                <Tab>Норильск</Tab>
+                <Tab>Москва</Tab>
+                <Tab>Шахты</Tab>
+                <Tab>Воркута</Tab>
+                <Tab>Гай</Tab>
+                <Tab>Реж</Tab>
+                <Tab>Шадринск</Tab>
+                <Tab>Реквизиты ООО "Сибтранссервис"</Tab>
+            </TabsList>
+            <TabPanel value={0}><LenKuz/></TabPanel>
+            <TabPanel value={1}><Novokuznetsk /></TabPanel>
+            <TabPanel value={2}>Third page</TabPanel>
+            <TabPanel value={3}>Third page</TabPanel>
+            <TabPanel value={4}>Third page</TabPanel>
+            <TabPanel value={5}>Third page</TabPanel>
+            <TabPanel value={6}>Third page</TabPanel>
+            <TabPanel value={7}>Third page</TabPanel>
+            <TabPanel value={8}>Third page</TabPanel>
+            <TabPanel value={9}><Rekvizit /></TabPanel>
+        </TabsUnstyled>
+            </>
     );
-};
+}

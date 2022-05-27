@@ -17,6 +17,7 @@ function App() {
           </p>
           <img src={logo_ferrit} className="App-logo" alt="logo" />
       </header>
+
         <Tabs/>
     </div>
   );

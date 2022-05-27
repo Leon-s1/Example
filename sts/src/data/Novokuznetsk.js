@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useState} from "react";
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -6,11 +7,7 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-
-import Paper from '@mui/material/Paper';
 import SearchBar from "material-ui-search-bar";
-import Box from "@mui/material/Box";
-import {useState} from "react";
 // import '.././Tabs.css'
 
 
@@ -91,7 +88,7 @@ export default function CustomizedTables() {
                         <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 135}} align="center">Моб. телефон</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 130}} align="center">Моб. телефон</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
                     </TableRow>
@@ -104,7 +101,7 @@ export default function CustomizedTables() {
                             </StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 10}} align="center">{row.int_phone}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 135}} align="center">{row.mobile}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 130}} align="center">{row.mobile}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 180}} align="center">{row.email}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.skype}</StyledTableCell>
                         </StyledTableRow>
