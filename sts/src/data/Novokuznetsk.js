@@ -23,6 +23,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
         backgroundColor: theme.palette.common.white,
         color: theme.palette.common.black,
         fontSize: 18,
+        borderRadius: 5,
     },
     [`&.${tableCellClasses.body}`]: {
         fontSize: 16,
@@ -75,6 +76,7 @@ export default function CustomizedTables() {
         <SearchBar
             // sx={{Width: 700}}
             id="filled-search"
+            placeholder="Введите фамилию сотрудника..."
             // label="Введите фамилию сотрудника..."
             value={searched}
             onChange={(searchVal) => requestSearch(searchVal)}

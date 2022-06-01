@@ -8,6 +8,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 import Paper from '@mui/material/Paper';
+import {useState} from "react";
+import SearchBar from "material-ui-search-bar";
 // import '.././Tabs.css'
 
 
@@ -23,6 +25,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
         backgroundColor: theme.palette.common.white,
         color: theme.palette.common.black,
         fontSize: 18,
+        borderRadius: 5,
     },
     [`&.${tableCellClasses.body}`]: {
         fontSize: 16,
@@ -44,7 +47,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
     return { fio, position, int_phone, mobile, email, skype};
 }
 
-const rows = [
+const originalRows = [
     createData('Красников Игорь Владимирович',"Механик участка № 5", '----', "8-912-968-1446", "krasnikov_iv@sibtranss.ru\n" +
         "krasnikov_67@mail.ru\n", "----" ),
     // createData('Бельский Геннадий Николаевич', "Водитель", "----", "8-961-723-5825", "----", "----"),
@@ -77,7 +80,32 @@ const rows = [
 ];
 
 export default function CustomizedTables() {
+    const [rows, setRows] = useState(originalRows);
+    const [searched, setSearched] = useState("");
+
+    const requestSearch = (searchedVal) => {
+        const filteredRows = originalRows.filter((row) => {
+            return row.fio.toLowerCase().includes(searchedVal.toLowerCase());
+        });
+        setRows(filteredRows);
+    };
+
+    const cancelSearch = () => {
+        setSearched("");
+        requestSearch(searched);
+    };
     return (
+        <>
+            <SearchBar
+                // sx={{Width: 700}}
+                id="filled-search"
+                placeholder="Введите фамилию сотрудника..."
+                // label="Введите фамилию сотрудника..."
+                value={searched}
+                onChange={(searchVal) => requestSearch(searchVal)}
+                onCancelSearch={() => cancelSearch()}
+            />
+            <br/>
         <TableContainer >
             <Table sx={{ minWidth: 1000 }} aria-label="customized table ">
                 <TableHead>
@@ -85,7 +113,7 @@ export default function CustomizedTables() {
                         <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 140}} align="center">Моб. телефон</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 130}} align="center">Моб. телефон</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
                     </TableRow>
@@ -98,7 +126,7 @@ export default function CustomizedTables() {
                             </StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 10}} align="center">{row.int_phone}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 140}} align="center">{row.mobile}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 130}} align="center">{row.mobile}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 180}} align="center">{row.email}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.skype}</StyledTableCell>
                         </StyledTableRow>
@@ -106,6 +134,7 @@ export default function CustomizedTables() {
                 </TableBody>
             </Table>
         </TableContainer>
+            </>
     );
 }
 

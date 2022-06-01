@@ -9,7 +9,8 @@ import Tabs from './Tabs'
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <div className="App">
       <header className="App-header">
           <img src={logo_sts} className="App-logo" alt="logo" />
           <p>
@@ -19,7 +20,18 @@ function App() {
       </header>
 
         <Tabs/>
+
+
     </div>
+
+        <footer className="App-footer">
+          <img src={logo_sts} className="App-logo" alt="logo" />
+          <div className="columnBottom inner" >
+
+          </div>
+        </footer>
+</>
+
   );
 }
 

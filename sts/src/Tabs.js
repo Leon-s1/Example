@@ -7,12 +7,19 @@ import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import LenKuz from "./data/Len_Kuz";
 import Novokuznetsk from "./data/Novokuznetsk";
-import Rekvizit from "./data/Rekvizit";
+// import Rekvizit from "./data/Rekvizit";
 import TextField from "@mui/material/TextField";
+import ListSubheader from '@mui/material/ListSubheader'
+import Rej from "./data/Rej";
+import Moscow from "./data/Moscow";
+import Shahti from "./data/Shahti";
+import Vorkuta from "./data/Vorkuta";
+import Gay from "./data/Gay";
+import Shadrinsk from "./data/Shadrinsk";
 
 const blue = {
     // 50: '#F0F7FF D1F6EAEA',
-    50: '#F6EAEA',
+    50: '#f6eaea',
     100: '#C2E0FF',
     200: '#232424',
     300: '#66B2FF',
@@ -71,11 +78,15 @@ const TabsList = styled(TabsListUnstyled)`
   min-width: 320px;
   background-color: ${blue[50]};
   border-radius: 8px;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: space-between;
+  // position: absolute;
+  // z-index: 5;
+  width: 100%;
+
 `;
 
 const CssTextField = styled(TextField)({
@@ -115,10 +126,13 @@ export default function UnstyledTabsCustomized() {
         {/*/>*/}
 
         <TabsUnstyled defaultValue={0}>
-            <TabsList>
+            {/*<ListSubheader sx={{ bgcolor: 'background.paper' }}>*/}
+            <React.Fragment>
+
+            <TabsList sx={{width: 1240}}>
                 <Tab>Ленинск-Кузнецкий</Tab>
                 <Tab>Новокузнецк</Tab>
-                <Tab>Норильск</Tab>
+                {/*<Tab>Норильск</Tab>*/}
                 <Tab>Москва</Tab>
                 <Tab>Шахты</Tab>
                 <Tab>Воркута</Tab>
@@ -127,16 +141,18 @@ export default function UnstyledTabsCustomized() {
                 <Tab>Шадринск</Tab>
                 <Tab>Реквизиты ООО "Сибтранссервис"</Tab>
             </TabsList>
+            </React.Fragment>
+            {/*</ListSubheader>*/}
             <TabPanel value={0}><LenKuz/></TabPanel>
             <TabPanel value={1}><Novokuznetsk /></TabPanel>
-            <TabPanel value={2}>Third page</TabPanel>
-            <TabPanel value={3}>Third page</TabPanel>
-            <TabPanel value={4}>Third page</TabPanel>
-            <TabPanel value={5}>Third page</TabPanel>
-            <TabPanel value={6}>Third page</TabPanel>
-            <TabPanel value={7}>Third page</TabPanel>
-            <TabPanel value={8}>Third page</TabPanel>
-            <TabPanel value={9}><Rekvizit /></TabPanel>
+            {/*<TabPanel value={2}><Rej /></TabPanel>*/}
+            <TabPanel value={2}><Moscow/></TabPanel>
+            <TabPanel value={3}><Shahti/></TabPanel>
+            <TabPanel value={4}><Vorkuta/></TabPanel>
+            <TabPanel value={5}><Gay /></TabPanel>
+            <TabPanel value={6}><Rej /></TabPanel>
+            <TabPanel value={7}><Shadrinsk/></TabPanel>
+            <TabPanel value={8}>Test</TabPanel>
         </TabsUnstyled>
             </>
     );

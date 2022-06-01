@@ -20,6 +20,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import SearchBar from "material-ui-search-bar";
+
+
+
 // import TableContainer from '@mui/material/TableContainer';
 // import TableHead from '@mui/material/TableHead';
 // import TableRow from '@mui/material/TableRow';
@@ -29,75 +32,8 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
 
-// import Table from "@material-ui/core/Table";
-
-// const useStyles = makeStyles({
-//     table: {
-//         minWidth: 1000
-//     }
-// });
-
-// import Paper from '@mui/material/Paper';
-// import {useState} from "react";
-// import poisk from "../poisk";
-// import '.././Tabs.css'
 
 
-// const   tablecontainer = styled(Table) ({
-//         backgroundColor: 'green',
-//         // boxShadow: 'none',
-//         padding: '15px',
-//         // color: '#FFFFFF'
-//     });
-// const Len_Kuz = () => {
-//     const classes = useStyles();
-
-// export const useStyles = makeStyles((theme) => ({
-//     container: {
-//         transform: "translate(-50%)"
-//     },
-//     button: {
-//         background: theme.palette.action.disabled,
-//         color: "rgba(255, 255, 255, 1)",
-//         fontSize: "110%",
-//         border: 0,
-//         borderRadius: 3,
-//         height: 48,
-//         width: "40%",
-//         padding: "0 30px",
-//         marginTop: "5%",
-//         "&:hover": {
-//             color: "rgba(48, 48, 48, 1)"
-//         }
-//     },
-//     paper: {
-//         display: "flex",
-//         flexDirection: "column",
-//         alignItems: "center",
-//         marginTop: "60%"
-//     },
-//     form: {
-//         width: "80%"
-//     },
-//     MuiTab: {
-//     color: 'red',
-//         borderColor: 'red',
-// }
-// }));
-
-
-
-// const StyledSearchBar = styled(SearchBar)(({ theme }) => ({
-//     [`&.${tableCellClasses.head}`]: {
-//         backgroundColor: theme.palette.common.white,
-//         color: theme.palette.common.black,
-//         fontSize: 18,
-//         borderRadius: 5,
-//     },
-//     [`&.${tableCellClasses.body}`]: {
-//         fontSize: 16,
-//     },
-// }));
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -122,12 +58,10 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     },
 }));
 
+
 function createData(fio, position, int_phone, mobile, email, skype) {
     return {fio, position, int_phone, mobile, email, skype};
 }
-
-
-
 
 const originalRows = [
     createData('Ампилогов Михаил Александрович',"Механик участка № 4", '----', "8-909-707-5637", "ampilogov.1979@mail.ru", "----" ),
@@ -203,25 +137,25 @@ const originalRows = [
     createData('Ядыкина Ольга Викторовна', "Референт-секретарь", "101", "8-913-331-2507", "yadykina_ov@sibtranss.ru", "yadikina2"),
 ];
 
-const CssTextField = styled(TextField)({
-    '& label.Mui-focused': {
-        color: 'red',
-    },
-    // '& .MuiInput-underline:after': {
-    //     borderBottomColor: 'green',
-    // },
-    '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-            borderColor: 'red',
-        },
-        // '&:hover fieldset': {
-        //     borderColor: 'yellow',
-        // },
-        '&.Mui-focused fieldset': {
-            borderColor: 'red',
-        },
-    },
-});
+// const CssTextField = styled(TextField)({
+//     '& label.Mui-focused': {
+//         color: 'red',
+//     },
+//     // '& .MuiInput-underline:after': {
+//     //     borderBottomColor: 'green',
+//     // },
+//     '& .MuiOutlinedInput-root': {
+//         '& fieldset': {
+//             borderColor: 'red',
+//         },
+//         // '&:hover fieldset': {
+//         //     borderColor: 'yellow',
+//         // },
+//         '&.Mui-focused fieldset': {
+//             borderColor: 'red',
+//         },
+//     },
+// });
 
 const CssSearchBar = styled(SearchBar)({
     '& label.Mui-focused': {
@@ -263,19 +197,7 @@ const CssSearchBar = styled(SearchBar)({
      return (
          <>
 
-         <SearchBar
-             // sx={{minWidth: 1224, pb:  '10px' }}
-             // // value={name}
-             // id="filled-search"
-             // placeholder="Введите фамилию сотрудника..."
-             // // label="Введите фамилию сотрудника..."
-             // type="search"
-             // variant="filled"
-             // color="warning"
-             // aria-label="customized table"
-
-
-
+         <CssSearchBar
              sx={{Width: 700}}
              id="filled-search"
              placeholder="Введите фамилию сотрудника..."
