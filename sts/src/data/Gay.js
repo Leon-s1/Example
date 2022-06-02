@@ -83,7 +83,7 @@ export default function CustomizedTables() {
                         <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 140}} align="center">Моб. телефон</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 130}} align="center">Моб. телефон</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
                     </TableRow>
@@ -96,7 +96,7 @@ export default function CustomizedTables() {
                             </StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 10}} align="center">{row.int_phone}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 140}} align="center">{row.mobile}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 130}} align="center">{row.mobile}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 180}} align="center">{row.email}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.skype}</StyledTableCell>
                         </StyledTableRow>

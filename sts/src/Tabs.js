@@ -154,6 +154,7 @@ export default function UnstyledTabsCustomized() {
             <TabPanel value={7}><Shadrinsk/></TabPanel>
             <TabPanel value={8}>Test</TabPanel>
         </TabsUnstyled>
+            <br/>
             </>
     );
 }

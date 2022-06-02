@@ -8,6 +8,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 import Paper from '@mui/material/Paper';
+import SearchBar from "material-ui-search-bar";
+import {useState} from "react";
 // import '.././Tabs.css'
 
 
@@ -23,6 +25,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
         backgroundColor: theme.palette.common.white,
         color: theme.palette.common.black,
         fontSize: 18,
+        borderRadius: 5,
     },
     [`&.${tableCellClasses.body}`]: {
         fontSize: 16,
@@ -44,12 +47,37 @@ function createData(fio, position, int_phone, mobile, email, skype) {
     return { fio, position, int_phone, mobile, email, skype};
 }
 
-const rows = [
+const originalRows = [
     createData('Тюлюбаев Алексей Сергеевич ', "Кладовщик", "----", "8-912-833-6927", "----", "----"),
 ];
 
 export default function CustomizedTables() {
+    const [rows, setRows] = useState(originalRows);
+    const [searched, setSearched] = useState("");
+
+    const requestSearch = (searchedVal) => {
+        const filteredRows = originalRows.filter((row) => {
+            return row.fio.toLowerCase().includes(searchedVal.toLowerCase());
+        });
+        setRows(filteredRows);
+    };
+
+    const cancelSearch = () => {
+        setSearched("");
+        requestSearch(searched);
+    };
     return (
+        <>
+            <SearchBar
+                // sx={{Width: 700}}
+                id="filled-search"
+                placeholder="Введите фамилию сотрудника..."
+                // label="Введите фамилию сотрудника..."
+                value={searched}
+                onChange={(searchVal) => requestSearch(searchVal)}
+                onCancelSearch={() => cancelSearch()}
+            />
+            <br/>
         <TableContainer >
             <Table sx={{minWidth: 1000 }} aria-label="customized table ">
                 <TableHead>
@@ -78,6 +106,7 @@ export default function CustomizedTables() {
                 </TableBody>
             </Table>
         </TableContainer>
+            </>
     );
 }
 

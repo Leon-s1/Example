@@ -197,7 +197,7 @@ const CssSearchBar = styled(SearchBar)({
      return (
          <>
 
-         <CssSearchBar
+         <SearchBar
              sx={{Width: 700}}
              id="filled-search"
              placeholder="Введите фамилию сотрудника..."
