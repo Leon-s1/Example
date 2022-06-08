@@ -6,19 +6,8 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-
-import Paper from '@mui/material/Paper';
 import {useState} from "react";
 import SearchBar from "material-ui-search-bar";
-// import '.././Tabs.css'
-
-
-const   tablecontainer = styled(Table) ({
-    backgroundColor: 'green',
-    // boxShadow: 'none',
-    padding: '15px',
-    // color: '#FFFFFF'
-});
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -36,10 +25,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.action.hover,
     },
-    // hide last border
     '&:last-child td, &:last-child th': {
         border: 0,
-        // padding: "10px",
     },
 }));
 
@@ -70,10 +57,8 @@ export default function CustomizedTables() {
     return (
         <>
             <SearchBar
-                // sx={{Width: 700}}
                 id="filled-search"
                 placeholder="Введите фамилию сотрудника..."
-                // label="Введите фамилию сотрудника..."
                 value={searched}
                 onChange={(searchVal) => requestSearch(searchVal)}
                 onCancelSearch={() => cancelSearch()}
@@ -85,8 +70,8 @@ export default function CustomizedTables() {
                     <TableRow >
                         <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
-                        <StyledTableCell sx={{px: 1, width: 130}} align="center">Моб. телефон</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 10}} align="center">Внутр. телефон</StyledTableCell>
+                        <StyledTableCell sx={{px: 1, width: 120}} align="center">Моб. телефон</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
                         <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
                     </TableRow>
@@ -99,7 +84,7 @@ export default function CustomizedTables() {
                             </StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.position}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 10}} align="center">{row.int_phone}</StyledTableCell>
-                            <StyledTableCell sx={{px: 1, width: 130}} align="center">{row.mobile}</StyledTableCell>
+                            <StyledTableCell sx={{px: 1, width: 120}} align="center">{row.mobile}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 180}} align="center">{row.email}</StyledTableCell>
                             <StyledTableCell sx={{px: 1, width: 210}} align="center">{row.skype}</StyledTableCell>
                         </StyledTableRow>

@@ -6,19 +6,8 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-
-import Paper from '@mui/material/Paper';
 import SearchBar from "material-ui-search-bar";
 import {useState} from "react";
-// import '.././Tabs.css'
-
-
-// const   tablecontainer = styled(Table) ({
-//         backgroundColor: 'green',
-//         // boxShadow: 'none',
-//         padding: '15px',
-//         // color: '#FFFFFF'
-//     });
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -36,10 +25,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.action.hover,
     },
-    // hide last border
     '&:last-child td, &:last-child th': {
         border: 0,
-        // padding: "10px",
     },
 }));
 
@@ -48,7 +35,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const originalRows = [
-    createData('Тюлюбаев Алексей Сергеевич ', "Кладовщик", "----", "8-912-833-6927", "----", "----"),
+
 ];
 
 export default function CustomizedTables() {
@@ -69,10 +56,8 @@ export default function CustomizedTables() {
     return (
         <>
             <SearchBar
-                // sx={{Width: 700}}
                 id="filled-search"
                 placeholder="Введите фамилию сотрудника..."
-                // label="Введите фамилию сотрудника..."
                 value={searched}
                 onChange={(searchVal) => requestSearch(searchVal)}
                 onCancelSearch={() => cancelSearch()}

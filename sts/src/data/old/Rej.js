@@ -57,16 +57,14 @@ export default function CustomizedTables() {
     return (
         <>
             <SearchBar
-                // sx={{Width: 700}}
                 id="filled-search"
                 placeholder="Введите фамилию сотрудника..."
-                // label="Введите фамилию сотрудника..."
                 value={searched}
                 onChange={(searchVal) => requestSearch(searchVal)}
                 onCancelSearch={() => cancelSearch()}
             />
             <br/>
-        <TableContainer >
+          <TableContainer >
             <Table sx={{ minWidth: 1000 }} aria-label="customized table ">
                 <TableHead>
                     <TableRow >
@@ -93,8 +91,8 @@ export default function CustomizedTables() {
                     ))}
                 </TableBody>
             </Table>
-        </TableContainer>
-            </>
+          </TableContainer>
+        </>
     );
 }
 

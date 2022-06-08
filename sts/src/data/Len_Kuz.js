@@ -1,15 +1,3 @@
-//
-// import * as React from 'react';
-// import { useState } from "react";
-// import { styled } from '@mui/material/styles';
-// import Table from "@material-ui/core/Table";
-// import TableBody from "@material-ui/core/TableBody";
-// import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-// import TableContainer from "@material-ui/core/TableContainer";
-// import TableHead from "@material-ui/core/TableHead";
-// import TableRow from "@material-ui/core/TableRow";
-// import SearchBar from "material-ui-search-bar";
-
 import * as React from 'react';
 import {useState} from "react";
 import { styled } from '@mui/material/styles';
@@ -20,20 +8,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import SearchBar from "material-ui-search-bar";
-
-
-
-// import TableContainer from '@mui/material/TableContainer';
-// import TableHead from '@mui/material/TableHead';
-// import TableRow from '@mui/material/TableRow';
-import Paper from "@material-ui/core/Paper";
-
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-
-
-
-
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -51,23 +25,18 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.action.hover,
     },
-    // hide last border
     '&:last-child td, &:last-child th': {
         border: 0,
-        // padding: "10px",
     },
 }));
-
 
 function createData(fio, position, int_phone, mobile, email, skype) {
     return {fio, position, int_phone, mobile, email, skype};
 }
 
 const originalRows = [
-    createData('Ампилогов Михаил Александрович',"Механик участка № 4", '----', "8-909-707-5637", "ampilogov.1979@mail.ru", "----" ),
-    createData('Петров Михаил Александрович',"Механик участка № 4", '----', "8-909-707-5637", "ampilogov.1979@mail.ru", "----" ),
     createData('Бельский Геннадий Николаевич', "Водитель", "----", "8-961-723-5825", "----", "----"),
-    createData('Богданов Александр Петрович', "Главный технолог", '109', "8-903-940-7371", "bogdanov.sts@mail.ru", "----"),
+    createData('Богданов Александр Петрович', "Главный технолог", '109', "8-951-586-7009", "bogdanov.sts@mail.ru", "----"),
     createData('Борисова Лариса Анатольевна ', "Бухгалтер", '120', "8-908-956-5390", "borisova_la@sibtranss.ru ", ".cid.eb433306c7273172"),
     createData('Буртаев Павел Викторович', "Механик участка № 3 ", '----', "8-951-178-9556\n" +
         "8-905-917-7229\n", "----", "----"),
@@ -118,7 +87,7 @@ const originalRows = [
     createData('Погарцева Светлана Сергеевна', "Кладовщик", "113", "8-900-106-4804", "pogarceva_ss@sibtranss.ru", ".cid.8291dc4f7b23420f"),
     createData('Пономарева Галина Владимировна', "Бухгалтер", "120", "8-950-590-3363", "ponomareva_gv@sibtranss.ru\n" +
         "ponomareva.sts@mail.ru\n", ".cid.8291dc4f7b23420f"),
-    createData('Рязанова Ольга Михайловна', "Инспектор по кадрам", "112", "8-951-165-3421", "ryazanova_om@sibtranss.ru\n" +
+    createData('Рязанова Ольга Михайловна', "Инспектор по кадрам", "112", "8-951-165-3421\n" + "8-951-612-1516\n", "ryazanova_om@sibtranss.ru\n" +
         "olgryazanova@mail.ru\n", "olga.ryazanova"),
     createData('Сачук Татьяна Алексеевна', "Бухгалтер (Локотранс)", "120", "8-904-376-4142", "sachuk_ta@sibtranss.ru\n" +
         "sachuk.sts1@mail.ru\n", ".cid.26f11308e0cbcef"),
@@ -137,46 +106,25 @@ const originalRows = [
     createData('Ядыкина Ольга Викторовна', "Референт-секретарь", "101", "8-913-331-2507", "yadykina_ov@sibtranss.ru", "yadikina2"),
 ];
 
-// const CssTextField = styled(TextField)({
+// const CssSearchBar = styled(SearchBar)({
 //     '& label.Mui-focused': {
 //         color: 'red',
 //     },
-//     // '& .MuiInput-underline:after': {
-//     //     borderBottomColor: 'green',
-//     // },
+//     '& .MuiInput-underline:after': {
+//         borderBottomColor: 'green',
+//     },
 //     '& .MuiOutlinedInput-root': {
 //         '& fieldset': {
 //             borderColor: 'red',
 //         },
-//         // '&:hover fieldset': {
-//         //     borderColor: 'yellow',
-//         // },
+//         '&:hover fieldset': {
+//             borderColor: 'yellow',
+//         },
 //         '&.Mui-focused fieldset': {
 //             borderColor: 'red',
 //         },
 //     },
 // });
-
-const CssSearchBar = styled(SearchBar)({
-    '& label.Mui-focused': {
-        color: 'red',
-    },
-    '& .MuiInput-underline:after': {
-        borderBottomColor: 'green',
-    },
-    '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-            borderColor: 'red',
-        },
-        '&:hover fieldset': {
-            borderColor: 'yellow',
-        },
-        '&.Mui-focused fieldset': {
-            borderColor: 'red',
-        },
-    },
-});
-
 
     export default function CustomizedTables() {
         const [rows, setRows] = useState(originalRows);
@@ -198,25 +146,22 @@ const CssSearchBar = styled(SearchBar)({
          <>
 
          <SearchBar
-             sx={{Width: 700}}
              id="filled-search"
              placeholder="Введите фамилию сотрудника..."
-             // label="Введите фамилию сотрудника..."
              value={searched}
              onChange={(searchVal) => requestSearch(searchVal)}
              onCancelSearch={() => cancelSearch()}
          />
          <br/>
-
-                  <TableContainer>
+             <TableContainer>
 
                  <Table sx={{minWidth: 1000}} aria-label="customized table ">
                      <TableHead>
                          <TableRow>
                              <StyledTableCell sx={{px: 1, width: 270}} align="center">ФИО</StyledTableCell>
                              <StyledTableCell sx={{px: 1, width: 210}} align="center">Должность</StyledTableCell>
-                             <StyledTableCell sx={{px: 1, width: 10}} align="center">Вн. телефон</StyledTableCell>
-                             <StyledTableCell sx={{px: 1, width: 130}} align="center">Моб. телефон</StyledTableCell>
+                             <StyledTableCell sx={{px: 1, width: 10}} align="center">Внутр. телефон</StyledTableCell>
+                             <StyledTableCell sx={{px: 1, width: 120}} align="center">Моб. телефон</StyledTableCell>
                              <StyledTableCell sx={{px: 1, width: 180}} align="center">E-mail</StyledTableCell>
                              <StyledTableCell sx={{px: 1, width: 210}} align="center">Skype</StyledTableCell>
                          </TableRow>
@@ -231,7 +176,7 @@ const CssSearchBar = styled(SearchBar)({
                                                   align="center">{row.position}</StyledTableCell>
                                  <StyledTableCell sx={{px: 1, width: 10}}
                                                   align="center">{row.int_phone}</StyledTableCell>
-                                 <StyledTableCell sx={{px: 1, width: 130}}
+                                 <StyledTableCell sx={{px: 1, width: 120}}
                                                   align="center">{row.mobile}</StyledTableCell>
                                  <StyledTableCell sx={{px: 1, width: 180}}
                                                   align="center">{row.email}</StyledTableCell>
@@ -243,9 +188,8 @@ const CssSearchBar = styled(SearchBar)({
                  </Table>
              </TableContainer>
 
- </>
-         );
-
+         </>
+     );
  }
 
 

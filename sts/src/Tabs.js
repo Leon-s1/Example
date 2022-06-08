@@ -7,18 +7,14 @@ import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import LenKuz from "./data/Len_Kuz";
 import Novokuznetsk from "./data/Novokuznetsk";
-// import Rekvizit from "./data/Rekvizit";
-import TextField from "@mui/material/TextField";
-import ListSubheader from '@mui/material/ListSubheader'
-import Rej from "./data/Rej";
 import Moscow from "./data/Moscow";
 import Shahti from "./data/Shahti";
 import Vorkuta from "./data/Vorkuta";
-import Gay from "./data/Gay";
-import Shadrinsk from "./data/Shadrinsk";
+import Ural from "./data/Ural";
+import Norilsk from "./data/Norilsk";
+import Rekvizit from "./data/Rekvizit";
 
 const blue = {
-    // 50: '#F0F7FF D1F6EAEA',
     50: '#f6eaea',
     100: '#C2E0FF',
     200: '#232424',
@@ -85,75 +81,33 @@ const TabsList = styled(TabsListUnstyled)`
   align-content: space-between;
   // position: absolute;
   // z-index: 5;
-  width: 100%;
-
-`;
-
-const CssTextField = styled(TextField)({
-    '& label.Mui-focused': {
-        color: 'red',
-    },
-    // '& .MuiInput-underline:after': {
-    //     borderBottomColor: 'green',
-    // },
-    '& .MuiOutlinedInput-root': {
-        '& fieldset': {
-            borderColor: 'red',
-        },
-        // '&:hover fieldset': {
-        //     borderColor: 'yellow',
-        // },
-        '&.Mui-focused fieldset': {
-            borderColor: 'red',
-        },
-    },
-});
-
-
+  width: 100%;`;
 
 export default function UnstyledTabsCustomized() {
     return (
         <>
-        {/*<CssTextField*/}
-        {/*    sx={{minWidth: 1224, pb:  '10px' }}*/}
-        {/*    // value={name}*/}
-        {/*    id="filled-search"*/}
-        {/*    label="Введите фамилию сотрудника..."*/}
-        {/*    type="search"*/}
-        {/*    variant="filled"*/}
-        {/*    color="warning"*/}
-        {/*    aria-label="customized table"*/}
-        {/*/>*/}
-
-        <TabsUnstyled defaultValue={0}>
-            {/*<ListSubheader sx={{ bgcolor: 'background.paper' }}>*/}
+         <TabsUnstyled defaultValue={0}>
             <React.Fragment>
-
             <TabsList sx={{width: 1240}}>
                 <Tab>Ленинск-Кузнецкий</Tab>
                 <Tab>Новокузнецк</Tab>
-                {/*<Tab>Норильск</Tab>*/}
                 <Tab>Москва</Tab>
-                <Tab>Шахты</Tab>
                 <Tab>Воркута</Tab>
-                <Tab>Гай</Tab>
-                <Tab>Реж</Tab>
-                <Tab>Шадринск</Tab>
+                <Tab>Норильск</Tab>
+                <Tab>Шахты</Tab>
+                <Tab>Урал (УГМК)</Tab>
                 <Tab>Реквизиты ООО "Сибтранссервис"</Tab>
             </TabsList>
             </React.Fragment>
-            {/*</ListSubheader>*/}
             <TabPanel value={0}><LenKuz/></TabPanel>
             <TabPanel value={1}><Novokuznetsk /></TabPanel>
-            {/*<TabPanel value={2}><Rej /></TabPanel>*/}
             <TabPanel value={2}><Moscow/></TabPanel>
-            <TabPanel value={3}><Shahti/></TabPanel>
-            <TabPanel value={4}><Vorkuta/></TabPanel>
-            <TabPanel value={5}><Gay /></TabPanel>
-            <TabPanel value={6}><Rej /></TabPanel>
-            <TabPanel value={7}><Shadrinsk/></TabPanel>
-            <TabPanel value={8}>Test</TabPanel>
-        </TabsUnstyled>
+            <TabPanel value={3}><Vorkuta/></TabPanel>
+            <TabPanel value={4}><Norilsk/></TabPanel>
+            <TabPanel value={5}><Shahti/></TabPanel>
+            <TabPanel value={6}><Ural/></TabPanel>
+            <TabPanel value={7}><Rekvizit/></TabPanel>
+         </TabsUnstyled>
             <br/>
             </>
     );

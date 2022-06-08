@@ -9,15 +9,6 @@ import TableRow from '@mui/material/TableRow';
 import SearchBar from "material-ui-search-bar";
 import {useState} from "react";
 
-
-
-// const   tablecontainer = styled(Table) ({
-//     backgroundColor: 'green',
-//     // boxShadow: 'none',
-//     padding: '15px',
-//     // color: '#FFFFFF'
-// });
-
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
         backgroundColor: theme.palette.common.white,
@@ -44,7 +35,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const originalRows = [
-    createData('Иванов Дмитрий Александрович',"Механик участка № 4", '----', "8-987-193-8163", "ivanov.sibservis@yandex.ru ", "----" ),
+
 ];
 
 export default function CustomizedTables() {
@@ -66,16 +57,13 @@ export default function CustomizedTables() {
     return (
         <>
             <SearchBar
-                // sx={{Width: 700}}
                 id="filled-search"
                 placeholder="Введите фамилию сотрудника..."
-                // label="Введите фамилию сотрудника..."
                 value={searched}
                 onChange={(searchVal) => requestSearch(searchVal)}
                 onCancelSearch={() => cancelSearch()}
             />
             <br/>
-
         <TableContainer >
             <Table sx={{ minWidth: 1000 }} aria-label="customized table ">
                 <TableHead>
@@ -104,7 +92,7 @@ export default function CustomizedTables() {
                 </TableBody>
             </Table>
         </TableContainer>
-            </>
+        </>
     );
 }
 

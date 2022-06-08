@@ -6,7 +6,7 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel'
 import TextField from '@mui/material/TextField'
-import './Tabs.css'
+import '../src/Tabs.css'
 import Len_Kuz from "./data/Len_Kuz";
 import Novokuznetsk from "./data/Novokuznetsk";
 import Rej from "./data/Rej"
