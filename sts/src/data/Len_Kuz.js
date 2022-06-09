@@ -56,7 +56,7 @@ const originalRows = [
         "kargina.sts@mail.ru\n", "kargina.sts"),
     createData('Киселев Геннадий Владимирович', "Ведущий менеджер по ГШО", "119", "8-906-938-5900", "kiselev_gv@sibtranss.ru\n" +
         "kiceleb.sts@mail.ru\n", "kiceleb"),
-    createData('Колтунов Павел Владимирович', "Заместитель директора коммерческого по снабжению", "119", "8-906-978-2822", "koltunov_pv@sibtranss.ru\n" +
+    createData('Колтунов Павел Владимирович', "Заместитель коммерческого директора", "119", "8-906-978-2822", "koltunov_pv@sibtranss.ru\n" +
         "koltunov.sts@mail.ru\n", "pavel11588"),
     createData('Комаров Эдуард Викторович', "Начальник гаража", "123", "8-951-173-6176", "komarov@sibtranss.ru\n" +
         "e.komarov.00@bk.ru\n", ".cid.8865c929bfb1e2b2"),
