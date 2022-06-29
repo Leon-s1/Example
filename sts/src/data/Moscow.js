@@ -36,9 +36,9 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 
 const originalRows = [
     createData('Мусатов Константин Викторович', "Генеральный директор ООО «Локотранс»\n" +
-        "Начальник участка № 4\n", "----", "8-906-912-9379", "musatov_kv@sibtranss.ru\n" +
+        " Заместитель генерального директора\n", "----", "8-906-912-9379", "musatov_kv@sibtranss.ru\n" +
         "musatov.servis@yandex.ru\n", "----"),
-    createData('Лазарев Алексей Анатольевич',"", '----', "8-915-073-8411", "Lokotrade.lazarev@gmail.com ", "----" ),
+    createData('Лазарев Алексей Анатольевич',"Горнорабочий подземный", '----', "8-915-073-8411", "Lokotrade.lazarev@gmail.com ", "----" ),
 
 ];
 

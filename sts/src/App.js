@@ -3,15 +3,21 @@ import logo_ferrit from './logo/ferrit_logo.png'
 import './App.css';
 import Tabs from './Tabs'
 import * as React from "react";
+import { Link } from "react-router-dom"
+// import ReactRouter from "react-router"
 
 function App() {
   return (
     <>
       <div className="App">
       <header className="App-header">
-          <img src={logo_sts} className="App-logo" alt="logo" />
+          <a className={"underline-one"} href={"http://sibtranss.ru"} target="_blank">
+              <img src={logo_sts} className="App-logo" alt="logo" />
+          </a>
           <p>Телефонный справочник.</p>
-          <img src={logo_ferrit} className="App-logo" alt="logo" />
+          <a className={"underline-one"} href={"https://www.ferrit.cz/ru"} target="_blank">
+              <img src={logo_ferrit} className="App-logo" alt="logo" />
+          </a>
       </header>
         <Tabs/>
         <footer className="App-footer">

@@ -35,35 +35,35 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const originalRows = [
-    createData('Бельский Геннадий Николаевич', "Водитель", "----", "8-961-723-5825", "----", "----"),
+    createData('Бельский Геннадий Николаевич', "Экспедитор", "----", "8-961-723-5825", "----", "----"),
     createData('Богданов Александр Петрович', "Главный технолог", '109', "8-951-586-7009", "bogdanov.sts@mail.ru", "----"),
     createData('Борисова Лариса Анатольевна ', "Бухгалтер", '120', "8-908-956-5390", "borisova_la@sibtranss.ru ", ".cid.eb433306c7273172"),
-    createData('Буртаев Павел Викторович', "Механик участка № 3 ", '----', "8-951-178-9556\n" +
+    createData('Буртаев Павел Викторович', "Механик участка № 1 ", '----', "8-951-178-9556\n" +
         "8-905-917-7229\n", "----", "----"),
-    createData('Васильева Ирина Григорьевна', "Менеджер по таможенному оформлению", '117', "8-951-589-0707", "vasileva_ig@sibtranss.ru\n" +
+    createData('Васильева Ирина Григорьевна', "Менеджер (по оформлению таможенных документов)", '117', "8-951-589-0707", "vasileva_ig@sibtranss.ru\n" +
         "ira.v-sts@yandex.ru\n" , "irina.v79"),
-    createData('Винокуров Анатолий Валерьевич', "Менеджер по таможенному оформлению", '117', "8-950-571-5668", "vinokurov_av@sibtranss.ru\n" +
+    createData('Винокуров Анатолий Валерьевич', "Менеджер (по оформлению таможенных документов)", '117', "8-950-571-5668", "vinokurov_av@sibtranss.ru\n" +
         "vinokur82@yandex.ru\n", "anatol504"),
     createData('Гарбуз Тамара Петровна', "Главный бухгалтер", "107", "8-951-170-8753", "garbuz_tp@sibtranss.ru\n" +
         "sts.garbuz@mail.ru\n", "garbuz.sts"),
-    createData('Дубровская Галина Семеновна', "Бухгалтер расчетчик", "120", "8-923-531-7464", "dubrovskay_gs@sibtranss.ru\n" +
+    createData('Дубровская Галина Семеновна', "Бухгалтер по расчетам", "120", "8-923-531-7464", "dubrovskay_gs@sibtranss.ru\n" +
         "sts.dubrovskay@mail.ru\n", "sts.dubrovskay"),
     createData('Иванова Валентина Васильевна', "Начальник ОТК", "114", "8-923-482-5438", "ivanova_vv@sibtranss.ru\n" +
         "Ivanova.sts@inbox.ru\n", "ivanova.sts"),
-    createData('Иванова Наталья Алексеевна ', "Инженер по охране труда", "124", "8-913-285-5448", "ivanova_na@sibtranss.ru\n" +
+    createData('Иванова Наталья Алексеевна ', "Специалист по охране труда", "124", "8-913-285-5448", "ivanova_na@sibtranss.ru\n" +
         "kni0212@mail.ru\n", ".cid.e736c9d983a8de56"),
-    createData('Каргина Наталья Иосифовна', "Менеджер по рекламе", "119", "8-904-578-4270", "kargina_ni@sibtranss.ru\n" +
+    createData('Каргина Наталья Иосифовна', "Менеджер (по рекламе)", "119", "8-904-578-4270", "kargina_ni@sibtranss.ru\n" +
         "kargina.sts@mail.ru\n", "kargina.sts"),
-    createData('Киселев Геннадий Владимирович', "Ведущий менеджер по ГШО", "119", "8-906-938-5900", "kiselev_gv@sibtranss.ru\n" +
+    createData('Киселев Геннадий Владимирович', "Ведущий менеджер (по горно-шахтному оборудованию)", "119", "8-906-938-5900", "kiselev_gv@sibtranss.ru\n" +
         "kiceleb.sts@mail.ru\n", "kiceleb"),
-    createData('Колтунов Павел Владимирович', "Заместитель коммерческого директора", "119", "8-906-978-2822", "koltunov_pv@sibtranss.ru\n" +
+    createData('Колтунов Павел Владимирович', "Заместитель директора коммерческого", "119", "8-906-978-2822", "koltunov_pv@sibtranss.ru\n" +
         "koltunov.sts@mail.ru\n", "pavel11588"),
     createData('Комаров Эдуард Викторович', "Начальник гаража", "123", "8-951-173-6176", "komarov@sibtranss.ru\n" +
         "e.komarov.00@bk.ru\n", ".cid.8865c929bfb1e2b2"),
     createData('Кузьминых Анна Александровна', "Экономист (по МТС и сбыту)", "123", "8-906-976-4680", "kuzminikh_aa@sibtranss.ru\n" +
         "kuzminikh88@mail.ru\n", "kuzminikh_sts"),
     createData('Кычанова Наталья Константиновна', "Бухгалтер", "120", "8-961-725-4495", "kychanova_nk@sibtranss.ru", ".cid.6fbb76346d118e65"),
-    createData('Лобачев Евгений Анатольевич', "Технический директор", "106", "8-923-512-3617 8-960-908-6043", "lobachev_ea@sibtranss.ru\n" +
+    createData('Лобачев Евгений Анатольевич', "Директор технический", "106", "8-923-512-3617 8-960-908-6043", "lobachev_ea@sibtranss.ru\n" +
         "lobachev.sts@mail.ru\n", "lobachev.sts"),
     createData('Лязгина Ольга Николаевна', "Заместитель генерального директора по качеству", "124", "8-923-616-4485", "lyazgina_on@sibtranss.ru\n" +
         "smk.sts@mail.ru\n", "lyazgina.sts"),
@@ -78,8 +78,7 @@ const originalRows = [
         "nesterenko.p@mail.ru\n", "----"),
     createData('Ожогина Светлана Борисовна', "Инспектор по кадрам", "112", "8-906-924-9737", "ozhogina_sb@sibtranss.ru\n" +
         "ozhogina.sts@mail.ru\n", "----"),
-    createData('Оскотский Виталий Григорьевич', "Заместитель начальника гаража", "----", "8-913-287-2371", "ozhogina_sb@sibtranss.ru\n" +
-        "ozhogina.sts@mail.ru\n", "----"),
+    createData('Оскотский Виталий Григорьевич', "Электрослесарь (слесарь) дежурный и по ремонту оборудования", "----", "8-913-287-2371", "----", "----"),
     createData('Петрищев Максим Николаевич', "Директор коммерческий", "118", "8-905-919-9463", "petrishev_mn@sibtranss.ru\n" +
         "petrishev_sts@mail.ru\n", "a187357"),
     createData('Пилюгин Михаил Владимирович', "Генеральный директор", "110", "8-923-636-7055", "pilyugin_mv@sibtranss.ru\n" +
