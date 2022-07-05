@@ -40,7 +40,7 @@ const originalRows = [
     createData('Павлова Виктория Владимировна', "Менеджер по ГШО", "----", "8-905-068-8369", "pavlova_vv@sibtranss.ru\n" +
         "sibtransservis@yandex.ru\n", "215f791c4580070a"),
     createData('Попов Константин Юрьевич', "Начальник участка № 7", "----", "8-903-946-7024", "popov_ky@sibtranss.ru\n" +
-        "Pky70@rambler.ru\n", "----"),
+        "Pky70@rambler.ru\n", "popov.konstantin2"),
 ];
 
 export default function CustomizedTables() {

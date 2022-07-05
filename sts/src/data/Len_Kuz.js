@@ -40,7 +40,7 @@ const originalRows = [
     createData('Борисова Лариса Анатольевна ', "Бухгалтер", '120', "8-908-956-5390", "borisova_la@sibtranss.ru ", ".cid.eb433306c7273172"),
     createData('Буртаев Павел Викторович', "Механик участка № 1 ", '----', "8-951-178-9556\n" +
         "8-905-917-7229\n", "----", "----"),
-    createData('Васильева Ирина Григорьевна', "Менеджер (по оформлению таможенных документов)", '117', "8-951-589-0707", "vasileva_ig@sibtranss.ru\n" +
+    createData('Васильева Ирина Григорьевна', "Менеджер (по оформлению таможенных документов)", '117', "8-951-589-0707", "  vasileva_ig@sibtranss.ru\n" +
         "ira.v-sts@yandex.ru\n" , "irina.v79"),
     createData('Винокуров Анатолий Валерьевич', "Менеджер (по оформлению таможенных документов)", '117', "8-950-571-5668", "vinokurov_av@sibtranss.ru\n" +
         "vinokur82@yandex.ru\n", "anatol504"),
@@ -104,26 +104,6 @@ const originalRows = [
     createData('Шестаков Андрей Владимирович', "Юрист", "----", "8-905-070-7763", "shestakof-andrey@mail.ru", "----"),
     createData('Ядыкина Ольга Викторовна', "Референт-секретарь", "101", "8-913-331-2507", "yadykina_ov@sibtranss.ru", "yadikina2"),
 ];
-
-// const CssSearchBar = styled(SearchBar)({
-//     '& label.Mui-focused': {
-//         color: 'red',
-//     },
-//     '& .MuiInput-underline:after': {
-//         borderBottomColor: 'green',
-//     },
-//     '& .MuiOutlinedInput-root': {
-//         '& fieldset': {
-//             borderColor: 'red',
-//         },
-//         '&:hover fieldset': {
-//             borderColor: 'yellow',
-//         },
-//         '&.Mui-focused fieldset': {
-//             borderColor: 'red',
-//         },
-//     },
-// });
 
     export default function CustomizedTables() {
         const [rows, setRows] = useState(originalRows);

@@ -30,7 +30,7 @@ function App() {
                               Приемная: +7 (38456) 5-31-29, отдел кадров: 5-31-30, коммерческий отдел: 5-31-31</li>
                           <li className="cont-phone">Факс: +7 (38456) 5-31-28</li>
                           <li className="cont-email">
-                              <a href="priemnay@sibtranss.ru">priemnay@sibtranss.ru</a>
+                              <a href="mailto:priemnay@sibtranss.ru">priemnay@sibtranss.ru</a>
                           </li>
                           <li className="cont-adress">Россия, г. Ленинск-Кузнецкий, ул. Зорина 8-б</li>
                       </ul>
@@ -39,7 +39,7 @@ function App() {
                           <li className="cont-phone">
                               Приемная: 8(3843)37-36-65</li>
                           <li className="cont-email">
-                              <a href="priemnay@sibtranss.ru">sibtransservis@yandex.ru</a>
+                              <a href="mailto:priemnay@sibtranss.ru">sibtransservis@yandex.ru</a>
                           </li>
                           <li className="cont-adress">Россия, Г. Новокузнецк, проезд Ферросплавный 15</li>
                           <h3><a href = "http://sibtranss.ru">Сайт СИБ<span>ТРАНС</span>СЕРВИС</a></h3>
