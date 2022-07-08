@@ -77,7 +77,7 @@ const originalRows = [
     createData('Нестеренко Павел Юрьевич', "Начальник складского хозяйства", "119", "8-961-706-9943", "nesterenko_p@sibtranss.ru\n" +
         "nesterenko.p@mail.ru\n", "----"),
     createData('Ожогина Светлана Борисовна', "Инспектор по кадрам", "112", "8-906-924-9737", "ozhogina_sb@sibtranss.ru\n" +
-        "ozhogina.sts@mail.ru\n", "----"),
+        "ozhogina.sts@mail.ru\n", "b246581117e27e6c"),
     createData('Оскотский Виталий Григорьевич', "Электрослесарь (слесарь) дежурный и по ремонту оборудования", "----", "8-913-287-2371", "----", "----"),
     createData('Петрищев Максим Николаевич', "Директор коммерческий", "118", "8-905-919-9463", "petrishev_mn@sibtranss.ru\n" +
         "petrishev_sts@mail.ru\n", "a187357"),
@@ -98,7 +98,7 @@ const originalRows = [
     createData('Чупров Сергей Александрович', "Системный администратор", "109", "8-905-079-9181\n" + "8-923-608-2256\n", "chuprov_sa@sibtranss.ru", ".cid.5ca4b17fe0de3d6b"),
     createData('Шанкин Александр Сергеевич', "Начальник производства", "114", "8-913-123-5776", "shankin_as@sibtranss.ru\n" +
         "a.shankin@mail.ru\n", "shankin.sts"),
-    createData('Шарифуллин Салават Сафуанович', "Заместитель начальника участка № 1", "123", "8-952-165-2915", "sharifullin_ss@sibtranss.ru", "----"),
+    createData('Шарифуллин Салават Сафуанович', "Заместитель начальника участка № 1", "123", "8-952-165-2915", "sharifullin_ss@sibtranss.ru", ".cid.1ea11932c52820a2"),
     createData('Шевцов Евгений Юрьевич', "Инженер-конструктор", "109", "8-923-506-3864", "shevcov_e@sibtranss.ru\n" +
         "shvetsov-70512.lnk@rambler.ru\n", "evgenyshevcov"),
     createData('Шестаков Андрей Владимирович', "Юрист", "----", "8-905-070-7763", "shestakof-andrey@mail.ru", "----"),
