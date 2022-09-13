@@ -1,7 +1,12 @@
-import React from "react";
+// import React from "react";
 import { createRoot } from 'react-dom/client';
-// import ReactDOM from 'react-dom'
+import * as ReactDOMClient from 'react-dom/client';
+
+import ReactDOM from 'react-dom'
 import App from './App'
+
+
+
 
  // ReactDOM.render(<App>, document.getElementById('root');</App>)
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,4 +26,4 @@ import App from './App'
 
 const container = document.getElementById('App');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript
-root.render(<App/>);
+root.render(<App tab="home" />);

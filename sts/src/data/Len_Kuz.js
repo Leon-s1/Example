@@ -44,7 +44,7 @@ const originalRows = [
         "ira.v-sts@yandex.ru\n" , "irina.v79"),
     createData('Винокуров Анатолий Валерьевич', "Менеджер (по оформлению таможенных документов)", '117', "8-950-571-5668", "vinokurov_av@sibtranss.ru\n" +
         "vinokur82@yandex.ru\n", "anatol504"),
-    createData('Гарбуз Тамара Петровна', "Главный бухгалтер", "107", "8-951-170-8753", "garbuz_tp@sibtranss.ru\n" +
+    createData('Гарбуз Тамара Петровна', "Главный бухгалтер", "107", "8-951-170-8753\n" + "8-906-938-1517\n", "garbuz_tp@sibtranss.ru\n" +
         "sts.garbuz@mail.ru\n", "garbuz.sts"),
     createData('Дубровская Галина Семеновна', "Бухгалтер по расчетам", "120", "8-923-531-7464", "dubrovskay_gs@sibtranss.ru\n" +
         "sts.dubrovskay@mail.ru\n", "sts.dubrovskay"),
@@ -60,7 +60,7 @@ const originalRows = [
         "koltunov.sts@mail.ru\n", "pavel11588"),
     createData('Комаров Эдуард Викторович', "Начальник гаража", "123", "8-951-173-6176", "komarov@sibtranss.ru\n" +
         "e.komarov.00@bk.ru\n", ".cid.8865c929bfb1e2b2"),
-    createData('Кузьминых Анна Александровна', "Экономист (по МТС и сбыту)", "123", "8-906-976-4680", "kuzminikh_aa@sibtranss.ru\n" +
+    createData('Кузьминых Анна Александровна', "Экономист (по МТС и сбыту)", "118", "8-906-976-4680", "kuzminikh_aa@sibtranss.ru\n" +
         "kuzminikh88@mail.ru\n", "kuzminikh_sts"),
     createData('Кычанова Наталья Константиновна', "Бухгалтер", "120", "8-961-725-4495", "kychanova_nk@sibtranss.ru", ".cid.6fbb76346d118e65"),
     createData('Лобачев Евгений Анатольевич', "Директор технический", "106", "8-923-512-3617 8-960-908-6043", "lobachev_ea@sibtranss.ru\n" +
@@ -95,6 +95,7 @@ const originalRows = [
     createData('Токарь Татьяна Ивановна', "Кладовщик", "113", "8-951-577-4450", "tokar_ti@sibtranss.ru", "tatiana.sts3"),
     createData('Трухманов Сергей Васильевич', "Заместитель директора коммерческого", "119", "8-906-977-4770", "trukhmanov_sv@sibtranss.ru\n" +
         "truhmanov.sts@mail.ru\n", "truhmanovserg2472"),
+    createData('Чунтонова Екатерина Дмитриевна', "Менеджер (по горно-шахтному оборудованию)", "119", "8-960-920-7052\n", "chuntonova_ed@sibtranss.ru", ".cid.ae6e8742df0a540d"),
     createData('Чупров Сергей Александрович', "Системный администратор", "109", "8-905-079-9181\n" + "8-923-608-2256\n", "chuprov_sa@sibtranss.ru", ".cid.5ca4b17fe0de3d6b"),
     createData('Шанкин Александр Сергеевич', "Начальник производства", "114", "8-913-123-5776", "shankin_as@sibtranss.ru\n" +
         "a.shankin@mail.ru\n", "shankin.sts"),
