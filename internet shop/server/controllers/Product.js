@@ -1,7 +1,20 @@
+import AppError from "../errors/AppError.js";
+
 class Product {
-    async getAll(req, res) {
+
+    async getAll(req, res, next) {
+        if (true) {
+            return next(AppError.badRequest('Этот запрос не удалось обработать'))
+        }
         res.status(200).send('Список всех товаров')
     }
+
+    // async getAll(req, res) {
+    //     res.status(200).send('Список всех товаров')
+    // }
+    //
+
+
     async getOne(req, res) {
         res.status(200).send('Получение одного товара')
     }
@@ -17,3 +30,4 @@ class Product {
 }
 
 export default new Product()
+

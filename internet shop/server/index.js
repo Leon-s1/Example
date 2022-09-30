@@ -4,6 +4,7 @@ import sequelize from "./sequelize.js";   //Нужно было прописыв
 import * as mapping from './models/mapping.js'
 import cors from 'cors'
 import router from './routes/index.js'
+import ErrorHandler from "./middleware/ErrorHandler.js";
 
 const PORT = process.env.PORT || 5000
 
@@ -12,14 +13,18 @@ app.use(cors())
 app.use(express.json())
 app.use('/api', router)
 
+//Обработка ошибок
+app.use(ErrorHandler)
+
+
 //Обрабатываем GET запрос
-app.get('/', (req, res) => {
-    res.status(200).json({message: 'Hello World!'})
-})
+// app.get('/', (req, res) => {
+//     res.status(200).json({message: 'Hello World!'})
+// })
 // Обрабатываем POST запрос
-app.post('/',(req, res) => {
-    res.status(200).json(req.body)
-})
+// app.post('/',(req, res) => {
+//     res.status(200).json(req.body)
+// })
 
 
 
