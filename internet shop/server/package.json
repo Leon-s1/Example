@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "start-dev": "nodemone index.js"
+    "start-dev": "nodemon index.js",
+    "dev": "nodemon --experimental-modules index.js",
+    "start-dev2": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
   "keywords": [
     "Backend",
@@ -20,6 +22,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
+    "nodemodule": "^0.3.0",
     "pg": "^8.8.0",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.23.1"

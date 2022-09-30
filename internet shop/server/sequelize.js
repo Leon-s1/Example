@@ -1,4 +1,4 @@
-import {Sequelize} from "sequelize";
+import {Sequelize} from 'sequelize'
 
 export default new Sequelize(
     process.env.DB_NAME,
@@ -7,6 +7,7 @@ export default new Sequelize(
     {
         dialect: 'postgres',
         host: process.env.DB_HOST,
-        port: process.env.DB_PORT
+        port: process.env.DB_PORT,
+
     }
 )
