@@ -10,20 +10,24 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="добавляю скрипты">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-advanced-github/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-advanced-github/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +119,8 @@
       <workItem from="1646053109399" duration="4211000" />
       <workItem from="1652710636453" duration="2967000" />
       <workItem from="1663859110774" duration="315000" />
-      <workItem from="1664200412081" duration="1804000" />
+      <workItem from="1664200412081" duration="2536000" />
+      <workItem from="1664722602631" duration="1053000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -152,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635260109566</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update project">
+      <created>1664204909353</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664204909353</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +196,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -201,28 +213,37 @@
     <MESSAGE value="Не добавлялось поле title в список сотрудников" />
     <MESSAGE value="Не добавлялось поле title в список сотрудников. Добавил функцию lean() в роутер." />
     <MESSAGE value="добавляю скрипты" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавляю скрипты" />
+    <MESSAGE value="update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1419" height="222" key="GridCell.Tab.0.bottom" timestamp="1664201663990">
+    <state width="1419" height="222" key="GridCell.Tab.0.bottom" timestamp="1664206109125">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664201663990" />
-    <state width="1419" height="222" key="GridCell.Tab.0.center" timestamp="1664201663990">
+    <state width="1419" height="222" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664206109125" />
+    <state width="1419" height="222" key="GridCell.Tab.0.center" timestamp="1664206109124">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664201663990" />
-    <state width="1419" height="222" key="GridCell.Tab.0.left" timestamp="1664201663990">
+    <state width="1419" height="222" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664206109124" />
+    <state width="1419" height="222" key="GridCell.Tab.0.left" timestamp="1664206109124">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664201663990" />
-    <state width="1419" height="222" key="GridCell.Tab.0.right" timestamp="1664201663990">
+    <state width="1419" height="222" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664206109124" />
+    <state width="1419" height="222" key="GridCell.Tab.0.right" timestamp="1664206109125">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state width="1419" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664201663990" />
-    <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
+    <state width="1419" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664206109125" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1664204966277">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="451" y="218" key="git4idea.merge.GitPullDialog/0.0.1440.860@0.0.1440.860" timestamp="1664201317766" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664204966277" />
+    <state x="529" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1664723663452">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="529" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1664723663452" />
+    <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664722947757">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="451" y="218" key="git4idea.merge.GitPullDialog/0.0.1440.860@0.0.1440.860" timestamp="1664722947757" />
   </component>
 </project>
