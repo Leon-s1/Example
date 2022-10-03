@@ -17,14 +17,14 @@ app.use('/api', router)
 app.use(ErrorHandler)
 
 
-//Обрабатываем GET запрос
-// app.get('/', (req, res) => {
-//     res.status(200).json({message: 'Hello World!'})
-// })
+// Обрабатываем GET запрос
+app.get('/', (req, res) => {
+    res.status(200).json({message: 'Hello World!'})
+})
 // Обрабатываем POST запрос
-// app.post('/',(req, res) => {
-//     res.status(200).json(req.body)
-// })
+app.post('/',(req, res) => {
+    res.status(200).json(req.body)
+})
 
 
 
