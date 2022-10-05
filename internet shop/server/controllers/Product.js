@@ -1,6 +1,6 @@
 import { Product as ProductMapping } from "../models/mapping.js";
 import AppError from "../errors/AppError.js";
-// import FileService from '../services/File.js'
+import FileService from '../services/File.js'
 
 
 class Product {
@@ -44,9 +44,13 @@ class Product {
 
 
     async create(req, res, next) {
+
         try {
+            console.log(req.body)
+            console.log(req.files)
             // поскольку image не допускает null, задаем пустую строку
-            const {name, price, image = '', categoryId = null, brandId = null} = req.body
+            const image = FileService.save(req.files?.image) ?? ''
+            const {name, price, categoryId = null, brandId = null} = req.body
             const product = await ProductMapping.create({name, price, image, categoryId, brandId})
             res.json(product)
         } catch(e) {

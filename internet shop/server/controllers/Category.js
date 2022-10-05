@@ -45,10 +45,11 @@
 // }
 //
 // export default new Category()
-
+//*******************************************************************
 //Реализуем методы контроллера Категорий
 import { Category as CategoryMapping } from '../models/mapping.js'
 import AppError from '../errors/AppError.js'
+import FileService from '../services/File.js'
 
 class Category {
     async getAll(req, res, next) {
