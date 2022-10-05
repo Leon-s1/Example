@@ -26,16 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="добавляю скрипты">
-      <change afterPath="$PROJECT_DIR$/internet shop/server/services/File.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test.http" afterDir="false" />
-    </list>
+    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="добавляю скрипты" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -558,7 +549,7 @@
       <workItem from="1652710636453" duration="2967000" />
       <workItem from="1663859110774" duration="315000" />
       <workItem from="1664200412081" duration="1804000" />
-      <workItem from="1664273965724" duration="69933000" />
+      <workItem from="1664273965724" duration="70270000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -665,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664957178263</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add downloading picture">
+      <created>1664963065880</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1664963065880</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -724,33 +722,34 @@
     <MESSAGE value="add AppError, ErrorHandler" />
     <MESSAGE value="edit controller Product.js" />
     <MESSAGE value="add controller Brand.js, Category.js, User.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add controller Brand.js, Category.js, User.js" />
+    <MESSAGE value="add downloading picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="add downloading picture" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1664333239781">
+    <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1664963099767">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="399" y="383" width="586" height="274" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1664333239781" />
-    <state width="974" height="281" key="GridCell.Tab.0.bottom" timestamp="1664962736511">
+    <state x="399" y="383" width="586" height="274" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1664963099767" />
+    <state width="974" height="281" key="GridCell.Tab.0.bottom" timestamp="1664962786673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1664962736511" />
-    <state width="974" height="281" key="GridCell.Tab.0.center" timestamp="1664962736511">
+    <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1664962786673" />
+    <state width="974" height="281" key="GridCell.Tab.0.center" timestamp="1664962786673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1664962736511" />
-    <state width="974" height="281" key="GridCell.Tab.0.left" timestamp="1664962736511">
+    <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1664962786673" />
+    <state width="974" height="281" key="GridCell.Tab.0.left" timestamp="1664962786673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1664962736511" />
-    <state width="974" height="281" key="GridCell.Tab.0.right" timestamp="1664962736511">
+    <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1664962786673" />
+    <state width="974" height="281" key="GridCell.Tab.0.right" timestamp="1664962786673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1664962736511" />
+    <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1664962786673" />
     <state x="15" y="165" key="SettingsEditor" timestamp="1664333224090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -759,11 +758,11 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1664957191880">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1664963084372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664957191880" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664963084372" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
