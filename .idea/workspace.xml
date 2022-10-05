@@ -28,8 +28,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="добавляю скрипты">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/server/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,8 +80,43 @@
     <option name="REQUEST_HISTORY">
       <list>
         <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/product/getall" />
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/product/update/10" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар (обновление)&quot;,&#10;  &quot;price&quot;: 22222&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:7000/api/product/delete/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:7000/api/product/delete/4" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
@@ -112,8 +150,53 @@
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/product/getone/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/product/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:7000/api/product/delete/3" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/product/update/2" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
@@ -128,22 +211,7 @@
             </list>
           </option>
           <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар&quot;,&#10;  &quot;price&quot;: 11111&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/product/delete/1" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар (обновление)&quot;,&#10;  &quot;price&quot;: 22222&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -167,6 +235,61 @@
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/product/update/3" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар (обновление)&quot;,&#10;  &quot;price&quot;: 22222&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/product/getone/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/product/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар&quot;,&#10;  &quot;price&quot;: 11111&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:7000/api/product/getone/4" />
           <option name="urlPath" value="" />
@@ -184,21 +307,6 @@
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:7000/api/product/getone/3" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/product/getone/1" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
@@ -309,14 +417,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.test#1">
+  <component name="RunManager" selected="HTTP Request.test#4">
+    <configuration name="All in test" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http">
+      <method v="2" />
+    </configuration>
     <configuration name="test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="test#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="test#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="4" runType="Run single request">
@@ -328,16 +436,16 @@
     <list>
       <item itemvalue="HTTP Request.test#1" />
       <item itemvalue="HTTP Request.test#2" />
-      <item itemvalue="HTTP Request.test#3" />
       <item itemvalue="HTTP Request.test#4" />
       <item itemvalue="HTTP Request.test#5" />
+      <item itemvalue="HTTP Request.All in test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.test#1" />
-        <item itemvalue="HTTP Request.test#3" />
-        <item itemvalue="HTTP Request.test#5" />
         <item itemvalue="HTTP Request.test#4" />
+        <item itemvalue="HTTP Request.test#5" />
+        <item itemvalue="HTTP Request.All in test" />
+        <item itemvalue="HTTP Request.test#1" />
         <item itemvalue="HTTP Request.test#2" />
       </list>
     </recent_temporary>
@@ -369,7 +477,7 @@
       <workItem from="1652710636453" duration="2967000" />
       <workItem from="1663859110774" duration="315000" />
       <workItem from="1664200412081" duration="1804000" />
-      <workItem from="1664273965724" duration="60891000" />
+      <workItem from="1664273965724" duration="64798000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -462,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664531564995</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="edit controller Product.js">
+      <created>1664807532089</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664807532089</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,34 +642,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="399" y="383" width="586" height="274" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1664333239781" />
-    <state width="974" height="281" key="GridCell.Tab.0.bottom" timestamp="1664807462345">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="974" height="281" key="GridCell.Tab.0.bottom" timestamp="1664954850627">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1664790327416" />
-    <state width="974" height="281" key="GridCell.Tab.0.center" timestamp="1664807462345">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1664954850627" />
+    <state width="974" height="281" key="GridCell.Tab.0.center" timestamp="1664954850627">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1664790327415" />
-    <state width="974" height="281" key="GridCell.Tab.0.left" timestamp="1664807462345">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1664954850627" />
+    <state width="974" height="281" key="GridCell.Tab.0.left" timestamp="1664954850627">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1664790327415" />
-    <state width="974" height="281" key="GridCell.Tab.0.right" timestamp="1664807462345">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1664954850627" />
+    <state width="974" height="281" key="GridCell.Tab.0.right" timestamp="1664954850627">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1664790327415" />
+    <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1664954850627" />
     <state x="15" y="165" key="SettingsEditor" timestamp="1664333224090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1664333224090" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1664531574032">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="388" y="344" key="VCS.EditChangelistDialog" timestamp="1664807683015">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664206383895" />
+    <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
+    <state x="106" y="166" key="Vcs.Push.Dialog.v2" timestamp="1664807548915">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
     <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664531574032" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />

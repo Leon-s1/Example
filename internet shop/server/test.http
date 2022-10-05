@@ -40,7 +40,7 @@ GET /api/product/getall HTTP/1.1
 Host: localhost:7000
 
 ### Получить один товар
-GET /api/product/getone/4 HTTP/1.1
+GET /api/product/getone/1 HTTP/1.1
 Host: localhost:7000
 
 ### Создать новый товар
@@ -54,7 +54,7 @@ Content-type: application/json; charset=utf-8
 }
 
 ### Обновить товар
-PUT /api/product/update/1 HTTP/1.1
+PUT /api/product/update/10 HTTP/1.1
 Host: localhost:7000
 Content-type: application/json; charset=utf-8
 
