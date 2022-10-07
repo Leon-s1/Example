@@ -26,15 +26,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="добавляю скрипты">
-      <change afterPath="$PROJECT_DIR$/internet shop/server/models/Brand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/models/Category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/models/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/models/User.js" afterDir="false" />
+    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add new models">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/mapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/mapping.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/server/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/services/File.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/services/File.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -558,7 +558,7 @@
       <workItem from="1652710636453" duration="2967000" />
       <workItem from="1663859110774" duration="315000" />
       <workItem from="1664200412081" duration="1804000" />
-      <workItem from="1664273965724" duration="83651000" />
+      <workItem from="1664273965724" duration="91000000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -679,7 +679,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664963374752</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add new models">
+      <created>1665108180240</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665108180240</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,7 +747,8 @@
     <MESSAGE value="add controller Brand.js, Category.js, User.js" />
     <MESSAGE value="add downloading picture" />
     <MESSAGE value="add picture" />
-    <option name="LAST_COMMIT_MESSAGE" value="add picture" />
+    <MESSAGE value="add new models" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new models" />
   </component>
   <component name="WindowStateProjectService">
     <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1664963099767">
@@ -775,11 +783,11 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1664963390217">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1665108202819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1664963390217" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1665108202819" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

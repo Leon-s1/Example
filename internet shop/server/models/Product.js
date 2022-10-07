@@ -1,14 +1,19 @@
 import { Product as ProductMapping } from "./mapping.js";
+import FileService from '../services/File.js'
 import AppError from "../errors/AppError.js";
 
 class Product {
     async getAll() {
-        const products = ProductMapping.findAll()
-        return products
+        const {categoryId, brandId} = params
+        const where = {}
+        if (categoryId) where.categoryId = categoryId
+        if (brandId) where.brandId = brandId
+        const products = await ProductMapping.findAll(where)
+        // return products
     }
 
-    async getOne() {
-        const product = ProductMapping.findByPk(id)
+    async getOne(id) {
+        const product = await ProductMapping.findByPk(id)
         if (!product) {
             throw new Error('Товар не найден в БД')
         }
@@ -23,7 +28,7 @@ class Product {
         return product
     }
 
-    async udate(id, data, img) {
+    async update(id, data, img) {
         const product = await ProductMapping.findByPk(id)
         if (!product) {
             throw new Error('Товар не найден в БД')

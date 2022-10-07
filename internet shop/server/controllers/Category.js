@@ -47,14 +47,16 @@
 // export default new Category()
 //*******************************************************************
 //Реализуем методы контроллера Категорий
-import { Category as CategoryMapping } from '../models/mapping.js'
+// import { Category as CategoryMapping } from '../models/mapping.js'
+import CategoryModel from '../models/Category.js'
 import AppError from '../errors/AppError.js'
-import FileService from '../services/File.js'
+// import FileService from '../services/File.js'
 
 class Category {
     async getAll(req, res, next) {
         try {
-            const categories = await CategoryMapping.findAll()
+            // const categories = await CategoryMapping.findAll()
+            const categories = await CategoryModel.getAll()
             res.json(categories)
         } catch(e) {
             next(AppError.badRequest(e.message))
@@ -66,7 +68,7 @@ class Category {
             if (!req.params.id) {
                 throw new Error('Не указан id категории')
             }
-            const category = await CategoryMapping.findByPk(req.params.id)
+            const category = await CategoryModel.getOne(req.params.id)
             if (!category) {
                 throw new Error('Категория не найдена в БД')
             }
@@ -78,7 +80,8 @@ class Category {
 
     async create(req, res, next) {
         try {
-            const category = await CategoryMapping.create({name: req.body.name})
+            // const category = await CategoryMapping.create({name: req.body.name})
+            const category = await CategoryModel.create(req.body)
             res.json(category)
         } catch(e) {
             next(AppError.badRequest(e.message))
@@ -90,12 +93,13 @@ class Category {
             if (!req.params.id) {
                 throw new Error('Не указан id категории')
             }
-            const category = await CategoryMapping.findByPk(req.params.id)
-            if (!category) {
-                throw new Error('Категория не найдена в БД')
-            }
-            const name = req.body.name ?? category.name
-            await category.update({name})
+            // const category = await CategoryMapping.findByPk(req.params.id)
+            const category = await CategoryModel.update(req.params.id, req.body)
+            // if (!category) {
+            //     throw new Error('Категория не найдена в БД')
+            // }
+            // const name = req.body.name ?? category.name
+            // await category.update({name})
             res.json(category)
         } catch(e) {
             next(AppError.badRequest(e.message))
@@ -107,11 +111,12 @@ class Category {
             if (!req.params.id) {
                 throw new Error('Не указан id категории')
             }
-            const category = await CategoryMapping.findByPk(req.params.id)
-            if (!category) {
-                throw new Error('Категория не найдена в БД')
-            }
-            await category.destroy()
+            // const category = await CategoryMapping.findByPk(req.params.id)
+            const category = await CategoryModel.delete(req.params.id)
+            // if (!category) {
+            //     throw new Error('Категория не найдена в БД')
+            // }
+            // await category.destroy()
             res.json(category)
         } catch(e) {
             next(AppError.badRequest(e.message))

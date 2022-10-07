@@ -8,7 +8,7 @@ class Product {
 
     async getAll(req, res, next) {
         try {
-            const products = await ProductModel.getAll()
+            const products = await ProductModel.getAll(req.params)
             // const products = await ProductMapping.findAll()
             res.json(products)
         } catch (e) {

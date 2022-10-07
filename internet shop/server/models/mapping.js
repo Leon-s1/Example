@@ -35,7 +35,7 @@ const Product = sequelize.define('product', {
 
 //Модель "Категория", таблица БД "categories"
 const Category = sequelize.define('category',{
-    is: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, unique: true, allowNull: false}
 })
 
