@@ -3,7 +3,7 @@ import FileService from '../services/File.js'
 import AppError from "../errors/AppError.js";
 
 class Product {
-    async getAll() {
+    async getAll(params) {
         const {categoryId, brandId} = params
         const where = {}
         if (categoryId) where.categoryId = categoryId
