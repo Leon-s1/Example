@@ -8,7 +8,14 @@ class Product {
 
     async getAll(req, res, next) {
         try {
-            const products = await ProductModel.getAll(req.params)
+            //добавляем возможность запрашивать только часть товаров
+            const {categoryId = null, brandId = null} = req.params
+            let {limit, page} = req.query
+            limit = limit && /[0-9]+/.test(limit) && parseInt(limit) ? parseInt(limit) : 3
+            page = page && /[0-9]+/.test(page) && parseInt(page) ? parseInt(page) : 1
+            const options = {categoryId, brandId, limit, page}
+            const products = await ProductModel.getAll(options)
+            // const products = await ProductModel.getAll(req.params)
             // const products = await ProductMapping.findAll()
             res.json(products)
         } catch (e) {

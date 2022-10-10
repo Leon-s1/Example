@@ -1,15 +1,22 @@
 import { Product as ProductMapping } from "./mapping.js";
+import { ProductProp as ProductPropMappin } from "./mapping.js";
 import FileService from '../services/File.js'
 import AppError from "../errors/AppError.js";
+// import {JSON, json} from "sequelize";
 
 class Product {
-    async getAll(params) {
-        const {categoryId, brandId} = params
+    // async getAll(params) {
+    //добавляем возможность запрашивать только часть товаров
+    async getAll(options) {
+        const {categoryId, brandId, limit, page} = options
+        const offset = (page - 1) * limit
         const where = {}
         if (categoryId) where.categoryId = categoryId
         if (brandId) where.brandId = brandId
-        const products = await ProductMapping.findAll(where)
-        // return products
+        //Добавляем новый метод findAndCountAll
+        const products = await ProductMapping.findAndCountAll({where, limit, offset})
+        // const products = await ProductMapping.findAll(where)
+        return products
     }
 
     async getOne(id) {
@@ -25,6 +32,17 @@ class Product {
         const image = FileService.save(img) ?? ''
         const {name, price, categoryId = null, brandId = null} = data
         const product = await ProductMapping.create(name, price, image, categoryId, brandId)
+        // добавляем свойства товара в таблицу ProductProp
+        if (data.props) { //если свойства товара имеются
+            const props = JSON.parse(data.props)
+            for (let prop of props) {
+                await ProductPropMappin.create({
+                    name: prop.name,
+                    value: prop.value,
+                    productId: product.id
+                })
+            }
+        }
         return product
     }
 
