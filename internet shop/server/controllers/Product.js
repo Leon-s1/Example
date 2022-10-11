@@ -1,7 +1,7 @@
 // import { Product as ProductMapping } from "../models/mapping.js";
 import ProductModel from '../models/Product.js'
 import AppError from "../errors/AppError.js"
-// import FileService from '../services/File.js'
+import FileService from '../services/File.js'
 
 
 class Product {

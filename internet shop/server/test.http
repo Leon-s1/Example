@@ -42,36 +42,36 @@ GET /api/product/getall HTTP/1.1
 Host: localhost:7000
 
 ### Получить один товар
-#GET /api/product/getone/1 HTTP/1.1
-#Host: localhost:7000
+GET /api/product/getone/1 HTTP/1.1
+Host: localhost:7000
 
 ### Создать новый товар
-#POST /api/product/create HTTP/1.1
-#Host: localhost:7000
-#Content-type: application/json; charset=utf-8
-#
-#{
-#  "name": "Первый товар1",
-#  "price": 111111
-#}
+POST /api/product/create HTTP/1.1
+Host: localhost:7000
+Content-type: application/json; charset=utf-8
+
+{
+  "name": "Первый товар1",
+  "price": 111111
+}
 
 ### Обновить товар
-#PUT /api/product/update/10 HTTP/1.1
-#Host: localhost:7000
-#Content-type: application/json; charset=utf-8
-#
-#{
-#  "name": "Первый товар (обновление)",
-#  "price": 22222
-#}
+PUT /api/product/update/10 HTTP/1.1
+Host: localhost:7000
+Content-type: application/json; charset=utf-8
+
+{
+  "name": "Первый товар (обновление)",
+  "price": 22222
+}
 
 ### Удалить товар
-#DELETE /api/product/delete/1 HTTP/1.1
-#Host: localhost:7000
+DELETE /api/product/delete/1 HTTP/1.1
+Host: localhost:7000
 
 
 #**********************************************************************
-#Готовим POST-запрос —  кладем в директорию shop/server файл picture.jpg:
+#Готовим POST-запрос —  кладем в директорию internet shop/server файл picture.jpg:
 ### создание товара с изображением
 POST /api/product/create HTTP/1.1
 Host: localhost:7000
@@ -88,6 +88,7 @@ Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
 Content-Disposition: form-data; name="name"
 
 Название товара3333
+
 --MultiPartFormDataBoundary
 Content-Disposition: form-data; name="price"
 
@@ -108,17 +109,12 @@ POST /api/product/create HTTP/1.1
 Host: localhost:7000
 Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
 
-#{
-#  "name": "Название товара 18",
-#  "price": 12345,
-#  "image": picture.jpg
-#}
-
 --MultiPartFormDataBoundary
 Content-Disposition: form-data; name="name"
 Content-Type: text/plain; charset=utf-8
 
 Название товара 19
+
 --MultiPartFormDataBoundary
 Content-Disposition: form-data; name="price"
 Content-Type: text/plain; charset=utf-8

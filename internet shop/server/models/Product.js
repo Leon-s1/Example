@@ -2,6 +2,7 @@ import { Product as ProductMapping } from "./mapping.js";
 import { ProductProp as ProductPropMappin } from "./mapping.js";
 import FileService from '../services/File.js'
 import AppError from "../errors/AppError.js";
+// import {where} from "sequelize";
 // import {JSON, json} from "sequelize";
 
 class Product {
@@ -20,7 +21,11 @@ class Product {
     }
 
     async getOne(id) {
-        const product = await ProductMapping.findByPk(id)
+        // const product = await ProductMapping.findByPk(id)
+        const product = await ProductMapping.findOne({
+            where: {id: id},
+            includes: [{model: ProductPropMappin}]
+        })
         if (!product) {
             throw new Error('Товар не найден в БД')
         }
