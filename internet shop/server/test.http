@@ -77,13 +77,6 @@ POST /api/product/create HTTP/1.1
 Host: localhost:7000
 Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
 
-#{
-#  "name": "Первый товар1",
-#  "price": 111111,
-#  "image": picture.jpg
-#}
-
-
 --MultiPartFormDataBoundary
 Content-Disposition: form-data; name="name"
 
@@ -105,6 +98,10 @@ Content-Type: image/jpeg
 
 #Проверим, что свойства добавляются — редактируем test.http и отправляем POST-запрос:
 ### создание товара, у которого есть свойства
+### Список всех товаров
+GET /api/product/getall HTTP/1.1
+Host: localhost:7000
+
 POST /api/product/create HTTP/1.1
 Host: localhost:7000
 Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
@@ -113,7 +110,7 @@ Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
 Content-Disposition: form-data; name="name"
 Content-Type: text/plain; charset=utf-8
 
-Название товара 19
+Название товара 20
 
 --MultiPartFormDataBoundary
 Content-Disposition: form-data; name="price"

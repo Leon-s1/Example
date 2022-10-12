@@ -99,7 +99,8 @@ Rating.belongsTo(User)
 
 // связь товара с его свойствами: у товара может быть несколько свойств, но
 // каждое свойство связано только с одним товаром
-Product.hasMany(ProductProp, {as: 'props', onDelete: 'CASCADE'})
+// Product.hasMany(ProductProp, {as: 'props', onDelete: 'CASCADE'})
+Product.hasMany(ProductProp, {as: 'props'})
 ProductProp.belongsTo(Product)
 
 export {

@@ -1,5 +1,5 @@
 import { Product as ProductMapping } from "./mapping.js";
-import { ProductProp as ProductPropMappin } from "./mapping.js";
+import { ProductProp as ProductPropMapping } from "./mapping.js";
 import FileService from '../services/File.js'
 import AppError from "../errors/AppError.js";
 // import {where} from "sequelize";
@@ -24,7 +24,7 @@ class Product {
         // const product = await ProductMapping.findByPk(id)
         const product = await ProductMapping.findOne({
             where: {id: id},
-            includes: [{model: ProductPropMappin}]
+            includes: [{model: ProductPropMapping, as: 'props'}]
         })
         if (!product) {
             throw new Error('Товар не найден в БД')
@@ -36,12 +36,12 @@ class Product {
         // поскольку image не допускает null, задаем пустую строку
         const image = FileService.save(img) ?? ''
         const {name, price, categoryId = null, brandId = null} = data
-        const product = await ProductMapping.create(name, price, image, categoryId, brandId)
+        const product = await ProductMapping.create({name, price, image, categoryId, brandId})
         // добавляем свойства товара в таблицу ProductProp
         if (data.props) { //если свойства товара имеются
             const props = JSON.parse(data.props)
             for (let prop of props) {
-                await ProductPropMappin.create({
+                await ProductPropMapping.create({
                     name: prop.name,
                     value: prop.value,
                     productId: product.id

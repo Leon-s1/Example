@@ -77,7 +77,7 @@ class User {
         try {
             const user = await UserModel.create(req.body)
             //возможно ошибка Brand
-            res.json(user)
+            res.json(brand)
         } catch (e) {
             next(AppError.badRequest(e.message))
         }
