@@ -35,7 +35,7 @@ const Product = sequelize.define('product', {
 
 //Модель "Категория", таблица БД "categories"
 const Category = sequelize.define('category',{
-    is: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, unique: true, allowNull: false}
 })
 
@@ -99,7 +99,8 @@ Rating.belongsTo(User)
 
 // связь товара с его свойствами: у товара может быть несколько свойств, но
 // каждое свойство связано только с одним товаром
-Product.hasMany(ProductProp, {as: 'props', onDelete: 'CASCADE'})
+// Product.hasMany(ProductProp, {as: 'props', onDelete: 'CASCADE'})
+Product.hasMany(ProductProp, {as: 'props'})
 ProductProp.belongsTo(Product)
 
 export {
