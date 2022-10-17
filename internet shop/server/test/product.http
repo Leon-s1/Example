@@ -63,6 +63,6 @@ Content-Type: image/jpeg
 --MultiPartFormDataBoundary--
 
 ### Удалить товар
-DELETE /api/product/delete/4 HTTP/1.1
+DELETE /api/product/delete/14 HTTP/1.1
 Host: localhost:7000
 Authorization: Bearer eyJhb...XVCJ9.eyJpZ...2NDR9.eDlzf...87TTA

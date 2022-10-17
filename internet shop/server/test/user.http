@@ -5,7 +5,8 @@ Content-type: application/json; charset=utf-8
 
 {
   "email": "user@mail.ru",
-  "password": "Kjubntx12"
+  "password": "Kjubntx12",
+  "role": "USER"
 }
 
 ### Аутентификация (вход) пользователя
