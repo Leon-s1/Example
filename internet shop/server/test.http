@@ -102,6 +102,7 @@ Content-Type: image/jpeg
 GET /api/product/getall HTTP/1.1
 Host: localhost:7000
 
+###Добавить товар и свойства
 POST /api/product/create HTTP/1.1
 Host: localhost:7000
 Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
