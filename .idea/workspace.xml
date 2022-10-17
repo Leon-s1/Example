@@ -27,13 +27,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
-      <change afterPath="$PROJECT_DIR$/internet shop/server/middleware/adminMiddleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/middleware/authMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/test/brand.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/test/category.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/test/product.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/test/user.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/brand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +77,80 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/product/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/user/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;Kjubntx12&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:7000/api/product/create" />
@@ -132,21 +204,6 @@
             </list>
           </option>
           <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/product/getall" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
@@ -933,8 +990,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.test#15">
-    <configuration name="test#13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="13" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.product#1">
+    <configuration name="product#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product.http" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="test#14" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="14" runType="Run single request">
@@ -943,26 +1000,26 @@
     <configuration name="test#15" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="15" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test#8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="8" runType="Run single request">
+    <configuration name="user#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/user.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test#9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test.http" index="9" runType="Run single request">
+    <configuration name="user#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/user.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="HTTP Request.test#14" />
-      <item itemvalue="HTTP Request.test#13" />
-      <item itemvalue="HTTP Request.test#9" />
-      <item itemvalue="HTTP Request.test#8" />
       <item itemvalue="HTTP Request.test#15" />
+      <item itemvalue="HTTP Request.user#1" />
+      <item itemvalue="HTTP Request.user#3" />
+      <item itemvalue="HTTP Request.product#1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.product#1" />
+        <item itemvalue="HTTP Request.user#3" />
+        <item itemvalue="HTTP Request.user#1" />
         <item itemvalue="HTTP Request.test#15" />
         <item itemvalue="HTTP Request.test#14" />
-        <item itemvalue="HTTP Request.test#8" />
-        <item itemvalue="HTTP Request.test#9" />
-        <item itemvalue="HTTP Request.test#13" />
       </list>
     </recent_temporary>
   </component>
@@ -995,7 +1052,7 @@
       <workItem from="1664200412081" duration="1804000" />
       <workItem from="1664273965724" duration="124675000" />
       <workItem from="1665544165874" duration="15022000" />
-      <workItem from="1665627032712" duration="15810000" />
+      <workItem from="1665627032712" duration="16828000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1165,7 +1222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665981007517</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add middleware — authMiddleware и adminMiddleware,&#10;edit router">
+      <created>1665996974228</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665996974228</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1233,7 +1297,8 @@
     <MESSAGE value="add props Product.js" />
     <MESSAGE value="add props in model Product.js" />
     <MESSAGE value="User controller editing methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="User controller editing methods" />
+    <MESSAGE value="add middleware — authMiddleware и adminMiddleware,&#10;edit router" />
+    <option name="LAST_COMMIT_MESSAGE" value="add middleware — authMiddleware и adminMiddleware,&#10;edit router" />
   </component>
   <component name="WindowStateProjectService">
     <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1664963099767">
@@ -1252,26 +1317,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665548819481" />
-    <state width="1002" height="227" key="GridCell.Tab.0.bottom" timestamp="1665627016650">
+    <state width="1899" height="227" key="GridCell.Tab.0.bottom" timestamp="1665997818418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="1002" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665627016650" />
-    <state width="1002" height="227" key="GridCell.Tab.0.center" timestamp="1665627016650">
+    <state width="1899" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665997818418" />
+    <state width="1899" height="227" key="GridCell.Tab.0.center" timestamp="1665997818418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="1002" height="227" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665627016650" />
-    <state width="1002" height="227" key="GridCell.Tab.0.left" timestamp="1665627016650">
+    <state width="1899" height="227" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665997818418" />
+    <state width="1899" height="227" key="GridCell.Tab.0.left" timestamp="1665997818418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="1002" height="227" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665627016650" />
-    <state width="1002" height="227" key="GridCell.Tab.0.right" timestamp="1665627016650">
+    <state width="1899" height="227" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665997818418" />
+    <state width="1899" height="227" key="GridCell.Tab.0.right" timestamp="1665997818418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="1002" height="227" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665627016650" />
+    <state width="1899" height="227" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665997818418" />
     <state x="15" y="165" key="SettingsEditor" timestamp="1665627075007">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1280,11 +1345,11 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1665981977533">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1665997001401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1665981977533" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1665997001401" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
