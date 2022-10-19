@@ -24,7 +24,7 @@ class Product {
         // const product = await ProductMapping.findByPk(id)
         const product = await ProductMapping.findOne({
             where: {id: id},
-            includes: [{model: ProductPropMapping, as: 'props'}]
+            include: [{model: ProductPropMapping, as: 'props'}]
         })
         if (!product) {
             throw new Error('Товар не найден в БД')

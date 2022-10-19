@@ -28,9 +28,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/Capturepepe-PhotoRoom-big.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/picture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/picture.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/test/product.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/product.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/middleware/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/middleware/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/server/test/user.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/user.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +55,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -80,6 +85,461 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQG1haWwucnUiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY2NjE3MTY2NywiZXhwIjoxNjY2MjU4MDY3fQ.sya8_695KQpXrd7NXFcajT7v9JFr5BMOXfOBWm4lse4" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/user/update/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;updated@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty(updated)&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;USER&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/user/getone/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/user/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;USER&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQG1haWwucnUiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY2NjE2MTIwNCwiZXhwIjoxNjY2MjQ3NjA0fQ.PrA0jVBOgjTih_gCDdRUAF0JSU1-_1qtgbE3wugtlZM" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty12&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:7000/api/product/delete/18" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:7000/api/user/delete/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/user/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer $2b$05$wnMjbLB6J.i5SphrwgwtTOx0JaiHOg8J3rXXyoCvkyHKCizlt93oy" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;Kjubntx12&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;//  &quot;role&quot;: &quot;USER&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;USER&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:7000/api/user/signup" />
@@ -138,50 +598,6 @@
           </option>
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;Kjubntx12&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;Kjubntx12&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -313,45 +729,6 @@
             </list>
           </option>
           <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/user/getall" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -720,369 +1097,39 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Название товара 18&quot;,&#10;  &quot;price&quot;: 12345,&#10;  &quot;image&quot;: picture.jpg&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:7000/api/product/update/12345" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/product/delete/12345" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар1&quot;,&#10;  &quot;price&quot;: 111111,&#10;  &quot;image&quot;: picture.jpg&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;#  &quot;name&quot;: &quot;Название товара 18&quot;,&#10;#  &quot;price&quot;: 12345,&#10;#  &quot;image&quot;: picture.jpg&#10;#}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="isFileUpload" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-Type" />
-                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар1&quot;,&#10;  &quot;price&quot;: 111111,&#10;  &quot;image&quot;: picture.jpg&#10;}&#10;&#10;&#10;#--MultiPartFormDataBoundary&#10;#Content-Disposition: form-data; name=&quot;name&quot;&#10;#&#10;#Название товара222&#10;#--MultiPartFormDataBoundary&#10;#Content-Disposition: form-data; name=&quot;price&quot;&#10;#&#10;#11111&#10;#--MultiPartFormDataBoundary&#10;#Content-Disposition: form-data; name=&quot;image&quot;; filename=&quot;picture.jpg&quot;&#10;#Content-Type: image/jpeg&#10;#&#10;#&lt; ./picture.jpg&#10;#--MultiPartFormDataBoundary--" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:7000/api/product/update/10" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар (обновление)&quot;,&#10;  &quot;price&quot;: 22222&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/product/delete/1" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/product/delete/4" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/product/delete/3" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:7000/api/product/update/2" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Первый товар (обновление)&quot;,&#10;  &quot;price&quot;: 22222&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
   <component name="RunManager" selected="HTTP Request.user#1">
-    <configuration name="product#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product.http" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="product#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product.http" index="4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="product#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product.http" index="5" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="user#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/user.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="user#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/user.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="user#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/user.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="user#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/user.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="user#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/user.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="HTTP Request.product#2" />
-      <item itemvalue="HTTP Request.product#4" />
-      <item itemvalue="HTTP Request.product#5" />
-      <item itemvalue="HTTP Request.user#1" />
+      <item itemvalue="HTTP Request.user#2" />
       <item itemvalue="HTTP Request.user#5" />
+      <item itemvalue="HTTP Request.user#1" />
+      <item itemvalue="HTTP Request.user#4" />
+      <item itemvalue="HTTP Request.user#6" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.user#1" />
         <item itemvalue="HTTP Request.user#5" />
-        <item itemvalue="HTTP Request.product#5" />
-        <item itemvalue="HTTP Request.product#2" />
-        <item itemvalue="HTTP Request.product#4" />
+        <item itemvalue="HTTP Request.user#2" />
+        <item itemvalue="HTTP Request.user#6" />
+        <item itemvalue="HTTP Request.user#4" />
       </list>
     </recent_temporary>
   </component>
@@ -1115,7 +1162,8 @@
       <workItem from="1664200412081" duration="1804000" />
       <workItem from="1664273965724" duration="124675000" />
       <workItem from="1665544165874" duration="15022000" />
-      <workItem from="1665627032712" duration="17545000" />
+      <workItem from="1665627032712" duration="36027000" />
+      <workItem from="1666087931785" duration="19492000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1299,7 +1347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665997992665</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add test file product.http, category.http, brand.http, user.http">
+      <created>1665998582177</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665998582177</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1345,6 +1400,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Не добавлялось поле title в список сотрудников" />
     <MESSAGE value="Не добавлялось поле title в список сотрудников. Добавил функцию lean() в роутер." />
     <MESSAGE value="добавляю скрипты" />
@@ -1372,10 +1428,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="add test file product.http, category.http, brand.http, user.http" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1664963099767">
+    <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1666142086462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="399" y="383" width="586" height="274" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1664963099767" />
+    <state x="399" y="383" width="586" height="274" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1666142086462" />
     <state x="0" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1665462273275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1388,39 +1444,39 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665548819481" />
-    <state width="514" height="912" key="GridCell.Tab.0.bottom" timestamp="1665998503467">
+    <state width="732" height="631" key="GridCell.Tab.0.bottom" timestamp="1666171876426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="514" height="912" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1665998503467" />
-    <state width="514" height="912" key="GridCell.Tab.0.center" timestamp="1665998503467">
+    <state width="732" height="631" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1666171876426" />
+    <state width="732" height="631" key="GridCell.Tab.0.center" timestamp="1666171876426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="514" height="912" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1665998503467" />
-    <state width="514" height="912" key="GridCell.Tab.0.left" timestamp="1665998503467">
+    <state width="732" height="631" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1666171876426" />
+    <state width="732" height="631" key="GridCell.Tab.0.left" timestamp="1666171876426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="514" height="912" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1665998503467" />
-    <state width="514" height="912" key="GridCell.Tab.0.right" timestamp="1665998503467">
+    <state width="732" height="631" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1666171876426" />
+    <state width="732" height="631" key="GridCell.Tab.0.right" timestamp="1666171876426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="514" height="912" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1665998503467" />
-    <state x="15" y="165" key="SettingsEditor" timestamp="1665627075007">
+    <state width="732" height="631" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1666171876426" />
+    <state x="15" y="165" key="SettingsEditor" timestamp="1666142339185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1665627075007" />
+    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1666142339185" />
     <state x="388" y="344" key="VCS.EditChangelistDialog" timestamp="1664807683015">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1665998003166">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1665998587343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1665998003166" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1665998587343" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

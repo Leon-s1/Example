@@ -4,9 +4,8 @@ Host: localhost:7000
 Content-type: application/json; charset=utf-8
 
 {
-  "email": "user@mail.ru",
-  "password": "Kjubntx12",
-  "role": "USER"
+  "email": "admin@mail.ru",
+  "password": "qwerty"
 }
 
 ### Аутентификация (вход) пользователя

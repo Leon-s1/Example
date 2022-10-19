@@ -57,7 +57,7 @@ class User {
             if (!email || !password) {
                 throw new Error('Пустой email или пароль')
             }
-            if (!role !== 'USER') {
+            if (role !== 'USER') {
                 throw new Error('Возможно только роль USER')
             }
             const hash = await bcrypt.hash(password,5)
@@ -111,7 +111,7 @@ class User {
     }
 
     async create(req, res, next) {
-        const {email, password, role = 'USER'} = req.body
+        const {email, password, role = 'ADMIN'} = req.body
         try {
             if (!email || !password) {
                 throw new Error('Пустой email или пароль')
@@ -123,7 +123,7 @@ class User {
             const user = await UserModel.create({email, password: hash, role})
             //возможно ошибка Brand
             // res.json(brand)
-            res.json(user)
+            return res.json(user)
         } catch (e) {
             next(AppError.badRequest(e.message))
         }
