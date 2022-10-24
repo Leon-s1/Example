@@ -47,6 +47,7 @@ const makeJwt = (id, email, role) => {
         process.env.SECRET_KEY,
         {expiresIn: '24h'}
     )
+
 }
 
 class User {
@@ -64,6 +65,7 @@ class User {
             const user = await UserModel.create({email, password: hash, role})
             const token = makeJwt(user.id, user.email, user.role)
             return res.json({token})
+            console.log(makeJwt)
         } catch (e) {
             next(AppError.badRequest(e.message))
         }
@@ -121,6 +123,9 @@ class User {
             }
             const hash = await bcrypt.hash(password, 5)
             const user = await UserModel.create({email, password: hash, role})
+
+            // const token = makeJwt(user.id, user.email, user.role)
+
             //возможно ошибка Brand
             // res.json(brand)
             return res.json(user)

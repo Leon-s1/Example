@@ -3,13 +3,13 @@ GET /api/product/getall HTTP/1.1
 Host: localhost:7000
 
 ### Получить один товар
-GET /api/product/getone/4 HTTP/1.1
+GET /api/product/getone/21 HTTP/1.1
 Host: localhost:7000
 
 ### Создать новый товар
 POST /api/product/create HTTP/1.1
 Host: localhost:7000
-Authorization: Bearer eyJhb...XVCJ9.eyJpZ...2NDR9.eDlzf...87TTA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY
 Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
 
 --MultiPartFormDataBoundary
@@ -35,9 +35,9 @@ Content-Type: image/jpeg
 --MultiPartFormDataBoundary--
 
 ### Обновить товар
-PUT /api/product/update/4 HTTP/1.1
+PUT /api/product/update/21 HTTP/1.1
 Host: localhost:7000
-Authorization: Bearer eyJhb...XVCJ9.eyJpZ...2NDR9.eDlzf...87TTA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY
 Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
 
 --MultiPartFormDataBoundary
@@ -63,6 +63,6 @@ Content-Type: image/jpeg
 --MultiPartFormDataBoundary--
 
 ### Удалить товар
-DELETE /api/product/delete/14 HTTP/1.1
+DELETE /api/product/delete/20 HTTP/1.1
 Host: localhost:7000
-Authorization: Bearer eyJhb...XVCJ9.eyJpZ...2NDR9.eDlzf...87TTA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY
