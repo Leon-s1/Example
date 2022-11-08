@@ -27,11 +27,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
-      <change afterPath="$PROJECT_DIR$/internet shop/server/controllers/ProductProp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/models/ProductProp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/test/product_prop.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/controllers/Basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/models/Basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/routes/basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/test/basket.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/ProductProp.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/ProductProp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/test/product.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/product.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/test/product_prop.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/product_prop.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,25 +72,459 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
     <property name="ts.external.directory.path" value="D:\Example\react-advanced-github\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Example\internet shop\server\test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Example\sts\routes" />
       <recent name="C:\Example\sts\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Example\internet shop\server\test" />
     </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
         <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/getone" />
+                <option name="value" value="1" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/getone" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/getone" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/product/21/remove" />
+                <option name="value" value="1" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/product/21/remove" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/product/1/remove" />
+                <option name="value" value="1" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/product/1/remove" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/getone" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/getone" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/getone/1" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/getone/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/clear" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/clear" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/product/1/remove" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/product/1/remove" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/getone/" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/getone/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/getone/5" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/getone/5" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/product/create/22" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/product/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="multipart/form-data; boundary=MultiPartFormDataBoundary" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/product/getone/21" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/product/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/create/" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/create/" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/create/5" />
+                <option name="value" value="5" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/create/5" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:7000/api/product/1/property/update/3" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Свойство товара (updated)&quot;,&#10;  &quot;value&quot;: &quot;Значение свойства (updated)&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:7000/api/product/21/property/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/product/21/property/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Новое свойство товара&quot;,&#10;  &quot;value&quot;: &quot;Значение свойства товара&quot;&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/product/21/property/getone/7" />
           <option name="urlPath" value="" />
           <option name="headers">
             <list>
@@ -184,46 +625,6 @@
             </list>
           </option>
           <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:7000/api/product/1/property/update/3" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Свойство товара (updated)&quot;,&#10;  &quot;value&quot;: &quot;Значение свойства (updated)&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/product/21/property/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Новое свойство товара&quot;,&#10;  &quot;value&quot;: &quot;Значение свойства товара&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -334,36 +735,6 @@
           </option>
           <option name="haveTextToSend" value="true" />
           <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Новое свойство товара&quot;,&#10;  &quot;value&quot;: &quot;Значение свойства товара&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/product/getone/21" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/product/getall" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
@@ -737,359 +1108,45 @@
           <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQG1haWwucnUiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY2NjE3MTY2NywiZXhwIjoxNjY2MjU4MDY3fQ.sya8_695KQpXrd7NXFcajT7v9JFr5BMOXfOBWm4lse4" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/login" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="PUT" />
-          <option name="urlBase" value="http://localhost:7000/api/user/update/1" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;updated@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty(updated)&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...2NTZ9.D8CmI...VMU8Q" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;USER&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;USER&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQG1haWwucnUiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTY2NjE2MTIwNCwiZXhwIjoxNjY2MjQ3NjA0fQ.PrA0jVBOgjTih_gCDdRUAF0JSU1-_1qtgbE3wugtlZM" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/login" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty12&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/product/delete/18" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/user/getall" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer $2b$05$wnMjbLB6J.i5SphrwgwtTOx0JaiHOg8J3rXXyoCvkyHKCizlt93oy" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;Kjubntx12&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/signup" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;user@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.product_prop#1">
-    <configuration name="product_prop#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.basket#1">
+    <configuration name="basket#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/basket.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="product_prop#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" index="2" runType="Run single request">
+    <configuration name="basket#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/basket.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="product_prop#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" index="3" runType="Run single request">
+    <configuration name="basket#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/basket.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="product_prop#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" index="4" runType="Run single request">
+    <configuration name="basket#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/basket.http" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="product_prop#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" index="5" runType="Run single request">
+    <configuration name="product#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.product_prop#1" />
-      <item itemvalue="HTTP Request.product_prop#3" />
-      <item itemvalue="HTTP Request.product_prop#4" />
-      <item itemvalue="HTTP Request.product_prop#5" />
-      <item itemvalue="HTTP Request.product_prop#2" />
+      <item itemvalue="HTTP Request.basket#3" />
+      <item itemvalue="HTTP Request.product#3" />
+      <item itemvalue="HTTP Request.basket#1" />
+      <item itemvalue="HTTP Request.basket#2" />
+      <item itemvalue="HTTP Request.basket#6" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.product_prop#1" />
-        <item itemvalue="HTTP Request.product_prop#2" />
-        <item itemvalue="HTTP Request.product_prop#5" />
-        <item itemvalue="HTTP Request.product_prop#4" />
-        <item itemvalue="HTTP Request.product_prop#3" />
+        <item itemvalue="HTTP Request.basket#1" />
+        <item itemvalue="HTTP Request.basket#2" />
+        <item itemvalue="HTTP Request.basket#3" />
+        <item itemvalue="HTTP Request.basket#6" />
+        <item itemvalue="HTTP Request.product#3" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\inst\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1118,7 +1175,9 @@
       <workItem from="1665544165874" duration="15022000" />
       <workItem from="1665627032712" duration="36027000" />
       <workItem from="1666087931785" duration="28656000" />
-      <workItem from="1666580009063" duration="22138000" />
+      <workItem from="1666580009063" duration="25237000" />
+      <workItem from="1667373917871" duration="7982000" />
+      <workItem from="1667445433455" duration="23281000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1323,7 +1382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666603207283</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add ProductProp.js">
+      <created>1666692897220</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666692897220</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1370,7 +1436,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Не добавлялось поле title в список сотрудников" />
     <MESSAGE value="Не добавлялось поле title в список сотрудников. Добавил функцию lean() в роутер." />
     <MESSAGE value="добавляю скрипты" />
     <MESSAGE value="add button add, remove" />
@@ -1395,7 +1460,8 @@
     <MESSAGE value="add test file product.http, category.http, brand.http, user.http" />
     <MESSAGE value="поиск ошибки, не добавляется пользователь с ролью ADMIN" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="add ProductProp.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ProductProp.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1666142086462">
@@ -1414,43 +1480,47 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665548819481" />
-    <state width="565" height="675" key="GridCell.Tab.0.bottom" timestamp="1666692441980">
+    <state width="397" height="665" key="GridCell.Tab.0.bottom" timestamp="1667814866279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="565" height="675" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1666692441980" />
-    <state width="565" height="675" key="GridCell.Tab.0.center" timestamp="1666692441980">
+    <state width="397" height="665" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
+    <state width="397" height="665" key="GridCell.Tab.0.center" timestamp="1667814866279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="565" height="675" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1666692441980" />
-    <state width="565" height="675" key="GridCell.Tab.0.left" timestamp="1666692441980">
+    <state width="397" height="665" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
+    <state width="397" height="665" key="GridCell.Tab.0.left" timestamp="1667814866279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="565" height="675" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1666692441980" />
-    <state width="565" height="675" key="GridCell.Tab.0.right" timestamp="1666692441980">
+    <state width="397" height="665" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
+    <state width="397" height="665" key="GridCell.Tab.0.right" timestamp="1667814866279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="565" height="675" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1666692441980" />
-    <state x="15" y="165" key="SettingsEditor" timestamp="1666580289873">
+    <state width="397" height="665" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
+    <state x="15" y="165" key="SettingsEditor" timestamp="1667446076546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1666580289873" />
+    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1667446076546" />
     <state x="388" y="344" key="VCS.EditChangelistDialog" timestamp="1664807683015">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1666603467491">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1666692929573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1666603467491" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1666692929573" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="451" y="218" key="git4idea.merge.GitPullDialog/0.0.1440.860@0.0.1440.860" timestamp="1664201317766" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1667448675593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667448675593" />
     <state x="153" y="253" width="700" height="530" key="recent.locations.popup" timestamp="1664527388399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

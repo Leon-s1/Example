@@ -6,6 +6,7 @@ import cors from 'cors'
 import fileUpload from 'express-fileupload'
 import router from './routes/index.js'
 import ErrorHandler from "./middleware/ErrorHandler.js";
+import cookieParser from 'cookie-parser'
 
 
 
@@ -22,7 +23,8 @@ app.use(express.static('static'))
 app.use(fileUpload())
 // все маршруты приложения
 app.use('/api', router)
-
+//middleware для работы с cookie
+app.use(cookieParser(process.env.SECRET_KEY))
 //Обработка ошибок
 app.use(ErrorHandler)
 

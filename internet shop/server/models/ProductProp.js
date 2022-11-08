@@ -1,7 +1,7 @@
 import { ProductProp as ProductPropMapping } from './mapping.js'
 import { Product as ProductMapping } from "./mapping.js"
 import AppError from "../errors/AppError.js";
-import {where} from "sequelize";
+// import {where} from "sequelize";
 
 class ProductProp {
     async getAll(productId) {

@@ -7,7 +7,7 @@ GET /api/product/getone/21 HTTP/1.1
 Host: localhost:7000
 
 ### Создать новый товар
-POST /api/product/create HTTP/1.1
+POST /api/product/create/22 HTTP/1.1
 Host: localhost:7000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY
 Content-Type: multipart/form-data; boundary=MultiPartFormDataBoundary
