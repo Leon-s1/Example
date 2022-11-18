@@ -1,12 +1,12 @@
 ### Получить корзину
 GET /api/basket/getone HTTP/1.1
 Host: localhost:7000
-Cookie: basketId=1
+Cookie: basketId=2
 
 ### Добавить в корзину
 PUT /api/basket/product/21/append/3 HTTP/1.1
 Host: localhost:7000
-Cookie: basketId=5
+Cookie: basketId=3
 
 ### Удалить из корзины
 PUT /api/basket/product/21/remove HTTP/1.1

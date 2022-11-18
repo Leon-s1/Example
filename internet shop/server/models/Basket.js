@@ -3,6 +3,23 @@ import { Product as ProductMapping } from './mapping.js'
 import { BasketProduct as BasketProductMapping } from './mapping.js'
 import AppError from '../errors/AppError.js'
 
+const pretty = (basket) => {
+    const data = {}
+    data.id = basket.id
+    data.products = []
+    if (basket.products) {
+        data.products = basket.products.map(item => {
+            return {
+                id: item.id,
+                name: item.name,
+                price: item.price,
+                quantity: item.basket_product.quantity
+            }
+        })
+    }
+    return data
+}
+
 class Basket {
     async getOne(basketId) {
         let basket = await BasketMapping.findByPk(basketId, {
@@ -14,12 +31,14 @@ class Basket {
         if (!basket) {
             basket = await BasketMapping.create()
         }
-        return basket
+        // return basket
+        return pretty(basket)
     }
 
     async create() {
         const basket = await BasketMapping.create()
-        return basket
+        // return basket
+        return pretty(basket)
     }
 
     async append(basketId, productId, quantity) {
@@ -43,7 +62,8 @@ class Basket {
         }
         // обновим объект корзины, чтобы вернуть свежие данные
         await basket.reload()
-        return basket
+        // return basket
+        return pretty(basket)
     }
 
     async increment(basketId, productId, quantity) {
@@ -62,7 +82,8 @@ class Basket {
             // обновим объект корзины, чтобы вернуть свежие данные
             await basket.reload()
         }
-        return basket
+        // return basket
+        return pretty(basket)
     }
 
     async decrement(basketId, productId, quantity) {
@@ -85,7 +106,8 @@ class Basket {
             // обновим объект корзины, чтобы вернуть свежие данные
             await basket.reload()
         }
-        return basket
+        // return basket
+        return pretty(basket)
     }
 
     async remove(basketId, productId) {
@@ -104,7 +126,8 @@ class Basket {
             // обновим объект корзины, чтобы вернуть свежие данные
             await basket.reload()
         }
-        return basket
+        // return basket
+        return pretty(basket)
     }
 
     async clear(basketId) {
@@ -118,7 +141,8 @@ class Basket {
         } else {
             basket = await Basket.create()
         }
-        return basket
+        // return basket
+        return pretty(basket)
     }
 
     async delete(basketId) {
@@ -129,8 +153,11 @@ class Basket {
             throw new Error('Корзина не найдена в БД')
         }
         await basket.destroy()
-        return basket
+        // return basket
+        return pretty(basket)
     }
 }
 
 export default new Basket()
+
+Promise

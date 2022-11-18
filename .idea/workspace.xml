@@ -27,18 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
-      <change afterPath="$PROJECT_DIR$/internet shop/server/controllers/Basket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/models/Basket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/routes/basket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/test/basket.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/models/ProductProp.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/ProductProp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/test/product.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/product.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/test/product_prop.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/product_prop.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/test/basket.http" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/test/basket.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sts/src/data/Len_Kuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/sts/src/data/Len_Kuz.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +80,32 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="basketId" />
+                <option name="path" value="/api/basket/getone" />
+                <option name="value" value="2" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/basket/getone" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -1088,26 +1106,6 @@
           <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1177,7 +1175,9 @@
       <workItem from="1666087931785" duration="28656000" />
       <workItem from="1666580009063" duration="25237000" />
       <workItem from="1667373917871" duration="7982000" />
-      <workItem from="1667445433455" duration="23281000" />
+      <workItem from="1667445433455" duration="32112000" />
+      <workItem from="1668397511384" duration="9301000" />
+      <workItem from="1668743179523" duration="2905000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1389,7 +1389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666692897220</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="add basket.js">
+      <created>1667901718007</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1667901718007</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1436,7 +1443,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Не добавлялось поле title в список сотрудников. Добавил функцию lean() в роутер." />
     <MESSAGE value="добавляю скрипты" />
     <MESSAGE value="add button add, remove" />
     <MESSAGE value="default changelist" />
@@ -1461,7 +1467,8 @@
     <MESSAGE value="поиск ошибки, не добавляется пользователь с ролью ADMIN" />
     <MESSAGE value="commit" />
     <MESSAGE value="add ProductProp.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ProductProp.js" />
+    <MESSAGE value="add basket.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add basket.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1666142086462">
@@ -1480,26 +1487,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665548819481" />
-    <state width="397" height="665" key="GridCell.Tab.0.bottom" timestamp="1667814866279">
+    <state width="396" height="492" key="GridCell.Tab.0.bottom" timestamp="1668134734223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="397" height="665" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
-    <state width="397" height="665" key="GridCell.Tab.0.center" timestamp="1667814866279">
+    <state width="396" height="492" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1668134734223" />
+    <state width="396" height="492" key="GridCell.Tab.0.center" timestamp="1668134734223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="397" height="665" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
-    <state width="397" height="665" key="GridCell.Tab.0.left" timestamp="1667814866279">
+    <state width="396" height="492" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1668134734223" />
+    <state width="396" height="492" key="GridCell.Tab.0.left" timestamp="1668134734223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="397" height="665" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
-    <state width="397" height="665" key="GridCell.Tab.0.right" timestamp="1667814866279">
+    <state width="396" height="492" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1668134734223" />
+    <state width="396" height="492" key="GridCell.Tab.0.right" timestamp="1668134734223">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
-    <state width="397" height="665" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1667814866279" />
+    <state width="396" height="492" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1668134734223" />
     <state x="15" y="165" key="SettingsEditor" timestamp="1667446076546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1508,26 +1515,26 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1666692929573">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1667901730983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1666692929573" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1667901730983" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="451" y="218" key="git4idea.merge.GitPullDialog/0.0.1440.860@0.0.1440.860" timestamp="1664201317766" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1667448675593">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1667448675593" />
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668650987694" />
     <state x="153" y="253" width="700" height="530" key="recent.locations.popup" timestamp="1664527388399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="153" y="253" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1664527388399" />
-    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1664338518996">
+    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1668651580608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1664338518996" />
+    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668651580608" />
   </component>
 </project>
