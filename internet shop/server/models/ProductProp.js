@@ -64,4 +64,3 @@ class ProductProp {
 }
 
 export default new ProductProp()
-

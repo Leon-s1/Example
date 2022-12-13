@@ -3,11 +3,11 @@ GET /api/product/21/property/getall HTTP/1.1
 Host: localhost:7000
 
 ### Получить одно свойство товара
-GET /api/product/21/property/getone/7 HTTP/1.1
+GET /api/product/76/property/getone/82 HTTP/1.1
 Host: localhost:7000
 
 ### Создать новое свойство товара
-POST /api/product/21/property/create HTTP/1.1
+POST /api/product/76/property/create HTTP/1.1
 Host: localhost:7000
 Content-type: application/json; charset=utf-8
 
