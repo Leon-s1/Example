@@ -27,15 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Basket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Contacts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Delivery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1157,7 +1150,7 @@
       <workItem from="1668743179523" duration="9144000" />
       <workItem from="1669196315581" duration="7812000" />
       <workItem from="1669615761254" duration="27223000" />
-      <workItem from="1670570947015" duration="13566000" />
+      <workItem from="1670570947015" duration="17392000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1397,7 +1390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670925830406</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add pages">
+      <created>1671010899926</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1671010899926</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1444,7 +1444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="default changelist" />
     <MESSAGE value="add server/index.js" />
     <MESSAGE value="add models/mapping" />
     <MESSAGE value="add routes, test.http" />
@@ -1469,7 +1468,8 @@
     <MESSAGE value="edit Basket.js" />
     <MESSAGE value="commit" />
     <MESSAGE value="add client app" />
-    <option name="LAST_COMMIT_MESSAGE" value="add client app" />
+    <MESSAGE value="add pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1666142086462">
@@ -1516,11 +1516,11 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1670925869593">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1671010908707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1664807548915" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1670925869593" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1671010908707" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
