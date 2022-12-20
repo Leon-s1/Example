@@ -27,11 +27,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/NotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/inst.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/NavBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1zMlkAeDErZchNtRorvkOPBZ58Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -55,17 +67,21 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sts/routes" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="file.status.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Example\react-advanced-github\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -1154,7 +1170,7 @@
       <workItem from="1669196315581" duration="7812000" />
       <workItem from="1669615761254" duration="27223000" />
       <workItem from="1670570947015" duration="21534000" />
-      <workItem from="1671442427939" duration="2522000" />
+      <workItem from="1671442427939" duration="14306000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1408,7 +1424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671112675267</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="router App">
+      <created>1671500361543</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1671500361543</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1455,7 +1478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add models/mapping" />
     <MESSAGE value="add routes, test.http" />
     <MESSAGE value="add controllers for Routing" />
     <MESSAGE value="add AppError, ErrorHandler" />
@@ -1480,9 +1502,18 @@
     <MESSAGE value="add client app" />
     <MESSAGE value="add pages" />
     <MESSAGE value="edit app.js Route" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit app.js Route" />
+    <MESSAGE value="router App" />
+    <option name="LAST_COMMIT_MESSAGE" value="router App" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="136" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1671507895919" />
+    <state x="102" y="41" width="816" height="999" key="#Intentions" timestamp="1671507929217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="102" y="41" width="816" height="999" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1671507929217" />
     <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1666142086462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1495,10 +1526,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="255" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1665993380478" />
+    <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1671503423520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040@0.0.1920.1040" timestamp="1671503423520" />
     <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1665548819481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665548819481" />
+    <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog" timestamp="1671507126442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1671507126442" />
     <state width="396" height="646" key="GridCell.Tab.0.bottom" timestamp="1671415439325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1519,19 +1558,19 @@
     </state>
     <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
     <state width="396" height="646" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439325" />
-    <state x="15" y="165" key="SettingsEditor" timestamp="1667446076546">
+    <state x="15" y="165" key="SettingsEditor" timestamp="1671507207343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1667446076546" />
+    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
     <state x="388" y="344" key="VCS.EditChangelistDialog" timestamp="1664807683015">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="106" y="166" key="Vcs.Push.Dialog.v2" timestamp="1671112688685">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1671507213307">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1671010908707" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1671507213307" />
     <state x="451" y="218" key="git4idea.merge.GitPullDialog" timestamp="1664201317766">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -1548,5 +1587,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="171" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670836670554" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="Example" type="b2602c69:ProjectViewProjectNode" />
+        <item name="Example" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>

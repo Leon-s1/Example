@@ -8,6 +8,8 @@ import NotFound from '../pages/NotFound.js'
 import User from '../pages/User.js'
 import Admin from "../pages/Admin.js";
 import {Component} from "react";
+import {AppContext} from './AppContext.js'
+import {useContext} from "react";
 
 const publicRoutes = [
     {path: '/', Component: Shop},
@@ -27,17 +29,18 @@ const adminRoutes = [
 ]
 
 const AppRouter = () => {
-    const isAuth = true
-    const isAdmin = true
+    // const isAuth = true
+    // const isAdmin = true
+    const {user} = useContext(AppContext)
     return (
         <Routes>
             {publicRoutes.map(({path, Component}) =>
             <Route key={path} path={path} element={<Component/>} </>
             )}
-            {isAuth && authRoutes.map(({path, Component}) =>
+            {user.isAuth && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component />} />
             )}
-            {isAdmin && adminRoutes.map(({path, Component}) =>
+            {user.isAdmin && adminRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component />} />
             )}
         </Routes>
