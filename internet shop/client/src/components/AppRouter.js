@@ -25,7 +25,7 @@ const authRoutes = [
 ]
 
 const adminRoutes = [
-    path: '/admin', Component: Admin)
+    {path: '/admin', Component: Admin}
 ]
 
 const AppRouter = () => {
@@ -35,7 +35,7 @@ const AppRouter = () => {
     return (
         <Routes>
             {publicRoutes.map(({path, Component}) =>
-            <Route key={path} path={path} element={<Component/>} </>
+            <Route key={path} path={path} element={<Component/>} />
             )}
             {user.isAuth && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component />} />
