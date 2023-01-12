@@ -31,6 +31,10 @@ const context = {
         {id: 3, name: 'Siemens'},
         {id: 4, name: 'Xiaomi'},
     ],
+    basket: [
+        {product_id: 1, name: 'Смартфон раз', price: 56789, quantity: 2},
+        {product_id: 8, name: 'Планшет два', price: 89012, quantity: 1},
+    ],
 }
 
 const AppContextProvider = (props) => {
