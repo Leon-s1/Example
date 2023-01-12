@@ -16,6 +16,10 @@ const Shop = () => {
                 <Col md={3}>
                     <CategoryBar/>
                 </Col>
+                <Col md={9}>
+                    <BrandBar/>
+                    <ProductList/>
+                </Col>
             </Row>
         </Container>
         )
