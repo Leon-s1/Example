@@ -1,14 +1,16 @@
 import React from "react";
+import UserStore from "../store/UserStore";
 
 const AppContext = React.createContext()
 
 //Контекст, который будем передавать
 const context = {
-    user: {
-        email: 'ivanov@mail.ru',
-        isAuth: true,
-        isAdmin: false,
-    },
+    user: new UserStore(),
+    // {
+        // email: 'ivanov@mail.ru',
+        // isAuth: true,
+        // isAdmin: false,
+    // },
     products: [
         {id: 1, name: 'Холодильник раз', price: 12345, rating: 0, image: '', categoryId: 1, brandId: 1},
         {id: 2, name: 'Холодильник два', price: 23456, rating: 0, image: '', categoryId: 1, brandId: 2},

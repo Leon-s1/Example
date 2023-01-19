@@ -27,12 +27,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/BasketItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/BasketList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/CheckAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/http/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/http/userAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/store/UserStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1173,7 +1180,7 @@
       <workItem from="1671442427939" duration="24632000" />
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
-      <workItem from="1673425563583" duration="2171000" />
+      <workItem from="1673425563583" duration="19748000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1448,7 +1455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672289458295</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add component basket">
+      <created>1673516769621</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1673516769622</updated>
+    </task>
+    <task id="LOCAL-00041" summary="add component shop">
+      <created>1673516825737</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1673516825737</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1495,8 +1516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add AppError, ErrorHandler" />
-    <MESSAGE value="edit controller Product.js" />
     <MESSAGE value="add controller Brand.js, Category.js, User.js" />
     <MESSAGE value="add downloading picture" />
     <MESSAGE value="add picture" />
@@ -1520,7 +1539,9 @@
     <MESSAGE value="router App" />
     <MESSAGE value="Context App" />
     <MESSAGE value="add component CategoryBar.js, BrandBar.js, ProductItem.js, ProductList.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add component CategoryBar.js, BrandBar.js, ProductItem.js, ProductList.js" />
+    <MESSAGE value="add component basket" />
+    <MESSAGE value="add component shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="add component shop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1558,36 +1579,28 @@
     <state width="396" height="646" key="GridCell.Tab.0.bottom" timestamp="1671415439325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="974" height="281" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
     <state width="396" height="646" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439325" />
     <state width="396" height="646" key="GridCell.Tab.0.center" timestamp="1671415439325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="974" height="281" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
     <state width="396" height="646" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439325" />
     <state width="396" height="646" key="GridCell.Tab.0.left" timestamp="1671415439324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="974" height="281" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
     <state width="396" height="646" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439324" />
     <state width="396" height="646" key="GridCell.Tab.0.right" timestamp="1671415439325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="974" height="281" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1664807462345" />
     <state width="396" height="646" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439325" />
     <state x="15" y="165" key="SettingsEditor" timestamp="1671507207343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="388" y="344" key="VCS.EditChangelistDialog" timestamp="1664807683015">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="388" y="344" key="VCS.EditChangelistDialog/0.0.1440.860@0.0.1440.860" timestamp="1664807683015" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1672289475287">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1673516832425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1672289475287" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1673516832425" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
