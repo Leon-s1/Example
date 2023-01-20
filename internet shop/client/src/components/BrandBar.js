@@ -1,16 +1,28 @@
+import { ListGroup } from 'react-bootstrap';
 import { useContext } from 'react'
 import { AppContext } from './AppContext.js'
-import { ListGroup } from 'react-bootstrap';
+import { observer } from "mobx-react-lite";
 
-const BrandBar = () => {
-    const { brands } = useContext(AppContext)
+const BrandBar = observer(() => {
+    const { catalog } = useContext(AppContext)
+
+    const handleClick = (id) => {
+        if (id === catalog.brand) {
+            catalog.brand = null
+        } else {
+            catalog.brand = id
+        }
+    }
+
     return (
         <ListGroup horizontal>
-            {brands.map(item =>
+            {catalog.brands.map(item =>
                 <ListGroup.Item
                     key={item.id}
-                    active={false}
-                    onClick={() => alert('Фильтрация, только товары бренда')}
+                    // active={false}
+                    active={item.id === catalog.brand}
+                    // onClick={() => alert('Фильтрация, только товары бренда')}
+                    onClick={() => handleClick(item.id)}
                     style={{cursor: 'pointer'}}
                 >
                     {item.name}
@@ -18,6 +30,6 @@ const BrandBar = () => {
             )}
         </ListGroup>
     )
-}
+})
 
 export default BrandBar

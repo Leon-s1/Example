@@ -15,8 +15,18 @@ class Product {
         if (categoryId) where.categoryId = categoryId
         if (brandId) where.brandId = brandId
         //Добавляем новый метод findAndCountAll
-        const products = await ProductMapping.findAndCountAll({where, limit, offset})
         // const products = await ProductMapping.findAll(where)
+        const products = await ProductMapping.findAndCountAll({
+            where,
+            limit,
+            offset,
+        //    для каждого товара получаем бренд и категорию
+            include: [
+                {model: BrandMapping, as: 'brand'},
+                {model: CategoryMapping, as: 'category'}
+            ]
+        })
+
         return products
     }
 

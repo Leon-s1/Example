@@ -1,16 +1,28 @@
+import { ListGroup } from 'react-bootstrap'
 import { useContext } from 'react'
 import { AppContext } from './AppContext.js'
-import { ListGroup } from 'react-bootstrap'
+import { observer } from "mobx-react-lite";
 
-const CategoryBar = () => {
-    const { categories } = useContext(AppContext)
+const CategoryBar = observer(() => {
+    const { catalog } = useContext(AppContext)
+
+    const handleClick = (id) => {
+        if (id === catalog.category) {
+            catalog.category = null
+        } else {
+            catalog.category = id
+        }
+    }
+
     return (
         <ListGroup>
-            {categories.map(item =>
+            {catalog.categories.map(item =>
                 <ListGroup.Item
                     key={item.id}
-                    active={false}
-                    onClick={() => alert('Фильтрация, только товары категории')}
+                    // active={false}
+                    active={item.id === catalog.category}
+                    // onClick={() => alert('Фильтрация, только товары категории')}
+                    onClick={() => handleClick(item.id)}
                     style={{cursor: 'pointer'}}
                 >
                     {item.name}
@@ -18,6 +30,6 @@ const CategoryBar = () => {
             )}
         </ListGroup>
     )
-}
+})
 
 export default CategoryBar
