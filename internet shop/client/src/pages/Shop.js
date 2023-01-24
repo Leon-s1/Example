@@ -12,7 +12,23 @@ import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../components/AppContext.js";
 import { fetchCategories, fetchBrands, fetchAllProducts } from "../http/catalogAPI.js";
 import { observer } from "mobx-react-lite";
-import { useLocation } from 'react-router-dom'
+import { useLocation, useSearchParams } from 'react-router-dom'
+
+    const getSearchParams = (searchParams) => {
+    let category = searchParams.get('category')
+    if (category && /[1-9][0-9]*/.test(category)) {
+        category = parseInt(category)
+    }
+    let brand = searchParams.get('brand')
+    if (brand && /[1-9][0-9]*/.test(brand)) {
+        brand = parseInt(brand)
+    }
+    let page = searchParams.get('page')
+    if (page && /[1-9][0-9]*/.test(page)) {
+        page = parseInt(page)
+    }
+    return {category, brand, page}
+}
 
 const Shop = observer(() => {
     const { catalog } = useContext(AppContext)
@@ -20,6 +36,9 @@ const Shop = observer(() => {
     const [categoriesFetching, setCategoriesFetching] = useState(true)
     const [brandsFetching, setBrandsFetching] = useState(true)
     const [productsFetching, setProductsFetching] = useState(true)
+
+    const location = useLocation()
+    const [searchParams] = useSearchParams()
 
     useEffect(() => {
         fetchCategories()
@@ -30,7 +49,13 @@ const Shop = observer(() => {
             .then(data => catalog.brands = data)
             .finally(() => setBrandsFetching(false))
 
-        fetchAllProducts(null, null, 1, catalog.limit)
+        const { category, brand, page } = getSearchParams(searchParams)
+        catalog.category = category
+        catalog.brand = brand
+        catalog.page = page ?? 1
+
+        // fetchAllProducts(null, null, 1, catalog.limit)
+        fetchAllProducts(catalog.category, catalog.brand, catalog.page, catalog.limit)
             .then(data => {
                 catalog.products = data.rows
                 catalog.count = data.count
@@ -38,34 +63,42 @@ const Shop = observer(() => {
             .finally(() => setProductsFetching(false))
     }, [])
 
-    const location = useLocation()
+
     useEffect(() => {
-        if (location.state) {
-            if (location.state.category !== catalog.category) {
-                catalog.category = location.state.category
-            }
-            if (location.state.brand !== catalog.brand) {
-                catalog.brand = location.state.brand
-            }
-            if (location.state.page !== catalog.page) {
-                catalog.page = location.state.page
-            }
+        const { category, brand, page } = getSearchParams(searchParams)
+
+        // if (location.state) {
+        if (category || brand || page) {
+            // if (location.state.category !== catalog.category) {
+            //     catalog.category = location.state.category
+            // }
+            // if (location.state.brand !== catalog.brand) {
+            //     catalog.brand = location.state.brand
+            // }
+            // if (location.state.page !== catalog.page) {
+            //     catalog.page = location.state.page
+            if (category !== catalog.category) catalog.category = category
+            if (brand !== catalog.brand) catalog.brand = brand
+            if (page !== catalog.page) catalog.page = page ?? 1
         } else  {
             catalog.category = null
             catalog.brand = null
             catalog.page = 1
         }
         // eslint-disable-next-line
-    }, [location.state])
+    // }, [location.state])
+    }, [location.search])
 
     useEffect(() => {
         setProductsFetching(true)
-        fetchAllProducts(catalog.category, catalog.brand, catalog.page, catalog.limit)
-            .then(data => {
-                catalog.products = data.rows
-                catalog.count = data.count
-            })
-            .finally(() => setProductsFetching(false))
+        setTimeout(() => {
+            fetchAllProducts(catalog.category, catalog.brand, catalog.page, catalog.limit)
+                .then(data => {
+                    catalog.products = data.rows
+                    catalog.count = data.count
+                })
+                .finally(() => setProductsFetching(false))
+        }, 1000)
     }, [catalog.category, catalog.brand, catalog.page])
 
     return (

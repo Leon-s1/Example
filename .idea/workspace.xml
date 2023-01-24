@@ -27,15 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/http/catalogAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/store/CatalogStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/BrandBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/BrandBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/CategoryBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/CategoryBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/ProductItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/ProductItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/ProductList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Product.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1176,7 +1171,7 @@
       <workItem from="1671442427939" duration="24632000" />
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
-      <workItem from="1673425563583" duration="31732000" />
+      <workItem from="1673425563583" duration="48179000" />
     </task>
     <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
       <created>1634144015824</created>
@@ -1472,7 +1467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674118321358</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="edit component shop, categoryBar, brandBar, productList, ProductItem">
+      <created>1674208061573</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1674208061573</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1519,7 +1521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add downloading picture" />
     <MESSAGE value="add picture" />
     <MESSAGE value="add new models" />
     <MESSAGE value="edit controllers for work models" />
@@ -1544,7 +1545,8 @@
     <MESSAGE value="add component basket" />
     <MESSAGE value="add component shop" />
     <MESSAGE value="add component authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="add component authorization" />
+    <MESSAGE value="edit component shop, categoryBar, brandBar, productList, ProductItem" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit component shop, categoryBar, brandBar, productList, ProductItem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1599,11 +1601,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1674118346251">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1674208079403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1674118346251" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1674208079403" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
