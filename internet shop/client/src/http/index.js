@@ -1,11 +1,13 @@
 import axios from 'axios'
 
 const guestInstance = axios.create({
-    baseURL: process.env.REACT_APP_API_URL
+    baseURL: process.env.REACT_APP_API_URL,
+    withCredentials: true // отправлять cookie
 })
 
 const authInstance = axios.create({
-    baseURL: process.env.REACT_APP_API_URL
+    baseURL: process.env.REACT_APP_API_URL,
+    withCredentials: true // отправлять cookie
 })
 
 // добавляем в запрос данные для авторизации с помощью перехватчика (interceptor)
