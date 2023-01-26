@@ -1,10 +1,13 @@
 import { Container, Row, Col, Button, Image, Spinner, Table } from "react-bootstrap";
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { fetchOneProduct, fetchProdRating } from "../http/catalogAPI.js";
 import { useParams } from 'react-router-dom'
+import { append } from "../http/basketAPI";
+import { AppContext } from "../components/AppContext";
 
 const Product = () => {
     const { id } = useParams()
+    const { basket } = useContext(AppContext)
     const [product, setProduct] = useState(null)
     const [rating, setRating] = useState(null)
 
@@ -12,6 +15,12 @@ const Product = () => {
         fetchOneProduct(id).then(data => setProduct(data))
         fetchProdRating(id).then(data => setRating(data))
     }, [id])
+
+    const handleClick = (productId) => {
+        append(productId).then(data => {
+            basket.products = data.products
+        })
+    }
 
     if (!product) {
         return  <Spinner animation='border' />
@@ -39,7 +48,7 @@ const Product = () => {
                             <Spinner animation="border" />
                         )}
                     </div>
-                    <Button>Добавить в корзину</Button>
+                    <Button onClick={() => handleClick(product.id)}>Добавить в корзину</Button>
                 </Col>
             </Row>
             {!!product.props.length &&

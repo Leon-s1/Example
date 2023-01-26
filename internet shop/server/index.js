@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000
 
 const app = express()
 // Совместное использование ресурсов между источниками
-app.use(cors())
+app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 // middleware для работы с json
 app.use(express.json())
 // middleware для статики (img, css)
