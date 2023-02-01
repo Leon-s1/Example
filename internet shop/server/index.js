@@ -16,7 +16,7 @@ const app = express()
 // Совместное использование ресурсов между источниками
 app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 // middleware для работы с json
-app.use(express.json())
+app.use(express.json()) //использовать перед router
 // middleware для статики (img, css)
 app.use(express.static('static'))
 // middleware для загрузки файлов

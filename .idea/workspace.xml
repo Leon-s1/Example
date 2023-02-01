@@ -25,9 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add props Product.js">
+    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add new Table Order, OrderItem">
+      <change afterPath="$PROJECT_DIR$/internet shop/server/controllers/Order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/models/Order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/routes/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/test/order.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/models/mapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/mapping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1093,36 +1097,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.rating#2">
-    <configuration name="product_prop#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.order#4">
+    <configuration name="order#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/order.http" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="product_prop#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" index="2" runType="Run single request">
+    <configuration name="order#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/order.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="product_prop#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/product_prop.http" index="3" runType="Run single request">
+    <configuration name="order#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/order.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="rating#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/rating.http" runType="Run single request">
+    <configuration name="order#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/order.http" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="rating#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/internet shop/server/test/rating.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.product_prop#1" />
-      <item itemvalue="HTTP Request.product_prop#2" />
-      <item itemvalue="HTTP Request.product_prop#3" />
-      <item itemvalue="HTTP Request.rating#1" />
       <item itemvalue="HTTP Request.rating#2" />
+      <item itemvalue="HTTP Request.order#1" />
+      <item itemvalue="HTTP Request.order#2" />
+      <item itemvalue="HTTP Request.order#3" />
+      <item itemvalue="HTTP Request.order#4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.order#4" />
+        <item itemvalue="HTTP Request.order#3" />
+        <item itemvalue="HTTP Request.order#2" />
+        <item itemvalue="HTTP Request.order#1" />
         <item itemvalue="HTTP Request.rating#2" />
-        <item itemvalue="HTTP Request.rating#1" />
-        <item itemvalue="HTTP Request.product_prop#3" />
-        <item itemvalue="HTTP Request.product_prop#2" />
-        <item itemvalue="HTTP Request.product_prop#1" />
       </list>
     </recent_temporary>
   </component>
@@ -1168,14 +1172,7 @@
       <workItem from="1671442427939" duration="24632000" />
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
-      <workItem from="1673425563583" duration="71383000" />
-    </task>
-    <task id="LOCAL-00001" summary="Не добавлялось поле title в список сотрудников">
-      <created>1634144015824</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1634144015824</updated>
+      <workItem from="1673425563583" duration="83344000" />
     </task>
     <task id="LOCAL-00002" summary="Не добавлялось поле title в список сотрудников. Добавил функцию lean() в роутер.">
       <created>1635127935146</created>
@@ -1513,7 +1510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674708511644</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="add new Table Order, OrderItem">
+      <created>1674789345151</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1674789345153</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1560,7 +1564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add props Product.js" />
     <MESSAGE value="add props in model Product.js" />
     <MESSAGE value="User controller editing methods" />
     <MESSAGE value="add middleware — authMiddleware и adminMiddleware,&#10;edit router" />
@@ -1585,7 +1588,8 @@
     <MESSAGE value="edit onClick" />
     <MESSAGE value="edit page Product" />
     <MESSAGE value="edit client Basket" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit client Basket" />
+    <MESSAGE value="add new Table Order, OrderItem" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new Table Order, OrderItem" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1640,11 +1644,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1674708525814">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1674789393846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1674708525814" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1674789393846" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
