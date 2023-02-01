@@ -25,13 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add new Table Order, OrderItem">
-      <change afterPath="$PROJECT_DIR$/internet shop/server/controllers/Order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/models/Order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/routes/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internet shop/server/test/order.http" afterDir="false" />
+    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="add new Route, Controllers&lt; Model table Order">
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/http/orderAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Checkout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +95,87 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:7000/api/order/admin/create" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...EwMzJ9.cMZ6c...1CgMA" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-type" />
+                <option name="value" value="application/json; charset=utf-8" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;name&quot;: &quot;Сергей Иванов&quot;,&#10;  &quot;email&quot;: &quot;ivanov@mail.ru&quot;,&#10;  &quot;phone&quot;: &quot;(999) 123-45-67&quot;,&#10;  &quot;address&quot;: &quot;Москва, улица Строителей, дом 123, кв.456&quot;,&#10;  &quot;comment&quot;: &quot;Комментарий к заказу&quot;,&#10;  &quot;userId&quot;: 3,&#10;  &quot;items&quot;: [&#10;    {&quot;name&quot;: &quot;Товар раз&quot;, &quot;price&quot;: 123, &quot;quantity&quot;: 2},&#10;    {&quot;name&quot;: &quot;Товар два&quot;, &quot;price&quot;: 456, &quot;quantity&quot;: 1}&#10;  ]&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/order/admin/getall/user/5" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...EwMzJ9.cMZ6c...1CgMA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/order/admin/getone/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...EwMzJ9.cMZ6c...1CgMA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:7000/api/order/admin/getall" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Host" />
+                <option name="value" value="localhost:7000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer eyJhb...XVCJ9.eyJpZ...EwMzJ9.cMZ6c...1CgMA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:7000/api/rating/product/1/rate/5" />
@@ -1013,87 +1091,6 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/user/delete/8" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="DELETE" />
-          <option name="urlBase" value="http://localhost:7000/api/user/delete/2" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:7000/api/user/create" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Content-type" />
-                <option name="value" value="application/json; charset=utf-8" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="haveTextToSend" value="true" />
-          <option name="textToSend" value="{&#10;  &quot;email&quot;: &quot;admin2@mail.ru&quot;,&#10;  &quot;password&quot;: &quot;qwerty&quot;,&#10;  &quot;role&quot;: &quot;ADMIN&quot;&#10;}" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="http://localhost:7000/api/user/getall" />
-          <option name="urlPath" value="" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Authorization" />
-                <option name="value" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJhZG1pbkBtYWlsLnJ1Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjY2NTgwNjE4LCJleHAiOjE2NjY2NjcwMTh9.RoKDaVlvv7efiNj8jUxiJF8k_H_Rw_BKoYLstiFpBaY" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Host" />
-                <option name="value" value="localhost:7000" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -1172,14 +1169,7 @@
       <workItem from="1671442427939" duration="24632000" />
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
-      <workItem from="1673425563583" duration="83344000" />
-    </task>
-    <task id="LOCAL-00002" summary="Не добавлялось поле title в список сотрудников. Добавил функцию lean() в роутер.">
-      <created>1635127935146</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1635127935147</updated>
+      <workItem from="1673425563583" duration="85809000" />
     </task>
     <task id="LOCAL-00003" summary="добавляю скрипты">
       <created>1635259290504</created>
@@ -1517,7 +1507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674789345153</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="add new Route, Controllers&lt; Model table Order">
+      <created>1675224005779</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1675224005779</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1564,7 +1561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add props in model Product.js" />
     <MESSAGE value="User controller editing methods" />
     <MESSAGE value="add middleware — authMiddleware и adminMiddleware,&#10;edit router" />
     <MESSAGE value="add test file product.http, category.http, brand.http, user.http" />
@@ -1589,7 +1585,8 @@
     <MESSAGE value="edit page Product" />
     <MESSAGE value="edit client Basket" />
     <MESSAGE value="add new Table Order, OrderItem" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new Table Order, OrderItem" />
+    <MESSAGE value="add new Route, Controllers&lt; Model table Order" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new Route, Controllers&lt; Model table Order" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1624,31 +1621,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1671507126442" />
-    <state width="396" height="646" key="GridCell.Tab.0.bottom" timestamp="1671415439325">
+    <state width="395" height="615" key="GridCell.Tab.0.bottom" timestamp="1675224249997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="396" height="646" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439325" />
-    <state width="396" height="646" key="GridCell.Tab.0.center" timestamp="1671415439325">
+    <state width="395" height="615" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
+    <state width="395" height="615" key="GridCell.Tab.0.center" timestamp="1675224249997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="396" height="646" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439325" />
-    <state width="396" height="646" key="GridCell.Tab.0.left" timestamp="1671415439324">
+    <state width="395" height="615" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
+    <state width="395" height="615" key="GridCell.Tab.0.left" timestamp="1675224249997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="396" height="646" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439324" />
-    <state width="396" height="646" key="GridCell.Tab.0.right" timestamp="1671415439325">
+    <state width="395" height="615" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
+    <state width="395" height="615" key="GridCell.Tab.0.right" timestamp="1675224249997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="396" height="646" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1671415439325" />
+    <state width="395" height="615" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
     <state x="15" y="165" key="SettingsEditor" timestamp="1671507207343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1674789393846">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1675224014036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1674789393846" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1675224014036" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
