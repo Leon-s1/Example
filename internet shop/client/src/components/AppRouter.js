@@ -12,6 +12,8 @@ import User from '../pages/User.js'
 import UserOrders from '../pages/UserOrders.js'
 import UserOrder from '../pages/UserOrder.js'
 import Admin from '../pages/Admin.js'
+import AdminOrders from '../pages/AdminOrders.js'
+import AdminOrder from '../pages/AdminOrder.js'
 import { AppContext } from './AppContext.js'
 import { useContext } from 'react'
 import { observer } from 'mobx-react-lite'
@@ -36,7 +38,9 @@ const authRoutes = [
 ]
 
 const adminRoutes = [
-    {path: '/admin', Component: Admin}
+    {path: '/admin', Component: Admin},
+    {path: '/admin/orders', Component: AdminOrders},
+    {path: '/admin/order/:id', Component: AdminOrder},
 ]
 
 const AppRouter = observer(() => {

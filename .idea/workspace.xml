@@ -25,10 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавляем маршруты для просмотр списка заказов и отдельного заказа.">
+    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Редактирование даты в заказе">
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminOrder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminOrders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/server/models/mapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/mapping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1169,14 +1170,7 @@
       <workItem from="1671442427939" duration="24632000" />
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
-      <workItem from="1673425563583" duration="98132000" />
-    </task>
-    <task id="LOCAL-00005" summary="добавляю скрипты">
-      <created>1635260109566</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1635260109566</updated>
+      <workItem from="1673425563583" duration="100296000" />
     </task>
     <task id="LOCAL-00006" summary="add button add, remove">
       <created>1664206304469</created>
@@ -1514,7 +1508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675654488344</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Редактирование даты в заказе">
+      <created>1675744245629</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1675744245630</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1561,7 +1562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add test file product.http, category.http, brand.http, user.http" />
     <MESSAGE value="поиск ошибки, не добавляется пользователь с ролью ADMIN" />
     <MESSAGE value="add ProductProp.js" />
     <MESSAGE value="add basket.js" />
@@ -1586,7 +1586,8 @@
     <MESSAGE value="add new Route, Controllers&lt; Model table Order" />
     <MESSAGE value="Оформление заказ на клиенте" />
     <MESSAGE value="Добавляем маршруты для просмотр списка заказов и отдельного заказа." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавляем маршруты для просмотр списка заказов и отдельного заказа." />
+    <MESSAGE value="Редактирование даты в заказе" />
+    <option name="LAST_COMMIT_MESSAGE" value="Редактирование даты в заказе" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1641,11 +1642,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1675656725567">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1675744261790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1675656725567" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1675744261790" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
