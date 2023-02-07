@@ -68,6 +68,42 @@ const Order = sequelize.define('order', {
     amount: {type: DataTypes.INTEGER, allowNull: false},
     status: {type: DataTypes.INTEGER, allowNull: false, defaultValue: 0},
     comment: {type: DataTypes.STRING},
+    // prettyCreatedAt: {
+    //     type: DataTypes.VIRTUAL,
+    //     get() {
+    //         return this.getDataValue('createdAt').toLocaleString('ru-RU')
+    //     }
+    // },
+    // prettyUpdatedAt: {
+    //     type: DataTypes.VIRTUAL,
+    //     get() {
+    //         return this.getDataValue('updatedAt').toLocaleString('ru-RU')
+    //     }
+    // },
+    prettyCreatedAt: {
+        type: DataTypes.VIRTUAL,
+        get() {
+            const value = this.getDataValue('createdAt')
+            const day = value.getDate()
+            const month = value.getMonth() + 1
+            const year = value.getFullYear()
+            const hours = value.getHours()
+            const minutes = value.getMinutes()
+            return day + '.' + month + '.' + year + ' ' + hours + ':' + minutes
+        }
+    },
+    prettyUpdatedAt: {
+        type: DataTypes.VIRTUAL,
+        get() {
+            const value = this.getDataValue('updatedAt')
+            const day = value.getDate()
+            const month = value.getMonth() + 1
+            const year = value.getFullYear()
+            const hours = value.getHours()
+            const minutes = value.getMinutes()
+            return day + '.' + month + '.' + year + ' ' + hours + ':' + minutes
+        }
+    },
 })
 
 // позиции заказа, в одном заказе может быть несколько позиций (товаров)

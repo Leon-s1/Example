@@ -4,12 +4,15 @@ import AppError from '../errors/AppError.js'
 
 class Order {
     async getAll(userId = null) {
-        let orders
-        if (userId) {
-            orders = await OrderMapping.findAll({where: {userId}})
-        } else {
-            orders = await OrderMapping.findAll()
-        }
+        // let orders
+        const options = {}
+        if (userId) options.where = {userId}
+        // {
+        //     orders = await OrderMapping.findAll({where: {userId}})
+        const orders = await OrderMapping.findAll(options)
+        // } else {
+        //     orders = await OrderMapping.findAll()
+        // }
         return orders
     }
 
