@@ -25,9 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Список всех заказов в панели администратора">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminCategories.js" afterDir="false" />
+    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление бренда">
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/CreateCategory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/AdminCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminCategories.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1168,21 +1169,7 @@
       <workItem from="1671442427939" duration="24632000" />
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
-      <workItem from="1673425563583" duration="102661000" />
-    </task>
-    <task id="LOCAL-00007" summary="default changelist">
-      <created>1664269852478</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1664269852478</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add server/index.js">
-      <created>1664273549781</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1664273549781</updated>
+      <workItem from="1673425563583" duration="103533000" />
     </task>
     <task id="LOCAL-00009" summary="add models/mapping">
       <created>1664359794273</created>
@@ -1513,7 +1500,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675764767228</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Список категорий">
+      <created>1675825838579</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1675825838579</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Добавление бренда">
+      <created>1675826292567</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1675826292567</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1560,8 +1561,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add ProductProp.js" />
-    <MESSAGE value="add basket.js" />
     <MESSAGE value="edit Basket.js" />
     <MESSAGE value="commit" />
     <MESSAGE value="add client app" />
@@ -1585,7 +1584,9 @@
     <MESSAGE value="Добавляем маршруты для просмотр списка заказов и отдельного заказа." />
     <MESSAGE value="Редактирование даты в заказе" />
     <MESSAGE value="Список всех заказов в панели администратора" />
-    <option name="LAST_COMMIT_MESSAGE" value="Список всех заказов в панели администратора" />
+    <MESSAGE value="Список категорий" />
+    <MESSAGE value="Добавление бренда" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление бренда" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1640,11 +1641,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1675764773928">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1675826298135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1675764773928" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1675826298135" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

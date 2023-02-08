@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect } from 'react'
 import { fetchCategories } from '../http/catalogAPI.js'
 import { Button, Container, Spinner, Table } from 'react-bootstrap'
 import CreateCategory from '../components/CreateCategory.js'
@@ -6,6 +6,9 @@ import CreateCategory from '../components/CreateCategory.js'
 const AdminCategories = () => {
     const [categories, setCategories] = useState(null) // список загруженных категорий
     const [fetching, setFetching] = useState(true) // загрузка списка категорий с сервера
+    const [show, setShow] = useState(false) // модальное окно создания-редактирования
+    // для обновления списка после добавления-редактирования, нужно изменить состояние
+    const [change, setChange] = useState(false)
 
     useEffect(() => {
         fetchCategories()
@@ -15,7 +18,7 @@ const AdminCategories = () => {
             .finally(
                 () => setFetching(false)
             )
-    }, [])
+    }, [change])
 
     if (fetching) {
         return <Spinner animation="border" />
@@ -24,6 +27,8 @@ const AdminCategories = () => {
     return (
         <Container>
             <h1>Категории</h1>
+            <Button onClick={() => setShow(true)}>Создать категорию</Button>
+            <CreateCategory show={show} setShow={setShow} setChange={setChange} />
             {categories.length > 0 ? (
                 <Table bordered hover size="sm" className="mt-3">
                     <thead>
