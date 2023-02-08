@@ -6,6 +6,9 @@ import CreateBrand from '../components/CreateBrand.js'
 const AdminBrands = () => {
     const [brands, setBrands] = useState(null) // список загруженных брендов
     const [fetching, setFetching] = useState(true) // загрузка списка брендов с сервера
+    const [show, setShow] = useState(false) // модальное окно создания-редактирования
+    // для обновления списка после добавления-редактирования, нужно изменить состояние
+    const [change, setChange] = useState(false)
 
     useEffect(() => {
         fetchBrands()
@@ -15,7 +18,7 @@ const AdminBrands = () => {
             .finally(
                 () => setFetching(false)
             )
-    }, [])
+    }, [change])
 
     if (fetching) {
         return <Spinner animation="border" />
@@ -24,6 +27,8 @@ const AdminBrands = () => {
     return (
         <Container>
             <h1>Бренды</h1>
+            <Button onClick={() => setShow(true)}>Создать бренд</Button>
+            <CreateBrand show={show} setShow={setShow} setChange={setChange} />
             {brands.length > 0 ? (
                 <Table bordered hover size="sm" className="mt-3">
                     <thead>
