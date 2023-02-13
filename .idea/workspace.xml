@@ -26,10 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/UpdateCategory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/UpdateBrand.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/http/catalogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/http/catalogAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/AdminCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminCategories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/AdminBrands.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminBrands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1171,14 +1170,7 @@
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
       <workItem from="1673425563583" duration="104486000" />
-      <workItem from="1675830017804" duration="5734000" />
-    </task>
-    <task id="LOCAL-00011" summary="commit">
-      <created>1664505377058</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1664505377058</updated>
+      <workItem from="1675830017804" duration="7733000" />
     </task>
     <task id="LOCAL-00012" summary="add controllers for Routing">
       <created>1664510998197</created>
@@ -1516,7 +1508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675826852373</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Редактирование категории через Панель управления">
+      <created>1676257513325</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1676257513326</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1563,7 +1562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add client app" />
     <MESSAGE value="add pages" />
     <MESSAGE value="edit app.js Route" />
     <MESSAGE value="router App" />
@@ -1588,7 +1586,8 @@
     <MESSAGE value="Добавление бренда" />
     <MESSAGE value="Добавление новой категории и обновление состояния" />
     <MESSAGE value="Добавление нового бренда и обновление состояния" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление нового бренда и обновление состояния" />
+    <MESSAGE value="Редактирование категории через Панель управления" />
+    <option name="LAST_COMMIT_MESSAGE" value="Редактирование категории через Панель управления" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1599,26 +1598,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="102" y="41" width="816" height="999" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1671507929217" />
-    <state x="399" y="383" width="586" height="274" key="#Notifications" timestamp="1666142086462">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="399" y="383" width="586" height="274" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1666142086462" />
-    <state x="0" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1665462273275">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="0" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665462273275" />
-    <state x="255" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1665993380478">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="255" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1665993380478" />
     <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1671503423520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040@0.0.1920.1040" timestamp="1671503423520" />
-    <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1665548819481">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="45" y="351" width="943" height="345" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1665548819481" />
     <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog" timestamp="1671507126442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1652,10 +1635,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1668650987694" />
-    <state x="167" y="244" key="run.anything.popup" timestamp="1674186561250">
+    <state x="167" y="244" key="run.anything.popup" timestamp="1676258371143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="167" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1674186561250" />
+    <state x="167" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1676258371143" />
     <state x="171" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1670836670554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
