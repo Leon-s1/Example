@@ -26,8 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/UpdateProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/CreateProperties.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/CreateProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/CreateProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1169,14 +1170,7 @@
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
       <workItem from="1673425563583" duration="104486000" />
-      <workItem from="1675830017804" duration="10636000" />
-    </task>
-    <task id="LOCAL-00015" summary="add controller Brand.js, Category.js, User.js">
-      <created>1664957178263</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1664957178263</updated>
+      <workItem from="1675830017804" duration="11520000" />
     </task>
     <task id="LOCAL-00016" summary="add downloading picture">
       <created>1664963065880</created>
@@ -1514,7 +1508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676261731029</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Компонент редактирование товара">
+      <created>1676262479383</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1676262479383</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1561,7 +1562,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Context App" />
     <MESSAGE value="add component CategoryBar.js, BrandBar.js, ProductItem.js, ProductList.js" />
     <MESSAGE value="add component basket" />
     <MESSAGE value="add component shop" />
@@ -1586,7 +1586,8 @@
     <MESSAGE value="Редактирование бренда через Панель управления администратора" />
     <MESSAGE value="Компонент списка товаров" />
     <MESSAGE value="Компонент добавление товара" />
-    <option name="LAST_COMMIT_MESSAGE" value="Компонент добавление товара" />
+    <MESSAGE value="Компонент редактирование товара" />
+    <option name="LAST_COMMIT_MESSAGE" value="Компонент редактирование товара" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">

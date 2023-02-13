@@ -27,6 +27,9 @@ const CreateProduct = (props) => {
     // выбранное для загрузки изображение товара
     const [image, setImage] = useState(null)
 
+    // список характеристик товара
+    const [properties, setProperties] = useState([])
+
     // список категорий и список брендов для возможности выбора
     const [categories, setCategories] = useState(null)
     const [brands, setBrands] = useState(null)
@@ -74,6 +77,16 @@ const CreateProduct = (props) => {
             data.append('categoryId', value.category)
             data.append('brandId', value.brand)
             if (image) data.append('image', image, image.name)
+            // характеристики нового товара
+            if (properties.length) {
+                const props = properties.filter(
+                    prop => prop.name.trim() !== '' && prop.value.trim() !== ''
+                )
+                if (props.length) {
+                    data.append('props', JSON.stringify(props))
+                }
+            }
+
 
             createProduct(data)
                 .then(
@@ -82,6 +95,7 @@ const CreateProduct = (props) => {
                         event.target.image.value = ''
                         setValue(defaultValue)
                         setValid(defaultValid)
+                        setProperties([])
                         // закрываем модальное окно создания товара
                         setShow(false)
                         // изменяем состояние компонента списка товаров,
@@ -162,7 +176,12 @@ const CreateProduct = (props) => {
                             />
                         </Col>
                     </Row>
-                    <Button type="submit">Сохранить</Button>
+                    <CreateProperties properties={properties} setProperties={setProperties} />
+                    <Row>
+                        <Col>
+                            <Button type="submit">Сохранить</Button>
+                        </Col>
+                    </Row>
                 </Form>
             </Modal.Body>
         </Modal>
