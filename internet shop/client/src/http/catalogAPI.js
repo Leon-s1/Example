@@ -23,6 +23,11 @@ export const fetchCategories = async () => {
     return data
 }
 
+export const fetchCategory = async (id) => {
+    const { data } = await guestInstance.get(`category/getone/${id}`)
+    return data
+}
+
 /*
  * Создание, обновление и удаление бренда, получение списка всех брендов
  */
@@ -43,6 +48,11 @@ export const deleteBrand = async (id) => {
 
 export const fetchBrands = async () => {
     const { data } = await guestInstance.get('brand/getall')
+    return data
+}
+
+export const fetchBrand = async (id) => {
+    const { data } = await guestInstance.get(`brand/getone/${id}`)
     return data
 }
 
