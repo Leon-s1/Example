@@ -1,7 +1,9 @@
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap'
 import { fetchOneProduct, updateProduct, fetchCategories, fetchBrands } from '../http/catalogAPI.js'
 import { useState, useEffect } from 'react'
+import uuid from 'react-uuid'
 import UpdateProperties from './UpdateProperties.js'
+import { createProperty, updateProperty, deleteProperty } from '../http/catalogAPI.js'
 
 const defaultValue = {name: '', price: '', category: '', brand: ''}
 const defaultValid = {name: null, price: null, category: null, brand: null}
@@ -18,21 +20,66 @@ const isValid = (value) => {
     return result
 }
 
+const updateProperties = async (properties, productId) => {
+    for (const prop of properties) {
+        const empty = prop.name.trim() === '' || prop.value.trim() === ''
+        // если вдруг старая хар-ка оказалась пустая — удалим ее на сервере
+        if (empty && prop.id) {
+            try {
+                await deleteProperty(productId, prop)
+            } catch(error) {
+                alert(error.response.data.message)
+            }
+            continue
+        }
+        /*
+         * Если у объекта prop свойство append равно true — это новая хар-ка, ее надо создать.
+         * Если у объекта prop свойство change равно true — хар-ка изменилась, ее надо обновить.
+         * Если у объекта prop свойство remove равно true — хар-ку удалили, ее надо удалить.
+         */
+        if (prop.append && !empty) {
+            try {
+                await createProperty(productId, prop)
+            } catch(error) {
+                alert(error.response.data.message)
+            }
+            continue
+        }
+        if (prop.change && !prop.remove) {
+            try {
+                await updateProperty(productId, prop.id, prop)
+            } catch(error) {
+                alert(error.response.data.message)
+            }
+            continue
+        }
+        if (prop.remove) {
+            try {
+                await deleteProperty(productId, prop.id)
+            } catch(error) {
+                alert(error.response.data.message)
+            }
+            continue
+        }
+    }
+}
+
+
 const UpdateProduct = (props) => {
     const { id, show, setShow, setChange } = props
 
     const [value, setValue] = useState(defaultValue)
     const [valid, setValid] = useState(defaultValid)
 
+    // список категорий и список брендов для возможности выбора
+    const [categories, setCategories] = useState(null)
+    const [brands, setBrands] = useState(null)
+
     // выбранное для загрузки изображение товара
     const [image, setImage] = useState(null)
 
     // список характеристик товара
     const [properties, setProperties] = useState([])
-
-    // список категорий и список брендов для возможности выбора
-    const [categories, setCategories] = useState(null)
-    const [brands, setBrands] = useState(null)
 
     useEffect(() => {
         if(id) {
@@ -48,7 +95,16 @@ const UpdateProduct = (props) => {
                         }
                         setValue(prod)
                         setValid(isValid(prod))
-                        setProperties(data.props)
+                        // для удобства работы с хар-ми зададим для каждой уникальный идентификатор
+                        // и доп.свойства, которые подскажут нам, какой http-запрос на сервер нужно
+                        // выполнить — добавления, обновления или удаления характеристики
+                        // setProperties(data.props)
+                        setProperties(data.props.map(item => {
+                            // при добавлении новой хар-ки свойство append принимает значение true
+                            // при изменении старой хар-ки свойство change принимает значение true
+                            // при удалении старой хар-ки свойство remove принимает значение true
+                            return {...item, unique: uuid(), append: false, remove: false, change: false}
+                        }))
                     }
                 )
                 .catch(
@@ -97,17 +153,40 @@ const UpdateProduct = (props) => {
             data.append('brandId', value.brand)
             if (image) data.append('image', image, image.name)
 
+            // нужно обновить, добавить или удалить характеристики и обязательно дождаться
+            // ответа сервера — поэтому функция updateProperties() объявлена как async, а
+            // в теле функции для выполнения действия с каждой хар-кой используется await
+            if (properties.length) {
+                await updateProperties(properties, id)
+            }
+
             updateProduct(id, data)
                 .then(
                     data => {
-                        // нужно сбросить поле загрузки изображения, но не очищать все
-                        // поля формы для следующего товара, потому что при повтороном
-                        // редактировании того же товара все поля окажутся пустыми
+                        // изменяем состояние, чтобы обновить список товаров
+                        setChange(state => !state)
+                        // сбрасываем поле загрузки изображения, чтобы при сохранении товара,
+                        // когда новое изображение не выбрано, не загружать старое повторно
                         event.target.image.value = ''
+                        // в принципе, мы могли бы сбросить все поля формы на дефолтные значения, но
+                        // если пользователь решит отредатировать тот же товар повтороно, то увидит
+                        // пустые поля формы — http-запрос на получение данных для редактирования мы
+                        // выполняем только тогда, когда выбран новый товар (изменился id товара)
+                        const prod = {
+                            name: data.name,
+                            price: data.price.toString(),
+                            category: data.categoryId.toString(),
+                            brand: data.brandId.toString()
+                        }
+                        setValue(prod)
+                        setValid(isValid(prod))
+                        // мы получим актуальные значения хар-тик с сервера, потому что обновление
+                        // хар-тик завершилось еще до момента отправки этого http-запроса на сервер
+                        setProperties(data.props.map(item => {
+                            return {...item, unique: uuid(), append: false, remove: false, change: false}
+                        }))
                         // закрываем модальное окно редактирования товара
                         setShow(false)
-                        // изменяем состояние компонента списка товаров
-                        setChange(state => !state)
                     }
                 )
                 .catch(
@@ -115,6 +194,8 @@ const UpdateProduct = (props) => {
                 )
         }
     }
+
+
 
     return (
         <Modal show={show} onHide={() => setShow(false)} size="lg">
@@ -183,7 +264,8 @@ const UpdateProduct = (props) => {
                             />
                         </Col>
                     </Row>
-                    <UpdateProperties productId={id} properties={properties} />
+                    {/*<UpdateProperties productId={id} properties={properties} />*/}
+                    <UpdateProperties properties={properties} setProperties={setProperties} />
                     <Row>
                         <Col>
                             <Button type="submit">Сохранить</Button>
