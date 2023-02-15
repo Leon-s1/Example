@@ -1,23 +1,30 @@
 import { useState, useEffect } from 'react'
 import { fetchCategories, deleteCategory } from '../http/catalogAPI.js'
 import { Button, Container, Spinner, Table } from 'react-bootstrap'
-import CreateCategory from '../components/CreateCategory.js'
-import UpdateCategory from "../components/UpdateCategory";
+// import CreateCategory from '../components/CreateCategory.js'
+// import UpdateCategory from "../components/UpdateCategory";
+import EditCategory from '../components/EditCategory.js'
 
 const AdminCategories = () => {
     const [categories, setCategories] = useState(null) // список загруженных категорий
     const [fetching, setFetching] = useState(true) // загрузка списка категорий с сервера
-    const [createShow, setCreateShow] = useState(false) // модальное окно создания категории
-    const [updateShow, setUpdateShow] = useState(false) // модальное окно редактирования
-        // const [show, setShow] = useState(false) // модальное окно создания-редактирования
+    const [show, setShow] = useState(false) // модальное окно создания-редактирования
+    // const [createShow, setCreateShow] = useState(false) // модальное окно создания категории
+    // const [updateShow, setUpdateShow] = useState(false) // модальное окно редактирования
     // для обновления списка после добавления-редактирования, нужно изменить состояние
     const [change, setChange] = useState(false)
     // id категории, которую будем редактировать — для передачи в <UpdateCategory id={…} />
-    const [category, setCategory] = useState(null)
+    const [categoryId, setCategoryId] = useState(null)
+
+    const handleCreateClick = () => {
+        setCategoryId(0)
+        setShow(true)
+    }
 
     const handleUpdateClick = (id) => {
-        setCategory(id)
-        setUpdateShow(true)
+        // setCategory(id)
+        setCategoryId(id)
+        setShow(true)
     }
 
     const handleDeleteClick = (id) => {
@@ -54,9 +61,11 @@ const AdminCategories = () => {
             {/*<Button onClick={() => setShow(true)}>Создать категорию</Button>*/}
             {/*<CreateCategory show={show} setShow={setShow} setChange={setChange} />*/}
             <h1>Категории</h1>
-            <Button onClick={() => setCreateShow(true)}>Создать категорию</Button>
-            <CreateCategory show={createShow} setShow={setCreateShow} setChange={setChange} />
-            <UpdateCategory id={category} show={updateShow} setShow={setUpdateShow} setChange={setChange} />
+            {/*<Button onClick={() => setCreateShow(true)}>Создать категорию</Button>*/}
+            {/*<CreateCategory show={createShow} setShow={setCreateShow} setChange={setChange} />*/}
+            {/*<UpdateCategory id={category} show={updateShow} setShow={setUpdateShow} setChange={setChange} />*/}
+            <Button onClick={() => handleCreateClick()}>Создать категорию</Button>
+            <EditCategory id={categoryId} show={show} setShow={setShow} setChange={setChange} />
 
             {categories.length > 0 ? (
                 <Table bordered hover size="sm" className="mt-3">

@@ -26,8 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/EditCategory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/BasketList.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/BasketList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/AdminCategories.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminCategories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1169,28 +1172,7 @@
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
       <workItem from="1673425563583" duration="104486000" />
-      <workItem from="1675830017804" duration="21315000" />
-    </task>
-    <task id="LOCAL-00020" summary="edit model Product.js">
-      <created>1665137620291</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1665137620291</updated>
-    </task>
-    <task id="LOCAL-00021" summary="edit Pagination controller, model Product.js">
-      <created>1665396269740</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1665396269740</updated>
-    </task>
-    <task id="LOCAL-00022" summary="add props Product.js">
-      <created>1665482766028</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1665482766029</updated>
+      <workItem from="1675830017804" duration="30165000" />
     </task>
     <task id="LOCAL-00023" summary="add props in model Product.js">
       <created>1665568805904</created>
@@ -1514,7 +1496,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676359195214</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Редактируем компонент App">
+      <created>1676359417816</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1676359417816</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Редактируем компонент App добавляем компонент Loader.js">
+      <created>1676368605762</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1676368605763</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Редактируем NavBar.js, удаляем компонент ChekAuth.js">
+      <created>1676424764096</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1676424764096</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1561,9 +1564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit component shop, categoryBar, brandBar, productList, ProductItem" />
-    <MESSAGE value="button Back and Forward" />
-    <MESSAGE value="add publicRoutes product, basket" />
     <MESSAGE value="edit onClick" />
     <MESSAGE value="edit page Product" />
     <MESSAGE value="edit client Basket" />
@@ -1586,7 +1586,10 @@
     <MESSAGE value="Добавили функции для работы с характеристиками в компонент catalogAPI.js" />
     <MESSAGE value="Добавили компонент UpdateProperties.js" />
     <MESSAGE value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
+    <MESSAGE value="Редактируем компонент App" />
+    <MESSAGE value="Редактируем компонент App добавляем компонент Loader.js" />
+    <MESSAGE value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1625,11 +1628,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1676359273724">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1676424764119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676359273724" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676424764119" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
