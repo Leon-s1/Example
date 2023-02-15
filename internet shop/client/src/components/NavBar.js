@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import {AppContext} from "./AppContext.js";
 import {useContext} from "react";
 import {observer} from "mobx-react-lite";
-import CheckAuth from "./CheckAuth.js";
+// import CheckAuth from "./CheckAuth.js";
 import FetchBasket from "./FetchBasket";
 
 const NavBar = observer( () => {
@@ -24,7 +24,7 @@ const NavBar = observer( () => {
                     <Nav.Link to="/delivery" className='nav-link'>Доставка</Nav.Link>
                     {/*<Nav.Link href="/contacts">Контакты</Nav.Link>*/}
                     <Nav.Link to="/contacts" className='nav-link'>Контакты</Nav.Link>
-                    <CheckAuth>
+                    {/*<CheckAuth>*/}
                         {user.isAuth ? (
                             <Nav.Link to='/user' className='nav-link'>Личный кабинет</Nav.Link>
                         ) : (
@@ -36,7 +36,7 @@ const NavBar = observer( () => {
                         {user.isAdmin && (
                             <Nav.Link to='/admin' className='nav-link'>Панель управления</Nav.Link>
                         )}
-                    </CheckAuth>
+                    {/*</CheckAuth>*/}
                     <FetchBasket>
                         <NavLink to='/basket' className='nav-link'>
                             Корзина
