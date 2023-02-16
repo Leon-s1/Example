@@ -26,9 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
-      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/EditBrand.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/AdminBrands.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminBrands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/NotFound.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1170,14 +1172,7 @@
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
       <workItem from="1673425563583" duration="104486000" />
-      <workItem from="1675830017804" duration="32871000" />
-    </task>
-    <task id="LOCAL-00025" summary="add middleware — authMiddleware и adminMiddleware,&#10;edit router">
-      <created>1665996974228</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1665996974228</updated>
+      <workItem from="1675830017804" duration="35141000" />
     </task>
     <task id="LOCAL-00026" summary="add test file product.http, category.http, brand.http, user.http">
       <created>1665997992665</created>
@@ -1515,7 +1510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676436832913</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand">
+      <created>1676517598106</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1676517598106</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1562,7 +1564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="edit client Basket" />
     <MESSAGE value="add new Table Order, OrderItem" />
     <MESSAGE value="add new Route, Controllers&lt; Model table Order" />
     <MESSAGE value="Оформление заказ на клиенте" />
@@ -1587,7 +1588,8 @@
     <MESSAGE value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
     <MESSAGE value="Редактируем BasketList.js" />
     <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
+    <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
@@ -1626,11 +1628,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1676436847443">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1676517611278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676436847443" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676517611278" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

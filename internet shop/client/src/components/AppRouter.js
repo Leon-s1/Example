@@ -8,12 +8,15 @@ import Product from '../pages/Product.js'
 import Delivery from '../pages/Delivery.js'
 import Contacts from '../pages/Contacts.js'
 import NotFound from '../pages/NotFound.js'
-import User from '../pages/User.js'
+import User from "../pages/User";
 import UserOrders from '../pages/UserOrders.js'
 import UserOrder from '../pages/UserOrder.js'
 import Admin from '../pages/Admin.js'
 import AdminOrders from '../pages/AdminOrders.js'
 import AdminOrder from '../pages/AdminOrder.js'
+import AdminCategories from "../pages/AdminCategories";
+import AdminBrands from "../pages/AdminBrands";
+import AdminProducts from "../pages/AdminProducts";
 import { AppContext } from './AppContext.js'
 import { useContext } from 'react'
 import { observer } from 'mobx-react-lite'
@@ -24,8 +27,8 @@ const publicRoutes = [
     {path: '/login', Component: Login},
     {path: '/signup', Component: Signup},
     {path: '/product/:id', Component: Product},
+    {path: '/basket', Component: Basket},
     {path: '/checkout', Component: Checkout},
-    {path: 'basket', Component: Basket},
     {path: '/delivery', Component: Delivery},
     {path: '/contacts', Component: Contacts},
     {path: '*', Component: NotFound},
@@ -34,13 +37,16 @@ const publicRoutes = [
 const authRoutes = [
     {path: '/user', Component: User},
     {path: '/user/orders', Component: UserOrders},
-    {path: '/user/order/:id', Component: UserOrders},
+    {path: '/user/order/:id', Component: UserOrder},
 ]
 
 const adminRoutes = [
     {path: '/admin', Component: Admin},
     {path: '/admin/orders', Component: AdminOrders},
     {path: '/admin/order/:id', Component: AdminOrder},
+    {path: '/admin/categories', Component: AdminCategories},
+    {path: '/admin/brands', Component: AdminBrands},
+    {path: '/admin/products', Component: AdminProducts},
 ]
 
 const AppRouter = observer(() => {
