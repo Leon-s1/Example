@@ -1,23 +1,32 @@
 import { useState, useEffect } from 'react'
 import { fetchBrands, deleteBrand } from '../http/catalogAPI.js'
 import { Button, Container, Spinner, Table } from 'react-bootstrap'
-import CreateBrand from '../components/CreateBrand.js'
-import UpdateBrand from "../components/UpdateBrand";
+// import CreateBrand from '../components/CreateBrand.js'
+// import UpdateBrand from "../components/UpdateBrand";
+import EditBrand from '../components/EditBrand.js'
 
 const AdminBrands = () => {
     const [brands, setBrands] = useState(null) // список загруженных брендов
     const [fetching, setFetching] = useState(true) // загрузка списка брендов с сервера
-    const [createShow, setCreateShow] = useState(false) // модальное окно создания-редактирования
-    // const [show, setShow] = useState(false) // модальное окно создания-редактирования
-    const [updateShow, setUpdateShow] = useState(false) // модальное окно редактирования
+    // const [createShow, setCreateShow] = useState(false) // модальное окно создания-редактирования
+    const [show, setShow] = useState(false) // модальное окно создания-редактирования
+    // const [updateShow, setUpdateShow] = useState(false) // модальное окно редактирования
     // для обновления списка после добавления, редактирования, удаления — изменяем состояние
     const [change, setChange] = useState(false)
     // id бренда, который будем редактировать — для передачи в <UpdateBrand id={…} />
-    const [brand, setBrand] = useState(null)
+    // const [brand, setBrand] = useState(null)
+    const [brandId, setBrandId] = useState(0)
+
+    const handleCreateClick = () => {
+        setBrandId(0)
+        setShow(true)
+    }
 
     const handleUpdateClick = (id) => {
-        setBrand(id)
-        setUpdateShow(true)
+        // setBrand(id)
+        setBrandId(id)
+        // setUpdateShow(true)
+        setShow(true)
     }
 
     const handleDeleteClick = (id) => {
@@ -50,9 +59,12 @@ const AdminBrands = () => {
     return (
         <Container>
             <h1>Бренды</h1>
-            <Button onClick={() => setCreateShow(true)}>Создать бренд</Button>
-            <CreateBrand show={createShow} setShow={setCreateShow} setChange={setChange} />
-            <UpdateBrand id={brand} show={updateShow} setShow={setUpdateShow} setChange={setChange} />
+            {/*<Button onClick={() => setCreateShow(true)}>Создать бренд</Button>*/}
+            <Button onClick={() => handleCreateClick()}>Создать бренд</Button>
+            {/*<CreateBrand show={createShow} setShow={setCreateShow} setChange={setChange} />*/}
+            {/*<UpdateBrand id={brand} show={updateShow} setShow={setUpdateShow} setChange={setChange} />*/}
+            <EditBrand id={brandId} show={show} setShow={setShow} setChange={setChange} />
+
             {brands.length > 0 ? (
                 <Table bordered hover size="sm" className="mt-3">
                     <thead>
