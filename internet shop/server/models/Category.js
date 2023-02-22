@@ -3,7 +3,11 @@ import AppError from '../errors/AppError.js'
 
 class Category {
     async getAll() {
-        const categories = await CategoryMapping.findAll()
+        const categories = await CategoryMapping.findAll({
+            order: [
+                ['name', 'ASC'],
+            ],
+        })
         return categories
     }
 
@@ -17,6 +21,10 @@ class Category {
 
     async create(data) {
         const {name} = data
+        const exist = await CategoryMapping.findOne({where: {name}})
+        if (exist) {
+            throw new Error('Такая категория уже есть')
+        }
         const category = await CategoryMapping.create({name})
         return category
     }

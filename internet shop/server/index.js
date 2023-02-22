@@ -4,11 +4,10 @@ import sequelize from "./sequelize.js";   //Нужно было прописыв
 import * as mapping from './models/mapping.js'
 import cors from 'cors'
 import fileUpload from 'express-fileupload'
-import router from './routes/index.js'
-import ErrorHandler from "./middleware/ErrorHandler.js";
 import cookieParser from 'cookie-parser'
-
-
+import router from './routes/index.js'
+import errorMiddleware from './middleware/errorMiddleware.js'
+// import ErrorHandler from "./middleware/ErrorHandler.js";
 
 const PORT = process.env.PORT || 5000
 
@@ -21,12 +20,13 @@ app.use(express.json()) //использовать перед router
 app.use(express.static('static'))
 // middleware для загрузки файлов
 app.use(fileUpload())
-// все маршруты приложения
-app.use('/api', router)
 //middleware для работы с cookie
 app.use(cookieParser(process.env.SECRET_KEY))
+// все маршруты приложения
+app.use('/api', router)
 //Обработка ошибок
-app.use(ErrorHandler)
+// app.use(ErrorHandler)
+app.use(errorMiddleware)
 
 // Обрабатываем GET запрос
 // app.get('/', (req, res) => {

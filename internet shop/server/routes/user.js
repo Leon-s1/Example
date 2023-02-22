@@ -7,6 +7,7 @@ const router = new express.Router()
 
 router.post('/signup', UserController.signup)
 router.post('/login', UserController.login)
+router.get('/check', authMiddleware, UserController.check)
 
 // router.get('/check', UserController.check)
 // router.get('/getall', UserController.getAll)

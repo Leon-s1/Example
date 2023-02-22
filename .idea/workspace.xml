@@ -26,11 +26,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
+      <change afterPath="$PROJECT_DIR$/internet shop/backup.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/controllers/BasketProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/middleware/errorMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/models/BasketProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/0627f706-fffc-49b0-b3c0-7ef23a7282fd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/06c4881f-3d2e-4bab-953c-fe1ab374b13f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/0f1bc77b-971b-4404-b232-7379e7444d72.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/141979a3-fb17-42b8-9f51-a46a07674c08.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/172599fa-f7c4-4ea3-9a17-acb584e3589d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/19c1e397-0ea0-4b9f-9c0c-a86f0a43e12d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/2880f5a0-192c-4d4b-807d-0d6861ad3773.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/2cd51ccf-18c8-4d3e-9e7e-6d40b4df7d4d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/385f527a-4636-4b7d-9d9e-17cb541139b7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/40ff04e7-6c4a-4ddf-ae75-efd843b9ae86.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/44fcf22b-4b6c-4de7-9567-db2b72e59858.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/47010c8f-3b8f-456f-9d2e-53d3cfc9b600.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/557ec262-c9d0-4925-8252-a54d4b819f2e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/55bbecb5-5412-4870-8be8-7c37cecd2546.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/5d5b485a-4cfa-4c2e-9b0e-8aa4119f548a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/629801e8-3af5-4aab-b66d-99f400fc0c41.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/6b107de1-b18f-4078-87d9-23ab77617f37.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/6c78a5a4-8377-4750-88c4-a615f3cb27a2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/7b4b2f8d-d069-4218-87f4-8f1005a1138f.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/8e97c69d-6355-4180-a479-78f0d6832b23.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/9069bfdf-1ab7-43a6-b372-e24e201c4336.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/a2a442d1-365a-4642-b941-116613e3adee.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/a64c638c-b1e3-4382-a92a-4eba808dbe4b.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/a7a45b60-b057-405f-bf05-59c901ff2192.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/b25fa313-6f10-40d4-9066-f73e9c59ca07.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/b74fff2a-08ca-4f30-a146-b6926df9c863.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/b850ebef-adc6-4fa1-bda1-5ebd2a943e5c.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/ba114b09-f5a6-4928-b818-47a45a2e3a38.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/c861e152-f8a5-41f6-aca1-a8ab307eff7a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/cb28f13e-1b88-4963-afe5-80d3632c55f7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/ce7a27a1-245f-4682-b0c1-7aae88104e16.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/d012a222-d7b0-43e2-b00d-2eb79ed6348d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/d6546248-a7df-40fc-898b-d6b3595c3638.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/d8fe3a9b-ef0c-4b91-bbe0-cbcceed926f7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/dbee3ee2-dc05-4cf5-a016-2fccbce2a88e.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/e1f2d58c-2469-4385-b030-ad8b7762e1c7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/e26a9a4a-b0b3-4756-a1eb-04c21cc33a26.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/eeb81cef-192e-4362-bfb5-de6a3d96e409.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/f0ad8bfc-63df-4678-a54b-818c080b12e7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internet shop/server/static/fc3c6f65-2b6d-4885-ac3f-992de326ad26.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/.env" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/BasketList.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/BasketList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/ProductList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/UpdateProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/UpdateProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/http/catalogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/http/catalogAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/Rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/Rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/controllers/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/controllers/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/middleware/adminMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/middleware/adminMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/middleware/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/middleware/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/Product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/models/mapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/models/mapping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/sequelize.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/sequelize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/services/File.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/services/File.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +157,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Example\sts\routes" />
+      <recent name="C:\Example\sts\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Example\internet shop\client\public\temp" />
       <recent name="D:\Example\internet shop\client\src\temp" />
       <recent name="D:\Example\internet shop\server\test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Example\sts\routes" />
-      <recent name="C:\Example\sts\views" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1172,14 +1245,8 @@
       <workItem from="1672110793101" duration="13735000" />
       <workItem from="1673234411606" duration="9862000" />
       <workItem from="1673425563583" duration="104486000" />
-      <workItem from="1675830017804" duration="35141000" />
-    </task>
-    <task id="LOCAL-00026" summary="add test file product.http, category.http, brand.http, user.http">
-      <created>1665997992665</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1665997992665</updated>
+      <workItem from="1675830017804" duration="71931000" />
+      <workItem from="1677030568075" duration="1702000" />
     </task>
     <task id="LOCAL-00027" summary="add test file product.http, category.http, brand.http, user.http">
       <created>1665998582177</created>
@@ -1517,7 +1584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676517598106</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Исправления">
+      <created>1676519887435</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1676519887435</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1564,7 +1638,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add new Table Order, OrderItem" />
     <MESSAGE value="add new Route, Controllers&lt; Model table Order" />
     <MESSAGE value="Оформление заказ на клиенте" />
     <MESSAGE value="Добавляем маршруты для просмотр списка заказов и отдельного заказа." />
@@ -1589,13 +1662,14 @@
     <MESSAGE value="Редактируем BasketList.js" />
     <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
     <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
+    <MESSAGE value="Исправления" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправления" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="136" y="202" key="#Inspections" timestamp="1671507895919">
+    <state x="136" y="202" key="#Inspections" timestamp="1676880577826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="136" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1671507895919" />
+    <state x="136" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1676880577826" />
     <state x="102" y="41" width="816" height="999" key="#Intentions" timestamp="1671507929217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1628,11 +1702,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1676517611278">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1676519894043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676517611278" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1676519894043" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

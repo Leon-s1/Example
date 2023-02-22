@@ -1,8 +1,8 @@
 import express from 'express'
 import ProductController from '../controllers/Product.js'
 import ProductPropController from '../controllers/ProductProp.js'
-// import authMiddleware from '../middleware/authMiddleware.js'
-// import adminMiddleware from '../middleware/adminMiddleware.js'
+import authMiddleware from '../middleware/authMiddleware.js'
+import adminMiddleware from '../middleware/adminMiddleware.js'
 
 const router = new express.Router()
 
@@ -52,23 +52,23 @@ router.get('/product/:productId([0-9]+)/property/getall', ProductPropController.
 router.get('/product/:productId([0-9]+)/property/getone/:id([1-9]+)', ProductPropController.getOne)
 //создать свойство товара
 router.post('/product/:productId([0-9]+)/property/create',
-    // authMiddleware,
-    // adminMiddleware,
+    authMiddleware,
+    adminMiddleware,
     ProductPropController.create
 )
 
 // обновить свойство товара
 router.put(
     '/product/:productId([0-9]+)/property/update/:id([0-9]+)',
-    // authMiddleware,
-    // adminMiddleware,
+    authMiddleware,
+    adminMiddleware,
     ProductPropController.update
 )
 // удалить свойство товара
 router.delete(
     '/product/:productId([0-9]+)/property/delete/:id([0-9]+)',
-    // authMiddleware,
-    // adminMiddleware,
+    authMiddleware,
+    adminMiddleware,
     ProductPropController.delete
 )
 

@@ -21,7 +21,6 @@ import { AppContext } from './AppContext.js'
 import { useContext } from 'react'
 import { observer } from 'mobx-react-lite'
 
-
 const publicRoutes = [
     {path: '/', Component: Shop},
     {path: '/login', Component: Login},
@@ -54,9 +53,10 @@ const AppRouter = observer(() => {
     // const isAdmin = true
     const { user } = useContext(AppContext)
     return (
+
         <Routes>
             {publicRoutes.map(({path, Component}) =>
-                 <Route key={path} path={path} element={<Component />} />
+                <Route key={path} path={path} element={<Component />} />
             )}
             {user.isAuth && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component />} />
@@ -65,6 +65,18 @@ const AppRouter = observer(() => {
                 <Route key={path} path={path} element={<Component />} />
             )}
         </Routes>
+
+        // <Routes>
+        //     {publicRoutes.map(({path, Component}) =>
+        //          <Route key={path} path={path} element={<Component />} />
+        //     )}
+        //     {user.isAuth && authRoutes.map(({path, Component}) =>
+        //         <Route key={path} path={path} element={<Component />} />
+        //     )}
+        //     {user.isAdmin && adminRoutes.map(({path, Component}) =>
+        //         <Route key={path} path={path} element={<Component />} />
+        //     )}
+        // </Routes>
     )
 })
 

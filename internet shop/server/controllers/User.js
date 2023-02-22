@@ -1,39 +1,3 @@
-// class User {
-//     async signup(req, res) {
-//         res.status(200).send('Регистрация пользователя')
-//     }
-//
-//     async login(req, res) {
-//         res.status(200).send('Вход в личный кабинет')
-//     }
-//
-//     async check(req, res) {
-//         res.status(200).send('Проверка авторизации')
-//     }
-//
-//     async getAll(req, res) {
-//         res.status(200).send('Список всех пользователей')
-//     }
-//
-//     async getOne(req, res) {
-//         res.status(200).send('Получение одного пользователя')
-//     }
-//
-//     async create(req, res) {
-//         res.status(200).send('Создание нового пользователя')
-//     }
-//
-//     async update(req, res) {
-//         res.status(200).send('Обновление пользователя')
-//     }
-//
-//     async delete(req, res) {
-//         res.status(200).send('Удаление пользователя')
-//     }
-// }
-//
-// export default new User()
-//************************************************************
 //Реализуем методы контроллера User
 // import { User as UserMapping } from '../models/mapping.js'
 import UserModel from '../models/User.js'
@@ -88,7 +52,9 @@ class User {
     }
 
     async check(req, res, next) {
-        res.status(200).send('Проверка авторизации')
+        // res.status(200).send('Проверка авторизации')
+        const token = makeJwt(req.auth.id, req.auth.email, req.auth.role)
+        return res.json({token})
     }
 
     async getAll(req, res, next) {
@@ -113,7 +79,7 @@ class User {
     }
 
     async create(req, res, next) {
-        const {email, password, role = 'ADMIN'} = req.body
+        const {email, password, role = 'USER'} = req.body
         try {
             if (!email || !password) {
                 throw new Error('Пустой email или пароль')
@@ -183,3 +149,40 @@ class User {
 }
 
 export default new User()
+
+// class User {
+//     async signup(req, res) {
+//         res.status(200).send('Регистрация пользователя')
+//     }
+//
+//     async login(req, res) {
+//         res.status(200).send('Вход в личный кабинет')
+//     }
+//
+//     async check(req, res) {
+//         res.status(200).send('Проверка авторизации')
+//     }
+//
+//     async getAll(req, res) {
+//         res.status(200).send('Список всех пользователей')
+//     }
+//
+//     async getOne(req, res) {
+//         res.status(200).send('Получение одного пользователя')
+//     }
+//
+//     async create(req, res) {
+//         res.status(200).send('Создание нового пользователя')
+//     }
+//
+//     async update(req, res) {
+//         res.status(200).send('Обновление пользователя')
+//     }
+//
+//     async delete(req, res) {
+//         res.status(200).send('Удаление пользователя')
+//     }
+// }
+//
+// export default new User()
+//************************************************************

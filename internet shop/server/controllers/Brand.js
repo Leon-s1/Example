@@ -56,6 +56,9 @@ class Brand {
 
     async create(req, res, next) {
         try {
+            if (!req.body.name) {
+                throw new Error('Нет названия бренда')
+            }
             // const brand = await BrandMapping.create({name: req.body.name})
             const brand = await BrandModel.create(req.body)
             res.json(brand)
@@ -68,6 +71,9 @@ class Brand {
         try {
             if (!req.params.id) {
                 throw new Error('Не указан id бренда')
+            }
+            if (!req.body.name) {
+                throw new Error('Нет названия бренда')
             }
             // const brand = await BrandMapping.findByPk(req.params.id)
             const brand = await BrandModel.update(req.params.id, req.body)

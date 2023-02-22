@@ -132,7 +132,7 @@ const UpdateProduct = (props) => {
         setImage(event.target.files[0])
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
 
         /*
@@ -164,7 +164,7 @@ const UpdateProduct = (props) => {
                 .then(
                     data => {
                         // изменяем состояние, чтобы обновить список товаров
-                        setChange(state => !state)
+                        // setChange(state => !state)
                         // сбрасываем поле загрузки изображения, чтобы при сохранении товара,
                         // когда новое изображение не выбрано, не загружать старое повторно
                         event.target.image.value = ''
@@ -187,6 +187,8 @@ const UpdateProduct = (props) => {
                         }))
                         // закрываем модальное окно редактирования товара
                         setShow(false)
+                        // изменяем состояние, чтобы обновить список товаров
+                        setChange(state => !state)
                     }
                 )
                 .catch(

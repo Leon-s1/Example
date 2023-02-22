@@ -12,9 +12,9 @@ router.get('/getone/:id([0-9]+)', BrandController.getOne)
 // router.put('/update/:id([0-9]+)', BrandController.update)
 // router.delete('/delete/:id([0-9]+)', BrandController.delete)
 
-router.post('/create', authMiddleware, adminMiddleware, BrandController.create)
-router.put('/update/:id([0-9]+)', authMiddleware, adminMiddleware, BrandController.update)
-router.delete('/delete/:id([0-9]+)', authMiddleware, adminMiddleware, BrandController.delete)
+router.post('/create', /*authMiddleware, adminMiddleware,*/ BrandController.create)
+router.put('/update/:id([0-9]+)', /*authMiddleware, adminMiddleware,*/ BrandController.update)
+router.delete('/delete/:id([0-9]+)', /*authMiddleware, adminMiddleware,*/ BrandController.delete)
 
 export default router
 

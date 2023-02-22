@@ -17,22 +17,31 @@ class Order {
     }
 
     async getOne(id, userId = null) {
-        let order
-        if (userId) {
-            order = await OrderMapping.findOne({
-                where: {id, userId},
-                include: [
-                    {model: OrderItemMapping, as: 'items', attributes: ['name', 'price', 'quantity']},
-                ],
-            })
-        } else {
-            order = await OrderMapping.findByPk(id, {
-                include: [
-                    {model: OrderItemMapping, as: 'items', attributes: ['name', 'price', 'quantity']},
-                ],
-            })
+        // let order
+        const options = {
+            where: {id},
+            include: [
+                {model: OrderItemMapping, as: 'items', attributes: ['id', 'name', 'price', 'quantity']},
+            ],
         }
-        if (!order) {
+        // if (userId) {
+        //     order = await OrderMapping.findOne({
+        //         where: {id, userId},
+        //         include: [
+        //             {model: OrderItemMapping, as: 'items', attributes: ['name', 'price', 'quantity']},
+        //         ],
+        //     })
+        // } else {
+        //     order = await OrderMapping.findByPk(id, {
+        //         include: [
+        //             {model: OrderItemMapping, as: 'items', attributes: ['name', 'price', 'quantity']},
+        //         ],
+        //     })
+        // }
+            if (userId) options.where.userId = userId
+            const order = await OrderMapping.findOne(options)
+
+            if (!order) {
             throw new Error('Заказ не найден в БД')
         }
         return order

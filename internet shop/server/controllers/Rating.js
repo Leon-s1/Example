@@ -14,7 +14,7 @@ class Rating {
     async create(req, res, next) {
         try {
             const {productId, rate} = req.params
-            const rating = await RatingModel.create(/*req.auth.userId*/4, productId, rate)
+            const rating = await RatingModel.create(req.auth.userId, productId, rate)
             res.json(rating)
         } catch (e) {
             next(AppError.badRequest(e.message))

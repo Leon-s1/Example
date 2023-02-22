@@ -4,6 +4,7 @@
 // пришлось создавать HOC-компонент CheckAuth, который показывает loader,
 // пока выполняется запрос на сервер. Если данные будут получены в App и
 // сохранены в хранилище — HOC-компонент CheckAuth будет не нужен.
+import React from "react";
 import { BrowserRouter } from 'react-router-dom'
 import AppRouter from './components/AppRouter.js'
 import NavBar from './components/NavBar.js'
@@ -14,7 +15,7 @@ import { check as checkAuth } from './http/userAPI.js'
 import { useState, useContext, useEffect } from 'react'
 import { observer } from 'mobx-react-lite'
 import Loader from './components/Loader.js'
-import { fetchBasket } from "./http/basketAPI";
+import { fetchBasket } from "./http/basketAPI.js";
 
 import axios from 'axios'
 

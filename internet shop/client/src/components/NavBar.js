@@ -5,7 +5,7 @@ import {AppContext} from "./AppContext.js";
 import {useContext} from "react";
 import {observer} from "mobx-react-lite";
 // import CheckAuth from "./CheckAuth.js";
-import FetchBasket from "./FetchBasket";
+// import FetchBasket from "./FetchBasket";
 
 const NavBar = observer( () => {
     // const isAuth = true
@@ -21,28 +21,28 @@ const NavBar = observer( () => {
                 <Nav className='ml-auto'>
 
                     {/*<Nav.Link href="/delivery">Доставка</Nav.Link>*/}
-                    <Nav.Link to="/delivery" className='nav-link'>Доставка</Nav.Link>
+                    <NavLink to="/delivery" className='nav-link'>Доставка</NavLink>
                     {/*<Nav.Link href="/contacts">Контакты</Nav.Link>*/}
-                    <Nav.Link to="/contacts" className='nav-link'>Контакты</Nav.Link>
+                    <NavLink to="/contacts" className='nav-link'>Контакты</NavLink>
                     {/*<CheckAuth>*/}
                         {user.isAuth ? (
-                            <Nav.Link to='/user' className='nav-link'>Личный кабинет</Nav.Link>
+                            <NavLink to='/user' className='nav-link'>Личный кабинет</NavLink>
                         ) : (
                             <>
-                                <Nav.Link to='/login' className='nav-link'>Войти</Nav.Link>
-                                <Nav.Link to='/signup' className='nav-link'>Регистрация</Nav.Link>
+                                <NavLink to='/login' className='nav-link'>Войти</NavLink>
+                                <NavLink to='/signup' className='nav-link'>Регистрация</NavLink>
                             </>
                         )}
                         {user.isAdmin && (
-                            <Nav.Link to='/admin' className='nav-link'>Панель управления</Nav.Link>
+                            <NavLink to='/admin' className='nav-link'>Панель управления</NavLink>
                         )}
                     {/*</CheckAuth>*/}
-                    <FetchBasket>
+                    {/*<FetchBasket>*/}
                         <NavLink to='/basket' className='nav-link'>
                             Корзина
                             {!!basket.count && <span>({basket.count})</span>}
                         </NavLink>
-                    </FetchBasket>
+                    {/*</FetchBasket>*/}
                 </Nav>
             </Container>
         </Navbar>

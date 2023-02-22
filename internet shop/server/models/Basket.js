@@ -160,4 +160,3 @@ class Basket {
 
 export default new Basket()
 
-Promise

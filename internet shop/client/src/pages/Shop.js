@@ -63,7 +63,9 @@ const Shop = observer(() => {
             .finally(() => setProductsFetching(false))
     }, [])
 
-
+    // При каждом клике на категорию, бренд или номер страницы — мы добавляем элемент в историю
+    // браузера, ссылки в истории имеют вид /?page=1, /?page=2, /?page=3. При нажатии кнопки
+    // «Назад» браузера — мы отслеживаем изменение GET-параметров и изменяем состояние хранилища.
     useEffect(() => {
         const { category, brand, page } = getSearchParams(searchParams)
 
@@ -77,9 +79,15 @@ const Shop = observer(() => {
             // }
             // if (location.state.page !== catalog.page) {
             //     catalog.page = location.state.page
-            if (category !== catalog.category) catalog.category = category
-            if (brand !== catalog.brand) catalog.brand = brand
-            if (page !== catalog.page) catalog.page = page ?? 1
+            if (category !== catalog.category) {
+                catalog.category = category
+            }
+            if (brand !== catalog.brand) {
+                catalog.brand = brand
+            }
+            if (page !== catalog.page) {
+                catalog.page = page ?? 1
+            }
         } else  {
             catalog.category = null
             catalog.brand = null
@@ -89,16 +97,20 @@ const Shop = observer(() => {
     // }, [location.state])
     }, [location.search])
 
+
+    // при клике на категорию, бренд, номер страницы или при нажатии кнопки  «Назад»
+    // браузера — получам с сервера список товаров, потому что это уже другой список
     useEffect(() => {
         setProductsFetching(true)
-        setTimeout(() => {
+        // setTimeout(() => {
             fetchAllProducts(catalog.category, catalog.brand, catalog.page, catalog.limit)
                 .then(data => {
                     catalog.products = data.rows
                     catalog.count = data.count
                 })
                 .finally(() => setProductsFetching(false))
-        }, 1000)
+        // }, 1000)
+        // eslint-disable-next-line
     }, [catalog.category, catalog.brand, catalog.page])
 
     return (

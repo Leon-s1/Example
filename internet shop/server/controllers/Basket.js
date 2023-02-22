@@ -18,9 +18,10 @@ class Basket {
             res.json(basket)
         } catch (e) {
             next(AppError.badRequest(e.message))
-            console.log("Something went wrong", e)
+            console.log("Something went wrong Что то пошло не так...", e)
         }
     }
+
 
     async append(req, res, next) {
         try {
@@ -45,7 +46,7 @@ class Basket {
             let basketId
             if (!req.signedCookies.basketId) {
                 let created = await BasketModel.create()
-                basketId = basket.id
+                basketId = created.id
             } else {
                 basketId = parseInt(req.signedCookies.basketId)
             }
@@ -63,7 +64,7 @@ class Basket {
             let basketId
             if (!req.signedCookies.basketId) {
                 let created = await BasketModel.create()
-                basketId = basket.id
+                basketId = created.id
             } else {
                 basketId = parseInt(req.signedCookies.basketId)
             }
