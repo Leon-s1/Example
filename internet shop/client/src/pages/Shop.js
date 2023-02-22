@@ -1,9 +1,3 @@
-// const Shop = () => {
-//     return <h1>Витрина</h1>
-// }
-//
-// export default Shop
-
 import {Container, Row, Col, Spinner} from "react-bootstrap";
 import CategoryBar from '../components/CategoryBar.js'
 import BrandBar from  '../components/BrandBar.js'
@@ -145,3 +139,10 @@ const Shop = observer(() => {
 })
 
 export default Shop
+
+
+// const Shop = () => {
+//     return <h1>Витрина</h1>
+// }
+//
+// export default Shop
