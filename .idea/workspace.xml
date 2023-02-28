@@ -26,10 +26,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
+      <change afterPath="$PROJECT_DIR$/internet shop/client/src/components/CreateOrder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/BasketItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/BasketItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/CreateProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/CreateProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/EditBrand.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/EditBrand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/EditCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/EditCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/Order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/Orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/Orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/ProductList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/UpdateProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/UpdateProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/http/catalogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/http/catalogAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/http/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/AdminBrands.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/AdminBrands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/server/.env" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1172,14 +1187,8 @@
       <workItem from="1673234411606" duration="9862000" />
       <workItem from="1673425563583" duration="104486000" />
       <workItem from="1675830017804" duration="71931000" />
-      <workItem from="1677030568075" duration="6573000" />
-    </task>
-    <task id="LOCAL-00028" summary="поиск ошибки, не добавляется пользователь с ролью ADMIN">
-      <created>1666172829239</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1666172829239</updated>
+      <workItem from="1677030568075" duration="14356000" />
+      <workItem from="1677487738592" duration="13016000" />
     </task>
     <task id="LOCAL-00029" summary="commit">
       <created>1666603207283</created>
@@ -1517,7 +1526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677033865267</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Редактирование.">
+      <created>1677057516407</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1677057516407</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1628,11 +1644,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1677033873165">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1677057525486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1677033873165" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1677057525486" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1668650987694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

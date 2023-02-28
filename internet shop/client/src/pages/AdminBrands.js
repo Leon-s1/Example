@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from 'react'
 import { fetchBrands, deleteBrand } from '../http/catalogAPI.js'
 import { Button, Container, Spinner, Table } from 'react-bootstrap'

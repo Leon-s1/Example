@@ -29,7 +29,7 @@ const ProductList = observer(() => {
             <Pagination.Item
                 key={page}
                 active={page === catalog.page}
-                activeLabel=''
+                activeLabel=""
                 onClick={() => handleClick(page)}
             >
                 {page}

@@ -1,3 +1,4 @@
+import React from "react";
 import { Modal, Button, Form } from 'react-bootstrap'
 import { createBrand, fetchBrand, updateBrand } from '../http/catalogAPI.js'
 import { useState, useEffect } from 'react'

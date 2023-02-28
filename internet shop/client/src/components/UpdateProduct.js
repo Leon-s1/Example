@@ -1,3 +1,4 @@
+import React from "react";
 import { Modal, Button, Form, Row, Col } from 'react-bootstrap'
 import { fetchOneProduct, updateProduct, fetchCategories, fetchBrands } from '../http/catalogAPI.js'
 import { useState, useEffect } from 'react'

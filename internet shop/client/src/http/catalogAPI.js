@@ -1,4 +1,4 @@
-import {guestInstance, authInstance} from "./index";
+import {guestInstance, authInstance} from "./index.js";
 
 /*
  * Создание, обновление и удаление категории, получение списка всех категорий

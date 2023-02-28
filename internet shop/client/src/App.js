@@ -15,6 +15,7 @@ import { check as checkAuth } from './http/userAPI.js'
 import { useState, useContext, useEffect } from 'react'
 import { observer } from 'mobx-react-lite'
 import Loader from './components/Loader.js'
+
 import { fetchBasket } from "./http/basketAPI.js";
 
 import axios from 'axios'
@@ -59,7 +60,7 @@ const App = observer(() => {
             .finally(
                 () => setLoading(false)
             )
-    }, [basket, user])
+    }, [])
 
     // показываем loader, пока получаем с сервера данные пользователя и корзину
     // if (loading) {

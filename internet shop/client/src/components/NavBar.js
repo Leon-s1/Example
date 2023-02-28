@@ -15,7 +15,7 @@ const NavBar = observer( () => {
         <Navbar bg='dark' variant='dark'>
             <Container>
                 {/*<Navbar.Brand href='/'>Магазин</Navbar.Brand>*/}
-                <NavLink to='/' className='navbar-brand'>Магазин</NavLink>
+                <NavLink to='/' className="navbar-brand">Магазин</NavLink>
 
                 {/*<Nav className='mr-auto'>*/}
                 <Nav className='ml-auto'>

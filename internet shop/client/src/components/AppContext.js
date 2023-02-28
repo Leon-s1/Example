@@ -1,7 +1,7 @@
 import React from "react";
-import CatalogStore from "../store/CatalogStore";
-import UserStore from "../store/UserStore";
-import BasketStore from "../store/BasketStore";
+import CatalogStore from "../store/CatalogStore.js";
+import UserStore from "../store/UserStore.js";
+import BasketStore from "../store/BasketStore.js";
 
 const AppContext = React.createContext()
 
