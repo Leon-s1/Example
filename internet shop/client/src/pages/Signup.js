@@ -1,4 +1,4 @@
-import {AppContext} from "../components/AppContext";
+import {AppContext} from "../components/AppContext.js";
 import {useContext, useEffect} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import {Container, Row, Card, Form, Button} from "react-bootstrap";

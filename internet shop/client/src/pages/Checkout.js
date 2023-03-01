@@ -96,7 +96,18 @@ const Checkout = () => {
         })
 
         if (valid.name && valid.email && valid.phone && valid.address) {
+            let comment = event.target.comment.value.trim()
+            comment = comment ? comment : null
             // форма заполнена правильно, можно отправлять данные
+            const body = {...value, comment}
+            const create = user.isAuth ? userCreate : guestCreate
+            create(body)
+                .then(
+                    data => {
+                        setOrder(data)
+                        basket.products = []
+                    }
+                )
         }
     }
 

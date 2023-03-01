@@ -47,7 +47,6 @@ const Shop = observer(() => {
         catalog.category = category
         catalog.brand = brand
         catalog.page = page ?? 1
-
         // fetchAllProducts(null, null, 1, catalog.limit)
         fetchAllProducts(catalog.category, catalog.brand, catalog.page, catalog.limit)
             .then(data => {

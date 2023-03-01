@@ -52,7 +52,13 @@ const AdminProducts = () => {
         deleteProduct(id)
             .then(
                 data => {
-                    setChange(!change)
+                    // если это последняя страница и мы удаляем на ней единственный
+                    // оставшийся товар — то надо перейти к предыдущей странице
+                    if (totalPages > 1 && products.length === 1 && currentPage === totalPages) {
+                        setCurrentPage(currentPage - 1)
+                    } else {
+                        setChange(!change)
+                    }
                     alert(`Товар «${data.name}» удален`)
                 }
             )
@@ -90,6 +96,7 @@ const AdminProducts = () => {
                         <thead>
                         <tr>
                             <th>Название</th>
+                            <th>Фото</th>
                             <th>Категория</th>
                             <th>Бренд</th>
                             <th>Цена</th>
@@ -101,6 +108,10 @@ const AdminProducts = () => {
                         {products.map(item =>
                             <tr key={item.id}>
                                 <td>{item.name}</td>
+                                <td>
+                                    {item.image &&
+                                    <a href={process.env.REACT_APP_IMG_URL + item.image} target="_blank">фото</a>}
+                                </td>
                                 <td>{item.category?.name || 'NULL'}</td>
                                 <td>{item.brand?.name || 'NULL'}</td>
                                 <td>{item.price}</td>

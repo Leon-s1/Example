@@ -1,14 +1,8 @@
-// const Login = () => {
-//     return <h1>Авторизация</h1>
-// }
-//
-// export default Login
-
-import {AppContext} from "../components/AppContext";
+import {AppContext} from "../components/AppContext.js";
 import {useContext, useEffect} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import {Container, Row, Card, Form, Button} from "react-bootstrap";
-import {login} from "../http/userAPI";
+import {login} from "../http/userAPI.js";
 import {observer} from "mobx-react-lite";
 
 const Login = observer(() => {
@@ -50,7 +44,7 @@ const Login = observer(() => {
                         placeholder='Введите ваш пароль...'
                         // value=''
                     />
-                    <Row className='d-flex justify-content-between mt-3 pl-3 pr-3'>
+                    <div className='d-flex justify-content-between mt-3 pl-3 pr-3'>
                         <Button type='submit'>
                             Войти
                         </Button>
@@ -58,7 +52,7 @@ const Login = observer(() => {
                             Нет аккаунта?
                             <Link to='/signup'>Зарегистрируйтесь!</Link>
                         </p>
-                    </Row>
+                    </div>
                 </Form>
             </Card>
         </Container>
