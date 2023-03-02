@@ -15,24 +15,32 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
+    <list default="true" id="ad411b65-35b3-4234-9747-becd83b4e5f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/ProductItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/ProductItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1115,11 +1123,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.rating#2" />
       <item itemvalue="HTTP Request.order#1" />
       <item itemvalue="HTTP Request.order#2" />
       <item itemvalue="HTTP Request.order#3" />
       <item itemvalue="HTTP Request.order#4" />
+      <item itemvalue="HTTP Request.rating#2" />
     </list>
     <recent_temporary>
       <list>
