@@ -58,6 +58,63 @@ const ProductProp = sequelize.define('product_prop', {
     value: {type: DataTypes.STRING, allowNull: false}
 })
 
+// модель «Заказ», таблица БД «orders»
+const Order = sequelize.define('order', {
+    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    name: {type: DataTypes.STRING, allowNull: false},
+    email: {type: DataTypes.STRING, allowNull: false},
+    phone: {type: DataTypes.STRING, allowNull: false},
+    address: {type: DataTypes.STRING, allowNull: false},
+    amount: {type: DataTypes.INTEGER, allowNull: false},
+    status: {type: DataTypes.INTEGER, allowNull: false, defaultValue: 0},
+    comment: {type: DataTypes.STRING},
+    // prettyCreatedAt: {
+    //     type: DataTypes.VIRTUAL,
+    //     get() {
+    //         return this.getDataValue('createdAt').toLocaleString('ru-RU')
+    //     }
+    // },
+    // prettyUpdatedAt: {
+    //     type: DataTypes.VIRTUAL,
+    //     get() {
+    //         return this.getDataValue('updatedAt').toLocaleString('ru-RU')
+    //     }
+    // },
+    prettyCreatedAt: {
+        type: DataTypes.VIRTUAL,
+        get() {
+            const value = this.getDataValue('createdAt')
+            const day = value.getDate()
+            const month = value.getMonth() + 1
+            const year = value.getFullYear()
+            const hours = value.getHours()
+            const minutes = value.getMinutes()
+            return day + '.' + month + '.' + year + ' ' + hours + ':' + minutes
+        }
+    },
+    prettyUpdatedAt: {
+        type: DataTypes.VIRTUAL,
+        get() {
+            const value = this.getDataValue('updatedAt')
+            const day = value.getDate()
+            const month = value.getMonth() + 1
+            const year = value.getFullYear()
+            const hours = value.getHours()
+            const minutes = value.getMinutes()
+            return day + '.' + month + '.' + year + ' ' + hours + ':' + minutes
+        }
+    },
+})
+
+// позиции заказа, в одном заказе может быть несколько позиций (товаров)
+const OrderItem = sequelize.define('order_item', {
+    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    name: {type: DataTypes.STRING, allowNull: false},
+    price: {type: DataTypes.INTEGER, allowNull: false},
+    quantity: {type: DataTypes.INTEGER, allowNull: false},
+})
+
+
 /*
  * Описание связей
  */
@@ -100,8 +157,18 @@ Rating.belongsTo(User)
 // связь товара с его свойствами: у товара может быть несколько свойств, но
 // каждое свойство связано только с одним товаром
 // Product.hasMany(ProductProp, {as: 'props', onDelete: 'CASCADE'})
-Product.hasMany(ProductProp, {as: 'props'})
+Product.hasMany(ProductProp, {as: 'props', onDelete: 'CASCADE'})
 ProductProp.belongsTo(Product)
+
+// связь заказа с позициями: в заказе может быть несколько позиций, но
+// каждая позиция связана только с одним заказом
+Order.hasMany(OrderItem, {as: 'items', onDelete: 'CASCADE'})
+OrderItem.belongsTo(Order)
+
+// связь заказа с пользователями: у пользователя может быть несколько заказов,
+// но заказ может принадлежать только одному пользователю
+User.hasMany(Order, {as: 'orders', onDelete: 'SET NULL'})
+Order.belongsTo(User)
 
 export {
     User,
@@ -112,6 +179,6 @@ export {
     Rating,
     BasketProduct,
     ProductProp,
-    // Order,
-    // OrderItem
+    Order,
+    OrderItem
 }

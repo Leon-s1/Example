@@ -3,7 +3,11 @@ import AppError from '../errors/AppError.js'
 
 class Brand {
     async getAll() {
-        const brands = await BrandMapping.findAll()
+        const brands = await BrandMapping.findAll({
+            order: [
+                ['name', 'ASC'],
+            ],
+        })
         return brands
     }
 
@@ -17,6 +21,10 @@ class Brand {
 
     async create(data) {
         const {name} = data
+        const exist = await BrandMapping.findOne({where: {name}})
+        if (exist) {
+            throw new Error('Такой бренд уже есть')
+        }
         const brand = await BrandMapping.create({name})
         return brand
     }

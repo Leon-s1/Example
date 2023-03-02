@@ -1,5 +1,7 @@
 import { Product as ProductMapping } from "./mapping.js";
 import { ProductProp as ProductPropMapping } from "./mapping.js";
+import { Brand as BrandMapping } from './mapping.js'
+import { Category as CategoryMapping } from './mapping.js'
 import FileService from '../services/File.js'
 import AppError from "../errors/AppError.js";
 // import {where} from "sequelize";
@@ -15,16 +17,32 @@ class Product {
         if (categoryId) where.categoryId = categoryId
         if (brandId) where.brandId = brandId
         //Добавляем новый метод findAndCountAll
-        const products = await ProductMapping.findAndCountAll({where, limit, offset})
         // const products = await ProductMapping.findAll(where)
+        const products = await ProductMapping.findAndCountAll({
+            where,
+            limit,
+            offset,
+        //    для каждого товара получаем бренд и категорию
+            include: [
+                {model: BrandMapping, as: 'brand'},
+                {model: CategoryMapping, as: 'category'}
+            ],
+            order: [
+                ['name', 'ASC'],
+            ],
+        })
         return products
     }
 
     async getOne(id) {
         // const product = await ProductMapping.findByPk(id)
-        const product = await ProductMapping.findOne({
-            where: {id: id},
-            includes: [{model: ProductPropMapping, as: 'props'}]
+        // const product = await ProductMapping.findOne({
+        const product = await ProductMapping.findByPk(id, {
+            include: [
+                {model: ProductPropMapping, as: 'props'},
+                {model: BrandMapping, as: 'brand'},
+                {model: CategoryMapping, as: 'category'},
+                ]
         })
         if (!product) {
             throw new Error('Товар не найден в БД')
@@ -48,11 +66,17 @@ class Product {
                 })
             }
         }
-        return product
+        // возвращать будем товар со свойствами
+        const created = await ProductMapping.findByPk(product.id, {
+            include: [{model: ProductPropMapping, as: 'props'}]
+        })
+        return created
     }
 
     async update(id, data, img) {
-        const product = await ProductMapping.findByPk(id)
+        const product = await ProductMapping.findByPk(id, {
+            include: [{model: ProductPropMapping, as: 'props'}]
+        })
         if (!product) {
             throw new Error('Товар не найден в БД')
         }
@@ -71,6 +95,20 @@ class Product {
             image = file ? file : product.image
         } = data
         await product.update({name, price, image, categoryId, brandId})
+        if (data.props) { // свойства товара
+            // удаляем старые и добавляем новые
+            await ProductPropMapping.destroy({where: {productId: id}})
+            const props = JSON.parse(data.props)
+            for (let prop of props) {
+                await ProductPropMapping.create({
+                    name: prop.name,
+                    value: prop.value,
+                    productId: product.id
+                })
+            }
+        }
+        // обновим объект товара, чтобы вернуть свежие данные
+        await product.reload()
         return product
     }
 
@@ -79,8 +117,17 @@ class Product {
         if (!product) {
             throw new Error('Товар не найден в БД')
         }
+        if (product.image) { // удаляем изображение товара
+            FileService.delete(product.image)
+        }
         await product.destroy()
         return product
+    }
+
+    // TODO: это вообще используется?
+    async isExist(id) {
+        const basket = await ProductMapping.findByPk(id)
+        return basket
     }
 }
 

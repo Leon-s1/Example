@@ -10,7 +10,7 @@ class Product {
         try {
             //добавляем возможность запрашивать только часть товаров
             const {categoryId = null, brandId = null} = req.params
-            let {limit, page} = req.query
+            let {limit = null, page = null} = req.query
 
             limit = limit && /[0-9]+/.test(limit) && parseInt(limit) ? parseInt(limit) : 3
 
@@ -56,6 +56,9 @@ class Product {
 
     async create(req, res, next) {
         try {
+            if (Object.keys(req.body).length === 0) {
+                    throw new Error('Нет данных для создания')
+                }
             // console.log(req.body)
             // console.log(req.files)
             // поскольку image не допускает null, задаем пустую строку
@@ -75,6 +78,9 @@ class Product {
         try {
             if (!res.params.id) {
                 throw new Error('Не указан id товара')
+            }
+            if (Object.keys(req.body).length === 0) {
+                throw new Error('Нет данных для обновления')
             }
             // const product = await ProductMapping.findByPk(req.params.id)
             const product = await ProductModel.update(req.params.id, req.body, req.files?.image)
