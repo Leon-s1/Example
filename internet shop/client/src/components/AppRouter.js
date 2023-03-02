@@ -1,3 +1,4 @@
+import React from "react";
 import { Routes, Route } from 'react-router-dom'
 import Shop from '../pages/Shop.js'
 import Login from '../pages/Login.js'
@@ -65,18 +66,6 @@ const AppRouter = observer(() => {
                 <Route key={path} path={path} element={<Component />} />
             )}
         </Routes>
-
-        // <Routes>
-        //     {publicRoutes.map(({path, Component}) =>
-        //          <Route key={path} path={path} element={<Component />} />
-        //     )}
-        //     {user.isAuth && authRoutes.map(({path, Component}) =>
-        //         <Route key={path} path={path} element={<Component />} />
-        //     )}
-        //     {user.isAdmin && adminRoutes.map(({path, Component}) =>
-        //         <Route key={path} path={path} element={<Component />} />
-        //     )}
-        // </Routes>
     )
 })
 

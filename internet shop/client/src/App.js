@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { AppContext } from './components/AppContext.js'
 import { check as checkAuth } from './http/userAPI.js'
-import { useState, useContext, useEffect } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { observer } from 'mobx-react-lite'
 import Loader from './components/Loader.js'
 

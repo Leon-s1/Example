@@ -54,7 +54,7 @@ const Shop = observer(() => {
                 catalog.count = data.count
             })
             .finally(() => setProductsFetching(false))
-    }, [])
+    }, [catalog, searchParams])
 
     // При каждом клике на категорию, бренд или номер страницы — мы добавляем элемент в историю
     // браузера, ссылки в истории имеют вид /?page=1, /?page=2, /?page=3. При нажатии кнопки
@@ -88,7 +88,7 @@ const Shop = observer(() => {
         }
         // eslint-disable-next-line
     // }, [location.state])
-    }, [location.search])
+    }, [location.search, catalog, searchParams])
 
 
     // при клике на категорию, бренд, номер страницы или при нажатии кнопки  «Назад»
