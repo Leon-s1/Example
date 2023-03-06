@@ -27,12 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/components/ProductItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/components/ProductItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/pages/Shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sts/routes" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Алеша Лабы с флешки/Сайт/Rezult.html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -1176,14 +1171,7 @@
       <workItem from="1673425563583" duration="104486000" />
       <workItem from="1675830017804" duration="71931000" />
       <workItem from="1677030568075" duration="14356000" />
-      <workItem from="1677487738592" duration="31803000" />
-    </task>
-    <task id="LOCAL-00031" summary="add basket.js">
-      <created>1667901718007</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1667901718007</updated>
+      <workItem from="1677487738592" duration="53944000" />
     </task>
     <task id="LOCAL-00032" summary="edit Basket.js">
       <created>1668765925101</created>
@@ -1521,7 +1509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677666066789</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Редактирование">
+      <created>1677752777560</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1677752777560</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1616,6 +1611,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="262" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1677742005295" />
+    <state x="294" y="188" key="FileChooserDialogImpl" timestamp="1677827662263">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="294" y="188" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1677827662263" />
     <state width="395" height="615" key="GridCell.Tab.0.bottom" timestamp="1675224249997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1636,11 +1635,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1677666093906">
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1677752785217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1677666093906" />
+    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1677752785217" />
     <state x="343" y="147" width="585" height="795" key="find.popup" timestamp="1677741967978">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
