@@ -2,7 +2,7 @@ import {Container, Row, Col, Spinner} from "react-bootstrap";
 import CategoryBar from '../components/CategoryBar.js'
 import BrandBar from  '../components/BrandBar.js'
 import ProductList from '../components/ProductList.js'
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "../components/AppContext.js";
 import { fetchCategories, fetchBrands, fetchAllProducts } from "../http/catalogAPI.js";
 import { observer } from "mobx-react-lite";
