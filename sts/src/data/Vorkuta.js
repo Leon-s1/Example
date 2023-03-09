@@ -35,7 +35,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const originalRows = [
-    createData('Красников Игорь Владимирович',"Механик участка № 5", '----', "8-912-968-1446", "krasnikov_iv@sibtranss.ru\n" +
+    createData('Красников Игорь Владимирович',"Механик участка № 5", '----', '8-912-968-1446\n' + '8-912-952-8352\n', "krasnikov_iv@sibtranss.ru\n" +
         "krasnikov_67@mail.ru\n", "----" ),
 ];
 

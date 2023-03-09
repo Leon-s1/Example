@@ -35,7 +35,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const originalRows = [
-    createData('Колтунов Павел Владимирович', "Заместитель директора коммерческого", "119", "8-906-978-2822", "koltunov_pv@sibtranss.ru\n" +
+    createData('Колтунов Павел Владимирович', "Заместитель генерального директора (Руководитель г. Норильск) ", "119", "8-906-978-2822", "koltunov_pv@sibtranss.ru\n" +
         "koltunov.sts@mail.ru\n", "pavel11588"),
     createData('Аджиниязов Амир Балтенович',"Механик", '----', "8-902-948-3952\n" +
         "8-915-056-1177\n", "adjiniyazov_ab@sibtranss.ru", "----" ),

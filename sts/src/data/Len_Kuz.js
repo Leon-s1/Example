@@ -100,14 +100,6 @@ const originalRows = [
     'sts.dubrovskay'
   ),
   createData(
-    'Иванова Валентина Васильевна',
-    'Начальник ОТК',
-    '114',
-    '8-923-482-5438',
-    'ivanova_vv@sibtranss.ru\n' + 'Ivanova.sts@inbox.ru\n',
-    'ivanova.sts'
-  ),
-  createData(
     'Иванова Наталья Алексеевна ',
     'Специалист по охране труда',
     '124',
@@ -133,7 +125,7 @@ const originalRows = [
   ),
   createData(
     'Колтунов Павел Владимирович',
-    'Заместитель директора коммерческого',
+    'Заместитель генерального директора (Руководитель г. Норильск) ',
     '119',
     '8-906-978-2822',
     'koltunov_pv@sibtranss.ru\n' + 'koltunov.sts@mail.ru\n',

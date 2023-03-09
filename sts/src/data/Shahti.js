@@ -35,7 +35,7 @@ function createData(fio, position, int_phone, mobile, email, skype) {
 }
 
 const originalRows = [
-    createData('Мостовенко Валерий Игоревич ',"Директор филиала", '----', "8-988-554-2033", "sibtranss.rostov@gmail.com", "----" ),
+    createData('Мостовенко Валерий Игоревич ',"Директор филиала", '----', '8-988-554-2033\n' + '8-928-609-8043\n', "sibtranss.rostov@gmail.com", "----" ),
     createData('Лемешов Анатолий Викторович',"Механик", '----', "8-928-773-2619", "----", "----" ),
     ];
 
