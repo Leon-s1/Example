@@ -39,9 +39,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad411b65-35b3-4234-9747-becd83b4e5f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ad411b65-35b3-4234-9747-becd83b4e5f2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1187,13 +1185,7 @@
       <workItem from="1677487738592" duration="31803000" />
       <workItem from="1678109607211" duration="753000" />
       <workItem from="1683645674972" duration="1190000" />
-    </task>
-    <task id="LOCAL-00032" summary="edit Basket.js">
-      <created>1668765925101</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1668765925101</updated>
+      <workItem from="1683647743098" duration="1149000" />
     </task>
     <task id="LOCAL-00033" summary="commit">
       <created>1669970050020</created>
@@ -1531,7 +1523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677770986741</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="test commit">
+      <created>1683648037895</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1683648037895</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1578,7 +1577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактирование даты в заказе" />
     <MESSAGE value="Список всех заказов в панели администратора" />
     <MESSAGE value="Список категорий" />
     <MESSAGE value="Добавление бренда" />
@@ -1603,25 +1601,14 @@
     <MESSAGE value="Редактирование." />
     <MESSAGE value="Редактирование" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="136" y="202" key="#Inspections" timestamp="1676880577826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="136" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1676880577826" />
-    <state x="102" y="41" width="816" height="999" key="#Intentions" timestamp="1671507929217">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="102" y="41" width="816" height="999" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1671507929217" />
-    <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1671503423520">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040@0.0.1920.1040" timestamp="1671503423520" />
-    <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog" timestamp="1671507126442">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1671507126442" />
     <state x="262" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1677742005295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1646,14 +1633,10 @@
     </state>
     <state width="1419" height="222" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1677771270676" />
     <state width="395" height="615" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
-    <state x="15" y="165" key="SettingsEditor" timestamp="1671507207343">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="106" y="166" key="Vcs.Push.Dialog.v2" timestamp="1677771010449">
+    <state x="106" y="166" key="Vcs.Push.Dialog.v2" timestamp="1683648532775">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1677771010449" />
+    <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1683648532775" />
     <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1677666093906" />
     <state x="343" y="147" width="585" height="795" key="find.popup" timestamp="1677741967978">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -1663,10 +1646,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="167" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1676258371143" />
-    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1670836670554">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670836670554" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
