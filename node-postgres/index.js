@@ -1,11 +1,22 @@
-const express = require ('express')
-const app = express()
+// import  express from 'express'
+const express = require('express');
+// const cors = require('cors');
+// const body_parser = require('body-parser')
+const app = express();
 const port = 3001
 
-const merchant_model = require('./merchant_model')
+// app.get('/', (req, res) => {
+//     res.status(200).send('Hello Worlds!')
+// })
+// import MerchantModel from '../node-postgres/merchant_model.js'
+const merchant_model = require('./merchant_model.js')
 
+// app.use(cors())
 app.use(express.json())
 app.use(function (req, res, next) {
+    // res.setHeader = function (accessControlAllowOrigin, httpLocalhost3000) {
+    //
+    // }
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers');
@@ -25,25 +36,36 @@ app.get('/', (req, res) => {
 app.post('/merchants', (req, res) => {
     merchant_model.createMerchant(req.body)
         .then(response => {
-            res.status(200).send(response)
+            res.status(200).send(response);
         })
         .catch(error => {
-            res.status(500).send(error)
+            res.status(500).send(error);
         })
 })
 
 app.delete('/merchants/:id', (req, res) => {
     merchant_model.deleteMerchant(req.params.id)
         .then(response => {
-            res.status(200).send(response)
+            res.status(200).send(response);
         })
         .catch(error => {
-            res.status(500).send(error)
+            res.status(500).send(error);
+        })
+})
+
+app.put('/merchants/:id', (req, res) => {
+    // merchant_model.updateMerchant(req.params.id, req.body)
+    merchant_model.updateMerchant(req.body)
+        .then(response => {
+            res.status(200).send(response);
+        })
+        .catch(error => {
+            res.status(500).send(error);
         })
 })
 
 app.listen(port, () => {
-    console.log(`App running on port ${port}.`)
+    console.log(`App.Express running on port ${port}.`)
 })
 
 
