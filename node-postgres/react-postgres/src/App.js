@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import style from './style.css'
+import './style.css';
 
 function App() {
     const [merchants, setMerchants] = useState(false);
@@ -7,7 +7,8 @@ function App() {
     //     submitbtn = document.querySelector('#submit'),
        let table = document.getElementById('table');
     // let arr = Array.from(merchants);
-    const obj = JSON.parse(merchants)
+    const obj = JSON.parse(merchants);
+    const headTable = ["index", "id", "Имя", "Email"];
 
     useEffect(() => {
         getMerchant();
@@ -16,6 +17,7 @@ function App() {
         console.log(merchants);
         console.log(typeof (merchants));
         console.log(typeof (obj));
+
 
 
     }, [merchants]);
@@ -95,12 +97,9 @@ function App() {
         )
     });
 
-    // let s = `<div class="divTable"><div class="divTableHeading"><div class="divTableRow">`;
+
     //
-    // for (let name of ["ФИО", "Фирма", "email", "Телефон", "Баланс", "Активный", "Пол"])
-    //     s += `<div class="divTableHead">${name}</div>`;
-    //
-    // s += `</div></div><div class="divTableBody">`;
+    // ;
     // // let arr = Array.from(merchants);
     // for (let user of Object.values(merchants)) {
     //     s += `<div class="divTableRow">`;
@@ -115,18 +114,47 @@ function App() {
     return (
         <div>
             {merchants ? merchants : 'There is no merchant data available'}
+            <br/>
+            <br/>
+            {/*<div>*/}
+            {/*    <h3>Имя: {merchants}</h3>*/}
+            {/*    <h3>Возраст: {merchants.email}</h3>*/}
+            {/*</div>*/}
 
-            <div>
-                <h3>Имя: {merchants}</h3>
-                <h3>Возраст: {merchants.email}</h3>
+            {/*let s = `<div class="divTable"><div class="divTableHeading"><div class="divTableRow">`;*/}
+
+            <div className="headTable">
+                {headTable.map((element, index) => {
+                    return (
+                        <table>
+                            <tr>
+                                <td key={index}>{element}</td>
+                            </tr>
+                        </table>
+                        // <p key={index}>{element}</p>
+                        // console.log(element);
+                        )
+                })}
             </div>
+
 
             {Object.values(obj).map((value, index) => {
                 return (
                     <div key={index}>
-                        <h2>id: {value.id} Имя: {value.name} Email: {value.email} </h2>
-                        {/*<h2>{value.name}</h2>*/}
-                        {/*<h2>{value.email}</h2>*/}
+                        <div className='bodyTable'>
+                        {/*<h2>id: {index} Имя: {value.name} Email: {value.email} </h2>*/}
+                        <table>
+                            <tr>
+                                <td>{index}</td>
+                                <td>{value.id}</td>
+                                <td>{value.name}</td>
+                                <td>{value.email}</td>
+                            </tr>
+                        </table>
+                        {/*<p>{index}</p>*/}
+                        {/*<p>{value.name}</p>*/}
+                        {/*<p>{value.email}</p>*/}
+                        </div>
 
 
                     </div>
@@ -166,7 +194,7 @@ function App() {
             <br/>
             <button onClick={deleteMerchant}>Delete merchant</button>
             <br/>
-            <button onClick={updateMerchant}>Delete merchant</button>
+            <button onClick={updateMerchant}>Update merchant</button>
             <br/>
 
             {/*<br/>*/}

@@ -1,5 +1,5 @@
 div {
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
 }
 button {
@@ -9,6 +9,41 @@ button {
 html, body{
     margin: 0;
     padding:0;
+}
+table {
+    /*display: flex;*/
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+    text-align: center; /* Выравнивание по левому краю */
+    background: #ccc; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid black; /* Граница вокруг ячеек */
+}
+td {
+    width: 25%;
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid black; /* Граница вокруг ячеек */
+    /*text-align: center; !* Выравнивание по левому краю *!*/
+}
+.headTable {
+    display: flex;
+    text-align: center; /* Выравнивание по левому краю*/
+    /*border: 2px black solid;*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 1px;*/
+}
+.bodyTable {
+    display: flex;
+    /*border: 2px black solid;*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 0px;*/
+}
+div p {
+
+    width: 600px;
 }
 .wrapper{
     width:100%;
