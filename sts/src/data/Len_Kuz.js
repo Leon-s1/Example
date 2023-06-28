@@ -92,14 +92,6 @@ const originalRows = [
     'garbuz.sts'
   ),
   createData(
-    'Дубровская Галина Семеновна',
-    'Бухгалтер по расчетам',
-    '120',
-    '8-923-531-7464',
-    'dubrovskay_gs@sibtranss.ru\n' + 'sts.dubrovskay@mail.ru\n',
-    'sts.dubrovskay'
-  ),
-  createData(
     'Иванова Наталья Алексеевна ',
     'Специалист по охране труда',
     '124',
@@ -150,7 +142,7 @@ const originalRows = [
   createData(
     'Кычанова Наталья Константиновна',
     'Бухгалтер',
-    '120',
+    '111',
     '8-961-725-4495',
     'kychanova_nk@sibtranss.ru',
     '.cid.6fbb76346d118e65'
@@ -196,6 +188,14 @@ const originalRows = [
     '----'
   ),
   createData(
+    'Морозова Елена Петровна',
+    'Бухгалтер-расчетчик',
+    '111',
+    '8-951-571-3556',
+    'morozova_ep@sibtranss.ru',
+    '.cid.61ba4fc034fcb51f'
+  ),
+  createData(
     'Мясников Григорий Олегович',
     'Начальник участка № 1',
     '123',
@@ -210,14 +210,6 @@ const originalRows = [
     '8-961-706-9943',
     'nesterenko_p@sibtranss.ru\n' + 'nesterenko.p@mail.ru\n',
     '----'
-  ),
-  createData(
-    'Ожогина Светлана Борисовна',
-    'Инспектор по кадрам',
-    '112',
-    '8-906-924-9737',
-    'ozhogina_sb@sibtranss.ru\n' + 'ozhogina.sts@mail.ru\n',
-    'b246581117e27e6c'
   ),
   createData(
     'Оскотский Виталий Григорьевич',
@@ -252,14 +244,6 @@ const originalRows = [
     '.cid.8291dc4f7b23420f'
   ),
   createData(
-    'Пономарева Галина Владимировна',
-    'Бухгалтер',
-    '120',
-    '8-950-590-3363',
-    'ponomareva_gv@sibtranss.ru\n' + 'ponomareva.sts@mail.ru\n',
-    '.cid.8291dc4f7b23420f'
-  ),
-  createData(
     'Рязанова Ольга Михайловна',
     'Инспектор по кадрам',
     '112',
@@ -270,7 +254,7 @@ const originalRows = [
   createData(
     'Сачук Татьяна Алексеевна',
     'Бухгалтер (Локотранс)',
-    '120',
+    '111',
     '8-904-376-4142',
     'sachuk_ta@sibtranss.ru\n' + 'sachuk.sts1@mail.ru\n',
     '.cid.26f11308e0cbcef'

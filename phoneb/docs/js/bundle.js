@@ -27211,7 +27211,7 @@ function instantiateReactComponent(node, shouldHaveDebugID) {
   }
 
   if (true) {
-     true ? warning(typeof instance.mountComponent === 'function' && typeof instance.receiveComponent === 'function' && typeof instance.getHostNode === 'function' && typeof instance.unmountComponent === 'function', 'Only React Components can be mounted.') : void 0;
+     true ? warning(typeof instance.mountComponent === 'function' && typeof instance.receiveComponent === 'function' && typeof instance.getHostNode === 'function' && typeof instance.unmountComponent === 'function', 'Only React components can be mounted.') : void 0;
   }
 
   // These two fields are used by the DOM and ART diffing algorithms
@@ -70589,7 +70589,7 @@ ReactDOMComponent.Mixin = {
       case 'head':
       case 'body':
         /**
-         * Components like <html> <head> and <body> can't be removed or added
+         * components like <html> <head> and <body> can't be removed or added
          * easily in a cross-browser way, however it's valuable to be able to
          * take advantage of React's reconciliation for styling and <title>
          * management. So we just document it and throw in dangerous cases.
@@ -72082,7 +72082,7 @@ if (true) {
     } else {
       // We were unable to guess which prop the user intended.
       // It is likely that the user was just blindly spreading/forwarding props
-      // Components should be careful to only render valid props/attributes.
+      // components should be careful to only render valid props/attributes.
       // Warning will be invoked in warnUnknownProperties to allow grouping.
       return false;
     }

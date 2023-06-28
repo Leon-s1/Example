@@ -53,7 +53,7 @@ app.delete('/merchants/:id', (req, res) => {
         })
 })
 
-app.put('/merchants/:id', (req, res) => {
+app.put('/merchants/:index', (req, res) => {
     // merchant_model.updateMerchant(req.params.id, req.body)
     merchant_model.updateMerchant(req.body)
         .then(response => {
