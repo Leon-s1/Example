@@ -19,42 +19,16 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
-      <change afterPath="$PROJECT_DIR$/node-postgres/react-postgres/src/components/AddUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/react-postgres/src/components/BodyRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/react-postgres/src/components/TableRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/react-postgres/src/components/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/merchant_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/react-postgres/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/react-postgres/src/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoneb/docs/js/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/phoneb/docs/js/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/public/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/public/logo512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-postgres/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-postgres Arkhiv/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sts/src/data/Len_Kuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/sts/src/data/Len_Kuz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-course-2020/dist/vendors~main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-course-2020/dist/vendors~main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-course-2020/dist_old/vendors~main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-course-2020/dist_old/vendors~main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-hello/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-hello/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internet shop/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/http/userAPI.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,16 +88,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Example\node-postgres\client" />
-      <recent name="D:\Example\node-postgres\server" />
-      <recent name="D:\Example\node-postgres\react-postgres\src" />
-      <recent name="D:\Example\node-postgres\react-postgres\src\arkhiv" />
-      <recent name="D:\Example\node-postgres\react-postgres" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Example\sts\routes" />
       <recent name="C:\Example\sts\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Example\node-postgres\client\src" />
+      <recent name="D:\Example\node-postgres\server" />
+      <recent name="D:\Example\node-postgres\client" />
+      <recent name="D:\Example\node-postgres\react-postgres\src" />
+      <recent name="D:\Example\node-postgres\react-postgres\src\arkhiv" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1212,13 +1186,7 @@
       <workItem from="1678851552014" duration="2926000" />
       <workItem from="1686188331117" duration="1446000" />
       <workItem from="1686706913804" duration="132413000" />
-    </task>
-    <task id="LOCAL-00040" summary="add component basket">
-      <created>1673516769621</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1673516769622</updated>
+      <workItem from="1687926097583" duration="4524000" />
     </task>
     <task id="LOCAL-00041" summary="add component shop">
       <created>1673516825737</created>
@@ -1556,7 +1524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687426744262</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="update catalogs">
+      <created>1687926527594</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1687926527595</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1588,7 +1563,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -1609,7 +1584,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавление новой категории и обновление состояния" />
     <MESSAGE value="Добавление нового бренда и обновление состояния" />
     <MESSAGE value="Редактирование категории через Панель управления" />
     <MESSAGE value="Редактирование бренда через Панель управления администратора" />
@@ -1634,7 +1608,8 @@
     <MESSAGE value="Редактирование контактов" />
     <MESSAGE value="commit" />
     <MESSAGE value="add table display" />
-    <option name="LAST_COMMIT_MESSAGE" value="add table display" />
+    <MESSAGE value="update catalogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update catalogs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1649,37 +1624,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687233360515" />
-    <state x="294" y="188" key="FileChooserDialogImpl" timestamp="1678932106616">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="294" y="188" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1678932106616" />
-    <state x="0" y="89" key="MergeDialog" timestamp="1678096770285">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="0" y="89" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1678096770285" />
-    <state x="402" y="391" width="389" height="264" key="MultipleFileMergeDialog" timestamp="1678096770292">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="402" y="391" width="389" height="264" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1678096770292" />
     <state x="2816" y="237" key="SettingsEditor" timestamp="1686882700823">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1678852425101" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1687426759357">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1687926595718">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1678109515260" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687426759357" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1678354463344" />
-    <state x="245" y="222" key="git4idea.merge.GitPullDialog" timestamp="1678109495984">
-      <screen x="0" y="0" width="1440" height="860" />
-    </state>
-    <state x="245" y="222" key="git4idea.merge.GitPullDialog/0.0.1440.860@0.0.1440.860" timestamp="1678109495984" />
-    <state x="366" y="419" key="git4idea.ui.GitStashDialog" timestamp="1678353571012">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="366" y="419" key="git4idea.ui.GitStashDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1678353571012" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687926595718" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1687512875731">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -14,6 +14,7 @@ export const signup = async (email, password) => {
     }
 }
 
+
 export const login = async (email, password) => {
     try {
         const response = await guestInstance.post('user/login', {email, password})
