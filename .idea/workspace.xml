@@ -26,9 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internet shop/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/internet shop/client/src/http/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-youtube/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-youtube/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1186,14 +1189,7 @@
       <workItem from="1678851552014" duration="2926000" />
       <workItem from="1686188331117" duration="1446000" />
       <workItem from="1686706913804" duration="132413000" />
-      <workItem from="1687926097583" duration="4524000" />
-    </task>
-    <task id="LOCAL-00041" summary="add component shop">
-      <created>1673516825737</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1673516825737</updated>
+      <workItem from="1687926097583" duration="22479000" />
     </task>
     <task id="LOCAL-00042" summary="add component authorization">
       <created>1674118321358</created>
@@ -1531,7 +1527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687926527595</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="update catalogs">
+      <created>1687947837588</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1687947837588</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1628,10 +1631,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1687926595718">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1687947872661">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687926595718" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687947872661" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1687512875731">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

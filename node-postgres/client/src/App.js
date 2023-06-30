@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './style.css';
-import {getMerchant, createMerchant, deleteMerchant, updateMerchant} from "./http/userAPI.js";
+// import {getMerchant, createMerchant, deleteMerchant, updateMerchant} from "./http/userAPI.js";
 import TableRow from "./components/TableRow.js";
 import BodyRow from "./components/BodyRow.js";
 import AddUser from "./components/AddUser";
@@ -14,7 +14,6 @@ function App() {
     // let arr = Array.from(merchants);
     const obj = JSON.parse(merchants);
     const headTable = ["index", "id", "Имя", "Email"];
-
 
     useEffect(() => {
         getMerchant();
@@ -30,7 +29,68 @@ function App() {
 
     }, []);
 
+    function getMerchant() {
+        fetch('http://localhost:3001')
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                setMerchants(data);
+            });
+    }
 
+    function createMerchant() {
+        let name = prompt('Enter merchant name');
+        let email = prompt('Enter merchant email');
+        fetch('http://localhost:3001/merchants', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({name, email}),
+        })
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                alert(data);
+                getMerchant();
+            });
+    }
+    function deleteMerchant() {
+        let id = prompt('Enter merchant id');
+        fetch(`http://localhost:3001/merchants/${id}`, {
+            method: 'DELETE',
+        })
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                alert(data);
+                getMerchant();
+            })
+        // .catch(err => console.log(err));
+    }
+
+    function updateMerchant() {
+        let index = prompt('Enter merchant index');
+        let name = prompt('Enter merchant name');
+        let email = prompt('Enter merchant email');
+        fetch(`http://localhost:3001/merchants/${index}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({index, name, email}),
+        })
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                alert(data);
+                getMerchant();
+            })
+    }
 
     return (
         <div className='list'>
@@ -61,7 +121,7 @@ function App() {
             <button onClick={updateMerchant}>Update merchant</button>
             <br/>
 
-            {/*<br/>*/}
+            <br/>
             {/*<button onClick={getTable(table, merchants)}>getTable</button>*/}
         </div>
 
