@@ -133,7 +133,7 @@ const originalRows = [
   ),
   createData(
     'Кузьминых Анна Александровна',
-    'Экономист (по МТС и сбыту)',
+    'Финансовый директор',
     '118',
     '8-906-976-4680',
     'kuzminikh_aa@sibtranss.ru\n' + 'kuzminikh88@mail.ru\n',
