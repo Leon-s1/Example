@@ -3,28 +3,28 @@ import "./modal.css"
 // import {getMerchant} from "../App";
 
 
-const AddUser = ({active, setActive, children}) => {
+const AddUser = ({active, setActive}) => {
     const [merchants, setMerchants] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-
     // function addUser() {
     //
     //     let newUser = {
     //         name: name,
     //         email: email
     //     };
-        const obj = JSON.parse(merchants);
+    //     const obj = JSON.parse(merchants);
 
         useEffect(() => {
-            getMerchant();
+            // getMerchant();
             // let arr = toparseJson();
 
-            console.log(merchants);
-            console.log(typeof (merchants));
-            console.log(typeof (obj));
-            console.log(obj);
-            console.log({AddUser})
+            // console.log(merchants);
+            // console.log(typeof (merchants));
+            // console.log(typeof (obj));
+            // console.log(obj);
+            // console.log({AddUser})
+            // console.log(name, email)
 
 
         }, []);
@@ -41,8 +41,8 @@ const AddUser = ({active, setActive, children}) => {
 
         function createMerchant(event) {
             event.preventDefault();
-            console.log('name:', name);
-            console.log('email:', email);
+            // console.log('name:', name);
+            // console.log('email:', email);
             // let name = prompt('Enter merchant name');
             // let name = name;
             // let email = prompt('Enter merchant email');
@@ -59,44 +59,52 @@ const AddUser = ({active, setActive, children}) => {
                 })
                 .then(data => {
                     alert(data);
-                    getMerchant();
+                    setActive(false)
+                    // getMerchant();
+
                 });
+            console.log(name, email);
         }
 
-        function deleteMerchant() {
-            let id = prompt('Enter merchant id');
-            fetch(`http://localhost:3001/merchants/${id}`, {
-                method: 'DELETE',
-            })
-                .then(response => {
-                    return response.text();
-                })
-                .then(data => {
-                    alert(data);
-                    getMerchant();
-                })
-            // .catch(err => console.log(err));
-        }
+        // function deleteMerchant() {
+        //     let id = prompt('Enter merchant id');
+        //     fetch(`http://localhost:3001/merchants/${id}`, {
+        //         method: 'DELETE',
+        //     })
+        //         .then(response => {
+        //             return response.text();
+        //         })
+        //         .then(data => {
+        //             alert(data);
+        //             getMerchant();
+        //         })
+        //     // .catch(err => console.log(err));
+        // }
+        //
+        // function updateMerchant() {
+        //     let index = prompt('Enter merchant index');
+        //     let name = prompt('Enter merchant name');
+        //     let email = prompt('Enter merchant email');
+        //     fetch(`http://localhost:3001/merchants/${index}`, {
+        //         method: 'PUT',
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //         },
+        //         body: JSON.stringify({index, name, email}),
+        //     })
+        //         .then(response => {
+        //             return response.text();
+        //         })
+        //         .then(data => {
+        //             alert(data);
+        //             getMerchant();
+        //         })
+        // }
 
-        function updateMerchant() {
-            let index = prompt('Enter merchant index');
-            let name = prompt('Enter merchant name');
-            let email = prompt('Enter merchant email');
-            fetch(`http://localhost:3001/merchants/${index}`, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({index, name, email}),
-            })
-                .then(response => {
-                    return response.text();
-                })
-                .then(data => {
-                    alert(data);
-                    getMerchant();
-                })
-        }
+    function handleSubmit(e) {
+        e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
+        console.log(name, email);
+    }
 
         return (
             <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>

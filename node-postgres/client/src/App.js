@@ -13,17 +13,18 @@ function App() {
        let table = document.getElementById('table');
     // let arr = Array.from(merchants);
     const obj = JSON.parse(merchants);
-    const headTable = ["index", "id", "Имя", "Email"];
+    // const headTable = ["index", "id", "Имя", "Email"];
 
-    useEffect(() => {
+    useEffect((obj) => {
         getMerchant();
+        // <BodyRow obj={obj} />
         // let arr = toparseJson();
 
-        console.log(merchants);
-        console.log(typeof (merchants));
-        console.log(typeof (obj));
-        console.log(obj);
-        console.log({AddUser})
+        // console.log(merchants);
+        // console.log(typeof (merchants));
+        // console.log(typeof (obj));
+        // console.log(obj);
+        // console.log({AddUser})
 
 
 
@@ -35,25 +36,33 @@ function App() {
                 return response.text();
             })
             .then(data => {
+                // setModalActive(false)
                 setMerchants(data);
             });
     }
 
+    // function createMerchant({name, email}) {
     function createMerchant() {
+        // event.preventDefault()
         let name = prompt('Enter merchant name');
         let email = prompt('Enter merchant email');
+        // let name = name;
+        // let email = email;
         fetch('http://localhost:3001/merchants', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({name, email}),
+            // body: JSON.stringify({event}),
+
         })
             .then(response => {
                 return response.text();
             })
             .then(data => {
                 alert(data);
+                // setModalActive(false)
                 getMerchant();
             });
     }
@@ -98,14 +107,14 @@ function App() {
             <br/>
             {merchants ? (
                 <>
-                    <TableRow />
+                    {/*<TableRow />*/}
                     <BodyRow obj={obj} />
                 </>
                 ) : 'There is no merchant data available'}
             <br/>
             <br/>
 
-            <AddUser active={modalActive} setActive={setModalActive}>
+            <AddUser active={modalActive} setActive={setModalActive} /*create={createMerchant}*/>
 
                 {/*/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa minus nulla qui unde. Amet at consequuntur enim eos iusto, libero nemo nulla officiis porro quis quo rerum ullam vel.100</p>*!/*/}
 

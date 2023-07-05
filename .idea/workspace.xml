@@ -19,8 +19,9 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -29,9 +30,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-youtube/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-youtube/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phoneb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/phoneb/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1189,21 +1190,7 @@
       <workItem from="1678851552014" duration="2926000" />
       <workItem from="1686188331117" duration="1446000" />
       <workItem from="1686706913804" duration="132413000" />
-      <workItem from="1687926097583" duration="22479000" />
-    </task>
-    <task id="LOCAL-00042" summary="add component authorization">
-      <created>1674118321358</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1674118321358</updated>
-    </task>
-    <task id="LOCAL-00043" summary="edit component shop, categoryBar, brandBar, productList, ProductItem">
-      <created>1674208061573</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1674208061573</updated>
+      <workItem from="1687926097583" duration="47841000" />
     </task>
     <task id="LOCAL-00044" summary="button Back and Forward">
       <created>1674532913707</created>
@@ -1534,7 +1521,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687947837588</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Компонент AddUser добавляет данные в БД, но при отправке, форма не закрывается и таблица в браузере не обновляется.">
+      <created>1688117908063</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1688117908063</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Добавил запись Кузьминых">
+      <created>1688529861580</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1688529861580</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1566,7 +1567,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -1587,8 +1588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавление нового бренда и обновление состояния" />
-    <MESSAGE value="Редактирование категории через Панель управления" />
     <MESSAGE value="Редактирование бренда через Панель управления администратора" />
     <MESSAGE value="Компонент списка товаров" />
     <MESSAGE value="Компонент добавление товара" />
@@ -1612,7 +1611,9 @@
     <MESSAGE value="commit" />
     <MESSAGE value="add table display" />
     <MESSAGE value="update catalogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="update catalogs" />
+    <MESSAGE value="Компонент AddUser добавляет данные в БД, но при отправке, форма не закрывается и таблица в браузере не обновляется." />
+    <MESSAGE value="Добавил запись Кузьминых" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил запись Кузьминых" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1631,10 +1632,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1687947872661">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1688529898559">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687947872661" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1688529898559" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1687512875731">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
