@@ -30,9 +30,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoneb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/phoneb/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1190,14 +1188,7 @@
       <workItem from="1678851552014" duration="2926000" />
       <workItem from="1686188331117" duration="1446000" />
       <workItem from="1686706913804" duration="132413000" />
-      <workItem from="1687926097583" duration="47841000" />
-    </task>
-    <task id="LOCAL-00044" summary="button Back and Forward">
-      <created>1674532913707</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1674532913707</updated>
+      <workItem from="1687926097583" duration="53459000" />
     </task>
     <task id="LOCAL-00045" summary="add publicRoutes product, basket">
       <created>1674534480104</created>
@@ -1535,7 +1526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688529861580</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Добавление новых данных работает, но не происходит обновление страницы онлайн.">
+      <created>1688530130350</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1688530130350</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1588,7 +1586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактирование бренда через Панель управления администратора" />
     <MESSAGE value="Компонент списка товаров" />
     <MESSAGE value="Компонент добавление товара" />
     <MESSAGE value="Компонент редактирование товара" />
@@ -1613,7 +1610,8 @@
     <MESSAGE value="update catalogs" />
     <MESSAGE value="Компонент AddUser добавляет данные в БД, но при отправке, форма не закрывается и таблица в браузере не обновляется." />
     <MESSAGE value="Добавил запись Кузьминых" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил запись Кузьминых" />
+    <MESSAGE value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1632,10 +1630,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1688529898559">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1688530141851">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1688529898559" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1688530141851" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1687512875731">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -16,7 +16,7 @@ const AddUser = ({active, setActive}) => {
     //     const obj = JSON.parse(merchants);
 
         useEffect(() => {
-            // getMerchant();
+            getMerchant();
             // let arr = toparseJson();
 
             // console.log(merchants);
@@ -40,7 +40,7 @@ const AddUser = ({active, setActive}) => {
         }
 
         function createMerchant(event) {
-            event.preventDefault();
+            // event.preventDefault();
             // console.log('name:', name);
             // console.log('email:', email);
             // let name = prompt('Enter merchant name');
@@ -60,7 +60,7 @@ const AddUser = ({active, setActive}) => {
                 .then(data => {
                     alert(data);
                     setActive(false)
-                    // getMerchant();
+                    getMerchant();
 
                 });
             console.log(name, email);
@@ -144,6 +144,7 @@ const AddUser = ({active, setActive}) => {
                 </div>
             </div>
         )
+    // {merchants}
 
 }
 export default AddUser

@@ -17,7 +17,7 @@ function App() {
 
     useEffect((obj) => {
         getMerchant();
-        // <BodyRow obj={obj} />
+        <BodyRow obj={obj} />
         // let arr = toparseJson();
 
         // console.log(merchants);
@@ -41,31 +41,30 @@ function App() {
             });
     }
 
-    // function createMerchant({name, email}) {
-    function createMerchant() {
-        // event.preventDefault()
-        let name = prompt('Enter merchant name');
-        let email = prompt('Enter merchant email');
-        // let name = name;
-        // let email = email;
-        fetch('http://localhost:3001/merchants', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({name, email}),
-            // body: JSON.stringify({event}),
-
-        })
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                alert(data);
-                // setModalActive(false)
-                getMerchant();
-            });
-    }
+    // function createMerchant() {
+    //     // event.preventDefault()
+    //     let name = prompt('Enter merchant name');
+    //     let email = prompt('Enter merchant email');
+    //     // let name = name;
+    //     // let email = email;
+    //     fetch('http://localhost:3001/merchants', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({name, email}),
+    //         // body: JSON.stringify({event}),
+    //
+    //     })
+    //         .then(response => {
+    //             return response.text();
+    //         })
+    //         .then(data => {
+    //             alert(data);
+    //             // setModalActive(false)
+    //             getMerchant();
+    //         });
+    // }
     function deleteMerchant() {
         let id = prompt('Enter merchant id');
         fetch(`http://localhost:3001/merchants/${id}`, {
@@ -107,6 +106,7 @@ function App() {
             <br/>
             {merchants ? (
                 <>
+                {/*{merchants}*/}
                     {/*<TableRow />*/}
                     <BodyRow obj={obj} />
                 </>
@@ -114,7 +114,7 @@ function App() {
             <br/>
             <br/>
 
-            <AddUser active={modalActive} setActive={setModalActive} /*create={createMerchant}*/>
+            <AddUser active={modalActive} setActive={setModalActive} >
 
                 {/*/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa minus nulla qui unde. Amet at consequuntur enim eos iusto, libero nemo nulla officiis porro quis quo rerum ullam vel.100</p>*!/*/}
 
@@ -123,7 +123,7 @@ function App() {
             <br/>
             <button onClick={() => setModalActive(true)}>Add merchant</button>
             <br/>
-            <button onClick={createMerchant}>Add merchant</button>
+            {/*<button onClick={createMerchant}>Add merchant</button>*/}
             <br/>
             <button onClick={deleteMerchant}>Delete merchant</button>
             <br/>
