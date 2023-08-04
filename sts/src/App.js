@@ -5,9 +5,9 @@ import './App.css'
 import Tabs from './Tabs'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import Loader from './loader/loader.js'
-import 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'
-import 'http://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'
+// import Loader from './loader/loader.js'
+// import 'http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'
+// import 'http://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'
 // import './loader/js/index.js'
 // import ReactRouter from "react-router"
 

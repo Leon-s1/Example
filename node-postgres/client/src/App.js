@@ -4,10 +4,12 @@ import './style.css';
 import TableRow from "./components/TableRow.js";
 import BodyRow from "./components/BodyRow.js";
 import AddUser from "./components/AddUser";
+import Loader from "./Loader";
 
 function App() {
     const [merchants, setMerchants] = useState(false);
     const [modalActive, setModalActive] = useState(false);
+    const [loading, setLoading] = React.useState(true)
     // let Students = [],
     //     submitbtn = document.querySelector('#submit'),
        let table = document.getElementById('table');
@@ -16,8 +18,17 @@ function App() {
     // const headTable = ["index", "id", "Имя", "Email"];
 
     useEffect((obj) => {
-        getMerchant();
-        <BodyRow obj={obj} />
+
+        // getMerchant();
+        // <BodyRow obj={obj} />
+
+        setTimeout(() => {
+            getMerchant();
+            <BodyRow obj={obj} />
+            setLoading(false)
+        }, 2000)
+
+
         // let arr = toparseJson();
 
         // console.log(merchants);
@@ -25,9 +36,6 @@ function App() {
         // console.log(typeof (obj));
         // console.log(obj);
         // console.log({AddUser})
-
-
-
     }, []);
 
     function getMerchant() {
@@ -36,8 +44,8 @@ function App() {
                 return response.text();
             })
             .then(data => {
+                    setMerchants(data);
                 // setModalActive(false)
-                setMerchants(data);
             });
     }
 
@@ -104,21 +112,30 @@ function App() {
         <div className='list'>
             <br/>
             <br/>
+
+            <React.Suspense fallback={<Loader />}>
+                <AddUser active={modalActive} setActive={setModalActive} />
+            </React.Suspense>
+
+            {loading && <Loader />}
             {merchants ? (
                 <>
                 {/*{merchants}*/}
                     {/*<TableRow />*/}
                     <BodyRow obj={obj} />
                 </>
-                ) : 'There is no merchant data available'}
+                ) : loading ? null : (
+                'There is no merchant data available'
+            )}
+
             <br/>
             <br/>
 
-            <AddUser active={modalActive} setActive={setModalActive} >
+            {/*<AddUser active={modalActive} setActive={setModalActive} >*/}
 
                 {/*/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa minus nulla qui unde. Amet at consequuntur enim eos iusto, libero nemo nulla officiis porro quis quo rerum ullam vel.100</p>*!/*/}
 
-            </AddUser>
+            {/*</AddUser>*/}
 
             <br/>
             <button onClick={() => setModalActive(true)}>Add merchant</button>

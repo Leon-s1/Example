@@ -92,6 +92,14 @@ const originalRows = [
     'garbuz.sts'
   ),
   createData(
+    'Давыдова Анастасия Евгеньевна',
+    'Бухгалтер',
+    '111',
+    '8-908-948-0947',
+    'davydova_ae@sibtranss.ru',
+    '.cid.2c54ff8476ac8d2a'
+  ),
+  createData(
     'Иванова Наталья Алексеевна ',
     'Специалист по охране труда',
     '124',
