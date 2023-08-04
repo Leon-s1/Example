@@ -19,14 +19,14 @@ function App() {
 
     useEffect((obj) => {
 
-        // getMerchant();
-        // <BodyRow obj={obj} />
+        getMerchant();
+        <BodyRow obj={obj} />
 
-        setTimeout(() => {
-            getMerchant();
-            <BodyRow obj={obj} />
-            setLoading(false)
-        }, 2000)
+        // setTimeout(() => {
+        //     getMerchant();
+        //     <BodyRow obj={obj} />
+        //     setLoading(false)
+        // }, 2000)
 
 
         // let arr = toparseJson();
@@ -113,25 +113,25 @@ function App() {
             <br/>
             <br/>
 
-            <React.Suspense fallback={<Loader />}>
-                <AddUser active={modalActive} setActive={setModalActive} />
-            </React.Suspense>
+            {/*<React.Suspense fallback={<Loader />}>*/}
+            {/*    <AddUser active={modalActive} setActive={setModalActive} />*/}
+            {/*</React.Suspense>*/}
 
-            {loading && <Loader />}
+            {/*{loading && <Loader />}*/}
             {merchants ? (
                 <>
                 {/*{merchants}*/}
                     {/*<TableRow />*/}
                     <BodyRow obj={obj} />
                 </>
-                ) : loading ? null : (
+                ) : /*loading ? null : (*/
                 'There is no merchant data available'
-            )}
+           /* )*/}
 
             <br/>
             <br/>
 
-            {/*<AddUser active={modalActive} setActive={setModalActive} >*/}
+            <AddUser active={modalActive} setActive={setModalActive} />
 
                 {/*/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa minus nulla qui unde. Amet at consequuntur enim eos iusto, libero nemo nulla officiis porro quis quo rerum ullam vel.100</p>*!/*/}
 

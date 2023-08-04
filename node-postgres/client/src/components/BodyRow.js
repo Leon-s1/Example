@@ -10,7 +10,6 @@ const BodyRow = ({obj}) => {
                 {headTable.map((element, index) => {
                     return (
                         <table>
-
                                 <tr>
                                     <td key={index}>{element}</td>
                                 </tr>
