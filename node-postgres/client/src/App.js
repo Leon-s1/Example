@@ -13,7 +13,8 @@ function App() {
        let table = document.getElementById('table');
     // let arr = Array.from(merchants);
     const obj = JSON.parse(merchants);
-    // const headTable = ["index", "id", "Имя", "Email"];
+    // const headTable = ["index", "id", "Имя", "Email"];ттn
+
 
     useEffect((obj) => {
         getMerchant();

@@ -20,13 +20,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:task1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,16 +88,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Example\sts\routes" />
+      <recent name="C:\Example\sts\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Example\node-postgres\client\src" />
       <recent name="D:\Example\node-postgres\server" />
       <recent name="D:\Example\node-postgres\client" />
       <recent name="D:\Example\node-postgres\react-postgres\src" />
       <recent name="D:\Example\node-postgres\react-postgres\src\arkhiv" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Example\sts\routes" />
-      <recent name="C:\Example\sts\views" />
     </key>
   </component>
   <component name="RestClientSettings">
