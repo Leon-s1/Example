@@ -19,14 +19,14 @@ function App() {
 
     useEffect((obj) => {
 
-        getMerchant();
-        <BodyRow obj={obj} />
+        // getMerchant();
+        // <BodyRow obj={obj} />
 
-        // setTimeout(() => {
-        //     getMerchant();
-        //     <BodyRow obj={obj} />
-        //     setLoading(false)
-        // }, 2000)
+        setTimeout(() => {
+            getMerchant();
+            <BodyRow obj={obj} />
+            setLoading(false)
+        }, 2000)
 
 
         // let arr = toparseJson();
@@ -117,16 +117,16 @@ function App() {
             {/*    <AddUser active={modalActive} setActive={setModalActive} />*/}
             {/*</React.Suspense>*/}
 
-            {/*{loading && <Loader />}*/}
+            {loading && <Loader />}
             {merchants ? (
                 <>
                 {/*{merchants}*/}
                     {/*<TableRow />*/}
                     <BodyRow obj={obj} />
                 </>
-                ) : /*loading ? null : (*/
+                ) : loading ? null : (
                 'There is no merchant data available'
-           /* )*/}
+            )}
 
             <br/>
             <br/>
