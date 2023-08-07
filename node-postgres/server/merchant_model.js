@@ -34,7 +34,7 @@ const createMerchant = (body) => {
             if (error) {
                 reject (error)
             }
-            resolve(`A new merchant has been added added: ${JSON.stringify(results.rows[0])}`)
+            resolve(`A new merchant has been added : ${JSON.stringify(results.rows[0])}`)
         })
     })
 }
@@ -55,15 +55,15 @@ const deleteMerchant = (merchantId) => {
 const updateMerchant = (body) => {
     return new Promise(function (resolve, reject) {
         // const id = parseInt(merchantId)
-        const { index, name, email } = body
+        const { id, name, email } = body
         // pool.query('INSERT INTO merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
         // pool.query('UPDATE merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
-        pool.query('UPDATE merchants SET name = $2, email = $3 WHERE index = $1', [index, name, email], (error, results) => {
+        pool.query('UPDATE merchants SET name = $2, email = $3 WHERE id = $1', [id, name, email], (error, results) => {
             if (error) {
                 reject(error)
             }
             // resolve(`Merchant has been update: ${JSON.stringify(results.rows[0])}`)
-            resolve(`Merchant updated with INDEX: ${index}, changed name to ${name}.`)
+            resolve(`Merchant updated with INDEX: ${id}, changed name to ${name}.`)
         })
     })
 }

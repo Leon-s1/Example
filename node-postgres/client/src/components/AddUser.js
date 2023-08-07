@@ -3,7 +3,7 @@ import "./modal.css"
 // import {getMerchant} from "../App";
 
 
-const AddUser = ({active, setActive}) => {
+const AddUser = ({active, setActive, method}) => {
     const [merchants, setMerchants] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -17,16 +17,6 @@ const AddUser = ({active, setActive}) => {
 
         useEffect(() => {
             getMerchant();
-            // let arr = toparseJson();
-
-            // console.log(merchants);
-            // console.log(typeof (merchants));
-            // console.log(typeof (obj));
-            // console.log(obj);
-            // console.log({AddUser})
-            // console.log(name, email)
-
-
         }, []);
 
         function getMerchant() {
