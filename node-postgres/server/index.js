@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
         })
 })
 
-app.post('/merchants', (req, res) => {
+app.post('/users', (req, res) => {
     merchant_model.createMerchant(req.body)
         .then(response => {
             res.status(200).send(response);
@@ -45,7 +45,7 @@ app.post('/merchants', (req, res) => {
         })
 })
 
-app.delete('/merchants/:id', (req, res) => {
+app.delete('/users/:id', (req, res) => {
     merchant_model.deleteMerchant(req.params.id)
         .then(response => {
             res.status(200).send(response);
@@ -55,7 +55,7 @@ app.delete('/merchants/:id', (req, res) => {
         })
 })
 
-app.put('/merchants/:id', (req, res) => {
+app.put('/users/:id', (req, res) => {
     // merchant_model.updateMerchant(req.params.id, req.body)
     merchant_model.updateMerchant(req.body)
         .then(response => {

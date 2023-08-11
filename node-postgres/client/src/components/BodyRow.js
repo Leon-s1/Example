@@ -1,7 +1,7 @@
 import React from "react";
 
 const BodyRow = ({obj}) => {
-    const headTable = ["index", "id", "Имя", "Email"];
+    const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Мобильный тел.", "Email", "Skype"];
     return (
     <>
         <div>
@@ -9,12 +9,12 @@ const BodyRow = ({obj}) => {
             <div className="headTable">
                 {headTable.map((element, index) => {
                     return (
-                        <table>
-                                <tr>
+                        // <table>
+                        //         <tr>
                                     <td key={index}>{element}</td>
-                                </tr>
+                                // </tr>
 
-                        </table>
+                        // </table>
                     )
                 })
                 }
@@ -26,16 +26,20 @@ const BodyRow = ({obj}) => {
     <div>
         {Object.values(obj).map((value, index) => {
                 return (
-                            <table>
 
+                            // <table>
                                     <tr>
                                         <td key={index}>{index}</td>
                                         <td>{value.id}</td>
-                                        <td>{value.name}</td>
+                                        <td>{value.fio}</td>
+                                        <td>{value.position}</td>
+                                        <td>{value.int_phone}</td>
+                                        <td>{value.mobile}</td>
                                         <td>{value.email}</td>
+                                        <td>{value.skype}</td>
                                     </tr>
 
-                            </table>
+                            // </table>
                 );
             })}
         </div>

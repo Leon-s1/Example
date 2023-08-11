@@ -7,35 +7,21 @@ import AddUser from "./components/AddUser";
 import Loader from "./Loader";
 
 function App() {
-    const [merchants, setMerchants] = useState(false);
+    const [users, setUsers] = useState(false);
     const [modalActive, setModalActive] = useState(false);
     const [loading, setLoading] = React.useState(true)
     // let Students = [],
     //     submitbtn = document.querySelector('#submit'),
-       let table = document.getElementById('table');
+    //    let table = document.getElementById('table');
     // let arr = Array.from(merchants);
-    const obj = JSON.parse(merchants);
+    const obj = JSON.parse(users);
     // const headTable = ["index", "id", "Имя", "Email"];
 
     useEffect((obj) => {
-
-        // getMerchant();
-        // <BodyRow obj={obj} />
-
         setTimeout(() => {
             getMerchant();
-            <BodyRow obj={obj} />
             setLoading(false)
         }, 2000)
-
-
-        // let arr = toparseJson();
-
-        // console.log(merchants);
-        // console.log(typeof (merchants));
-        // console.log(typeof (obj));
-        // console.log(obj);
-        // console.log({AddUser})
     }, []);
 
     function getMerchant() {
@@ -44,14 +30,14 @@ function App() {
                 return response.text();
             })
             .then(data => {
-                    setMerchants(data);
+                    setUsers(data);
                 // setModalActive(false)
             });
     }
 
     function createMerchant() {
         // event.preventDefault()
-        let name = prompt('Enter merchant name');
+        let fio = prompt('Enter merchant fio');
         let email = prompt('Enter merchant email');
         // let name = name;
         // let email = email;
@@ -60,7 +46,7 @@ function App() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({name, email}),
+            body: JSON.stringify({fio, email}),
             // body: JSON.stringify({event}),
 
         })
@@ -75,8 +61,8 @@ function App() {
     }
 
     function deleteMerchant() {
-        let id = prompt('Enter merchant id');
-        fetch(`http://localhost:3001/merchants/${id}`, {
+        let id = prompt('Enter user id');
+        fetch(`http://localhost:3001/users/${id}`, {
             method: 'DELETE',
         })
             .then(response => {
@@ -119,7 +105,7 @@ function App() {
             {/*</React.Suspense>*/}
 
             {loading && <Loader />}
-            {merchants ? (
+            {users ? (
                 <>
                      <BodyRow obj={obj} />
                 </>

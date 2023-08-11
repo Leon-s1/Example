@@ -3,7 +3,7 @@ const Pool = require('pg').Pool
 const pool = new Pool({
     database: 'my_database',
     user: 'my_user',
-    password: 'root',
+    password: 'Kjubntx12',
     port: 5432,
     host: 'localhost',
     // connectionTimeoutMillis: 2000,
@@ -15,7 +15,8 @@ const pool = new Pool({
 
 const getMerchants = () => {
     return new Promise(function(resolve, reject) {
-        pool.query('SELECT * FROM merchants ORDER BY id ASC', (error, results) => {
+        // pool.query('SELECT * FROM users', (error, results) => {
+        pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
         // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
            if (error) {
                 reject(error)
@@ -28,13 +29,13 @@ const getMerchants = () => {
 
 const createMerchant = (body) => {
     return new Promise(function (resolve, reject) {
-        const { name, email } = body
+        const { fio, position, int_phone, mobile, email, skype} = body
 
-        pool.query('INSERT INTO merchants (name, email) VALUES ($1, $2) RETURNING *', [name, email], (error, results) => {
+        pool.query('INSERT INTO users (fio, position, int_phone, mobile, email, skype) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *', [fio, position, int_phone, mobile, email, skype], (error, results) => {
             if (error) {
                 reject (error)
             }
-            resolve(`A new merchant has been added : ${JSON.stringify(results.rows[0])}`)
+            // resolve(`A new merchant has been added : ${JSON.stringify(results.rows[0])}`)
         })
     })
 }
@@ -43,7 +44,7 @@ const deleteMerchant = (merchantId) => {
     return new Promise(function (resolve, reject) {
         const id = parseInt(merchantId)
 
-        pool.query('DELETE FROM merchants WHERE id = $1', [id], (error, results) => {
+        pool.query('DELETE FROM users WHERE id = $1', [id], (error, results) => {
             if (error) {
                 reject(error)
             }
@@ -58,7 +59,7 @@ const updateMerchant = (body) => {
         const { id, name, email } = body
         // pool.query('INSERT INTO merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
         // pool.query('UPDATE merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
-        pool.query('UPDATE merchants SET name = $2, email = $3 WHERE id = $1', [id, name, email], (error, results) => {
+        pool.query('UPDATE users SET name = $2, email = $3 WHERE id = $1', [id, name, email], (error, results) => {
             if (error) {
                 reject(error)
             }
