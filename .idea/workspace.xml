@@ -27,13 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1197,13 +1194,6 @@
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
     </task>
-    <task id="LOCAL-00050" summary="add new Table Order, OrderItem">
-      <created>1674789345151</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1674789345153</updated>
-    </task>
     <task id="LOCAL-00051" summary="add new Route, Controllers&lt; Model table Order">
       <created>1675224005779</created>
       <option name="number" value="00051" />
@@ -1540,7 +1530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691397584762</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать.">
+      <created>1691750498865</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1691750498865</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1593,7 +1590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавили функции для работы с характеристиками в компонент catalogAPI.js" />
     <MESSAGE value="Добавили компонент UpdateProperties.js" />
     <MESSAGE value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
     <MESSAGE value="Редактируем компонент App" />
@@ -1618,7 +1614,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Рабочий вариант c Лоадером" />
     <MESSAGE value="Рабочий вариант. fix update merchant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рабочий вариант. fix update merchant" />
+    <MESSAGE value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
+    <option name="LAST_COMMIT_MESSAGE" value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1637,10 +1634,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691397607028">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691750512177">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691397607028" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691750512177" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1691636623268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

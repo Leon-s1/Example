@@ -112,7 +112,7 @@ const AddUser = ({active, setActive}) => {
                                     onChange={(e) => setPosition(e.target.value)}
                                 />
                             </label>
-                            <label>Внутренний номер:
+                            <label>Вн.номер:
                                 <input
                                     type="text"
                                     name="int_phone"
@@ -120,7 +120,7 @@ const AddUser = ({active, setActive}) => {
                                     onChange={(e) => setInt_phone(e.target.value)}
                                 />
                             </label>
-                            <label>Мобильный телефон:
+                            <label>Моб.телефон:
                                 <input
                                     type="text"
                                     name="mobile"
@@ -136,7 +136,7 @@ const AddUser = ({active, setActive}) => {
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
                             </label>
-                            <label>Skype
+                            <label>Skype:
                                 <input
                                     type="text"
                                     name="skype"

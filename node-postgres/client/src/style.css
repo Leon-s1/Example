@@ -1,5 +1,5 @@
 .list {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 button {
@@ -97,15 +97,17 @@ div p {
 /*стили лоадера с сайта loading.io*/
 .lds-dual-ring {
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
 }
 .lds-dual-ring:after {
     content: ' ';
     display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
+    /*width: 64px;*/
+    width: 150px;
+    /*height: 64px;*/
+    height: 150px;
+    margin: 18px;
     border-radius: 50%;
     border: 6px solid blue;
     border-color: blue transparent blue transparent;

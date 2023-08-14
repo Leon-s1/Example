@@ -22,10 +22,11 @@
 }
 form {
     /*width: auto;*/
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 form input {
     width:100%;
+
 }
 
 .modal__content {
