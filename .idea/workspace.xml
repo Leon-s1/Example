@@ -20,15 +20,17 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:task1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Website" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.18.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node-postgres/client/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -89,6 +91,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Example\node-postgres\client\src" />
       <recent name="C:\Example\sts\routes" />
       <recent name="C:\Example\sts\views" />
     </key>
@@ -1186,49 +1189,10 @@
       <workItem from="1678851552014" duration="2926000" />
       <workItem from="1686188331117" duration="1446000" />
       <workItem from="1686706913804" duration="132413000" />
-      <workItem from="1687926097583" duration="53459000" />
-    </task>
-    <task id="LOCAL-00045" summary="add publicRoutes product, basket">
-      <created>1674534480104</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1674534480104</updated>
-    </task>
-    <task id="LOCAL-00046" summary="edit onClick">
-      <created>1674535104554</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1674535104554</updated>
-    </task>
-    <task id="LOCAL-00047" summary="edit page Product">
-      <created>1674622440081</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1674622440081</updated>
-    </task>
-    <task id="LOCAL-00048" summary="edit page Product">
-      <created>1674701506147</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1674701506147</updated>
-    </task>
-    <task id="LOCAL-00049" summary="edit client Basket">
-      <created>1674708511644</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1674708511644</updated>
-    </task>
-    <task id="LOCAL-00050" summary="add new Table Order, OrderItem">
-      <created>1674789345151</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1674789345153</updated>
+      <workItem from="1687926097583" duration="56790000" />
+      <workItem from="1690247904392" duration="9000" />
+      <workItem from="1690961022919" duration="5909000" />
+      <workItem from="1691114710753" duration="12493000" />
     </task>
     <task id="LOCAL-00051" summary="add new Route, Controllers&lt; Model table Order">
       <created>1675224005779</created>
@@ -1531,7 +1495,49 @@
       <option name="project" value="LOCAL" />
       <updated>1688530130350</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Рабочий вариант, добавляет новые данные через модальное окно и обновляет страницу.">
+      <created>1688552357573</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1688552357573</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Пробный вариант добавить Лоадер в справочник.">
+      <created>1688637641875</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1688637641875</updated>
+    </task>
+    <task id="LOCAL-00096" summary="commit">
+      <created>1691135916446</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1691135916446</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Рабочий вариант c Лоадером">
+      <created>1691379254985</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1691379254985</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Рабочий вариант. fix update merchant">
+      <created>1691397584762</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1691397584762</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать.">
+      <created>1691750498865</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1691750498865</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1584,11 +1590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Компонент списка товаров" />
-    <MESSAGE value="Компонент добавление товара" />
-    <MESSAGE value="Компонент редактирование товара" />
-    <MESSAGE value="Компонент характеристики товара" />
-    <MESSAGE value="Добавили функции для работы с характеристиками в компонент catalogAPI.js" />
     <MESSAGE value="Добавили компонент UpdateProperties.js" />
     <MESSAGE value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
     <MESSAGE value="Редактируем компонент App" />
@@ -1603,13 +1604,18 @@
     <MESSAGE value="косяк был в закрывающей скобочке } handleClick = (id)&#10;сделал неправильный коммит" />
     <MESSAGE value="Редактирование телефонов" />
     <MESSAGE value="Редактирование контактов" />
-    <MESSAGE value="commit" />
     <MESSAGE value="add table display" />
     <MESSAGE value="update catalogs" />
     <MESSAGE value="Компонент AddUser добавляет данные в БД, но при отправке, форма не закрывается и таблица в браузере не обновляется." />
     <MESSAGE value="Добавил запись Кузьминых" />
     <MESSAGE value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
+    <MESSAGE value="Рабочий вариант, добавляет новые данные через модальное окно и обновляет страницу." />
+    <MESSAGE value="Пробный вариант добавить Лоадер в справочник." />
+    <MESSAGE value="commit" />
+    <MESSAGE value="Рабочий вариант c Лоадером" />
+    <MESSAGE value="Рабочий вариант. fix update merchant" />
+    <MESSAGE value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
+    <option name="LAST_COMMIT_MESSAGE" value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1628,10 +1634,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1688530141851">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691750512177">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1688530141851" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691750512177" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1691636623268">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691636623268" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1687512875731">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
