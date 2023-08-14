@@ -28,8 +28,6 @@
     <list default="true" id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="Добавление нового бренда и обновление состояния">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/modal.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Website" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1194,20 +1192,6 @@
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
     </task>
-    <task id="LOCAL-00051" summary="add new Route, Controllers&lt; Model table Order">
-      <created>1675224005779</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1675224005779</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Оформление заказ на клиенте">
-      <created>1675226474948</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1675226474948</updated>
-    </task>
     <task id="LOCAL-00053" summary="Добавляем маршруты для просмотр списка заказов и отдельного заказа.">
       <created>1675654488344</created>
       <option name="number" value="00053" />
@@ -1537,7 +1521,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691750498865</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Отредактировал Лоадер.">
+      <created>1691983047550</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1691983047550</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Отредактировал Лоадер.">
+      <created>1691986781106</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1691986781106</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1590,7 +1588,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавили компонент UpdateProperties.js" />
     <MESSAGE value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
     <MESSAGE value="Редактируем компонент App" />
     <MESSAGE value="Редактируем компонент App добавляем компонент Loader.js" />
@@ -1615,7 +1612,8 @@
     <MESSAGE value="Рабочий вариант c Лоадером" />
     <MESSAGE value="Рабочий вариант. fix update merchant" />
     <MESSAGE value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
-    <option name="LAST_COMMIT_MESSAGE" value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
+    <MESSAGE value="Отредактировал Лоадер." />
+    <option name="LAST_COMMIT_MESSAGE" value="Отредактировал Лоадер." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1634,10 +1632,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691750512177">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691983083360">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691750512177" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691983083360" />
+    <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691986704646" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1691636623268">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
