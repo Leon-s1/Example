@@ -12,6 +12,7 @@
     opacity: 0;
     pointer-events: none;
     transition: 0.5s;
+    box-sizing: border-box;
 }
 
 .modal.active {
@@ -19,23 +20,45 @@
     pointer-events: all;
     /*transform: scale(1);*/
 }
+form {
+    /*width: auto;*/
+    box-sizing: content-box;
+}
+form input {
+    width:100%;
+
+}
 
 .modal__content {
     padding: 20px;
     border-radius: 12px;
     background-color: white;
-    /*height: 400px;*/
-    /*width: 400px;*/
     transform: scale(0.5);
     transition: 0.4s all;
-    height: 50vh;
-    width: 50vw;
+    height: 32vh;
+    width: 30vw;
+    /*box-sizing: border-box;*/
     /*display: flex;*/
 }
 
 .modal__content.active {
     transform: scale(1);
 }
-form label {
+label {
+
+    width: auto;
     display: flex;
+    /*justify-content: space-between;*/
+    margin-bottom: 20px;
+}
+/*form label {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+.btn-block {
+    /*margin-top: 20px;*/
+    width: 50%;
+    float: right;
+    /*display: ;*/
+    /*justify-content: flex-start;*/
 }

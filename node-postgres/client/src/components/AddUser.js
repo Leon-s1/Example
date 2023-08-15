@@ -4,29 +4,17 @@ import "./modal.css"
 
 
 const AddUser = ({active, setActive}) => {
-    const [merchants, setMerchants] = useState(false);
-    const [name, setName] = useState('');
+    const [users, setUsers] = useState(false);
+    const [fio, setFio] = useState('');
+    const [position, setPosition] = useState('');
+    const [int_phone, setInt_phone] = useState('');
+    const [mobile, setMobile] = useState('');
     const [email, setEmail] = useState('');
-    // function addUser() {
-    //
-    //     let newUser = {
-    //         name: name,
-    //         email: email
-    //     };
-    //     const obj = JSON.parse(merchants);
+    const [skype, setSkype] = useState('');
+
 
         useEffect(() => {
             getMerchant();
-            // let arr = toparseJson();
-
-            // console.log(merchants);
-            // console.log(typeof (merchants));
-            // console.log(typeof (obj));
-            // console.log(obj);
-            // console.log({AddUser})
-            // console.log(name, email)
-
-
         }, []);
 
         function getMerchant() {
@@ -35,24 +23,17 @@ const AddUser = ({active, setActive}) => {
                     return response.text();
                 })
                 .then(data => {
-                    setMerchants(data);
+                    setUsers(data);
                 });
         }
 
         function createMerchant(event) {
-            // event.preventDefault();
-            // console.log('name:', name);
-            // console.log('email:', email);
-            // let name = prompt('Enter merchant name');
-            // let name = name;
-            // let email = prompt('Enter merchant email');
-            // let email = email;
-            fetch('http://localhost:3001/merchants', {
+            fetch('http://localhost:3001/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({name, email}),
+                body: JSON.stringify({fio, position, int_phone, mobile, email, skype}),
             })
                 .then(response => {
                     return response.text();
@@ -63,7 +44,7 @@ const AddUser = ({active, setActive}) => {
                     getMerchant();
 
                 });
-            console.log(name, email);
+            console.log(fio, email);
         }
 
         // function deleteMerchant() {
@@ -103,7 +84,7 @@ const AddUser = ({active, setActive}) => {
 
     function handleSubmit(e) {
         e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
-        console.log(name, email);
+        console.log(fio, email);
     }
 
         return (
@@ -113,19 +94,38 @@ const AddUser = ({active, setActive}) => {
                     {/*{children}*/}
                     <div className='modal-form'>
                         <form action='' onSubmit={createMerchant}>
-                            {/*<label>id:*/}
-                            {/*    <input*/}
-                            {/*        type="text"*/}
-                            {/*        name="id"*/}
-                            {/*        value={}*/}
-                            {/*    />*/}
-                            {/*</label>*/}
-                            <label>Имя:
+
+                           <div>
+                            <label>ФИО:
                                 <input
                                     type="text"
-                                    name="name"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
+                                    name="fio"
+                                    value={fio}
+                                    onChange={(e) => setFio(e.target.value)}
+                                />
+                            </label>
+                            <label>Должность:
+                                <input
+                                    type="text"
+                                    name="position"
+                                    value={position}
+                                    onChange={(e) => setPosition(e.target.value)}
+                                />
+                            </label>
+                            <label>Вн.номер:
+                                <input
+                                    type="text"
+                                    name="int_phone"
+                                    value={int_phone}
+                                    onChange={(e) => setInt_phone(e.target.value)}
+                                />
+                            </label>
+                            <label>Моб.телефон:
+                                <input
+                                    type="text"
+                                    name="mobile"
+                                    value={mobile}
+                                    onChange={(e) => setMobile(e.target.value)}
                                 />
                             </label>
                             <label>Email:
@@ -136,7 +136,18 @@ const AddUser = ({active, setActive}) => {
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
                             </label>
-                            <input type="submit" value="Отправить"/>
+                            <label>Skype:
+                                <input
+                                    type="text"
+                                    name="skype"
+                                    value={skype}
+                                    onChange={(e) => setSkype(e.target.value)}
+                                />
+                            </label>
+                           </div>
+                            <div className='btn-block'>
+                                <input type="submit" value="Добавить"/>
+                            </div>
                         </form>
                     </div>
 
