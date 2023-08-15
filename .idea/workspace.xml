@@ -40,6 +40,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1203,13 +1206,6 @@
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
     </task>
-    <task id="LOCAL-00053" summary="Добавляем маршруты для просмотр списка заказов и отдельного заказа.">
-      <created>1675654488344</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1675654488344</updated>
-    </task>
     <task id="LOCAL-00054" summary="Редактирование даты в заказе">
       <created>1675744245629</created>
       <option name="number" value="00054" />
@@ -1546,7 +1542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691986781106</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева.">
+      <created>1692085793268</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1692085793268</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1578,7 +1581,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="task1" />
                       </list>
                     </value>
                   </entry>
@@ -1599,7 +1602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
     <MESSAGE value="Редактируем компонент App" />
     <MESSAGE value="Редактируем компонент App добавляем компонент Loader.js" />
     <MESSAGE value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
@@ -1624,7 +1626,8 @@
     <MESSAGE value="Рабочий вариант. fix update merchant" />
     <MESSAGE value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
     <MESSAGE value="Отредактировал Лоадер." />
-    <option name="LAST_COMMIT_MESSAGE" value="Отредактировал Лоадер." />
+    <MESSAGE value="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева." />
+    <option name="LAST_COMMIT_MESSAGE" value="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1639,10 +1642,18 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687233360515" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1692085799572">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
     <state x="2816" y="237" key="SettingsEditor" timestamp="1686882700823">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1692085799572">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
     <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691983083360">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

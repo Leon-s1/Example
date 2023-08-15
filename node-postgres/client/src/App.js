@@ -35,30 +35,30 @@ function App() {
             });
     }
 
-    function createMerchant() {
-        // event.preventDefault()
-        let fio = prompt('Enter merchant fio');
-        let email = prompt('Enter merchant email');
-        // let name = name;
-        // let email = email;
-        fetch('http://localhost:3001/merchants', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({fio, email}),
-            // body: JSON.stringify({event}),
-
-        })
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                alert(data);
-                // setModalActive(false)
-                getMerchant();
-            });
-    }
+    // function createMerchant() {
+    //     // event.preventDefault()
+    //     let fio = prompt('Enter merchant fio');
+    //     let email = prompt('Enter merchant email');
+    //     // let name = name;
+    //     // let email = email;
+    //     fetch('http://localhost:3001/merchants', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({fio, email}),
+    //         // body: JSON.stringify({event}),
+    //
+    //     })
+    //         .then(response => {
+    //             return response.text();
+    //         })
+    //         .then(data => {
+    //             alert(data);
+    //             // setModalActive(false)
+    //             getMerchant();
+    //         });
+    // }
 
     function deleteMerchant() {
         let id = prompt('Enter user id');
