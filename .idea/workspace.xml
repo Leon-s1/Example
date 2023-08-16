@@ -33,14 +33,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:task1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1205,13 +1204,6 @@
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
     </task>
-    <task id="LOCAL-00055" summary="Список всех заказов в панели администратора">
-      <created>1675764767228</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1675764767228</updated>
-    </task>
     <task id="LOCAL-00056" summary="Список категорий">
       <created>1675825838579</created>
       <option name="number" value="00056" />
@@ -1548,7 +1540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692094841985</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться.">
+      <created>1692157297138</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1692157297138</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1580,7 +1579,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="task1" />
                       </list>
                     </value>
                   </entry>
@@ -1601,7 +1600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактируем компонент App добавляем компонент Loader.js" />
     <MESSAGE value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
     <MESSAGE value="Редактируем BasketList.js" />
     <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
@@ -1626,7 +1624,8 @@
     <MESSAGE value="Отредактировал Лоадер." />
     <MESSAGE value="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева." />
     <MESSAGE value="Выровнял заголовок таблицы." />
-    <option name="LAST_COMMIT_MESSAGE" value="Выровнял заголовок таблицы." />
+    <MESSAGE value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">

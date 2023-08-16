@@ -13,22 +13,34 @@ html, body{
 table {
     width: 100%;
     border: 1px solid black;
-    border-bottom: none;
+    border-top: none;
     border-collapse: collapse;
     font:
             16px "Lucida Grande",
             "Helvetica",
             "Arial",
             sans-serif;
+    /*overflow-wrap: break-word;*/
     /*box-sizing: border-box;*/
     text-align: center;
 }
 
 tr {
+    display: flex;
+    overflow-wrap: break-word;
+    align-items: stretch;
+    align-content: center;
     /*border-right: 1px solid black;*/
 }
 
 td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+/*align-content: center;*/
+    /*flex-wrap: wrap;*/
+    /**/
     /*border: 1px solid black;*/
     /*border-bottom: none;*/
     /*box-sizing: border-box;*/
@@ -45,7 +57,7 @@ thead {
 }
 th {
     background-color: #cce;
-    font-size: 16px;
+    /*font-size: 16px;*/
     /*box-sizing: border-box;*/
 
 }
@@ -102,11 +114,11 @@ tbody {
 
 }
 .fio {
-    width: 200px;
+    width: 180px;
     border-right: 1px solid black;
 }
 .position {
-    width: 350px;
+    width: 320px;
     border-right: 1px solid black;
 }
 .int_phone {
@@ -122,8 +134,14 @@ tbody {
     border-right: 1px solid black;
 }
 .skype {
-    width: 120px;
+    /*height: 20px;*/
+    display: flex;
+    width: 170px;
+    overflow-wrap: break-word;
+    /*width: 100%;*/
+
     /*border-right: 1px solid black;*/
+
 }
 
 
