@@ -6,21 +6,43 @@ const BodyRow = ({obj}) => {
     <>
         <div>
 
-            <div className="headTable">
-                {headTable.map((element, index) => {
-                    return (
-                        <table>
+            {/*<div className="headTable">*/}
+                {/*{headTable.map((element, index) => {*/}
+                {/*    return (*/}
+                {/*        <table>*/}
                                  {/*<colgroup span="8"></colgroup>*/}
                                  <thead>
                                      <tr>
-                                        <th key={index}>{element}</th>
+                                        <th className="index">index</th>
                                      </tr>
+                                     <tr>
+                                        <th className="id">id</th>
+                                     </tr>
+                                     <tr>
+                                        <th className="fio">ФИО</th>
+                                     </tr>
+                                     <tr>
+                                        <th className="position">Должность</th>
+                                     </tr>
+                                     <tr>
+                                        <th className="int_phone">Вн.</th>
+                                     </tr>
+                                     <tr>
+                                        <th className="mobile">Мобил</th>
+                                     </tr>
+                                     <tr>
+                                        <th className="email">Email</th>
+                                     </tr>
+                                     <tr>
+                                        <th className="skype">Skype</th>
+                                     </tr>
+
                                  </thead>
-                        </table>
-                    )
-                })
-                }
-            </div>
+                        {/*</table>*/}
+                    {/*)*/}
+                {/*})*/}
+                {/*}*/}
+            {/*</div>*/}
         </div>
 
 
@@ -33,14 +55,14 @@ const BodyRow = ({obj}) => {
 
                         <tbody>
                                     <tr>
-                                        <td key={index}>{index}</td>
-                                        <td>{value.id}</td>
-                                        <td>{value.fio}</td>
-                                        <td>{value.position}</td>
-                                        <td>{value.int_phone}</td>
-                                        <td>{value.mobile}</td>
-                                        <td>{value.email}</td>
-                                        <td>{value.skype}</td>
+                                        <td className="index" key={index}>{index}</td>
+                                        <td className="id">{value.id}</td>
+                                        <td className="fio">{value.fio}</td>
+                                        <td className="position">{value.position}</td>
+                                        <td className="int_phone">{value.int_phone}</td>
+                                        <td className="mobile">{value.mobile}</td>
+                                        <td className="email">{value.email}</td>
+                                        <td className="skype">{value.skype}</td>
                                     </tr>
                         </tbody>
 
