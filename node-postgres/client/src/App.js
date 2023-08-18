@@ -109,44 +109,44 @@ const App = observer(() => {
             <NavBar />
             <AppRouter/>
 
-            {/*<div className='list'>*/}
-            {/*    <br/>*/}
-            {/*<br/>*/}
-            {/*{loading && <Loader />}*/}
-            {/*{users ? (*/}
-            {/*    <>*/}
-            {/*        <div className="row">*/}
-            {/*            <ItemList/>*/}
-            {/*        </div>*/}
-            {/*        <br/>*/}
-            {/*         <BodyRow obj={obj} />*/}
-            {/*    </>*/}
-            {/*    ) : loading ? null : (*/}
-            {/*    'There is no merchant data available'*/}
-            {/*)}*/}
+            <div className='list'>
+                <br/>
+                <br/>
+                {loading && <Loader />}
+                {users ? (
+                    <>
+                        <div className="row">
+                            <ItemList/>
+                        </div>
+                        <br/>
+                        <BodyRow obj={obj} />
+                    </>
+                ) : loading ? null : (
+                    'There is no merchant data available'
+                )}
 
-            {/*<br/>*/}
-            {/*<br/>*/}
-
-            {/*<AddUser active={modalActive} setActive={setModalActive} />*/}
+                <AddUser active={modalActive} setActive={setModalActive} />
 
 
-            {/*<br/>*/}
-            {/*<button onClick={() => setModalActive(true)}>Add merchant</button>*/}
-            {/*<br/>*/}
-            {/*/!*<button onClick={createMerchant}>Add merchant</button>*!/*/}
-            {/*<br/>*/}
-            {/*<button onClick={deleteMerchant}>Delete merchant</button>*/}
-            {/*<br/>*/}
-            {/*<button onClick={updateMerchant}>Update merchant</button>*/}
+                <br/>
+                <button onClick={() => setModalActive(true)}>Add merchant</button>
+                <br/>
+                {/*<button onClick={createMerchant}>Add merchant</button>*/}
+                <br/>
+                <button onClick={deleteMerchant}>Delete merchant</button>
+                <br/>
+                <button onClick={updateMerchant}>Update merchant</button>
 
-            {/*<button onClick={getTable(table, merchants)}>getTable</button>*/}
 
-            {/*</div>*/}
+
+            </div>
+
         </BrowserRouter>
 
 
-    );
+
+
+    )
 })
 export default App
 

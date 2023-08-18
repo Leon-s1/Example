@@ -26,30 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AppRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/NavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/leninskkuz1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/lenkuz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1213,14 +1191,7 @@
       <workItem from="1690247904392" duration="9000" />
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
-      <workItem from="1692238359520" duration="30152000" />
-    </task>
-    <task id="LOCAL-00057" summary="Добавление бренда">
-      <created>1675826292567</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1675826292567</updated>
+      <workItem from="1692238359520" duration="30922000" />
     </task>
     <task id="LOCAL-00058" summary="Добавление новой категории и обновление состояния">
       <created>1675826600839</created>
@@ -1558,7 +1529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692179022019</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки.">
+      <created>1692354011707</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1692354011707</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1611,7 +1589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактируем BasketList.js" />
     <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
     <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
     <MESSAGE value="Исправления" />
@@ -1636,7 +1613,8 @@
     <MESSAGE value="Выровнял заголовок таблицы." />
     <MESSAGE value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
     <MESSAGE value="До делать перенос строки в ячейке." />
-    <option name="LAST_COMMIT_MESSAGE" value="До делать перенос строки в ячейке." />
+    <MESSAGE value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
