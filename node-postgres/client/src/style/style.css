@@ -23,21 +23,26 @@ table {
     /*overflow-wrap: break-word;*/
     /*box-sizing: border-box;*/
     text-align: center;
+
 }
 
 tr {
-    display: flex;
-    overflow-wrap: break-word;
+    display: inline-flex;
+    /*overflow-wrap: break-word;*/
     align-items: stretch;
-    align-content: center;
+    /*align-content: center;*/
     /*border-right: 1px solid black;*/
+    vertical-align: text-bottom;
 }
 
 td {
-    display: flex;
-    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
     justify-content: center;
     overflow-wrap: break-word;
+    height: 40px;
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
 /*align-content: center;*/
     /*flex-wrap: wrap;*/
     /**/
@@ -135,15 +140,29 @@ tbody {
 }
 .skype {
     /*height: 20px;*/
-    display: flex;
+    /*display: flex;*/
     width: 170px;
-    overflow-wrap: break-word;
+
+    /*overflow-wrap: break-word;*/
     /*width: 100%;*/
 
     /*border-right: 1px solid black;*/
 
 }
-
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-around;
+    /*flex-direction: row;*/
+    /*flex-basis: 0;*/
+    /*flex-grow: 1;*/
+}
+.card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25em;
+}
 
 /*.bodyTable {*/
     /*display: flex;*/

@@ -1,7 +1,12 @@
 import React, {useState} from "react";
 import {getMerchant} from "../App.js";
 
+export function getImageUrl(town) {
+    return (
+        './'
+    )
 
+}
 
 // export function getMerchant() {
 //     fetch('http://localhost:3001')

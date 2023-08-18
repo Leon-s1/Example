@@ -15,19 +15,6 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
@@ -39,8 +26,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AppRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/NavBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/leninskkuz1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/lenkuz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +92,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.18.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node-postgres/client/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node-postgres/client/src/page" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -100,17 +109,18 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Example\node-postgres\client\src" />
-      <recent name="C:\Example\sts\routes" />
-      <recent name="C:\Example\sts\views" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Example\node-postgres\client\src" />
       <recent name="D:\Example\node-postgres\server" />
       <recent name="D:\Example\node-postgres\client" />
       <recent name="D:\Example\node-postgres\react-postgres\src" />
       <recent name="D:\Example\node-postgres\react-postgres\src\arkhiv" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Example\node-postgres\client\src\page" />
+      <recent name="D:\Example\node-postgres\client\src" />
+      <recent name="C:\Example\sts\routes" />
+      <recent name="C:\Example\sts\views" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1154,7 +1164,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="" />
+      <changelist id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="" />
       <created>1633965979510</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1203,13 +1213,7 @@
       <workItem from="1690247904392" duration="9000" />
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
-    </task>
-    <task id="LOCAL-00056" summary="Список категорий">
-      <created>1675825838579</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1675825838579</updated>
+      <workItem from="1692238359520" duration="30152000" />
     </task>
     <task id="LOCAL-00057" summary="Добавление бренда">
       <created>1675826292567</created>
@@ -1547,7 +1551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692157297138</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="До делать перенос строки в ячейке.">
+      <created>1692179022019</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1692179022019</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1600,7 +1611,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
     <MESSAGE value="Редактируем BasketList.js" />
     <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
     <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
@@ -1625,7 +1635,8 @@
     <MESSAGE value="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева." />
     <MESSAGE value="Выровнял заголовок таблицы." />
     <MESSAGE value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
+    <MESSAGE value="До делать перенос строки в ячейке." />
+    <option name="LAST_COMMIT_MESSAGE" value="До делать перенос строки в ячейке." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1636,6 +1647,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="3114" y="439" key="#Usage_Scope/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700026" />
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1692243906561">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692243906561" />
     <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1687233360515">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -1664,10 +1679,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691636623268" />
-    <state x="2536" y="240" key="run.anything.popup" timestamp="1687512875731">
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1692349116280">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687512875731" />
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692349116280" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1687161280824">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
