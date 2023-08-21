@@ -1,0 +1,242 @@
+.list {
+    width: 1200px;
+    margin: 0 auto;
+}
+button {
+    margin-bottom: 10px;
+}
+
+html, body{
+    margin: 0;
+    padding:0;
+}
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    border-collapse: collapse;
+    font:
+            16px "Lucida Grande",
+            "Helvetica",
+            "Arial",
+            sans-serif;
+    /*overflow-wrap: break-word;*/
+    /*box-sizing: border-box;*/
+    text-align: center;
+
+}
+
+tr {
+    display: inline-flex;
+    /*overflow-wrap: break-word;*/
+    align-items: stretch;
+    /*align-content: center;*/
+    /*border-right: 1px solid black;*/
+    vertical-align: text-bottom;
+}
+
+td {
+    /*display: flex;*/
+    /*align-items: center;*/
+    justify-content: center;
+    overflow-wrap: break-word;
+    height: 40px;
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+/*align-content: center;*/
+    /*flex-wrap: wrap;*/
+    /**/
+    /*border: 1px solid black;*/
+    /*border-bottom: none;*/
+    /*box-sizing: border-box;*/
+    /*border-collapse: collapse;*/
+    /*padding: 2px 8px 0;*/
+    /*text-align: center;*/
+}
+
+thead {
+    display: flex;
+    border: 1px solid black;
+    border-bottom: none;
+
+}
+th {
+    background-color: #cce;
+    /*font-size: 16px;*/
+    /*box-sizing: border-box;*/
+
+}
+
+
+/*tr {*/
+/*    !*width: auto;*!*/
+/*    display: flex;*/
+/*    !*justify-content: space-between;*!*/
+/*    text-align: center; !* Выравнивание по левому краю*!*/
+/*    !*flex-wrap: nowrap;*!*/
+
+/*}*/
+/*th {*/
+/*    text-align: center; !* Выравнивание по левому краю *!*/
+/*    background: #ccc; !* Цвет фона ячеек *!*/
+/*    padding: 5px; !* Поля вокруг содержимого ячеек *!*/
+/*    border: 1px solid black; !* Граница вокруг ячеек *!*/
+/*}*/
+/*td {*/
+/*    width: 30%;*/
+/*    padding: 5px; !* Поля вокруг содержимого ячеек *!*/
+/*    border: 1px solid black; !* Граница вокруг ячеек *!*/
+/*    text-align: center; !* Выравнивание по левому краю *!*/
+/*}*/
+
+.headTable {
+    /*width: auto;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*text-align: left; !* Выравнивание по левому краю*!*/
+    /*flex-wrap: nowrap;*/
+
+    /*border: 2px black solid;*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 1px;*/
+}
+tbody {
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*background-color: #cce;*/
+    /*font-size: 18px;*/
+    /*border-bottom: 2px solid #999;*/
+}
+.index {
+    width: 45px;
+    border-right: 1px solid black;
+
+}
+.id {
+    width: 45px;
+    border-right: 1px solid black;
+
+}
+.fio {
+    width: 180px;
+    border-right: 1px solid black;
+}
+.position {
+    width: 320px;
+    border-right: 1px solid black;
+}
+.int_phone {
+    width: 56px;
+    border-right: 1px solid black;
+}
+.mobile {
+    width: 110px;
+    border-right: 1px solid black;
+}
+.email {
+    width: 250px;
+    border-right: 1px solid black;
+}
+.skype {
+    /*height: 20px;*/
+    /*display: flex;*/
+    width: 170px;
+
+    /*overflow-wrap: break-word;*/
+    /*width: 100%;*/
+
+    /*border-right: 1px solid black;*/
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-around;
+    /*flex-direction: row;*/
+    /*flex-basis: 0;*/
+    /*flex-grow: 1;*/
+}
+.card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25em;
+}
+
+/*.bodyTable {*/
+    /*display: flex;*/
+    /*border: 2px black solid;*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 0px;*/
+/*}*/
+/*div p {*/
+
+/*    width: 800px;*/
+/*}*/
+/*.wrapper{*/
+/*    width:100%;*/
+/*    text-align:center;*/
+/*    margin:0 auto;*/
+/*}*/
+
+/*!* DivTable.com *!*/
+/*.divTable{*/
+/*    display: table;*/
+/*    width: 100%;*/
+/*}*/
+/*.divTableRow {*/
+/*    display: table-row;*/
+/*}*/
+/*.divTableCell, .divTableHead {*/
+/*    border: 1px solid #999999;*/
+/*    display: table-cell;*/
+/*    padding: 3px 10px;*/
+/*}*/
+/*.divTableHeading {*/
+/*    background-color: #EEE;*/
+/*    display: table-header-group;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.divTableFooting {*/
+/*    background-color: #EEE;*/
+/*    display: table-footer-group;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.divTableBody {*/
+/*    display: table-row-group;*/
+/*}*/
+
+
+/*стили лоадера с сайта loading.io*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    /*width: 64px;*/
+    width: 120px;
+    /*height: 64px;*/
+    height: 120px;
+    margin: 18px;
+    border-radius: 50%;
+    border: 6px solid blue;
+    border-color: blue transparent blue transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*form label {*/
+/*    display: flex;*/
+/*}*/
