@@ -15,31 +15,19 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:task1" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.18.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node-postgres/client/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node-postgres/client/src/page" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -107,6 +95,7 @@
       <recent name="D:\Example\node-postgres\react-postgres\src\arkhiv" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Example\node-postgres\client\src\page" />
       <recent name="D:\Example\node-postgres\client\src" />
       <recent name="C:\Example\sts\routes" />
       <recent name="C:\Example\sts\views" />
@@ -1153,7 +1142,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="" />
+      <changelist id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="" />
       <created>1633965979510</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1202,41 +1191,7 @@
       <workItem from="1690247904392" duration="9000" />
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
-    </task>
-    <task id="LOCAL-00053" summary="Добавляем маршруты для просмотр списка заказов и отдельного заказа.">
-      <created>1675654488344</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1675654488344</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Редактирование даты в заказе">
-      <created>1675744245629</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1675744245630</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Список всех заказов в панели администратора">
-      <created>1675764767228</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1675764767228</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Список категорий">
-      <created>1675825838579</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1675825838579</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Добавление бренда">
-      <created>1675826292567</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1675826292567</updated>
+      <workItem from="1692238359520" duration="30922000" />
     </task>
     <task id="LOCAL-00058" summary="Добавление новой категории и обновление состояния">
       <created>1675826600839</created>
@@ -1546,7 +1501,42 @@
       <option name="project" value="LOCAL" />
       <updated>1691986781106</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева.">
+      <created>1692085793268</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1692085793268</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Выровнял заголовок таблицы.">
+      <created>1692094841985</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1692094841985</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться.">
+      <created>1692157297138</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1692157297138</updated>
+    </task>
+    <task id="LOCAL-00105" summary="До делать перенос строки в ячейке.">
+      <created>1692179022019</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1692179022019</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки.">
+      <created>1692354011707</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1692354011707</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1578,7 +1568,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="task1" />
                       </list>
                     </value>
                   </entry>
@@ -1599,11 +1589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
-    <MESSAGE value="Редактируем компонент App" />
-    <MESSAGE value="Редактируем компонент App добавляем компонент Loader.js" />
-    <MESSAGE value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
-    <MESSAGE value="Редактируем BasketList.js" />
     <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
     <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
     <MESSAGE value="Исправления" />
@@ -1624,7 +1609,12 @@
     <MESSAGE value="Рабочий вариант. fix update merchant" />
     <MESSAGE value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
     <MESSAGE value="Отредактировал Лоадер." />
-    <option name="LAST_COMMIT_MESSAGE" value="Отредактировал Лоадер." />
+    <MESSAGE value="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева." />
+    <MESSAGE value="Выровнял заголовок таблицы." />
+    <MESSAGE value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
+    <MESSAGE value="До делать перенос строки в ячейке." />
+    <MESSAGE value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1635,14 +1625,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="3114" y="439" key="#Usage_Scope/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700026" />
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1692243906561">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692243906561" />
     <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1687233360515">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687233360515" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1692085799572">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
     <state x="2816" y="237" key="SettingsEditor" timestamp="1686882700823">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1692085799572">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
     <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691983083360">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -1655,10 +1657,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691636623268" />
-    <state x="2536" y="240" key="run.anything.popup" timestamp="1687512875731">
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1692349116280">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687512875731" />
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692349116280" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1687161280824">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

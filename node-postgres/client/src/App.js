@@ -1,12 +1,19 @@
 import React, {useState, useEffect} from 'react';
-import './style.css';
+import '../src/style/style.css';
+import {BrowserRouter, useNavigate, Route, NavLink } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 // import {getMerchant, createMerchant, deleteMerchant, updateMerchant} from "./http/userAPI.js";
 import TableRow from "./components/TableRow.js";
 import BodyRow from "./components/BodyRow.js";
 import AddUser from "./components/AddUser";
 import Loader from "./Loader";
+import ItemList from "./components/ItemList";
+import LenKuz from "./page/LenKuz";
+import {observer} from "mobx-react";
+import NavBar from "./components/NavBar.js";
 
-function App() {
+
+const App = observer(() => {
     const [users, setUsers] = useState(false);
     const [modalActive, setModalActive] = useState(false);
     const [loading, setLoading] = React.useState(true)
@@ -16,6 +23,7 @@ function App() {
     // let arr = Array.from(merchants);
     const obj = JSON.parse(users);
     // const headTable = ["index", "id", "Имя", "Email"];
+    // const navigate = useNavigate()
 
     useEffect((obj) => {
         setTimeout(() => {
@@ -35,30 +43,30 @@ function App() {
             });
     }
 
-    function createMerchant() {
-        // event.preventDefault()
-        let fio = prompt('Enter merchant fio');
-        let email = prompt('Enter merchant email');
-        // let name = name;
-        // let email = email;
-        fetch('http://localhost:3001/merchants', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({fio, email}),
-            // body: JSON.stringify({event}),
-
-        })
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                alert(data);
-                // setModalActive(false)
-                getMerchant();
-            });
-    }
+    // function createMerchant() {
+    //     // event.preventDefault()
+    //     let fio = prompt('Enter merchant fio');
+    //     let email = prompt('Enter merchant email');
+    //     // let name = name;
+    //     // let email = email;
+    //     fetch('http://localhost:3001/merchants', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({fio, email}),
+    //         // body: JSON.stringify({event}),
+    //
+    //     })
+    //         .then(response => {
+    //             return response.text();
+    //         })
+    //         .then(data => {
+    //             alert(data);
+    //             // setModalActive(false)
+    //             getMerchant();
+    //         });
+    // }
 
     function deleteMerchant() {
         let id = prompt('Enter user id');
@@ -96,44 +104,49 @@ function App() {
     }
 
     return (
-        <div className='list'>
-            <br/>
-            <br/>
 
-            {/*<React.Suspense fallback={<Loader />}>*/}
-            {/*    <AddUser active={modalActive} setActive={setModalActive} />*/}
-            {/*</React.Suspense>*/}
+        <BrowserRouter>
+            <NavBar />
+            <AppRouter/>
 
-            {loading && <Loader />}
-            {users ? (
-                <>
-                     <BodyRow obj={obj} />
-                </>
+            <div className='list'>
+                <br/>
+                <br/>
+                {loading && <Loader />}
+                {users ? (
+                    <>
+                        <div className="row">
+                            <ItemList/>
+                        </div>
+                        <br/>
+                        <BodyRow obj={obj} />
+                    </>
                 ) : loading ? null : (
-                'There is no merchant data available'
-            )}
+                    'There is no merchant data available'
+                )}
 
-            <br/>
-            <br/>
-
-            <AddUser active={modalActive} setActive={setModalActive} />
+                <AddUser active={modalActive} setActive={setModalActive} />
 
 
-            <br/>
-            <button onClick={() => setModalActive(true)}>Add merchant</button>
-            <br/>
-            {/*<button onClick={createMerchant}>Add merchant</button>*/}
-            <br/>
-            <button onClick={deleteMerchant}>Delete merchant</button>
-            <br/>
-            <button onClick={updateMerchant}>Update merchant</button>
-            <br/>
+                <br/>
+                <button onClick={() => setModalActive(true)}>Add merchant</button>
+                <br/>
+                {/*<button onClick={createMerchant}>Add merchant</button>*/}
+                <br/>
+                <button onClick={deleteMerchant}>Delete merchant</button>
+                <br/>
+                <button onClick={updateMerchant}>Update merchant</button>
 
-            <br/>
-            {/*<button onClick={getTable(table, merchants)}>getTable</button>*/}
-        </div>
 
-    );
-}
-export default App;
+
+            </div>
+
+        </BrowserRouter>
+
+
+
+
+    )
+})
+export default App
 
