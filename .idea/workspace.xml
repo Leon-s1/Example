@@ -15,33 +15,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:task1" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AppRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/components/NavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/leninskkuz1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/lenkuz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/http/userAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="task1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -1207,6 +1187,13 @@
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
     </task>
+    <task id="LOCAL-00058" summary="Добавление новой категории и обновление состояния">
+      <created>1675826600839</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1675826600839</updated>
+    </task>
     <task id="LOCAL-00059" summary="Добавление нового бренда и обновление состояния">
       <created>1675826852373</created>
       <option name="number" value="00059" />
@@ -1543,14 +1530,7 @@
       <option name="project" value="LOCAL" />
       <updated>1692354011707</updated>
     </task>
-    <task id="LOCAL-00107" summary="Слил изменения из ветки task1 в ветку master.&#10;Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки.">
-      <created>1692588146942</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1692588146942</updated>
-    </task>
-    <option name="localTasksCounter" value="108" />
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1582,7 +1562,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="task1" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -1603,6 +1583,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
     <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
     <MESSAGE value="Исправления" />
     <MESSAGE value="Редактирование." />
@@ -1627,8 +1608,7 @@
     <MESSAGE value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
     <MESSAGE value="До делать перенос строки в ячейке." />
     <MESSAGE value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
-    <MESSAGE value="Слил изменения из ветки task1 в ветку master.&#10;Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Слил изменения из ветки task1 в ветку master.&#10;Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1655,10 +1635,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
-    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1692588503379">
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1692085799572">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692588503379" />
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
     <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691983083360">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
