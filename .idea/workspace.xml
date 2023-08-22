@@ -21,7 +21,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +92,11 @@
       <recent name="C:\Example\sts\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Example\node-postgres\client\src\style" />
       <recent name="D:\Example\node-postgres\client\src" />
       <recent name="D:\Example\node-postgres\server" />
       <recent name="D:\Example\node-postgres\client" />
       <recent name="D:\Example\node-postgres\react-postgres\src" />
-      <recent name="D:\Example\node-postgres\react-postgres\src\arkhiv" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1187,13 +1191,6 @@
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
     </task>
-    <task id="LOCAL-00058" summary="Добавление новой категории и обновление состояния">
-      <created>1675826600839</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1675826600839</updated>
-    </task>
     <task id="LOCAL-00059" summary="Добавление нового бренда и обновление состояния">
       <created>1675826852373</created>
       <option name="number" value="00059" />
@@ -1530,7 +1527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692354011707</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="commit">
+      <created>1692614975774</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1692614975774</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1598,7 +1602,6 @@
     <MESSAGE value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
     <MESSAGE value="Рабочий вариант, добавляет новые данные через модальное окно и обновляет страницу." />
     <MESSAGE value="Пробный вариант добавить Лоадер в справочник." />
-    <MESSAGE value="commit" />
     <MESSAGE value="Рабочий вариант c Лоадером" />
     <MESSAGE value="Рабочий вариант. fix update merchant" />
     <MESSAGE value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
@@ -1608,7 +1611,8 @@
     <MESSAGE value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
     <MESSAGE value="До делать перенос строки в ячейке." />
     <MESSAGE value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1639,10 +1643,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1691983083360">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1692614986904">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691983083360" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692614986904" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

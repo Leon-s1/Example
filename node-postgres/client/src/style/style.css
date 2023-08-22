@@ -162,6 +162,8 @@ tbody {
 .card {
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 0.25em;
+    /*width: 280px;*/
+    /*height: 220px;*/
 }
 
 /*.bodyTable {*/
