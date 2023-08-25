@@ -1,15 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Item = (props) => {
 
     return (
         <div className="col">
             <div className="card">
-                <a href=".././page/LenKuz.js">
+                <Link to={props.page}>
                     <img src={props.img} className="card-img-top" alt={props.title}/>
-                </a>
-
-
+                </Link>
             </div>
         </div>
     )

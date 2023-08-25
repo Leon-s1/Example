@@ -105,7 +105,7 @@ const App = observer(() => {
 
     return (
 
-        <BrowserRouter>
+    <>
             <NavBar />
             <AppRouter/>
 
@@ -141,7 +141,7 @@ const App = observer(() => {
 
             </div>
 
-        </BrowserRouter>
+    </>
 
 
 

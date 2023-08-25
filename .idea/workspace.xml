@@ -20,12 +20,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz4.jpg" afterDir="false" />
+    <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил в массив ссылку на картинку в файле ItemList.js">
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Moscow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/NovoKuz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AppRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1191,13 +1195,6 @@
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
     </task>
-    <task id="LOCAL-00059" summary="Добавление нового бренда и обновление состояния">
-      <created>1675826852373</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1675826852373</updated>
-    </task>
     <task id="LOCAL-00060" summary="Редактирование категории через Панель управления">
       <created>1676257513325</created>
       <option name="number" value="00060" />
@@ -1534,7 +1531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692614975774</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="Добавил в массив ссылку на картинку в файле ItemList.js">
+      <created>1692700582171</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1692700582171</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1587,7 +1591,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
     <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
     <MESSAGE value="Исправления" />
     <MESSAGE value="Редактирование." />
@@ -1612,7 +1615,8 @@
     <MESSAGE value="До делать перенос строки в ячейке." />
     <MESSAGE value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Добавил в массив ссылку на картинку в файле ItemList.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил в массив ссылку на картинку в файле ItemList.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1643,10 +1647,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1692614986904">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1692700647566">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692614986904" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692700647566" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

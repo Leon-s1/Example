@@ -7,6 +7,8 @@ const NavBar = observer( () => {
         <>
         <NavLink to='/'>Домой</NavLink>
         <NavLink to='lenkuz'>Кнопка Ленинск-Кузнецкий</NavLink>
+        <NavLink to='novokuz'>Кнопка Новокузнецк</NavLink>
+        <NavLink to='moscow'>Кнопка Москва</NavLink>
         </>
     )
 })
