@@ -2,7 +2,7 @@ import React from "react";
 
 const LenKuz = () => {
     return (
-            <h1>Справочник Ленинск-Кузнецкий </h1>
+            <h1 className="">Справочник Ленинск-Кузнецкий </h1>
         )
 }
 

@@ -107,7 +107,7 @@ const App = observer(() => {
 
     <>
             <NavBar />
-            <AppRouter/>
+
 
             <div className='list'>
                 <br/>
@@ -115,11 +115,12 @@ const App = observer(() => {
                 {loading && <Loader />}
                 {users ? (
                     <>
-                        <div className="row">
+                        <div className="_row">
                             <ItemList/>
                         </div>
                         <br/>
-                        <BodyRow obj={obj} />
+                             <AppRouter/>
+                             <BodyRow obj={obj} />
                     </>
                 ) : loading ? null : (
                     'There is no merchant data available'
