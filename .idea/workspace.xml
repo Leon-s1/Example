@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <expand />
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил в массив ссылку на страницы Ленинск-Кузнецкий, Москва, Новокузнецк в файле ItemList.js&#10;Передача свойств динамически.">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/moskva5.jpg" afterDir="false" />
+    <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon3 — копия.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon3_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz6 — копия.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва1_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1143,7 +1146,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7cc1a22a-cad4-4bdb-90a3-12fe4752d234" name="Default Changelist" comment="" />
+      <changelist id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
       <created>1633965979510</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1193,13 +1196,7 @@
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
-    </task>
-    <task id="LOCAL-00061" summary="Редактирование бренда через Панель управления администратора">
-      <created>1676259540703</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1676259540703</updated>
+      <workItem from="1693537147539" duration="1863000" />
     </task>
     <task id="LOCAL-00062" summary="Компонент списка товаров">
       <created>1676260487214</created>
@@ -1537,7 +1534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692947239327</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
+      <created>1693385291027</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1693385291028</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1590,7 +1594,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Исправления" />
     <MESSAGE value="Редактирование." />
     <MESSAGE value="Редактирование" />
     <MESSAGE value="косяк был в закрывающей скобочке } handleClick = (id)&#10;сделал неправильный коммит" />
@@ -1615,7 +1618,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Добавил в массив ссылку на картинку в файле ItemList.js" />
     <MESSAGE value="Добавил в массив ссылку на страницы Ленинск-Кузнецкий, Москва, Новокузнецк в файле ItemList.js&#10;Передача свойств динамически." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил в массив ссылку на страницы Ленинск-Кузнецкий, Москва, Новокузнецк в файле ItemList.js&#10;Передача свойств динамически." />
+    <MESSAGE value="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1654,10 +1658,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691986704646" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1691636623268">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1693455933885">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691636623268" />
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1693455933885" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1692349116280">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

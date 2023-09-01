@@ -1,8 +1,8 @@
 import React from "react";
 import Item from "./Item";
 import lenkuz from '../style/img/lenkuz.jpg';
-import moskva from '../style/img/moskva5.jpg';
-import novokuznetsk from '../style/img/novokuz4.jpg';
+import moskva from '../style/img/москва1_1.jpg';
+import novokuznetsk from '../style/img/novokuz11.jpg';
 import AppRouter from "./AppRouter";
 import { Link } from "react-router-dom";
 import LenKuz from "../page/LenKuz.js";

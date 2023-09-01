@@ -105,7 +105,7 @@ const App = observer(() => {
 
     return (
 
-    <>
+    <div className="main">
             <NavBar />
 
 
@@ -142,7 +142,7 @@ const App = observer(() => {
 
             </div>
 
-    </>
+    </div>
 
 
 
