@@ -15,24 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/Oswald-VariableFont_wght.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Pattaya/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Pattaya/Pattaya-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1197,14 +1181,7 @@
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
-      <workItem from="1693537147539" duration="29027000" />
-    </task>
-    <task id="LOCAL-00063" summary="Компонент добавление товара">
-      <created>1676261731029</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1676261731029</updated>
+      <workItem from="1693537147539" duration="30113000" />
     </task>
     <task id="LOCAL-00064" summary="Компонент редактирование товара">
       <created>1676262479383</created>
@@ -1542,7 +1519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693561579567</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Выровнял по центру. Исправил границы таблицы. Работают кнопки добавить запись и удалить. Редактирование надо править.">
+      <created>1694165422686</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1694165422686</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1595,7 +1579,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактирование" />
     <MESSAGE value="косяк был в закрывающей скобочке } handleClick = (id)&#10;сделал неправильный коммит" />
     <MESSAGE value="Редактирование телефонов" />
     <MESSAGE value="Редактирование контактов" />
@@ -1620,7 +1603,8 @@
     <MESSAGE value="Добавил в массив ссылку на страницы Ленинск-Кузнецкий, Москва, Новокузнецк в файле ItemList.js&#10;Передача свойств динамически." />
     <MESSAGE value="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
     <MESSAGE value="Добавил картинки для кнопок городов." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил картинки для кнопок городов." />
+    <MESSAGE value="Выровнял по центру. Исправил границы таблицы. Работают кнопки добавить запись и удалить. Редактирование надо править." />
+    <option name="LAST_COMMIT_MESSAGE" value="Выровнял по центру. Исправил границы таблицы. Работают кнопки добавить запись и удалить. Редактирование надо править." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1651,10 +1635,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1693561610492">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1694165438852">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1693561610492" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694165438852" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
