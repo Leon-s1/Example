@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon3 — копия.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon3_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz6 — копия.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/novokuz9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва1_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/москва4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/Oswald-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Oswald/static/Oswald-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Pattaya/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/font/Oswald,Pattaya/Pattaya/Pattaya-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/fon5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1196,14 +1197,7 @@
       <workItem from="1690961022919" duration="5909000" />
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
-      <workItem from="1693537147539" duration="1863000" />
-    </task>
-    <task id="LOCAL-00062" summary="Компонент списка товаров">
-      <created>1676260487214</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1676260487214</updated>
+      <workItem from="1693537147539" duration="29027000" />
     </task>
     <task id="LOCAL-00063" summary="Компонент добавление товара">
       <created>1676261731029</created>
@@ -1541,7 +1535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693385291028</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="Добавил картинки для кнопок городов.">
+      <created>1693561579566</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1693561579567</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1594,7 +1595,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактирование." />
     <MESSAGE value="Редактирование" />
     <MESSAGE value="косяк был в закрывающей скобочке } handleClick = (id)&#10;сделал неправильный коммит" />
     <MESSAGE value="Редактирование телефонов" />
@@ -1619,7 +1619,8 @@
     <MESSAGE value="Добавил в массив ссылку на картинку в файле ItemList.js" />
     <MESSAGE value="Добавил в массив ссылку на страницы Ленинск-Кузнецкий, Москва, Новокузнецк в файле ItemList.js&#10;Передача свойств динамически." />
     <MESSAGE value="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
+    <MESSAGE value="Добавил картинки для кнопок городов." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил картинки для кнопок городов." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1630,10 +1631,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="3114" y="439" key="#Usage_Scope/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700026" />
-    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1692243906561">
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1694061208445">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692243906561" />
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694061208445" />
     <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1687233360515">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -1650,10 +1651,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1692947272973">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1693561610492">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692947272973" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1693561610492" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -1662,10 +1663,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1693455933885" />
-    <state x="2536" y="240" key="run.anything.popup" timestamp="1692349116280">
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1693975187826">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692349116280" />
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1693975187826" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1687161280824">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

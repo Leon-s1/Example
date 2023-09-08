@@ -1,10 +1,17 @@
+@font-face {
+    font-family: Oswald-Light;
+    src: url("../style/font/Oswald,Pattaya/Oswald/static/Oswald-Light.ttf");
+}
+
 body {
     /*margin: 0 auto;*/
-    background-image: url("img/fon.jpg");
-    color: #E6E6E6;
+    /*background-image: url("img/fon5.jpg");*/
+    color: #000000;
     font-weight: bolder;
     /*background-repeat: no-repeat;*/
     background-size: cover;
+    font-family: 'Oswald-Light', sans-serif;
+    /*font-size: 1.55em;*/
     /*max-width: 1366px;*/
 }
 
@@ -12,6 +19,11 @@ body {
     width: 1240px;
     margin: 0 auto;
 }
+.table__users {
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
 button {
     margin-bottom: 10px;
 }
@@ -20,41 +32,101 @@ button {
 /*    margin: 0;*/
 /*    padding:0;*/
 /*}*/
-table {
+.table__header {
+    background-color: #ff0000;
     width: 100%;
-    border: 1px solid black;
-    border-top: none;
+    /*border-collapse: collapse;*/
+    /*display: flex;*/
+    /*border-radius: 5px;*/
+}
+.table {
+    width: 100%;
+
     border-collapse: collapse;
-    font:
-            16px "Lucida Grande",
-            "Helvetica",
-            "Arial",
-            sans-serif;
+    border: 1px solid black;
+    border-bottom: 0 solid black;
+    /*border: none;*/
+    font: 14px Roboto, Helvetica, Arial, sans-serif;
     /*overflow-wrap: break-word;*/
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
+
+}
+.table th td {
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*border: 1px solid #555;*/
+    /*font-weight: bold;*/
+    /*text-align: left;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
 
 }
 
-tr {
-    display: inline-flex;
+/*Отключаю на время переделки классов*/
+
+/*thead {*/
+/*    display: flex;*/
+/*    border: 1px solid black;*/
+/*    border-bottom: none;*/
+/*    font:*/
+/*            22px Roboto, Helvetica, Arial, sans-serif;*/
+/**/
+/*}*/
+
+/*tr {*/
+/*    display: inline-flex;*/
+/*    align-items: stretch;*/
+/*    vertical-align: text-bottom;*/
+
     /*overflow-wrap: break-word;*/
-    align-items: stretch;
     /*align-content: center;*/
     /*border-right: 1px solid black;*/
-    vertical-align: text-bottom;
-}
+/*}*/
 
-td {
-    /*display: flex;*/
-    /*align-items: center;*/
-    justify-content: center;
-    overflow-wrap: break-word;
+th {
+    /*background-color: #d41414;*/
+    display: table-cell;
+    background-color: #ff0000;
+    border-collapse: collapse;
+    vertical-align: text-bottom;
+    text-align: center;
+    /*height: 40px;*/
+
+    /*font-size: 16px;*/
+    /*box-sizing: border-box;*/
+
+}
+/*//////////////////////////////////////*/
+tr {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
     height: 40px;
+    align-items: center;
+
+    /*padding: 5px 0 5px;*/
+    /*vertical-align: middle;*/
+/*    text-align: center; !* Выравнивание по левому краю*!*/
+/*    !*flex-wrap: nowrap;*!*/
+
+}
+td {
+    display: flex;
+    /*align-items: center;*/
+    /*text-overflow: ellipsis;*/
+    justify-content: center;
+
+    /*padding-top: 10px;*/
+    /*height: 40px;*/
+    /*border-collapse: collapse;*/
+
     /*vertical-align: middle;*/
     /*text-align: center;*/
-/*align-content: center;*/
+align-content: center;
     /*flex-wrap: wrap;*/
     /**/
     /*border: 1px solid black;*/
@@ -65,28 +137,8 @@ td {
     /*text-align: center;*/
 }
 
-thead {
-    display: flex;
-    border: 1px solid black;
-    border-bottom: none;
-
-}
-th {
-    background-color: #cce;
-    /*font-size: 16px;*/
-    /*box-sizing: border-box;*/
-
-}
 
 
-/*tr {*/
-/*    !*width: auto;*!*/
-/*    display: flex;*/
-/*    !*justify-content: space-between;*!*/
-/*    text-align: center; !* Выравнивание по левому краю*!*/
-/*    !*flex-wrap: nowrap;*!*/
-
-/*}*/
 /*th {*/
 /*    text-align: center; !* Выравнивание по левому краю *!*/
 /*    background: #ccc; !* Цвет фона ячеек *!*/
@@ -119,47 +171,8 @@ tbody {
     /*font-size: 18px;*/
     /*border-bottom: 2px solid #999;*/
 }
-.index {
-    width: 85px;
-    border-right: 1px solid black;
 
-}
-.id {
-    width: 45px;
-    border-right: 1px solid black;
 
-}
-.fio {
-    width: 180px;
-    border-right: 1px solid black;
-}
-.position {
-    width: 320px;
-    border-right: 1px solid black;
-}
-.int_phone {
-    width: 56px;
-    border-right: 1px solid black;
-}
-.mobile {
-    width: 110px;
-    border-right: 1px solid black;
-}
-.email {
-    width: 250px;
-    border-right: 1px solid black;
-}
-.skype {
-    /*height: 20px;*/
-    /*display: flex;*/
-    width: 170px;
-
-    /*overflow-wrap: break-word;*/
-    /*width: 100%;*/
-
-    /*border-right: 1px solid black;*/
-
-}
 ._row {
     display: flex;
     flex-wrap: wrap;
@@ -169,6 +182,58 @@ tbody {
     /*flex-direction: row;*/
     /*flex-basis: 0;*/
     /*flex-grow: 1;*/
+}
+
+.index {
+    /*width: 85px;*/
+    width: 3%;
+    /*border-right: 1px solid black;*/
+
+}
+.id {
+    /*width: 45px;*/
+    width: 3%;
+    /*border-right: 1px solid black;*/
+
+}
+.fio {
+    /*width: 180px;*/
+    width: 20%;
+
+    /*border-right: 1px solid black;*/
+}
+.position {
+    /*width: 320px;*/
+    width: 30%;
+    /*border-right: 1px solid black;*/
+}
+.int_phone {
+    /*width: 56px;*/
+    width: 3%;
+    /*border-right: 1px solid black;*/
+}
+.mobile {
+    /*width: 110px;*/
+    width: 10%;
+    /*border-right: 1px solid black;*/
+}
+.email {
+    /*width: 250px;*/
+    width: 16%;
+    /*border-right: 1px solid black;*/
+}
+.skype {
+    /*height: 20px;*/
+    /*display: flex;*/
+    /*width: 170px;*/
+    width: 15%;
+/*text-overflow: ellipsis;*/
+/*    overflow-wrap: break-word;*/
+    word-wrap: break-word;
+    /*width: 100%;*/
+
+    /*border-right: 1px solid black;*/
+
 }
 div._card  {
     max-width: 100px;
@@ -190,6 +255,7 @@ div._card  {
     /*display: block;*/
 }
 ._card a {
+    color: #000000;
     /*max-width: 100%;*/
     /*display: block;*/
     /*vertical-align: middle;*/

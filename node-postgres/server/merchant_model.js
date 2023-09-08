@@ -56,15 +56,15 @@ const deleteMerchant = (merchantId) => {
 const updateMerchant = (body) => {
     return new Promise(function (resolve, reject) {
         // const id = parseInt(merchantId)
-        const { id, name, email } = body
+        const { id, fio, position, int_phone, mobile, email, skype } = body
         // pool.query('INSERT INTO merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
         // pool.query('UPDATE merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
-        pool.query('UPDATE users SET name = $2, email = $3 WHERE id = $1', [id, name, email], (error, results) => {
+        pool.query('UPDATE users SET fio = $2, position = $3, int_phone = $4, mobile = $5, email = $3, skype = $6 WHERE id = $1', [id, fio, position, int_phone, mobile, email, skype], (error, results) => {
             if (error) {
                 reject(error)
             }
             // resolve(`Merchant has been update: ${JSON.stringify(results.rows[0])}`)
-            resolve(`Merchant updated with INDEX: ${id}, changed name to ${name}.`)
+            resolve(`Merchant updated with INDEX: ${id}, changed name to ${fio}.`)
         })
     })
 }
