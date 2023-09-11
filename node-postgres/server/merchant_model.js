@@ -29,9 +29,9 @@ const getMerchants = () => {
 
 const createMerchant = (body) => {
     return new Promise(function (resolve, reject) {
-        const { fio, position, int_phone, mobile, email, skype} = body
+        const { fio, position, int_phone, mobile, email, skype, city } = body
 
-        pool.query('INSERT INTO users (fio, position, int_phone, mobile, email, skype) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *', [fio, position, int_phone, mobile, email, skype], (error, results) => {
+        pool.query('INSERT INTO users (fio, position, int_phone, mobile, email, skype, city) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *', [fio, position, int_phone, mobile, email, skype, city], (error, results) => {
             if (error) {
                 reject (error)
             }

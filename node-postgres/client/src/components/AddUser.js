@@ -11,6 +11,7 @@ const AddUser = ({active, setActive}) => {
     const [mobile, setMobile] = useState('');
     const [email, setEmail] = useState('');
     const [skype, setSkype] = useState('');
+    const [city, setCity] = useState('');
 
 
         useEffect(() => {
@@ -33,7 +34,7 @@ const AddUser = ({active, setActive}) => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({fio, position, int_phone, mobile, email, skype}),
+                body: JSON.stringify({fio, position, int_phone, mobile, email, skype, city}),
             })
                 .then(response => {
                     return response.text();
@@ -142,6 +143,14 @@ const AddUser = ({active, setActive}) => {
                                     name="skype"
                                     value={skype}
                                     onChange={(e) => setSkype(e.target.value)}
+                                />
+                            </label>
+                            <label>Город:
+                                <input
+                                    type="text"
+                                    name="city"
+                                    value={city}
+                                    onChange={(e) => setCity(e.target.value)}
                                 />
                             </label>
                            </div>

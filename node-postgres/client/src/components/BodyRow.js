@@ -2,6 +2,7 @@ import React from "react";
 
 const BodyRow = ({obj}) => {
     const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
+
     return (
     <table className="table">
             <div className="table__header">

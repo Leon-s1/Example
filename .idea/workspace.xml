@@ -8,7 +8,9 @@
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/BodyRow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" afterDir="false" />
@@ -66,7 +68,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Example\react-advanced-github\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -1177,14 +1179,7 @@
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
       <workItem from="1693537147539" duration="30892000" />
-      <workItem from="1694393986115" duration="3694000" />
-    </task>
-    <task id="LOCAL-00065" summary="Компонент характеристики товара">
-      <created>1676263379193</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1676263379193</updated>
+      <workItem from="1694393986115" duration="10704000" />
     </task>
     <task id="LOCAL-00066" summary="Добавили функции для работы с характеристиками в компонент catalogAPI.js">
       <created>1676343301850</created>
@@ -1522,7 +1517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694166585463</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Отредактировал функцию update.">
+      <created>1694403667617</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1694403667617</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1575,7 +1577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Редактирование телефонов" />
     <MESSAGE value="Редактирование контактов" />
     <MESSAGE value="add table display" />
     <MESSAGE value="update catalogs" />
@@ -1600,7 +1601,8 @@
     <MESSAGE value="Добавил картинки для кнопок городов." />
     <MESSAGE value="Выровнял по центру. Исправил границы таблицы. Работают кнопки добавить запись и удалить. Редактирование надо править." />
     <MESSAGE value="Добавил к ячейке td отображение display: table-cell и перенос строки word-wrap: break-word;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил к ячейке td отображение display: table-cell и перенос строки word-wrap: break-word;" />
+    <MESSAGE value="Отредактировал функцию update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Отредактировал функцию update." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1623,10 +1625,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2816" y="237" key="SettingsEditor" timestamp="1686882700823">
+    <state x="2816" y="237" key="SettingsEditor" timestamp="1694403819470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700823" />
+    <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694403819470" />
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1692085799572">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -1,6 +1,4 @@
 const express = require('express');
-// import express from 'express'
-// import cors from 'cors'
 const cors = require('cors');
 // const body_parser = require('body-parser')
 const app = express();
