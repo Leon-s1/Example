@@ -59,12 +59,13 @@ const updateMerchant = (body) => {
         const { id, fio, position, int_phone, mobile, email, skype } = body
         // pool.query('INSERT INTO merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
         // pool.query('UPDATE merchants (name, email) VALUES ($2, $3) WHERE id = $1', [id, name, email], (error, results) => {
-        pool.query('UPDATE users SET fio = $2, position = $3, int_phone = $4, mobile = $5, email = $3, skype = $6 WHERE id = $1', [id, fio, position, int_phone, mobile, email, skype], (error, results) => {
+        pool.query('UPDATE users SET fio = $2, position = $3, int_phone = $4, mobile = $5, email = $6, skype = $7 WHERE id = $1', [id, fio, position, int_phone, mobile, email, skype], (error, results) => {
+        // pool.query('UPDATE users (fio, position, int_phone, mobile, email, skype) VALUES ($2, $3, $4, $5, $6, $7) WHERE id = $1', [id, fio, position, int_phone, mobile, email, skype], (error, results) => {
             if (error) {
                 reject(error)
             }
             // resolve(`Merchant has been update: ${JSON.stringify(results.rows[0])}`)
-            resolve(`Merchant updated with INDEX: ${id}, changed name to ${fio}.`)
+            resolve(`Merchant updated with ID: ${id}, changed name to ${fio}.`)
         })
     })
 }

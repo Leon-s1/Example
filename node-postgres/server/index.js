@@ -25,6 +25,7 @@ app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 //     next();
 // });
 
+
 app.get('/', (req, res) => {
     merchant_model.getMerchants()
         .then(response => {

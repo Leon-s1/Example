@@ -84,14 +84,14 @@ const App = observer(() => {
     }
 
     function updateMerchant() {
-        let id = prompt('Enter merchant index');
+        let id = prompt('Enter merchant id');
         let fio = prompt('Enter merchant fio');
         let position = prompt('Enter merchant position');
         let int_phone = prompt('Enter merchant int_phone');
         let mobile = prompt('Enter merchant mobile');
         let email = prompt('Enter merchant email');
         let skype = prompt('Enter merchant skype');
-        fetch(`http://localhost:3001/merchants/${id}`, {
+        fetch(`http://localhost:3001/users/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
