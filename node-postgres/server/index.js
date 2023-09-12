@@ -34,6 +34,16 @@ app.get('/', (req, res) => {
         })
 })
 
+app.get('/users/:city', (req, res) => {
+    merchant_model.getMerchantsLk()
+        .then(response => {
+            res.status(200).send(response);
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        })
+})
+
 app.post('/users', (req, res) => {
     merchant_model.createMerchant(req.body)
         .then(response => {

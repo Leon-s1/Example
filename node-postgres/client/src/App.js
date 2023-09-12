@@ -27,9 +27,9 @@ const App = observer(() => {
 
     useEffect((obj) => {
         setTimeout(() => {
-            getMerchant();
-            setLoading(false)
-        }, 2000)
+            // getMerchant();
+            // setLoading(false)
+        }, 0)
     }, []);
 
     function getMerchant() {
@@ -116,19 +116,33 @@ const App = observer(() => {
             <div className='list'>
                 <br/>
                 <br/>
-                {loading && <Loader />}
-                {users ? (
-                    <>
-                        <div className="_row">
-                            <ItemList/>
-                        </div>
-                        <br/>
-                             <AppRouter/>
-                             {/*<BodyRow obj={obj} />*/}
-                    </>
-                ) : loading ? null : (
-                    'There is no merchant data available'
-                )}
+                {/*{loading && <Loader />}*/}
+                {loading }
+
+                <>
+                    <div className="_row">
+                        <ItemList/>
+                    </div>
+                    <br/>
+                    <AppRouter/>
+                    {/*<BodyRow obj={obj} />*/}
+                </>
+
+                {/*{users ? (*/}
+                {/*    <>*/}
+                {/*        <div className="_row">*/}
+                {/*            <ItemList/>*/}
+                {/*        </div>*/}
+                {/*        <br/>*/}
+                {/*             <AppRouter/>*/}
+                {/*             /!*<BodyRow obj={obj} />*!/*/}
+                {/*    </>*/}
+                {/*) : loading ? null : (*/}
+                {/*    'There is no merchant data available'*/}
+                {/*)}*/}
+
+
+
 
                 <AddUser active={modalActive} setActive={setModalActive} />
 

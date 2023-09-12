@@ -27,6 +27,23 @@ const getMerchants = () => {
     })
 }
 
+const getMerchantsLk = () => {
+    const city = 'ЛК'
+    console.log(typeof (city))
+    return new Promise(function(resolve, reject) {
+        // pool.query('SELECT * FROM users', (error, results) => {
+        // pool.query('SELECT * FROM users ORDER BY id ASC WHERE city = $1', [city], (error, results) => {
+        pool.query('SELECT * FROM users WHERE city = $1', [city], (error, results) => {
+        // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
+           if (error) {
+                reject(error)
+            }
+            resolve(results.rows);
+        })
+        // console.log(result)
+    })
+}
+
 const createMerchant = (body) => {
     return new Promise(function (resolve, reject) {
         const { fio, position, int_phone, mobile, email, skype, city } = body
@@ -72,6 +89,7 @@ const updateMerchant = (body) => {
 
 module.exports = {
     getMerchants,
+    getMerchantsLk,
     createMerchant,
     deleteMerchant,
     updateMerchant,
