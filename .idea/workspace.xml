@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/Moscow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Moscow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/Loader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1188,14 +1187,7 @@
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
       <workItem from="1693537147539" duration="30892000" />
-      <workItem from="1694393986115" duration="35819000" />
-    </task>
-    <task id="LOCAL-00069" summary="Редактируем компонент App">
-      <created>1676359417816</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1676359417816</updated>
+      <workItem from="1694393986115" duration="40652000" />
     </task>
     <task id="LOCAL-00070" summary="Редактируем компонент App добавляем компонент Loader.js">
       <created>1676368605762</created>
@@ -1533,7 +1525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694665182035</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Передача параметра city в функцию getMerchantsLk, для фильтрации сотрудников по городам. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий, Москва...">
+      <created>1694665978232</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1694665978232</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1642,10 +1641,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1694665664929">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1694665988814">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694665664929" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694665988814" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
