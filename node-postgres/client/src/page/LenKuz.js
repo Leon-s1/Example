@@ -14,7 +14,7 @@ const LenKuz = () => {
         setTimeout(() => {
             getMerchantsLk();
             setLoading(false)
-        }, 2000)
+        }, 1000)
     }, []);
 
     function getMerchantsLk() {
