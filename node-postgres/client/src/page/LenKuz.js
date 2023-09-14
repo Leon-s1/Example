@@ -9,6 +9,7 @@ const LenKuz = () => {
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
 
+
     useEffect((obj) => {
         setTimeout(() => {
             getMerchantsLk();
@@ -17,13 +18,22 @@ const LenKuz = () => {
     }, []);
 
     function getMerchantsLk() {
-        const city = 'ЛК'
+        let city = 'ЛК'
         fetch(`http://localhost:3001/users/${city}`)
+            // {
+            // method: 'GET',
+            // headers: {
+            //     'Content-Type': 'application/json',
+            // },
+            //  body: JSON.stringify({ city }),
+        // })
+        // fetch(`http://localhost:3001/users/`)
             .then(response => {
                 return response.text();
             })
             .then(data => {
                 setUsers(data);
+                // getMerchantsLk();
                 // setModalActive(false)
             });
     }

@@ -22,6 +22,7 @@
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AddUser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/server/merchant_model.js" afterDir="false" />
@@ -1190,14 +1191,7 @@
       <workItem from="1691114710753" duration="12493000" />
       <workItem from="1692238359520" duration="30922000" />
       <workItem from="1693537147539" duration="30892000" />
-      <workItem from="1694393986115" duration="17504000" />
-    </task>
-    <task id="LOCAL-00067" summary="Добавили компонент UpdateProperties.js">
-      <created>1676347013084</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1676347013084</updated>
+      <workItem from="1694393986115" duration="34351000" />
     </task>
     <task id="LOCAL-00068" summary="Добавил функцию UpdateProperties в компонент UpdateProduct.js">
       <created>1676359195214</created>
@@ -1535,7 +1529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694425983037</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Сделал фильтр по городу Ленинск-Кузнецкий. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий.">
+      <created>1694514026602</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1694514026602</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1588,7 +1589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add table display" />
     <MESSAGE value="update catalogs" />
     <MESSAGE value="Компонент AddUser добавляет данные в БД, но при отправке, форма не закрывается и таблица в браузере не обновляется." />
     <MESSAGE value="Добавил запись Кузьминых" />
@@ -1613,7 +1613,8 @@
     <MESSAGE value="Добавил к ячейке td отображение display: table-cell и перенос строки word-wrap: break-word;" />
     <MESSAGE value="Отредактировал функцию update." />
     <MESSAGE value="Сделал показ данных при нажатии на кнопку Города Ленинск-Кузнецкий." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал показ данных при нажатии на кнопку Города Ленинск-Кузнецкий." />
+    <MESSAGE value="Сделал фильтр по городу Ленинск-Кузнецкий. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий." />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал фильтр по городу Ленинск-Кузнецкий. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1644,10 +1645,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1694426003914">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1694514036048">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694426003914" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694514036048" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

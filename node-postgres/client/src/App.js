@@ -100,6 +100,7 @@ const App = observer(() => {
         })
             .then(response => {
                 return response.text();
+                return response.text();
             })
             .then(data => {
                 alert(data);

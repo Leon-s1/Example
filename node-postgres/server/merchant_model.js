@@ -27,10 +27,10 @@ const getMerchants = () => {
     })
 }
 
-const getMerchantsLk = () => {
-    const city = 'ЛК'
-    console.log(typeof (city))
+const getMerchantsLk = (userCity) => {
     return new Promise(function(resolve, reject) {
+        const city = userCity
+        console.log(city)
         // pool.query('SELECT * FROM users', (error, results) => {
         // pool.query('SELECT * FROM users ORDER BY id ASC WHERE city = $1', [city], (error, results) => {
         pool.query('SELECT * FROM users WHERE city = $1', [city], (error, results) => {

@@ -14,19 +14,19 @@ const AddUser = ({active, setActive}) => {
     const [city, setCity] = useState('');
 
 
-        useEffect(() => {
-            getMerchant();
-        }, []);
+        // useEffect(() => {
+        //     getMerchant();
+        // }, []);
 
-        function getMerchant() {
-            fetch('http://localhost:3001')
-                .then(response => {
-                    return response.text();
-                })
-                .then(data => {
-                    setUsers(data);
-                });
-        }
+        // function getMerchant() {
+        //     fetch('http://localhost:3001')
+        //         .then(response => {
+        //             return response.text();
+        //         })
+        //         .then(data => {
+        //             setUsers(data);
+        //         });
+        // }
 
         function createMerchant(event) {
             fetch('http://localhost:3001/users', {
@@ -42,7 +42,7 @@ const AddUser = ({active, setActive}) => {
                 .then(data => {
                     alert(data);
                     setActive(false)
-                    getMerchant();
+                    // getMerchant();
 
                 });
             console.log(fio, email);
