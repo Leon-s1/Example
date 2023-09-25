@@ -14,20 +14,12 @@ const LenKuz = () => {
         setTimeout(() => {
             getMerchantsLk();
             setLoading(false)
-        }, 1000)
+        }, 5000)
     }, []);
 
     function getMerchantsLk() {
         let city = 'ЛК'
         fetch(`http://localhost:3001/users/${city}`)
-            // {
-            // method: 'GET',
-            // headers: {
-            //     'Content-Type': 'application/json',
-            // },
-            //  body: JSON.stringify({ city }),
-        // })
-        // fetch(`http://localhost:3001/users/`)
             .then(response => {
                 return response.text();
             })

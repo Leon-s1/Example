@@ -12,7 +12,7 @@ const Moscow = () => {
         setTimeout(() => {
             getMerchantsLk();
             setLoading(false)
-        }, 1000)
+        }, 5000)
     }, []);
 
     function getMerchantsLk() {
