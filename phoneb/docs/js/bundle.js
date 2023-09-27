@@ -557,7 +557,7 @@ module.exports = function (it) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -1333,7 +1333,7 @@ module.exports = function (NAME, exec) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -2084,7 +2084,7 @@ module.exports = function (it) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -2203,7 +2203,7 @@ module.exports = function (it) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 function makeEmptyFunction(arg) {
@@ -2479,7 +2479,7 @@ keyCode.isEventKey = function isEventKey(event, nameOrCode) {
       // check codes
       var foundNamedKey = codes[nameOrCode.toLowerCase()]
       if (foundNamedKey) { return foundNamedKey === keyCode; }
-    
+
       // check aliases
       var foundNamedKey = aliases[nameOrCode.toLowerCase()]
       if (foundNamedKey) { return foundNamedKey === keyCode; }
@@ -2867,7 +2867,7 @@ module.exports = ReactUpdates;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -4660,7 +4660,7 @@ exports.default = _IconButton2.default;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -7138,7 +7138,7 @@ module.exports = React;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -7340,7 +7340,7 @@ module.exports = function (O, D) {
  * LICENSE file in the root directory of this source tree.
  *
  * @typechecks
- * 
+ *
  */
 
 /*eslint-disable no-self-compare */
@@ -10812,7 +10812,7 @@ module.exports = __webpack_require__(1061);
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -11699,7 +11699,7 @@ module.exports = SyntheticMouseEvent;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -12239,7 +12239,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -16358,7 +16358,7 @@ module.exports = DOMNamespaces;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -16561,7 +16561,7 @@ module.exports = LinkedValueUtils;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -16608,7 +16608,7 @@ module.exports = ReactComponentEnvironment;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -25387,7 +25387,7 @@ module.exports = CSSProperty;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -26004,7 +26004,7 @@ module.exports = ReactEmptyComponent;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -26767,7 +26767,7 @@ module.exports = ReactMount;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -26810,7 +26810,7 @@ module.exports = ReactNodeTypes;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -26830,7 +26830,7 @@ module.exports = ReactPropTypesSecret;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -26891,7 +26891,7 @@ module.exports = accumulateInto;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -27211,7 +27211,7 @@ function instantiateReactComponent(node, shouldHaveDebugID) {
   }
 
   if (true) {
-     true ? warning(typeof instance.mountComponent === 'function' && typeof instance.receiveComponent === 'function' && typeof instance.getHostNode === 'function' && typeof instance.unmountComponent === 'function', 'Only React Components can be mounted.') : void 0;
+     true ? warning(typeof instance.mountComponent === 'function' && typeof instance.receiveComponent === 'function' && typeof instance.getHostNode === 'function' && typeof instance.unmountComponent === 'function', 'Only React components can be mounted.') : void 0;
   }
 
   // These two fields are used by the DOM and ART diffing algorithms
@@ -27252,7 +27252,7 @@ module.exports = instantiateReactComponent;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -27878,7 +27878,7 @@ function wrapMapToPropsConstant(getConstant) {
 } // dependsOnOwnProps is used by createMapToPropsProxy to determine whether to pass props as args
 // to the mapToProps function being wrapped. It is also used by makePurePropsSelector to determine
 // whether mapToProps needs to be invoked when props have changed.
-// 
+//
 // A length of one signals that mapToProps does not depend on props from the parent component.
 // A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
 // therefore not reporting its length accurately..
@@ -27887,16 +27887,16 @@ function getDependsOnOwnProps(mapToProps) {
   return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
 } // Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
 // this function wraps mapToProps in a proxy function which does several things:
-// 
+//
 //  * Detects whether the mapToProps function being called depends on props, which
 //    is used by selectorFactory to decide if it should reinvoke on props changes.
-//    
+//
 //  * On first call, handles mapToProps if returns another function, and treats that
 //    new function as the true mapToProps for subsequent calls.
-//    
+//
 //  * On first call, verifies the first result is a plain object, in order to warn
 //    the developer that their mapToProps function is not returning a valid result.
-//    
+//
 
 function wrapMapToPropsFunc(mapToProps, methodName) {
   return function initProxySelector(dispatch, _ref) {
@@ -29249,7 +29249,7 @@ module.exports = {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -29628,7 +29628,7 @@ module.exports = ReactNoopUpdateQueue;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -41733,7 +41733,7 @@ module.exports = camelizeStyleName;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 var isTextNode = __webpack_require__(745);
@@ -42303,7 +42303,7 @@ module.exports = keyOf;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  * @typechecks static-only
  */
 
@@ -70589,7 +70589,7 @@ ReactDOMComponent.Mixin = {
       case 'head':
       case 'body':
         /**
-         * Components like <html> <head> and <body> can't be removed or added
+         * components like <html> <head> and <body> can't be removed or added
          * easily in a cross-browser way, however it's valuable to be able to
          * take advantage of React's reconciliation for styling and <title>
          * management. So we just document it and throw in dangerous cases.
@@ -72082,7 +72082,7 @@ if (true) {
     } else {
       // We were unable to guess which prop the user intended.
       // It is likely that the user was just blindly spreading/forwarding props
-      // Components should be careful to only render valid props/attributes.
+      // components should be careful to only render valid props/attributes.
       // Warning will be invoked in warnUnknownProperties to allow grouping.
       return false;
     }
@@ -72141,7 +72141,7 @@ module.exports = ReactDOMUnknownPropertyHook;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -72665,7 +72665,7 @@ module.exports = {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -72881,7 +72881,7 @@ module.exports = ReactEventListener;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -72955,7 +72955,7 @@ module.exports = ReactInjection;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -73497,7 +73497,7 @@ module.exports = ReactMultiChild;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -73593,7 +73593,7 @@ module.exports = ReactOwner;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -73802,7 +73802,7 @@ module.exports = ReactReconcileTransaction;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -73987,7 +73987,7 @@ module.exports = ReactServerRenderingTransaction;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -74642,7 +74642,7 @@ module.exports = SelectEventPlugin;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -75342,7 +75342,7 @@ module.exports = SyntheticWheelEvent;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -75625,7 +75625,7 @@ module.exports = findDOMNode;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -75820,7 +75820,7 @@ module.exports = getEventKey;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -76463,7 +76463,7 @@ function createProvider(storeKey) {
   selectorFactory, which has the signature:
 
     (dispatch, options) => (nextState, nextOwnProps) => nextFinalProps
-  
+
   connect passes its args to connectAdvanced as options, which will in turn pass them to
   selectorFactory each time a Connect component instance is instantiated or hot reloaded.
 
@@ -80075,7 +80075,7 @@ function mergeChildMappings(prev, next) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -80137,7 +80137,7 @@ module.exports = KeyEscapeUtils;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -80618,7 +80618,7 @@ module.exports = ReactDOMFactories;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -80668,7 +80668,7 @@ module.exports = factory(isValidElement);
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 
@@ -80823,7 +80823,7 @@ module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * 
+ *
  */
 
 

@@ -1,5 +1,5 @@
 import { ListGroup } from 'react-bootstrap'
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { AppContext } from './AppContext.js'
 import { observer } from "mobx-react-lite";
 import { useNavigate, createSearchParams} from "react-router-dom";
@@ -14,7 +14,7 @@ const CategoryBar = observer(() => {
         } else {
             catalog.category = id
         }
-    }
+
     // при каждом клике добавляем в историю браузера новый элемент
     const params = {}
     if (catalog.category) params.category = catalog.category
@@ -24,7 +24,7 @@ const CategoryBar = observer(() => {
             pathname: '/',
             search: '?' + createSearchParams(params)
         })
-
+    }
     return (
         <ListGroup>
             {catalog.categories.map(item =>

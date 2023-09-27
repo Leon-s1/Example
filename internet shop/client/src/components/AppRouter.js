@@ -9,15 +9,15 @@ import Product from '../pages/Product.js'
 import Delivery from '../pages/Delivery.js'
 import Contacts from '../pages/Contacts.js'
 import NotFound from '../pages/NotFound.js'
-import User from "../pages/User";
+import User from "../pages/User.js";
 import UserOrders from '../pages/UserOrders.js'
 import UserOrder from '../pages/UserOrder.js'
 import Admin from '../pages/Admin.js'
 import AdminOrders from '../pages/AdminOrders.js'
 import AdminOrder from '../pages/AdminOrder.js'
-import AdminCategories from "../pages/AdminCategories";
-import AdminBrands from "../pages/AdminBrands";
-import AdminProducts from "../pages/AdminProducts";
+import AdminCategories from "../pages/AdminCategories.js";
+import AdminBrands from "../pages/AdminBrands.js";
+import AdminProducts from "../pages/AdminProducts.js";
 import { AppContext } from './AppContext.js'
 import { useContext } from 'react'
 import { observer } from 'mobx-react-lite'

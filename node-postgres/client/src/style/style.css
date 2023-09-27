@@ -1,0 +1,438 @@
+@font-face {
+    font-family: Oswald-Light;
+    src: url("../style/font/Oswald,Pattaya/Oswald/static/Oswald-Light.ttf");
+}
+
+body {
+    /*margin: 0 auto;*/
+    /*background-image: url("img/fon5.jpg");*/
+    color: #000000;
+    font-weight: bolder;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    font-family: 'Oswald-Light', sans-serif;
+    /*font-size: 1.55em;*/
+    /*max-width: 1366px;*/
+}
+h1, h2, h3, h4, h5, a, p, div, span {
+    text-align: center;
+}
+.main {
+    width: 1240px;
+    margin: 0 auto;
+}
+.table__users {
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+/*html, body{*/
+/*    margin: 0;*/
+/*    padding:0;*/
+/*}*/
+.table__header {
+    background-color: #ff0000;
+    width: 100%;
+    /*border-collapse: collapse;*/
+    /*display: flex;*/
+    /*border-radius: 5px;*/
+}
+.table {
+    width: 100%;
+
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-bottom: 0 solid black;
+    /*border: none;*/
+    font: 16px Roboto, Helvetica, Arial, sans-serif;
+    /*overflow-wrap: break-word;*/
+    box-sizing: border-box;
+    text-align: center;
+    color: #000000;
+
+}
+.table th td {
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*border: 1px solid #555;*/
+    /*font-weight: bold;*/
+    /*text-align: left;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+
+}
+
+/*Отключаю на время переделки классов*/
+
+/*thead {*/
+/*    display: flex;*/
+/*    border: 1px solid black;*/
+/*    border-bottom: none;*/
+/*    font:*/
+/*            22px Roboto, Helvetica, Arial, sans-serif;*/
+/**/
+/*}*/
+
+/*tr {*/
+/*    display: inline-flex;*/
+/*    align-items: stretch;*/
+/*    vertical-align: text-bottom;*/
+
+    /*overflow-wrap: break-word;*/
+    /*align-content: center;*/
+    /*border-right: 1px solid black;*/
+/*}*/
+
+th {
+    /*background-color: #d41414;*/
+    display: table-cell;
+    background-color: #ff0000;
+    border-collapse: collapse;
+    vertical-align: text-bottom;
+    text-align: center;
+    /*height: 40px;*/
+
+    /*font-size: 16px;*/
+    /*box-sizing: border-box;*/
+
+}
+/*//////////////////////////////////////*/
+tr {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    height: 40px;
+    align-items: center;
+
+    /*padding: 5px 0 5px;*/
+    /*vertical-align: middle;*/
+/*    text-align: center; !* Выравнивание по левому краю*!*/
+/*    !*flex-wrap: nowrap;*!*/
+
+}
+td {
+    display: flex;
+    /*align-items: center;*/
+    /*text-overflow: ellipsis;*/
+    justify-content: center;
+
+    /*padding-top: 10px;*/
+    /*height: 40px;*/
+    /*border-collapse: collapse;*/
+
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+align-content: center;
+    /*flex-wrap: wrap;*/
+    /**/
+    /*border: 1px solid black;*/
+    /*border-bottom: none;*/
+    /*box-sizing: border-box;*/
+    /*border-collapse: collapse;*/
+    /*padding: 2px 8px 0;*/
+    /*text-align: center;*/
+}
+
+
+
+/*th {*/
+/*    text-align: center; !* Выравнивание по левому краю *!*/
+/*    background: #ccc; !* Цвет фона ячеек *!*/
+/*    padding: 5px; !* Поля вокруг содержимого ячеек *!*/
+/*    border: 1px solid black; !* Граница вокруг ячеек *!*/
+/*}*/
+/*td {*/
+/*    width: 30%;*/
+/*    padding: 5px; !* Поля вокруг содержимого ячеек *!*/
+/*    border: 1px solid black; !* Граница вокруг ячеек *!*/
+/*    text-align: center; !* Выравнивание по левому краю *!*/
+/*}*/
+
+.headTable {
+    /*width: auto;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*text-align: left; !* Выравнивание по левому краю*!*/
+    /*flex-wrap: nowrap;*/
+
+    /*border: 2px black solid;*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 1px;*/
+}
+tbody {
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*background-color: #cce;*/
+    /*font-size: 18px;*/
+    /*border-bottom: 2px solid #999;*/
+}
+
+
+._row {
+    display: flex;
+    flex-wrap: wrap;
+    /*margin-right: 15px;*/
+    /*margin-left: -15px;*/
+    justify-content: space-between;
+    /*flex-direction: row;*/
+    /*flex-basis: 0;*/
+    /*flex-grow: 1;*/
+}
+
+.index {
+    /*width: 85px;*/
+    width: 3%;
+    /*border-right: 1px solid black;*/
+
+}
+.id {
+    /*width: 45px;*/
+    width: 3%;
+    display: table-cell;
+    word-wrap: break-word;
+    /*border-right: 1px solid black;*/
+
+}
+.fio {
+    /*width: 180px;*/
+    width: 20%;
+    display: table-cell;
+    word-wrap: break-word;
+
+    /*border-right: 1px solid black;*/
+}
+.position {
+    /*width: 320px;*/
+    width: 30%;
+    display: table-cell;
+    word-wrap: break-word;
+    /*border-right: 1px solid black;*/
+}
+.int_phone {
+    /*width: 56px;*/
+    width: 3%;
+    display: table-cell;
+    word-wrap: break-word;
+    /*border-right: 1px solid black;*/
+}
+.mobile {
+    /*width: 110px;*/
+    width: 10%;
+    display: table-cell;
+    word-wrap: break-word;
+    /*border-right: 1px solid black;*/
+}
+.email {
+    /*width: 250px;*/
+    width: 16%;
+    display: table-cell;
+    word-wrap: break-word;
+    /*border-right: 1px solid black;*/
+}
+.skype {
+    /*height: 20px;*/
+    display: table-cell;
+    word-wrap: break-word;
+    /*width: 170px;*/
+    width: 15%;
+/*text-overflow: ellipsis;*/
+/*    overflow-wrap: break-word;*/
+    /*width: 100%;*/
+
+    /*border-right: 1px solid black;*/
+
+}
+div._card  {
+    max-width: 100px;
+    /*display: block;*/
+}
+._card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 15px;
+    /*width: 280px;*/
+    /*height: 220px;*/
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+._card img {
+    /*width: 80px;*/
+    /*height: 20px;*/
+    border-radius: 4px;
+    max-width: 100%;
+    /*display: block;*/
+}
+._card a {
+    color: #000000;
+    /*max-width: 100%;*/
+    /*display: block;*/
+    /*vertical-align: middle;*/
+
+}
+.card__name {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+
+/*Увеличение картинки на карточке города*/
+
+/*.hover-image-scale {*/
+/*    display: inline-block;*/
+/*    overflow: hidden; !* Скрываем всё за контуром *!*/
+/*}*/
+.hover-image-scale img {
+    transition: 1s; /* Время эффекта */
+    display: block;
+}
+.hover-image-scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+
+
+/*.bodyTable {*/
+    /*display: flex;*/
+    /*border: 2px black solid;*/
+    /*border-collapse: collapse;*/
+    /*border-spacing: 0px;*/
+/*}*/
+/*div p {*/
+
+/*    width: 800px;*/
+/*}*/
+/*.wrapper{*/
+/*    width:100%;*/
+/*    text-align:center;*/
+/*    margin:0 auto;*/
+/*}*/
+
+/*!* DivTable.com *!*/
+/*.divTable{*/
+/*    display: table;*/
+/*    width: 100%;*/
+/*}*/
+/*.divTableRow {*/
+/*    display: table-row;*/
+/*}*/
+/*.divTableCell, .divTableHead {*/
+/*    border: 1px solid #999999;*/
+/*    display: table-cell;*/
+/*    padding: 3px 10px;*/
+/*}*/
+/*.divTableHeading {*/
+/*    background-color: #EEE;*/
+/*    display: table-header-group;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.divTableFooting {*/
+/*    background-color: #EEE;*/
+/*    display: table-footer-group;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.divTableBody {*/
+/*    display: table-row-group;*/
+/*}*/
+
+
+/*стили лоадера с сайта loading.io*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+}
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    /*width: 64px;*/
+    width: 120px;
+    /*height: 64px;*/
+    height: 120px;
+    /*margin-right: 38px;*/
+    border-radius: 50%;
+    border: 6px solid blue;
+    border-color: #e21111 transparent #000000 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Стили для Лоадера Сибтранссервис*/
+/*@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400);*/
+
+/*html,*/
+/*body {*/
+/*    height: 100%;*/
+/*}*/
+
+/*body {*/
+/*    background: -webkit-radial-gradient(#222922, #d8dfd8);*/
+/*    background: radial-gradient(#222922, #e5ebe5);*/
+/*    font-family: 'Source Code Pro', monospace;*/
+/*    font-weight: 400;*/
+/*    overflow: hidden;*/
+/*    padding: 30px 0 0 30px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.word {*/
+/*    bottom: 0;*/
+/*    color: #fff;*/
+/*    font-size: 2.5em;*/
+/*    height: 2.5em;*/
+/*    left: 0;*/
+/*    line-height: 2.5em;*/
+/*    margin: auto;*/
+/*    right: 0;*/
+/*    position: absolute;*/
+/*    text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);*/
+/*    top: 0;*/
+/*}*/
+
+/*.word span {*/
+/*    display: inline-block;*/
+/*    -webkit-transform: translateX(100%) scale(0.9);*/
+/*    transform: translateX(100%) scale(0.9);*/
+/*    -webkit-transition: -webkit-transform 500ms;*/
+/*    transition: -webkit-transform 500ms;*/
+/*    transition: transform 500ms;*/
+/*    transition: transform 500ms, -webkit-transform 500ms;*/
+/*}*/
+
+/*.word .done {*/
+/*    color: #6f6;*/
+/*    -webkit-transform: translateX(0) scale(1);*/
+/*    transform: translateX(0) scale(1);*/
+/*}*/
+
+/*.overlay {*/
+/*    background-image: -webkit-linear-gradient(*/
+/*            transparent 0%,*/
+/*            rgba(10, 16, 10, 0.5) 50%*/
+/*    );*/
+/*    background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);*/
+/*    background-size: 1000px 2px;*/
+/*    bottom: 0;*/
+/*    content: '';*/
+/*    left: 0;*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*}*/
