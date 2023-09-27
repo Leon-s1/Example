@@ -20,14 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Norilsk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Rekvizit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Shahti.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Ural.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Vorkuta.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/Moscow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Moscow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
@@ -85,7 +79,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="D:\Example\react-advanced-github\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -1197,14 +1191,8 @@
       <workItem from="1692238359520" duration="30922000" />
       <workItem from="1693537147539" duration="30892000" />
       <workItem from="1694393986115" duration="46076000" />
-      <workItem from="1695093311570" duration="3385000" />
-    </task>
-    <task id="LOCAL-00071" summary="Редактируем NavBar.js, удаляем компонент ChekAuth.js">
-      <created>1676424764096</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1676424764096</updated>
+      <workItem from="1695093311570" duration="5238000" />
+      <workItem from="1695777347886" duration="3750000" />
     </task>
     <task id="LOCAL-00072" summary="Редактируем BasketList.js">
       <created>1676436722680</created>
@@ -1542,7 +1530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694684246972</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Добавил страницы городов">
+      <created>1695638603609</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1695638603610</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1595,7 +1590,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавил запись Кузьминых" />
     <MESSAGE value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
     <MESSAGE value="Рабочий вариант, добавляет новые данные через модальное окно и обновляет страницу." />
     <MESSAGE value="Пробный вариант добавить Лоадер в справочник." />
@@ -1620,17 +1614,14 @@
     <MESSAGE value="Сделал фильтр по городу Ленинск-Кузнецкий. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий." />
     <MESSAGE value="Передача параметра city в функцию getMerchantsLk, для фильтрации сотрудников по городам. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий, Москва..." />
     <MESSAGE value="Поднял выше лоадер." />
-    <option name="LAST_COMMIT_MESSAGE" value="Поднял выше лоадер." />
+    <MESSAGE value="Добавил страницы городов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил страницы городов" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="176" width="816" height="864" key="#Intentions/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687853179935" />
-    <state x="3114" y="439" key="#Usage_Scope" timestamp="1686882700026">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="3114" y="439" key="#Usage_Scope/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1686882700026" />
     <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1694061208445">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -1643,18 +1634,19 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2816" y="237" key="SettingsEditor" timestamp="1694403819470">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="442" y="150" key="SettingsEditor" timestamp="1695653500971">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
+    <state x="442" y="150" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1695653500971" />
     <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694403819470" />
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1692085799572">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1694684255272">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1695638616960">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694684255272" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1695638616960" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

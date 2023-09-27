@@ -10,7 +10,7 @@ const Item = (props) => {
         // <div className="_row">
             <div className="_card">
                 <Link to={props.page}>
-                    <img src={props.img} /*className="card-img-top"*/ alt={props.title}/>
+                    <img src={props.img} alt={props.title} className="hover-img-scale"/>
                     <div className="card__name">
                         {props.title}
                     </div>
