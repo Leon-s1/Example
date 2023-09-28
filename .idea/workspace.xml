@@ -26,30 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/18_norilsk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/50_norilsk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/53_norilsk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/70_norilsk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/norilsk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/norilsk1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/norilsk2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/norilsk3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/norilsk4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/shahty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/shahty1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/sibtransservice1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/sibtransservice_ — копия.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/sibtransservice_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/ugmk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/ugmk1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/vorkuta1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/vorkuta2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/норильск.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node-postgres/client/src/style/img/размер фото 280 на 220.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/ItemList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1218,14 +1195,7 @@
       <workItem from="1693537147539" duration="30892000" />
       <workItem from="1694393986115" duration="46076000" />
       <workItem from="1695093311570" duration="5238000" />
-      <workItem from="1695777347886" duration="16831000" />
-    </task>
-    <task id="LOCAL-00073" summary="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory">
-      <created>1676436832913</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1676436832913</updated>
+      <workItem from="1695777347886" duration="19060000" />
     </task>
     <task id="LOCAL-00074" summary="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand">
       <created>1676517598106</created>
@@ -1563,7 +1533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695810438740</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Добавил фото карточек городов.">
+      <created>1695895992557</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1695895992557</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1616,7 +1593,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
     <MESSAGE value="Рабочий вариант, добавляет новые данные через модальное окно и обновляет страницу." />
     <MESSAGE value="Пробный вариант добавить Лоадер в справочник." />
     <MESSAGE value="Рабочий вариант c Лоадером" />
@@ -1641,7 +1617,8 @@
     <MESSAGE value="Поднял выше лоадер." />
     <MESSAGE value="Добавил страницы городов" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Добавил фото карточек городов." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил фото карточек городов." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
@@ -1669,10 +1646,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1695810444568">
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1695896017236">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1695810444568" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1695896017236" />
     <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
