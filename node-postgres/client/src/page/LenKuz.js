@@ -36,9 +36,9 @@ const LenKuz = () => {
                 {loading && <Loader />}
                 {users ? (
                     <>
-                        <div className="_row">
+                        {/*<div className="_row">*/}
                             {/*<ItemList/>*/}
-                        </div>
+                        {/*</div>*/}
                         <br/>
                         {/*<AppRouter/>*/}
                         <BodyRow obj={obj} />

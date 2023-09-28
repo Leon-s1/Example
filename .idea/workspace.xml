@@ -15,32 +15,16 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad411b65-35b3-4234-9747-becd83b4e5f2" name="Default Changelist" comment="">
+    <list default="true" id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/components/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/LenKuz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/page/Moscow.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/page/Moscow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node-postgres/client/src/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +32,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="task1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -77,7 +66,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sts/routes" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.18.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/node-postgres/client/src/page" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -89,19 +79,23 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="D:\Example\react-advanced-github\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Example\node-postgres\client\src\style" />
+      <recent name="D:\Example\node-postgres\client\src" />
+      <recent name="D:\Example\node-postgres\server" />
+      <recent name="D:\Example\node-postgres\client" />
+      <recent name="D:\Example\node-postgres\react-postgres\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Example\node-postgres\client\src\page" />
+      <recent name="D:\Example\node-postgres\client\src" />
       <recent name="C:\Example\sts\routes" />
       <recent name="C:\Example\sts\views" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Example\internet shop\client\public\temp" />
-      <recent name="D:\Example\internet shop\client\src\temp" />
-      <recent name="D:\Example\internet shop\server\test" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1131,11 +1125,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.rating#2" />
         <item itemvalue="HTTP Request.order#4" />
         <item itemvalue="HTTP Request.order#3" />
         <item itemvalue="HTTP Request.order#2" />
         <item itemvalue="HTTP Request.order#1" />
-        <item itemvalue="HTTP Request.rating#2" />
       </list>
     </recent_temporary>
   </component>
@@ -1145,7 +1139,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f704a3a4-a0a0-4e2a-bf4d-1ca5c856a935" name="Default Changelist" comment="" />
+      <changelist id="aefa253b-4bb3-4251-ac89-0af4b6c3680a" name="Default Changelist" comment="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
       <created>1633965979510</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1184,294 +1178,21 @@
       <workItem from="1673425563583" duration="104486000" />
       <workItem from="1675830017804" duration="71931000" />
       <workItem from="1677030568075" duration="14356000" />
-      <workItem from="1677487738592" duration="31803000" />
-    </task>
-    <task id="LOCAL-00031" summary="add basket.js">
-      <created>1667901718007</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1667901718007</updated>
-    </task>
-    <task id="LOCAL-00032" summary="edit Basket.js">
-      <created>1668765925101</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1668765925101</updated>
-    </task>
-    <task id="LOCAL-00033" summary="commit">
-      <created>1669970050020</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1669970050020</updated>
-    </task>
-    <task id="LOCAL-00034" summary="add client app">
-      <created>1670925830406</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1670925830406</updated>
-    </task>
-    <task id="LOCAL-00035" summary="add pages">
-      <created>1671010899926</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1671010899926</updated>
-    </task>
-    <task id="LOCAL-00036" summary="edit app.js Route">
-      <created>1671112675267</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1671112675267</updated>
-    </task>
-    <task id="LOCAL-00037" summary="router App">
-      <created>1671500361543</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1671500361543</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Context App">
-      <created>1671527612707</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1671527612707</updated>
-    </task>
-    <task id="LOCAL-00039" summary="add component CategoryBar.js, BrandBar.js, ProductItem.js, ProductList.js">
-      <created>1672289458295</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1672289458295</updated>
-    </task>
-    <task id="LOCAL-00040" summary="add component basket">
-      <created>1673516769621</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1673516769622</updated>
-    </task>
-    <task id="LOCAL-00041" summary="add component shop">
-      <created>1673516825737</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1673516825737</updated>
-    </task>
-    <task id="LOCAL-00042" summary="add component authorization">
-      <created>1674118321358</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1674118321358</updated>
-    </task>
-    <task id="LOCAL-00043" summary="edit component shop, categoryBar, brandBar, productList, ProductItem">
-      <created>1674208061573</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1674208061573</updated>
-    </task>
-    <task id="LOCAL-00044" summary="button Back and Forward">
-      <created>1674532913707</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1674532913707</updated>
-    </task>
-    <task id="LOCAL-00045" summary="add publicRoutes product, basket">
-      <created>1674534480104</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1674534480104</updated>
-    </task>
-    <task id="LOCAL-00046" summary="edit onClick">
-      <created>1674535104554</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1674535104554</updated>
-    </task>
-    <task id="LOCAL-00047" summary="edit page Product">
-      <created>1674622440081</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1674622440081</updated>
-    </task>
-    <task id="LOCAL-00048" summary="edit page Product">
-      <created>1674701506147</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1674701506147</updated>
-    </task>
-    <task id="LOCAL-00049" summary="edit client Basket">
-      <created>1674708511644</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1674708511644</updated>
-    </task>
-    <task id="LOCAL-00050" summary="add new Table Order, OrderItem">
-      <created>1674789345151</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1674789345153</updated>
-    </task>
-    <task id="LOCAL-00051" summary="add new Route, Controllers&lt; Model table Order">
-      <created>1675224005779</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1675224005779</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Оформление заказ на клиенте">
-      <created>1675226474948</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1675226474948</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Добавляем маршруты для просмотр списка заказов и отдельного заказа.">
-      <created>1675654488344</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1675654488344</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Редактирование даты в заказе">
-      <created>1675744245629</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1675744245630</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Список всех заказов в панели администратора">
-      <created>1675764767228</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1675764767228</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Список категорий">
-      <created>1675825838579</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1675825838579</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Добавление бренда">
-      <created>1675826292567</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1675826292567</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Добавление новой категории и обновление состояния">
-      <created>1675826600839</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1675826600839</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Добавление нового бренда и обновление состояния">
-      <created>1675826852373</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1675826852373</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Редактирование категории через Панель управления">
-      <created>1676257513325</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1676257513326</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Редактирование бренда через Панель управления администратора">
-      <created>1676259540703</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1676259540703</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Компонент списка товаров">
-      <created>1676260487214</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1676260487214</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Компонент добавление товара">
-      <created>1676261731029</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1676261731029</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Компонент редактирование товара">
-      <created>1676262479383</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1676262479383</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Компонент характеристики товара">
-      <created>1676263379193</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1676263379193</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Добавили функции для работы с характеристиками в компонент catalogAPI.js">
-      <created>1676343301850</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1676343301850</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Добавили компонент UpdateProperties.js">
-      <created>1676347013084</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1676347013084</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Добавил функцию UpdateProperties в компонент UpdateProduct.js">
-      <created>1676359195214</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1676359195214</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Редактируем компонент App">
-      <created>1676359417816</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1676359417816</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Редактируем компонент App добавляем компонент Loader.js">
-      <created>1676368605762</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1676368605763</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Редактируем NavBar.js, удаляем компонент ChekAuth.js">
-      <created>1676424764096</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1676424764096</updated>
+      <workItem from="1677487738592" duration="69102000" />
+      <workItem from="1678351232540" duration="2763000" />
+      <workItem from="1678416045591" duration="1175000" />
+      <workItem from="1678851552014" duration="2926000" />
+      <workItem from="1686188331117" duration="1446000" />
+      <workItem from="1686706913804" duration="132413000" />
+      <workItem from="1687926097583" duration="56790000" />
+      <workItem from="1690247904392" duration="9000" />
+      <workItem from="1690961022919" duration="5909000" />
+      <workItem from="1691114710753" duration="12493000" />
+      <workItem from="1692238359520" duration="30922000" />
+      <workItem from="1693537147539" duration="30892000" />
+      <workItem from="1694393986115" duration="46076000" />
+      <workItem from="1695093311570" duration="5238000" />
+      <workItem from="1695777347886" duration="3750000" />
     </task>
     <task id="LOCAL-00072" summary="Редактируем BasketList.js">
       <created>1676436722680</created>
@@ -1529,7 +1250,294 @@
       <option name="project" value="LOCAL" />
       <updated>1677666066789</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Редактирование">
+      <created>1677752777560</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1677752777560</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Редактирование">
+      <created>1678096664771</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1678096664772</updated>
+    </task>
+    <task id="LOCAL-00082" summary="commit">
+      <created>1678156226527</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1678156226527</updated>
+    </task>
+    <task id="LOCAL-00083" summary="commit">
+      <created>1678181472167</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1678181472167</updated>
+    </task>
+    <task id="LOCAL-00084" summary="косяк был в закрывающей скобочке } handleClick = (id)&#10;сделал неправильный коммит">
+      <created>1678181732459</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1678181732459</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Редактирование телефонов">
+      <created>1678347439033</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1678347439033</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Редактирование контактов">
+      <created>1678349504536</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1678349504536</updated>
+    </task>
+    <task id="LOCAL-00087" summary="commit">
+      <created>1687405267150</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1687405267150</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add table display">
+      <created>1687426744262</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1687426744262</updated>
+    </task>
+    <task id="LOCAL-00089" summary="update catalogs">
+      <created>1687926527594</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1687926527595</updated>
+    </task>
+    <task id="LOCAL-00090" summary="update catalogs">
+      <created>1687947837588</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1687947837588</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Компонент AddUser добавляет данные в БД, но при отправке, форма не закрывается и таблица в браузере не обновляется.">
+      <created>1688117908063</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1688117908063</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Добавил запись Кузьминых">
+      <created>1688529861580</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1688529861580</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Добавление новых данных работает, но не происходит обновление страницы онлайн.">
+      <created>1688530130350</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1688530130350</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Рабочий вариант, добавляет новые данные через модальное окно и обновляет страницу.">
+      <created>1688552357573</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1688552357573</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Пробный вариант добавить Лоадер в справочник.">
+      <created>1688637641875</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1688637641875</updated>
+    </task>
+    <task id="LOCAL-00096" summary="commit">
+      <created>1691135916446</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1691135916446</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Рабочий вариант c Лоадером">
+      <created>1691379254985</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1691379254985</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Рабочий вариант. fix update merchant">
+      <created>1691397584762</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1691397584762</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать.">
+      <created>1691750498865</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1691750498865</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Отредактировал Лоадер.">
+      <created>1691983047550</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1691983047550</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Отредактировал Лоадер.">
+      <created>1691986781106</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1691986781106</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева.">
+      <created>1692085793268</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1692085793268</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Выровнял заголовок таблицы.">
+      <created>1692094841985</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1692094841985</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться.">
+      <created>1692157297138</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1692157297138</updated>
+    </task>
+    <task id="LOCAL-00105" summary="До делать перенос строки в ячейке.">
+      <created>1692179022019</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1692179022019</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки.">
+      <created>1692354011707</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1692354011707</updated>
+    </task>
+    <task id="LOCAL-00107" summary="commit">
+      <created>1692614975774</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1692614975774</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Добавил в массив ссылку на картинку в файле ItemList.js">
+      <created>1692700582171</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1692700582171</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Добавил в массив ссылку на страницы Ленинск-Кузнецкий, Москва, Новокузнецк в файле ItemList.js&#10;Передача свойств динамически.">
+      <created>1692947239327</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1692947239327</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически.">
+      <created>1693385291027</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1693385291028</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Добавил картинки для кнопок городов.">
+      <created>1693561579566</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1693561579567</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Выровнял по центру. Исправил границы таблицы. Работают кнопки добавить запись и удалить. Редактирование надо править.">
+      <created>1694165422686</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1694165422686</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Добавил к ячейке td отображение display: table-cell и перенос строки word-wrap: break-word;">
+      <created>1694166585463</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1694166585463</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Отредактировал функцию update.">
+      <created>1694403667617</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1694403667617</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Сделал показ данных при нажатии на кнопку Города Ленинск-Кузнецкий.">
+      <created>1694425983037</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1694425983037</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Сделал фильтр по городу Ленинск-Кузнецкий. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий.">
+      <created>1694514026602</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1694514026602</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Передача параметра city в функцию getMerchantsLk, для фильтрации сотрудников по городам. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий, Москва...">
+      <created>1694665182035</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1694665182035</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Передача параметра city в функцию getMerchantsLk, для фильтрации сотрудников по городам. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий, Москва...">
+      <created>1694665978232</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1694665978232</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Поднял выше лоадер.">
+      <created>1694684246971</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1694684246972</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Добавил страницы городов">
+      <created>1695638603609</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1695638603610</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1567,6 +1575,12 @@
                   </entry>
                 </map>
               </option>
+              <option name="COLUMN_WIDTH">
+                <map>
+                  <entry key="2" value="40" />
+                  <entry key="3" value="62" />
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -1576,91 +1590,79 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Добавляем маршруты для просмотр списка заказов и отдельного заказа." />
-    <MESSAGE value="Редактирование даты в заказе" />
-    <MESSAGE value="Список всех заказов в панели администратора" />
-    <MESSAGE value="Список категорий" />
-    <MESSAGE value="Добавление бренда" />
-    <MESSAGE value="Добавление новой категории и обновление состояния" />
-    <MESSAGE value="Добавление нового бренда и обновление состояния" />
-    <MESSAGE value="Редактирование категории через Панель управления" />
-    <MESSAGE value="Редактирование бренда через Панель управления администратора" />
-    <MESSAGE value="Компонент списка товаров" />
-    <MESSAGE value="Компонент добавление товара" />
-    <MESSAGE value="Компонент редактирование товара" />
-    <MESSAGE value="Компонент характеристики товара" />
-    <MESSAGE value="Добавили функции для работы с характеристиками в компонент catalogAPI.js" />
-    <MESSAGE value="Добавили компонент UpdateProperties.js" />
-    <MESSAGE value="Добавил функцию UpdateProperties в компонент UpdateProduct.js" />
-    <MESSAGE value="Редактируем компонент App" />
-    <MESSAGE value="Редактируем компонент App добавляем компонент Loader.js" />
-    <MESSAGE value="Редактируем NavBar.js, удаляем компонент ChekAuth.js" />
-    <MESSAGE value="Редактируем BasketList.js" />
-    <MESSAGE value="Добавляю EditCategory.js и объединяю в этот компонент CreateCategory и UpdateCategory" />
-    <MESSAGE value="Добавляю EditBrand.js и объединяю в этот компонент CreateBrand и UpdateBrand" />
-    <MESSAGE value="Исправления" />
-    <MESSAGE value="Редактирование." />
-    <MESSAGE value="Редактирование" />
-    <option name="LAST_COMMIT_MESSAGE" value="Редактирование" />
+    <MESSAGE value="Добавление новых данных работает, но не происходит обновление страницы онлайн." />
+    <MESSAGE value="Рабочий вариант, добавляет новые данные через модальное окно и обновляет страницу." />
+    <MESSAGE value="Пробный вариант добавить Лоадер в справочник." />
+    <MESSAGE value="Рабочий вариант c Лоадером" />
+    <MESSAGE value="Рабочий вариант. fix update merchant" />
+    <MESSAGE value="Рабочий вариант. создал таблицу users. Добавил реальные столбцы. Функционал добавляет, удаляет. Редактирование записи нужно дорабатывать." />
+    <MESSAGE value="Отредактировал Лоадер." />
+    <MESSAGE value="Рабочий коммит с Лоадером в центре. Получил различия и забрал ветку из рабочего дерева." />
+    <MESSAGE value="Выровнял заголовок таблицы." />
+    <MESSAGE value="Ровная статическая таблица. Но если информации больше, то поля могут сдвинуться." />
+    <MESSAGE value="До делать перенос строки в ячейке." />
+    <MESSAGE value="Добавил Навигацию NavBar.js, добавил маршруты AppRouter.js. Добавил две страницы Главная Main и страница город LenKuz.js, добавил observer mob-x. Скачал картинки на кнопки." />
+    <MESSAGE value="commit" />
+    <MESSAGE value="Добавил в массив ссылку на картинку в файле ItemList.js" />
+    <MESSAGE value="Добавил в массив ссылку на страницы Ленинск-Кузнецкий, Москва, Новокузнецк в файле ItemList.js&#10;Передача свойств динамически." />
+    <MESSAGE value="Добавил название города в карточке города Ленинск-Кузнецкий, Москва, Новокузнецк в файле Item.js&#10;Передача свойств динамически." />
+    <MESSAGE value="Добавил картинки для кнопок городов." />
+    <MESSAGE value="Выровнял по центру. Исправил границы таблицы. Работают кнопки добавить запись и удалить. Редактирование надо править." />
+    <MESSAGE value="Добавил к ячейке td отображение display: table-cell и перенос строки word-wrap: break-word;" />
+    <MESSAGE value="Отредактировал функцию update." />
+    <MESSAGE value="Сделал показ данных при нажатии на кнопку Города Ленинск-Кузнецкий." />
+    <MESSAGE value="Сделал фильтр по городу Ленинск-Кузнецкий. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий." />
+    <MESSAGE value="Передача параметра city в функцию getMerchantsLk, для фильтрации сотрудников по городам. Показ данных при нажатии на кнопку Города Ленинск-Кузнецкий, Москва..." />
+    <MESSAGE value="Поднял выше лоадер." />
+    <MESSAGE value="Добавил страницы городов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил страницы городов" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="136" y="202" key="#Inspections" timestamp="1676880577826">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2472" y="176" width="816" height="864" key="#Intentions" timestamp="1687853179935">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="136" y="202" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1676880577826" />
-    <state x="102" y="41" width="816" height="999" key="#Intentions" timestamp="1671507929217">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2472" y="176" width="816" height="864" key="#Intentions/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687853179935" />
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1694061208445">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="102" y="41" width="816" height="999" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1671507929217" />
-    <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1671503423520">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2653" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694061208445" />
+    <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1687233360515">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="244" y="300" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1040@0.0.1920.1040" timestamp="1671503423520" />
-    <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog" timestamp="1671507126442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2627" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1687233360515" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1692085799572">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="287" y="305" key="#org.intellij.plugins.intelliLang.inject.config.ui.BaseInjectionDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1671507126442" />
-    <state x="262" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1677742005295">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
+    <state x="442" y="150" key="SettingsEditor" timestamp="1695653500971">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="262" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1677742005295" />
-    <state width="395" height="615" key="GridCell.Tab.0.bottom" timestamp="1675224249997">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="442" y="150" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1695653500971" />
+    <state x="2816" y="237" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694403819470" />
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog" timestamp="1692085799572">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="395" height="615" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
-    <state width="395" height="615" key="GridCell.Tab.0.center" timestamp="1675224249997">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2012" y="92" width="1736" height="856" key="ShowDiffWithBranchDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1692085799572" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2" timestamp="1695638616960">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="395" height="615" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
-    <state width="395" height="615" key="GridCell.Tab.0.left" timestamp="1675224249997">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2061" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1695638616960" />
+    <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1691986704646">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="395" height="615" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
-    <state width="395" height="615" key="GridCell.Tab.0.right" timestamp="1675224249997">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2660" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1691986704646" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1693455933885">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="395" height="615" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1675224249997" />
-    <state x="15" y="165" key="SettingsEditor" timestamp="1671507207343">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1693455933885" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1693975187826">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="15" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1671507207343" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2" timestamp="1677666093906">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1693975187826" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1694513742415">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="106" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1671112688685" />
-    <state x="141" y="201" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1677666093906" />
-    <state x="343" y="147" width="585" height="795" key="find.popup" timestamp="1677741967978">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="343" y="147" width="585" height="795" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1677741967978" />
-    <state x="167" y="244" key="run.anything.popup" timestamp="1676258371143">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="167" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1676258371143" />
-    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1670836670554">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="171" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1670836670554" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1694513742415" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
