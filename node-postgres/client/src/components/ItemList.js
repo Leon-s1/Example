@@ -3,6 +3,11 @@ import Item from "./Item";
 import lenkuz from '../style/img/lenkuz.jpg';
 import moskva from '../style/img/москва1_1.jpg';
 import novokuznetsk from '../style/img/novokuz11.jpg';
+import vorkuta from '../style/img/vorkuta2.jpg'
+import norilsk from "../style/img/norilsk4.jpg"
+import shahti from "../style/img/shahty1.jpg"
+import ural from "../style/img/ugmk1.jpg"
+import sts from "../style/img/dnk14_2.jpg"
 import AppRouter from "./AppRouter";
 import { Link } from "react-router-dom";
 import LenKuz from "../page/LenKuz.js";
@@ -34,31 +39,31 @@ const ItemList = observer(() => {
         {
             id: 4,
             title: "Воркута",
-            img: novokuznetsk,
+            img: vorkuta,
             page: "/vorkuta",
         },
         {
             id: 5,
             title: "Норильск",
-            img: novokuznetsk,
+            img: norilsk,
             page: "/norilsk",
         },
         {
             id: 6,
             title: "Шахты",
-            img: novokuznetsk,
+            img: shahti,
             page: "/shahti",
         },
         {
             id: 7,
             title: "Урал (УГМК)",
-            img: novokuznetsk,
+            img: ural,
             page: "/ural",
         },
         {
             id: 8,
             title: "Реквизиты ООО Сибтранссервис ",
-            img: novokuznetsk,
+            img: sts,
             page: "/rekvizit",
         },
         {
