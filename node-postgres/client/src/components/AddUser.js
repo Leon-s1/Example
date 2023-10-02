@@ -95,64 +95,65 @@ const AddUser = ({active, setActive}) => {
                     {/*{children}*/}
                     <div className='modal-form'>
                         <form action='' onSubmit={createMerchant}>
+                            <h3>Добавить сотрудника</h3>
 
                            <div>
                             <label>ФИО:
+                            </label>
                                 <input
                                     type="text"
                                     name="fio"
                                     value={fio}
                                     onChange={(e) => setFio(e.target.value)}
                                 />
-                            </label>
                             <label>Должность:
+                            </label>
                                 <input
                                     type="text"
                                     name="position"
                                     value={position}
                                     onChange={(e) => setPosition(e.target.value)}
                                 />
-                            </label>
                             <label>Вн.номер:
+                            </label>
                                 <input
                                     type="text"
                                     name="int_phone"
                                     value={int_phone}
                                     onChange={(e) => setInt_phone(e.target.value)}
                                 />
-                            </label>
                             <label>Моб.телефон:
+                            </label>
                                 <input
                                     type="text"
                                     name="mobile"
                                     value={mobile}
                                     onChange={(e) => setMobile(e.target.value)}
                                 />
-                            </label>
                             <label>Email:
+                            </label>
                                 <input
                                     type="text"
                                     name="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
-                            </label>
                             <label>Skype:
+                            </label>
                                 <input
                                     type="text"
                                     name="skype"
                                     value={skype}
                                     onChange={(e) => setSkype(e.target.value)}
                                 />
-                            </label>
                             <label>Город:
+                            </label>
                                 <input
                                     type="text"
                                     name="city"
                                     value={city}
                                     onChange={(e) => setCity(e.target.value)}
                                 />
-                            </label>
                            </div>
                             <div className='btn-block'>
                                 <input type="submit" value="Добавить"/>
