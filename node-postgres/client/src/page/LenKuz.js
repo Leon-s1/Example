@@ -12,12 +12,12 @@ const LenKuz = () => {
 
     useEffect((obj) => {
         setTimeout(() => {
-            getMerchantsLk();
+            getMerchantsCity();
             setLoading(false)
         }, 2000)
     }, []);
 
-    function getMerchantsLk() {
+    function getMerchantsCity() {
         let city = 'ЛК'
         fetch(`http://localhost:3001/users/${city}`)
             .then(response => {

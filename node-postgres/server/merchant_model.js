@@ -27,7 +27,7 @@ const getMerchants = () => {
     })
 }
 
-const getMerchantsLk = (userCity) => {
+const getMerchantsCity = (userCity) => {
     return new Promise(function(resolve, reject) {
         const city = userCity
         console.log(city)
@@ -89,7 +89,7 @@ const updateMerchant = (body) => {
 
 module.exports = {
     getMerchants,
-    getMerchantsLk,
+    // getMerchantsCity,
     createMerchant,
     deleteMerchant,
     updateMerchant,

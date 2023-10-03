@@ -12,6 +12,7 @@ const AddUser = ({active, setActive}) => {
     const [email, setEmail] = useState('');
     const [skype, setSkype] = useState('');
     const [city, setCity] = useState('');
+    // const [lang, setLang] = useState('');
 
 
         // useEffect(() => {
@@ -83,6 +84,10 @@ const AddUser = ({active, setActive}) => {
         //         })
         // }
 
+    // handleChange = (event) => {
+    //     this.setState({[event.target.name]: event.target.value});
+    // }
+
     function handleSubmit(e) {
         e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
         console.log(fio, email);
@@ -105,6 +110,7 @@ const AddUser = ({active, setActive}) => {
                                     name="fio"
                                     value={fio}
                                     onChange={(e) => setFio(e.target.value)}
+                                    pattern=".{1,}" required
                                 />
                             <label>Должность:
                             </label>
@@ -113,6 +119,7 @@ const AddUser = ({active, setActive}) => {
                                     name="position"
                                     value={position}
                                     onChange={(e) => setPosition(e.target.value)}
+                                    pattern=".{1,}" required
                                 />
                             <label>Вн.номер:
                             </label>
@@ -121,6 +128,7 @@ const AddUser = ({active, setActive}) => {
                                     name="int_phone"
                                     value={int_phone}
                                     onChange={(e) => setInt_phone(e.target.value)}
+                                    pattern=".{1,}" required
                                 />
                             <label>Моб.телефон:
                             </label>
@@ -129,6 +137,7 @@ const AddUser = ({active, setActive}) => {
                                     name="mobile"
                                     value={mobile}
                                     onChange={(e) => setMobile(e.target.value)}
+                                    pattern=".{1,}" required
                                 />
                             <label>Email:
                             </label>
@@ -137,6 +146,7 @@ const AddUser = ({active, setActive}) => {
                                     name="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
+                                    pattern=".{1,}" required
                                 />
                             <label>Skype:
                             </label>
@@ -145,15 +155,33 @@ const AddUser = ({active, setActive}) => {
                                     name="skype"
                                     value={skype}
                                     onChange={(e) => setSkype(e.target.value)}
+                                    pattern=".{1,}" required
                                 />
                             <label>Город:
                             </label>
-                                <input
-                                    type="text"
-                                    name="city"
-                                    value={city}
-                                    onChange={(e) => setCity(e.target.value)}
-                                />
+                                {/*<input*/}
+                                {/*    type="text"*/}
+                                {/*    name="city"*/}
+                                {/*    value={city}*/}
+                                {/*    onChange={(e) => setCity(e.target.value)}*/}
+                                {/*    pattern=".{1,}" required*/}
+                                {/*/>*/}
+                               <select
+                                   // name="lang"
+                                   // value={lang}
+                                   // onChange={(e) => setLang(e.target.value)}
+                                   type="text"
+                                   name="city"
+                                   value={city}
+                                   onChange={(e) => setCity(e.target.value)}
+                                   pattern=".{1,}" required
+                                   // onBlur={this.validateField}
+                               >
+                                   <option value="">Выберите Город</option>
+                                   <option value="ЛК">Ленинск-Кузнецкий</option>
+                                   <option value="НВКЗ">Новокузнецк</option>
+                                   <option value="МСК">Москва</option>
+                               </select>
                            </div>
                             <div className='btn-block'>
                                 <input type="submit" value="Добавить"/>
