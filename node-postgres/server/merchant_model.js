@@ -1,11 +1,10 @@
 const Pool = require('pg').Pool
-// import Pool from 'pg'
 const pool = new Pool({
-    database: 'my_database',
     user: 'my_user',
     password: 'Kjubntx12',
-    port: 5432,
+    database: 'my_database',
     host: 'localhost',
+    port: 5432,
     // connectionTimeoutMillis: 2000,
     // connectionLimit: 2,
 });
@@ -89,7 +88,7 @@ const updateMerchant = (body) => {
 
 module.exports = {
     getMerchants,
-    // getMerchantsCity,
+    getMerchantsCity,
     createMerchant,
     deleteMerchant,
     updateMerchant,

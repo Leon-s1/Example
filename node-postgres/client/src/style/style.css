@@ -27,9 +27,6 @@ h1, h2, h3, h4, h5, a, p, div, span {
     /*justify-content: center;*/
 }
 
-button {
-    margin-bottom: 10px;
-}
 
 /*html, body{*/
 /*    margin: 0;*/
@@ -305,7 +302,15 @@ div._card  {
     width: 100px;
     height: 40px;
 }
-
+button {
+    margin-top: 13px;
+    width: 72px;
+    height: 35px;
+    /*float: right;*/
+    border-radius: 5px;
+    /*display: ;*/
+    /*justify-content: flex-start;*/
+}
 /*Черно белая картинка на карточке города*/
 /*.grey-image {*/
 /*    filter: grayscale(1);*/

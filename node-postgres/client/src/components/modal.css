@@ -13,6 +13,9 @@
     pointer-events: none;
     transition: 0.5s;
     box-sizing: border-box;
+
+    /*position: fixed;*/
+    /*overflow-y: auto;*/
 }
 
 .modal.active {
@@ -36,14 +39,15 @@ form input, select {
 }
 
 .modal__content {
-    padding: 20px;
+    padding: 15px;
     border-radius: 12px;
     background-color: white;
     transform: scale(0.5);
     transition: 0.4s all;
-    height: 42vh;
+    min-height: 40vh;
     width: 15vw;
     background-color: #f6f6f6;
+    /*box-sizing: content-box;*/
 /*box-sizing: border-box;*/
 /*display: flex;*/
 }
@@ -62,12 +66,12 @@ label {
 /*    display: flex;*/
 /*    justify-content: space-between;*/
 /*}*/
-.btn-block {
-    margin-top: 13px;
-    width: 100px;
-    height: 15px;
+.btn-block button {
+    margin-top: 15px;
+    width: 72px;
+    height: 35px;
     float: right;
-    border-radius: 20px;
+    border-radius: 5px;
     /*display: ;*/
     /*justify-content: flex-start;*/
 }

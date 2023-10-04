@@ -100,7 +100,7 @@ const AddUser = ({active, setActive}) => {
                     {/*{children}*/}
                     <div className='modal-form'>
                         <form action='' onSubmit={createMerchant}>
-                            <h3>Добавить сотрудника</h3>
+                            <h3>Добавление сотрудника</h3>
 
                            <div>
                             <label>ФИО:
@@ -184,7 +184,8 @@ const AddUser = ({active, setActive}) => {
                                </select>
                            </div>
                             <div className='btn-block'>
-                                <input type="submit" value="Добавить"/>
+                                <button type="submit" value="Добавить">Добавить
+                                </button>
                             </div>
                         </form>
                     </div>

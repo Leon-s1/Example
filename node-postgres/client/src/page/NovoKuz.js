@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import Loader from "../Loader";
 import BodyRow from "../components/BodyRow";
 
-const NovKuz = () => {
+const NovoKuz = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
@@ -52,4 +52,4 @@ const NovKuz = () => {
     )
 }
 
-export default NovKuz
+export default NovoKuz

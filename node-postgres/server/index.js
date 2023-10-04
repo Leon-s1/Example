@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 
 app.get('/users/:city', (req, res) => {
 // app.get('/', (req, res) => {
-    merchant_model.getMerchantsLk(req.params.city)
+    merchant_model.getMerchantsCity(req.params.city)
         .then(response => {
             res.status(200).send(response);
         })
