@@ -32,27 +32,20 @@ const BodyRow = ({obj}) => {
 
         <div>
             {Object.values(obj).map((value, index) => {
-                    return (
-                        // <table>
-
-                            <>
-
-                        {/*<tbody>*/}
-                                    <tr>
-                                        <td className="index" key={index}>{index}</td>
-                                        <td className="id">{value.id}</td>
-                                        <td className="fio">{value.fio}</td>
-                                        <td className="position">{value.position}</td>
-                                        <td className="int_phone">{value.int_phone}</td>
-                                        <td className="mobile">{value.mobile}</td>
-                                        <td className="email">{value.email}</td>
-                                        <td className="skype">{value.skype}</td>
-                                    </tr>
-                        {/*</tbody>*/}
+                return (
+                        <>
+                            <tr>
+                                <td className="index" key={index}>{index}</td>
+                                <td className="id">{value.id}</td>
+                                <td className="fio">{value.fio}</td>
+                                <td className="position">{value.position}</td>
+                                <td className="int_phone">{value.int_phone}</td>
+                                <td className="mobile">{value.mobile}</td>
+                                <td className="email">{value.email}</td>
+                                <td className="skype">{value.skype}</td>
+                            </tr>
                         </>
-
-                    // </table>
-                );
+                    );
             })}
         </div>
     </table>

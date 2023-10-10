@@ -27,7 +27,7 @@ const App = observer(() => {
 
     useEffect((obj) => {
         setTimeout(() => {
-            // getMerchant();
+            getUsers();
             // setLoading(false)
         }, 0)
     }, []);
