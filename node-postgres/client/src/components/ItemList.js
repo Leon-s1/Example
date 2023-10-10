@@ -8,11 +8,6 @@ import norilsk from "../style/img/norilsk4.jpg"
 import shahti from "../style/img/shahty1.jpg"
 import ural from "../style/img/ugmk1.jpg"
 import sts from "../style/img/dnk14_2.jpg"
-import AppRouter from "./AppRouter";
-import { Link } from "react-router-dom";
-import LenKuz from "../page/LenKuz.js";
-import Moscow from "../page/Moscow.js";
-import NovoKuz from "../page/NovoKuz.js"
 import { observer } from "mobx-react";
 
 
@@ -66,12 +61,12 @@ const ItemList = observer(() => {
             img: sts,
             page: "/rekvizit",
         },
-        {
-            id: 9,
-            title: "Новокузнецк",
-            img: novokuznetsk,
-            page: "/novokuz",
-        },
+        // {
+        //     id: 9,
+        //     title: "Новокузнецк",
+        //     img: novokuznetsk,
+        //     page: "/novokuz",
+        // },
     ]
     return (
             // <AppRouter/>

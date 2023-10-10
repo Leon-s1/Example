@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./modal.css"
-// import {getMerchant} from "../App";
+import {getMerchant} from "../App";
 
 
 const AddUser = ({active, setActive}) => {
@@ -12,24 +12,8 @@ const AddUser = ({active, setActive}) => {
     const [email, setEmail] = useState('');
     const [skype, setSkype] = useState('');
     const [city, setCity] = useState('');
-    // const [lang, setLang] = useState('');
 
-
-        // useEffect(() => {
-        //     getMerchant();
-        // }, []);
-
-        // function getMerchant() {
-        //     fetch('http://localhost:3001')
-        //         .then(response => {
-        //             return response.text();
-        //         })
-        //         .then(data => {
-        //             setUsers(data);
-        //         });
-        // }
-
-        function createMerchant(event) {
+        function createUser() {
             fetch('http://localhost:3001/users', {
                 method: 'POST',
                 headers: {
@@ -46,47 +30,8 @@ const AddUser = ({active, setActive}) => {
                     // getMerchant();
 
                 });
-            console.log(fio, email);
+            // console.log(fio, email);
         }
-
-        // function deleteMerchant() {
-        //     let id = prompt('Enter merchant id');
-        //     fetch(`http://localhost:3001/merchants/${id}`, {
-        //         method: 'DELETE',
-        //     })
-        //         .then(response => {
-        //             return response.text();
-        //         })
-        //         .then(data => {
-        //             alert(data);
-        //             getMerchant();
-        //         })
-        //     // .catch(err => console.log(err));
-        // }
-        //
-        // function updateMerchant() {
-        //     let index = prompt('Enter merchant index');
-        //     let name = prompt('Enter merchant name');
-        //     let email = prompt('Enter merchant email');
-        //     fetch(`http://localhost:3001/merchants/${index}`, {
-        //         method: 'PUT',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-        //         body: JSON.stringify({index, name, email}),
-        //     })
-        //         .then(response => {
-        //             return response.text();
-        //         })
-        //         .then(data => {
-        //             alert(data);
-        //             getMerchant();
-        //         })
-        // }
-
-    // handleChange = (event) => {
-    //     this.setState({[event.target.name]: event.target.value});
-    // }
 
     function handleSubmit(e) {
         e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
@@ -99,7 +44,7 @@ const AddUser = ({active, setActive}) => {
 
                     {/*{children}*/}
                     <div className='modal-form'>
-                        <form action='' onSubmit={createMerchant}>
+                        <form action='' onSubmit={createUser}>
                             <h3>Добавление сотрудника</h3>
 
                            <div>

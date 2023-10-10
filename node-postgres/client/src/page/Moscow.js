@@ -10,12 +10,12 @@ const Moscow = () => {
 
     useEffect((obj) => {
         setTimeout(() => {
-            getMerchantsLk();
+            getUsersCity();
             setLoading(false)
         }, 2000)
     }, []);
 
-    function getMerchantsLk() {
+    function getUsersCity() {
         let city = 'МСК'
         fetch(`http://localhost:3001/users/${city}`)
             // {

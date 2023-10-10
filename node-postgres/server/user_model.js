@@ -12,7 +12,7 @@ const pool = new Pool({
 // const client = await pool.connect()
 
 
-const getMerchants = () => {
+const getUsers = () => {
     return new Promise(function(resolve, reject) {
         // pool.query('SELECT * FROM users', (error, results) => {
         pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
@@ -26,7 +26,7 @@ const getMerchants = () => {
     })
 }
 
-const getMerchantsCity = (userCity) => {
+const getUsersCity = (userCity) => {
     return new Promise(function(resolve, reject) {
         const city = userCity
         console.log(city)
@@ -43,7 +43,7 @@ const getMerchantsCity = (userCity) => {
     })
 }
 
-const createMerchant = (body) => {
+const createUser = (body) => {
     return new Promise(function (resolve, reject) {
         const { fio, position, int_phone, mobile, email, skype, city } = body
 
@@ -56,7 +56,7 @@ const createMerchant = (body) => {
     })
 }
 
-const deleteMerchant = (merchantId) => {
+const deleteUser = (merchantId) => {
     return new Promise(function (resolve, reject) {
         const id = parseInt(merchantId)
 
@@ -69,7 +69,7 @@ const deleteMerchant = (merchantId) => {
     })
 }
 
-const updateMerchant = (body) => {
+const updateUser = (body) => {
     return new Promise(function (resolve, reject) {
         // const id = parseInt(merchantId)
         const { id, fio, position, int_phone, mobile, email, skype } = body
@@ -87,9 +87,9 @@ const updateMerchant = (body) => {
 }
 
 module.exports = {
-    getMerchants,
-    getMerchantsCity,
-    createMerchant,
-    deleteMerchant,
-    updateMerchant,
+    getUsers,
+    getUsersCity,
+    createUser,
+    deleteUser,
+    updateUser,
 }

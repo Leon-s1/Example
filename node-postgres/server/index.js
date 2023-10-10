@@ -7,7 +7,7 @@ const port = 3001
 //     res.status(200).send('Hello Worlds!')
 // })
 // import {getMerchants, createMerchant, deleteMerchant, updateMerchant} from './merchant_model.js'
-const merchant_model = require('./merchant_model.js')
+const user_model = require('./user_model.js')
 // import MerchantModel from './merchant_model.js'
 
 // app.use(cors())
@@ -25,7 +25,7 @@ app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 
 
 app.get('/', (req, res) => {
-    merchant_model.getMerchants()
+    user_model.getUsers()
         .then(response => {
             res.status(200).send(response);
         })
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 
 app.get('/users/:city', (req, res) => {
 // app.get('/', (req, res) => {
-    merchant_model.getMerchantsCity(req.params.city)
+    user_model.getUsersCity(req.params.city)
         .then(response => {
             res.status(200).send(response);
         })
@@ -46,7 +46,7 @@ app.get('/users/:city', (req, res) => {
 })
 
 app.post('/users', (req, res) => {
-    merchant_model.createMerchant(req.body)
+    user_model.createUser(req.body)
         .then(response => {
             res.status(200).send(response);
         })
@@ -56,7 +56,7 @@ app.post('/users', (req, res) => {
 })
 
 app.delete('/users/:id', (req, res) => {
-    merchant_model.deleteMerchant(req.params.id)
+    user_model.deleteUser(req.params.id)
         .then(response => {
             res.status(200).send(response);
         })
@@ -67,7 +67,7 @@ app.delete('/users/:id', (req, res) => {
 
 app.put('/users/:id', (req, res) => {
     // merchant_model.updateMerchant(req.params.id, req.body)
-    merchant_model.updateMerchant(req.body)
+    user_model.updateUser(req.body)
         .then(response => {
             res.status(200).send(response);
         })

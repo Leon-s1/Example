@@ -10,12 +10,12 @@ const NovoKuz = () => {
 
     useEffect((obj) => {
         setTimeout(() => {
-            getMerchantsCity();
+            getUsersCity();
             setLoading(false)
         }, 2000)
     }, []);
 
-    function getMerchantsCity() {
+    function getUsersCity() {
         let city = 'НВКЗ'
         fetch(`http://localhost:3001/users/${city}`)
             .then(response => {

@@ -32,7 +32,7 @@ const App = observer(() => {
         }, 0)
     }, []);
 
-    function getMerchant() {
+    function getUsers() {
         fetch('http://localhost:3001')
             .then(response => {
                 return response.text();
@@ -78,9 +78,9 @@ const App = observer(() => {
             })
             .then(data => {
                 alert(data);
-                getMerchant();
+                getUsers();
             })
-        // .catch(err => console.log(err));
+        .catch(err => console.log(err));
     }
 
     function updateMerchant() {
@@ -104,7 +104,7 @@ const App = observer(() => {
             })
             .then(data => {
                 alert(data);
-                getMerchant();
+                getUsers();
             })
     }
 
