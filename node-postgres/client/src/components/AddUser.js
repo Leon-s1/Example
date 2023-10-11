@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import "./modal.css"
-import {getMerchant} from "../App";
 
 
 const AddUser = ({active, setActive}) => {
@@ -27,25 +26,22 @@ const AddUser = ({active, setActive}) => {
                 .then(data => {
                     alert(data);
                     setActive(false)
-                    // getMerchant();
-
                 });
             // console.log(fio, email);
         }
 
     function handleSubmit(e) {
         e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
-        console.log(fio, email);
     }
 
         return (
-            <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
-                <div className={active ? 'modal__content active' : 'modal__content'} onClick={e => e.stopPropagation()}>
+            <div className={active ? 'addmodal active' : 'addmodal'} onClick={() => setActive(false)}>
+                <div className={active ? 'addmodal__content active' : 'addmodal__content'} onClick={e => e.stopPropagation()}>
 
                     {/*{children}*/}
                     <div className='modal-form'>
                         <form action='' onSubmit={createUser}>
-                            <h3>Добавление сотрудника</h3>
+                            <h3>Добавить контакт</h3>
 
                            <div>
                             <label>ФИО:
@@ -56,6 +52,7 @@ const AddUser = ({active, setActive}) => {
                                     value={fio}
                                     onChange={(e) => setFio(e.target.value)}
                                     pattern=".{1,}" required
+                                    // required
                                 />
                             <label>Должность:
                             </label>
@@ -127,9 +124,11 @@ const AddUser = ({active, setActive}) => {
                                    <option value="НВКЗ">Новокузнецк</option>
                                    <option value="МСК">Москва</option>
                                </select>
-                           </div>
+                            </div>
                             <div className='btn-block'>
-                                <button type="submit" value="Добавить">Добавить
+                                {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
+                                {/*<button onClick={(e) => setActive(false)}>Отменить</button>*/}
+                                <button type="submit" value="Добавить" >Добавить
                                 </button>
                             </div>
                         </form>

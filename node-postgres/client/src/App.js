@@ -6,6 +6,7 @@ import AppRouter from "./components/AppRouter";
 import TableRow from "./components/TableRow.js";
 import BodyRow from "./components/BodyRow.js";
 import AddUser from "./components/AddUser";
+import DelUser from "./components/DelUser";
 import Loader from "./Loader";
 import ItemList from "./components/ItemList";
 import LenKuz from "./page/LenKuz";
@@ -15,7 +16,8 @@ import NavBar from "./components/NavBar.js";
 
 const App = observer(() => {
     const [users, setUsers] = useState(false);
-    const [modalActive, setModalActive] = useState(false);
+    const [addmodalActive, setAddmodalActive] = useState(false);
+    const [delmodalActive, setDelmodalActive] = useState(false);
     const [loading, setLoading] = React.useState(true)
     // let Students = [],
     //     submitbtn = document.querySelector('#submit'),
@@ -125,6 +127,7 @@ const App = observer(() => {
                         <ItemList/>
                     </div>
                     <br/>
+
                     <AppRouter/>
                     {/*<BodyRow obj={obj} />*/}
                 </>
@@ -145,15 +148,16 @@ const App = observer(() => {
 
 
 
-                <AddUser active={modalActive} setActive={setModalActive} />
+                <AddUser active={addmodalActive} setActive={setAddmodalActive} />
+                <DelUser active={delmodalActive} setActive={setDelmodalActive} />
 
 
                 <br/>
-                <button onClick={() => setModalActive(true)}>Add merchant</button>
+                <button onClick={() => setAddmodalActive(true)}>Add merchant</button>
                 <br/>
                 {/*<button onClick={createMerchant}>Add merchant</button>*/}
                 <br/>
-                <button onClick={deleteMerchant}>Delete merchant</button>
+                <button onClick={() => setDelmodalActive(true)}>Delete merchant</button>
                 <br/>
                 <button onClick={updateMerchant}>Update merchant</button>
 

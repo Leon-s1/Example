@@ -308,8 +308,14 @@ button {
     height: 35px;
     /*float: right;*/
     border-radius: 5px;
+
     /*display: ;*/
     /*justify-content: flex-start;*/
+}
+.btn-block {
+    display: flex;
+    justify-content: space-around;
+
 }
 /*Черно белая картинка на карточке города*/
 /*.grey-image {*/

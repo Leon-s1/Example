@@ -11,7 +11,7 @@ import sts from "../style/img/dnk14_2.jpg"
 import { observer } from "mobx-react";
 
 
-const ItemList = observer(() => {
+const ItemList = () => {
     const images = [
         {
             id: 1,
@@ -79,6 +79,6 @@ const ItemList = observer(() => {
             )
     )
 
-})
+}
 
 export default ItemList

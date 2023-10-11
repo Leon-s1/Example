@@ -10,7 +10,7 @@ const BodyRow = ({obj}) => {
 
                                      {/*<thead>*/}
                                          <tr>
-                                            <th className="index">idx</th>
+                                            {/*<th className="index">idx</th>*/}
                                             <th className="id">id</th>
                                             <th className="fio">ФИО</th>
                                             <th className="position">Должность</th>
@@ -35,7 +35,7 @@ const BodyRow = ({obj}) => {
                 return (
                         <>
                             <tr>
-                                <td className="index" key={index}>{index}</td>
+                                {/*<td className="index" key={index}>{index}</td>*/}
                                 <td className="id">{value.id}</td>
                                 <td className="fio">{value.fio}</td>
                                 <td className="position">{value.position}</td>
