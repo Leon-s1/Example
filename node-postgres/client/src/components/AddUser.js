@@ -101,28 +101,21 @@ const AddUser = ({active, setActive}) => {
                                 />
                             <label>Город:
                             </label>
-                                {/*<input*/}
-                                {/*    type="text"*/}
-                                {/*    name="city"*/}
-                                {/*    value={city}*/}
-                                {/*    onChange={(e) => setCity(e.target.value)}*/}
-                                {/*    pattern=".{1,}" required*/}
-                                {/*/>*/}
                                <select
-                                   // name="lang"
-                                   // value={lang}
-                                   // onChange={(e) => setLang(e.target.value)}
                                    type="text"
                                    name="city"
                                    value={city}
                                    onChange={(e) => setCity(e.target.value)}
                                    pattern=".{1,}" required
-                                   // onBlur={this.validateField}
                                >
                                    <option value="">Выберите Город</option>
                                    <option value="ЛК">Ленинск-Кузнецкий</option>
                                    <option value="НВКЗ">Новокузнецк</option>
                                    <option value="МСК">Москва</option>
+                                   <option value="ВРКТ">Воркута</option>
+                                   <option value="НРЛСК">Норильск</option>
+                                   <option value="ШХТ">Шахты</option>
+                                   <option value="УРЛ">Урал (УГМК)</option>
                                </select>
                             </div>
                             <div className='btn-block'>

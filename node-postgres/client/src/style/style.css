@@ -53,7 +53,8 @@ h1, h2, h3, h4, h5, a, p, div, span {
     color: #000000;
 
 }
-.table th td {
+.table th {
+    /*font: 16px Roboto, Helvetica, Arial, sans-serif;*/
     /*width: 100%;*/
     /*padding: 10px;*/
     /*border: 1px solid #555;*/
@@ -92,6 +93,7 @@ th {
     border-collapse: collapse;
     vertical-align: text-bottom;
     text-align: center;
+    font: 18px;
     /*height: 40px;*/
 
     /*font-size: 16px;*/
@@ -312,11 +314,11 @@ button {
     /*display: ;*/
     /*justify-content: flex-start;*/
 }
-.btn-block {
-    display: flex;
-    justify-content: space-around;
+/*.btn-block {*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
 
-}
+/*}*/
 /*Черно белая картинка на карточке города*/
 /*.grey-image {*/
 /*    filter: grayscale(1);*/

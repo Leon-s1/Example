@@ -13,60 +13,61 @@ import { observer } from "mobx-react";
 
 const ItemList = () => {
     const images = [
+
+        // {
+        //     id: 1,
+        //     title: "Сибтранссервис",
+        //     img: sts,
+        //     page: "/novokuz",
+        // },
         {
-            id: 1,
+            id: 2,
             title: "Ленинск-Кузнецкий",
             img: lenkuz,
             page: "/lenkuz",
         },
         {
-            id: 2,
+            id: 3,
             title: "Новокузнецк",
             img: novokuznetsk,
             page: "/novokuz",
         },
         {
-            id: 3,
+            id: 4,
             title: "Москва",
             img: moskva,
             page: "/moscow",
         },
         {
-            id: 4,
+            id: 5,
             title: "Воркута",
             img: vorkuta,
             page: "/vorkuta",
         },
         {
-            id: 5,
+            id: 6,
             title: "Норильск",
             img: norilsk,
             page: "/norilsk",
         },
         {
-            id: 6,
+            id: 7,
             title: "Шахты",
             img: shahti,
             page: "/shahti",
         },
         {
-            id: 7,
+            id: 8,
             title: "Урал (УГМК)",
             img: ural,
             page: "/ural",
         },
         {
-            id: 8,
+            id: 9,
             title: "Реквизиты ООО Сибтранссервис ",
             img: sts,
             page: "/rekvizit",
         },
-        // {
-        //     id: 9,
-        //     title: "Новокузнецк",
-        //     img: novokuznetsk,
-        //     page: "/novokuz",
-        // },
     ]
     return (
             // <AppRouter/>

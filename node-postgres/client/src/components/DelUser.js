@@ -47,6 +47,7 @@ const DelUser = ({active, setActive}) => {
                                 value={fio}
                                 onChange={(e) => setFio(e.target.value)}
                                 pattern=".{1,}" required
+                                placeholder="Введите ФИО сотрудника"
                             />
                         </div>
 
