@@ -7,6 +7,7 @@ import TableRow from "./components/TableRow.js";
 import BodyRow from "./components/BodyRow.js";
 import AddUser from "./components/AddUser";
 import DelUser from "./components/DelUser";
+import UpdateUser from "./components/UpdateUser"
 import Loader from "./Loader";
 import ItemList from "./components/ItemList";
 import LenKuz from "./page/LenKuz";
@@ -18,6 +19,7 @@ const App = observer(() => {
     const [users, setUsers] = useState(false);
     const [addmodalActive, setAddmodalActive] = useState(false);
     const [delmodalActive, setDelmodalActive] = useState(false);
+    const [updatemodalActive, setUpdatemodalActive] = useState(false);
     const [loading, setLoading] = React.useState(true)
     // let Students = [],
     //     submitbtn = document.querySelector('#submit'),
@@ -150,6 +152,8 @@ const App = observer(() => {
 
                 <AddUser active={addmodalActive} setActive={setAddmodalActive} />
                 <DelUser active={delmodalActive} setActive={setDelmodalActive} />
+                <UpdateUser active={updatemodalActive} setActive={setUpdatemodalActive} />
+
 
 
                 <br/>
@@ -159,7 +163,7 @@ const App = observer(() => {
                 <br/>
                 <button onClick={() => setDelmodalActive(true)}>Delete merchant</button>
                 <br/>
-                <button onClick={updateMerchant}>Update merchant</button>
+                <button onClick={() => setUpdatemodalActive(true)}>Update merchant</button>
 
 
 
