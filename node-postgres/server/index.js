@@ -55,7 +55,7 @@ app.post('/users', (req, res) => {
         })
 })
 
-app.delete('/users/:fio', (req, res) => {
+app.delete('/users/:id', (req, res) => {
     user_model.deleteUser(req.body)
         .then(response => {
             res.status(200).send(response);

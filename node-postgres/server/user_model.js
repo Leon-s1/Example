@@ -57,13 +57,13 @@ const createUser = (body) => {
 const deleteUser = (body) => {
     return new Promise(function (resolve, reject) {
         // const id = parseInt(merchantId)
-        const { fio } = body
+        const { id } = body
 
-        pool.query('DELETE FROM users WHERE fio = $1', [fio], (error, results) => {
+        pool.query('DELETE FROM users WHERE id = $1', [id], (error, results) => {
             if (error) {
                 reject(error)
             }
-            resolve(`Merchant delete with fio: ${fio}`)
+            resolve(`User delete with id: ${id}`)
         })
     })
 }

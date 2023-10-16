@@ -270,6 +270,7 @@ div._card  {
 
     transition: .5s; /* Время эффекта */
     display: block;
+    /*border-color: black;*/
     /*filter: grayscale(1);*/
     /*transition: .5s;*/
 }
