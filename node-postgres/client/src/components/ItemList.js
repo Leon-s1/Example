@@ -25,6 +25,7 @@ const ItemList = () => {
             title: "Ленинск-Кузнецкий",
             img: lenkuz,
             page: "/lenkuz",
+            isActive: true,
         },
         {
             id: 3,

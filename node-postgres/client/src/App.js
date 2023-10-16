@@ -21,6 +21,7 @@ const App = observer(() => {
     const [delmodalActive, setDelmodalActive] = useState(false);
     const [updatemodalActive, setUpdatemodalActive] = useState(false);
     const [loading, setLoading] = React.useState(true)
+
     // let Students = [],
     //     submitbtn = document.querySelector('#submit'),
     //    let table = document.getElementById('table');
@@ -157,13 +158,13 @@ const App = observer(() => {
 
 
                 <br/>
-                <button onClick={() => setAddmodalActive(true)}>Add merchant</button>
+                <button onClick={() => setAddmodalActive(true)}>Add user</button>
                 <br/>
                 {/*<button onClick={createMerchant}>Add merchant</button>*/}
                 <br/>
-                <button onClick={() => setDelmodalActive(true)}>Delete merchant</button>
+                <button onClick={() => setDelmodalActive(true)}>Delete user</button>
                 <br/>
-                <button onClick={() => setUpdatemodalActive(true)}>Update merchant</button>
+                <button onClick={() => setUpdatemodalActive(true)}>Update user</button>
 
 
 

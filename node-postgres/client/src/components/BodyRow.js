@@ -1,7 +1,7 @@
 import React from "react";
 
 const BodyRow = ({obj}) => {
-    const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
+    // const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
 
     return (
     <table className="table">
@@ -11,7 +11,7 @@ const BodyRow = ({obj}) => {
                                      {/*<thead>*/}
                                          <tr>
                                             {/*<th className="index">idx</th>*/}
-                                            {/*<th className="id">id</th>*/}
+                                            <th className="id">id</th>
                                             <th className="fio">ФИО</th>
                                             <th className="position">Должность</th>
                                             <th className="int_phone">Вн. тел.</th>
@@ -36,7 +36,7 @@ const BodyRow = ({obj}) => {
                         <>
                             <tr>
                                 {/*<td className="index" key={index}>{index}</td>*/}
-                                {/*<td className="id">{value.id}</td>*/}
+                                <td className="id">{value.id}</td>
                                 <td className="fio">{value.fio}</td>
                                 <td className="position">{value.position}</td>
                                 <td className="int_phone">{value.int_phone}</td>

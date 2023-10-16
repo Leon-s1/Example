@@ -2,16 +2,16 @@ import React, {useState} from "react";
 import '../style/style.css'
 
 const DelUser = ({active, setActive}) => {
-    const [fio, setFio] = useState('');
+    const [id, setId] = useState('');
 
     function deleteUser() {
         // let id = prompt('Enter user id');
-        fetch(`http://localhost:3001/users/${fio}`, {
+        fetch(`http://localhost:3001/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({fio}),
+            body: JSON.stringify({id}),
             // console.log ({fio})
         })
             .then(response => {
@@ -39,15 +39,15 @@ const DelUser = ({active, setActive}) => {
                         <h3>Удалить контакт</h3>
 
                         <div>
-                            <label>ФИО:
+                            <label>ID:
                             </label>
                             <input
                                 type="text"
-                                name="fio"
-                                value={fio}
-                                onChange={(e) => setFio(e.target.value)}
+                                name="id"
+                                value={id}
+                                onChange={(e) => setId(e.target.value)}
                                 pattern=".{1,}" required
-                                placeholder="Введите ФИО сотрудника"
+                                placeholder="Введите id сотрудника"
                             />
                         </div>
 
