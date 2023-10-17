@@ -21,6 +21,7 @@ const App = observer(() => {
     const [delmodalActive, setDelmodalActive] = useState(false);
     const [updatemodalActive, setUpdatemodalActive] = useState(false);
     const [loading, setLoading] = React.useState(true)
+    const [flag, setFlag] = useState(false)
 
     // let Students = [],
     //     submitbtn = document.querySelector('#submit'),
@@ -127,7 +128,7 @@ const App = observer(() => {
 
                 <>
                     <div className="_row">
-                        <ItemList/>
+                        <ItemList />
                     </div>
                     <br/>
 

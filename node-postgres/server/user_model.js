@@ -49,7 +49,7 @@ const createUser = (body) => {
             if (error) {
                 reject (error)
             }
-            // resolve(`A new merchant has been added : ${JSON.stringify(results.rows[0])}`)
+            resolve(`A new merchant has been added : ${JSON.stringify(results.rows[0])}`)
         })
     })
 }
