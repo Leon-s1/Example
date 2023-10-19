@@ -41,7 +41,7 @@ const LenKuz = () => {
                         {/*</div>*/}
                         <br/>
                         {/*<AppRouter/>*/}
-                        <BodyRow obj={obj} />
+                            <BodyRow obj={obj} />
                     </>
                 ) : loading ? null : (
                     'There is no merchant data available'

@@ -74,45 +74,45 @@ const App = observer(() => {
     //         });
     // }
 
-    function deleteMerchant() {
-        let id = prompt('Enter user id');
-        fetch(`http://localhost:3001/users/${id}`, {
-            method: 'DELETE',
-        })
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                alert(data);
-                getUsers();
-            })
-        .catch(err => console.log(err));
-    }
+    // function deleteMerchant() {
+    //     let id = prompt('Enter user id');
+    //     fetch(`http://localhost:3001/users/${id}`, {
+    //         method: 'DELETE',
+    //     })
+    //         .then(response => {
+    //             return response.text();
+    //         })
+    //         .then(data => {
+    //             alert(data);
+    //             getUsers();
+    //         })
+    //     .catch(err => console.log(err));
+    // }
 
-    function updateMerchant() {
-        let id = prompt('Enter merchant id');
-        let fio = prompt('Enter merchant fio');
-        let position = prompt('Enter merchant position');
-        let int_phone = prompt('Enter merchant int_phone');
-        let mobile = prompt('Enter merchant mobile');
-        let email = prompt('Enter merchant email');
-        let skype = prompt('Enter merchant skype');
-        fetch(`http://localhost:3001/users/${id}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({id, fio, position, int_phone, mobile, email, skype}),
-        })
-            .then(response => {
-                return response.text();
-                return response.text();
-            })
-            .then(data => {
-                alert(data);
-                getUsers();
-            })
-    }
+    // function updateMerchant() {
+    //     let id = prompt('Enter merchant id');
+    //     let fio = prompt('Enter merchant fio');
+    //     let position = prompt('Enter merchant position');
+    //     let int_phone = prompt('Enter merchant int_phone');
+    //     let mobile = prompt('Enter merchant mobile');
+    //     let email = prompt('Enter merchant email');
+    //     let skype = prompt('Enter merchant skype');
+    //     fetch(`http://localhost:3001/users/${id}`, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({id, fio, position, int_phone, mobile, email, skype}),
+    //     })
+    //         .then(response => {
+    //             return response.text();
+    //             return response.text();
+    //         })
+    //         .then(data => {
+    //             alert(data);
+    //             getUsers();
+    //         })
+    // }
 
     return (
 
@@ -129,10 +129,11 @@ const App = observer(() => {
                 <>
                     <div className="_row">
                         <ItemList />
+
                     </div>
                     <br/>
+                    <AppRouter path='/lenkuz'/>
 
-                    <AppRouter/>
                     {/*<BodyRow obj={obj} />*/}
                 </>
 
