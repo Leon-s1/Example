@@ -6,7 +6,7 @@ import moskva from '../style/img/moskva7_1.jpg';
 import novokuznetsk from '../style/img/novokuz12_1.jpg';
 import vorkuta from '../style/img/vorkuta2.jpg'
 import norilsk from "../style/img/norilsk4.jpg"
-import shahti from "../style/img/shahty1.jpg"
+import shahti from "../style/img/shahty2_1.jpg"
 import ural from "../style/img/ugmk1.jpg"
 import sts from "../style/img/dnk14_2.jpg"
 import '../../src/style/style.css'

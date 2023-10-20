@@ -13,6 +13,7 @@ import ItemList from "./components/ItemList";
 import LenKuz from "./page/LenKuz";
 import {observer} from "mobx-react";
 import NavBar from "./components/NavBar.js";
+import Header from "./components/Header";
 
 
 const App = observer(() => {
@@ -115,9 +116,11 @@ const App = observer(() => {
     // }
 
     return (
-
+<div>
+        <Header/>
     <div className="main">
-            <NavBar />
+        <br/>
+        {/*<NavBar />*/}
 
 
             <div className='list'>
@@ -175,7 +178,7 @@ const App = observer(() => {
     </div>
 
 
-
+</div>
 
     )
 })

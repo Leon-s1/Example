@@ -27,11 +27,31 @@ h1, h2, h3, h4, h5, a, p, div, span {
     /*justify-content: center;*/
 }
 
+.header {
+    /*border: 1px solid black;*/
+    /*background-image: url("./img/serii-fon.jpg");*/
+    background-size: cover;
+    /*background-color:black;*/
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    /*display: inline-block;*/
+}
+.text-center {
+    text-align: center;
+    padding-right: 267px;
+    display: inline-block;
+}
+.logo {
+    float: left;
+    padding-top: 30px;
+    height: 50px;
+    display: inline;
+}
+.company {
+    display: inline-block;
+}
 
-/*html, body{*/
-/*    margin: 0;*/
-/*    padding:0;*/
-/*}*/
 .table__header {
     background-color: #ff0000;
     width: 100%;
@@ -255,6 +275,7 @@ tbody {
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 3px 10px rgba(0,0,0,8);
+    /*position: fixed;*/
 }
 
 div._card  {
