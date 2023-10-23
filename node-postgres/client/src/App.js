@@ -116,7 +116,8 @@ const App = observer(() => {
     // }
 
     return (
-<div>
+
+        <BrowserRouter>
         <Header/>
     <div className="main">
         <br/>
@@ -176,9 +177,9 @@ const App = observer(() => {
             </div>
 
     </div>
+        </BrowserRouter>
 
 
-</div>
 
     )
 })

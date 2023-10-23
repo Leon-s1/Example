@@ -1,13 +1,18 @@
 import React, {useState} from "react";
 import {getMerchant} from "../App.js";
 
-export function getImageUrl(town) {
-    return (
-        './'
-    )
-
+export const login = async (email, password) => {
+    try {
+        const response = await guestInstance.post('user/login', {email, password})
+        const token = response.data.token
+        const user = jwtDecode(token)
+        localStorage.setItem('token', token)
+        return user
+    } catch (e) {
+        alert(e.response.data.message)
+        return false
+    }
 }
-
 // export function getMerchant() {
 //     fetch('http://localhost:3001')
 //         .then(response => {
