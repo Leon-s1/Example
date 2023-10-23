@@ -3,12 +3,16 @@ import React from 'react';
 import App from './App';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
+import {AppContextProvider} from "./components/AppContex.js";
+import AppRouter from "./components/AppRouter";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
      <React.StrictMode>
         <BrowserRouter>
-            <App />
+            <AppContextProvider>
+              <App />
+            </AppContextProvider>
         </BrowserRouter>
      </React.StrictMode>
 );

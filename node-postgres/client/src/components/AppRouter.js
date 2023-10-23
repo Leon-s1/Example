@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import { Routes, Route} from 'react-router-dom'
 import Main from "../page/Main.js";
 import LenKuz from "../page/LenKuz.js";
@@ -9,7 +9,9 @@ import Norilsk from "../page/Norilsk";
 import Shahti from "../page/Shahti";
 import Ural from "../page/Ural";
 import Rekvizit from "../page/Rekvizit";
+import Admin from "../page/Admin";
 import { observer } from "mobx-react";
+import {AppContext} from "./AppContex.js";
 
 
     const publicRoutes = [
@@ -24,16 +26,23 @@ import { observer } from "mobx-react";
         {path: '/rekvizit', Component: Rekvizit},
     ]
 
-    const AppRouter = observer( (path) => {
+    const adminRoutes = [
+        {path: '/admin', Component: Admin},
+    ]
 
-    const [activePath, setActivePath] = useState(publicRoutes[0])
-    console.log('activePath', activePath)
+    const AppRouter = observer( () => {
+    const { user } = useContext(AppContext)
+
+    // const [activePath, setActivePath] = useState(publicRoutes[0])
+    // console.log('activePath', activePath)
 
     return (
         <Routes>
             {publicRoutes.map(({path, Component}) =>
-            // <Route key={path} path={path} element={<Component />} />
-            <Route key={path} path={path} element={<Component />} />
+                <Route key={path} path={path} element={<Component />} />
+            )}
+            {user.isAdmin && adminRoutes.map(({path, Component}) =>
+                <Route key={path} path={path} element={<Component />} />
             )}
         </Routes>
     )

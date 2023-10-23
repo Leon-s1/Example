@@ -135,7 +135,7 @@ const App = observer(() => {
 
                     </div>
                     <br/>
-                    <AppRouter path='/lenkuz'/>
+                    <AppRouter/>
 
                     {/*<BodyRow obj={obj} />*/}
                 </>

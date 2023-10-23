@@ -14,6 +14,8 @@ const Header = () => {
                 <p>Сайт Сибтранссервис</p>
                 <p>Сайт Феррит</p>
             </div>
+            <div className="header__login">Войти</div>
+            <div className="header__registration">Регистрация</div>
         </div>
 </>
         )
