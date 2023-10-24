@@ -1,61 +1,43 @@
-import {AppContext} from "../components/AppContext.js";
-import {useContext, useEffect} from "react";
+import {AppContext} from "../components/AppContex.js";
+import React, {useContext, useEffect, useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
-import {Container, Row, Card, Form, Button} from "react-bootstrap";
+// import {Container, Row, Card, Form, Button} from "react-bootstrap";
 import {login} from "../http/userAPI.js";
 import {observer} from "mobx-react-lite";
+import "../components/modal.css"
+import LoginModal from "../components/LoginModal";
+import AddUser from "../components/AddUser";
 
 const Login = observer(() => {
+    const [loginmodalActive, setLogimodalActive] = useState(true);
     const {user} = useContext(AppContext)
     const navigate = useNavigate()
 
     // если пользователь авторизован — ему здесь делать нечего
     useEffect(() => {
         if (user.isAdmin) navigate('/admin', {replace: true})
-        if (user.isAuth) navigate('/user', {replace: true})
+        if (user.isAuth) navigate('/lenkuz', {replace: true})
     }, [])
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        const email = event.target.email.value.trim()
-        const password = event.target.password.value.trim()
-        const data = await login(email, password)
-        if (data) {
-            user.login(data)
-            if (user.isAdmin) navigate('/admin')
-            if (user.isAuth) navigate('/user')
-        }
-    }
+    // const handleSubmit = async (event) => {
+    //     event.preventDefault()
+    //     const email = event.target.email.value.trim()
+    //     const password = event.target.password.value.trim()
+    //     const data = await login(email, password)
+    //     if (data) {
+    //         user.login(data)
+    //         if (user.isAdmin) navigate('/admin')
+    //         if (user.isAuth) navigate('/user')
+    //     }
+    // }
 
     return (
-        <Container className='d-flex justify-content-center'>
-            <Card style={{width: '50%'}} className='p-2 mt-5 bg-light'>
-                <h3 className='m-auto'> Авторизация</h3>
-                <Form className='d-flex flex-column' onSubmit={handleSubmit}>
-                    <Form.Control
-                        name='email'
-                        className='mt-3'
-                        placeholder='Введите ваш email...'
-                        // value=''
-                    />
-                    <Form.Control
-                        name='password'
-                        className='mt-3'
-                        placeholder='Введите ваш пароль...'
-                        // value=''
-                    />
-                    <div className='d-flex justify-content-between mt-3 pl-3 pr-3'>
-                        <Button type='submit'>
-                            Войти
-                        </Button>
-                        <p>
-                            Нет аккаунта?
-                            <Link to='/signup'>Зарегистрируйтесь!</Link>
-                        </p>
-                    </div>
-                </Form>
-            </Card>
-        </Container>
+
+            <>
+            <h1>Страница входа</h1>
+            <LoginModal active={loginmodalActive} setActive={setLogimodalActive} />
+            </>
+
     )
 })
 

@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
 import { Routes, Route} from 'react-router-dom'
-import Main from "../page/Main.js";
+import Login from "../page/Login.js";
 import LenKuz from "../page/LenKuz.js";
 import NovoKuz from "../page/NovoKuz.js";
 import Moscow from "../page/Moscow.js";
@@ -24,6 +24,11 @@ import {AppContext} from "./AppContex.js";
         {path: '/shahti', Component: Shahti},
         {path: '/ural', Component: Ural},
         {path: '/rekvizit', Component: Rekvizit},
+        {path: '/login', Component: Login},
+    ]
+
+const authRoutes = [
+    {path: '/lenkuz', Component: LenKuz},
     ]
 
     const adminRoutes = [
@@ -39,6 +44,9 @@ import {AppContext} from "./AppContex.js";
     return (
         <Routes>
             {publicRoutes.map(({path, Component}) =>
+                <Route key={path} path={path} element={<Component />} />
+            )}
+            {user.isAuth && authRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component />} />
             )}
             {user.isAdmin && adminRoutes.map(({path, Component}) =>

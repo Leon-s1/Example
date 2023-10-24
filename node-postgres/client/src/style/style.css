@@ -298,8 +298,8 @@ div._card  {
     /*filter: grayscale(1);*/
     /*transition: .5s;*/
 }
-/*._card.active {*/
-.active {
+._card.active {
+/*.active {*/
 /*    !*border: red;*!*/
     border: 3px solid red;
 /*    border-rdius: 4px;*/

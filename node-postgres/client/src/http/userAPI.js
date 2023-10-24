@@ -1,5 +1,8 @@
 import React, {useState} from "react";
 import {getMerchant} from "../App.js";
+import {guestInstance, authInstance } from "./index";
+import jwtDecode from 'jwt-decode'
+
 
 export const login = async (email, password) => {
     try {
@@ -13,6 +16,33 @@ export const login = async (email, password) => {
         return false
     }
 }
+
+export const logout = () => {
+    localStorage.removeItem('token')
+}
+
+export const check = async () => {
+    let userToken, userData
+    try {
+        userToken = localStorage.getItem('token')
+        // если в хранилище нет действительного токена
+        if (!userToken) {
+            return false
+        }
+        // токен есть, надо проверить его подлинность
+        const response = await authInstance.get('user/check')
+        userToken = response.data.token
+        userData = jwtDecode(userToken)
+        localStorage.setItem('token', userToken)
+        return userData
+    } catch (e) {
+        localStorage.removeItem('token')
+        return false
+    }
+}
+
+
+
 // export function getMerchant() {
 //     fetch('http://localhost:3001')
 //         .then(response => {

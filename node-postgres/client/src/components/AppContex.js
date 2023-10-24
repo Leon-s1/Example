@@ -6,6 +6,7 @@ const AppContext = React.createContext()
 const context = {
     user: {
         email: 'admin@mail.ru',
+        password: '123456',
         isAuth: false,
         isAdmin: false,
     }
