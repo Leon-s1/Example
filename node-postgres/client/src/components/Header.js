@@ -2,9 +2,10 @@ import React, {useContext, useState} from "react";
 import logo from '../style/img/STS_logo.jpg'
 import {NavLink} from "react-router-dom";
 import {AppContext} from "./AppContex";
+import LoginModal from "./LoginModal";
 
 const Header = () => {
-    const [loginmodalActive, setLogimodalActive] = useState(false);
+    const [loginmodalActive, setLoginmodalActive] = useState(false);
     const { user } = useContext(AppContext)
 
     return(
@@ -22,19 +23,24 @@ const Header = () => {
 
                 <p>
                 {user.isAuth ? (
+
                     <NavLink to='/lenkuz' className='nav-link'>Справочник...</NavLink>
+
                 ) : (
                     <>
-                    <NavLink to='/login' className='nav-link'>Войти</NavLink>
+                    <button onClick={() => setLoginmodalActive(true)}>Войти</button>
+                    {/*<NavLink to='/login' className={({isActive, isPending}) => isActive ? 'loginmodal active' : isPending ? 'loginmodal' : ""} >Войти</NavLink>*/}
                     </>
                 )}
                 </p>
                 <p>
 
                 {user.isAdmin && (
-                    <NavLink to='/login' className='nav-link'>Панель управления</NavLink>
+                    <NavLink to='/loginadmin' className='nav-link'>Панель управления</NavLink>
                 )}
                 </p>
+
+                <LoginModal active={loginmodalActive} setActive={setLoginmodalActive} />
                 {/*<p>Сайт Сибтранссервис</p>*/}
                 {/*<p>Сайт Феррит</p>*/}
                 {/*<div className="header__login">Войти</div>*/}

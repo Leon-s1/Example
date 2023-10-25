@@ -4,9 +4,11 @@ import {guestInstance, authInstance } from "./index";
 import jwtDecode from 'jwt-decode'
 
 
-export const login = async (email, password) => {
+export const loginmodal = async (email, password) => {
     try {
-        const response = await guestInstance.post('user/login', {email, password})
+        const response = await guestInstance.post('user/loginmodal', {email, password})
+        console.log('response = ', response)
+
         const token = response.data.token
         const user = jwtDecode(token)
         localStorage.setItem('token', token)

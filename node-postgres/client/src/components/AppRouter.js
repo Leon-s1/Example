@@ -12,6 +12,8 @@ import Rekvizit from "../page/Rekvizit";
 import Admin from "../page/Admin";
 import { observer } from "mobx-react";
 import {AppContext} from "./AppContex.js";
+import LenKuzAdmin from "../page/LenKuzAdmin";
+import LoginModal from "./LoginModal";
 
 
     const publicRoutes = [
@@ -25,6 +27,7 @@ import {AppContext} from "./AppContex.js";
         {path: '/ural', Component: Ural},
         {path: '/rekvizit', Component: Rekvizit},
         {path: '/login', Component: Login},
+        {path: '/loginmodal', Component: LoginModal},
     ]
 
 const authRoutes = [
@@ -32,7 +35,7 @@ const authRoutes = [
     ]
 
     const adminRoutes = [
-        {path: '/admin', Component: Admin},
+        {path: '/lenkuzadmin', Component: LenKuzAdmin},
     ]
 
     const AppRouter = observer( () => {

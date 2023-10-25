@@ -1,7 +1,8 @@
 import React, {useContext, useState} from 'react';
-import {login} from "../http/userAPI";
+import {loginmodal} from "../http/userAPI";
 import {AppContext} from "./AppContex";
 import {useNavigate} from "react-router-dom";
+
 
 const LoginModal = ({active, setActive}) => {
     const {user} = useContext(AppContext)
@@ -13,9 +14,15 @@ const LoginModal = ({active, setActive}) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
+
         const email = event.target.email.value.trim()
+        console.log('email = ', email)
+
         const password = event.target.password.value.trim()
-        const data = await login(email, password)
+        console.log('password = ', password)
+
+        const data = await loginmodal(email, password)
+        console.log('data = ', data)
         if (data) {
             user.login(data)
             if (user.isAdmin) navigate('/admin')
@@ -46,7 +53,7 @@ const LoginModal = ({active, setActive}) => {
                             </label>
                             <input
                                 type="password"
-                                name="skype"
+                                name="password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 pattern=".{1,}" required

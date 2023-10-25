@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 
 const BodyRow = ({obj}) => {
     // const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
@@ -33,8 +33,8 @@ const BodyRow = ({obj}) => {
         <div>
             {Object.values(obj).map((value, index) => {
                 return (
-                        <>
-                            <tr>
+                        <Fragment>
+                            <tr key={value.id}>
                                 {/*<td className="index" key={index}>{index}</td>*/}
                                 <td className="id">{value.id}</td>
                                 <td className="fio">{value.fio}</td>
@@ -44,7 +44,7 @@ const BodyRow = ({obj}) => {
                                 <td className="email">{value.email}</td>
                                 <td className="skype">{value.skype}</td>
                             </tr>
-                        </>
+                        </Fragment>
                     );
             })}
         </div>
