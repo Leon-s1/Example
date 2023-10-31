@@ -21,6 +21,7 @@ export const signup = async (email, password) => {
 export const login = async (email, password) => {
   try {
     const response = await guestInstance.post('user/login', { email, password })
+    console.log('response из юзерапи = ', response)
     const token = response.data.token
     const user = jwtDecode(token)
     localStorage.setItem('token', token)

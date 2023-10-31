@@ -8,13 +8,17 @@ export const loginmodal = async (email, password) => {
     try {
         const response = await guestInstance.post('user/loginmodal', {email, password})
         console.log('response = ', response)
+            .then(function (response) {
+                console.log('response = ', response)
+            })
 
-        const token = response.data.token
-        const user = jwtDecode(token)
-        localStorage.setItem('token', token)
-        return user
+        // const token = response.data.token
+        // const user = jwtDecode(token)
+        // localStorage.setItem('token', token)
+        // return user
     } catch (e) {
         alert(e.response.data.message)
+        console.log('из компонента юзерапи', e.response.data.message)
         return false
     }
 }

@@ -1,8 +1,10 @@
+// import config from 'dotenv/config';
+// require('dotenv').config()
 const express = require('express');
 const cors = require('cors');
 // const body_parser = require('body-parser')
 const app = express();
-const port = 3001
+const PORT = process.env.PORT || 3001
 // app.get('/', (req, res) => {
 //     res.status(200).send('Hello Worlds!')
 // })
@@ -22,8 +24,6 @@ app.use(cors({origin: 'http://localhost:3000', credentials: true}))
 //     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers');
 //     next();
 // });
-
-
 app.get('/', (req, res) => {
     user_model.getUsers()
         .then(response => {
@@ -34,16 +34,27 @@ app.get('/', (req, res) => {
         })
 })
 
-app.get('/users/:city', (req, res) => {
+// app.get('/users/:city', (req, res) => {
 // app.get('/', (req, res) => {
-    user_model.getUsersCity(req.params.city)
+//     user_model.getUsersCity(req.params.city)
+//         .then(response => {
+//             res.status(200).send(response);
+//         })
+//         .catch(error => {
+//             res.status(500).send(error);
+//         })
+// })
+
+app.get('/users/:email', (req, res) => {
+    user_model.getByEmail(req.params.email)
         .then(response => {
-            res.status(200).send(response);
+            res.status(200).send(response)
         })
         .catch(error => {
             res.status(500).send(error);
         })
 })
+
 
 app.post('/users', (req, res) => {
     user_model.createUser(req.body)
@@ -76,8 +87,8 @@ app.put('/users/:id', (req, res) => {
         })
 })
 
-app.listen(port, () => {
-    console.log(`App.Express running on port ${port}.`)
+app.listen(PORT, () => {
+    console.log(`App.Express running on port ${PORT}.`)
 })
 
 

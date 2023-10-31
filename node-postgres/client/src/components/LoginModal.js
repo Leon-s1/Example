@@ -2,6 +2,7 @@ import React, {useContext, useState} from 'react';
 import {loginmodal} from "../http/userAPI";
 import {AppContext} from "./AppContex";
 import {useNavigate} from "react-router-dom";
+// import bcrypt from 'bcrypt'
 
 
 const LoginModal = ({active, setActive}) => {
@@ -12,6 +13,44 @@ const LoginModal = ({active, setActive}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    function getByEmail (email) {
+        fetch(`http://localhost:3001/users/${email}`, {
+            method: '',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email }),
+        })
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                alert(data);
+                setActive(false)
+            });
+        // console.log(fio, email);
+    }
+
+
+    // async function loginmodal(req, res, next) {
+        // res.status(200).send('Вход в личный кабинет')
+        // try {
+        //     const {email, password} = req.body
+        //     const user = await getByEmail(email) // получить user из базы данных
+        //     console.log('controller user = ', user)
+            // let compare = bcrypt.compareSync(password, user.password) //если сравнение введенного email == email в БД, то данные возвращаются в data
+            // if (!compare) {
+            //     throw new Error('Указан неверный пароль')
+            // }
+            // const token = makeJwt(user.id, user.email, user.role) // возвращается в data на страницу login.js
+            // return res.json({user})
+        // } catch (e) {
+        //     console.log(e.response.data.message)
+        // }
+        // }
+
+
+
     const handleSubmit = async (event) => {
         event.preventDefault()
 
@@ -21,8 +60,10 @@ const LoginModal = ({active, setActive}) => {
         const password = event.target.password.value.trim()
         console.log('password = ', password)
 
-        const data = await loginmodal(email, password)
+        // const data = await loginmodal(email, password) // в data приходит true если проверка прошла успешно
+        const data = await getByEmail(email) // в data приходит true если проверка прошла успешно
         console.log('data = ', data)
+
         if (data) {
             user.login(data)
             if (user.isAdmin) navigate('/admin')

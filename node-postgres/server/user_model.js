@@ -10,14 +10,12 @@ const pool = new Pool({
 });
 
 // const client = await pool.connect()
-
-
 const getUsers = () => {
     return new Promise(function(resolve, reject) {
         // pool.query('SELECT * FROM users', (error, results) => {
         pool.query('SELECT * FROM users ORDER BY id ASC', (error, results) => {
-        // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
-           if (error) {
+            // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
+            if (error) {
                 reject(error)
             }
             resolve(results.rows);
@@ -25,21 +23,34 @@ const getUsers = () => {
         // console.log(result)
     })
 }
+// const getUsersCity = (userCity) => {
+//     return new Promise(function(resolve, reject) {
+//         const city = userCity
+//         // pool.query('SELECT * FROM users', (error, results) => {
+//         // pool.query('SELECT * FROM users ORDER BY id ASC WHERE city = $1', [city], (error, results) => {
+//         pool.query('SELECT * FROM users WHERE city = $1', [city], (error, results) => {
+//         // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
+//            if (error) {
+//                 reject(error)
+//             }
+//             resolve(results.rows);
+//         })
+//     })
+// }
 
-const getUsersCity = (userCity) => {
+const getByEmail = (userEmail) => {
     return new Promise(function(resolve, reject) {
-        const city = userCity
-        // pool.query('SELECT * FROM users', (error, results) => {
-        // pool.query('SELECT * FROM users ORDER BY id ASC WHERE city = $1', [city], (error, results) => {
-        pool.query('SELECT * FROM users WHERE city = $1', [city], (error, results) => {
-        // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
-           if (error) {
+        const email = userEmail
+        pool.query('SELECT * FROM users WHERE email = $1', [email], (error, results) => {
+            if (error) {
                 reject(error)
             }
             resolve(results.rows);
         })
     })
 }
+
+
 
 const createUser = (body) => {
     return new Promise(function (resolve, reject) {
@@ -68,20 +79,6 @@ const deleteUser = (body) => {
     })
 }
 
-
-// const deleteUser = (merchantId) => {
-//     return new Promise(function (resolve, reject) {
-//         const id = parseInt(merchantId)
-//
-//         pool.query('DELETE FROM users WHERE id = $1', [id], (error, results) => {
-//             if (error) {
-//                 reject(error)
-//             }
-//             resolve(`Merchant delete with ID: ${id}`)
-//         })
-//     })
-// }
-
 const updateUser = (body) => {
     return new Promise(function (resolve, reject) {
         // const id = parseInt(merchantId)
@@ -101,7 +98,8 @@ const updateUser = (body) => {
 
 module.exports = {
     getUsers,
-    getUsersCity,
+    // getUsersCity,
+    getByEmail,
     createUser,
     deleteUser,
     updateUser,

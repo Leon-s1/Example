@@ -7,12 +7,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.5.1",
+    "bcryptjs": "^2.4.3",
     "jwt-decode": "^3.1.2",
     "mobx-react": "^9.0.0",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
+    "url-loader": "^4.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
