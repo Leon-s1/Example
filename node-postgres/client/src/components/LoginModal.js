@@ -14,18 +14,21 @@ const LoginModal = ({active, setActive}) => {
     const [password, setPassword] = useState('');
 
     function getByEmail (email) {
-        fetch(`http://localhost:3001/users/${email}`, {
-            method: '',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email }),
-        })
+
+        fetch(`http://localhost:3001/users/${email}`)
+            // , {
+            // method: 'POST',
+            // headers: {
+            //     'Content-Type': 'application/json',
+            // },
+            // body: JSON.stringify({ email }),
+        // })
             .then(response => {
                 return response.text();
             })
             .then(data => {
                 alert(data);
+                console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
                 setActive(false)
             });
         // console.log(fio, email);
@@ -62,7 +65,7 @@ const LoginModal = ({active, setActive}) => {
 
         // const data = await loginmodal(email, password) // в data приходит true если проверка прошла успешно
         const data = await getByEmail(email) // в data приходит true если проверка прошла успешно
-        console.log('data = ', data)
+        // console.log('data = ', data)
 
         if (data) {
             user.login(data)
