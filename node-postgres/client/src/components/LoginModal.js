@@ -26,9 +26,12 @@ const LoginModal = ({active, setActive}) => {
             .then(response => {
                 return response.text();
             })
-            .then(data => {
+            .then( data => {
                 alert(data);
-                console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
+                // console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
+
+                    (email === data.email) ? console.log("email = data", email, data)
+                 : console.log("email не равно data", email, data.email)
                 setActive(false)
             });
         // console.log(fio, email);
@@ -65,7 +68,7 @@ const LoginModal = ({active, setActive}) => {
 
         // const data = await loginmodal(email, password) // в data приходит true если проверка прошла успешно
         const data = await getByEmail(email) // в data приходит true если проверка прошла успешно
-        // console.log('data = ', data)
+        console.log('data = ', data)
 
         if (data) {
             user.login(data)

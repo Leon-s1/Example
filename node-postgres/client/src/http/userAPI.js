@@ -6,7 +6,7 @@ import jwtDecode from 'jwt-decode'
 
 export const loginmodal = async (email, password) => {
     try {
-        const response = await guestInstance.post('user/loginmodal', {email, password})
+        const response = await guestInstance.get('user/loginmodal', {email, password})
         console.log('response = ', response)
             .then(function (response) {
                 console.log('response = ', response)

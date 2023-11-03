@@ -1,6 +1,6 @@
 import config from 'dotenv/config'
 import express from 'express'
-import sequelize from "./sequelize.js";   //Нужно было прописывать файл с расширением js. А так не запускался сервер и не создавались таблицы.
+import sequelize from './sequelize.js' //Нужно было прописывать файл с расширением js. А так не запускался сервер и не создавались таблицы.
 import * as mapping from './models/mapping.js'
 import cors from 'cors'
 import fileUpload from 'express-fileupload'
@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000
 
 const app = express()
 // Совместное использование ресурсов между источниками
-app.use(cors({origin: 'http://localhost:3000', credentials: true}))
+app.use(cors({ origin: 'http://localhost:3000', credentials: true }))
 // middleware для работы с json
 app.use(express.json()) //использовать перед router
 // middleware для статики (img, css)
@@ -24,7 +24,7 @@ app.use(fileUpload())
 app.use(cookieParser(process.env.SECRET_KEY))
 // все маршруты приложения
 app.use('/api', router)
-//Обработка ошибок
+//Обработка ошибок !!!! Middleware который работает с ошибками, должен идти и регистрироваться обязательно в самом конце !!!!
 // app.use(ErrorHandler)
 app.use(errorMiddleware)
 
@@ -38,13 +38,13 @@ app.use(errorMiddleware)
 // })
 
 const start = async () => {
-    try {
-        await sequelize.authenticate()
-        await sequelize.sync()
-        app.listen(PORT, () => console.log('Сервер запущен на порту', PORT))
-    } catch (e) {
-        console.log(e)
-    }
+  try {
+    await sequelize.authenticate()
+    await sequelize.sync()
+    app.listen(PORT, () => console.log('Сервер запущен на порту', PORT))
+  } catch (e) {
+    console.log(e)
+  }
 }
 
 start()
