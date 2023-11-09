@@ -13,25 +13,50 @@ const LoginModal = ({active, setActive}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    function getByEmail (email) {
 
-        fetch(`http://localhost:3001/users/${email}`)
-            // , {
-            // method: 'POST',
+    const handleSubmit = (event) => {
+        event.preventDefault()
+
+        const email = event.target.email.value.trim()
+        console.log('email = ', email)
+
+        const password = event.target.password.value.trim()
+        console.log('password = ', password)
+
+        // const data = await loginmodal(email, password) // в data приходит true если проверка прошла успешно
+        const data = getByEmail(email) // в data приходит true если проверка прошла успешно
+        console.log('data из handlsubmit = ', data)
+
+        if (data) {
+            user.login(data)
+            if (user.isAdmin) navigate('/admin')
+            if (user.isAuth) navigate('/user')
+        }
+    }
+
+    function getByEmail(email) {
+
+        fetch(`http://localhost:3001/users/${email}`, {
+            method: 'GET',
             // headers: {
             //     'Content-Type': 'application/json',
             // },
             // body: JSON.stringify({ email }),
-        // })
+        })
             .then(response => {
                 return response.text();
+                console.log('response ', response.text())
             })
-            .then( data => {
+            .then(data => {
                 alert(data);
-                // console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
+                console.log('data из getByEmail = ', data)
+                // const user = JSON.stringify(data)
+                // console.log('JSON data из getByEmail = ', user.email)
 
-                    (email === data.email) ? console.log("email = data", email, data)
-                 : console.log("email не равно data", email, data.email)
+                    // console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
+
+                    (email === data.email) ? console.log("email = data", email, data.email)
+                    : console.log("email не равно data", email, data.email)
                 setActive(false)
             });
         // console.log(fio, email);
@@ -57,25 +82,7 @@ const LoginModal = ({active, setActive}) => {
 
 
 
-    const handleSubmit = async (event) => {
-        event.preventDefault()
 
-        const email = event.target.email.value.trim()
-        console.log('email = ', email)
-
-        const password = event.target.password.value.trim()
-        console.log('password = ', password)
-
-        // const data = await loginmodal(email, password) // в data приходит true если проверка прошла успешно
-        const data = await getByEmail(email) // в data приходит true если проверка прошла успешно
-        console.log('data = ', data)
-
-        if (data) {
-            user.login(data)
-            if (user.isAdmin) navigate('/admin')
-            if (user.isAuth) navigate('/user')
-        }
-    }
 
     return (
         <div className={active ? 'loginmodal active' : 'loginmodal'} onClick={() => setActive(false)}>
