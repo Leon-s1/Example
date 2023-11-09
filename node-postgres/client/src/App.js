@@ -118,10 +118,10 @@ const App = observer(() => {
     return (
 
         <BrowserRouter>
+        <NavBar />
         <Header/>
     <div className="main">
         <br/>
-        {/*<NavBar />*/}
 
 
             <div className='list'>

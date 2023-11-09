@@ -36,7 +36,9 @@ const Login = observer(() => {
 
             <>
             <h1>Страница входа</h1>
-                <LoginModal active={loginmodalActive} setActive={setLoginmodalActive} />
+
+                {/*<LoginModal active={loginmodalActive} setActive={setLoginmodalActive} />*/}
+
             {/*    {user.isAuth ? (*/}
             {/*    <LoginModal active={loginmodalActive} setActive={setloginmodalActive} />*/}
             {/*<ItemList/>*/}

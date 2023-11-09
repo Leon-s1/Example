@@ -24,11 +24,12 @@ const Header = () => {
                 <p>
                 {user.isAuth ? (
 
-                    <NavLink to='/lenkuz' className='nav-link'>Справочник...</NavLink>
+                    <NavLink to='/login' className='nav-link'>Справочник...</NavLink>
 
                 ) : (
                     <>
-                    <button onClick={() => setLoginmodalActive(true)}>Войти</button>
+                    <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
+                    {/*<button onClick={() => setLoginmodalActive(true)}>Войти</button>*/}
                     {/*<NavLink to='/login' className={({isActive, isPending}) => isActive ? 'loginmodal active' : isPending ? 'loginmodal' : ""} >Войти</NavLink>*/}
                     </>
                 )}
