@@ -28,6 +28,7 @@ import LoginModal from "./LoginModal";
         {path: '/rekvizit', Component: Rekvizit},
         {path: '/login', Component: Login},
         {path: '/loginmodal', Component: LoginModal},
+        {path: '/lenkuzadmin', Component: LenKuzAdmin}
     ]
 
 const authRoutes = [
@@ -35,7 +36,7 @@ const authRoutes = [
     ]
 
     const adminRoutes = [
-        {path: '/lenkuzadmin', Component: LenKuzAdmin},
+        // {path: '/lenkuzadmin', Component: LenKuzAdmin},
     ]
 
     const AppRouter = observer( () => {
@@ -49,11 +50,11 @@ const authRoutes = [
             {publicRoutes.map(({path, Component}) =>
                 <Route key={path} path={path} element={<Component />} />
             )}
-            {user.isAuth && authRoutes.map(({path, Component}) =>
-                <Route key={path} path={path} element={<Component />} />
-            )}
+            {/*{user.isAuth && authRoutes.map(({path, Component}) =>*/}
+            {/*    <Route key={path} path={path} element={<Component />} />*/}
+            {/*)}*/}
             {user.isAdmin && adminRoutes.map(({path, Component}) =>
-                <Route key={path} path={path} element={<Component />} />
+                    <Route key={path} path={path} element={<Component />} />
             )}
         </Routes>
     )

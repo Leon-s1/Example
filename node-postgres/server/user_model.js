@@ -23,20 +23,20 @@ const getUsers = () => {
         // console.log(result)
     })
 }
-// const getUsersCity = (userCity) => {
-//     return new Promise(function(resolve, reject) {
-//         const city = userCity
-//         // pool.query('SELECT * FROM users', (error, results) => {
-//         // pool.query('SELECT * FROM users ORDER BY id ASC WHERE city = $1', [city], (error, results) => {
-//         pool.query('SELECT * FROM users WHERE city = $1', [city], (error, results) => {
-//         // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
-//            if (error) {
-//                 reject(error)
-//             }
-//             resolve(results.rows);
-//         })
-//     })
-// }
+const getUsersCity = (userCity) => {
+    return new Promise(function(resolve, reject) {
+        const city = userCity
+        // pool.query('SELECT * FROM users', (error, results) => {
+        // pool.query('SELECT * FROM users ORDER BY id ASC WHERE city = $1', [city], (error, results) => {
+        pool.query('SELECT * FROM users WHERE city = $1', [city], (error, results) => {
+        // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
+           if (error) {
+                reject(error)
+            }
+            resolve(results.rows);
+        })
+    })
+}
 
 const getByEmail = (userEmail) => {
     return new Promise(function(resolve, reject) {
@@ -98,7 +98,7 @@ const updateUser = (body) => {
 
 module.exports = {
     getUsers,
-    // getUsersCity,
+    getUsersCity,
     getByEmail,
     createUser,
     deleteUser,

@@ -34,16 +34,16 @@ app.get('/', (req, res) => {
         })
 })
 
-// app.get('/users/:city', (req, res) => {
+app.get('/users/:city', (req, res) => {
 // app.get('/', (req, res) => {
-//     user_model.getUsersCity(req.params.city)
-//         .then(response => {
-//             res.status(200).send(response);
-//         })
-//         .catch(error => {
-//             res.status(500).send(error);
-//         })
-// })
+    user_model.getUsersCity(req.params.city)
+        .then(response => {
+            res.status(200).send(response);
+        })
+        .catch(error => {
+            res.status(500).send(error);
+        })
+})
 
 app.get('/users/:email', (req, res) => {
     user_model.getByEmail(req.params.email)
