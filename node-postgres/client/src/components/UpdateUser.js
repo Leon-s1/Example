@@ -45,7 +45,7 @@ const UpdateUser = ({active, setActive}) => {
 
                 <div className='modal-form'>
                     <form action='' onSubmit={updateUser}>
-                        <h3>Редактировать контакт</h3>
+                        <h3>Редактировать сотрудника</h3>
 
                         <div>
                             <label>ID:
@@ -136,7 +136,7 @@ const UpdateUser = ({active, setActive}) => {
 
                         <div className='btn-block'>
                             {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
-                            <button type="submit" value="Удалить">Изменить
+                            <button type="submit" value="Изменить">Изменить
                             </button>
                         </div>
                     </form>

@@ -41,7 +41,7 @@ const AddUser = ({active, setActive}) => {
                     {/*{children}*/}
                     <div className='modal-form'>
                         <form action='' onSubmit={createUser}>
-                            <h3>Добавить контакт</h3>
+                            <h3>Добавить сотрудника</h3>
 
                            <div>
                                 <label>ФИО:

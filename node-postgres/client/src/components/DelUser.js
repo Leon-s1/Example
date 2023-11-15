@@ -36,7 +36,7 @@ const DelUser = ({active, setActive}) => {
 
                 <div className='modal-form'>
                     <form action='' onSubmit={deleteUser}>
-                        <h3>Удалить контакт</h3>
+                        <h3>Удалить сотрудника</h3>
 
                         <div>
                             <label>ID:

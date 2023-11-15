@@ -10,22 +10,18 @@ const AdminButtons = () => {
 
 
     return (
-        <div>
-            <AddUser active={addmodalActive} setActive={setAddmodalActive} />
-            <DelUser active={delmodalActive} setActive={setDelmodalActive} />
-            <UpdateUser active={updatemodalActive} setActive={setUpdatemodalActive} />
+        <>
+            <h2>Редактирование сотрудника</h2>
+                <div className='buttons__admin'>
+                    <AddUser active={addmodalActive} setActive={setAddmodalActive} />
+                    <DelUser active={delmodalActive} setActive={setDelmodalActive} />
+                    <UpdateUser active={updatemodalActive} setActive={setUpdatemodalActive} />
 
-
-
-            <br/>
-            <button onClick={() => setAddmodalActive(true)}>Add user</button>
-            <br/>
-            {/*<button onClick={createMerchant}>Add merchant</button>*/}
-            <br/>
-            <button onClick={() => setDelmodalActive(true)}>Delete user</button>
-            <br/>
-            <button onClick={() => setUpdatemodalActive(true)}>Update user</button>
-        </div>
+                    <button onClick={() => setAddmodalActive(true)}>Добавить сотрудника</button>
+                    <button onClick={() => setUpdatemodalActive(true)}>Редактировать сотрудника</button>
+                    <button onClick={() => setDelmodalActive(true)}>Удалить сотрудника</button>
+                </div>
+            </>
     );
 };
 

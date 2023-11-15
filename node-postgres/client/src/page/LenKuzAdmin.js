@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import BodyRow from "../components/BodyRow.js";
 import Loader from "../Loader";
 import AdminButtons from "../components/AdminButtons";
+import '../../src/style/style.css'
 import ItemList from "../components/ItemList";
 import AppRouter from "../components/AppRouter";
 
@@ -47,7 +48,7 @@ const LenKuzAdmin = () => {
                 ) : loading ? null : (
                     'There is no merchant data available'
                 )}
-                <AdminButtons/>
+                <AdminButtons />
             </>
         )
 }

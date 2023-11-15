@@ -6,13 +6,14 @@ import {loginmodal} from "../http/userAPI.js";
 import {observer} from "mobx-react-lite";
 import "../components/modal.css"
 import "../../src/style/style.css"
+import '../components/modal.css'
 import LoginModal from "../components/LoginModal";
 import AddUser from "../components/AddUser";
 import ItemList from "../components/ItemList";
 
 const Login = observer(({active, setActive}) => {
     // const [loginmodalActive, setLoginmodalActive] = useState(false);
-
+    const [delmodalActive, setDelmodalActive] = useState(false);
     const {user} = useContext(AppContext)
     const [isAdmin, setAdmin] = useState(user.isAdmin)
     const navigate = useNavigate();
@@ -46,10 +47,41 @@ const Login = observer(({active, setActive}) => {
             let result = (email === user.email && password === user.pass) ?
                 navigate('/lenkuzadmin', {replace: true}) :
                 // console.log("email = context.email pass = context.pass ", email, user.email, password, user.pass)  :
-                console.log("email не равно context.email pass не равен context.pass", email, user.email, password, user.pass)
-        // setActive(false)
-            console.log('result', result)
-        console.log('isAdmin', isAdmin)
+
+                    console.log("email не равно context.email pass не равен context.pass", email, user.email, password, user.pass)
+                    // alert('Не правильный логин или пароль!')
+        // <div className={active ? 'delmodal active' : 'delmodal'} onClick={() => setActive(false)}>
+        //     <div className={active ? 'delmodal__content active' : 'delmodal__content'} onClick={e => e.stopPropagation()}>
+        //
+        //         <div className='modal-form'>
+        //             <form action='' >
+        //                 <h3>Удалить контакт</h3>
+        //
+        //                 <div>
+        //                     <label>ID:
+        //                     </label>
+        //                     <input
+        //                         type="text"
+        //                         name="id"
+        //                         // value={id}
+        //                         // onChange={(e) => setId(e.target.value)}
+        //                         pattern=".{1,}" required
+        //                         placeholder="Введите id сотрудника"
+        //                     />
+        //                 </div>
+        //
+        //                 <div className='btn-block'>
+        //                     {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
+        //                     <button type="submit" value="Удалить">Удалить
+        //                     </button>
+        //                 </div>
+        //             </form>
+        //         </div>
+        //
+        //
+        //     </div>
+        // </div>
+
 
 
         // if (data) {
