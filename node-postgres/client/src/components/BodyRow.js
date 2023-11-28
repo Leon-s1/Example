@@ -2,16 +2,14 @@ import React, {Fragment} from "react";
 
 const BodyRow = ({obj}) => {
     // const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
-
+    // const user = localStorage.getItem('user.isAdmin')
     return (
     <table className="table">
             <div className="table__header">
-
-
-                                     {/*<thead>*/}
                                          <tr>
                                             {/*<th className="index">idx</th>*/}
-                                            <th className="id">id</th>
+                                            {/* {user ? <th className="id">id</th> : <></>}*/}
+                                            {/*<th className="id">id</th>*/}
                                             <th className="fio">ФИО</th>
                                             <th className="position">Должность</th>
                                             <th className="int_phone">Вн. тел.</th>
@@ -20,12 +18,6 @@ const BodyRow = ({obj}) => {
                                             <th className="skype">Skype</th>
                                          </tr>
 
-                                     {/*</thead>*/}
-                            {/*</table>*/}
-                        {/*)*/}
-                    {/*})*/}
-                    {/*}*/}
-                {/*</div>*/}
             </div>
 
 
@@ -33,10 +25,10 @@ const BodyRow = ({obj}) => {
         <div>
             {Object.values(obj).map((value, index) => {
                 return (
-                        <Fragment>
-                            <tr key={value.id}>
+                    <Fragment key={value.id}>
+                            <tr>
                                 {/*<td className="index" key={index}>{index}</td>*/}
-                                <td className="id">{value.id}</td>
+                                {/*<td className="id">{value.id}</td>*/}
                                 <td className="fio">{value.fio}</td>
                                 <td className="position">{value.position}</td>
                                 <td className="int_phone">{value.int_phone}</td>
@@ -44,7 +36,7 @@ const BodyRow = ({obj}) => {
                                 <td className="email">{value.email}</td>
                                 <td className="skype">{value.skype}</td>
                             </tr>
-                        </Fragment>
+                    </Fragment>
                     );
             })}
         </div>

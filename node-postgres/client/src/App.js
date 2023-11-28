@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../src/style/style.css';
-import {BrowserRouter, useNavigate, Route, NavLink } from "react-router-dom";
+import {BrowserRouter, useNavigate, Route, NavLink, redirect} from "react-router-dom";
 import AppRouter from "./components/AppRouter";
 // import {getMerchant, createMerchant, deleteMerchant, updateMerchant} from "./http/userAPI.js";
 import TableRow from "./components/TableRow.js";
@@ -14,6 +14,7 @@ import LenKuz from "./page/LenKuz";
 import {observer} from "mobx-react";
 import NavBar from "./components/NavBar.js";
 import Header from "./components/Header";
+import AdminButtons from "./components/AdminButtons";
 
 
 const App = observer(() => {
@@ -35,6 +36,7 @@ const App = observer(() => {
     useEffect((obj) => {
         setTimeout(() => {
             getUsers();
+
             // setLoading(false)
         }, 0)
     }, []);
@@ -49,6 +51,18 @@ const App = observer(() => {
                 // setModalActive(false)
             });
     }
+    const user = localStorage.getItem('user.isAdmin')
+    console.log('user =', user)
+
+
+
+    // function check() {
+    //     const user = localStorage.getItem('user.isAdmin')
+    //     console.log('user =', user)
+    //     if (user) {
+    //        <AdminButtons/>
+    //     }
+    // }
 
     // function createMerchant() {
     //     // event.preventDefault()
@@ -131,10 +145,21 @@ const App = observer(() => {
                 {loading }
 
                 <>
+
                     <div className="_row">
                         <ItemList />
 
                     </div>
+
+                    {user ?
+<>
+                        <AdminButtons/>
+</>
+                     :
+                        <></>
+
+                    }
+
                     <br/>
                     <AppRouter/>
 

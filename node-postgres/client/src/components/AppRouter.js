@@ -36,7 +36,7 @@ const authRoutes = [
     ]
 
     const adminRoutes = [
-        // {path: '/lenkuzadmin', Component: LenKuzAdmin},
+        {path: '/lenkuzadmin', Component: LenKuzAdmin},
     ]
 
     const AppRouter = observer( () => {

@@ -8,6 +8,7 @@ const LenKuz = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
+    console.log('obj = ', obj)
 
 
     useEffect((obj) => {
@@ -34,13 +35,10 @@ const LenKuz = () => {
             <>
              <h1 className="">Справочник Ленинск-Кузнецкий </h1>
                 {loading && <Loader />}
+
                 {users ? (
                     <>
-                        {/*<div className="_row">*/}
-                            {/*<ItemList/>*/}
-                        {/*</div>*/}
-                        <br/>
-                        {/*<AppRouter/>*/}
+
                             <BodyRow obj={obj} />
                     </>
                 ) : loading ? null : (

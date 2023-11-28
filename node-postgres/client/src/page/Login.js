@@ -1,18 +1,20 @@
 import {AppContext} from "../components/AppContex.js";
 import React, {useContext, useEffect, useState} from "react";
-import {Link, NavLink, useNavigate, useLocation} from "react-router-dom";
+import {Link, NavLink, useNavigate, useLocation, redirect} from "react-router-dom";
 // import {Container, Row, Card, Form, Button} from "react-bootstrap";
 import {loginmodal} from "../http/userAPI.js";
 import {observer} from "mobx-react-lite";
 import "../components/modal.css"
 import "../../src/style/style.css"
 import '../components/modal.css'
+
 import LoginModal from "../components/LoginModal";
 import AddUser from "../components/AddUser";
 import ItemList from "../components/ItemList";
 
 const Login = observer(({active, setActive}) => {
     // const [loginmodalActive, setLoginmodalActive] = useState(false);
+    const [value,setValue] = useState();
     const [delmodalActive, setDelmodalActive] = useState(false);
     const {user} = useContext(AppContext)
     const [isAdmin, setAdmin] = useState(user.isAdmin)
@@ -30,7 +32,7 @@ const Login = observer(({active, setActive}) => {
 
     // если пользователь авторизован — ему здесь делать нечего
     useEffect(() => {
-        // if (isAdmin) navigate('/lenkuzadmin', {replace: true})
+        // if (user.isAdmin) {return redirect('/lenkuz')}
         // if (isAuth) navigate('/lenkuz', {replace: true})
     }, [])
 
@@ -44,11 +46,32 @@ const Login = observer(({active, setActive}) => {
         const password = event.target.password.value.trim()
         console.log('password = ', password)
 
-            let result = (email === user.email && password === user.pass) ?
-                navigate('/lenkuzadmin', {replace: true}) :
+            {
+                (email === user.email && password === user.pass) ?
+                    (
+
+                        localStorage.setItem('user.isAdmin', true)
+                            // {navigate('/lenkuz', {replace: true})}
+
+                        // user.isAdmin = true
+
+
+
+                    )
+                        :
+                console.log("email не равно context.email pass не равен context.pass", email, user.email, password, user.pass)
+            }
+
+
+        }
+
                 // console.log("email = context.email pass = context.pass ", email, user.email, password, user.pass)  :
 
-                    console.log("email не равно context.email pass не равен context.pass", email, user.email, password, user.pass)
+                // (user.isAdmin) ?
+                // navigate('/lenkuzadmin', {replace: true}) :
+                //     navigate('/lenkuz', {replace: true})
+
+
                     // alert('Не правильный логин или пароль!')
         // <div className={active ? 'delmodal active' : 'delmodal'} onClick={() => setActive(false)}>
         //     <div className={active ? 'delmodal__content active' : 'delmodal__content'} onClick={e => e.stopPropagation()}>
@@ -89,6 +112,12 @@ const Login = observer(({active, setActive}) => {
         //     if (user.isAdmin) navigate('/admin')
         //     if (user.isAuth) navigate('/user')
         // }
+    const refresh = ()=>{
+        // это вызовет ререндеринг компонента
+        window.location.reload();
+        window.location.assign('http://localhost:3000')
+        // redirect('/lenkuz')
+
     }
 
     return (
@@ -96,7 +125,7 @@ const Login = observer(({active, setActive}) => {
             <>
             <h1>Страница авторизации</h1>
                 <div className='container'>
-                    <form className='auth__form' action='' onSubmit={handleSubmit}>
+                    <form className='auth__form' action='/lenkuz' onSubmit={handleSubmit}>
                         <h2> Авторизация</h2>
                         <div>
                             <label>Email:
@@ -124,10 +153,10 @@ const Login = observer(({active, setActive}) => {
                         <div className='btn-block'>
                             {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
                             {/*<button onClick={(e) => setActive(false)}>Отменить</button>*/}
-                            <button type="submit" value="Добавить" onClick={() => {setAdmin(true);
-                            // navigate(from, { replace: true })
+                            <button type="submit" value="Добавить" onClick={() => {refresh()}}>
+                            {/*navigate(from, { replace: true })*/}
 
-                            }}>Войти
+                            Войти
                             </button>
                         </div>
                     </form>

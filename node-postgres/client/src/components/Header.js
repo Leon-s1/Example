@@ -6,7 +6,13 @@ import LoginModal from "./LoginModal";
 
 const Header = () => {
     const [loginmodalActive, setLoginmodalActive] = useState(false);
-    const { user } = useContext(AppContext)
+    // const { user } = useContext(AppContext)
+    const user = localStorage.getItem('user.isAdmin')
+
+    function logout() {
+        localStorage.removeItem('user.isAdmin')
+
+    }
 
     return(
         <>
@@ -22,26 +28,25 @@ const Header = () => {
             <div className="company">
 
                 <p>
-                {user.isAuth ? (
+                {user ? (
 
-                    <NavLink to='/login' className='nav-link'>Справочник...</NavLink>
+                    <NavLink to='/lenkuz' className='nav-link'>Выйти</NavLink>
+
 
                 ) : (
-                    <>
-                    <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
-                    {/*<button onClick={() => setLoginmodalActive(true)}>Войти</button>*/}
-                    {/*<NavLink to='/login' className={({isActive, isPending}) => isActive ? 'loginmodal active' : isPending ? 'loginmodal' : ""} >Войти</NavLink>*/}
-                    </>
+
+                        <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
+
                 )}
                 </p>
-                <p>
+                {/*<p>*/}
 
-                {user.isAdmin && (
-                    <NavLink to='/loginadmin' className='nav-link'>Панель управления</NavLink>
-                )}
-                </p>
+                {/*{user.isAdmin && (*/}
+                {/*    <NavLink to='/loginadmin' className='nav-link'>Панель управления</NavLink>*/}
+                {/*)}*/}
+                {/*</p>*/}
 
-                <LoginModal active={loginmodalActive} setActive={setLoginmodalActive} />
+                {/*<LoginModal active={loginmodalActive} setActive={setLoginmodalActive} />*/}
                 {/*<p>Сайт Сибтранссервис</p>*/}
                 {/*<p>Сайт Феррит</p>*/}
                 {/*<div className="header__login">Войти</div>*/}
