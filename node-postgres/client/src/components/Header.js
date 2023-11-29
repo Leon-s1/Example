@@ -29,13 +29,9 @@ const Header = () => {
 
                 <p>
                 {user ? (
-
-                    <NavLink to='/lenkuz' className='nav-link'>Выйти</NavLink>
-
-
+                    <NavLink to='/lenkuzadmin' className='nav-link'>Выйти</NavLink>
                 ) : (
-
-                        <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
+                    <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
 
                 )}
                 </p>

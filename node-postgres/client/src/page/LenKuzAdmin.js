@@ -34,7 +34,7 @@ const LenKuzAdmin = () => {
 
     return (
             <>
-             <h1 className="">Справочник Ленинск-Кузнецкий </h1>
+             <h1 className="">Справочник Ленинск-Кузнецкий Админ</h1>
                 {loading && <Loader />}
                 {users ? (
                     <>
@@ -48,7 +48,7 @@ const LenKuzAdmin = () => {
                 ) : loading ? null : (
                     'There is no merchant data available'
                 )}
-                <AdminButtons />
+                {/*<AdminButtons />*/}
             </>
         )
 }

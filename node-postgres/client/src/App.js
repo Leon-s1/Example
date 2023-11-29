@@ -132,7 +132,7 @@ const App = observer(() => {
     return (
 
         <BrowserRouter>
-        <NavBar />
+        {/*<NavBar />*/}
         <Header/>
     <div className="main">
         <br/>
@@ -152,9 +152,9 @@ const App = observer(() => {
                     </div>
 
                     {user ?
-<>
+
                         <AdminButtons/>
-</>
+
                      :
                         <></>
 

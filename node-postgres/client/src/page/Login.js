@@ -112,12 +112,11 @@ const Login = observer(({active, setActive}) => {
         //     if (user.isAdmin) navigate('/admin')
         //     if (user.isAuth) navigate('/user')
         // }
-    const refresh = ()=>{
+    const refresh = ()=> {
         // это вызовет ререндеринг компонента
         window.location.reload();
         window.location.assign('http://localhost:3000')
         // redirect('/lenkuz')
-
     }
 
     return (
@@ -125,7 +124,7 @@ const Login = observer(({active, setActive}) => {
             <>
             <h1>Страница авторизации</h1>
                 <div className='container'>
-                    <form className='auth__form' action='/lenkuz' onSubmit={handleSubmit}>
+                    <form className='auth__form' action='' onSubmit={handleSubmit}>
                         <h2> Авторизация</h2>
                         <div>
                             <label>Email:

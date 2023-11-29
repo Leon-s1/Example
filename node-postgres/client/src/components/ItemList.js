@@ -78,6 +78,8 @@ const ItemList = () => {
     console.log('activeItem', activeItem)
 
     function handlClick(item) {
+
+        // event.preventDefault()
         setActiveItem(item)
         console.log('item =', item)
     }
@@ -85,7 +87,8 @@ const ItemList = () => {
     return (
         // <div className="_card active">
             images.map( (item) =>
-                <div className={activeItem === item ? '_card active' : '_card'} onClick={() => handlClick(item)}>
+                <div key={item.id} className={activeItem === item ? '_card active' : '_card'} onClick={() => handlClick(item)}>
+                {/*<div key={item.id} className={ (activeItem) => activeItem === Item ? '_card active' : '_card'} onClick={() => handlClick(item)}>*/}
                     <Item key={item.id}
                            {...item}
                     />
