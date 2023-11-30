@@ -1,22 +1,23 @@
 import React, {Fragment} from "react";
 
+// eslint-disable-next-line react/prop-types
 const BodyRow = ({obj}) => {
     // const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
-    // const user = localStorage.getItem('user.isAdmin')
+    const user = localStorage.getItem('user.isAdmin')
     return (
     <table className="table">
             <div className="table__header">
-                                         <tr>
-                                            {/*<th className="index">idx</th>*/}
-                                            {/* {user ? <th className="id">id</th> : <></>}*/}
-                                            {/*<th className="id">id</th>*/}
-                                            <th className="fio">ФИО</th>
-                                            <th className="position">Должность</th>
-                                            <th className="int_phone">Вн. тел.</th>
-                                            <th className="mobile">Мобильный</th>
-                                            <th className="email">Email</th>
-                                            <th className="skype">Skype</th>
-                                         </tr>
+                <tr>
+                    {/*<th className="index">idx</th>*/}
+                     {user ? <th className="id">id</th> : <></>}
+                    {/*<th className="id">id</th>*/}
+                    <th className="fio">ФИО</th>
+                    <th className="position">Должность</th>
+                    <th className="int_phone">Вн. тел.</th>
+                    <th className="mobile">Мобильный</th>
+                    <th className="email">Email</th>
+                    <th className="skype">Skype</th>
+                </tr>
 
             </div>
 
@@ -29,6 +30,7 @@ const BodyRow = ({obj}) => {
                             <tr>
                                 {/*<td className="index" key={index}>{index}</td>*/}
                                 {/*<td className="id">{value.id}</td>*/}
+                                {user ? <td className="id">{value.id}</td> : <></>}
                                 <td className="fio">{value.fio}</td>
                                 <td className="position">{value.position}</td>
                                 <td className="int_phone">{value.int_phone}</td>

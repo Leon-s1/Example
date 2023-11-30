@@ -11,6 +11,8 @@ const Header = () => {
 
     function logout() {
         localStorage.removeItem('user.isAdmin')
+        window.location.reload();
+        window.location.assign('http://localhost:3000')
 
     }
 
@@ -29,7 +31,7 @@ const Header = () => {
 
                 <p>
                 {user ? (
-                    <NavLink to='/lenkuzadmin' className='nav-link'>Выйти</NavLink>
+                    <NavLink to='#' className='nav-link' onClick={() => {logout()}}>Выйти</NavLink>
                 ) : (
                     <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
 

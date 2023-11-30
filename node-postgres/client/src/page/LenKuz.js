@@ -9,6 +9,7 @@ const LenKuz = () => {
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
     console.log('obj = ', obj)
+    console.log('users = ', users)
 
 
     useEffect((obj) => {
