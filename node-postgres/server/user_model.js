@@ -28,7 +28,7 @@ const getUsersCity = (userCity) => {
         const city = userCity
         // pool.query('SELECT * FROM users', (error, results) => {
         // pool.query('SELECT * FROM users ORDER BY id ASC WHERE city = $1', [city], (error, results) => {
-        pool.query('SELECT * FROM users WHERE city = $1', [city], (error, results) => {
+        pool.query('SELECT * FROM users WHERE city = $1 ORDER BY fio' , [city], (error, results) => {
         // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
            if (error) {
                 reject(error)

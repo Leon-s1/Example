@@ -28,18 +28,18 @@ h1, h2, h3, h4, h5, a, p, div, span {
 }
 
 .header {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     /*background-image: url("./img/serii-fon.jpg");*/
     background-size: cover;
     /*background-color:black;*/
     background-repeat: no-repeat;
     height: 100px;
     width: 100%;
-    /*display: inline-block;*/
+    display: flex;
 }
 .text-center {
     text-align: center;
-    padding-right: 267px;
+    /*padding-right: 267px;*/
     display: inline-block;
 }
 .logo {
