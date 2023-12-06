@@ -34,7 +34,6 @@ const Header = () => {
                         <NavLink to='#' className='nav-link' onClick={() => {logout()}}>Выйти</NavLink>
                     ) : (
                         <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
-
                     )}
                     </div>
 

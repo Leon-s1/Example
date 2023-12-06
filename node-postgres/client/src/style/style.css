@@ -382,9 +382,24 @@ form {
     height: 70px;
     margin: auto;
     /*position: relative;*/
-
+}
+/*Стилизация поисковой строки*/
+.search {
+    max-width: 1240px;
 
 }
+
+.search-input {
+    width: 1240px;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    font: 16px Roboto, Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+
+}
+
 
 /*стили лоадера с сайта loading.io*/
 .lds-dual-ring {

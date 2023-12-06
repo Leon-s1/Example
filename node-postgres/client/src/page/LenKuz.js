@@ -3,6 +3,7 @@ import BodyRow from "../components/BodyRow.js";
 import Loader from "../Loader";
 import ItemList from "../components/ItemList";
 import AppRouter from "../components/AppRouter";
+import Search from "../components/Search";
 
 const LenKuz = () => {
     const [users, setUsers] = useState(false);
@@ -35,6 +36,7 @@ const LenKuz = () => {
     return (
             <>
              <h1 className="">Справочник Ленинск-Кузнецкий </h1>
+                <Search/>
                 {loading && <Loader />}
 
                 {users ? (
