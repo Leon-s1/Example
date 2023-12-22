@@ -32,7 +32,7 @@ const Search = ( {obj} ) => {
             // getUsersCity()
             // const requestedSearch = requestSearch(searched);
 
-            setRows(values)
+            // setRows(values)
             setLoading(false)
         }, 1000);
     }, []);
@@ -92,24 +92,30 @@ const Search = ( {obj} ) => {
             {/*{loading && <Loader />}*/}
 
 
+                        {
+                            filteredRows.map((row, id) => {
+                                return (
+                                    <BodyRow obj={rows} key={id} />
+                                )
+                            })
+                        }
 
-            { rows  ? (
-                <>
-                    {
-                        filteredRows.map((row, id) => {
-                        // rows.map((row, id) => {
-                        // Object.values(obj).map((row, id) => {
-                            return (
-                                // <BodyRow  obj = {row} key={id} />
-                                <BodyRow obj={rows} key={id} />
-                            )
-                        //
-                        })
-                    }
-                </>
-            ) : loading ? null : (
-                'There is no merchant data available'
-            )}
+
+
+
+            {/*// /!*{ rows  ? (*!/*/}
+            {/*// /!*    <>*!/*/}
+            {/*// /!*        {*!/*/}
+            {/*// /!*            filteredRows.map((row, id) => {*!/*/}
+            {/*// /!*                return (*!/*/}
+            {/*// /!*                    <BodyRow obj={rows} key={id} />*!/*/}
+            {/*// /!*                )*!/*/}
+            {/*// /!*            })*!/*/}
+            {/*// /!*        }*!/*/}
+            {/*// /!*    </>*!/*/}
+            {/*// /!*) : loading ? null : (*!/*/}
+            {/*// /!*    'There is no merchant data available'*!/*/}
+            {/*// }*/}
 
         </div>
     );

@@ -43,8 +43,8 @@ const LenKuz = () => {
                 {users ? (
                     <>
 
-                        <Search obj = {obj}/>
-                        {/*<BodyRow obj={obj} />*/}
+                        {/*<Search obj = {obj}/>*/}
+                        <BodyRow obj={obj} />
                     </>
                 ) : loading ? null : (
                     'There is no merchant data available'

@@ -1,12 +1,32 @@
-import React, {Fragment} from "react";
+import React, {Fragment, useState} from "react";
 
 // eslint-disable-next-line react/prop-types
 const BodyRow = ({obj}) => {
     // const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
     // const obj = JSON.parse(users);
     const user = localStorage.getItem('user.isAdmin')
+    const values = Object.values(obj)
+    const [searched, setSearched] = useState("")
+
+    const [rows, setRows] = useState(values)
+    // const [loading, setLoading] = React.useState(true)
+    const filteredRows = rows.filter(row => {
+        return row.fio.toLowerCase().includes(searched.toLowerCase()) ||
+               row.position.toLowerCase().includes(searched.toLowerCase())
+    })
+
     return (
-    <table className="table">
+    <div>
+        <div className='search'>
+            <input className='search-input'
+                   type="text"
+                   placeholder="Введите фамилию сотрудника..."
+                   value={searched}
+                   onChange={(searchVal) => setSearched(searchVal.target.value)}
+            />
+        </div>
+
+        <table className="table">
             <div className="table__header">
                 <tr>
                     {/*<th className="index">idx</th>*/}
@@ -23,9 +43,8 @@ const BodyRow = ({obj}) => {
             </div>
 
 
-
         <div>
-            {Object.values(obj).map((value) => {
+            {filteredRows.map((value) => {
                 return (
                     <Fragment key={value.id}>
                             <tr>
@@ -44,6 +63,8 @@ const BodyRow = ({obj}) => {
             })}
         </div>
     </table>
+
+    </div>
 
     )
 }
