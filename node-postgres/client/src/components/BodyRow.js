@@ -3,6 +3,7 @@ import React, {Fragment} from "react";
 // eslint-disable-next-line react/prop-types
 const BodyRow = ({obj}) => {
     // const headTable = ["index", "id", "ФИО", "Должность", "Вн. телефон", "Моб. тел.", "Email", "Skype"];
+    // const obj = JSON.parse(users);
     const user = localStorage.getItem('user.isAdmin')
     return (
     <table className="table">
@@ -24,7 +25,7 @@ const BodyRow = ({obj}) => {
 
 
         <div>
-            {Object.values(obj).map((value, index) => {
+            {Object.values(obj).map((value) => {
                 return (
                     <Fragment key={value.id}>
                             <tr>

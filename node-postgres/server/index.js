@@ -34,8 +34,19 @@ app.get('/', (req, res) => {
         })
 })
 
+// app.get('/users/:fio', (req, res) => {
+//
+//     user_model.requestSearch(req.params.fio)
+//         .then(response => {
+//             res.status(200).send(response);
+//         })
+//         .catch(error => {
+//             res.status(500).send(error);
+//         })
+// })
+
 app.get('/users/:city', (req, res) => {
-// app.get('/', (req, res) => {
+
     user_model.getUsersCity(req.params.city)
         .then(response => {
             res.status(200).send(response);

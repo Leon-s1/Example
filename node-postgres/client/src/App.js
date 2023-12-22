@@ -15,6 +15,7 @@ import {observer} from "mobx-react";
 import NavBar from "./components/NavBar.js";
 import Header from "./components/Header";
 import AdminButtons from "./components/AdminButtons";
+import Search from "./components/Search";
 
 
 const App = observer(() => {
@@ -148,8 +149,9 @@ const App = observer(() => {
 
                     <div className="_row">
                         <ItemList />
-
                     </div>
+
+                    {/*<Search obj={obj}/>*/}
 
                     {user ?
 

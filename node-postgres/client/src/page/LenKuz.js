@@ -3,17 +3,18 @@ import BodyRow from "../components/BodyRow.js";
 import Loader from "../Loader";
 import ItemList from "../components/ItemList";
 import AppRouter from "../components/AppRouter";
-import Search from "../components/Search";
+import Search from "../components/Search.js";
 
 const LenKuz = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
-    console.log('obj = ', obj)
-    console.log('users = ', users)
+    // const obj = Object.values(users)
+    console.log('obj из Ленкуз= ', obj)
+    console.log('users из Ленкуз= ', users)
 
 
-    useEffect((obj) => {
+    useEffect(() => {
         setTimeout(() => {
             getUsersCity();
             setLoading(false)
@@ -36,13 +37,14 @@ const LenKuz = () => {
     return (
             <>
              <h1 className="">Справочник Ленинск-Кузнецкий </h1>
-                <Search/>
+
                 {loading && <Loader />}
 
                 {users ? (
                     <>
 
-                            <BodyRow obj={obj} />
+                        <Search obj = {obj}/>
+                        {/*<BodyRow obj={obj} />*/}
                     </>
                 ) : loading ? null : (
                     'There is no merchant data available'
