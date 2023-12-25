@@ -42,11 +42,7 @@ const Moscow = () => {
             {loading && <Loader />}
             {users ? (
                 <>
-                    <div className="_row">
-                        {/*<ItemList/>*/}
-                    </div>
-                    <br/>
-                    {/*<AppRouter/>*/}
+
                     <BodyRow obj={obj} />
                 </>
             ) : loading ? null : (
