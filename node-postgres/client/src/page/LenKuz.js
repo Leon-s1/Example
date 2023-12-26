@@ -1,17 +1,13 @@
 import React, {useEffect, useState} from "react";
 import BodyRow from "../components/BodyRow.js";
 import Loader from "../Loader";
-import ItemList from "../components/ItemList";
-import AppRouter from "../components/AppRouter";
-import Search from "../components/Search.js";
 
 const LenKuz = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
-    // const obj = Object.values(users)
-    console.log('obj из Ленкуз= ', typeof (obj), obj)
-    console.log('users из Ленкуз= ', typeof (users), users)
+    // console.log('obj из Ленкуз= ', typeof (obj), obj)
+    // console.log('users из Ленкуз= ', typeof (users), users)
 
 
     useEffect(() => {
@@ -29,8 +25,6 @@ const LenKuz = () => {
             })
             .then(data => {
                 setUsers(data);
-                // getMerchantsLk();
-                // setModalActive(false)
             });
     }
 

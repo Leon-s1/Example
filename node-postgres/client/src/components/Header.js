@@ -24,19 +24,19 @@ const Header = () => {
                     <img src={logo}/>
                 </div>
                 <div className='company'>
-                    <p>Сайт Сибтранссервис</p>
-                    <p>Сайт Феррит</p>
-                </div>
-                <div className="company">
-
-                    <div>
-                    {user ? (
-                        <NavLink to='#' className='nav-link' onClick={() => {logout()}}>Выйти</NavLink>
-                    ) : (
-                        <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
-                    )}
+                    <div className='company__link'>
+                        <p>Сайт Сибтранссервис</p>
+                        <p>Сайт Феррит</p>
                     </div>
-
+                    <div className="company__auth">
+                        <div>
+                            {user ? (
+                                <NavLink to='#' className='nav-link' onClick={() => {logout()}}>Выйти</NavLink>
+                            ) : (
+                                <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
+                            )}
+                        </div>
+                    </div>
                 </div>
             </div>
 
