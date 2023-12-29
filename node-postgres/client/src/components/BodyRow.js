@@ -31,6 +31,7 @@ const BodyRow = ({obj}) => {
                    onChange={(searchVal) => setSearched(searchVal.target.value)}
                    // onCancelSearch={() => cancelSearch()}
             />
+            {/*<button className="close" onClick={() => cancelSearch()}></button>*/}
             <span className="close" onClick={() => cancelSearch()}></span>
         </div>
 

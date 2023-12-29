@@ -48,19 +48,39 @@ h1, h2, h3, h4, h5, a, p, div, span {
     padding-top: 30px;
     height: 50px;
     display: inline;
+    width: 300px;
 }
 .company {
     /*display: inline-block;*/
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 300px;
+    /*margin-right: 20px;*/
 }
 .company__link {
     /*display: flex;*/
+    /*width: 200px;*/
 
 }
-.company__link p {
-    width: 130px;
+.company__link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+a.company__link:active, /* активная/посещенная ссылка */
+a.company__link:hover,  /* при наведении */
+a.company__link {
+    text-decoration: none;
+    color: #666;
+}
+.company__auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
 }
 
 .table__header {
@@ -397,29 +417,22 @@ form {
 /*Стилизация поисковой строки*/
 .search {
     max-width: 1240px;
-    display:inline;
-    /*position:relative;*/
-
 }
 
 .search-input {
+    border-radius: 10px;
+    font: 18px Roboto, Helvetica, Arial, sans-serif;
     width: 1240px;
     height: 50px;
     margin-bottom: 20px;
     padding: 10px;
     box-sizing: border-box;
-    font: 18px Roboto, Helvetica, Arial, sans-serif;
-    border-radius: 10px;
+    outline: none;
+    border: 2px solid #aaa;
 }
 .close {
-    /*position:absolute;*/
-    position:relative;
-    /*padding:12px 12px;*/
-    padding:25px 25px;
-    /*margin-right: 8%;*/
-    right:0;
-    background: url("./img/cross.png") no-repeat center right 10px;
-    background-size: auto 60%;
+    padding:15px 15px;
+    background-size: 50%;
     cursor: pointer;
 }
 

@@ -23,10 +23,17 @@ const Header = () => {
                 <div className='logo'>
                     <img src={logo}/>
                 </div>
+                <h1>Телефонный справочник Сибтранссервис</h1>
                 <div className='company'>
                     <div className='company__link'>
-                        <p>Сайт Сибтранссервис</p>
-                        <p>Сайт Феррит</p>
+                        {/*<p>Сайт Сибтранссервис</p>*/}
+                        {/*<p>Сайт Феррит</p>*/}
+                        <a href="https://sibtranss.ru/" className="nav-link d-inline" target="_blank" rel="noopener noreferrer">
+                            Сайт Сибтранссервис
+                        </a>
+                        <a href="https://www.ferrit.cz/ru/" className="nav-link d-inline" target="_blank" rel="noopener noreferrer">
+                            Сайт Ferrit
+                        </a>
                     </div>
                     <div className="company__auth">
                         <div>
