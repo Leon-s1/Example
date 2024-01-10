@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import BodyRow from "../components/BodyRow.js";
+import Table from "../components/Table.js";
 import Loader from "../Loader";
 import AdminButtons from "../components/AdminButtons";
 import '../../src/style/style.css'
@@ -43,7 +43,7 @@ const LenKuzAdmin = () => {
                         {/*</div>*/}
                         <br/>
                         {/*<AppRouter/>*/}
-                            <BodyRow obj={obj} />
+                            <Table obj={obj} />
                     </>
                 ) : loading ? null : (
                     'There is no merchant data available'

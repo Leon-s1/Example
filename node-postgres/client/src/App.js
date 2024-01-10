@@ -4,7 +4,7 @@ import {BrowserRouter, useNavigate, Route, NavLink, redirect} from "react-router
 import AppRouter from "./components/AppRouter";
 // import {getMerchant, createMerchant, deleteMerchant, updateMerchant} from "./http/userAPI.js";
 import TableRow from "./components/TableRow.js";
-import BodyRow from "./components/BodyRow.js";
+import Table from "./components/Table.js";
 import AddUser from "./components/AddUser";
 import DelUser from "./components/DelUser";
 import UpdateUser from "./components/UpdateUser"
@@ -91,7 +91,7 @@ const App = observer(() => {
                     <br/>
                     <AppRouter/>
 
-                    {/*<BodyRow obj={obj} />*/}
+                    {/*<Table obj={obj} />*/}
                 </>
 
                 {/*{users ? (*/}
@@ -101,7 +101,7 @@ const App = observer(() => {
                 {/*        </div>*/}
                 {/*        <br/>*/}
                 {/*             <AppRouter/>*/}
-                {/*             /!*<BodyRow obj={obj} />*!/*/}
+                {/*             /!*<Table obj={obj} />*!/*/}
                 {/*    </>*/}
                 {/*) : loading ? null : (*/}
                 {/*    'There is no merchant data available'*/}

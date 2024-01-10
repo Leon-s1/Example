@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Loader from "../Loader";
-import BodyRow from "../components/BodyRow";
+import Table from "../components/Table";
 
 const NovoKuz = () => {
     const [users, setUsers] = useState(false);
@@ -43,7 +43,7 @@ const NovoKuz = () => {
                 {/*</div>*/}
                 <br/>
                 {/*<AppRouter/>*/}
-                <BodyRow obj={obj} />
+                <Table obj={obj} />
             </>
         ) : loading ? null : (
             'There is no merchant data available'

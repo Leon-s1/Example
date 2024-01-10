@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import BodyRow from "../components/BodyRow.js";
+import Table from "../components/Table.js";
 import Loader from "../Loader";
 
 const LenKuz = () => {
@@ -34,7 +34,7 @@ const LenKuz = () => {
                 {loading && <Loader />}
                 {users ? (
                     <>
-                        <BodyRow obj={obj} />
+                        <Table obj={obj} />
                     </>
                 ) : loading ? null : (
                     'There is no merchant data available'

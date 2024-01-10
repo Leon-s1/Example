@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import BodyRow from "./BodyRow";
+import Table from "./Table";
 import LenKuz from "../page/LenKuz";
 import Loader from "../Loader";
 
@@ -45,7 +45,7 @@ const Search = ( {obj} ) => {
     //     console.log('searchedVal в requestSearch = ', searchedVal)
     //     console.log('Object.values(obj) = ', Object.values(obj))
     //     if (!searchedVal) {
-    //         return <BodyRow obj={rows} />
+    //         return <Table obj={rows} />
     //     }
     //
     //     const filteredRows =  rows.filter(( row ) => {
@@ -58,7 +58,7 @@ const Search = ( {obj} ) => {
     // const requestSearch = (searched, rows) => {
         //     console.log('searchedVal в requestSearch = ', searchedVal);
         //     if (!searchedVal) {
-        //         return <BodyRow obj={searchedVal} />
+        //         return <Table obj={searchedVal} />
         //     }
         //         console.log('searchedVal === values.fio', searchedVal, values.fio)
 
@@ -95,7 +95,7 @@ const Search = ( {obj} ) => {
                         {
                             filteredRows.map((row, id) => {
                                 return (
-                                    <BodyRow obj={rows} key={id} />
+                                    <Table obj={rows} key={id} />
                                 )
                             })
                         }
@@ -108,7 +108,7 @@ const Search = ( {obj} ) => {
             {/*// /!*        {*!/*/}
             {/*// /!*            filteredRows.map((row, id) => {*!/*/}
             {/*// /!*                return (*!/*/}
-            {/*// /!*                    <BodyRow obj={rows} key={id} />*!/*/}
+            {/*// /!*                    <Table obj={rows} key={id} />*!/*/}
             {/*// /!*                )*!/*/}
             {/*// /!*            })*!/*/}
             {/*// /!*        }*!/*/}

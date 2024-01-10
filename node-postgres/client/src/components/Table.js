@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from "react";
 
 // eslint-disable-next-line react/prop-types
-const BodyRow = ({obj}) => {
+const Table = ({obj}) => {
 
     const userAuth = localStorage.getItem('user.isAdmin')
     // const values = Object.values(obj)
@@ -72,4 +72,4 @@ const BodyRow = ({obj}) => {
     )
 }
 
-export default BodyRow
+export default Table
