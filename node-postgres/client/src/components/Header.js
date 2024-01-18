@@ -28,10 +28,10 @@ const Header = () => {
                     <div className='company__link'>
                         {/*<p>Сайт Сибтранссервис</p>*/}
                         {/*<p>Сайт Феррит</p>*/}
-                        <a href="https://sibtranss.ru/" className="nav-link d-inline" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.sibtranss.ru/" className="nav-link" target="_blank" rel="noopener noreferrer">
                             Сайт Сибтранссервис
                         </a>
-                        <a href="https://www.ferrit.cz/ru/" className="nav-link d-inline" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.ferrit.cz/ru/" className="nav-link" target="_blank" rel="noopener noreferrer">
                             Сайт Ferrit
                         </a>
                     </div>

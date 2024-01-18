@@ -69,11 +69,20 @@ h1, h2, h3, h4, h5, a, p, div, span {
     width: 150px;
     height: 50px;
 }
+.nav-link {
+    text-decoration: none;
+    /*color: #666;*/
+    color: #000000;
+}
+.nav-link:hover {
+    text-decoration: none;
+    color: red;
+}
+
 a.company__link:active, /* активная/посещенная ссылка */
 a.company__link:hover,  /* при наведении */
 a.company__link {
-    text-decoration: none;
-    color: #666;
+
 }
 .company__auth {
     display: flex;

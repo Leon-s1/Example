@@ -24,19 +24,6 @@ const getUsers = () => {
     })
 }
 
-// const requestSearch = (searchedVal) => {
-//     return new Promise(function (resolve, reject) {
-//         const fio = searchedVal
-//         pool.query('SELECT * FROM users WHERE fio = $1' , [fio], (error, results) => {
-//             // const result = await pool.query('SELECT * FROM merchants ORDER BY id ASC' )
-//             if (error) {
-//                 reject(error)
-//             }
-//             resolve(results.rows);
-//         })
-//     })
-// }
-
 const getUsersCity = (userCity) => {
     return new Promise(function(resolve, reject) {
         const city = userCity
@@ -112,7 +99,6 @@ const updateUser = (body) => {
 
 module.exports = {
     getUsers,
-    // requestSearch,
     getUsersCity,
     getByEmail,
     createUser,
