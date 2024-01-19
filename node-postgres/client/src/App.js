@@ -94,37 +94,6 @@ const App = observer(() => {
                     {/*<Table obj={obj} />*/}
                 </>
 
-                {/*{users ? (*/}
-                {/*    <>*/}
-                {/*        <div className="_row">*/}
-                {/*            <ItemList/>*/}
-                {/*        </div>*/}
-                {/*        <br/>*/}
-                {/*             <AppRouter/>*/}
-                {/*             /!*<Table obj={obj} />*!/*/}
-                {/*    </>*/}
-                {/*) : loading ? null : (*/}
-                {/*    'There is no merchant data available'*/}
-                {/*)}*/}
-
-
-
-
-                {/*<AddUser active={addmodalActive} setActive={setAddmodalActive} />*/}
-                {/*<DelUser active={delmodalActive} setActive={setDelmodalActive} />*/}
-                {/*<UpdateUser active={updatemodalActive} setActive={setUpdatemodalActive} />*/}
-
-
-
-                {/*<br/>*/}
-                {/*<button onClick={() => setAddmodalActive(true)}>Add user</button>*/}
-                {/*<br/>*/}
-                {/*<br/>*/}
-                {/*<button onClick={() => setDelmodalActive(true)}>Delete user</button>*/}
-                {/*<br/>*/}
-                {/*<button onClick={() => setUpdatemodalActive(true)}>Update user</button>*/}
-
-
 
             </div>
 

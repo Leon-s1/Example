@@ -1,12 +1,12 @@
-import React, {useContext, useState} from "react";
+import React from "react";
 import logo from '../style/img/STS_logo.jpg'
 import {NavLink} from "react-router-dom";
 import '../style/style.css'
-import {AppContext} from "./AppContex";
-import LoginModal from "./LoginModal";
+// import {AppContext} from "./AppContex";
+// import LoginModal from "../arkhiv/LoginModal";
 
 const Header = () => {
-    const [loginmodalActive, setLoginmodalActive] = useState(false);
+    // const [loginmodalActive, setLoginmodalActive] = useState(false);
     // const { user } = useContext(AppContext)
     const user = localStorage.getItem('user.isAdmin')
 

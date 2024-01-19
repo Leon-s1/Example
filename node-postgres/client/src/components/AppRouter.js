@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React from "react";
 import { Routes, Route} from 'react-router-dom'
 import Login from "../page/Login.js";
 import LenKuz from "../page/LenKuz.js";
@@ -9,11 +9,11 @@ import Norilsk from "../page/Norilsk";
 import Shahti from "../page/Shahti";
 import Ural from "../page/Ural";
 import Rekvizit from "../page/Rekvizit";
-import Admin from "../page/Admin";
+// import Admin from "../page/Admin";
 import { observer } from "mobx-react";
 import {AppContext} from "./AppContex.js";
-import LenKuzAdmin from "../page/LenKuzAdmin";
-import LoginModal from "./LoginModal";
+// import LenKuzAdmin from "../arkhiv/LenKuzAdmin";
+// import LoginModal from "../arkhiv/LoginModal";
 
 
     const publicRoutes = [
@@ -27,20 +27,20 @@ import LoginModal from "./LoginModal";
         {path: '/ural', Component: Ural},
         {path: '/rekvizit', Component: Rekvizit},
         {path: '/login', Component: Login},
-        {path: '/loginmodal', Component: LoginModal},
-        {path: '/lenkuzadmin', Component: LenKuzAdmin}
+        // {path: '/loginmodal', Component: LoginModal},
+        // {path: '/lenkuzadmin', Component: LenKuzAdmin}
     ]
 
-const authRoutes = [
-    {path: '/lenkuz', Component: LenKuz},
-    ]
+// const authRoutes = [
+//     {path: '/lenkuz', Component: LenKuz},
+//     ]
 
-    const adminRoutes = [
-        {path: '/lenkuzadmin', Component: LenKuzAdmin},
-    ]
+    // const adminRoutes = [
+        // {path: '/lenkuzadmin', Component: LenKuzAdmin},
+    // ]
 
     const AppRouter = observer( () => {
-    const { user } = useContext(AppContext)
+    // const { user } = useContext(AppContext)
 
     // const [activePath, setActivePath] = useState(publicRoutes[0])
     // console.log('activePath', activePath)
@@ -53,9 +53,9 @@ const authRoutes = [
             {/*{user.isAuth && authRoutes.map(({path, Component}) =>*/}
             {/*    <Route key={path} path={path} element={<Component />} />*/}
             {/*)}*/}
-            {user.isAdmin && adminRoutes.map(({path, Component}) =>
-                    <Route key={path} path={path} element={<Component />} />
-            )}
+            {/*{user.isAdmin && adminRoutes.map(({path, Component}) =>*/}
+            {/*        <Route key={path} path={path} element={<Component />} />*/}
+            {/*)}*/}
         </Routes>
     )
 })

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import Table from "../components/Table.js";
 import Loader from "../Loader";
 import AdminButtons from "../components/AdminButtons";
-import '../../src/style/style.css'
+import '../style/style.css'
 import ItemList from "../components/ItemList";
 import AppRouter from "../components/AppRouter";
 

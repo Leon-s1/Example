@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import '../style/style.css'
 
-const DelUser = ({active, setActive}) => {
+const DelUser = (active, setActive) => {
     const [id, setId] = useState('');
 
     function deleteUser() {
@@ -25,9 +25,9 @@ const DelUser = ({active, setActive}) => {
             .catch(err => console.log(err));
     }
 
-    function handleSubmit(e) {
-        e.preventDefault()
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault()
+    // }
 
 
     return (

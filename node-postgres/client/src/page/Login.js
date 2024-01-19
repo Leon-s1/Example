@@ -9,11 +9,12 @@ import "../../src/style/style.css"
 import '../components/modal.css'
 
 
-import LoginModal from "../components/LoginModal";
+import LoginModal from "../arkhiv/LoginModal";
 import AddUser from "../components/AddUser";
 import ItemList from "../components/ItemList";
 
-const Login = observer(({active, setActive}) => {
+// const Login = observer(({active, setActive}) => {
+const Login = observer(() => {
     // const [loginmodalActive, setLoginmodalActive] = useState(false);
     const [value,setValue] = useState();
     const [delmodalActive, setDelmodalActive] = useState(false);

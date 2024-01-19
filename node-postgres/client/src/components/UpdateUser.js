@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import '../style/style.css'
 
-const UpdateUser = ({active, setActive}) => {
+const UpdateUser = (active, setActive) => {
     const [id, setId] = useState('');
     const [fio, setFio] = useState('');
     const [position, setPosition] = useState('');
@@ -34,9 +34,9 @@ const UpdateUser = ({active, setActive}) => {
 
 
 
-    function handleSubmit(e) {
-        e.preventDefault()
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault()
+    // }
 
 
     return (

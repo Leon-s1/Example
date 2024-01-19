@@ -2,8 +2,8 @@ import React, {useEffect, useState} from "react";
 import "./modal.css"
 
 
-const AddUser = ({active, setActive}) => {
-    const [users, setUsers] = useState(false);
+const AddUser = (active, setActive) => {
+    // const [users, setUsers] = useState(false);
     const [fio, setFio] = useState('');
     const [position, setPosition] = useState('');
     const [int_phone, setInt_phone] = useState('');

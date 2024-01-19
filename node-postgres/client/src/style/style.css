@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, a, p, div, span {
 }
 
 .header {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*background-image: url("./img/serii-fon.jpg");*/
     background-size: cover;
     /*background-color:black;*/

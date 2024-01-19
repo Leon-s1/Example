@@ -1,11 +1,11 @@
 import React, {useContext, useState} from 'react';
 import {loginmodal} from "../http/userAPI";
-import {AppContext} from "./AppContex";
+import {AppContext} from "../components/AppContex";
 import {useNavigate} from "react-router-dom";
 // import bcrypt from 'bcrypt'
 
 
-const LoginModal = ({active, setActive}) => {
+const LoginModal = (active, setActive) => {
     const {user} = useContext(AppContext)
     const navigate = useNavigate()
 
@@ -45,7 +45,7 @@ const LoginModal = ({active, setActive}) => {
         })
             .then(response => {
                 return response.text();
-                console.log('response ', response.text())
+                // console.log('response ', response.text())
             })
             .then(data => {
                 alert(data);
@@ -55,8 +55,8 @@ const LoginModal = ({active, setActive}) => {
 
                     // console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
 
-                    (email === data.email) ? console.log("email = data", email, data.email)
-                    : console.log("email не равно data", email, data.email)
+                    // (email === data.email) ? console.log("email = data", email, data.email)
+                    // : console.log("email не равно data", email, data.email)
                 setActive(false)
             });
         // console.log(fio, email);
@@ -90,7 +90,7 @@ const LoginModal = ({active, setActive}) => {
 
                 {/*{children}*/}
                 <div className='modal-form'>
-                    <form action='' onSubmit={handleSubmit}>
+                    <form action='node-postgres/client/src/arkhiv/LoginModal' onSubmit={handleSubmit}>
                         <h3> Авторизация</h3>
                         <div>
                             <label>Email:

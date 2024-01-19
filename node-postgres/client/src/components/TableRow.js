@@ -7,7 +7,7 @@ const TableRow = () => {
              <div className="headTable">
                  {headTable.map((element, index) => {
                      return (
-                        <table>
+                        <table key={index}>
                             <tr>
                                 <td key={index}>{element}</td>
                             </tr>
