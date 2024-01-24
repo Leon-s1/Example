@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, { useState} from "react";
 import "./modal.css"
 
 
-const AddUser = (active, setActive) => {
+// eslint-disable-next-line react/prop-types
+const AddUser = ({active, setActive}) => {
     // const [users, setUsers] = useState(false);
     const [fio, setFio] = useState('');
     const [position, setPosition] = useState('');
@@ -30,9 +31,9 @@ const AddUser = (active, setActive) => {
             // console.log(fio, email);
         }
 
-    function handleSubmit(e) {
-        e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
+    // }
 
         return (
             <div className={active ? 'addmodal active' : 'addmodal'} onClick={() => setActive(false)}>

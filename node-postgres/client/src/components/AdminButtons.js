@@ -5,8 +5,8 @@ import UpdateUser from "./UpdateUser";
 
 const AdminButtons = () => {
     const [addmodalActive, setAddmodalActive] = useState(false);
-    const [delmodalActive, setDelmodalActive] = useState(false);
     const [updatemodalActive, setUpdatemodalActive] = useState(false);
+    const [delmodalActive, setDelmodalActive] = useState(false);
 
 
     return (

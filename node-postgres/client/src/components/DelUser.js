@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import '../style/style.css'
 
-const DelUser = (active, setActive) => {
+// eslint-disable-next-line react/prop-types
+const DelUser = ({active, setActive}) => {
     const [id, setId] = useState('');
 
     function deleteUser() {

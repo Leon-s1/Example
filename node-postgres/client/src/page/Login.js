@@ -1,28 +1,29 @@
 import {AppContext} from "../components/AppContex.js";
 import React, {useContext, useEffect, useState} from "react";
-import {Link, NavLink, useNavigate, useLocation, redirect} from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 // import {Container, Row, Card, Form, Button} from "react-bootstrap";
-import {loginmodal} from "../http/userAPI.js";
+// import {loginmodal} from "../http/userAPI.js";
 import {observer} from "mobx-react-lite";
 import "../components/modal.css"
 import "../../src/style/style.css"
 import '../components/modal.css'
+import {redirect} from "react-router-dom";
 
 
-import LoginModal from "../arkhiv/LoginModal";
-import AddUser from "../components/AddUser";
-import ItemList from "../components/ItemList";
+// import LoginModal from "../arkhiv/LoginModal";
+// import AddUser from "../components/AddUser";
+// import ItemList from "../components/ItemList";
 
 // const Login = observer(({active, setActive}) => {
 const Login = observer(() => {
     // const [loginmodalActive, setLoginmodalActive] = useState(false);
-    const [value,setValue] = useState();
-    const [delmodalActive, setDelmodalActive] = useState(false);
+    // const [value,setValue] = useState();
+    // const [delmodalActive, setDelmodalActive] = useState(false);
     const {user} = useContext(AppContext)
-    const [isAdmin, setAdmin] = useState(user.isAdmin)
-    const navigate = useNavigate();
-    const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
+    // const [isAdmin, setAdmin] = useState(user.isAdmin)
+    // const navigate = useNavigate();
+    // const location = useLocation();
+    // const from = location.state?.from?.pathname || "/";
     // console.log('loginmodalActive = ', loginmodalActive)
 
 

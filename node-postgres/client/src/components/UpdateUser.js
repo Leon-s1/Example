@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import '../style/style.css'
 
-const UpdateUser = (active, setActive) => {
+// eslint-disable-next-line react/prop-types
+const UpdateUser = ({active, setActive}) => {
+// const UpdateUser = () => {
+    // const [active, setActive] = useState(true)
     const [id, setId] = useState('');
     const [fio, setFio] = useState('');
     const [position, setPosition] = useState('');
@@ -10,6 +13,9 @@ const UpdateUser = (active, setActive) => {
     const [email, setEmail] = useState('');
     const [skype, setSkype] = useState('');
     const [city, setCity] = useState('');
+    console.log('active ', active)
+    console.log('setActive ', setActive)
+
 
     function updateUser() {
 
@@ -19,7 +25,7 @@ const UpdateUser = (active, setActive) => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ id, fio, position, int_phone, mobile, email, skype, city}),
-            // console.log ({fio})
+
         })
             .then(response => {
                 return response.text();
@@ -27,7 +33,7 @@ const UpdateUser = (active, setActive) => {
             .then(data => {
                 alert(data);
                 setActive(false);
-                // getUsers();
+
             })
             .catch(err => console.log(err));
     }
@@ -40,8 +46,8 @@ const UpdateUser = (active, setActive) => {
 
 
     return (
-        <div className={active ? 'updatemodal active' : 'updatemodal'} onClick={() => setActive(false)}>
-            <div className={active ? 'updatemodal__content active' : 'updatemodal__content'} onClick={e => e.stopPropagation()}>
+        <div className={active ? 'updatemodal active' : 'updatemodal'} onClick={() => setActive(false)} >
+            <div className={active ? 'updatemodal__content active' : 'updatemodal__content'} onClick={e => e.stopPropagation()} >
 
                 <div className='modal-form'>
                     <form action='' onSubmit={updateUser}>
