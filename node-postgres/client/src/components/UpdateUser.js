@@ -24,7 +24,7 @@ const UpdateUser = ({active, setActive}) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ id, fio, position, int_phone, mobile, email, skype, city}),
+            body: JSON.stringify({id, fio, position, int_phone, mobile, email, skype, city}),
 
         })
             .then(response => {
@@ -39,15 +39,15 @@ const UpdateUser = ({active, setActive}) => {
     }
 
 
-
     // function handleSubmit(e) {
     //     e.preventDefault()
     // }
 
 
     return (
-        <div className={active ? 'updatemodal active' : 'updatemodal'} onClick={() => setActive(false)} >
-            <div className={active ? 'updatemodal__content active' : 'updatemodal__content'} onClick={e => e.stopPropagation()} >
+        <div className={active ? 'updatemodal active' : 'updatemodal'} onClick={() => setActive(false)}>
+            <div className={active ? 'updatemodal__content active' : 'updatemodal__content'}
+                 onClick={e => e.stopPropagation()}>
 
                 <div className='modal-form'>
                     <form action='' onSubmit={updateUser}>
@@ -151,8 +151,6 @@ const UpdateUser = ({active, setActive}) => {
 
             </div>
         </div>
-
-
 
 
     )

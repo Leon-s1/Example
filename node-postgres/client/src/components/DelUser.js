@@ -5,6 +5,7 @@ import '../style/style.css'
 const DelUser = ({active, setActive}) => {
     const [id, setId] = useState('');
 
+
     function deleteUser() {
         // let id = prompt('Enter user id');
         fetch(`http://localhost:3001/users/${id}`, {
@@ -33,7 +34,8 @@ const DelUser = ({active, setActive}) => {
 
     return (
         <div className={active ? 'delmodal active' : 'delmodal'} onClick={() => setActive(false)}>
-            <div className={active ? 'delmodal__content active' : 'delmodal__content'} onClick={e => e.stopPropagation()}>
+            <div className={active ? 'delmodal__content active' : 'delmodal__content'}
+                 onClick={e => e.stopPropagation()}>
 
                 <div className='modal-form'>
                     <form action='' onSubmit={deleteUser}>
@@ -63,8 +65,6 @@ const DelUser = ({active, setActive}) => {
 
             </div>
         </div>
-
-
 
 
     )

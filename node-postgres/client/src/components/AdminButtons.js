@@ -10,18 +10,18 @@ const AdminButtons = () => {
 
 
     return (
-        <>
-            <h2>Редактирование сотрудника</h2>
-                <div className='buttons__admin'>
-                    <AddUser active={addmodalActive} setActive={setAddmodalActive} />
-                    <DelUser active={delmodalActive} setActive={setDelmodalActive} />
-                    <UpdateUser active={updatemodalActive} setActive={setUpdatemodalActive} />
+        <div className="admin__panel">
+            <h2>Панель управления</h2>
+            <div className='admin__buttons'>
+                <AddUser active={addmodalActive} setActive={setAddmodalActive}/>
+                <DelUser active={delmodalActive} setActive={setDelmodalActive}/>
+                <UpdateUser active={updatemodalActive} setActive={setUpdatemodalActive}/>
 
-                    <button onClick={() => setAddmodalActive(true)}>Добавить сотрудника</button>
-                    <button onClick={() => setUpdatemodalActive(true)}>Редактировать сотрудника</button>
-                    <button onClick={() => setDelmodalActive(true)}>Удалить сотрудника</button>
-                </div>
-            </>
+                <button onClick={() => setAddmodalActive(true)}>Добавить сотрудника</button>
+                <button onClick={() => setUpdatemodalActive(true)}>Редактировать сотрудника</button>
+                <button onClick={() => setDelmodalActive(true)}>Удалить сотрудника</button>
+            </div>
+        </div>
     );
 };
 

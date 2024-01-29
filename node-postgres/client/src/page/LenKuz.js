@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react"
 import Table from "../components/Table.js";
 import Loader from "../Loader";
+
 
 const LenKuz = () => {
     const [users, setUsers] = useState(false);
@@ -29,18 +30,18 @@ const LenKuz = () => {
     }
 
     return (
-            <>
-             <h1 className="">Справочник Ленинск-Кузнецкий </h1>
-                {loading && <Loader />}
-                {users ? (
-                    <>
-                        <Table obj={obj} />
-                    </>
-                ) : loading ? null : (
-                    'There is no merchant data available'
-                )}
-            </>
-        )
+        <>
+            <h1 className="">Справочник Ленинск-Кузнецкий </h1>
+            {loading && <Loader/>}
+            {users ? (
+                <>
+                    <Table obj={obj}/>
+                </>
+            ) : loading ? null : (
+                'There is no merchant data available'
+            )}
+        </>
+    )
 }
 
 export default LenKuz

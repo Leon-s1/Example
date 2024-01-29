@@ -7,7 +7,6 @@ import {observer} from "mobx-react-lite";
 import "../components/modal.css"
 import "../../src/style/style.css"
 import '../components/modal.css'
-import {redirect} from "react-router-dom";
 
 
 // import LoginModal from "../arkhiv/LoginModal";
@@ -31,8 +30,6 @@ const Login = observer(() => {
     const [password, setPassword] = useState('');
 
 
-
-
     // если пользователь авторизован — ему здесь делать нечего
     useEffect(() => {
         // if (user.isAdmin) {return redirect('/lenkuz')}
@@ -49,73 +46,71 @@ const Login = observer(() => {
         const password = event.target.password.value.trim()
         console.log('password = ', password)
 
-            {
-                (email === user.email && password === user.pass) ?
-                    (
+        {
+            (email === user.email && password === user.pass) ?
+                (
 
-                        localStorage.setItem('user.isAdmin', true)
-                            // {navigate('/lenkuz', {replace: true})}
+                    localStorage.setItem('user.isAdmin', true)
+                    // {navigate('/lenkuz', {replace: true})}
 
-                        // user.isAdmin = true
+                    // user.isAdmin = true
 
 
-
-                    )
-                        :
+                )
+                :
                 console.log("email не равно context.email pass не равен context.pass", email, user.email, password, user.pass)
-            }
-
-
         }
 
-                // console.log("email = context.email pass = context.pass ", email, user.email, password, user.pass)  :
 
-                // (user.isAdmin) ?
-                // navigate('/lenkuzadmin', {replace: true}) :
-                //     navigate('/lenkuz', {replace: true})
+    }
 
+    // console.log("email = context.email pass = context.pass ", email, user.email, password, user.pass)  :
 
-                    // alert('Не правильный логин или пароль!')
-        // <div className={active ? 'delmodal active' : 'delmodal'} onClick={() => setActive(false)}>
-        //     <div className={active ? 'delmodal__content active' : 'delmodal__content'} onClick={e => e.stopPropagation()}>
-        //
-        //         <div className='modal-form'>
-        //             <form action='' >
-        //                 <h3>Удалить контакт</h3>
-        //
-        //                 <div>
-        //                     <label>ID:
-        //                     </label>
-        //                     <input
-        //                         type="text"
-        //                         name="id"
-        //                         // value={id}
-        //                         // onChange={(e) => setId(e.target.value)}
-        //                         pattern=".{1,}" required
-        //                         placeholder="Введите id сотрудника"
-        //                     />
-        //                 </div>
-        //
-        //                 <div className='btn-block'>
-        //                     {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
-        //                     <button type="submit" value="Удалить">Удалить
-        //                     </button>
-        //                 </div>
-        //             </form>
-        //         </div>
-        //
-        //
-        //     </div>
-        // </div>
+    // (user.isAdmin) ?
+    // navigate('/lenkuzadmin', {replace: true}) :
+    //     navigate('/lenkuz', {replace: true})
 
 
+    // alert('Не правильный логин или пароль!')
+    // <div className={active ? 'delmodal active' : 'delmodal'} onClick={() => setActive(false)}>
+    //     <div className={active ? 'delmodal__content active' : 'delmodal__content'} onClick={e => e.stopPropagation()}>
+    //
+    //         <div className='modal-form'>
+    //             <form action='' >
+    //                 <h3>Удалить контакт</h3>
+    //
+    //                 <div>
+    //                     <label>ID:
+    //                     </label>
+    //                     <input
+    //                         type="text"
+    //                         name="id"
+    //                         // value={id}
+    //                         // onChange={(e) => setId(e.target.value)}
+    //                         pattern=".{1,}" required
+    //                         placeholder="Введите id сотрудника"
+    //                     />
+    //                 </div>
+    //
+    //                 <div className='btn-block'>
+    //                     {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
+    //                     <button type="submit" value="Удалить">Удалить
+    //                     </button>
+    //                 </div>
+    //             </form>
+    //         </div>
+    //
+    //
+    //     </div>
+    // </div>
 
-        // if (data) {
-        //     user.login(data)
-        //     if (user.isAdmin) navigate('/admin')
-        //     if (user.isAuth) navigate('/user')
-        // }
-    const refresh = ()=> {
+
+    // if (data) {
+    //     user.login(data)
+    //     if (user.isAdmin) navigate('/admin')
+    //     if (user.isAuth) navigate('/user')
+    // }
+    const refresh = () => {
         // это вызовет ререндеринг компонента
         window.location.reload();
         window.location.assign('http://localhost:3000')
@@ -124,46 +119,48 @@ const Login = observer(() => {
 
     return (
 
-            <>
+        <>
             <h1>Страница авторизации</h1>
-                <div className='container'>
-                    <form className='auth__form' action='' onSubmit={handleSubmit}>
-                        <h2> Авторизация</h2>
-                        <div>
-                            <label>Email:
-                            </label>
-                            <input
-                                type="text"
-                                name="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                pattern=".{1,}" required
-                                placeholder='Введите ваш email...'
-                            />
-                            <label>Password:
-                            </label>
-                            <input
-                                type="password"
-                                name="password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                pattern=".{1,}" required
-                                placeholder='Введите ваш пароль...'
-                            />
+            <div className='container'>
+                <form className='auth__form' action='' onSubmit={handleSubmit}>
+                    <h2> Авторизация</h2>
+                    <div>
+                        <label>Email:
+                        </label>
+                        <input
+                            type="text"
+                            name="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            pattern=".{1,}" required
+                            placeholder='Введите ваш email...'
+                        />
+                        <label>Password:
+                        </label>
+                        <input
+                            type="password"
+                            name="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            pattern=".{1,}" required
+                            placeholder='Введите ваш пароль...'
+                        />
 
-                        </div>
-                        <div className='btn-block'>
-                            {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
-                            {/*<button onClick={(e) => setActive(false)}>Отменить</button>*/}
-                            <button type="submit" value="Добавить" onClick={() => {refresh()}}>
+                    </div>
+                    <div className='btn-block'>
+                        {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
+                        {/*<button onClick={(e) => setActive(false)}>Отменить</button>*/}
+                        <button type="submit" value="Добавить" onClick={() => {
+                            refresh()
+                        }}>
                             {/*navigate(from, { replace: true })*/}
 
                             Войти
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                {/*<LoginModal active={loginmodalActive} setActive={setLoginmodalActive} />*/}
+                        </button>
+                    </div>
+                </form>
+            </div>
+            {/*<LoginModal active={loginmodalActive} setActive={setLoginmodalActive} />*/}
 
             {/*    {user.isAuth ? (*/}
             {/*    <LoginModal active={loginmodalActive} setActive={setloginmodalActive} />*/}
@@ -176,7 +173,7 @@ const Login = observer(() => {
             {/*        // </>*/}
             {/*    )}*/}
 
-</>
+        </>
 
 
     )

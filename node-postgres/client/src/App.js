@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../src/style/style.css';
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import AppRouter from "./components/AppRouter";
 // import {getMerchant, createMerchant, deleteMerchant, updateMerchant} from "./http/userAPI.js";
 // import TableRow from "./components/TableRow.js";
@@ -48,57 +48,52 @@ const App = observer(() => {
                 return response.text();
             })
             .then(data => {
-                    setUsers(data);
+                setUsers(data);
+                console.log('data =', data)
                 // setModalActive(false)
             });
     }
+
     const user = localStorage.getItem('user.isAdmin')
     console.log('user =', user)
+    console.log('users =', users)
 
 
     return (
 
         <BrowserRouter>
-        <Header/>
-    <div className="main">
-        <br/>
-
-
-            <div className='list'>
+            <Header/>
+            <div className="main">
                 <br/>
-                <br/>
-                {/*{loading && <Loader />}*/}
-                {loading }
-
-                <>
-
-                    <div className="_row">
-                        <ItemList />
-                    </div>
 
 
-                    {user ?
-
-                    // <Search obj={obj}/>
-                        <AdminButtons/>
-
-                     :
-                        <></>
-
-                    }
-
+                <div className='list'>
                     <br/>
-                    <AppRouter/>
+                    <br/>
+                    {/*{loading && <Loader />}*/}
+                    {loading}
 
-                    {/*<Table obj={obj} />*/}
-                </>
+                    <>
 
+                        <div className="_row">
+                            <ItemList/>
+                        </div>
+                        {user ?
+                            // <Search obj={obj}/>
+                            <AdminButtons/>
+                            :
+                            <></>
+                        }
+                        <AppRouter/>
+
+                        {/*<Table obj={obj} />*/}
+                    </>
+
+
+                </div>
 
             </div>
-
-    </div>
         </BrowserRouter>
-
 
 
     )
