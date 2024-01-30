@@ -31,7 +31,7 @@ const LenKuz = () => {
 
     return (
         <>
-            <h1 className="">Справочник Ленинск-Кузнецкий </h1>
+            <h1 className="">Ленинск-Кузнецкий </h1>
             {loading && <Loader/>}
             {users ? (
                 <>

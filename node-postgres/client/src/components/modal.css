@@ -2,7 +2,7 @@
 .addmodal {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -14,22 +14,32 @@
     transition: 0.5s;
     box-sizing: border-box;
 }
+
 .addmodal.active {
     opacity: 1;
     pointer-events: all;
+    /*position: fixed;*/
 }
+
+.search {
+    /*position: static;*/
+}
+
 form {
     /*width: auto;*/
     /*box-sizing: content-box;*/
 }
+
 h3 {
     margin: 10px;
 }
+
 form input, select {
     width: 100%;
     height: 25px;
     box-sizing: border-box;
 }
+
 .addmodal__content {
     padding: 15px;
     border-radius: 12px;
@@ -40,12 +50,14 @@ form input, select {
     width: 15vw;
     background-color: #f6f6f6;
     /*box-sizing: content-box;*/
-/*box-sizing: border-box;*/
-/*display: flex;*/
+    /*box-sizing: border-box;*/
+    /*display: flex;*/
 }
+
 .addmodal__content.active {
     transform: scale(1);
 }
+
 label {
 
     width: auto;
@@ -53,6 +65,7 @@ label {
     /*justify-content: space-between;*/
     /*margin-bottom: 20px;*/
 }
+
 /*form label {*/
 /*    display: flex;*/
 /*    justify-content: space-between;*/
@@ -63,7 +76,7 @@ label {
 .delmodal {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -75,22 +88,27 @@ label {
     transition: 0.5s;
     box-sizing: border-box;
 }
+
 .delmodal.active {
     opacity: 1;
     pointer-events: all;
 }
+
 form {
     /*width: auto;*/
     /*box-sizing: content-box;*/
 }
+
 h3 {
     margin: 10px;
 }
+
 form input, select {
     width: 100%;
     height: 25px;
     box-sizing: border-box;
 }
+
 .delmodal__content {
     padding: 15px;
     border-radius: 12px;
@@ -104,22 +122,25 @@ form input, select {
     /*box-sizing: border-box;*/
     /*display: flex;*/
 }
+
 .delmodal__content.active {
     transform: scale(1);
 }
+
 label {
     width: auto;
     display: flex;
     /*justify-content: space-between;*/
     /*margin-bottom: 20px;*/
 }
+
 /*******************************************************************************/
 
 /*Mодальное окно редактирования сотрудника*/
 .updatemodal {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -131,22 +152,27 @@ label {
     transition: 0.5s;
     box-sizing: border-box;
 }
+
 .updatemodal.active {
     opacity: 1;
     pointer-events: all;
 }
+
 form {
     /*width: auto;*/
     /*box-sizing: content-box;*/
 }
+
 h3 {
     margin: 10px;
 }
+
 form input, select {
     width: 100%;
     height: 25px;
     box-sizing: border-box;
 }
+
 .updatemodal__content {
     padding: 15px;
     border-radius: 12px;
@@ -160,22 +186,25 @@ form input, select {
     /*box-sizing: border-box;*/
     /*display: flex;*/
 }
+
 .updatemodal__content.active {
     transform: scale(1);
 }
+
 label {
     width: auto;
     display: flex;
     /*justify-content: space-between;*/
     /*margin-bottom: 20px;*/
 }
+
 /*******************************************************************************/
 
 /*Mодальное окно авторизации сотрудника*/
 .loginmodal {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -187,22 +216,27 @@ label {
     transition: 0.5s;
     box-sizing: border-box;
 }
+
 .loginmodal.active {
     opacity: 1;
     pointer-events: all;
 }
+
 form {
     /*width: auto;*/
     /*box-sizing: content-box;*/
 }
+
 h3 {
     margin: 10px;
 }
+
 form input, select {
     width: 100%;
     height: 25px;
     box-sizing: border-box;
 }
+
 .loginmodal__content {
     padding: 15px;
     border-radius: 12px;
@@ -216,9 +250,11 @@ form input, select {
     /*box-sizing: border-box;*/
     /*display: flex;*/
 }
+
 .loginmodal__content.active {
     transform: scale(1);
 }
+
 label {
     width: auto;
     display: flex;
