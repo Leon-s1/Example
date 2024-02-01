@@ -463,8 +463,8 @@ div._card {
 .search {
     max-width: 1240px;
     display: flex;
-    position: relative;
-    /*position: static;*/
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -482,14 +482,17 @@ div._card {
 }
 
 .close {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: none;
-    display: inline;
     position: absolute;
-    top: 0;
-    right: 0;
-    /*box-sizing: border-box;*/
+    display: flex;
+
+    float: right;
+
+    /*top: 0;*/
+    /*right: 0;*/
+    box-sizing: border-box;
     /*border: 2px solid #aaa;*/
     /*padding: 15px 15px;*/
     /*background-size: 30%;*/

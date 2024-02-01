@@ -17,38 +17,40 @@ const Header = () => {
 
     }
 
-    return(
+    return (
         // <div className='wrap'>
-            <div className='header'>
-                <div className='logo'>
-                    <img src={logo}/>
+        <div className='header'>
+            <div className='logo'>
+                <img src={logo}/>
+            </div>
+            <h1>Телефонный справочник Сибтранссервис</h1>
+            <div className='company'>
+                <div className='company__link'>
+                    {/*<p>Сайт Сибтранссервис</p>*/}
+                    {/*<p>Сайт Феррит</p>*/}
+                    <a href="https://www.sibtranss.ru/" className="nav-link" target="_blank" rel="noopener noreferrer">
+                        Сайт Сибтранссервис
+                    </a>
+                    <a href="https://www.ferrit.cz/ru" className="nav-link" target="_blank" rel="noopener noreferrer">
+                        Сайт Ferrit
+                    </a>
                 </div>
-                <h1>Телефонный справочник Сибтранссервис</h1>
-                <div className='company'>
-                    <div className='company__link'>
-                        {/*<p>Сайт Сибтранссервис</p>*/}
-                        {/*<p>Сайт Феррит</p>*/}
-                        <a href="https://www.sibtranss.ru/" className="nav-link" target="_blank" rel="noopener noreferrer">
-                            Сайт Сибтранссервис
-                        </a>
-                        <a href="https://www.ferrit.cz/ru/" className="nav-link" target="_blank" rel="noopener noreferrer">
-                            Сайт Ferrit
-                        </a>
-                    </div>
-                    <div className="company__auth">
-                        <div>
-                            {user ? (
-                                <NavLink to='#' className='nav-link' onClick={() => {logout()}}>Выйти</NavLink>
-                            ) : (
-                                <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
-                            )}
-                        </div>
+                <div className="company__auth">
+                    <div>
+                        {user ? (
+                            <NavLink to='#' className='nav-link' onClick={() => {
+                                logout()
+                            }}>Выйти</NavLink>
+                        ) : (
+                            <NavLink to='/login' className='nav-link'>Авторизация</NavLink>
+                        )}
                     </div>
                 </div>
             </div>
+        </div>
 
         // </div>
-        )
+    )
 }
 
 export default Header
