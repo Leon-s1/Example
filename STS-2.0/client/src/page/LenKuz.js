@@ -7,9 +7,6 @@ const LenKuz = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
-    // console.log('obj из Ленкуз= ', typeof (obj), obj)
-    // console.log('users из Ленкуз= ', typeof (users), users)
-
 
     useEffect(() => {
         setTimeout(() => {
@@ -31,14 +28,14 @@ const LenKuz = () => {
 
     return (
         <>
-            <h1 className="">Ленинск-Кузнецкий </h1>
+            <h1>Ленинск-Кузнецкий </h1>
             {loading && <Loader/>}
             {users ? (
                 <>
                     <Table obj={obj}/>
                 </>
             ) : loading ? null : (
-                'There is no merchant data available'
+                'В справочнике нет данных'
             )}
         </>
     )

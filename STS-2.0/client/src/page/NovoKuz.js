@@ -7,7 +7,6 @@ const NovoKuz = () => {
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
 
-
     useEffect((obj) => {
         setTimeout(() => {
             getUsersCity();
@@ -23,32 +22,22 @@ const NovoKuz = () => {
             })
             .then(data => {
                 setUsers(data);
-                // getMerchantsLk();
-                // setModalActive(false)
             });
     }
 
-
-
-
     return (
 
-    <>
-        <h1 className="">Справочник Новокузнецк </h1>
-        {loading && <Loader />}
-        {users ? (
-            <>
-                {/*<div className="_row">*/}
-                {/*<ItemList/>*/}
-                {/*</div>*/}
-                <br/>
-                {/*<AppRouter/>*/}
-                <Table obj={obj} />
-            </>
-        ) : loading ? null : (
-            'There is no merchant data available'
-        )}
-    </>
+        <>
+            <h1>Новокузнецк </h1>
+            {loading && <Loader/>}
+            {users ? (
+                <>
+                    <Table obj={obj}/>
+                </>
+            ) : loading ? null : (
+                'В справочнике нет данных'
+            )}
+        </>
     )
 }
 
