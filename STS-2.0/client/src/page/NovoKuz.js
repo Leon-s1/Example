@@ -26,7 +26,6 @@ const NovoKuz = () => {
     }
 
     return (
-
         <>
             <h1>Новокузнецк </h1>
             {loading && <Loader/>}

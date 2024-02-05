@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react"
 import Table from "../components/Table.js";
 import Loader from "../Loader";
 
-
 const LenKuz = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)

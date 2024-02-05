@@ -11,6 +11,7 @@ const Table = ({obj}) => {
     const [users, setUsers] = useState(obj)
     console.log('obj из bodyrow', typeof (obj), obj)
     console.log('rows из bodyrow', typeof (users), users)
+    console.log('из файла Москва users', users)
 
     const filteredUsers = users.filter(user => {
         return user.fio.toLowerCase().includes(searched.toLowerCase()) ||
