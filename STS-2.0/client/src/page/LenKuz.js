@@ -29,12 +29,10 @@ const LenKuz = () => {
         <>
             <h1>Ленинск-Кузнецкий </h1>
             {loading && <Loader/>}
-            {users ? (
-                <>
-                    <Table obj={obj}/>
-                </>
+            {obj != 0 ? (
+                <Table obj={obj}/>
             ) : loading ? null : (
-                'В справочнике нет данных'
+                <h1>В справочнике нет данных.</h1>
             )}
         </>
     )

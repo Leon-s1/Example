@@ -6,7 +6,6 @@ const Moscow = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
-    console.log('из файла Москва users', users)
 
     useEffect((obj) => {
         setTimeout(() => {
@@ -30,12 +29,10 @@ const Moscow = () => {
         <>
             <h1>Москва </h1>
             {loading && <Loader/>}
-            {users ? (
-                <>
-                    <Table obj={obj}/>
-                </>
+            {obj != 0 ? (
+                <Table obj={obj}/>
             ) : loading ? null : (
-                'В справочнике нет данных'
+                <h1>В справочнике нет данных.</h1>
             )}
         </>
     )

@@ -25,18 +25,13 @@ const Table = ({obj}) => {
     return (
         <div>
             <div className='search'>
-                {/*<form>*/}
                 <input className='search-input'
-                    // autoFocus
                        type="text"
                        placeholder="Введите фамилию сотрудника..."
                        value={searched}
                        onChange={(searchVal) => setSearched(searchVal.target.value)}
-                    // onCancelSearch={() => cancelSearch()}
                 />
                 <button className="close" onClick={() => cancelSearch()}>&Chi;</button>
-                {/*<span className="close" onClick={() => cancelSearch()}></span>*/}
-                {/*</form>*/}
             </div>
 
             <table className="table">

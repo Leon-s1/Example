@@ -7,7 +7,7 @@ const Vorkuta = () => {
     const [loading, setLoading] = React.useState(true)
     const obj = JSON.parse(users);
 
-    useEffect((obj) => {
+    useEffect(() => {
         setTimeout(() => {
             getUsersCity();
             setLoading(false)
@@ -26,18 +26,15 @@ const Vorkuta = () => {
     }
 
     return (
-        <>
+        <div>
             <h1>Воркута</h1>
             {loading && <Loader/>}
-            {users ? (
-                <>
-                    <Table obj={obj}/>
-                </>
-                // ) : loading ? (!users) : (
-            ) : (
-                'В справочнике нет данных'
+            {obj != 0 ? (
+                <Table obj={obj}/>
+            ) : loading ? null : (
+                <h1>В справочнике нет данных.</h1>
             )}
-        </>
+        </div>
     )
 }
 
