@@ -64,12 +64,10 @@ const App = observer(() => {
         <BrowserRouter>
             <Header/>
             <div className="main">
-                <br/>
 
 
                 <div className='list'>
-                    <br/>
-                    <br/>
+                    {/*<br/>*/}
                     {/*{loading && <Loader />}*/}
                     {loading}
 

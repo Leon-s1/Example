@@ -2,12 +2,8 @@ import React from "react";
 import logo from '../style/img/STS_logo.jpg'
 import {NavLink} from "react-router-dom";
 import '../style/style.css'
-// import {AppContext} from "./AppContex";
-// import LoginModal from "../arkhiv/LoginModal";
 
 const Header = () => {
-    // const [loginmodalActive, setLoginmodalActive] = useState(false);
-    // const { user } = useContext(AppContext)
     const user = localStorage.getItem('user.isAdmin')
 
     function logout() {
@@ -23,7 +19,7 @@ const Header = () => {
             <div className='logo'>
                 <img src={logo}/>
             </div>
-            <h1>Телефонный справочник Сибтранссервис</h1>
+            <h1>Телефонный справочник</h1>
             <div className='company'>
                 <div className='company__link'>
                     {/*<p>Сайт Сибтранссервис</p>*/}

@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, a, p, div, span {
 
 .main {
     width: 1240px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .table__users {
@@ -181,7 +181,7 @@ tr {
     justify-content: space-around;
     border-bottom: 1px solid black;
     border-collapse: collapse;
-    height: 40px;
+    height: 70px;
     align-items: center;
 
     /*padding: 5px 0 5px;*/
@@ -196,9 +196,10 @@ td {
     /*align-items: center;*/
     /*text-overflow: ellipsis;*/
     justify-content: center;
+    line-height: 25px;
 
     /*padding-top: 10px;*/
-    /*height: 40px;*/
+    /*height: 25px;*/
     /*border-collapse: collapse;*/
 
     /*vertical-align: middle;*/
@@ -335,6 +336,7 @@ tbody {
     border-radius: 10px;
     background: #ffffff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 8);
+    /*margin-bottom: 50px;*/
     /*position: fixed;*/
 }
 
@@ -524,6 +526,7 @@ input:focus {
     margin: 10px;
     text-align: left;
 }
+
 
 /*стили лоадера с сайта loading.io*/
 .lds-dual-ring {

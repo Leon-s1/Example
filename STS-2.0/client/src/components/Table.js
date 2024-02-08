@@ -27,7 +27,7 @@ const Table = ({obj}) => {
             <div className='search'>
                 <input className='search-input'
                        type="text"
-                       placeholder="Введите фамилию сотрудника..."
+                       placeholder="Введите фамилию или должность сотрудника ..."
                        value={searched}
                        onChange={(searchVal) => setSearched(searchVal.target.value)}
                 />
