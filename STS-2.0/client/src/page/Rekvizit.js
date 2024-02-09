@@ -4,7 +4,7 @@ import Loader from "../Loader";
 const Rekvizit = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
-    const obj = JSON.parse(users);
+    // const obj = JSON.parse(users);
 
     useEffect(() => {
         setTimeout(() => {
@@ -32,18 +32,14 @@ const Rekvizit = () => {
 
     }
 
-
     return (
         <div>
             <h1>Карточка компании ООО «Сиб<span style={{color: 'red'}}>транс</span>сервис»</h1>
             {loading && <Loader/>}
-            {/*<>*/}
             {loading ? null : (
                 <Rekvizity/>
             )}
-            {/*</>*/}
         </div>
-
     )
 }
 
