@@ -5,13 +5,8 @@ const Table = ({obj}) => {
 
 
     const userAuth = localStorage.getItem('user.isAdmin')
-    // const values = Object.values(obj)
     const [searched, setSearched] = useState("")
-    // const [rows, setRows] = useState(values)
     const [users, setUsers] = useState(obj)
-    console.log('obj из bodyrow', typeof (obj), obj)
-    console.log('rows из bodyrow', typeof (users), users)
-    console.log('из файла Москва users', users)
 
     const filteredUsers = users.filter(user => {
         return user.fio.toLowerCase().includes(searched.toLowerCase()) ||
@@ -19,7 +14,6 @@ const Table = ({obj}) => {
     })
     const cancelSearch = () => {
         setSearched('')
-        // requestSearch(searched)
     }
 
     return (
