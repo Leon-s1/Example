@@ -2,7 +2,6 @@ import React, {useEffect} from "react";
 import Loader from "../Loader";
 
 const Rekvizit = () => {
-    // const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
 
     useEffect(() => {
@@ -27,7 +26,6 @@ const Rekvizit = () => {
                 <br/>
             </div>
         )
-
     }
 
     return (

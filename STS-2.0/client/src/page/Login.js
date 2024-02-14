@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useState} from "react";
 import {AppContext} from "../components/AppContex.js";
 import {observer} from "mobx-react-lite";
 import "../components/modal.css"
@@ -10,39 +10,26 @@ const Login = observer(() => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    useEffect(() => {
-        // if (user.isAdmin) {return redirect('/lenkuz')}
-        // if (isAuth) navigate('/lenkuz', {replace: true})
-    }, [])
-
     const handleSubmit = async (event) => {
         event.preventDefault()
         const email = event.target.email.value.trim()
         const password = event.target.password.value.trim()
-
         {
             (email === user.email && password === user.pass) ?
                 (
-
                     localStorage.setItem('user.isAdmin', true)
-                    // {navigate('/lenkuz', {replace: true})}
-
-                    // user.isAdmin = true
-
-
                 )
                 :
-                console.log("email не равно context.email pass не равен context.pass", email, user.email, password, user.pass)
+                alert('Неправильный логин или пароль!')
         }
-
     }
-
 
     const refresh = () => {
         // это вызовет ререндеринг компонента
         window.location.reload();
         window.location.assign('http://localhost:3000')
     }
+    
     return (
         <>
             <h1>Страница авторизации</h1>

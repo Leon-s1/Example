@@ -20,7 +20,7 @@ const Header = () => {
             <h1>Телефонный справочник</h1>
             <div className='company'>
                 <div className='company__link'>
-                    <a href="https://www.sibtranss.ru/" className="nav-link" target="_blank" rel="noopener noreferrer">
+                    <a href="http://www.sibtranss.ru" className="nav-link" target="_blank" rel="noopener noreferrer">
                         Сайт Сибтранссервис
                     </a>
                     <a href="https://www.ferrit.cz/ru" className="nav-link" target="_blank" rel="noopener noreferrer">
