@@ -10,11 +10,9 @@ const Header = () => {
         localStorage.removeItem('user.isAdmin')
         window.location.reload();
         window.location.assign('http://localhost:3000')
-
     }
 
     return (
-        // <div className='wrap'>
         <div className='header'>
             <div className='logo'>
                 <img src={logo}/>
@@ -22,8 +20,6 @@ const Header = () => {
             <h1>Телефонный справочник</h1>
             <div className='company'>
                 <div className='company__link'>
-                    {/*<p>Сайт Сибтранссервис</p>*/}
-                    {/*<p>Сайт Феррит</p>*/}
                     <a href="https://www.sibtranss.ru/" className="nav-link" target="_blank" rel="noopener noreferrer">
                         Сайт Сибтранссервис
                     </a>
@@ -44,8 +40,6 @@ const Header = () => {
                 </div>
             </div>
         </div>
-
-        // </div>
     )
 }
 

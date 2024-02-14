@@ -5,16 +5,13 @@ import '../style/style.css'
 const DelUser = ({active, setActive}) => {
     const [id, setId] = useState('');
 
-
     function deleteUser() {
-        // let id = prompt('Enter user id');
         fetch(`http://localhost:3001/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({id}),
-            // console.log ({fio})
         })
             .then(response => {
                 return response.text();
@@ -22,15 +19,9 @@ const DelUser = ({active, setActive}) => {
             .then(data => {
                 alert(data);
                 setActive(false);
-                // getUsers();
             })
             .catch(err => console.log(err));
     }
-
-    // function handleSubmit(e) {
-    //     e.preventDefault()
-    // }
-
 
     return (
         <div className={active ? 'delmodal active' : 'delmodal'} onClick={() => setActive(false)}>
@@ -53,16 +44,12 @@ const DelUser = ({active, setActive}) => {
                                 placeholder="Введите id сотрудника"
                             />
                         </div>
-
                         <div className='btn-block'>
-                            {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
                             <button type="submit" value="Удалить">Удалить
                             </button>
                         </div>
                     </form>
                 </div>
-
-
             </div>
         </div>
 

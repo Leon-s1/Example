@@ -67,8 +67,6 @@ const App = observer(() => {
 
 
                 <div className='list'>
-                    {/*<br/>*/}
-                    {/*{loading && <Loader />}*/}
                     {loading}
 
                     <>

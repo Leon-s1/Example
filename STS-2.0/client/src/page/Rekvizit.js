@@ -1,14 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import Loader from "../Loader";
 
 const Rekvizit = () => {
-    const [users, setUsers] = useState(false);
+    // const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
-    // const obj = JSON.parse(users);
 
     useEffect(() => {
         setTimeout(() => {
-            // Rekvizity();
             setLoading(false)
         }, 2000)
     }, []);

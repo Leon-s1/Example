@@ -4,7 +4,6 @@ import "./modal.css"
 
 // eslint-disable-next-line react/prop-types
 const AddUser = ({active, setActive}) => {
-    // const [users, setUsers] = useState(false);
     const [fio, setFio] = useState('');
     const [position, setPosition] = useState('');
     const [int_phone, setInt_phone] = useState('');
@@ -28,24 +27,15 @@ const AddUser = ({active, setActive}) => {
                 alert(data);
                 setActive(false)
             });
-        // console.log(fio, email);
     }
-
-    // function handleSubmit(e) {
-    //     e.preventDefault() // останавливаем перезагрузку страницы по умолчанию
-    // }
 
     return (
         <div className={active ? 'addmodal active' : 'addmodal'} onClick={() => setActive(false)}>
             <div className={active ? 'addmodal__content active' : 'addmodal__content'}
                  onClick={e => e.stopPropagation()}>
-
-                {/*{children}*/}
                 <div className='modal-form'>
                     <form action='' onSubmit={createUser}>
                         <h3>Добавить сотрудника</h3>
-
-
                         <div>
                             <label>ФИО:
                             </label>
@@ -55,7 +45,6 @@ const AddUser = ({active, setActive}) => {
                                 value={fio}
                                 onChange={(e) => setFio(e.target.value)}
                                 pattern=".{1,}" required
-                                // required
                             />
                             <label>Должность:
                             </label>
@@ -122,19 +111,14 @@ const AddUser = ({active, setActive}) => {
                             </select>
                         </div>
                         <div className='btn-block'>
-                            {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
-                            {/*<button onClick={(e) => setActive(false)}>Отменить</button>*/}
                             <button type="submit" value="Добавить">Добавить
                             </button>
                         </div>
                     </form>
                 </div>
-
-
             </div>
         </div>
     )
-    // {merchants}
 
 }
 export default AddUser

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Item from "./Item";
 import lenkuz from '../style/img/lenkuz.jpg';
-// import moskva from '../style/img/москва1_1.jpg';
 import moskva from '../style/img/moskva7_1.jpg';
 import novokuznetsk from '../style/img/novokuz12_1.jpg';
 import vorkuta from '../style/img/vorkuta2.jpg'
@@ -10,7 +9,6 @@ import shahti from "../style/img/shahty2_1.jpg"
 import ural from "../style/img/ugmk1.jpg"
 import sts from "../style/img/dnk14_2.jpg"
 import '../../src/style/style.css'
-import { observer } from "mobx-react";
 
 const images = [
 
@@ -73,28 +71,22 @@ const images = [
 ]
 
 const ItemList = () => {
-    const [activeItem, setActiveItem] = useState( images[0] )
-
-    console.log('activeItem', activeItem)
+    const [activeItem, setActiveItem] = useState(images[0])
 
     function handlClick(item) {
-
-        // event.preventDefault()
         setActiveItem(item)
         console.log('item =', item)
     }
 
     return (
-        // <div className="_card active">
-            images.map( (item) =>
-                <div key={item.id} className={activeItem === item ? '_card active' : '_card'} onClick={() => handlClick(item)}>
-                {/*<div key={item.id} className={ (activeItem) => activeItem === Item ? '_card active' : '_card'} onClick={() => handlClick(item)}>*/}
-                    <Item key={item.id}
-                           {...item}
-                    />
-                </div>
-            )
-        // </div>
+        images.map((item) =>
+            <div key={item.id} className={activeItem === item ? 'card active' : 'card'}
+                 onClick={() => handlClick(item)}>
+                <Item key={item.id}
+                      {...item}
+                />
+            </div>
+        )
     )
 
 }
