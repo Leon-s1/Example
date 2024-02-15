@@ -1,13 +1,13 @@
 import React, {useState} from "react";
 import Item from "./Item";
 import lenkuz from '../style/img/lenkuz.jpg';
-import moskva from '../style/img/moskva7_1.jpg';
-import novokuznetsk from '../style/img/novokuz12_1.jpg';
-import vorkuta from '../style/img/vorkuta2.jpg'
-import norilsk from "../style/img/norilsk4.jpg"
-import shahti from "../style/img/shahty2_1.jpg"
-import ural from "../style/img/ugmk1.jpg"
-import sts from "../style/img/dnk14_2.jpg"
+import moskva from '../style/img/moskva.jpg';
+import novokuznetsk from '../style/img/novokuz.jpg';
+import vorkuta from '../style/img/vorkuta.jpg'
+import norilsk from "../style/img/norilsk.jpg"
+import shahti from "../style/img/shahty.jpg"
+import ural from "../style/img/ugmk.jpg"
+import sts from "../style/img/dnk.jpg"
 import '../../src/style/style.css'
 
 const images = [
@@ -23,7 +23,7 @@ const images = [
         title: "Ленинск-Кузнецкий",
         img: lenkuz,
         page: "/lenkuz",
-        flag: false,
+        // flag: false,
     },
     {
         id: 3,

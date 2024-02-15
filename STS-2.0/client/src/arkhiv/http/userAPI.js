@@ -1,6 +1,5 @@
-import React, {useState} from "react";
-import {getMerchant} from "../App.js";
-import {guestInstance, authInstance } from "./index";
+import React from "react";
+import {authInstance, guestInstance} from "./index";
 import jwtDecode from 'jwt-decode'
 
 
@@ -46,7 +45,6 @@ export const check = async () => {
         return false
     }
 }
-
 
 
 // export function getMerchant() {

@@ -61,7 +61,6 @@ const Table = ({obj}) => {
             </table>
 
         </div>
-
     )
 }
 

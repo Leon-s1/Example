@@ -2,7 +2,7 @@ import {makeAutoObservable} from 'mobx'
 
 class UserStore {
     id = null
-    email = "admin@mail.ru"
+    email = "yadykina_ov@sibtranss.ru"
     pass = 'sts'
     // isAuth = false
     // isAdmin = false

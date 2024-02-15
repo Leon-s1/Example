@@ -1,5 +1,4 @@
 import React, {useContext, useState} from 'react';
-import {loginmodal} from "../http/userAPI";
 import {AppContext} from "../components/AppContex";
 import {useNavigate} from "react-router-dom";
 // import bcrypt from 'bcrypt'
@@ -53,10 +52,10 @@ const LoginModal = (active, setActive) => {
                 // const user = JSON.stringify(data)
                 // console.log('JSON data из getByEmail = ', user.email)
 
-                    // console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
+                // console.log('data = ', data) // получил данные из таблицы, теперь их надо сравнить с введенными при авторизации
 
-                    // (email === data.email) ? console.log("email = data", email, data.email)
-                    // : console.log("email не равно data", email, data.email)
+                // (email === data.email) ? console.log("email = data", email, data.email)
+                // : console.log("email не равно data", email, data.email)
                 setActive(false)
             });
         // console.log(fio, email);
@@ -64,29 +63,27 @@ const LoginModal = (active, setActive) => {
 
 
     // async function loginmodal(req, res, next) {
-        // res.status(200).send('Вход в личный кабинет')
-        // try {
-        //     const {email, password} = req.body
-        //     const user = await getByEmail(email) // получить user из базы данных
-        //     console.log('controller user = ', user)
-            // let compare = bcrypt.compareSync(password, user.password) //если сравнение введенного email == email в БД, то данные возвращаются в data
-            // if (!compare) {
-            //     throw new Error('Указан неверный пароль')
-            // }
-            // const token = makeJwt(user.id, user.email, user.role) // возвращается в data на страницу login.js
-            // return res.json({user})
-        // } catch (e) {
-        //     console.log(e.response.data.message)
-        // }
-        // }
-
-
-
+    // res.status(200).send('Вход в личный кабинет')
+    // try {
+    //     const {email, password} = req.body
+    //     const user = await getByEmail(email) // получить user из базы данных
+    //     console.log('controller user = ', user)
+    // let compare = bcrypt.compareSync(password, user.password) //если сравнение введенного email == email в БД, то данные возвращаются в data
+    // if (!compare) {
+    //     throw new Error('Указан неверный пароль')
+    // }
+    // const token = makeJwt(user.id, user.email, user.role) // возвращается в data на страницу login.js
+    // return res.json({user})
+    // } catch (e) {
+    //     console.log(e.response.data.message)
+    // }
+    // }
 
 
     return (
         <div className={active ? 'loginmodal active' : 'loginmodal'} onClick={() => setActive(false)}>
-            <div className={active ? 'loginmodal__content active' : 'loginmodal__content'} onClick={e => e.stopPropagation()}>
+            <div className={active ? 'loginmodal__content active' : 'loginmodal__content'}
+                 onClick={e => e.stopPropagation()}>
 
                 {/*{children}*/}
                 <div className='modal-form'>
@@ -118,7 +115,7 @@ const LoginModal = (active, setActive) => {
                         <div className='btn-block'>
                             {/*<button onClick={(e) => {setActive(false); handleSubmit(e)}}>Отменить</button>*/}
                             {/*<button onClick={(e) => setActive(false)}>Отменить</button>*/}
-                            <button type="submit" value="Добавить" >Войти
+                            <button type="submit" value="Добавить">Войти
                             </button>
                         </div>
                     </form>

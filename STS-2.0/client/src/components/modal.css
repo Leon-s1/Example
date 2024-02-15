@@ -18,26 +18,7 @@
 .addmodal.active {
     opacity: 1;
     pointer-events: all;
-    /*position: fixed;*/
-}
-
-.search {
-    /*position: static;*/
-}
-
-form {
-    /*width: auto;*/
-    /*box-sizing: content-box;*/
-}
-
-h3 {
-    margin: 10px;
-}
-
-form input, select {
-    width: 100%;
-    height: 25px;
-    box-sizing: border-box;
+    position: fixed;
 }
 
 .addmodal__content {
@@ -49,28 +30,11 @@ form input, select {
     min-height: 40vh;
     width: 15vw;
     background-color: #f6f6f6;
-    /*box-sizing: content-box;*/
-    /*box-sizing: border-box;*/
-    /*display: flex;*/
 }
 
 .addmodal__content.active {
     transform: scale(1);
 }
-
-label {
-
-    width: auto;
-    display: flex;
-    /*justify-content: space-between;*/
-    /*margin-bottom: 20px;*/
-}
-
-/*form label {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
-
 
 /*Mодальное окно удаления сотрудника*/
 .delmodal {
@@ -94,21 +58,6 @@ label {
     pointer-events: all;
 }
 
-form {
-    /*width: auto;*/
-    /*box-sizing: content-box;*/
-}
-
-h3 {
-    margin: 10px;
-}
-
-form input, select {
-    width: 100%;
-    height: 25px;
-    box-sizing: border-box;
-}
-
 .delmodal__content {
     padding: 15px;
     border-radius: 12px;
@@ -118,20 +67,10 @@ form input, select {
     min-height: 15vh;
     width: 15vw;
     background-color: #f6f6f6;
-    /*box-sizing: content-box;*/
-    /*box-sizing: border-box;*/
-    /*display: flex;*/
 }
 
 .delmodal__content.active {
     transform: scale(1);
-}
-
-label {
-    width: auto;
-    display: flex;
-    /*justify-content: space-between;*/
-    /*margin-bottom: 20px;*/
 }
 
 /*******************************************************************************/
@@ -158,21 +97,6 @@ label {
     pointer-events: all;
 }
 
-form {
-    /*width: auto;*/
-    /*box-sizing: content-box;*/
-}
-
-h3 {
-    margin: 10px;
-}
-
-form input, select {
-    width: 100%;
-    height: 25px;
-    box-sizing: border-box;
-}
-
 .updatemodal__content {
     padding: 15px;
     border-radius: 12px;
@@ -182,20 +106,10 @@ form input, select {
     min-height: 15vh;
     width: 15vw;
     background-color: #f6f6f6;
-    /*box-sizing: content-box;*/
-    /*box-sizing: border-box;*/
-    /*display: flex;*/
 }
 
 .updatemodal__content.active {
     transform: scale(1);
-}
-
-label {
-    width: auto;
-    display: flex;
-    /*justify-content: space-between;*/
-    /*margin-bottom: 20px;*/
 }
 
 /*******************************************************************************/
@@ -222,11 +136,6 @@ label {
     pointer-events: all;
 }
 
-form {
-    /*width: auto;*/
-    /*box-sizing: content-box;*/
-}
-
 h3 {
     margin: 10px;
 }
@@ -246,9 +155,6 @@ form input, select {
     min-height: 15vh;
     width: 15vw;
     background-color: #f6f6f6;
-    /*box-sizing: content-box;*/
-    /*box-sizing: border-box;*/
-    /*display: flex;*/
 }
 
 .loginmodal__content.active {
@@ -258,10 +164,7 @@ form input, select {
 label {
     width: auto;
     display: flex;
-    /*justify-content: space-between;*/
-    /*margin-bottom: 20px;*/
 }
-
 
 .btn-block button {
     margin-top: 15px;
@@ -269,6 +172,4 @@ label {
     height: 35px;
     float: right;
     border-radius: 5px;
-    /*display: ;*/
-    /*justify-content: flex-start;*/
 }
