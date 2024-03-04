@@ -29,7 +29,7 @@ const Login = observer(() => {
         window.location.reload();
         window.location.assign('http://localhost:3000')
     }
-    
+
     return (
         <>
             <h1>Страница авторизации</h1>

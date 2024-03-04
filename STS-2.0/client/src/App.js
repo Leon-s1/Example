@@ -6,6 +6,7 @@ import {observer} from "mobx-react";
 import AppRouter from "./components/AppRouter";
 import Header from "./components/Header";
 import AdminButtons from "./components/AdminButtons";
+import Footer from "./components/Footer";
 
 
 const App = observer(() => {
@@ -47,6 +48,7 @@ const App = observer(() => {
                     </>
                 </div>
             </div>
+            <Footer/>
         </BrowserRouter>
     )
 })

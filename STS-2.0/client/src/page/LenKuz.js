@@ -11,7 +11,7 @@ const LenKuz = () => {
         setTimeout(() => {
             getUsersCity();
             setLoading(false)
-        }, 2000)
+        }, 1500)
     }, []);
 
     function getUsersCity() {
@@ -32,7 +32,7 @@ const LenKuz = () => {
             {obj != 0 ? (
                 <Table obj={obj}/>
             ) : loading ? null : (
-                <h1>В справочнике нет данных.</h1>
+                <></>
             )}
         </>
     )

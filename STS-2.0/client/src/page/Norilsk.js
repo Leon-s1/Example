@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Loader from "../Loader";
 import Table from "../components/Table";
 
+
 const Norilsk = () => {
     const [users, setUsers] = useState(false);
     const [loading, setLoading] = React.useState(true)
@@ -29,6 +30,7 @@ const Norilsk = () => {
         <div>
             <h1>Норильск</h1>
             {loading && <Loader/>}
+            {/*{obj != 0} ? (*/}
             {obj != 0 ? (
                 <Table obj={obj}/>
             ) : loading ? null : (
