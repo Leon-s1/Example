@@ -29,11 +29,10 @@ const Vorkuta = () => {
         <div>
             <h1>Воркута</h1>
             {loading && <Loader/>}
-            {obj != 0 ? (
+            {obj.length ? (
                 <Table obj={obj}/>
-            ) : loading ? null : (
-                <h1>В справочнике нет данных.</h1>
-            )}
+            ) : null
+            }
         </div>
     )
 }

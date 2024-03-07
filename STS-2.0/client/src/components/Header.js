@@ -9,7 +9,7 @@ const Header = () => {
     function logout() {
         localStorage.removeItem('user.isAdmin')
         window.location.reload();
-        window.location.assign('http://localhost:3000')
+        window.location.assign('http://localhost:3002')
     }
 
     return (

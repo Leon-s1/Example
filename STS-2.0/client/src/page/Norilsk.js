@@ -30,12 +30,10 @@ const Norilsk = () => {
         <div>
             <h1>Норильск</h1>
             {loading && <Loader/>}
-            {/*{obj != 0} ? (*/}
-            {obj != 0 ? (
+            {obj.length ? (
                 <Table obj={obj}/>
-            ) : loading ? null : (
-                <h1>В справочнике нет данных.</h1>
-            )}
+            ) : null
+            }
         </div>
     )
 }

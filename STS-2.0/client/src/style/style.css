@@ -313,39 +313,17 @@ input:focus {
     background: #bbb8b8;
     width: 100%;
     height: 180px;
-    display: flex;
-    /*flex-direction: row;*/
-    /*align-items: flex-start;*/
-    /*justify-content: space-between;*/
+    /*display: flex;*/
     border-bottom-color: #9e0706;
     border-radius: 5px;
     margin-top: 50px;
-    /*margin-right: auto;*/
-    /*margin-left: auto;*/
 }
 
 .base-footer__main {
     width: 1240px;
-    /*height: 150px;*/
     margin: 0 auto;
     margin-top: 15px;
-}
-
-.inner {
-    /*padding-top: 20px;*/
-}
-
-/*.row-fluid {*/
-/*    width: 100%;*/
-/*    margin-left: 0;*/
-/*    display: block;*/
-/*    float: left;*/
-/*}*/
-
-.h4 {
-    /*font-weight: lighter;*/
-    /*text-align: left;*/
-    /*display: block;*/
+    display: flex;
 }
 
 .base-footer__main h4 {
@@ -359,26 +337,19 @@ input:focus {
     font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
 }
 
-.span {
-    /*display: flex;*/
-    /*color: red;*/
-}
-
 li.cont-phone, li.cont-email, li.cont-adress {
     background-repeat: no-repeat;
     background-position: 0 5px;
+    list-style: none;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-bottom: 2px;
 }
 
 ul.listcontact {
     margin-left: 40px;
     text-align: left;
-}
-
-ol,
-ul {
-    list-style: none;
     padding: 0;
-    margin: 0 0 9px 25px;
 }
 
 li.cont-phone {
@@ -393,12 +364,6 @@ li.cont-adress {
     background-image: url('../style/img/home.png');
 }
 
-ul.listcontact li {
-    padding-top: 2px;
-    padding-left: 20px;
-    margin-bottom: 2px;
-}
-
 li {
     line-height: 18px;
 }
@@ -407,13 +372,6 @@ li {
     color: #61dafb;
 }
 
-ul.listcontact h3 a {
-    color: black;
-}
-
-span {
-
-}
 
 /*стили лоадера с сайта loading.io*/
 .lds-dual-ring {

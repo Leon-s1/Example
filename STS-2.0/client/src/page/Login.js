@@ -27,7 +27,7 @@ const Login = observer(() => {
     const refresh = () => {
         // это вызовет ререндеринг компонента
         window.location.reload();
-        window.location.assign('http://localhost:3000')
+        window.location.assign('http://localhost:3002')
     }
 
     return (

@@ -29,11 +29,10 @@ const Shahti = () => {
         <div>
             <h1>Шахты</h1>
             {loading && <Loader/>}
-            {obj != 0 ? (
+            {obj.length ? (
                 <Table obj={obj}/>
-            ) : loading ? null : (
-                <h1>В справочнике нет данных.</h1>
-            )}
+            ) : null
+            }
         </div>
     )
 }

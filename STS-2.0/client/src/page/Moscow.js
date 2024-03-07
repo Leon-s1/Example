@@ -29,11 +29,10 @@ const Moscow = () => {
         <>
             <h1>Москва </h1>
             {loading && <Loader/>}
-            {obj != 0 ? (
+            {obj.length ? (
                 <Table obj={obj}/>
-            ) : loading ? null : (
-                <h1>В справочнике нет данных.</h1>
-            )}
+            ) : null
+            }
         </>
     )
 }
