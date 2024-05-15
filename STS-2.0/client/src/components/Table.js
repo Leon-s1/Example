@@ -2,8 +2,7 @@ import React, {Fragment, useState} from "react";
 
 // eslint-disable-next-line react/prop-types
 const Table = ({obj}) => {
-
-
+    
     const userAuth = localStorage.getItem('user.isAdmin')
     const [searched, setSearched] = useState("")
     const [users, setUsers] = useState(obj)
