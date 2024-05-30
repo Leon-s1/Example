@@ -1,8 +1,8 @@
 const {prisma} = require("../prisma/prisma-client");
 const bcrypt = require('bcryptjs')
-const jdenticon = require("jdenticon/standalone");
+const Jdenticon = require('jdenticon');
 const path = require('path')
-const fs = require("fs");
+const fs = require('fs');
 
 const UserController = {
     register: async (req, res) => {
@@ -20,7 +20,7 @@ const UserController = {
             }
             const hashedPassword = await bcrypt.hash(password, 10)
 
-            const png = jdenticon.toPng(name, 200)
+            const png = Jdenticon.toPng(name, 200)
             const avatarName = `${name}_${Date.now()}.png`
             const avatarPath = path.join(__dirname, '../uploads', avatarName)
 
@@ -36,11 +36,13 @@ const UserController = {
             })
             res.json(user)
 
-        } catch (e) {
-            console.log('Error in register', e)
-            res.status(500).json({e: 'Internal server error'})
+        } catch (error) {
+            console.error('Error in register', error)
+            res.status(500).json({error: 'Internal server error'})
         }
     },
+
+
     login: async (req, res) => {
         res.send('Login')
     },
