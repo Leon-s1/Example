@@ -22,10 +22,10 @@ const UserController = {
 
             const png = Jdenticon.toPng(name, 200)
             const avatarName = `${name}_${Date.now()}.png`
-            const avatarPath = path.join(__dirname, '../uploads', avatarName)
+            const avatarPath = path.join(__dirname, '/../uploads', avatarName)
 
             fs.writeFileSync(avatarPath, png)
-
+            //Создаем пользователя
             const user = await prisma.user.create({
                 data: {
                     email,
