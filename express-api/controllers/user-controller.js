@@ -70,15 +70,16 @@ const UserController = {
             res.status(500).json({error: 'Internal server error'})
         }
     },
-    
-    current: async (req, res) => {
-        res.send('current')
-    },
+
     getUserById: async (req, res) => {
-        res.send('getUserById')
+        // res.send('getUserById')
+        
     },
     updateUser: async (req, res) => {
         res.send('updateUser')
+    },
+    current: async (req, res) => {
+        res.send('current')
     },
 }
 
