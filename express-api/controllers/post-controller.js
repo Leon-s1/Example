@@ -10,8 +10,8 @@ const PostController = {
     getPostById: async (req, res) => {
         res.send('getPostById')
     },
-    deletPost: async (req, res) => {
-        res.send('deletPost')
+    deletePost: async (req, res) => {
+        res.send('deletePost')
     }
 }
 

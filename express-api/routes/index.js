@@ -23,9 +23,9 @@ router.get('/users/:id', authenticateToken, UserController.getUserById)
 router.put('/users/:id', authenticateToken, UserController.updateUser)
 
 //Роуты постов
-router.post('/post', authenticateToken, PostController.createPost)
-router.get('/post', authenticateToken, PostController.getAllPosts)
+router.post('/posts', authenticateToken, PostController.createPost)
+router.get('/posts', authenticateToken, PostController.getAllPosts)
 router.get('/posts/id', authenticateToken, PostController.getPostById)
-router.delete('/post:id', authenticateToken, PostController.deletPost)
+router.delete('/posts:id', authenticateToken, PostController.deletePost)
 
 module.exports = router;
