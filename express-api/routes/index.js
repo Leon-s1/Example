@@ -29,7 +29,7 @@ router.get('/posts/:id', authenticateToken, PostController.getPostById)
 router.delete('/posts/:id', authenticateToken, PostController.deletePost)
 
 //Роуты комментариев
-router.post('comments', authenticateToken, CommentController.createComment)
-router.delete('comments/:id', authenticateToken, CommentController.deleteComment)
+router.post('/comments', authenticateToken, CommentController.createComment)
+router.delete('/comments/:id', authenticateToken, CommentController.deleteComment)
 
 module.exports = router;
