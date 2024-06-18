@@ -34,6 +34,6 @@ router.delete('/comments/:id', authenticateToken, CommentController.deleteCommen
 
 //Роуты лайков
 router.post('/likes', authenticateToken, LikeController.likePost)
-router.delete('/unlikes/:id', authenticateToken, LikeController.unlikePost)
+router.delete('/likes/:id', authenticateToken, LikeController.unlikePost)
 
 module.exports = router;
