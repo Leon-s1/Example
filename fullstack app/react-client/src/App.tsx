@@ -4,7 +4,7 @@ const App = () => {
     return (
         <div>
             <Button color="primary">
-                123Button
+                Button
             </Button>
         </div>
     )
