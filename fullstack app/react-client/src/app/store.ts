@@ -5,7 +5,7 @@ import {api} from "./services/api";
 export const store = configureStore({
     reducer: {
         [api.reducerPath]: api.reducer
-    },
+    }
 })
 
 export type AppStore = typeof store

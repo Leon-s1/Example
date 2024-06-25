@@ -11,8 +11,8 @@ export const userApi = api.injectEndpoints({
                 body: userData
             })
         }),
-        register: builder.mutation<{ email: string, password: string; name: string },
-            { email: string, password: string; name: string }>({
+        register: builder.mutation<{ email: string; password: string; name: string },
+            { email: string; password: string; name: string }>({
             query: (userData) => ({
                 url: '/register',
                 method: 'POST',
@@ -25,7 +25,7 @@ export const userApi = api.injectEndpoints({
                 method: 'GET'
             })
         }),
-        getuserById: builder.query<User, string>({
+        getUserById: builder.query<User, string>({
             query: (id) => ({
                 url: `/users/${id}`,
                 method: 'GET'
@@ -38,9 +38,20 @@ export const userApi = api.injectEndpoints({
                 body: userData
             })
         })
-    }),
+    })
 })
 
-const {
-    useRegis
+export const {
+    useRegisterMutation,
+    useLoginMutation,
+    useCurrentQuery,
+    useLazyCurrentQuery,
+    useGetUserByIdQuery,
+    useLazyGetUserByIdQuery,
+    useUpdateUserMutation
+
+} = userApi;
+
+export const {
+    endpoints: {login, register, current, getUserById, updateUser}
 } = userApi
