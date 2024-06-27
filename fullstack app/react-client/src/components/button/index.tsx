@@ -32,6 +32,7 @@ export const Button: React.FC<Props> = ({
             variant='light'
             className={className}
             type={type}
+            fullWidth={fullWidth}
         >
             {children}
         </NextButton>
