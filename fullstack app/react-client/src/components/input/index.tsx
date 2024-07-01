@@ -47,7 +47,7 @@ export const Input: React.FC<Props> = (
             isInvalid={invalid}
             onChange={field.onChange}
             onBlur={field.onBlur}
-            errorMessage={`${errors[name]?.message}`}
+            errorMessage={`${errors[name]?.message ?? ''}`}
         />
     );
 };
