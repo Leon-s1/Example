@@ -14,7 +14,9 @@ type Props = {
     setSelected: (value: string) => void;
 }
 
-export const Login: React.FC<Props> = () => {
+export const Login: React.FC<Props> = ({
+                                           setSelected
+                                       }) => {
     const {
         handleSubmit,
         control,
@@ -30,21 +32,19 @@ export const Login: React.FC<Props> = () => {
 
     const [login, {isLoading}] = useLoginMutation()
     const navigate = useNavigate()
-    const [error, setError] = useState()
+    const [error, setError] = useState('')
     const [triggerCurrentCuery] = useLazyCurrentQuery()
 
     const onSubmit = async (data: Login) => {
         try {
             await login(data).unwrap()
-            
-
         } catch (error) {
 
         }
     }
 
     return (
-        <form className='flex flex-col gap-4' onSubmit={handleSubmit(onsubmit)}>
+        <form className='flex flex-col gap-4' onSubmit={handleSubmit(onSubmit)}>
             <Input
                 control={control}
                 name='email'
