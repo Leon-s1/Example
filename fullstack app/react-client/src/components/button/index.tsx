@@ -7,7 +7,8 @@ type Props = {
     className?: string;
     type?: 'button' | 'submit' | 'reset';
     fullWidth?: boolean;
-    color?: "default" |
+    color?:
+        "default" |
         "primary" |
         "secondary" |
         "success" |
