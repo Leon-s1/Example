@@ -9,12 +9,12 @@ type Props = {
     className?: string
 }
 
-export const User = ({
-                         name = '',
-                         avatarUrl = '',
-                         description = '',
-                         className = ''
-                     }) => {
+export const User: React.FC<Props> = ({
+                                          name = '',
+                                          avatarUrl = '',
+                                          description = '',
+                                          className = ''
+                                      }) => {
     return (
         <NextUiUser
             name={name}
