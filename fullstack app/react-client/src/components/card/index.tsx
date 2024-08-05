@@ -15,6 +15,7 @@ import {MdOutlineFavoriteBorder} from "react-icons/md";
 import {FcDislike} from "react-icons/fc";
 import {FaRegComment} from "react-icons/fa";
 import {ErrorMessage} from "../error-message";
+import {hasErrorField} from "../../utils/has-error-field";
 
 type Props = {
     avatarUrl: string
@@ -52,6 +53,51 @@ export const Card: React.FC<Props> = ({
     const [error, setError] = useState('')
     const navigate = useNavigate()
     const currentUser = useSelector(selectCurrent)
+
+    const refetchPosts = async () => {
+        switch (cardFor) {
+            case "post":
+                await triggerGetAllPosts().unwrap()
+                break
+            case "current-post":
+                await triggerGetAllPosts().unwrap()
+                break
+            case "comment":
+                await triggerGetPostById(id).unwrap()
+                break
+            default:
+                throw new Error('Неверный аргумент cardFor')
+
+        }
+    }
+
+    const handleDelete = async () => {
+        try {
+            switch (cardFor) {
+                case "post":
+                    await deletePost(id).unwrap()
+                    await refetchPosts()
+                    break
+                case "current-post":
+                    await deletePost(id).unwrap()
+                    navigate('/')
+                    break
+                case "comment":
+                    await deleteComment(id).unwrap()
+                    await refetchPosts()
+                    break
+                default:
+                    throw new Error('Неверный аргумент cardfor')
+            }
+        } catch (error) {
+            if (hasErrorField(error)) {
+                setError(error.data.error)
+            } else {
+                setError(error as string)
+            }
+        }
+    }
+
     return (
         <NextUiCard className='mb-5'>
             <CardHeader className='justify-between items-center bg-transparent'>
@@ -65,7 +111,7 @@ export const Card: React.FC<Props> = ({
                 </Link>
                 {
                     authorId === currentUser?.id && (
-                        <div className='cursor-pointer'>
+                        <div className='cursor-pointer' onClick={handleDelete}>
                             {
                                 deletePostStatus.isLoading || deleteCommentStatus.isLoading ? (
                                     <Spinner/>
