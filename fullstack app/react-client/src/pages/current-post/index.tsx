@@ -36,7 +36,6 @@ export const CurrentPost = () => {
                 likedByUser={likedByUser}
                 createdAt={createdAt}
             />
-
         </>
     );
 };
