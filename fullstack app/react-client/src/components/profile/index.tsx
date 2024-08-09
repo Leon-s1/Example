@@ -9,9 +9,9 @@ import {MdAlternateEmail} from "react-icons/md";
 export const Profile = () => {
     const current = useSelector(selectCurrent)
 
-    if (!current) {
-        return null
-    }
+    // if (!current) {
+    //     return null
+    // }
 
     const {name, email, avatarUrl, id} = current
 

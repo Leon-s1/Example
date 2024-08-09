@@ -1,5 +1,5 @@
-import {User} from "../../app/types";
 import {createSlice} from "@reduxjs/toolkit";
+import {User} from "../../app/types";
 import {userApi} from "../../app/services/userApi";
 import {RootState} from "../../app/store";
 
@@ -37,8 +37,8 @@ const slice = createSlice({
                 state.isAuthenticated = true
                 state.current = action.payload
             })
-            .addMatcher(userApi.endpoints.getUserById.matchFulfilled, (state, action) => {
-                state.user = action.payload
+            .addMatcher(userApi.endpoints.current.matchFulfilled, (state, action) => {
+                state.user = action.payload;
             })
     }
 })

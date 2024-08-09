@@ -28,7 +28,7 @@ export const CurrentPost = () => {
         <>
             <GoBack/>
             <Card
-                cardFor={"current-post"}
+                cardFor="current-post"
                 avatarUrl={author.avatarUrl ?? ''}
                 content={content}
                 name={author.name ?? ''}
@@ -51,7 +51,7 @@ export const CurrentPost = () => {
                             key={comment.id}
                             avatarUrl={comment.user.avatarUrl ?? ''}
                             content={comment.content}
-                            name={comment.user.name}
+                            name={comment.user.name ?? ''}
                             authorId={comment.userId}
                             commentId={comment.id}
                             id={id}

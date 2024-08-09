@@ -11,8 +11,8 @@ import {formatToClientDate} from "../../utils/format-to client-date";
 import {RiDeleteBinLine} from "react-icons/ri";
 import {Typography} from "../typography";
 import {MetaInfo} from "../meta-info";
-import {MdOutlineFavoriteBorder} from "react-icons/md";
 import {FcDislike} from "react-icons/fc";
+import {MdOutlineFavoriteBorder} from "react-icons/md";
 import {FaRegComment} from "react-icons/fa";
 import {ErrorMessage} from "../error-message";
 import {hasErrorField} from "../../utils/has-error-field";
@@ -76,8 +76,16 @@ export const Card: React.FC<Props> = ({
             likedByUser
                 ? await unLikePost(id).unwrap()
                 : await likePost({postId: id}).unwrap()
-            await refetchPosts()
-            await triggerGetPostById(id).unwrap()
+            // await refetchPosts()
+            // await triggerGetPostById(id).unwrap()
+
+            if (cardFor === 'current-post') {
+                await triggerGetPostById(id).unwrap()
+            }
+
+            if (cardFor === 'post') {
+                await triggerGetAllPosts().unwrap();
+            }
 
         } catch (e) {
             if (hasErrorField(error)) {
@@ -146,7 +154,7 @@ export const Card: React.FC<Props> = ({
             {
                 cardFor !== 'comment' && (
                     <CardFooter className='gap-3'>
-                        <div className='flex gap-3 items-center'>
+                        <div className='flex gap-5 items-center'>
                             <div onClick={handleClick}>
                                 <MetaInfo
                                     count={likesCount}

@@ -55,7 +55,8 @@ export const CreateComment = () => {
             {errors && <ErrorMessage error={error}/>}
 
             <Button
-                color='success'
+                // color='success'
+                color='primary'
                 className='flex-end'
                 endContent={<IoMdCreate/>}
                 type='submit'
