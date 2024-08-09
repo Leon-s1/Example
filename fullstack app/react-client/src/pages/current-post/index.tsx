@@ -4,6 +4,7 @@ import {useGetPostByIdQuery} from "../../app/services/postsApi";
 import {Card} from "../../components/card";
 import GoBack from "../../components/go-back";
 import {CreateComment} from "../../components/create-comment";
+import {Comment} from "../../app/types";
 
 export const CurrentPost = () => {
     const params = useParams<{ id: string }>()
@@ -45,7 +46,7 @@ export const CurrentPost = () => {
             </div>
             <div className="mt-10">
                 {data.comments ?
-                    data.comments.map((comment) => (
+                    data.comments.map((comment: Comment) => (
                         <Card
                             cardFor='comment'
                             key={comment.id}
@@ -56,7 +57,8 @@ export const CurrentPost = () => {
                             commentId={comment.id}
                             id={id}
                         />
-                    )) : null}
+                    )) : null
+                }
             </div>
         </>
     );

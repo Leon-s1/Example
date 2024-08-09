@@ -26,7 +26,7 @@ export const UserProfile = () => {
     const dispatch = useDispatch()
 
     useEffect(() => () => {
-        dispatch(resetUser)
+        dispatch(resetUser())
     }, [])
 
     if (!data) {
@@ -48,7 +48,7 @@ export const UserProfile = () => {
                     <div className="flex flex-col text-2xl font-bold gap-4 item-center">
                         {data.name}
                         {
-                            currentUser?.id !== id ? (
+                            currentUser.id !== id ? (
                                 <Button
                                     color={data.isFollowing ? 'default' : 'primary'}
                                     variant='flat'
