@@ -29,7 +29,7 @@ export const UserProfile = () => {
   const currentUser = useSelector(selectCurrent)
   const { data } = useGetUserByIdQuery(id ?? "")
   const [followUser] = useFollowUserMutation()
-  const [unFollowUser] = useUnfollowUserMutation()
+  const [unfollowUser] = useUnfollowUserMutation()
   const [triggerGetUserByIdQuery] = useLazyGetUserByIdQuery()
   const [triggerCurrentQuery] = useLazyCurrentQuery()
 
@@ -45,7 +45,7 @@ export const UserProfile = () => {
     try {
       if (id) {
         data?.isFollowing
-          ? await unFollowUser(id).unwrap()
+          ? await unfollowUser(id).unwrap()
           : await followUser({ followingId: id }).unwrap()
 
         await triggerGetUserByIdQuery(id)
@@ -53,6 +53,18 @@ export const UserProfile = () => {
         await triggerCurrentQuery()
       }
     } catch (error) {}
+  }
+
+  const handleClose = async () => {
+    try {
+      if (id) {
+        await triggerGetUserByIdQuery(id)
+        await triggerCurrentQuery()
+        onClose()
+      }
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   if (!data) {
@@ -73,7 +85,7 @@ export const UserProfile = () => {
           />
           <div className="flex flex-col text-2xl font-bold gap-4 item-center">
             {data.name}
-            {currentUser.id !== id ? (
+            {currentUser?.id !== id ? (
               <Button
                 color={data.isFollowing ? "default" : "primary"}
                 variant="flat"
@@ -90,7 +102,9 @@ export const UserProfile = () => {
                 {data.isFollowing ? "Отписаться" : "Подписаться"}
               </Button>
             ) : (
-              <Button endContent={<CiEdit />}>Редактировать</Button>
+              <Button endContent={<CiEdit />} onClick={() => onOpen()}>
+                Редактировать
+              </Button>
             )}
           </div>
         </Card>
@@ -109,6 +123,7 @@ export const UserProfile = () => {
           </div>
         </Card>
       </div>
+      {/*<EditProfile isOpen={isOpen} onClose={handleClose} user={data} />*/}
     </>
   )
 }
