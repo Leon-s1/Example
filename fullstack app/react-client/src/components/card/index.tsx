@@ -137,7 +137,7 @@ export const Card: React.FC<Props> = ({
   return (
     <NextUiCard className="mb-5">
       <CardHeader className="justify-between items-center bg-transparent">
-        <Link to={`/users/&{authorId}`}>
+        <Link to={`/users/${authorId}`}>
           <User
             name={name}
             className="text-small font-semibold leading-non text-default-600"
