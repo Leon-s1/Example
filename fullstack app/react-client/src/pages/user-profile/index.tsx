@@ -17,6 +17,7 @@ import {
   useLazyGetUserByIdQuery,
 } from "../../app/services/userApi"
 import { CountInfo } from "../../components/count-info"
+import { EditProfile } from "../../components/edit-profile"
 import GoBack from "../../components/go-back"
 import { ProfileInfo } from "../../components/profile-info"
 import { BASE_URL } from "../../constants"
@@ -123,7 +124,7 @@ export const UserProfile = () => {
           </div>
         </Card>
       </div>
-      {/*<EditProfile isOpen={isOpen} onClose={handleClose} user={data} />*/}
+      <EditProfile isOpen={isOpen} onClose={handleClose} user={data} />
     </>
   )
 }
