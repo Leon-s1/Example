@@ -64,6 +64,7 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
                 />
                 <Input control={control} name="name" label="Имя" type="text" />
                 <Input
+                  control={control}
                   type="file"
                   name="avatarUrl"
                   placeholder="Выберите файл"
