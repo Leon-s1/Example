@@ -31,6 +31,8 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
   const [selectedFile, setSelected] = useState<File | null>(null)
   const { id } = useParams<{ id: string }>()
 
+  const handleFileChange = e => {}
+
   const { handleSubmit, control } = useForm<User>({
     mode: "onChange",
     reValidateMode: "onBlur",
@@ -64,11 +66,12 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
                   endContent={<MdOutlineEmail />}
                 />
                 <Input control={control} name="name" label="Имя" type="text" />
-                <Input
-                  control={control}
+                <input
+                  // control={control}
                   type="file"
                   name="avatarUrl"
                   placeholder="Выберите файл"
+                  onChange={handleFileChange}
                 />
                 <Input
                   control={control}
