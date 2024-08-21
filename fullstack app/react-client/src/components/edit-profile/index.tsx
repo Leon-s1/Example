@@ -3,6 +3,7 @@ import {
   Modal,
   ModalBody,
   ModalContent,
+  ModalFooter,
   ModalHeader,
   Textarea,
 } from "@nextui-org/react"
@@ -106,6 +107,11 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
                 </div>
               </form>
             </ModalBody>
+            <ModalFooter>
+              <Button color={"danger"} variant={"light"} onPress={onClose}>
+                Закрыть
+              </Button>
+            </ModalFooter>
           </>
         )}
       </ModalContent>
