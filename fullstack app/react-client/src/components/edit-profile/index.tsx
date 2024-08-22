@@ -13,6 +13,7 @@ import { MdOutlineEmail } from "react-icons/md"
 import { useParams } from "react-router-dom"
 import { useUpdateUserMutation } from "../../app/services/userApi"
 import { User } from "../../app/types"
+import { hasErrorField } from "../../utils/has-error-field"
 // import { Button } from "../button"
 import { ErrorMessage } from "../error-message"
 import { Input } from "../input"
@@ -31,7 +32,25 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
   const [selectedFile, setSelected] = useState<File | null>(null)
   const { id } = useParams<{ id: string }>()
 
-  const handleFileChange = e => {}
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files !== null) {
+      setSelected(e.target.files[0])
+    }
+  }
+
+  const onSubmit = async (data: User) => {
+    if (id) {
+      try {
+        const formData = new FormData()
+        data.name && formData.append("name", data.name)
+        data.email && formData.append("email", data.email)
+      } catch (error) {
+        if (hasErrorField(error)) {
+          setError(error.data.error)
+        }
+      }
+    }
+  }
 
   const { handleSubmit, control } = useForm<User>({
     mode: "onChange",
@@ -57,7 +76,10 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
               Изменение профиля
             </ModalHeader>
             <ModalBody>
-              <form className="flex flex-col gap-4">
+              <form
+                className="flex flex-col gap-4"
+                onSubmit={handleSubmit(onSubmit)}
+              >
                 <Input
                   control={control}
                   name="email"
@@ -67,7 +89,6 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
                 />
                 <Input control={control} name="name" label="Имя" type="text" />
                 <input
-                  // control={control}
                   type="file"
                   name="avatarUrl"
                   placeholder="Выберите файл"
