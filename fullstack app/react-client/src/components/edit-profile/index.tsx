@@ -43,7 +43,17 @@ export const EditProfile: React.FC<Props> = ({ isOpen, onClose, user }) => {
       try {
         const formData = new FormData()
         data.name && formData.append("name", data.name)
-        data.email && formData.append("email", data.email)
+        data.email &&
+          data.email !== user?.email &&
+          formData.append("email", data.email)
+        data.dateOfBirth &&
+          formData.append(
+            "dateOfBirth",
+            new Date(data.dateOfBirth).toISOString(),
+          )
+        data.bio && formData.append("bio", data.bio)
+        data.location && formData.append("location", data.location)
+        selectedFile && formData.append("avatar")
       } catch (error) {
         if (hasErrorField(error)) {
           setError(error.data.error)
