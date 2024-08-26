@@ -88,8 +88,6 @@ export const Card: React.FC<Props> = ({
       likedByUser
         ? await unLikePost(id).unwrap()
         : await likePost({ postId: id }).unwrap()
-      // await refetchPosts()
-      // await triggerGetPostById(id).unwrap()
 
       if (cardFor === "current-post") {
         await triggerGetPostById(id).unwrap()
