@@ -16,7 +16,7 @@ export const Followers = () => {
       {currentUser.followers.map(user => (
         <Link to={`/users/${user.follower.id}`} key={user.follower.id}>
           <Card>
-            <CardBody className="blok">
+            <CardBody className="block">
               <User
                 name={user.follower.name ?? ""}
                 avatarUrl={user.follower.avatarUrl ?? ""}
