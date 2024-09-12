@@ -14,3 +14,15 @@ body {
 	margin: 0 auto;
 	padding: 0 156px;
 }
+.header {
+	background-color: #4694DC;
+	min-height: 500px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+.header_title {}
+.header_text {}
+.header_button {}
+
