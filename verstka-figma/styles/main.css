@@ -117,7 +117,8 @@ body {
 	display: flex;
 	padding: 20px;
 	background-color: #fff;
-	width: 260px;
+	max-width: 260px;
+	width: 100%;
 	height: 76px;
 	border-radius: 11px;
 	align-items: center;
@@ -142,6 +143,17 @@ body {
 
 
 /*Media*/
+@media screen and (max-width: 1366px) {
+	.team .container {
+		padding: 0 15px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.team_items {
+		flex-direction: column;
+		align-items: center;
+	}
+}
 @media screen and (max-width: 768px) {
 	.container {
 		padding: 0 15px;
