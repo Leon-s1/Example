@@ -2,19 +2,41 @@ import { NextUIProvider } from "@nextui-org/react"
 import React from "react"
 import { createRoot } from "react-dom/client"
 import { Provider } from "react-redux"
-import { createBrowserRouter } from "react-router-dom"
-import App from "./App"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { store } from "./app/store"
 import "./index.css"
+import Layout from "./components/layout"
 import ThemeProvider from "./components/theme-provider"
+import Auth from "./pages/auth"
+import Company from "./pages/company"
+import TelephoneBook from "./pages/telephone-book"
+import UserProfile from "./pages/user-profile"
 
 const container = document.getElementById("root")
 
 const router = createBrowserRouter([
-  { path: "/auth", element: <h1>Auth</h1> },
+  { path: "/auth", element: <Auth /> },
   {
     path: "/",
-    element: <h1>Layout</h1>,
+    element: <Layout />,
+    children: [
+      {
+        path: "",
+        element: <TelephoneBook />,
+      },
+      {
+        path: "/user-profile",
+        element: <UserProfile />,
+      },
+      {
+        path: "",
+        element: <Company />,
+      },
+      // {
+      //   path: "",
+      //   element: <TelephoneBook />,
+      // },
+    ],
   },
 ])
 
@@ -25,8 +47,9 @@ if (container) {
     <React.StrictMode>
       <Provider store={store}>
         <NextUIProvider>
-          <ThemeProvider>
-            <App />
+          <ThemeProvider children={ThemeProvider}>
+            <RouterProvider router={router} />
+            {/*<App />*/}
           </ThemeProvider>
         </NextUIProvider>
       </Provider>
