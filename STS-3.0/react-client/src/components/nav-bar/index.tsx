@@ -1,7 +1,8 @@
 import React from "react"
-import { BsPostcard } from "react-icons/bs"
-import { FaUsers } from "react-icons/fa"
+import { BsFillTelephoneFill } from "react-icons/bs"
+import { CgSoftwareDownload } from "react-icons/cg"
 import { FiUsers } from "react-icons/fi"
+import { RiOrganizationChart } from "react-icons/ri"
 import NavButton from "../nav-button"
 
 const NavBar = () => {
@@ -9,8 +10,8 @@ const NavBar = () => {
     <nav>
       <ul className="flex flex-col gap-5">
         <li>
-          <NavButton href="/" icon={<BsPostcard />}>
-            Внутренние телефоны Сибтранссервис
+          <NavButton href="/" icon={<BsFillTelephoneFill />}>
+            Телефоны
           </NavButton>
         </li>
         <li>
@@ -19,8 +20,13 @@ const NavBar = () => {
           </NavButton>
         </li>
         <li>
-          <NavButton href="/" icon={<FaUsers />}>
+          <NavButton href="company" icon={<RiOrganizationChart />}>
             Компания
+          </NavButton>
+        </li>
+        <li>
+          <NavButton href="software" icon={<CgSoftwareDownload />}>
+            Программы
           </NavButton>
         </li>
       </ul>

@@ -14,9 +14,9 @@ const Header = () => {
   return (
     <Navbar>
       <NavbarBrand>
-        <p className="font-bold text-inherit">
+        <h1 className="font-bold text-inherit">
           Информационный портал Сибтранссервис
-        </p>
+        </h1>
       </NavbarBrand>
       <NavbarContent justify="end">
         <NavbarItem

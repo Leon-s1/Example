@@ -9,6 +9,7 @@ import Layout from "./components/layout"
 import ThemeProvider from "./components/theme-provider"
 import Auth from "./pages/auth"
 import Company from "./pages/company"
+import Software from "./pages/software"
 import TelephoneBook from "./pages/telephone-book"
 import UserProfile from "./pages/user-profile"
 
@@ -29,13 +30,13 @@ const router = createBrowserRouter([
         element: <UserProfile />,
       },
       {
-        path: "",
+        path: "/company",
         element: <Company />,
       },
-      // {
-      //   path: "",
-      //   element: <TelephoneBook />,
-      // },
+      {
+        path: "/software",
+        element: <Software />,
+      },
     ],
   },
 ])
