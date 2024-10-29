@@ -7,6 +7,7 @@ import {
 import React, { useContext } from "react"
 import { FaRegMoon } from "react-icons/fa"
 import { LuSunMedium } from "react-icons/lu"
+import StsLogo from "../logo/index"
 import { ThemeContext } from "../theme-provider"
 
 const Header = () => {
@@ -14,10 +15,14 @@ const Header = () => {
   return (
     <Navbar>
       <NavbarBrand>
+        <StsLogo />
+        <p className="font-bold text-inherit">Сибтранссервис</p>
+      </NavbarBrand>
+      <NavbarContent justify={"center"}>
         <h1 className="font-bold text-inherit">
           Информационный портал Сибтранссервис
         </h1>
-      </NavbarBrand>
+      </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem
           className="lg:flex text-3xl cursor-pointer"
