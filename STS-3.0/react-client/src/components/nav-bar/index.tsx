@@ -4,11 +4,13 @@ import { CgSoftwareDownload } from "react-icons/cg"
 import { FiUsers } from "react-icons/fi"
 import { RiOrganizationChart } from "react-icons/ri"
 import NavButton from "../nav-button"
+import "../../index.css"
 
 const NavBar = () => {
   return (
     <nav>
-      <ul className="flex flex-col gap-5">
+      {/*<ul className="flex flex-col gap-5">*/}
+      <ul className="flex gap-1">
         <li>
           <NavButton href="/" icon={<BsFillTelephoneFill />}>
             Телефоны

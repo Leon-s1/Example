@@ -1,16 +1,16 @@
-import { Image } from "@nextui-org/react"
 import React from "react"
+import logo from "../logo/sts.jpg"
 
 const StsLogo = () => {
   return (
-    <Image
-      width={70}
-      height={50}
-      alt="нет картинки"
-      src="https://nextui.org/images/hero-card-complete.jpeg"
-    />
+    // <Image
+    //   width={70}
+    //   height={50}
+    //   alt="нет картинки"
+    //   src="https://nextui.org/images/hero-card-complete.jpeg"
+    // />
 
-    // <img src="sts_.jpg" alt="нет картинки" width="100" height="50" />
+    <img src={logo} alt="нет картинки" width="200" height="150" />
 
     // <svg fill="none" height="36" viewBox="0 0 32 32" width="36">
     //   <path
