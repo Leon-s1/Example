@@ -1,6 +1,8 @@
-import { Link } from ""
-import React from "react"
+import { Button } from "@nextui-org/button"
+import { Link } from "@nextui-org/react"
+import React, { useState } from "react"
 import { useForm } from "react-hook-form"
+import { useNavigate } from "react-router-dom"
 import Input from "../components/input"
 
 type Login = {
@@ -25,8 +27,20 @@ const Login: React.FC<Props> = () => {
       password: "",
     },
   })
+
+  const [login, { isLoading }] = useLoginMutation()
+  const navigate = useNavigate()
+  const [error, setError] = useState("")
+  const [triggerCurrentQuery] = useLazyCurrentQuery()
+
+  const onSubmit = async (data: Login) => {
+    try {
+      await login(data).unwrap()
+    } catch (error) {}
+  }
+
   return (
-    <form className="flex flex-col gap-4">
+    <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
       <Input
         control={control}
         name="email"
@@ -42,9 +56,25 @@ const Login: React.FC<Props> = () => {
         required="Обязательное поле"
       />
       <p className="text-center text-small">
-        Нет аккаунта{""}
-        <Link size>Зарегистрируйтес</Link>
+        Нет аккаунта{" "}
+        <Link
+          size="md"
+          className="cursor-pointer"
+          onPress={() => setSelected("sign-up")}
+        >
+          Зарегистрируйтесь
+        </Link>
       </p>
+      <div className="flex gap-2 justify-end">
+        <Button
+          fullWidth
+          color={"primary"}
+          type={"submit"}
+          isLoading={isLoading}
+        >
+          Войти
+        </Button>
+      </div>
     </form>
   )
 }
