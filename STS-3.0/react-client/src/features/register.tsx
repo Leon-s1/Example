@@ -2,11 +2,11 @@ import { Button } from "@nextui-org/button"
 import { Link } from "@nextui-org/react"
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
-import { useNavigate } from "react-router-dom"
 import Input from "../components/input"
 
-type Login = {
+type Register = {
   email: string
+  name: string
   password: string
 }
 
@@ -14,33 +14,44 @@ type Props = {
   setSelected: (value: string) => void
 }
 
-const Login: React.FC<Props> = () => {
+const Register: React.FC<Props> = ({ setSelected }) => {
   const {
     handleSubmit,
     control,
     formState: { errors },
-  } = useForm<Login>({
+  } = useForm<Register>({
     mode: "onChange",
     reValidateMode: "onBlur",
     defaultValues: {
       email: "",
       password: "",
+      name: "",
     },
   })
 
-  // const [login, { isLoading }] = useLoginMutation()
-  const navigate = useNavigate()
+  const [register, { isLoading }] = useRegisterMutation()
   const [error, setError] = useState("")
-  // const [triggerCurrentQuery] = useLazyCurrentQuery()
 
-  const onSubmit = async (data: Login) => {
+  const onSubmit = async (data: Register) => {
     try {
-      await login(data).unwrap()
-    } catch (error) {}
+      await register(data).unwrap()
+      setSelected("login")
+    } catch (error) {
+      if (hasErrorField(error)) {
+        setError(error.data.error)
+      }
+    }
   }
 
   return (
     <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
+      <Input
+        control={control}
+        name="name"
+        label="Имя"
+        type="text"
+        required="Обязательное поле"
+      />
       <Input
         control={control}
         name="email"
@@ -56,13 +67,13 @@ const Login: React.FC<Props> = () => {
         required="Обязательное поле"
       />
       <p className="text-center text-small">
-        Нет аккаунта{" "}
+        Уже есть аккаунт{" "}
         <Link
           size="md"
           className="cursor-pointer"
-          onPress={() => setSelected("sign-up")}
+          onPress={() => setSelected("login")}
         >
-          Зарегистрируйтесь
+          Войдите
         </Link>
       </p>
       <div className="flex gap-2 justify-end">
@@ -79,4 +90,4 @@ const Login: React.FC<Props> = () => {
   )
 }
 
-export default Login
+export default Register
