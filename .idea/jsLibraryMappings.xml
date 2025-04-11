@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/fullstack app/express-api" libraries="{Example/fullstack app/express-api/node_modules}" />
-    <file url="file://$PROJECT_DIR$/fullstack app/react-client/src/app/services/commentsApi.ts" libraries="{Example/fullstack app/express-api/node_modules}" />
-  </component>
-</project>
