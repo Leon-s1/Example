@@ -1,35 +1,36 @@
-import React, { useEffect, useState } from 'react'
-import '../src/style/style.css'
-import { BrowserRouter } from 'react-router-dom'
-import ItemList from './components/ItemList'
-import { observer } from 'mobx-react'
-import AppRouter from './components/AppRouter'
-import Header from './components/Header'
-import AdminButtons from './components/AdminButtons'
-import Footer from './components/Footer'
+import { observer } from "mobx-react";
+import React, { useEffect, useState } from "react";
+import "../src/style/style.css";
+import { BrowserRouter } from "react-router-dom";
+import AdminButtons from "./components/AdminButtons";
+import AppRouter from "./components/AppRouter";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ItemList from "./components/ItemList";
 
 const App = observer(() => {
-  const [users, setUsers] = useState(false)
-  const [loading, setLoading] = React.useState(true)
+  const [users, setUsers] = useState(false);
+  const [loading, setLoading] = React.useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      getUsers()
-      setLoading(false)
-    }, 0)
-  }, [])
+      getUsers();
+      setLoading(false);
+    }, 0);
+  }, []);
 
   function getUsers() {
-    fetch('http://192.168.1.247:3001')
+    // fetch('http://192.168.1.247:3001')
+    fetch("http://localhost:3001")
       .then((response) => {
-        return response.text()
+        return response.text();
       })
       .then((data) => {
-        setUsers(data)
-      })
+        setUsers(data);
+      });
   }
 
-  const user = localStorage.getItem('user.isAdmin')
+  const user = localStorage.getItem("user.isAdmin");
 
   return (
     <BrowserRouter>
@@ -48,6 +49,6 @@ const App = observer(() => {
       </div>
       <Footer />
     </BrowserRouter>
-  )
-})
-export default App
+  );
+});
+export default App;
