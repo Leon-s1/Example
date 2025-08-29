@@ -39,5 +39,5 @@ const Button: React.FC<Props> = ({
     </NextButton>
   )
 }
-//
+
 export default Button
