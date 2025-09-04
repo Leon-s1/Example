@@ -14,4 +14,3 @@ export default defineConfig({
     mockReset: true,
   },
 })
-//Пул реквест
