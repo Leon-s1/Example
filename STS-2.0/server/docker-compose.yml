@@ -1,0 +1,32 @@
+version: '3.5'
+services:
+
+  sts-client:
+    build: ../client
+    ports:
+      - '3002:3002'
+    depends_on:
+      - sts-db
+
+  sts-db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Vbkfhtgf131715
+      POSTGRES_DB: STS
+    ports:
+      - '5440:5432'
+
+  sts-server:
+    build: .
+    environment:
+      DB_HOST: localhost # Вместо sts-db localhost
+      DB_PORT: 5440
+      DB_USER: postgres
+      DB_PASSWORD: Vbkfhtgf131715
+      DB_NAME: STS
+    depends_on:
+      - sts-client
+    ports:
+      - '3001:3001'
+
