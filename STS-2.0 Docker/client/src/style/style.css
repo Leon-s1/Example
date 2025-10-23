@@ -1,0 +1,403 @@
+@font-face {
+    font-family: Oswald-Light;
+    src: url("../style/font/Oswald,Pattaya/Oswald/static/Oswald-Light.ttf");
+}
+
+body {
+    margin: 0 auto;
+    color: #000000;
+    font-weight: bolder;
+    background-size: cover;
+    font-family: 'Oswald-Light', sans-serif;
+    background-color: #f6f6f6;
+}
+
+h1, h2, h3, h4, h5, a, p, div, span {
+    text-align: center;
+}
+
+.main {
+    width: 1240px;
+    margin: 20px auto;
+}
+
+.list {
+    margin-top: 50px;
+}
+
+.header {
+    background-size: cover;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 8);
+}
+
+.text-center {
+    text-align: center;
+    display: inline-block;
+}
+
+.logo {
+    float: left;
+    padding-top: 30px;
+    height: 50px;
+    display: inline;
+    width: 300px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.company__link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: red;
+}
+
+a.company__link:active, /* активная/посещенная ссылка */
+a.company__link:hover, /* при наведении */
+a.company__link {
+
+}
+
+.company__auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+}
+
+.table__header {
+    background-color: #ff0000;
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-bottom: 0 solid black;
+    font: 16px Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000000;
+
+}
+
+th {
+    display: table-cell;
+    background-color: #ff0000;
+    border-collapse: collapse;
+    vertical-align: text-bottom;
+    text-align: center;
+    font: 18px;
+}
+
+/*//////////////////////////////////////*/
+tr {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    height: 70px;
+    align-items: center;
+}
+
+td {
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    align-content: center;
+}
+
+.index {
+    width: 3%;
+}
+
+.id {
+    width: 3%;
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+.fio {
+    width: 20%;
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+.position {
+    width: 30%;
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+.int_phone {
+    width: 3%;
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+.mobile {
+    width: 10%;
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+.email {
+    width: 16%;
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+.skype {
+    display: table-cell;
+    word-wrap: break-word;
+    width: 15%;
+}
+
+.row__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 35px 0px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 8);
+}
+
+.card {
+    border: 2px solid rgba(0, 0, 0, .125);
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden; /* Скрываем всё за контуром */
+    transition: .5s; /* Время эффекта */
+    display: block;
+}
+
+.card.active {
+    border: 3px solid red;
+}
+
+.card:hover {
+    transform: scale(1.3); /* Увеличиваем масштаб */
+    border: 2px solid red;
+}
+
+.card img {
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+.card a {
+    color: #000000;
+}
+
+.card__name {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+
+/*Страница авторизации*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.auth__form {
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    background-color: #FFF;
+    border: 2px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+}
+
+/*Кнопки добавления, редактирования, удаления */
+.admin__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: 70px;
+    margin: auto;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 8);
+}
+
+.admin__buttons button {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+/*Стилизация поисковой строки*/
+.search {
+    max-width: 1240px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-input {
+    border-radius: 10px;
+    font: 18px Roboto, Helvetica, Arial, sans-serif;
+    width: 1240px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #aaa;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    display: flex;
+    float: right;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: red;
+    background-color: rgba(28, 28, 28, 0);
+}
+
+input:focus {
+    outline: red;
+    border-color: red;
+    border: 3px solid red;
+}
+
+.rekvizit {
+    margin-top: 40px;
+    border: 3px solid;
+    border-color: #9e0706;
+    border-radius: 5px;
+}
+
+.rekvizit p {
+    margin: 10px;
+    text-align: left;
+}
+
+/*Стилизация компонента Footer*/
+.base-footer {
+    background: #bbb8b8;
+    width: 100%;
+    height: 180px;
+    /*display: flex;*/
+    border-bottom-color: #9e0706;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.base-footer__main {
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+}
+
+.base-footer__main h4 {
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 14px;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+
+li.cont-phone, li.cont-email, li.cont-adress {
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    list-style: none;
+    padding-top: 2px;
+    padding-left: 20px;
+    margin-bottom: 2px;
+}
+
+ul.listcontact {
+    margin-left: 40px;
+    text-align: left;
+    padding: 0;
+}
+
+li.cont-phone {
+    background-image: url('../style/img/phone.png');
+}
+
+li.cont-email {
+    background-image: url('../style/img/letter.png');
+}
+
+li.cont-adress {
+    background-image: url('../style/img/home.png');
+}
+
+li {
+    line-height: 18px;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+
+/*стили лоадера с сайта loading.io*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+}
+
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid blue;
+    border-color: #e21111 transparent #000000 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

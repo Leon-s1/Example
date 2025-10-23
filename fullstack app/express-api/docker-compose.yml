@@ -1,6 +1,19 @@
 version: '3'
 services:
-  express-app:
+  react-app:    #фронтенд
+    build: ../react-client
+    ports:
+      - '80:80'
+
+  db:   #база данных
+    image: prismagraphql/mongo-single-replica:5.0.3
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: monty
+      MONGO_INITDB_ROOT_PASSWORD: pass
+
+  express-app:    #бэкенд
     build: .
     ports:
       - '3000:3000'
@@ -9,14 +22,3 @@ services:
       - react-app
     environment:
       DATABASE_URL: "mongodb://monty:pass@db:27017/mydatabase?authSource=admin&directConnection=true"
-  db:
-    image: prismagraphql/mongo-single-replica:5.0.3
-    ports:
-      - '27017:27017'
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: monty
-      MONGO_INITDB_ROOT_PASSWORD: pass
-  react-app:
-    build: ../react-client
-    ports:
-      - '80:80'
