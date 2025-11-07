@@ -22,7 +22,6 @@ const App = observer(() => {
   function getUsers() {
     // fetch('http://192.168.1.247:3001')
     fetch("http://localhost:3001")
-      // fetch("http://localhost:5440")
       .then((response) => {
         return response.text();
       })

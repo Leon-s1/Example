@@ -1,83 +1,55 @@
-version: '3.8'
+#version: '3.8'
 services:
 
   sts-client:   #фронтенд
     build: ../client
     ports:
       - '3002:80'
-#    networks:
-#      - net
-    #depends_on:
-     # - sts-db
+    networks:
+      net:
+#    depends_on:
+#      - sts-db
 
   sts-db:   #база данных
-    image: postgres:14.1-alpine
+#    image: postgres:14.1-alpine
+    image: postgres
     restart: always
     environment:
+      #Правильный вариант, при этих переменных идет подключение через DBeaver
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: Vbkfhtgf131715
       POSTGRES_DB: STS
       POSTGRES_HOST: localhost
-      POSTGRES_PORT: 5432
-
-     # PGHOST: localhost
-      #DB_HOST: localhost # Вместо sts-db localhost
-      #DB_PORT: 5440
-      #DB_USER: postgres
-      #DB_PASSWORD: Vbkfhtgf131715
-      #DB_NAME: STS
+      POSTGRES_PORT: 5440
     ports:
       - '5440:5432'
-#    volumes:
-#      - sts-db:/var/lib/postgresql/data
-#    networks:
-#      - net
+    networks:
+      net:
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
   sts-server:   #бэкенд
     build: .    # Указывает, где находится Dockerfile для этого сервиса
-    environment:
-#      *********************************
-#      POSTGRES_USER: "postgres",
-#      POSTGRES_PASSWORD: "Vbkfhtgf131715",
-#      POSTGRES_DB: "STS",
-#      POSTGRES_NAME: "postgres",
-#      POSTGRES_HOST: "localhost",
-#      POSTGRES_PORT: "5440",
-#     ***********************************
-
-#      ******************************
-      DATABASE_USERNAME: postgres
-      DATABASE_PASSWORD: Vbkfhtgf131715
-      DATABASE_NAME: STS
-#      DATABASE_HOST: localhost
-      DATABASE_HOST: sts-db
-#      DATABASE_PORT: 5440
-#*********************************************
+    restart: always
+#    environment:
 #      POSTGRES_USER: postgres
 #      POSTGRES_PASSWORD: Vbkfhtgf131715
 #      POSTGRES_DB: STS
-#
-#***********************************************
-#      DB_HOST: localhost # Вместо sts-db localhost
-#      DB_PORT: 5440
-#      DB_USER: postgres
-#      DB_PASSWORD: Vbkfhtgf131715
-#      DB_NAME: STS
-#************************************************
+#      POSTGRES_HOST: localhost
+#      POSTGRES_PORT: 5432
     depends_on:
       - sts-db
-      - sts-client
     ports:
       - '3001:3001'
-#    networks:
-#      - net
+    networks:
+      net:
+
     #volumes:
       #- server:/app
 
-#  networks:
-#    net:
-#      driver: bridge
+networks:
+    net:
+      driver: bridge
 
-#  volumes:
-#    sts-db:
-
+volumes:
+    pgdata:

@@ -1,32 +1,11 @@
 const Pool = require("pg").Pool;
 const pool = new Pool({
-  //***********Подключение к БД postgresql на ПК
-  host: "localhost",
+  //***********Подключение к БД postgresql в контейнер Docker
+  host: "sts-db",
   user: "postgres",
-  password: "Kjubntx12",
-  // password: "Vbkfhtgf131715",
+  password: "Vbkfhtgf131715",
   database: "STS",
   port: 5432,
-  //******************************************
-  //***********Подключение к БД postgresql в Docker
-  // DATABASE_USERNAME: "postgres",
-  // DATABASE_PASSWORD: "Vbkfhtgf131715",
-  // DATABASE_NAME: "STS",
-  // DATABASE_HOST: "sts-db",
-  // DATABASE_HOST: "localhost",
-  // DATABASE_PORT: "5432",
-  //******************************************
-  // POSTGRES_USER: "postgres",
-  // POSTGRES_PASSWORD: "Vbkfhtgf131715",
-  // POSTGRES_DB: "STS",
-  // POSTGRES_NAME: "postgres",
-  // POSTGRES_HOST: "sts-db",
-  // POSTGRES_PORT: "5440",
-  // PGHOST: "localhost",
-  // PGUSER: "postgres",
-  // PGPASSWORD: "Vbkfhtgf131715",
-  // PGDATABASE: "STS",
-  // PGPORT: 5440,
 });
 
 const getUsers = () => {

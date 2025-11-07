@@ -19,4 +19,4 @@ EXPOSE 3001
 
 
 # Запускаем сервер
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "start" ]
